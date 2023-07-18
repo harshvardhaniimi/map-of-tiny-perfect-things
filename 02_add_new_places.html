@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Harshvardhan">
+
+<title>02_add_new_places</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="02_add_new_places_files/libs/clipboard/clipboard.min.js"></script>
+<script src="02_add_new_places_files/libs/quarto-html/quarto.js"></script>
+<script src="02_add_new_places_files/libs/quarto-html/popper.min.js"></script>
+<script src="02_add_new_places_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="02_add_new_places_files/libs/quarto-html/anchor.min.js"></script>
+<link href="02_add_new_places_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="02_add_new_places_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="02_add_new_places_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="02_add_new_places_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="02_add_new_places_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">02_add_new_places</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Harshvardhan </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This notebook is used for adding new places to the map. Every once in a while — or if we get Threads like popularity then every day — we would add new places to the Map. This notebook has functions that:</p>
+<ol type="1">
+<li>read in the Google sheet and then creates a tibble of the places</li>
+<li>Reads in the existing the master,</li>
+<li>Finds which places do not have Google data yet,</li>
+<li>Use Google Places API to get information for those places</li>
+<li>Update master data with new data</li>
+</ol>
+</section>
+<section id="import-libraries-etc." class="level2">
+<h2 class="anchored" data-anchor-id="import-libraries-etc.">Import Libraries etc.</h2>
+<p>First step is to load the packages.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"/Users/harshvardhan/Documents/Useful-Files/Misc/Map of Tiny Perfect Things/map-of-tiny-perfect-things/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install and load necessary packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("googledrive", "googlesheets4"))</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googledrive)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googlesheets4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'googlesheets4'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:googledrive':
+
+    request_generate, request_make</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2
+──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ ggplot2 3.4.0     ✔ purrr   1.0.1
+✔ tibble  3.1.8     ✔ dplyr   1.1.0
+✔ tidyr   1.3.0     ✔ stringr 1.5.0
+✔ readr   2.1.4     ✔ forcats 1.0.0
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter()                   masks stats::filter()
+✖ dplyr::lag()                      masks stats::lag()
+✖ googlesheets4::request_generate() masks googledrive::request_generate()
+✖ googlesheets4::request_make()     masks googledrive::request_make()</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googleway)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Authenticating with Google Sheets:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set your googledrive token</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: You'll have to authenticate your session the first time you use this</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Simply run the following function and follow the instructions</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># drive_auth()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Getting API right:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># API key function</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>read_api_key <span class="ot">=</span> <span class="cf">function</span>(file_path) {</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>   <span class="co"># returning the first line of the text file at the file_path</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">return</span>(<span class="fu">readLines</span>(file_path)[<span class="dv">1</span>])</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># API Key (Harsh's API Key)</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>api_key <span class="ot">=</span> <span class="fu">read_api_key</span>(<span class="st">"google_places_api_key.txt"</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load googleway</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googleway)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">set_key</span>(<span class="at">key =</span> api_key)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="getting-the-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="getting-the-sheet">Getting the sheet</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># define the URL of your Google Sheet</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>url <span class="ot">=</span> <span class="st">"https://docs.google.com/spreadsheets/d/1UC2EvXsafSjDkNNZSnC8eB_FPwyy1KenFfhUveoKEoc/edit#gid=1196848595"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the ID of the Google Sheet from the URL</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># capturing the sheet id to use with drive_get()</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>sheet_id <span class="ot">=</span> <span class="fu">sub</span>(<span class="st">".*/d/(.*)/.*"</span>, <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>, url)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># get info about the Google Sheet</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>sheet_info <span class="ot">=</span> <span class="fu">drive_get</span>(<span class="at">id =</span> sheet_id)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>! Using an auto-discovered, cached token.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  To suppress this message, modify your code or options to clearly consent to
+  the use of a cached token.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  See gargle's "Non-interactive auth" vignette for more details:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  &lt;]8;;https://gargle.r-lib.org/articles/non-interactive-auth.htmlhttps://gargle.r-lib.org/articles/non-interactive-auth.html]8;;&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ The googledrive package is using a cached token for ']8;;mailto:hvsc1708@gmail.comhvsc1708@gmail.com]8;;'.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Auto-refreshing stale OAuth token.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>sheet_info</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A dribble: 1 × 3
+  name                id       drive_resource   
+  &lt;chr&gt;               &lt;drv_id&gt; &lt;list&gt;           
+1 The Mapping Project 1UC2EvX… &lt;named list [36]&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="reading-each-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="reading-each-sheet">Reading each sheet</h2>
+<p>Define the sheets to read</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>sheet_names <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Dea - Bay Area"</span>, <span class="st">"Dea - NYC + DC + NJ"</span>, <span class="st">"Dea - PNW"</span>, <span class="st">"Dea - Vegas"</span>, <span class="st">"Harsh - Knoxville"</span>, <span class="st">"Harsh - PNW"</span>, <span class="st">"Meenal - Bangalore"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="function-to-read-in-the-google-sheet-and-create-a-tibble-of-the-places" class="level2">
+<h2 class="anchored" data-anchor-id="function-to-read-in-the-google-sheet-and-create-a-tibble-of-the-places">Function to read in the Google sheet and create a tibble of the places</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>read_google_sheet <span class="ot">=</span> <span class="cf">function</span>(url,</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>                             sheet_name,</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>                             <span class="at">cols_to_keep =</span> <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"type"</span>, <span class="st">"location"</span>,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>                                              <span class="st">"creators_rec"</span>, <span class="st">"notes"</span>)) {</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>   df <span class="ot">=</span> <span class="fu">read_sheet</span>(url, <span class="at">range =</span> sheet_name) <span class="sc">%&gt;%</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>      janitor<span class="sc">::</span><span class="fu">clean_names</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(<span class="fu">all_of</span>(cols_to_keep)) <span class="sc">%&gt;%</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">sheet_name =</span> sheet_name)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>   <span class="fu">return</span>(df)</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply the function to each sheet and combine into a single data frame</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>all_data <span class="ot">=</span> purrr<span class="sc">::</span><span class="fu">map_dfr</span>(sheet_names, <span class="sc">~</span> <span class="fu">read_google_sheet</span>(url, .))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>! Using an auto-discovered, cached token.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  To suppress this message, modify your code or options to clearly consent to
+  the use of a cached token.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  See gargle's "Non-interactive auth" vignette for more details:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  &lt;]8;;https://gargle.r-lib.org/articles/non-interactive-auth.htmlhttps://gargle.r-lib.org/articles/non-interactive-auth.html]8;;&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ The googlesheets4 package is using a cached token for ']8;;mailto:hvsc1708@gmail.comhvsc1708@gmail.com]8;;'.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Auto-refreshing stale OAuth token.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "The Mapping Project".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''Dea - Bay Area''.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "The Mapping Project".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''Dea - NYC + DC + NJ''.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "The Mapping Project".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''Dea - PNW''.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "The Mapping Project".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''Dea - Vegas''.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "The Mapping Project".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''Harsh - Knoxville''.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "The Mapping Project".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''Harsh - PNW''.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "The Mapping Project".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''Meenal - Bangalore''.</code></pre>
+</div>
+</div>
+</section>
+<section id="function-to-read-in-the-existing-master-data-csv-file-provided-a-path" class="level2">
+<h2 class="anchored" data-anchor-id="function-to-read-in-the-existing-master-data-csv-file-provided-a-path">Function to read in the existing master data CSV file provided a path</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>read_master_data <span class="ot">=</span> <span class="cf">function</span>(file_path) {</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>   df <span class="ot">=</span> <span class="fu">read_csv</span>(file_path, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>      <span class="fu">as_tibble</span>()</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">return</span>(df)</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>master_data <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">"master_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 234 Columns: 12
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (8): name, type, location, creators_rec, notes, sheet_name, address, goo...
+dbl (4): rating, user_ratings_total, lat, lng
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>master_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 234 × 12
+   name              type  location creators_rec notes sheet_name address rating
+   &lt;chr&gt;             &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;    &lt;dbl&gt;
+ 1 Blue Bottle       Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… 199 Su…    4.3
+ 2 Cafenated Coffee  Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… 2085 V…    4.3
+ 3 Victory Point     Coff… San Fra… Yes          "Goo… Dea - Bay… 1797 S…    4.7
+ 4 My Coffee Roaste… Coff… San Fra… Yes          "Fai… Dea - Bay… 2080 M…    4.8
+ 5 Artis             Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… 3200 B…    5  
+ 6 Hidden Cafe       Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… 1250 A…    4.8
+ 7 Timeless Cafe     Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… 85 Web…    4.6
+ 8 Free Speech Move… Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… 3rd Fl…    4.3
+ 9 Rasa Cafe         Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… 1379 4…    4.6
+10 States            Coff… San Fra… &lt;NA&gt;          &lt;NA&gt; Dea - Bay… San Fr…   NA  
+# ℹ 224 more rows
+# ℹ 4 more variables: user_ratings_total &lt;dbl&gt;, google_maps_link &lt;chr&gt;,
+#   lat &lt;dbl&gt;, lng &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="which-places-do-not-have-google-data-yet" class="level2">
+<h2 class="anchored" data-anchor-id="which-places-do-not-have-google-data-yet">Which places do not have Google data yet?</h2>
+<p>I would check for all columns.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>missing_data <span class="ot">=</span> master_data <span class="sc">%&gt;%</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">filter</span>(</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>      <span class="fu">is.na</span>(address) <span class="sc">|</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>         <span class="fu">is.na</span>(rating) <span class="sc">|</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>         <span class="fu">is.na</span>(user_ratings_total) <span class="sc">|</span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>         <span class="fu">is.na</span>(google_maps_link) <span class="sc">|</span> <span class="fu">is.na</span>(lat) <span class="sc">|</span> <span class="fu">is.na</span>(lng)</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>   )</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a>missing_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 86 × 12
+   name              type  location creators_rec notes sheet_name address rating
+   &lt;chr&gt;             &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;    &lt;dbl&gt;
+ 1 States            Coff… San Fra… &lt;NA&gt;         &lt;NA&gt;  Dea - Bay… San Fr…     NA
+ 2 Raleigh           Rest… San Fra… &lt;NA&gt;         &lt;NA&gt;  Dea - Bay… &lt;NA&gt;        NA
+ 3 Ralph's           Coff… &lt;NA&gt;     &lt;NA&gt;         Inte… Dea - NYC… &lt;NA&gt;        NA
+ 4 Cafe Grumpy       Coff… &lt;NA&gt;     &lt;NA&gt;         Cute… Dea - NYC… &lt;NA&gt;        NA
+ 5 %Arabica          Coff… &lt;NA&gt;     &lt;NA&gt;         Grea… Dea - NYC… &lt;NA&gt;        NA
+ 6 Black Fox Coffee  Coff… &lt;NA&gt;     Yes          Fave… Dea - NYC… &lt;NA&gt;        NA
+ 7 Cafe Patoro       Coff… &lt;NA&gt;     Yes          Quai… Dea - NYC… &lt;NA&gt;        NA
+ 8 Coffee Project    Coff… &lt;NA&gt;     &lt;NA&gt;         Deco… Dea - NYC… &lt;NA&gt;        NA
+ 9 Cortaditos        Coff… &lt;NA&gt;     &lt;NA&gt;         Cuba… Dea - NYC… &lt;NA&gt;        NA
+10 Joe Coffee Compa… Coff… &lt;NA&gt;     Yes          Coff… Dea - NYC… &lt;NA&gt;        NA
+# ℹ 76 more rows
+# ℹ 4 more variables: user_ratings_total &lt;dbl&gt;, google_maps_link &lt;chr&gt;,
+#   lat &lt;dbl&gt;, lng &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="function-to-get-information-from-google-maps-given-place-name-and-area." class="level2">
+<h2 class="anchored" data-anchor-id="function-to-get-information-from-google-maps-given-place-name-and-area.">Function to get information from Google Maps, given place name and area.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>get_place_info <span class="ot">=</span> <span class="cf">function</span>(place_name, area) {</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(area)){</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Area name not provided for place "</span>, place_name))</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">tibble</span>(</span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">name =</span> place_name,</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">address =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">rating =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">user_ratings_total =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">google_maps_link =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">lat =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">lng =</span> <span class="cn">NA</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>      ))</span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb52-15"><a href="#cb52-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-16"><a href="#cb52-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Construct the search query</span></span>
+<span id="cb52-17"><a href="#cb52-17" aria-hidden="true" tabindex="-1"></a>  query <span class="ot">=</span> <span class="fu">paste0</span>(place_name, <span class="st">" "</span>, area)</span>
+<span id="cb52-18"><a href="#cb52-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-19"><a href="#cb52-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Perform a Google Places search</span></span>
+<span id="cb52-20"><a href="#cb52-20" aria-hidden="true" tabindex="-1"></a>  result_search <span class="ot">=</span> <span class="fu">google_places</span>(<span class="at">search_string =</span> query)</span>
+<span id="cb52-21"><a href="#cb52-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-22"><a href="#cb52-22" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(result_search<span class="sc">$</span>results) <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb52-23"><a href="#cb52-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Couldn't find place "</span>, place_name, <span class="st">" in "</span>, area))</span>
+<span id="cb52-24"><a href="#cb52-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb52-25"><a href="#cb52-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(</span>
+<span id="cb52-26"><a href="#cb52-26" aria-hidden="true" tabindex="-1"></a>      <span class="fu">tibble</span>(</span>
+<span id="cb52-27"><a href="#cb52-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">name =</span> place_name,</span>
+<span id="cb52-28"><a href="#cb52-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">address =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-29"><a href="#cb52-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">rating =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-30"><a href="#cb52-30" aria-hidden="true" tabindex="-1"></a>        <span class="at">user_ratings_total =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-31"><a href="#cb52-31" aria-hidden="true" tabindex="-1"></a>        <span class="at">google_maps_link =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-32"><a href="#cb52-32" aria-hidden="true" tabindex="-1"></a>        <span class="at">lat =</span> <span class="cn">NA</span>,</span>
+<span id="cb52-33"><a href="#cb52-33" aria-hidden="true" tabindex="-1"></a>        <span class="at">lng =</span> <span class="cn">NA</span></span>
+<span id="cb52-34"><a href="#cb52-34" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb52-35"><a href="#cb52-35" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb52-36"><a href="#cb52-36" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb52-37"><a href="#cb52-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the information</span></span>
+<span id="cb52-38"><a href="#cb52-38" aria-hidden="true" tabindex="-1"></a>     <span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Working on "</span>, place_name, <span class="st">" "</span>, area))</span>
+<span id="cb52-39"><a href="#cb52-39" aria-hidden="true" tabindex="-1"></a>     result_details <span class="ot">=</span> result_search<span class="sc">$</span>results[<span class="dv">1</span>,]</span>
+<span id="cb52-40"><a href="#cb52-40" aria-hidden="true" tabindex="-1"></a>     place_id <span class="ot">=</span> result_details<span class="sc">$</span>place_id</span>
+<span id="cb52-41"><a href="#cb52-41" aria-hidden="true" tabindex="-1"></a>    address <span class="ot">=</span> result_details<span class="sc">$</span>formatted_address</span>
+<span id="cb52-42"><a href="#cb52-42" aria-hidden="true" tabindex="-1"></a>    rating <span class="ot">=</span> result_details<span class="sc">$</span>rating</span>
+<span id="cb52-43"><a href="#cb52-43" aria-hidden="true" tabindex="-1"></a>    user_ratings_total <span class="ot">=</span> result_details<span class="sc">$</span>user_ratings_total</span>
+<span id="cb52-44"><a href="#cb52-44" aria-hidden="true" tabindex="-1"></a>    google_maps_link <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"https://www.google.com/maps/search/?api=1&amp;query="</span>, <span class="fu">URLencode</span>(address), <span class="st">"&amp;query_place_id="</span>, place_id)</span>
+<span id="cb52-45"><a href="#cb52-45" aria-hidden="true" tabindex="-1"></a>    lat <span class="ot">=</span> result_details<span class="sc">$</span>geometry<span class="sc">$</span>location<span class="sc">$</span>lat</span>
+<span id="cb52-46"><a href="#cb52-46" aria-hidden="true" tabindex="-1"></a>    lng <span class="ot">=</span> result_details<span class="sc">$</span>geometry<span class="sc">$</span>location<span class="sc">$</span>lng</span>
+<span id="cb52-47"><a href="#cb52-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-48"><a href="#cb52-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(</span>
+<span id="cb52-49"><a href="#cb52-49" aria-hidden="true" tabindex="-1"></a>      <span class="fu">tibble</span>(</span>
+<span id="cb52-50"><a href="#cb52-50" aria-hidden="true" tabindex="-1"></a>        <span class="at">name =</span> place_name,</span>
+<span id="cb52-51"><a href="#cb52-51" aria-hidden="true" tabindex="-1"></a>        <span class="at">address =</span> address,</span>
+<span id="cb52-52"><a href="#cb52-52" aria-hidden="true" tabindex="-1"></a>        <span class="at">rating =</span> rating,</span>
+<span id="cb52-53"><a href="#cb52-53" aria-hidden="true" tabindex="-1"></a>        <span class="at">user_ratings_total =</span> user_ratings_total,</span>
+<span id="cb52-54"><a href="#cb52-54" aria-hidden="true" tabindex="-1"></a>        <span class="at">google_maps_link =</span> google_maps_link,</span>
+<span id="cb52-55"><a href="#cb52-55" aria-hidden="true" tabindex="-1"></a>        <span class="at">lat =</span> lat,</span>
+<span id="cb52-56"><a href="#cb52-56" aria-hidden="true" tabindex="-1"></a>        <span class="at">lng =</span> lng</span>
+<span id="cb52-57"><a href="#cb52-57" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb52-58"><a href="#cb52-58" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb52-59"><a href="#cb52-59" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb52-60"><a href="#cb52-60" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="use-google-places-api-to-get-information-for-those-place" class="level2">
+<h2 class="anchored" data-anchor-id="use-google-places-api-to-get-information-for-those-place">Use Google Places API to get information for those place</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>new_info <span class="ot">=</span> missing_data <span class="sc">%&gt;%</span> </span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">split</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(.)) <span class="sc">%&gt;%</span> </span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">map_dfr</span>(<span class="sc">~</span> <span class="fu">get_place_info</span>(.<span class="sc">$</span>name, .<span class="sc">$</span>location)) <span class="co"># purrrr, says Hadley's cat</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Working on States San Francisco Bay Area"
+[1] "Couldn't find place Raleigh in San Francisco Bay Area"
+[1] "Area name not provided for place Ralph's"
+[1] "Area name not provided for place Cafe Grumpy"
+[1] "Area name not provided for place %Arabica"
+[1] "Area name not provided for place Black Fox Coffee"
+[1] "Area name not provided for place Cafe Patoro"
+[1] "Area name not provided for place Coffee Project"
+[1] "Area name not provided for place Cortaditos"
+[1] "Area name not provided for place Joe Coffee Company"
+[1] "Area name not provided for place Hungry Ghost"
+[1] "Area name not provided for place Devocion"
+[1] "Area name not provided for place Lillo Cucina Italiana"
+[1] "Area name not provided for place YUBU"
+[1] "Area name not provided for place L'Industrie"
+[1] "Area name not provided for place Sam's Falafel"
+[1] "Area name not provided for place Leo's Bagel"
+[1] "Area name not provided for place Van Leeuwen Ice Cream"
+[1] "Area name not provided for place Pita Yeero"
+[1] "Area name not provided for place Orale! Mexican Kitchen"
+[1] "Area name not provided for place Khiladi NYC"
+[1] "Area name not provided for place Mariscos El Submarino"
+[1] "Area name not provided for place Nada"
+[1] "Area name not provided for place Spicy Moon"
+[1] "Area name not provided for place Taqueria Al Pastor"
+[1] "Area name not provided for place Miss Ada"
+[1] "Area name not provided for place For Five Coffee"
+[1] "Area name not provided for place Gregorys Coffee"
+[1] "Area name not provided for place George's King of Falafel and Cheesesteak"
+[1] "Area name not provided for place The Exchange Saloon"
+[1] "Area name not provided for place Eye Street Grill"
+[1] "Area name not provided for place Stumptown Coffee"
+[1] "Area name not provided for place Heart Coffee Roasters"
+[1] "Area name not provided for place Never Coffee"
+[1] "Area name not provided for place Sunny Day"
+[1] "Area name not provided for place Sisters Coffee Company"
+[1] "Area name not provided for place Rain or Shine"
+[1] "Area name not provided for place Tov Coffee"
+[1] "Area name not provided for place Barista Coffee"
+[1] "Area name not provided for place Dandelion Teahouse"
+[1] "Area name not provided for place Terrain Coffee"
+[1] "Area name not provided for place Pajaro"
+[1] "Area name not provided for place Good Coffee"
+[1] "Area name not provided for place Coava"
+[1] "Area name not provided for place Nossa Familia"
+[1] "Area name not provided for place Case Study Coffee"
+[1] "Area name not provided for place Queue Coffee"
+[1] "Area name not provided for place Super Joy Coffee"
+[1] "Area name not provided for place Upper Left Coffee"
+[1] "Area name not provided for place Ovation Coffee"
+[1] "Area name not provided for place Deadstock Coffee"
+[1] "Area name not provided for place Little Italy's Trattoria"
+[1] "Area name not provided for place La Provence"
+[1] "Area name not provided for place Voodoo Doughnuts"
+[1] "Area name not provided for place Foode Cafe"
+[1] "Area name not provided for place Lan Su"
+[1] "Area name not provided for place Kornblatt's Deli"
+[1] "Area name not provided for place Salt and Straw"
+[1] "Area name not provided for place Mirisata"
+[1] "Area name not provided for place Por Que No"
+[1] "Area name not provided for place Hopworks"
+[1] "Area name not provided for place Abhiruchi Indian Cuisine"
+[1] "Area name not provided for place Nola Doughnuts"
+[1] "Area name not provided for place Flying Fish Company"
+[1] "Area name not provided for place Dediko"
+[1] "Area name not provided for place Joe Brown's Cafe"
+[1] "Area name not provided for place Breakside"
+[1] "Area name not provided for place Ranch PDX"
+[1] "Area name not provided for place Little Conejo"
+[1] "Area name not provided for place Nonavo Pizza"
+[1] "Area name not provided for place Chutney Indian Cuisine"
+[1] "Area name not provided for place La Sorrentina"
+[1] "Area name not provided for place Grassa"
+[1] "Area name not provided for place McMenamins"
+[1] "Area name not provided for place Mio Sushi"
+[1] "Area name not provided for place Amaro's Table Downtown"
+[1] "Area name not provided for place Gustav"
+[1] "Area name not provided for place Petunia"
+[1] "Area name not provided for place Altengartz"
+[1] "Area name not provided for place Mumbo Gumbo"
+[1] "Area name not provided for place Ash Wood Fired"
+[1] "Area name not provided for place El Pilon"
+[1] "Area name not provided for place Viking Soul Food"
+[1] "Area name not provided for place Gourmet on the Go"
+[1] "Area name not provided for place Tall Boy Fish and Chips"
+[1] "Area name not provided for place Bobablastic"</code></pre>
+</div>
+</div>
+</section>
+<section id="update-master-data-with-new-data" class="level2">
+<h2 class="anchored" data-anchor-id="update-master-data-with-new-data">Update master data with new data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>add_new_rows <span class="ot">=</span> <span class="cf">function</span>(df1, df2, <span class="at">cols_to_match =</span> <span class="fu">c</span>(<span class="st">"name"</span>)) {</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Use anti_join to find rows in df2 that are not in df1</span></span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>  new_rows <span class="ot">=</span> df2 <span class="sc">%&gt;%</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">anti_join</span>(df1, <span class="at">by =</span> cols_to_match)</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add these new rows to df1</span></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>  df1 <span class="ot">=</span> <span class="fu">rbind</span>(df1, new_rows)</span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(df1)</span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>master_data <span class="sc">%&gt;%</span> </span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">add_new_rows</span>(new_info) <span class="sc">%&gt;%</span> </span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">distinct</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 234 × 1
+   name                
+   &lt;chr&gt;               
+ 1 Blue Bottle         
+ 2 Cafenated Coffee    
+ 3 Victory Point       
+ 4 My Coffee Roastery  
+ 5 Artis               
+ 6 Hidden Cafe         
+ 7 Timeless Cafe       
+ 8 Free Speech Movement
+ 9 Rasa Cafe           
+10 States              
+# ℹ 224 more rows</code></pre>
+</div>
+</div>
+</section>
+<section id="investigations-for-repeated-names." class="level2">
+<h2 class="anchored" data-anchor-id="investigations-for-repeated-names.">Investigations for repeated names.</h2>
+<p>Checking if any names are repeated. It is critical to have unique names of the places.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find names that are repeated</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>master_data <span class="sc">%&gt;%</span></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(name) <span class="sc">%&gt;%</span></span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(count <span class="sc">&gt;</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 0 × 2
+# ℹ 2 variables: name &lt;chr&gt;, count &lt;int&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="adding-id" class="level2">
+<h2 class="anchored" data-anchor-id="adding-id">Adding ID</h2>
+<p>I think its unreasonable to assume that names of places will be unique forever. Languages are full of “false friends” — words in two languages that look or sound similar but have different meanings.</p>
+<p>Unrelated but some examples:</p>
+<ol type="1">
+<li><p>The word “gift” in English means a present or something given, while in German, “Gift” means poison.</p></li>
+<li><p>The word “kiss” in English refers to an act of affection, while in Swedish, “kiss” means pee or urine.</p></li>
+<li><p>The word “blessed” in English generally means being favored, fortunate, or holy. However, in Portuguese, “blessed” translates to “abençoado.”</p></li>
+<li><p>The word “molesto” in Spanish translates to “annoying” or “bothersome,” but in Italian, “molesto” means “ill” or “unwell.”</p></li>
+<li><p>The word “rude” in English typically means impolite or offensive. However, in French, “rude” translates to “rough” or “tough.”</p></li>
+</ol>
+<p>Anyway, this function will ID.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>add_unique_id <span class="ot">=</span> <span class="cf">function</span>(df) {</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>   <span class="co"># Check if unique_id column already exists</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>   <span class="cf">if</span> (<span class="sc">!</span><span class="st">"unique_id"</span> <span class="sc">%in%</span> <span class="fu">names</span>(df)) {</span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If not, create it</span></span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>      df <span class="ot">=</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>         <span class="co"># Arrange by location to ensure consistency</span></span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">arrange</span>(location) <span class="sc">%&gt;%</span></span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a>         <span class="co"># Create an abbreviation for the location and remove special characters</span></span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a>         <span class="fu">mutate</span>(<span class="at">location_abbr =</span> <span class="fu">gsub</span>(<span class="st">"[^[:alnum:]]"</span>, <span class="st">""</span>, </span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a>                                     <span class="fu">abbreviate</span>(location, <span class="at">minlength =</span> <span class="dv">4</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb60-11"><a href="#cb60-11" aria-hidden="true" tabindex="-1"></a>         <span class="co"># Create a group index</span></span>
+<span id="cb60-12"><a href="#cb60-12" aria-hidden="true" tabindex="-1"></a>         <span class="fu">group_by</span>(location_abbr) <span class="sc">%&gt;%</span></span>
+<span id="cb60-13"><a href="#cb60-13" aria-hidden="true" tabindex="-1"></a>         <span class="fu">mutate</span>(<span class="at">id_num =</span> <span class="fu">row_number</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb60-14"><a href="#cb60-14" aria-hidden="true" tabindex="-1"></a>         <span class="co"># Combine abbreviation and index into unique_id</span></span>
+<span id="cb60-15"><a href="#cb60-15" aria-hidden="true" tabindex="-1"></a>         <span class="fu">mutate</span>(<span class="at">unique_id =</span> <span class="fu">paste</span>(location_abbr, </span>
+<span id="cb60-16"><a href="#cb60-16" aria-hidden="true" tabindex="-1"></a>                                  <span class="fu">sprintf</span>(<span class="st">"%04d"</span>, id_num), <span class="at">sep =</span> <span class="st">"_"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb60-17"><a href="#cb60-17" aria-hidden="true" tabindex="-1"></a>         <span class="co"># Remove temporary columns</span></span>
+<span id="cb60-18"><a href="#cb60-18" aria-hidden="true" tabindex="-1"></a>         <span class="fu">select</span>(<span class="sc">-</span>location_abbr,<span class="sc">-</span>id_num)</span>
+<span id="cb60-19"><a href="#cb60-19" aria-hidden="true" tabindex="-1"></a>   }</span>
+<span id="cb60-20"><a href="#cb60-20" aria-hidden="true" tabindex="-1"></a>   <span class="fu">return</span>(df)</span>
+<span id="cb60-21"><a href="#cb60-21" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Call the function</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>master_data_updated <span class="ot">=</span> <span class="fu">add_unique_id</span>(master_data) <span class="sc">%&gt;%</span></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>   <span class="co"># bringing unique id to front</span></span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">select</span>(unique_id, name, location, <span class="fu">everything</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Adding missing grouping variables: `location_abbr`</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>master_data_updated</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 234 × 14
+# Groups:   location_abbr [6]
+   unique_id name     location location_abbr type  creators_rec notes sheet_name
+   &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;         &lt;chr&gt; &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;     
+ 1 KTN_0001  Golden … Knoxvil… KTN           Coff… Yes          A de… Harsh - K…
+ 2 KTN_0002  Frothy … Knoxvil… KTN           Coff… Yes          The … Harsh - K…
+ 3 KTN_0003  French … Knoxvil… KTN           Rest… &lt;NA&gt;         Whil… Harsh - K…
+ 4 KTN_0004  Coffee … Knoxvil… KTN           Coff… &lt;NA&gt;         Know… Harsh - K…
+ 5 KTN_0005  HoneyBe… Knoxvil… KTN           Coff… Yes          An i… Harsh - K…
+ 6 KTN_0006  Jacks C… Knoxvil… KTN           Coff… &lt;NA&gt;         An u… Harsh - K…
+ 7 KTN_0007  Spice a… Knoxvil… KTN           Tea … Yes          An o… Harsh - K…
+ 8 KTN_0008  Wild Lo… Knoxvil… KTN           Bake… &lt;NA&gt;         A sa… Harsh - K…
+ 9 KTN_0009  Mahalo … Knoxvil… KTN           Coff… Yes          Expe… Harsh - K…
+10 KTN_0010  Capycab… Knoxvil… KTN           Coff… &lt;NA&gt;         A we… Harsh - K…
+# ℹ 224 more rows
+# ℹ 6 more variables: address &lt;chr&gt;, rating &lt;dbl&gt;, user_ratings_total &lt;dbl&gt;,
+#   google_maps_link &lt;chr&gt;, lat &lt;dbl&gt;, lng &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="re-write-master-data-with-new-information" class="level2">
+<h2 class="anchored" data-anchor-id="re-write-master-data-with-new-information">Re-write Master Data with New Information</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>master_data_updated <span class="sc">%&gt;%</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">write_csv</span>(<span class="at">file =</span> <span class="st">"master_data.csv"</span>,</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">na =</span> <span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="which-cities-are-most-represented" class="level2">
+<h2 class="anchored" data-anchor-id="which-cities-are-most-represented">Which cities are most represented?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a sorted bar plot for 'location'</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>master_data_updated <span class="sc">%&gt;%</span></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(location) <span class="sc">%&gt;%</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="fu">reorder</span>(location, n), n, <span class="at">fill =</span> location)) <span class="sc">+</span></span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> n), <span class="at">hjust =</span> <span class="fl">1.4</span>) <span class="sc">+</span></span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Location"</span>, </span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>, </span>
+<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Number of Places by Location"</span>, </span>
+<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Location"</span>) <span class="sc">+</span></span>
+<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">guides</span>(<span class="at">fill =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: The `&lt;scale&gt;` argument of `guides()` cannot be `FALSE`. Use "none" instead as
+of ggplot2 3.3.4.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="02_add_new_places_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="what-kind-of-places-are-most-represented" class="level2">
+<h2 class="anchored" data-anchor-id="what-kind-of-places-are-most-represented">What kind of places are most represented?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a sorted bar plot for 'type'</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>master_data_updated <span class="sc">%&gt;%</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(type) <span class="sc">%&gt;%</span></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="fu">reorder</span>(type, n), n, <span class="at">fill =</span> type)) <span class="sc">+</span></span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#geom_text(aes(label = n), hjust = -0.3) +</span></span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb68-8"><a href="#cb68-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb68-9"><a href="#cb68-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb68-10"><a href="#cb68-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Type"</span>, </span>
+<span id="cb68-11"><a href="#cb68-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Count"</span>, </span>
+<span id="cb68-12"><a href="#cb68-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Number of Places by Type"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="02_add_new_places_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="in-summary" class="level2">
+<h2 class="anchored" data-anchor-id="in-summary">In summary…</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>master_data_updated <span class="sc">%&gt;%</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> type)) <span class="sc">+</span></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">fill =</span> type)) <span class="sc">+</span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_wrap</span>( <span class="sc">~</span> location, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Type"</span>,</span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Count"</span>,</span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Distribution of Place Types in Each Location (Non-Uniform Y-Axis Scales)"</span>,</span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">fill =</span> <span class="st">"Type"</span>) <span class="sc">+</span></span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(</span>
+<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">angle =</span> <span class="dv">90</span>,</span>
+<span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">vjust =</span> <span class="fl">0.5</span>,</span>
+<span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">hjust =</span> <span class="dv">1</span></span>
+<span id="cb69-14"><a href="#cb69-14" aria-hidden="true" tabindex="-1"></a>   ),</span>
+<span id="cb69-15"><a href="#cb69-15" aria-hidden="true" tabindex="-1"></a>   <span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="02_add_new_places_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

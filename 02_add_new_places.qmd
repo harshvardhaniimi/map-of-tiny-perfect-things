@@ -1,0 +1,412 @@
+---
+title: "02_add_new_places"
+author: "Harshvardhan"
+format: html
+editor: visual
+---
+
+## Purpose
+
+This notebook is used for adding new places to the map. Every once in a while --- or if we get Threads like popularity then every day --- we would add new places to the Map. This notebook has functions that:
+
+1.  read in the Google sheet and then creates a tibble of the places
+2.  Reads in the existing the master,
+3.  Finds which places do not have Google data yet,
+4.  Use Google Places API to get information for those places
+5.  Update master data with new data
+
+## Import Libraries etc.
+
+First step is to load the packages.
+
+```{r}
+setwd("/Users/harshvardhan/Documents/Useful-Files/Misc/Map of Tiny Perfect Things/map-of-tiny-perfect-things/")
+```
+
+```{r}
+# install and load necessary packages
+# install.packages(c("googledrive", "googlesheets4"))
+library(googledrive)
+library(googlesheets4)
+library(tidyverse)
+library(googleway)
+```
+
+Authenticating with Google Sheets:
+
+```{r}
+# set your googledrive token
+# Note: You'll have to authenticate your session the first time you use this
+# Simply run the following function and follow the instructions
+# drive_auth()
+```
+
+Getting API right:
+
+```{r}
+# API key function
+read_api_key = function(file_path) {
+   # returning the first line of the text file at the file_path
+   return(readLines(file_path)[1])
+}
+```
+
+```{r}
+# API Key (Harsh's API Key)
+api_key = read_api_key("google_places_api_key.txt")
+
+# load googleway
+library(googleway)
+set_key(key = api_key)
+```
+
+## Getting the sheet
+
+```{r}
+# define the URL of your Google Sheet
+url = "https://docs.google.com/spreadsheets/d/1UC2EvXsafSjDkNNZSnC8eB_FPwyy1KenFfhUveoKEoc/edit#gid=1196848595"
+```
+
+```{r}
+# get the ID of the Google Sheet from the URL
+# capturing the sheet id to use with drive_get()
+sheet_id = sub(".*/d/(.*)/.*", "\\1", url)
+
+# get info about the Google Sheet
+sheet_info = drive_get(id = sheet_id)
+
+sheet_info
+```
+
+## Reading each sheet
+
+Define the sheets to read
+
+```{r}
+sheet_names = c("Dea - Bay Area", "Dea - NYC + DC + NJ", "Dea - PNW", "Dea - Vegas", "Harsh - Knoxville", "Harsh - PNW", "Meenal - Bangalore") 
+```
+
+## Function to read in the Google sheet and create a tibble of the places
+
+```{r}
+read_google_sheet = function(url,
+                             sheet_name,
+                             cols_to_keep = c("name", "type", "location",
+                                              "creators_rec", "notes")) {
+   df = read_sheet(url, range = sheet_name) %>%
+      janitor::clean_names() %>%
+      select(all_of(cols_to_keep)) %>%
+      mutate(sheet_name = sheet_name)
+   
+   return(df)
+}
+```
+
+```{r}
+# Apply the function to each sheet and combine into a single data frame
+data_in_sheets = purrr::map_dfr(sheet_names, ~ read_google_sheet(url, .))
+```
+
+## Function to read in the existing master data CSV file provided a path
+
+```{r}
+read_master_data = function(file_path) {
+   df = read_csv(file_path, stringsAsFactors = FALSE) %>%
+      as_tibble()
+   return(df)
+}
+```
+
+```{r}
+master_data = read_csv("master_data.csv")
+master_data
+```
+
+## Data which is in sheets but not in master data should be added to master data
+
+## Which places do not have Google data yet?
+
+I would check for all columns.
+
+```{r}
+missing_data = master_data %>%
+   filter(
+      is.na(address) |
+         is.na(rating) |
+         is.na(user_ratings_total) |
+         is.na(google_maps_link) | is.na(lat) | is.na(lng)
+   )
+
+missing_data
+```
+
+## Function to get information from Google Maps, given place name and area.
+
+```{r}
+get_city_state_country = function(address) {
+    # Use google_geocode() to get information about the address
+    geocode_result <- google_geocode(address)
+
+    # The city name is usually contained in the 'locality' field
+    city = purrr::map_chr(geocode_result$results$address_components, function(x) {
+        if ("locality" %in% x$types) {
+            return(x$long_name)
+        } else {
+            return(NA)
+        }
+    })
+
+    # The state is usually contained in the 'administrative_area_level_1' field
+    state = purrr::map_chr(geocode_result$results$address_components, function(x) {
+        if ("administrative_area_level_1" %in% x$types) {
+            return(x$long_name)
+        } else {
+            return(NA)
+        }
+    })
+    
+    # The country is usually contained in the 'country' field
+    country = purrr::map_chr(geocode_result$results$address_components, function(x) {
+        if ("country" %in% x$types) {
+            return(x$long_name)
+        } else {
+            return(NA)
+        }
+    })
+
+    return(list(city = city, state = state, country = country))
+}
+```
+
+```{r}
+get_place_info = function(place_name, area) {
+  if (is.na(area)){
+    print(paste0("Area name not provided for place ", place_name))
+    return(
+      tibble(
+        name = place_name,
+        address = NA,
+        city = NA,
+        state = NA,
+        country = NA,
+        rating = NA,
+        user_ratings_total = NA,
+        google_maps_link = NA,
+        lat = NA,
+        lng = NA
+      ))
+  }
+
+  # Construct the search query
+  query = paste0(place_name, " ", area)
+
+  # Perform a Google Places search
+  result_search = google_places(search_string = query)
+
+  if (length(result_search$results) == 0) {
+    print(paste0("Couldn't find place ", place_name, " in ", area))
+    
+    return(
+      tibble(
+        name = place_name,
+        address = NA,
+        city = NA,
+        state = NA,
+        country = NA,
+        rating = NA,
+        user_ratings_total = NA,
+        google_maps_link = NA,
+        lat = NA,
+        lng = NA
+      )
+    )
+  } else {
+    # Extract the information
+    print(paste0("Working on ", place_name, " ", area))
+    result_details = result_search$results[1,]
+    place_id = result_details$place_id
+    address = result_details$formatted_address
+
+    # Get city, state, country
+    location = get_city_state_country(address)
+    city = location$city
+    state = location$state
+    country = location$country
+
+    rating = result_details$rating
+    user_ratings_total = result_details$user_ratings_total
+    google_maps_link = paste0("https://www.google.com/maps/search/?api=1&query=", URLencode(address), "&query_place_id=", place_id)
+    lat = result_details$geometry$location$lat
+    lng = result_details$geometry$location$lng
+
+    return(
+      tibble(
+        name = place_name,
+        address = address,
+        city = city,
+        state = state,
+        country = country,
+        rating = rating,
+        user_ratings_total = user_ratings_total,
+        google_maps_link = google_maps_link,
+        lat = lat,
+        lng = lng
+      )
+    )
+  }
+}
+
+```
+
+## Use Google Places API to get information for those place
+
+```{r}
+new_info = missing_data %>% 
+   split(1:nrow(.)) %>% 
+   map_dfr(~ get_place_info(.$name, .$location)) # purrrr, says Hadley's cat
+```
+
+## Update master data with new data
+
+```{r}
+add_new_rows = function(df1, df2, cols_to_match = c("name")) {
+  # Use anti_join to find rows in df2 that are not in df1
+  new_rows = df2 %>%
+    dplyr::anti_join(df1, by = cols_to_match)
+  
+  # Add these new rows to df1
+  df1 = rbind(df1, new_rows)
+  
+  return(df1)
+}
+```
+
+```{r}
+master_data = master_data %>% 
+   add_new_rows(new_info)
+```
+
+## Investigations for repeated names.
+
+Checking if any names are repeated. It is critical to have unique names of the places.
+
+```{r}
+# Find names that are repeated
+master_data %>%
+  group_by(name) %>%
+  summarise(count = n()) %>%
+  filter(count > 1)
+```
+
+## Adding ID
+
+I think its unreasonable to assume that names of places will be unique forever. Languages are full of "false friends" --- words in two languages that look or sound similar but have different meanings.
+
+Unrelated but some examples:
+
+1.  The word "gift" in English means a present or something given, while in German, "Gift" means poison.
+
+2.  The word "kiss" in English refers to an act of affection, while in Swedish, "kiss" means pee or urine.
+
+3.  The word "blessed" in English generally means being favored, fortunate, or holy. However, in Portuguese, "blessed" translates to "abençoado."
+
+4.  The word "molesto" in Spanish translates to "annoying" or "bothersome," but in Italian, "molesto" means "ill" or "unwell."
+
+5.  The word "rude" in English typically means impolite or offensive. However, in French, "rude" translates to "rough" or "tough."
+
+Anyway, this function will ID.
+
+```{r}
+add_unique_id = function(df) {
+   # Check if unique_id column already exists
+   if (!"unique_id" %in% names(df)) {
+      # If not, create it
+      df = df %>%
+         # Arrange by location to ensure consistency
+         arrange(location) %>%
+         # Create an abbreviation for the location and remove special characters
+         mutate(location_abbr = gsub("[^[:alnum:]]", "", 
+                                     abbreviate(location, minlength = 4))) %>%
+         # Create a group index
+         group_by(location_abbr) %>%
+         mutate(id_num = row_number()) %>%
+         # Combine abbreviation and index into unique_id
+         mutate(unique_id = paste(location_abbr, 
+                                  sprintf("%04d", id_num), sep = "_")) %>%
+         # Remove temporary columns
+         select(-location_abbr,-id_num)
+   }
+   return(df)
+}
+```
+
+```{r}
+# Call the function
+master_data_updated = add_unique_id(master_data) %>%
+   # bringing unique id to front
+   select(unique_id, name, location, everything())
+master_data_updated
+```
+
+## Re-write Master Data with New Information
+
+```{r}
+master_data_updated %>%
+   write_csv(file = "master_data.csv",
+             na = "")
+```
+
+## Which cities are most represented?
+
+```{r}
+# Create a sorted bar plot for 'location'
+master_data_updated %>%
+  count(location) %>%
+  ggplot(aes(reorder(location, n), n, fill = location)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = n), hjust = 1.4) +
+  coord_flip() +
+  theme_minimal() + 
+  labs(x = "Location", 
+       y = "Count", 
+       title = "Number of Places by Location", 
+       fill = "Location") +
+   guides(fill = FALSE)
+```
+
+## What kind of places are most represented?
+
+```{r}
+# Create a sorted bar plot for 'type'
+master_data_updated %>%
+  count(type) %>%
+  ggplot(aes(reorder(type, n), n, fill = type)) +
+  geom_bar(stat = "identity") +
+  #geom_text(aes(label = n), hjust = -0.3) +
+  coord_flip() +
+  theme_minimal() +
+  guides(fill = FALSE) +
+  labs(x = "Type", 
+       y = "Count", 
+       title = "Number of Places by Type")
+```
+
+## In summary...
+
+```{r}
+master_data_updated %>%
+   ggplot(aes(x = type)) +
+   geom_bar(aes(fill = type)) +
+   facet_wrap( ~ location, scales = "free_y") +
+   labs(x = "Type",
+        y = "Count",
+        title = "Distribution of Place Types in Each Location (Non-Uniform Y-Axis Scales)",
+        fill = "Type") +
+   theme_bw() +
+   theme(axis.text.x = element_text(
+      angle = 90,
+      vjust = 0.5,
+      hjust = 1
+   ),
+   legend.position = "none")
+```
