@@ -212,7 +212,6 @@ library(googleway)
 set_key(key = api_key)
 ```
 
-
 Function to get city, state and country from address.
 
 ```{r}
@@ -250,7 +249,6 @@ get_city_state_country = function(address) {
     return(list(city = city, state = state, country = country))
 }
 ```
-
 
 Function to get information from Google Maps, given place name and area.
 
