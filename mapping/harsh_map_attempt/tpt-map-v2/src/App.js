@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import MapGL, { Marker, Popup } from 'react-map-gl';
 import data from './master_data.json';
 
-const MAPBOX_TOKEN = 'insert_key'; // Replace with your Mapbox token
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiaGFyc2gxNyIsImEiOiJjbGt1b2lrZW4wNTBmM2twaXJreHhjOTIxIn0.A_Cl-PJeK5lr6rDg8bY7lw'; // Replace with your Mapbox token
 
 function App() {
   const [viewport, setViewport] = useState({
