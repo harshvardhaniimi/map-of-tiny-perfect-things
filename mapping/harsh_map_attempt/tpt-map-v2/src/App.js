@@ -22,7 +22,7 @@ function App() {
         width="100%"
         height="100%"
         mapStyle="mapbox://styles/mapbox/streets-v11"
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        mapboxAccessToken={MAPBOX_TOKEN}
         onViewportChange={(viewport) => setViewport(viewport)}
       >
         {data.map((location, index) => (
