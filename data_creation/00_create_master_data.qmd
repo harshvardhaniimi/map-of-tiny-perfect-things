@@ -233,8 +233,8 @@ save_to_files = function(df) {
   }
   
   # write to csv and json files
-  write.csv(df, file = "master_data/master_data.csv", row.names = FALSE)
-  jsonlite::write_json(df, path = "master_data/master_data.json")
+  write.csv(df, file = "./master_data/master_data.csv", row.names = FALSE)
+  jsonlite::write_json(df, path = "./master_data/master_data.json")
 }
 
 
