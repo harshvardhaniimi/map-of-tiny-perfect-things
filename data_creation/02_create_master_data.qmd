@@ -1,0 +1,279 @@
+---
+title: "00_create_master_data"
+author: Harshvardhan
+---
+
+## Purpose
+
+This notebook reads in all records from Google Sheets - Master Data. Then, it makes the queries using Google Place/Maps API and puts them in another sheet on the Google Sheet.
+
+## Loading Packages
+
+First step is to load the packages.
+
+```{r}
+# install and load necessary packages
+# install.packages(c("googledrive", "googlesheets4"))
+library(googledrive)
+library(googlesheets4)
+library(tidyverse)
+```
+
+## Getting the sheet
+
+```{r}
+# define the URL of your Google Sheet
+url = "https://docs.google.com/spreadsheets/d/1UC2EvXsafSjDkNNZSnC8eB_FPwyy1KenFfhUveoKEoc/edit#gid=1196848595"
+```
+
+```{r}
+# get the ID of the Google Sheet from the URL
+# capturing the sheet id to use with drive_get()
+sheet_id = sub(".*/d/(.*)/.*", "\\1", url)
+
+# get info about the Google Sheet
+sheet_info = drive_get(id = sheet_id)
+
+sheet_info
+```
+
+## Getting Google Maps API working
+
+```{r}
+library(httr)
+library(jsonlite)
+library(purrr)
+```
+
+```{r}
+# API key function
+read_api_key = function(file_path) {
+   # returning the first line of the text file at the file_path
+   return(readLines(file_path)[1])
+}
+```
+
+```{r}
+# API Key (Harsh's API Key)
+api_key = read_api_key("google_places_api_key.txt")
+
+# load googleway
+library(googleway)
+set_key(key = api_key)
+```
+
+## Get data from Google API
+
+```{r}
+get_place_info = function(data) {
+   name = data$name
+   location = data$location
+   city = data$city
+   state = data$state
+   country = data$country
+   
+   if (is.na(location)) {
+      print(paste0("Location name not provided for place ", name))
+      return(
+         tibble(
+            name = name,
+            address = NA,
+            rating = NA,
+            user_ratings_total = NA,
+            google_maps_link = NA,
+            lat = NA,
+            lng = NA,
+            opening_hours = NA,
+            type = NA
+         )
+      )
+   }
+   
+   # Construct the search query
+   query = paste(name, location, city, state, country, sep = " ")
+   
+   # Perform a Google Places search
+   result_search = google_places(search_string = query)
+   
+   if (length(result_search$results) == 0) {
+      print(paste0("Couldn't find place ", name, " at ", location))
+      
+      return(
+         tibble(
+            name = name,
+            address = NA,
+            rating = NA,
+            user_ratings_total = NA,
+            google_maps_link = NA,
+            lat = NA,
+            lng = NA,
+            opening_hours = NA,
+            type = NA
+         )
+      )
+   } else {
+      # Extract the information
+      print(paste0("Working on ", name, " ", location))
+      result_details = result_search$results[1,]
+      place_id = result_details$place_id
+      
+      address = ifelse(
+         !is.null(result_details$formatted_address),
+         result_details$formatted_address,
+         NA
+      )
+      
+      type = ifelse(!is.null(result_search$results$types[[1]][1]),
+                    result_search$results$types[[1]][1],
+                    NA)
+      
+      # Get opening hours and more details
+      result_details_2 = google_place_details(place_id = place_id)
+      
+      # opening hours may not exist
+      # case in point: Cheeseboard, SF Bay Area
+      if (!is.null(result_details_2$result$current_opening_hours$weekday_text)) {
+         opening_hours = result_details_2$result$current_opening_hours$weekday_text %>%
+            glue::glue_collapse(sep = "\n ")
+      } else {
+         opening_hours = NA
+      }
+      
+      rating = ifelse(!is.null(result_details$rating),
+                      result_details$rating,
+                      NA)
+      user_ratings_total = ifelse(
+         !is.null(result_details$user_ratings_total),
+         result_details$user_ratings_total,
+         NA
+      )
+      
+      google_maps_link = paste0(
+         "https://www.google.com/maps/search/?api=1&query=",
+         URLencode(address),
+         "&query_place_id=",
+         place_id
+      )
+      
+      lat = result_details$geometry$location$lat
+      lng = result_details$geometry$location$lng
+      
+      return(
+         tibble(
+            name = name,
+            address = address,
+            rating = rating,
+            user_ratings_total = user_ratings_total,
+            google_maps_link = google_maps_link,
+            lat = lat,
+            lng = lng,
+            opening_hours = opening_hours,
+            type = type
+         )
+      )
+   }
+}
+```
+
+## Fetch data from google sheets
+
+```{r}
+# Read the "Master Data - Project" sheet from the Google Sheet
+master_data = read_sheet(sheet_info, range = "Master Data - Project") %>% 
+   janitor::clean_names()
+master_data
+```
+
+## Query Google Maps for the information
+
+```{r}
+for (i in 1:nrow(master_data))
+{
+   place = list(name = master_data$name[i],
+             location = master_data$location[i],
+             city = master_data$city[i],
+             state = master_data$state[i],
+             country = master_data$country[i])
+   new_info = get_place_info(place)
+   
+   if (i == 1)
+      df_maps = new_info
+   else
+      df_maps = rbind(df_maps, new_info)
+}
+```
+
+```{r}
+df_maps
+```
+
+## Merge Maps Data to Google Sheet Data
+
+```{r}
+df_all = left_join(master_data, df_maps)
+df_all
+```
+
+## Upload data to Google Sheets
+
+```{r}
+# save to Google Sheets
+write_sheet(data = df_all, 
+            ss = sheet_info, 
+            sheet = "Master Data - Google")
+```
+
+## Save as CSV and Sheets
+
+```{r}
+save_to_files = function(df) {
+  # check if directory exists, if not create it
+  if (!dir.exists("master_data")) {
+    dir.create("master_data")
+  }
+  
+  # write to csv and json files
+  write.csv(df, file = "./master_data/master_data.csv", row.names = FALSE)
+  jsonlite::write_json(df, path = "./master_data/master_data.json")
+}
+
+
+save_to_files(df_all)
+```
+
+## Appendix
+
+Sometimes code will fail for weird reasons only for a few cases. In that case, the follwing chunks will run the code for those places for which "address" specifically doesn't exist. It could be any other column as well, I'm using "address" here for checking which data remained unfetched.
+
+In this case, I didn't realise some places do not have "open hours" which caused this error.
+
+```{r}
+df_remaining = master_data[is.na(df_all$address),]
+df_remaining
+```
+
+```{r}
+for (i in 1:nrow(df_remaining))
+{
+   place = list(name = df_remaining$name[i],
+             location = df_remaining$location[i],
+             city = df_remaining$city[i],
+             state = df_remaining$state[i],
+             country = df_remaining$country[i])
+   new_info = get_place_info(place)
+   
+   if (i == 1)
+      df_maps_new = new_info
+   else
+      df_maps_new = rbind(df_maps_new, new_info)
+}
+```
+
+```{r}
+df_maps_new
+```
+
+```{r}
+df_maps = rbind(df_maps, df_maps_new)
+df_maps
+```
