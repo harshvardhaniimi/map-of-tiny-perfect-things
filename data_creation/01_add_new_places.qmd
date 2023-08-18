@@ -1,11 +1,20 @@
 ---
-title: "00_create_master_data"
-author: Harshvardhan
+title: "01_add_new_places"
+author: "Harshvardhan"
+format: html
+editor: visual
 ---
 
 ## Purpose
 
-This notebook reads in all records from Google Sheets - Master Data. Then, it makes the queries using Google Place/Maps API and puts them in another sheet on the Google Sheet.
+In addition to the places that Dea and I added to the map, there will be crowdsourced entries along with entries from us that have to come through a streamlined route. This notebook takes the entries from the [Google Forms](https://docs.google.com/forms/d/1o0yYoC79gZ4V3tRanV9BpnLpBoRLFnJt65O5xc0_xuQ/edit).
+
+Steps:
+1. Read the new Google Sheet associated with the responses of the Google Form
+2. Create a new DataFrame for the places
+3. Remove Duplicates - Create a function to compare entries in the new DataFrame with the old one to remove duplicates.
+4. Query Google Maps for the Information - Use the existing `get_place_info` function on the non-duplicate DataFrame.
+5. Merge the Maps Data with existing data
 
 ## Loading Packages
 
@@ -19,23 +28,52 @@ library(googlesheets4)
 library(tidyverse)
 ```
 
-## Getting the sheet
+## Read in Google Forms responses
 
 ```{r}
-# define the URL of your Google Sheet
-url = "https://docs.google.com/spreadsheets/d/1UC2EvXsafSjDkNNZSnC8eB_FPwyy1KenFfhUveoKEoc/edit#gid=1196848595"
+# Define the URL of the new Google Sheet
+new_url = "https://docs.google.com/spreadsheets/d/1stS_awlA_C5fIaSi0HUSAEtNejs0abW2ik2RvUqeLuU/edit?resourcekey#gid=1755512290"
+
+# Get the ID of the Google Sheet from the URL
+new_sheet_id = sub(".*/d/(.*)/.*", "\\1", new_url)
+
+# Get info about the new Google Sheet
+new_sheet_info = drive_get(id = new_sheet_id)
+
+# Read the specific sheet from the new Google Sheet
+new_data = read_sheet(new_sheet_info) %>% 
+   janitor::clean_names()
 ```
+
+
+## Remove Duplicates
+
+Jugglery to remove duplicates. Basically a function.
 
 ```{r}
-# get the ID of the Google Sheet from the URL
-# capturing the sheet id to use with drive_get()
-sheet_id = sub(".*/d/(.*)/.*", "\\1", url)
+remove_duplicates = function(new_df, old_df) {
+   distinct_df = anti_join(
+      new_df,
+      old_df,
+      by = c(
+         "name_of_the_place" = "name",
+         "location",
+         "city",
+         "state",
+         "country"
+      )
+   ) %>% 
+      rename("name" = "name_of_the_place")
+   return(distinct_df)
+}
 
-# get info about the Google Sheet
-sheet_info = drive_get(id = sheet_id)
+# Read in master data
+master_data = read_csv("./master_data/master_data.csv")
 
-sheet_info
+# Apply the function to get non-duplicate entries
+non_duplicate_data = remove_duplicates(new_data, master_data)
 ```
+
 
 ## Getting Google Maps API working
 
@@ -175,61 +213,60 @@ get_place_info = function(data) {
 }
 ```
 
-## Fetch data from google sheets
+
+## Query Google Maps for Information
+
 
 ```{r}
-# Read the "Master Data - Project" sheet from the Google Sheet
-master_data = read_sheet(sheet_info, range = "Master Data - Project") %>% 
-   janitor::clean_names()
-master_data
-```
-
-## Query Google Maps for the information
-
-```{r}
-for (i in 1:nrow(master_data))
+for (i in 1:nrow(non_duplicate_data))
 {
-   place = list(name = master_data$name[i],
-             location = master_data$location[i],
-             city = master_data$city[i],
-             state = master_data$state[i],
-             country = master_data$country[i])
+   place = list(name = non_duplicate_data$name[i],
+             location = non_duplicate_data$location[i],
+             city = non_duplicate_data$city[i],
+             state = non_duplicate_data$state[i],
+             country = non_duplicate_data$country[i])
    new_info = get_place_info(place)
    
    if (i == 1)
-      df_maps = new_info
+      new_df_maps = new_info
    else
-      df_maps = rbind(df_maps, new_info)
+      new_df_maps = rbind(new_df_maps, new_info)
 }
 ```
 
-```{r}
-df_maps
-```
 
-## Merge Maps Data to Google Sheet Data
+## Merge with maps data
 
 ```{r}
-df_all = left_join(master_data, df_maps)
-df_all
+new_places = left_join(non_duplicate_data, new_df_maps)
+new_places
 ```
 
-## Upload data to Google Sheets
+## Removing Timestamp and adding creator's rec
+
+Google Forms' timestamp needs to be removed. Also, since these are crowd sourced entries, they will not have Creator's rec. (Dea and I have to decide how we could continue having creator's rec.)
 
 ```{r}
-# save to Google Sheets
-write_sheet(data = df_all, 
-            ss = sheet_info, 
-            sheet = "Master Data - Google")
+new_places = new_places %>% 
+   select(-timestamp) %>% 
+   mutate(creators_rec = NA)
 ```
 
-## Save as CSV and Sheets
+
+## Add new places to Maps and add to master_data
+
+Note that, here I'm NOT putting them to Google sheets because it will cause mismatch between what we have city-wise and master data sheet. When needed, we can always use CSV and JSON for exploration.
+
+```{r}
+df_all = rbind(master_data, new_places)
+```
+
 
 ```{r}
 save_to_files = function(df) {
   # check if directory exists, if not create it
-  if (!dir.exists("master_data")) {
-    dir.create("master_data")
+  if (!dir.exists("./master_data")) {
+    dir.create("./master_data")
   }
   
   # write to csv and json files
@@ -241,39 +278,13 @@ save_to_files = function(df) {
 save_to_files(df_all)
 ```
 
-## Appendix
 
-Sometimes code will fail for weird reasons only for a few cases. In that case, the follwing chunks will run the code for those places for which "address" specifically doesn't exist. It could be any other column as well, I'm using "address" here for checking which data remained unfetched.
 
-In this case, I didn't realise some places do not have "open hours" which caused this error.
 
-```{r}
-df_remaining = master_data[is.na(df_all$address),]
-df_remaining
-```
 
-```{r}
-for (i in 1:nrow(df_remaining))
-{
-   place = list(name = df_remaining$name[i],
-             location = df_remaining$location[i],
-             city = df_remaining$city[i],
-             state = df_remaining$state[i],
-             country = df_remaining$country[i])
-   new_info = get_place_info(place)
-   
-   if (i == 1)
-      df_maps_new = new_info
-   else
-      df_maps_new = rbind(df_maps_new, new_info)
-}
-```
 
-```{r}
-df_maps_new
-```
 
-```{r}
-df_maps = rbind(df_maps, df_maps_new)
-df_maps
-```
+
+
+
+
