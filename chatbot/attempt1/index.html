@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <form id="chat-form">
+    <input type="text" id="user-input" placeholder="Enter your message" required />
+    <button type="submit">Submit</button>
+  </form>
+  <div id="response-box"></div>
+
+  <script>
+    $('#chat-form').on('submit', function(e) {
+      e.preventDefault(); // Prevent default form submission
+      var userInput = $('#user-input').val();
+      $.post('/chat', { message: userInput }, function(response) {
+        $('#response-box').text(response); // Display the response
+      });
+    });
+  </script>
+</body>
+</html>
