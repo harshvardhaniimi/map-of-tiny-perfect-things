@@ -4,3 +4,4 @@
 .Ruserdata
 google_places_api_key.txt
 mapping/harsh_map_attempt/mapbox_key.txt
+mapping/node_modules/.cache
