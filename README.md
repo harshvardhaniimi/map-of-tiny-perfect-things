@@ -14,6 +14,10 @@ This map captures some of them from our (and now your) own experience. No AI, no
 
 Share away!
 
+### Adding New Places
+
+- Use Google Form to add new places: [Link](https://docs.google.com/forms/d/e/1FAIpQLSf3zX9ItXAS6JM4cO9JdrQFSpNtew-AETsG88M7jPOhexa-Dg/viewform)
+
 ### Github Files Organisation
 
 Here are some notes on how the files are organised here.
