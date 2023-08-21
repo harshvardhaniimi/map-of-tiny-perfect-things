@@ -42,8 +42,11 @@ def get_cities_and_countries():
 city_names = get_cities_and_countries()
 initial_message = prompt_message.replace("{name of cities with country}", city_names)
 
+# Loading the data
 loader = CSVLoader("../../master_data/master_data.csv")
-places_docs = loader.load_and_split()
+places_docs = loader.load_and_split() #default is 1000 tokens
+
+# initailise an embeddings model
 embeddings = OpenAIEmbeddings()
 txt_docsearch = Chroma.from_documents(places_docs, embeddings, persist_directory="places_persist")
 llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.1)
