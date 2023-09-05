@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket Client</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        #chat-container {
+            overflow-y: scroll;
+            height: 80%;
+            width: 100%;
+            padding: 10px;
+            background-color: #fafafa;
+        }
+
+        .message {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .text-box {
+            display: inline-block;
+        }
+
+        .user-message .text-box {
+            text-align: right;
+        }
+
+        .gpt-message .text-box {
+            text-align: left;
+        }
+
+        #input-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #f3f3f3;
+        }
+
+        #messageInput {
+            width: 80%;
+            font-size: 24px;
+            background-color: blanchedalmond;
+        }
+
+        #sendButton {
+            font-size: 24px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+</head>
+
+<body>
+    <div id="chat-container"></div>
+    <div id="input-container">
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button id="sendButton">Send ⏎</button>
+    </div>
+    <script>
+        const md = window.markdownit();
+        const socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
+
+        // Handle messages from server
+        socket.on('reply', function (message) {
+            const chatContainer = document.getElementById("chat-container");
+            const messageDiv = document.createElement("div");
+            messageDiv.className = "message gpt-message";
+            messageDiv.innerHTML = '<div class="text-box">' + md.render(message) + '</div>';
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
+
+        const sendButton = document.getElementById("sendButton");
+        const messageInput = document.getElementById("messageInput");
+
+        // Send message to server
+        sendButton.addEventListener("click", function () {
+            const message = messageInput.value;
+            socket.emit('message', message);
+            messageInput.value = "";
+
+            const chatContainer = document.getElementById("chat-container");
+            const messageDiv = document.createElement("div");
+            messageDiv.className = "message user-message";
+            messageDiv.innerHTML = '<div class="text-box">' + message + '</div>';
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
+
+        // Send message with Enter key
+        messageInput.addEventListener("keyup", function (event) {
+            if (event.key === "Enter") {
+                const message = messageInput.value;
+                socket.emit('message', message);
+                messageInput.value = "";
+
+                const chatContainer = document.getElementById("chat-container");
+                const messageDiv = document.createElement("div");
+                messageDiv.className = "message user-message";
+                messageDiv.innerHTML = '<div class="text-box">' + message + '</div>';
+                chatContainer.appendChild(messageDiv);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+        });
+    </script>
+</body>
+
+</html>
