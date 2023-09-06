@@ -4,3 +4,4 @@ langchain
 Flask
 Flask-SocketIO
 gunicorn
+openai
