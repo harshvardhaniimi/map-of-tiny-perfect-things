@@ -45,7 +45,7 @@ How can I help you?"
 
 def get_cities_and_countries():
     # Read the master_data CSV file
-    file_path = os.path.join(BASE_DIR, 'master_data', 'master_data.csv')
+    file_path = os.path.join(BASE_DIR, "..", 'master_data', 'master_data.csv')
     df = pd.read_csv(file_path)
 
     # Extract unique city, state, and country combinations
@@ -61,7 +61,7 @@ city_names = get_cities_and_countries()
 initial_message = prompt_message.replace("{name of cities with country}", city_names)
 
 # Loading the data
-loader = CSVLoader(os.path.join(BASE_DIR, 'master_data', 'master_data.csv'))
+loader = CSVLoader(os.path.join(BASE_DIR, "..", 'master_data', 'master_data.csv'))
 places_docs = loader.load_and_split() #default is 1000 tokens
 
 # initailise an embeddings model
