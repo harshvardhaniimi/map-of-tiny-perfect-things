@@ -6,16 +6,35 @@ from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
+from langchain.memory import ConversationBufferMemory
 import os
 import pandas as pd
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 from flask import Flask, render_template, request, session
-
+from celery import Celery
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY") # if necessary, we can have a fallback but not advised for production environment
 socketio = SocketIO(app, cors_allowed_origins="*")
+
+# Add celery configuration for task queue
+# API calls are the bottleneck for the chatbot, so we need to use a task queue to handle the API calls
+def make_celery(app):
+    celery = Celery(
+        app.import_name,
+        backend=app.config['CELERY_RESULT_BACKEND'],
+        broker=app.config['CELERY_BROKER_URL']
+    )
+    celery.conf.update(app.config)
+    return celery
+
+app.config.update(
+    CELERY_BROKER_URL=os.environ.get('REDIS_URL', 'redis://localhost:6379'),
+    CELERY_RESULT_BACKEND=os.environ.get('REDIS_URL', 'redis://localhost:6379')
+)
+
+celery = make_celery(app)
 
 @app.route('/')
 def index():
@@ -70,50 +89,50 @@ places_docs = loader.load_and_split() #default is 1000 tokens
 embeddings = OpenAIEmbeddings()
 txt_docsearch = Chroma.from_documents(places_docs, embeddings, persist_directory="places_persist")
 llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.8)
-qa = ConversationalRetrievalChain.from_llm(llm, retriever=txt_docsearch.as_retriever())
-
-chat_histories = {}
+memory = ConversationBufferMemory(memory_key = "chat_history", return_messages = True)
+qa = ConversationalRetrievalChain.from_llm(llm, retriever=txt_docsearch.as_retriever(), memory = memory)
 
 @socketio.on('connect')
 def handle_connect():
-    # print logs if new connection is made
     print(f"New connection made {request.sid}")
-    
-    # Check if chat_history already exists in the session
-    if 'chat_history' not in session:
-        session['chat_history'] = []
+    response = qa({"question": initial_message})
+    emit('reply', response["answer"])
 
-    # If the chat history is empty, send the initial message
-    if not session['chat_history']:
-        response = qa({"question": initial_message, "chat_history": session['chat_history']})
-        session['chat_history'].append((initial_message, response["answer"]))
-        emit('reply', response["answer"])
+@celery.task(bind = True, name = "make_api_call")
+def make_api_call(self, message):
+    try:
+        response = qa({"question": message})
+        return response["answer"]
+    except Exception as e:
+        return "<b>Error:</b> " + str(e)
 
 @socketio.on('message')
 def handle_message(message):
     try:
-        # Get the current chat history from session
-        chat_history = session.get('chat_history', [])
+        task = make_api_call.apply_async(args=[message])
         
-        # Update the chat history with the new message
-        chat_history.append(("You", message))
+        # Store task.id in session or database to later retrieve result
+        session['task_id'] = task.id
         
-        # Get a response from the model using the updated chat history
-        response = qa({"question": message, "chat_history": chat_history})
-        answer = response["answer"]
-        
-        # Update the chat history with the model's response
-        chat_history.append(("Ava", answer))
-        
-        # Save the updated chat history back to the session
-        session['chat_history'] = chat_history
-        
-        # Send the model's response to the client
-        emit('reply', answer)
+        # Immediately reply to user that the request is being processed
+        emit('reply', "Processing your request...")
     except Exception as e:
         emit('reply', "<b>Error:</b> " + str(e))
 
-
+@socketio.on('get_result')
+def get_result():
+    task_id = session.get('task_id')
+    task = make_api_call.AsyncResult(task_id)
+    if task.state == 'PENDING':
+        emit('result_status', 'Task is still processing...')
+    elif task.state != 'FAILURE':
+        result = task.result
+        emit('reply', result)
+        session.pop('task_id', None)
+    else:
+        # something went wrong in the background job
+        emit('reply', 'There was an error processing your request.')
+        session.pop('task_id', None)
 
 if __name__ == "__main__":
     socketio.run(app)
