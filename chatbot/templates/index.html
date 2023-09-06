@@ -74,6 +74,22 @@
             messageDiv.innerHTML = '<div class="text-box">' + md.render(message) + '</div>';
             chatContainer.appendChild(messageDiv);
             chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // If the response is "Processing your request...", start polling for results
+            if (message === "Processing your request...") {
+                taskPollingInterval = setInterval(function() {
+                    socket.emit('get_result');
+                }, 2000); // Poll every 2 seconds
+            }
+        });
+
+        // Handle task completion status
+        socket.on('result_status', function (status) {
+            // If the task is still processing, just wait
+            // Otherwise, stop the polling
+            if (status !== 'Task is still processing...') {
+                clearInterval(taskPollingInterval);
+            }
         });
 
         const sendButton = document.getElementById("sendButton");

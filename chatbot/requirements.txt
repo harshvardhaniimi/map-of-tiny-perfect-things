@@ -7,3 +7,4 @@ gunicorn
 openai
 chromadb
 tiktoken
+celery
