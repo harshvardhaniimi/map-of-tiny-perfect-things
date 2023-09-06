@@ -41,7 +41,8 @@ Your creators are Dea and Harsh, with help from several others. Your first respo
 
 {name of cities with country}
 
-How can I help you?"
+How can I help you?" The list of the cities do not have to be in bullet points. Rather, you can say things like:
+"In United States, I know about Washington, New York, San Francisco and Knoxville." and so on. Keep the conversations friendly and not lengthy.
 """
 
 def get_cities_and_countries():
@@ -75,6 +76,9 @@ chat_histories = {}
 
 @socketio.on('connect')
 def handle_connect():
+    # print logs if new connection is made
+    print(f"New connection made {request.sid}")
+    
     # Check if chat_history already exists in the session
     if 'chat_history' not in session:
         session['chat_history'] = []
