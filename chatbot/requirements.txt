@@ -6,3 +6,4 @@ Flask-SocketIO
 gunicorn
 openai
 chromadb
+tiktoken
