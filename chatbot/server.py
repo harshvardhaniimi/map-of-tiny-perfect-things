@@ -10,10 +10,11 @@ import os
 import pandas as pd
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY") # if necessary, we can have a fallback but not advised for production environment
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 @app.route('/')
@@ -74,20 +75,20 @@ chat_histories = {}
 
 @socketio.on('connect')
 def handle_connect():
-    # Create an individual chat history for each client
-    chat_histories[request.sid] = []
+    # Check if chat_history already exists in the session
+    if 'chat_history' not in session:
+        session['chat_history'] = []
 
-    # Initialize a new chat session with the initial prompt
-    response = qa({"question": initial_message, "chat_history": chat_histories[request.sid]})
-    chat_histories[request.sid].append((initial_message, response["answer"]))
-
-    # Send the first response
-    emit('reply', response["answer"])
+    # If the chat history is empty, send the initial message
+    if not session['chat_history']:
+        response = qa({"question": initial_message, "chat_history": session['chat_history']})
+        session['chat_history'].append((initial_message, response["answer"]))
+        emit('reply', response["answer"])
 
 @socketio.on('message')
 def handle_message(message):
     try:
-        chat_history = chat_histories[request.sid]
+        chat_history = session.get('chat_history', [])
         
         # Respond to predefined commands
         if message == "ping":
@@ -99,6 +100,8 @@ def handle_message(message):
             answer = response["answer"]
             chat_history.append((message, answer))
         
+        # Update the chat history in session
+        session['chat_history'] = chat_history
         emit('reply', answer)
     except Exception as e:
         emit('reply', "<b>Error:</b> " + str(e))
