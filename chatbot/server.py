@@ -134,5 +134,6 @@ def get_result():
         emit('reply', 'There was an error processing your request.')
         session.pop('task_id', None)
 
-if __name__ == "__main__":
-    socketio.run(app)
+if __name__ == '__main__':
+    socketio.run(app, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+    
