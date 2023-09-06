@@ -20,11 +20,12 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 def index():
     return render_template('index.html')
 
-def read_key_from_file(file_path):
-    with open(file_path, 'r') as f:
-        return f.read()
+# since Heroku has the key in the environment variable, we don't need to read it from a file
+# def read_key_from_file(file_path):
+#     with open(file_path, 'r') as f:
+#         return f.read()
 
-os.environ["OPENAI_API_KEY"] = read_key_from_file("../openai_key.txt")
+# os.environ["OPENAI_API_KEY"] = read_key_from_file("../openai_key.txt")
 
 prompt_message = """
 For this task, you are a helpful chatbot named Ava, Wall-E's friend. You are designed to be helpful in finding interesting places to eat, have a coffee, and hangout. Specifically, you are a chatbot who retrieves information from the corresponding database and respond to the user about the places you have.
