@@ -88,23 +88,27 @@ def handle_connect():
 @socketio.on('message')
 def handle_message(message):
     try:
+        # Get the current chat history from session
         chat_history = session.get('chat_history', [])
         
-        # Respond to predefined commands
-        if message == "ping":
-            answer = "pong"
-        elif message == "I am Pablo":
-            answer = "Really? You are so cool you are like the coolest person ever born and humble too. And handsome"
-        else:
-            response = qa({"question": message, "chat_history": chat_history})
-            answer = response["answer"]
-            chat_history.append((message, answer))
+        # Update the chat history with the new message
+        chat_history.append(("You", message))
         
-        # Update the chat history in session
+        # Get a response from the model using the updated chat history
+        response = qa({"question": message, "chat_history": chat_history})
+        answer = response["answer"]
+        
+        # Update the chat history with the model's response
+        chat_history.append(("Ava", answer))
+        
+        # Save the updated chat history back to the session
         session['chat_history'] = chat_history
+        
+        # Send the model's response to the client
         emit('reply', answer)
     except Exception as e:
         emit('reply', "<b>Error:</b> " + str(e))
+
 
 
 if __name__ == "__main__":
