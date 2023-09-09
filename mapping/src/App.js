@@ -138,7 +138,7 @@ function App() {
 }
 
 
-<div className="d-flex justify-content-end p-2 bd-highlight">
+<div className="d-flex justify-content-end p-2 bd-highlight" style={{ marginTop: '50px' }}>
         {PopupOpen && (
           <MDBCard style={{ width: '350px' }}>
           <MDBCardBody className = "btn-outline-primary">
