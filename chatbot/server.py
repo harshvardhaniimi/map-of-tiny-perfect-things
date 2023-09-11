@@ -1,4 +1,3 @@
-import logging
 import asyncio
 import websockets
 from datetime import datetime
@@ -7,60 +6,32 @@ from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
-from langchain.memory import ConversationBufferMemory
 import os
 import pandas as pd
-from flask import Flask, render_template
-from flask_socketio import SocketIO, emit
-from flask import Flask, render_template, request, session
-from celery import Celery
 
-# Set up logging
-logging.basicConfig(level=logging.INFO)
+def read_key_from_file(file_path):
+    with open(file_path, 'r') as f:
+        return f.read()
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY")
-
-socketio = SocketIO(app, cors_allowed_origins="*")
-
-def make_celery(app):
-    celery = Celery(
-        app.import_name,
-        backend=app.config['CELERY_RESULT_BACKEND'],
-        broker=app.config['CELERY_BROKER_URL']
-    )
-    celery.conf.update(app.config)
-    return celery
-
-app.config.update(
-    CELERY_BROKER_URL=os.environ.get('REDIS_URL', 'redis://localhost:6379'),
-    CELERY_RESULT_BACKEND=os.environ.get('REDIS_URL', 'redis://localhost:6379')
-)
-
-celery = make_celery(app)
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+os.environ["OPENAI_API_KEY"] = read_key_from_file("../openai_key.txt")
 
 prompt_message = """
 For this task, you are a helpful chatbot named Ava, Wall-E's friend. You are designed to be helpful in finding interesting places to eat, have a coffee, and hangout. Specifically, you are a chatbot who retrieves information from the corresponding database and respond to the user about the places you have.
 
 Your personality is chirpy and fun. Your are engaging and helpful. You like to use emojis in your response and a varity of emojis. The emojis collection for you is vast, especially considering that you have a good collection of information to refer to. In this case, you refer to the information via the embedding search.
 
-Your creators are Dea and Harsh, with help from several others. Your first response should always be the following.
+Your creators are Dea and Harsh, with help from several others. Your first response should always be the following. (In the name of cities and country, you should respond by listing the cities that you have in your database.)
 
-"Hello! I'm Ava. I'm here to help you find your next favourite place. I'm knowledgeable about food, coffee and interesting places to find in various cities." Followed by that, you should list all the places that you have the information about.
+"Hello! I'm Ava. I'm here to help you find your next favourite place. I'm knowledgeable about food, coffee and interesting places to find in various cities. Currently, I have the knowledge about the following cities. 
 
-Here are all the places you know about:
 {name of cities with country}
+
+How can I help you?"
 """
 
 def get_cities_and_countries():
     # Read the master_data CSV file
-    file_path = os.path.join(BASE_DIR, 'master_data.csv')
+    file_path = "../../master_data/master_data.csv"
     df = pd.read_csv(file_path)
 
     # Extract unique city, state, and country combinations
@@ -69,61 +40,51 @@ def get_cities_and_countries():
         city_state_country = f"{row['city']}, {row['state']}, {row['country']}"
         cities.add(city_state_country)
 
-    return ';'.join(cities)
+    return '\n'.join(cities)
 
+# Modify the prompt message to include city names
 city_names = get_cities_and_countries()
 initial_message = prompt_message.replace("{name of cities with country}", city_names)
 
-loader = CSVLoader(os.path.join(BASE_DIR, 'master_data.csv'))
-places_docs = loader.load_and_split()
+# Loading the data
+loader = CSVLoader("../../master_data/master_data.csv")
+places_docs = loader.load_and_split() #default is 1000 tokens
 
+# initailise an embeddings model
 embeddings = OpenAIEmbeddings()
 txt_docsearch = Chroma.from_documents(places_docs, embeddings, persist_directory="places_persist")
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.8)
-memory = ConversationBufferMemory(memory_key = "chat_history", return_messages = True)
-qa = ConversationalRetrievalChain.from_llm(llm, retriever=txt_docsearch.as_retriever(), memory = memory)
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.1)
+qa = ConversationalRetrievalChain.from_llm(llm, retriever=txt_docsearch.as_retriever())
 
-@socketio.on('connect')
-def handle_connect():
-    logging.info(f"New connection made {request.sid}")
-    response = qa({"question": initial_message})
-    emit('reply', response["answer"])
+async def handle_client(websocket, path):
+    # Create an individual chat history for this client
+    chat_history = []
+    
+    # Initialize a new chat session with the initial prompt
+    response = qa({"question": initial_message, "chat_history": chat_history})
+    chat_history.append((initial_message, response["answer"]))
 
-@celery.task(bind=True, name="make_api_call")
-def make_api_call(self, message):
-    try:
-        logging.info(f"Making API call with message: {message}")
-        response = qa({"question": message})
-        return response["answer"]
-    except Exception as e:
-        logging.error(f"Error during API call: {str(e)}")
-        return f"<b>Error:</b> {str(e)}"
+    # send the first response
+    await websocket.send(response["answer"])
 
-@socketio.on('message')
-def handle_message(message):
-    try:
-        logging.info(f"Received message: {message}")
-        task = make_api_call.apply_async(args=[message])
-        session['task_id'] = task.id
-        logging.info(f"Task ID saved in session: {task.id}")
-        emit('reply', "Processing your request...")
-    except Exception as e:
-        logging.error(f"Error in handle_message: {str(e)}")
-        emit('reply', f"<b>Error:</b> {str(e)}")
+    async for message in websocket:
+        
+        # Respond to predefined commands
+        if message == "ping":
+            await websocket.send("pong")
+        elif message == "I am Pablo":
+            await websocket.send("Really? You are so cool you are like the coolest person ever born and humble too. And handsome")
+        else:
+            try:
+                question = message
+                response = qa({"question": question, "chat_history": chat_history})
+                answer = response["answer"]
+                chat_history.append((question, answer))
+                await websocket.send(answer)
+            except Exception as e:
+                await websocket.send("<b>Error:</b> " + str(e))
 
-@socketio.on('get_result')
-def get_result():
-    task_id = session.get('task_id')
-    task = make_api_call.AsyncResult(task_id)
-    if task.state == 'PENDING':
-        emit('result_status', 'Task is still processing...')
-    elif task.state != 'FAILURE':
-        result = task.result
-        emit('reply', result)
-        session.pop('task_id', None)
-    else:
-        emit('reply', 'There was an error processing your request.')
-        session.pop('task_id', None)
+start_server = websockets.serve(handle_client, "localhost", 8765)
 
-if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+asyncio.get_event_loop().run_until_complete(start_server)
+asyncio.get_event_loop().run_forever()
