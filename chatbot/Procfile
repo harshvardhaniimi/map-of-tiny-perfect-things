@@ -1,2 +1,0 @@
-web: gunicorn server:app
-worker: celery --app=server.celery worker --loglevel=info
