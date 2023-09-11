@@ -31,7 +31,7 @@ How can I help you?"
 
 def get_cities_and_countries():
     # Read the master_data CSV file
-    file_path = "../../master_data/master_data.csv"
+    file_path = "../master_data/master_data.csv"
     df = pd.read_csv(file_path)
 
     # Extract unique city, state, and country combinations
@@ -47,14 +47,30 @@ city_names = get_cities_and_countries()
 initial_message = prompt_message.replace("{name of cities with country}", city_names)
 
 # Loading the data
-loader = CSVLoader("../../master_data/master_data.csv")
+loader = CSVLoader("../master_data/master_data.csv")
 places_docs = loader.load_and_split() #default is 1000 tokens
 
 # initailise an embeddings model
 embeddings = OpenAIEmbeddings()
 txt_docsearch = Chroma.from_documents(places_docs, embeddings, persist_directory="places_persist")
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.1)
+txt_docsearch.persist()
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.8)
 qa = ConversationalRetrievalChain.from_llm(llm, retriever=txt_docsearch.as_retriever())
+
+# query = "Hello Ava! Do you have any places recommendations in Knoxville?"
+# docs = txt_docsearch.similarity_search(query)
+
+# def query_refiner(conversation, query):
+#     response = openai.Completion.create(
+#     model="text-davinci-003",
+#     prompt=f"Given the following user query and conversation log, formulate a question that would be the most relevant to provide the user with an answer from a knowledge base.\n\nCONVERSATION LOG: \n{conversation}\n\nQuery: {query}\n\nRefined Query:",
+#     temperature=0.7,
+#     max_tokens=256,
+#     top_p=1,
+#     frequency_penalty=0,
+#     presence_penalty=0
+#     )
+#     return response['choices'][0]['text']
 
 async def handle_client(websocket, path):
     # Create an individual chat history for this client
