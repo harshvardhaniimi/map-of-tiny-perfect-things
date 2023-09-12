@@ -68,7 +68,7 @@ remove_duplicates = function(new_df, old_df) {
 }
 
 # Read in master data
-master_data = read_csv("./master_data/master_data.csv")
+master_data = read_csv("master_data/master_data.csv")
 
 # Apply the function to get non-duplicate entries
 non_duplicate_data = remove_duplicates(new_data, master_data)
@@ -99,7 +99,27 @@ library(googleway)
 set_key(key = api_key)
 ```
 
+
 ## Get data from Google API
+
+```{r}
+# Function to get Google Places ID using googleway
+get_google_place_id = function(name, location, city, state) {
+   # Construct the search query
+   query = paste(name, location, city, state, sep = " ")
+   print(query)
+   
+   # Query Google Maps using googleway
+   result = google_places(search_string = query, simplify = TRUE)
+   
+   # Extract the place_id if available
+   if (is.null(result$results$place_id[1]))
+      return(abbreviate(query))
+   else
+      return(unlist(result$results$place_id[1]))
+}
+```
+
 
 ```{r}
 get_place_info = function(data) {
@@ -205,7 +225,8 @@ get_place_info = function(data) {
             lat = lat,
             lng = lng,
             opening_hours = opening_hours,
-            type = type
+            type = type,
+            google_place_id = place_id
          )
       )
    }
@@ -259,13 +280,13 @@ df_all = rbind(master_data, new_places)
 ```{r}
 save_to_files = function(df) {
   # check if directory exists, if not create it
-  if (!dir.exists("./master_data")) {
-    dir.create("./master_data")
+  if (!dir.exists("/master_data")) {
+    dir.create("/master_data")
   }
   
   # write to csv and json files
-  write.csv(df, file = "./master_data/master_data.csv", row.names = FALSE)
-  jsonlite::write_json(df, path = "./master_data/master_data.json")
+  write.csv(df, file = "master_data/master_data.csv", row.names = FALSE)
+  jsonlite::write_json(df, path = "master_data/master_data.json")
 }
 
 
