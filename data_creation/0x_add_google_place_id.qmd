@@ -1,0 +1,81 @@
+---
+title: "0x_add_google_place_id"
+author: "Harshvardhan"
+format: html
+editor: visual
+---
+
+## Purpose
+
+This is a one time notebook (and thus identified by 0x). This is only executed once to get Google Places ID in our master data. It won't be used again and again.
+
+## Loading Master Data
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+master_data = read_csv("/Users/harshvardhan/Library/CloudStorage/Dropbox/Misc/Map of Tiny Perfect Things/map-of-tiny-perfect-things/master_data/master_data.csv")
+```
+
+## Getting Google Maps API working
+
+```{r}
+library(httr)
+library(jsonlite)
+library(purrr)
+```
+
+```{r}
+# API key function
+read_api_key = function(file_path) {
+   # returning the first line of the text file at the file_path
+   return(readLines(file_path)[1])
+}
+```
+
+```{r}
+# API Key (Harsh's API Key)
+api_key = read_api_key("google_places_api_key.txt")
+
+# load googleway
+library(googleway)
+set_key(key = api_key)
+```
+
+## Find Place ID
+
+```{r}
+# Function to get Google Places ID using googleway
+get_google_place_id = function(name, location, city, state) {
+   # Construct the search query
+   query = paste(name, location, city, state, sep = " ")
+   print(query)
+   
+   # Query Google Maps using googleway
+   result = google_places(search_string = query, simplify = TRUE)
+   
+   # Extract the place_id if available
+   if (is.null(result$results$place_id[1]))
+      return(abbreviate(query))
+   else
+      return(unlist(result$results$place_id[1]))
+}
+```
+
+## Add Place ID
+
+```{r}
+# Add Google Places ID to the dataframe
+master_data$google_place_id = mapply(get_google_place_id, 
+                                      master_data$name, master_data$location,
+                                      master_data$city, master_data$state)
+```
+
+## Save New Data Frame
+
+```{r}
+# Save the modified dataframe
+write.csv(master_data, file = "master_data/master_data.csv", row.names = FALSE)
+```
