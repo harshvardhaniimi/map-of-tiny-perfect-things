@@ -50,11 +50,20 @@ body {
     display: flex;
 }
 
-#left-section, #right-section {
-    flex: 2; /* 20% width */
-    padding: 15px;
-    background-color: #e9e9e9; /* Just to distinguish sections, can be removed or changed */
+#left-section {
+    width: 20%;
+    float: left;
+    height: 100vh;
+    background-color: #d1e7dd; /* Just for visual differentiation */
 }
+
+#right-section {
+    width: 20%;
+    float: left;
+    height: 100vh;
+    background-color: #d1c2e5; /* Just for visual differentiation */
+}
+
 
 #chat-section {
     flex: 6; /* 60% width */
