@@ -2,13 +2,15 @@
 <html>
 
 <head>
-    <title>WebSocket Client</title>
-    <link rel="stylesheet" href="/path/to/styles.css">
+    <title>Perfect Places Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 </head>
 
 <body>
+
+    <div id="main-container">
         <!-- Left section -->
         <div id="left-section">
             <h1>Map of Tiny Perfect Things</h1>
@@ -30,13 +32,8 @@
             <h3>Cities & Countries</h3>
             {{ cities|safe }}
         </div>
-
-
-    <div id="chat-container"></div>
-    <div id="input-container">
-        <input type="text" id="messageInput" placeholder="Type your message">
-        <button id="sendButton">Send ⏎</button>
     </div>
+
     <script>
         const md = window.markdownit();
         const socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
