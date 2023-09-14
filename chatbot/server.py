@@ -5,6 +5,7 @@ from datetime import datetime
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders.csv_loader import CSVLoader
+from langchain.document_loaders import DirectoryLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.memory import ConversationBufferMemory
@@ -74,7 +75,7 @@ def get_cities_and_countries():
 city_names = get_cities_and_countries()
 initial_message = prompt_message.replace("{name of cities with country}", city_names)
 
-loader = CSVLoader(os.path.join(BASE_DIR, 'master_data.csv'))
+loader = DirectoryLoader(os.path.join(BASE_DIR, 'city_files'), glob="**.txt")
 places_docs = loader.load_and_split()
 
 embeddings = OpenAIEmbeddings()
@@ -110,6 +111,11 @@ def handle_message(message):
     except Exception as e:
         logging.error(f"Error in handle_message: {str(e)}")
         emit('reply', f"<b>Error:</b> {str(e)}")
+
+@app.route('/')
+def index():
+    cities = get_cities_and_countries()
+    return render_template('index.html', cities=cities)
 
 @socketio.on('get_result')
 def get_result():
