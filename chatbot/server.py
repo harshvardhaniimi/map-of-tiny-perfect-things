@@ -40,10 +40,6 @@ app.config.update(
 
 celery = make_celery(app)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 prompt_message = """
@@ -53,10 +49,7 @@ Your personality is chirpy and fun. Your are engaging and helpful. You like to u
 
 Your creators are Dea and Harsh, with help from several others. Your first response should always be the following.
 
-"Hello! I'm Ava. I'm here to help you find your next favourite place. I'm knowledgeable about food, coffee and interesting places to find in various cities." Followed by that, you should list all the places that you have the information about.
-
-Here are all the places you know about:
-{name of cities with country}
+"Hello! I'm Ava. I'm here to help you find your next favourite place. I'm knowledgeable about food, coffee and interesting places to find in various cities."
 """
 
 def get_cities_and_countries():
@@ -75,7 +68,7 @@ def get_cities_and_countries():
 city_names = get_cities_and_countries()
 initial_message = prompt_message.replace("{name of cities with country}", city_names)
 
-loader = DirectoryLoader(os.path.join(BASE_DIR, 'city_files'), glob="**.txt")
+loader = DirectoryLoader(os.path.join(BASE_DIR, 'city_files'), glob="*.txt")
 places_docs = loader.load_and_split()
 
 embeddings = OpenAIEmbeddings()
