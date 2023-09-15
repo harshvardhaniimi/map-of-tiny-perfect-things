@@ -8,3 +8,4 @@ openai
 chromadb
 tiktoken
 celery
+unstructured
