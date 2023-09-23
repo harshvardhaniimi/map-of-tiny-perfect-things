@@ -7,3 +7,4 @@ mapping/harsh_map_attempt/mapbox_key.txt
 mapping/node_modules/.cache
 openai_key.txt
 chatbot/flask_secret_key.txt
+.env
