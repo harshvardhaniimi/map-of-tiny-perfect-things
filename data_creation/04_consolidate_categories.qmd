@@ -1,0 +1,69 @@
+---
+title: "04_consolidate_categories"
+author: "Harshvardhan"
+format: html
+editor: visual
+---
+
+## Purpose
+
+This notebook reads `master_data.csv` and consolidates Google Maps provided category into three types: "coffee", "food", and "others".
+
+```{r}
+library(tidyverse)
+```
+
+
+## Function to use for consolidation
+
+```{r}
+consolidate_types = function(df) {
+  # Create a new column "type2" based on the "type" column
+  df_new = df %>%
+    mutate(type2 = case_when(
+      type %in% c("cafe") ~ "coffee",
+      type %in% c("restaurant", "bakery", "bar", "meal_takeaway", "liquor_store", "meal_delivery") ~ "food",
+      TRUE ~ "others"
+    ))
+  return(df_new)
+}
+```
+
+## Read in Master Data
+
+```{r}
+df = read_csv("master_data/master_data.csv")
+df
+```
+
+## Add type2
+
+```{r}
+df = consolidate_types(df)
+```
+
+## Save new data
+
+```{r}
+save_to_files = function(df) {
+  # check if directory exists, if not create it
+  if (!dir.exists("/master_data")) {
+    dir.create("/master_data")
+  }
+  
+  # write to csv and json files
+  write.csv(df, file = "master_data/master_data.csv", row.names = FALSE)
+  jsonlite::write_json(df, path = "master_data/master_data.json")
+}
+
+
+save_to_files(df)
+```
+
+
+
+
+
+
+
+

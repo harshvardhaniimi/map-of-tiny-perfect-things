@@ -1,1460 +1,1460 @@
-"name","location","city","state","country","creators_rec","notes","address","rating","user_ratings_total","google_maps_link","lat","lng","opening_hours","type","google_place_id"
+"name","location","city","state","country","creators_rec","notes","address","rating","user_ratings_total","google_maps_link","lat","lng","opening_hours","type","google_place_id","type2"
 "Cafenated Coffee","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Cat-themed designs, great coffee and an outdoor patio good for reading: quality coffee spot!","2085 Vine St, Berkeley, CA 94709, United States",4.3,373,"https://www.google.com/maps/search/?api=1&query=2085%20Vine%20St,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJz4VbokB_hYAR95axLBoPul4",37.8803291,-122.2699044,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 6:00 PM
  Friday: 7:00 AM – 6:00 PM
  Saturday: 8:00 AM – 6:00 PM
- Sunday: 8:00 AM – 6:00 PM","cafe","ChIJz4VbokB_hYAR95axLBoPul4"
+ Sunday: 8:00 AM – 6:00 PM","cafe","ChIJz4VbokB_hYAR95axLBoPul4","coffee"
 "Victory Point","San Francisco Bay Area","Berkeley","California","United States of America","Yes","Good espresso in a board game cafe: pick a game from their wall and spend fun times at their playing events.","1797 Shattuck Ave. Ste A, Berkeley, CA 94709, United States",4.7,779,"https://www.google.com/maps/search/?api=1&query=1797%20Shattuck%20Ave.%20Ste%20A,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJc4U-eZ9-hYAR5ih4d-bZpBI",37.8751742,-122.2684613,"Monday: 9:00 AM – 11:00 PM
  Tuesday: 9:00 AM – 11:00 PM
  Wednesday: 9:00 AM – 11:00 PM
  Thursday: 9:00 AM – 11:00 PM
  Friday: 9:00 AM – 11:00 PM
  Saturday: 10:00 AM – 11:00 PM
- Sunday: 10:00 AM – 10:00 PM","cafe","ChIJc4U-eZ9-hYAR5ih4d-bZpBI"
+ Sunday: 10:00 AM – 10:00 PM","cafe","ChIJc4U-eZ9-hYAR5ih4d-bZpBI","coffee"
 "My Coffee Roastery","San Francisco Bay Area","Berkeley","California","United States of America","Yes","Fairytale cottage coffee shop, with incredible attention to detail. Look out for sorted jars of bad coffee beans (""floater"" and ""immature"" among others).","2080 Martin Luther King Jr Way, Berkeley, CA 94704, United States",4.8,270,"https://www.google.com/maps/search/?api=1&query=2080%20Martin%20Luther%20King%20Jr%20Way,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJxapf8PF_hYARPg1Ki7Ws9pE",37.8707081,-122.2731313,"Monday: Closed
  Tuesday: Closed
  Wednesday: 8:00 AM – 4:00 PM
  Thursday: 8:00 AM – 4:00 PM
  Friday: 8:00 AM – 4:00 PM
  Saturday: 9:00 AM – 5:00 PM
- Sunday: 9:00 AM – 5:00 PM","cafe","ChIJxapf8PF_hYARPg1Ki7Ws9pE"
+ Sunday: 9:00 AM – 5:00 PM","cafe","ChIJxapf8PF_hYARPg1Ki7Ws9pE","coffee"
 "Artis","San Francisco Bay Area","Berkeley","California","United States of America",NA,"High quality coffee and a sleek decor: would recommend for one of those very complex, single origin coffees you want every now and then.","1717 Fourth St B, Berkeley, CA 94710, United States",4.4,643,"https://www.google.com/maps/search/?api=1&query=1717%20Fourth%20St%20B,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJMbB3FNt-hYAR-FZpf8Lpdxs",37.871565,-122.3010452,"Monday: 8:00 AM – 5:00 PM
  Tuesday: 8:00 AM – 5:00 PM
  Wednesday: 8:00 AM – 5:00 PM
  Thursday: 8:00 AM – 5:00 PM
  Friday: 8:00 AM – 5:00 PM
  Saturday: 9:00 AM – 6:00 PM
- Sunday: 9:00 AM – 6:00 PM","cafe","ChIJMbB3FNt-hYAR-FZpf8Lpdxs"
+ Sunday: 9:00 AM – 6:00 PM","cafe","ChIJMbB3FNt-hYAR-FZpf8Lpdxs","coffee"
 "Hidden Cafe","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Cozy coffee shop next to Strawberry Creek Park, so you can get your coffee, a tasty snack and your dose of sunshine and people watching all in one go.","1250 Addison St Suite 111, Berkeley, CA 94702, United States",4.8,195,"https://www.google.com/maps/search/?api=1&query=1250%20Addison%20St%20Suite%20111,%20Berkeley,%20CA%2094702,%20United%20States&query_place_id=ChIJBXOowZl_hYARlyq3_rFQii0",37.8684254,-122.2869747,"Monday: Closed
  Tuesday: 8:30 AM – 6:00 PM
  Wednesday: 8:30 AM – 6:00 PM
  Thursday: 8:30 AM – 6:00 PM
  Friday: 8:30 AM – 6:00 PM
  Saturday: 8:30 AM – 6:00 PM
- Sunday: 8:30 AM – 6:00 PM","cafe","ChIJBXOowZl_hYARlyq3_rFQii0"
+ Sunday: 8:30 AM – 6:00 PM","cafe","ChIJBXOowZl_hYARlyq3_rFQii0","coffee"
 "Timeless Cafe","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Among the best coffee in Berkeley, in the middle of College Avenue, a cute street with a ton of other small businesses to explore.","2965 College Ave, Berkeley, CA 94705, United States",4.6,313,"https://www.google.com/maps/search/?api=1&query=2965%20College%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJFZLL5s19hYAR-PoPkSWG7yc",37.8568302,-122.2529102,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJFZLL5s19hYAR-PoPkSWG7yc"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJFZLL5s19hYAR-PoPkSWG7yc","coffee"
 "Free Speech Movement","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Coffee shop on the first floor of Berkeley's Moffit Library, a place that pays homage to the 60s Berkeley student protests on freedom of speech. The coffee is about average but you might be inspired by the crowds of students studying on their laptops.","3rd Floor, U C, University Dr, Berkeley, CA 94709, United States",4.3,208,"https://www.google.com/maps/search/?api=1&query=3rd%20Floor,%20U%20C,%20University%20Dr,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJ60w1qN9-hYARtzxtM7Qwdw4",37.8725738,-122.260848,"Monday: 7:00 AM – 10:00 PM
  Tuesday: 7:00 AM – 10:00 PM
  Wednesday: 7:00 AM – 10:00 PM
  Thursday: 7:00 AM – 10:00 PM
  Friday: 7:00 AM – 10:00 PM
  Saturday: 9:00 AM – 7:00 PM
- Sunday: 1:00 – 7:00 PM","cafe","ChIJ60w1qN9-hYARtzxtM7Qwdw4"
-"States","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Sleek spot with high quality beans and great espresso! Give their baked goods a try too.","Berkeley, CA, USA",NA,NA,"https://www.google.com/maps/search/?api=1&query=Berkeley,%20CA,%20USA&query_place_id=ChIJ00mFOjZ5hYARk-l1ppUV6pQ",37.8715226,-122.273042,NA,"locality","ChIJ00mFOjZ5hYARk-l1ppUV6pQ"
+ Sunday: 1:00 – 7:00 PM","cafe","ChIJ60w1qN9-hYARtzxtM7Qwdw4","coffee"
+"States","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Sleek spot with high quality beans and great espresso! Give their baked goods a try too.","Berkeley, CA, USA",NA,NA,"https://www.google.com/maps/search/?api=1&query=Berkeley,%20CA,%20USA&query_place_id=ChIJ00mFOjZ5hYARk-l1ppUV6pQ",37.8715226,-122.273042,NA,"locality","ChIJ00mFOjZ5hYARk-l1ppUV6pQ","others"
 "Equator Coffee","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Classic Bay Area coffee: speciality drinks, single-origin beans and their Fort Mason tiny spot is great for enjoying the views of the Bay and the Marina.","2 Marina Blvd, San Francisco, CA 94123, United States",4.4,347,"https://www.google.com/maps/search/?api=1&query=2%20Marina%20Blvd,%20San%20Francisco,%20CA%2094123,%20United%20States&query_place_id=ChIJA_rvjdiAhYARb0vVE-Pyauk",37.8053185,-122.4318742,"Monday: Closed
  Tuesday: Closed
  Wednesday: Closed
  Thursday: 6:30 AM – 5:00 PM
  Friday: 6:30 AM – 5:00 PM
  Saturday: 7:00 AM – 5:00 PM
- Sunday: 7:00 AM – 5:00 PM","cafe","ChIJA_rvjdiAhYARb0vVE-Pyauk"
+ Sunday: 7:00 AM – 5:00 PM","cafe","ChIJA_rvjdiAhYARb0vVE-Pyauk","coffee"
 "CoRo Coffee","San Francisco Bay Area","Berkeley","California","United States of America",NA,"On the science-y side of coffee: super dedicated to making very tasty drinks but also being innovative. Go there for great coffee and the nice street-side seating.","2324 Fifth St, Berkeley, CA 94710, United States",4.8,137,"https://www.google.com/maps/search/?api=1&query=2324%20Fifth%20St,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJ4-0j0Oh-hYAR_rDr6cfh-N4",37.8625,-122.2972583,"Monday: 7:30 AM – 4:00 PM
  Tuesday: 7:30 AM – 4:00 PM
  Wednesday: 7:30 AM – 4:00 PM
  Thursday: 7:30 AM – 4:00 PM
  Friday: 7:30 AM – 4:00 PM
  Saturday: 8:30 AM – 4:00 PM
- Sunday: 8:30 AM – 4:00 PM","cafe","ChIJ4-0j0Oh-hYAR_rDr6cfh-N4"
+ Sunday: 8:30 AM – 4:00 PM","cafe","ChIJ4-0j0Oh-hYAR_rDr6cfh-N4","coffee"
 "The Coffee Movement","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Favorite coffee shop in SF! Bonus points if you go in the summer and they have a repurposed orange VW van for people to sit in.","1030 Washington St, San Francisco, CA 94108, United States",4.8,729,"https://www.google.com/maps/search/?api=1&query=1030%20Washington%20St,%20San%20Francisco,%20CA%2094108,%20United%20States&query_place_id=ChIJoTMb3PKAhYARsXkQt469sBw",37.7947575,-122.4102936,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","cafe","ChIJoTMb3PKAhYARsXkQt469sBw"
+ Sunday: 7:00 AM – 4:00 PM","cafe","ChIJoTMb3PKAhYARsXkQt469sBw","coffee"
 "Sightglass","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Come for the coffee, leave because they don't have Wi-Fi, but enjoy a good experience.","270 7th St, San Francisco, CA 94103, United States",4.5,2841,"https://www.google.com/maps/search/?api=1&query=270%207th%20St,%20San%20Francisco,%20CA%2094103,%20United%20States&query_place_id=ChIJf-V9OIKAhYARu8bBG2S6RME",37.77704,-122.4084386,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 7:00 AM – 5:00 PM
- Sunday: 7:00 AM – 5:00 PM","cafe","ChIJf-V9OIKAhYARu8bBG2S6RME"
+ Sunday: 7:00 AM – 5:00 PM","cafe","ChIJf-V9OIKAhYARu8bBG2S6RME","coffee"
 "Apple Visitor Center","San Francisco Bay Area","Cupertino","California","United States of America","Yes","Coffee: slightly average. Apple's HQ being across the street: kinda surreal. If you get a foamy drink, there's a nice litte surprise at the top :)","10600 N Tantau Ave, Cupertino, CA 95014, United States",4.4,1001,"https://www.google.com/maps/search/?api=1&query=10600%20N%20Tantau%20Ave,%20Cupertino,%20CA%2095014,%20United%20States&query_place_id=ChIJ0aPn18W1j4ARgC9zTSPeQRc",37.332773,-122.0053844,"Monday: 10:00 AM – 6:00 PM
  Tuesday: 10:00 AM – 6:00 PM
  Wednesday: 10:00 AM – 6:00 PM
  Thursday: 10:00 AM – 6:00 PM
  Friday: 10:00 AM – 6:00 PM
  Saturday: 10:00 AM – 6:00 PM
- Sunday: 11:00 AM – 6:00 PM","electronics_store","ChIJ0aPn18W1j4ARgC9zTSPeQRc"
+ Sunday: 11:00 AM – 6:00 PM","electronics_store","ChIJ0aPn18W1j4ARgC9zTSPeQRc","others"
 "Ain’t Normal","San Francisco Bay Area","Oakland","California","United States of America",NA,"Homely coffee shop in a neighborhood lined with other cute restaurants and cafes. Sit outside sipping your drink in the tiny plaza-like area they have, taking in the sun, reading or just having an interesting conversation.","5701 College Ave, Oakland, CA 94618, United States",4.7,146,"https://www.google.com/maps/search/?api=1&query=5701%20College%20Ave,%20Oakland,%20CA%2094618,%20United%20States&query_place_id=ChIJUborLjx_hYARle9InnFaRGA",37.8453451,-122.2520176,"Monday: 7:00 AM – 7:00 PM
  Tuesday: 7:00 AM – 7:00 PM
  Wednesday: 7:00 AM – 7:00 PM
  Thursday: 7:00 AM – 7:00 PM
  Friday: 7:00 AM – 7:00 PM
  Saturday: 7:00 AM – 7:00 PM
- Sunday: 7:00 AM – 7:00 PM","liquor_store","ChIJUborLjx_hYARle9InnFaRGA"
+ Sunday: 7:00 AM – 7:00 PM","liquor_store","ChIJUborLjx_hYARle9InnFaRGA","food"
 "Goody Cafe","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Good-y coffee: also a tiny location in an usually busy part of Fort Mason, so prepare for lines. But it offers a good dose of caffeine after getting lunch from the Farmer's market next to it.","Landmark Building C, 2 Marina Blvd, San Francisco, CA 94123, United States",4.4,76,"https://www.google.com/maps/search/?api=1&query=Landmark%20Building%20C,%202%20Marina%20Blvd,%20San%20Francisco,%20CA%2094123,%20United%20States&query_place_id=ChIJ02-LXyeBhYARMKR34YswheM",37.8065274,-122.431413,"Monday: 8:30 AM – 2:00 PM
  Tuesday: 8:30 AM – 5:00 PM
  Wednesday: 8:30 AM – 5:00 PM
  Thursday: 8:30 AM – 5:00 PM
  Friday: 8:30 AM – 5:00 PM
  Saturday: 8:30 AM – 5:00 PM
- Sunday: 8:30 AM – 2:00 PM","cafe","ChIJ02-LXyeBhYARMKR34YswheM"
+ Sunday: 8:30 AM – 2:00 PM","cafe","ChIJ02-LXyeBhYARMKR34YswheM","coffee"
 "HITW","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Essentially a coffee window with a few squeaky tables around it on the street, but few coffee experiences beat getting an espresso shot, reading a book and taking in the beautiful North Beach SF neighborhood, especially in early fall.","524 Union St, San Francisco, CA 94133, United States",4.7,198,"https://www.google.com/maps/search/?api=1&query=524%20Union%20St,%20San%20Francisco,%20CA%2094133,%20United%20States&query_place_id=ChIJp8zEOPGAhYAR4VicktsDkf0",37.8006907,-122.4080931,"Monday: Closed
  Tuesday: Closed
  Wednesday: Closed
  Thursday: Closed
  Friday: Closed
  Saturday: 9:00 AM – 3:00 PM
- Sunday: 9:00 AM – 3:00 PM","cafe","ChIJp8zEOPGAhYAR4VicktsDkf0"
+ Sunday: 9:00 AM – 3:00 PM","cafe","ChIJp8zEOPGAhYAR4VicktsDkf0","coffee"
 "1951 Coffee","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Another good coffee place close to Berkeley's campus. Their refuge mission is very inspiring; go and learn more about the work they are doing!","2410 Channing Way, Berkeley, CA 94704, United States",4.7,327,"https://www.google.com/maps/search/?api=1&query=2410%20Channing%20Way,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJW2yuxCh8hYARGGQHIaJzsZc",37.8666359,-122.2599729,"Monday: 8:00 AM – 5:00 PM
  Tuesday: 8:00 AM – 5:00 PM
  Wednesday: 8:00 AM – 5:00 PM
  Thursday: 8:00 AM – 5:00 PM
  Friday: 8:00 AM – 5:00 PM
  Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM","cafe","ChIJW2yuxCh8hYARGGQHIaJzsZc"
-"Red Bay Coffee Box","San Francisco Bay Area","Oakland","California","United States of America",NA,"A quiet and hidden coffee truck in downtown Oakland, but great coffee and some seating to enjoy it on.","2327 Broadway, Oakland, CA 94612, United States",4.7,83,"https://www.google.com/maps/search/?api=1&query=2327%20Broadway,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJ_-pWxayAj4ARh4qLGoszSn0",37.8126899,-122.2663677,NA,"cafe","ChIJ_-pWxayAj4ARh4qLGoszSn0"
+ Sunday: 8:00 AM – 3:00 PM","cafe","ChIJW2yuxCh8hYARGGQHIaJzsZc","coffee"
+"Red Bay Coffee Box","San Francisco Bay Area","Oakland","California","United States of America",NA,"A quiet and hidden coffee truck in downtown Oakland, but great coffee and some seating to enjoy it on.","2327 Broadway, Oakland, CA 94612, United States",4.7,83,"https://www.google.com/maps/search/?api=1&query=2327%20Broadway,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJ_-pWxayAj4ARh4qLGoszSn0",37.8126899,-122.2663677,NA,"cafe","ChIJ_-pWxayAj4ARh4qLGoszSn0","coffee"
 "Crown Coffee Lab","San Francisco Bay Area","Oakland","California","United States of America","Yes","Coffee meets tasting menus: get their sample of 3 coffees and nerd out over tasting notes. Also offers classes, consultations and a podcast!","2523 Broadway, Oakland, CA 94612, United States",4.7,110,"https://www.google.com/maps/search/?api=1&query=2523%20Broadway,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJrVeVEOWHj4ARvUAZyJpyVY4",37.8144754,-122.2650524,"Monday: 9:00 AM – 4:00 PM
  Tuesday: 9:00 AM – 4:00 PM
  Wednesday: 9:00 AM – 4:00 PM
  Thursday: 9:00 AM – 4:00 PM
  Friday: 9:00 AM – 4:00 PM
  Saturday: 9:00 AM – 4:00 PM
- Sunday: 9:00 AM – 4:00 PM","cafe","ChIJrVeVEOWHj4ARvUAZyJpyVY4"
+ Sunday: 9:00 AM – 4:00 PM","cafe","ChIJrVeVEOWHj4ARvUAZyJpyVY4","coffee"
 "Nirvana Soul","San Francisco Bay Area","San Jose","California","United States of America","Yes","Great coffee in a pink, tropical-themed shop. The staff is incredibly friendly and it shows: the shop even has a coffee Spotify playlist!","315 S 1st St, San Jose, CA 95113, United States",4.8,474,"https://www.google.com/maps/search/?api=1&query=315%20S%201st%20St,%20San%20Jose,%20CA%2095113,%20United%20States&query_place_id=ChIJz1LOsPnNj4ARsOE14qXH6v0",37.3311664,-121.8870153,"Monday: 7:00 AM – 7:00 PM
  Tuesday: 7:00 AM – 7:00 PM
  Wednesday: 7:00 AM – 7:00 PM
  Thursday: 7:00 AM – 9:00 PM
  Friday: 7:00 AM – 9:00 PM
  Saturday: 7:00 AM – 7:00 PM
- Sunday: 7:00 AM – 12:00 PM","cafe","ChIJz1LOsPnNj4ARsOE14qXH6v0"
+ Sunday: 7:00 AM – 12:00 PM","cafe","ChIJz1LOsPnNj4ARsOE14qXH6v0","coffee"
 "Sextant Coffee Roasters","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Some of the best coffee the Bay Area has to offer. Also a quiet place for some concentrated work, reading or pondering life's philosophical questions.","1415 Folsom St, San Francisco, CA 94103, United States",4.5,599,"https://www.google.com/maps/search/?api=1&query=1415%20Folsom%20St,%20San%20Francisco,%20CA%2094103,%20United%20States&query_place_id=ChIJg1s92Sd-j4ARTKJr-IhF_-Q",37.7724648,-122.412957,"Monday: 7:30 AM – 4:00 PM
  Tuesday: 7:30 AM – 4:00 PM
  Wednesday: 7:30 AM – 4:00 PM
  Thursday: 7:30 AM – 4:00 PM
  Friday: 7:30 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJg1s92Sd-j4ARTKJr-IhF_-Q"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJg1s92Sd-j4ARTKJr-IhF_-Q","coffee"
 "Motivat","San Francisco Bay Area","Oakland","California","United States of America",NA,"Co-working space and coffee shop all in one: would recommend for when you need to get work done but are tired of staying in your house.","1528 Webster St, Oakland, CA 94612, United States",4.7,61,"https://www.google.com/maps/search/?api=1&query=1528%20Webster%20St,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJe3cJT3eBj4ARyfavUlH0Wqw",37.8047954,-122.2676548,"Monday: 7:30 AM – 3:30 PM
  Tuesday: 7:30 AM – 3:30 PM
  Wednesday: 7:30 AM – 3:30 PM
  Thursday: 7:30 AM – 3:30 PM
  Friday: 7:30 AM – 3:30 PM
  Saturday: 7:30 AM – 3:30 PM
- Sunday: Closed","cafe","ChIJe3cJT3eBj4ARyfavUlH0Wqw"
+ Sunday: Closed","cafe","ChIJe3cJT3eBj4ARyfavUlH0Wqw","coffee"
 "Bicycle Coffee","San Francisco Bay Area","Oakland","California","United States of America","Yes","Bike-themed shop geared towards cyclists. Expect to be served with both coffee and cycling gear if interested. They give you discounts if you show them your helmet!","377 2nd St #110, Oakland, CA 94607, United States",4.6,503,"https://www.google.com/maps/search/?api=1&query=377%202nd%20St%20#110,%20Oakland,%20CA%2094607,%20United%20States&query_place_id=ChIJSbBdUciAj4ARwTBjTQ6u0FY",37.795026,-122.2748249,"Monday: 7:30 AM – 3:00 PM
  Tuesday: 7:30 AM – 3:00 PM
  Wednesday: 7:30 AM – 3:00 PM
  Thursday: 7:30 AM – 3:00 PM
  Friday: 7:30 AM – 3:00 PM
  Saturday: 7:30 AM – 3:00 PM
- Sunday: 7:30 AM – 3:00 PM","cafe","ChIJSbBdUciAj4ARwTBjTQ6u0FY"
+ Sunday: 7:30 AM – 3:00 PM","cafe","ChIJSbBdUciAj4ARwTBjTQ6u0FY","coffee"
 "Andytown","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Cute shop overlooking the Pacific coast, and the coffee is very high quality. They have little quirks, like the descriptions on their coffee bean bags. Good for ruminating the vastness of the universe.","3629 Taraval St, San Francisco, CA 94116, United States",4.5,373,"https://www.google.com/maps/search/?api=1&query=3629%20Taraval%20St,%20San%20Francisco,%20CA%2094116,%20United%20States&query_place_id=ChIJyQd9b2N9j4ARU0bf2M8oyAk",37.7414594,-122.5052277,"Monday: 8:00 AM – 3:00 PM
  Tuesday: 8:00 AM – 3:00 PM
  Wednesday: 8:00 AM – 3:00 PM
  Thursday: 8:00 AM – 3:00 PM
  Friday: 8:00 AM – 5:00 PM
  Saturday: 8:00 AM – 5:00 PM
- Sunday: 8:00 AM – 5:00 PM","cafe","ChIJyQd9b2N9j4ARU0bf2M8oyAk"
+ Sunday: 8:00 AM – 5:00 PM","cafe","ChIJyQd9b2N9j4ARU0bf2M8oyAk","coffee"
 "Flywheel","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Great coffee right next to Golden Gate Park: get your drink to-go and walk over to one of the Park's striking green spaces.","672 Stanyan St, San Francisco, CA 94117, United States",4.5,958,"https://www.google.com/maps/search/?api=1&query=672%20Stanyan%20St,%20San%20Francisco,%20CA%2094117,%20United%20States&query_place_id=ChIJdam9at-HhYAReFFog6hjhdo",37.7696699,-122.4534997,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 6:00 PM
  Friday: 7:00 AM – 6:00 PM
  Saturday: 7:00 AM – 6:00 PM
- Sunday: 7:00 AM – 6:00 PM","cafe","ChIJdam9at-HhYAReFFog6hjhdo"
+ Sunday: 7:00 AM – 6:00 PM","cafe","ChIJdam9at-HhYAReFFog6hjhdo","coffee"
 "Awaken","San Francisco Bay Area","Oakland","California","United States of America","Yes","Downtown Oakland spot with pretty good espresso and oversized beach lounging chairs in front of the shop that let you people-watch and bask in the sun.","4096 Piedmont Ave #724, Oakland, CA 94611, United States",0,0,"https://www.google.com/maps/search/?api=1&query=4096%20Piedmont%20Ave%20#724,%20Oakland,%20CA%2094611,%20United%20States&query_place_id=ChIJdYqLhraAj4ARFXdC_5afCMg",37.8264524,-122.2520478,"Monday: 9:00 AM – 6:00 PM
  Tuesday: 9:00 AM – 6:00 PM
  Wednesday: 9:00 AM – 6:00 PM
  Thursday: 9:00 AM – 6:00 PM
  Friday: 9:00 AM – 6:00 PM
  Saturday: Closed
- Sunday: Closed","point_of_interest","ChIJdYqLhraAj4ARFXdC_5afCMg"
+ Sunday: Closed","point_of_interest","ChIJdYqLhraAj4ARFXdC_5afCMg","others"
 "Kilovolt","San Francisco Bay Area","Oakland","California","United States of America",NA,"A nice pitstop when cycling around West Oakland, or when in the mood to see futuristic-looking concoctions in a garage-like decorated space.","1829 Mandela Pkwy, Oakland, CA 94607, United States",4.4,378,"https://www.google.com/maps/search/?api=1&query=1829%20Mandela%20Pkwy,%20Oakland,%20CA%2094607,%20United%20States&query_place_id=ChIJk0lM_uJ_hYARUers_89-3s0",37.8142768,-122.2905905,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","cafe","ChIJk0lM_uJ_hYARUers_89-3s0"
+ Sunday: 7:00 AM – 4:00 PM","cafe","ChIJk0lM_uJ_hYARUers_89-3s0","coffee"
 "Haddon Hill","San Francisco Bay Area","Oakland","California","United States of America",NA,"As the name suggests, on an actual hill hidden from the main street. This cafe is great for reading out when the weather is nice and it's a quiet spot to meditate.","504 Wesley Ave, Oakland, CA 94606, United States",4.7,148,"https://www.google.com/maps/search/?api=1&query=504%20Wesley%20Ave,%20Oakland,%20CA%2094606,%20United%20States&query_place_id=ChIJX946rDiHj4AR9IBVQMmvTNM",37.8049375,-122.248852,"Monday: 8:00 AM – 2:00 PM
  Tuesday: 8:00 AM – 2:00 PM
  Wednesday: 8:00 AM – 2:00 PM
  Thursday: 8:00 AM – 2:00 PM
  Friday: 8:00 AM – 2:00 PM
  Saturday: 8:00 AM – 2:00 PM
- Sunday: 8:00 AM – 2:00 PM","cafe","ChIJX946rDiHj4AR9IBVQMmvTNM"
+ Sunday: 8:00 AM – 2:00 PM","cafe","ChIJX946rDiHj4AR9IBVQMmvTNM","coffee"
 "CRO Cafe","San Francisco Bay Area","Oakland","California","United States of America",NA,"Minimalistic spot in a hidden corridor in Oakland's Temescal: you'll see some dogs, some babies, some people walking curiously around and have good coffee in the processs. Nice for meditating on the future.","Alley 49, Oakland, CA 94609, United States",4.4,100,"https://www.google.com/maps/search/?api=1&query=Alley%2049,%20Oakland,%20CA%2094609,%20United%20States&query_place_id=ChIJcdGPDeF9hYARrf-L17vFVzY",37.8360141,-122.2618377,"Monday: 7:00 AM – 3:00 PM
  Tuesday: 7:00 AM – 3:00 PM
  Wednesday: 7:00 AM – 3:00 PM
  Thursday: 7:00 AM – 3:00 PM
  Friday: 7:00 AM – 6:00 PM
  Saturday: 7:00 AM – 6:00 PM
- Sunday: 7:00 AM – 6:00 PM","cafe","ChIJcdGPDeF9hYARrf-L17vFVzY"
+ Sunday: 7:00 AM – 6:00 PM","cafe","ChIJcdGPDeF9hYARrf-L17vFVzY","coffee"
 "Mind Coffee","San Francisco Bay Area","Berkeley","California","United States of America",NA,"New coffee shop on Euclid next to campus, surprisingly great coffee and a nice minimalistic decor. Nice book selection on the wall next to the baristas too.","1816 Euclid Ave, Berkeley, CA 94709, United States",4.8,35,"https://www.google.com/maps/search/?api=1&query=1816%20Euclid%20Ave,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJgz3oXhJ9hYARlD3v3inA8uY",37.8757834,-122.2605424,"Monday: 8:00 AM – 5:00 PM
  Tuesday: 8:00 AM – 5:00 PM
  Wednesday: 8:00 AM – 5:00 PM
  Thursday: 8:00 AM – 5:00 PM
  Friday: 8:00 AM – 5:00 PM
  Saturday: 10:00 AM – 5:00 PM
- Sunday: 10:00 AM – 5:00 PM","cafe","ChIJgz3oXhJ9hYARlD3v3inA8uY"
+ Sunday: 10:00 AM – 5:00 PM","cafe","ChIJgz3oXhJ9hYARlD3v3inA8uY","coffee"
 "Piccino","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Tiny coffee shop attached to the larger Piccino restaurant: more of a to-go spot, but the coffee is high quality and the Dogpatch streets are worth exploring.","1001 Minnesota St, San Francisco, CA 94107, United States",4.5,1098,"https://www.google.com/maps/search/?api=1&query=1001%20Minnesota%20St,%20San%20Francisco,%20CA%2094107,%20United%20States&query_place_id=ChIJZy35-bl_j4ARBBvSPp-LhIE",37.7575756,-122.3899633,"Monday: Closed
  Tuesday: Closed
  Wednesday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM
  Thursday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM
  Friday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM
  Saturday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM
- Sunday: 11:00 AM – 2:00 PM, 5:00 – 8:30 PM","restaurant","ChIJZy35-bl_j4ARBBvSPp-LhIE"
+ Sunday: 11:00 AM – 2:00 PM, 5:00 – 8:30 PM","restaurant","ChIJZy35-bl_j4ARBBvSPp-LhIE","food"
 "Hal’s Office Coffee","San Francisco Bay Area","Albany","California","United States of America","Yes","Neighbor-ly spot in Albany: get their empanadas and an espresso and thank me later!","1207 Solano Ave, Albany, CA 94706, United States",4.6,183,"https://www.google.com/maps/search/?api=1&query=1207%20Solano%20Ave,%20Albany,%20CA%2094706,%20United%20States&query_place_id=ChIJu1DJ0DN5hYARRSovhhQLnJs",37.89058,-122.2959295,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 8:00 AM – 5:00 PM
- Sunday: 8:00 AM – 5:00 PM","cafe","ChIJu1DJ0DN5hYARRSovhhQLnJs"
+ Sunday: 8:00 AM – 5:00 PM","cafe","ChIJu1DJ0DN5hYARRSovhhQLnJs","coffee"
 "Signal Coffee","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Great coffee and service: another of those good-for-cycling refreshment places. Bonus for having ridgeplots as their logo.","1707 Solano Ave, Berkeley, CA 94707, United States",4.7,41,"https://www.google.com/maps/search/?api=1&query=1707%20Solano%20Ave,%20Berkeley,%20CA%2094707,%20United%20States&query_place_id=ChIJAV1cKb55hYARvn8EgKZdkMM",37.8913733,-122.282391,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJAV1cKb55hYARvn8EgKZdkMM"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJAV1cKb55hYARvn8EgKZdkMM","coffee"
 "Noe Cafe","San Francisco Bay Area","San Francisco","California","United States of America",NA,"A sunny neighborhood cafe: on a typical day, you'll find people walking their dogs, taking their babies out for walks or just reading. Great for meeting new people.","1299 Sanchez St, San Francisco, CA 94114, United States",4.7,279,"https://www.google.com/maps/search/?api=1&query=1299%20Sanchez%20St,%20San%20Francisco,%20CA%2094114,%20United%20States&query_place_id=ChIJGzD_VaV_j4ARXsfoRJmwqn8",37.7485047,-122.4292293,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 7:00 PM
  Friday: 7:00 AM – 7:00 PM
  Saturday: 7:00 AM – 7:00 PM
- Sunday: 7:00 AM – 6:00 PM","cafe","ChIJGzD_VaV_j4ARXsfoRJmwqn8"
+ Sunday: 7:00 AM – 6:00 PM","cafe","ChIJGzD_VaV_j4ARXsfoRJmwqn8","coffee"
 "SPRO","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Coffee truck alert!","601 Mission Bay Boulevard North, San Francisco, CA 94158, United States",4.7,265,"https://www.google.com/maps/search/?api=1&query=601%20Mission%20Bay%20Boulevard%20North,%20San%20Francisco,%20CA%2094158,%20United%20States&query_place_id=ChIJUcfd3c9_j4ARYgUQAMZQBxs",37.7708621,-122.3913901,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","bakery","ChIJUcfd3c9_j4ARYgUQAMZQBxs"
+ Sunday: 7:00 AM – 4:00 PM","bakery","ChIJUcfd3c9_j4ARYgUQAMZQBxs","food"
 "Little Gem Belgian Waffles","San Francisco Bay Area","Berkeley","California","United States of America","Yes","A very tasty surprise in the middle of Telegraph avenue. Some of the best waffles I've tried, but I'd recommend keeping it to 2 toppings.","2468 Telegraph Ave Suite A, Berkeley, CA 94704, United States",4.5,214,"https://www.google.com/maps/search/?api=1&query=2468%20Telegraph%20Ave%20Suite%20A,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJOaTDxi58hYARnB1yJXzRhdE",37.8656213,-122.2586825,"Monday: 3:00 PM – 12:00 AM
  Tuesday: 3:00 PM – 12:00 AM
  Wednesday: 3:00 PM – 12:00 AM
  Thursday: 3:00 PM – 12:00 AM
  Friday: 12:00 PM – 12:30 AM
  Saturday: 12:00 PM – 1:00 AM
- Sunday: 12:00 PM – 12:00 AM","bakery","ChIJOaTDxi58hYARnB1yJXzRhdE"
+ Sunday: 12:00 PM – 12:00 AM","bakery","ChIJOaTDxi58hYARnB1yJXzRhdE","food"
 "Tony’s Pizza Napoletana","San Francisco Bay Area","San Francisco","California","United States of America","Yes","The other pizza spot in my top 2. Incredibly popular but also fully deserves all its hype. Props for getting creative with the pizza: I loved the jam-flavored one I got.","1570 Stockton St, San Francisco, CA 94133, United States",4.5,6677,"https://www.google.com/maps/search/?api=1&query=1570%20Stockton%20St,%20San%20Francisco,%20CA%2094133,%20United%20States&query_place_id=ChIJHXHcEvGAhYARQPuHNN78s78",37.8003901,-122.4090335,"Monday: 12:00 – 10:00 PM
  Tuesday: 12:00 – 10:00 PM
  Wednesday: 12:00 – 10:00 PM
  Thursday: 12:00 – 10:00 PM
  Friday: 12:00 – 11:00 PM
  Saturday: 12:00 – 11:00 PM
- Sunday: 12:00 – 11:00 PM","restaurant","ChIJHXHcEvGAhYARQPuHNN78s78"
+ Sunday: 12:00 – 11:00 PM","restaurant","ChIJHXHcEvGAhYARQPuHNN78s78","food"
 "Ghirardelli Ice Cream","San Francisco Bay Area","San Francisco","California","United States of America",NA,"One of Ghirardelli Chocolate's San Francisco spots. You can buy all sorts of chocolate or have some ice cream or dessert, all of which taste divine.","900 North Point St Ste 52, San Francisco, CA 94109, United States",4.5,739,"https://www.google.com/maps/search/?api=1&query=900%20North%20Point%20St%20Ste%2052,%20San%20Francisco,%20CA%2094109,%20United%20States&query_place_id=ChIJDQx5mOCAhYARUe0qN5p7M64",37.8056417,-122.4222935,"Monday: 9:00 AM – 11:00 PM
  Tuesday: 9:00 AM – 11:00 PM
  Wednesday: 9:00 AM – 11:00 PM
  Thursday: 9:00 AM – 11:00 PM
  Friday: 9:00 AM – 12:00 AM
  Saturday: 9:00 AM – 12:00 AM
- Sunday: 9:00 AM – 11:00 PM","restaurant","ChIJDQx5mOCAhYARUe0qN5p7M64"
+ Sunday: 9:00 AM – 11:00 PM","restaurant","ChIJDQx5mOCAhYARUe0qN5p7M64","food"
 "Artichoke’s Basille Pizza","San Francisco Bay Area","Berkeley","California","United States of America",NA,"One of those student classic places for a quick slice of pizza. The slice itself is average, but it's a quintessential Berkeley experience.","2590 Durant Ave, Berkeley, CA 94704, United States",4.5,992,"https://www.google.com/maps/search/?api=1&query=2590%20Durant%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJDbudpy98hYARBRu1gsKfwGk",37.8679361,-122.2568562,"Monday: 11:00 AM – 2:00 AM
  Tuesday: 11:00 AM – 2:00 AM
  Wednesday: 11:00 AM – 2:00 AM
  Thursday: 11:00 AM – 2:00 AM
  Friday: 11:00 AM – 3:00 AM
  Saturday: 11:00 AM – 3:00 AM
- Sunday: 11:00 AM – 2:00 AM","restaurant","ChIJDbudpy98hYARBRu1gsKfwGk"
+ Sunday: 11:00 AM – 2:00 AM","restaurant","ChIJDbudpy98hYARBRu1gsKfwGk","food"
 "Gregoire","San Francisco Bay Area","Berkeley","California","United States of America","Yes","The notorious potato puffs with truffle oil. Non-optional and highly craveable.","2109 Cedar St, Berkeley, CA 94709, United States",4.5,827,"https://www.google.com/maps/search/?api=1&query=2109%20Cedar%20St,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJtd1mG6F-hYARojnUY51ID8Q",37.8785598,-122.268584,"Monday: 11:30 AM – 7:00 PM
  Tuesday: 11:30 AM – 7:00 PM
  Wednesday: 11:30 AM – 7:00 PM
  Thursday: 11:30 AM – 7:00 PM
  Friday: 11:30 AM – 7:00 PM
  Saturday: 11:30 AM – 7:00 PM
- Sunday: 11:30 AM – 7:00 PM","meal_takeaway","ChIJtd1mG6F-hYARojnUY51ID8Q"
+ Sunday: 11:30 AM – 7:00 PM","meal_takeaway","ChIJtd1mG6F-hYARojnUY51ID8Q","food"
 "Casa Barotti","San Francisco Bay Area","Oakland","California","United States of America","Yes","Among the only Italian streetfood spots in the Bay. Choose a few small slices from their selection and enjoy.","3204 College Ave, Berkeley, CA 94705, United States",4.7,120,"https://www.google.com/maps/search/?api=1&query=3204%20College%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJ9yXzCC59hYAR44ho2cVTyl0",37.8510297,-122.2526819,"Monday: Closed
  Tuesday: 11:30 AM – 8:00 PM
  Wednesday: 11:30 AM – 8:00 PM
  Thursday: 11:30 AM – 8:00 PM
  Friday: 11:30 AM – 8:00 PM
  Saturday: 11:30 AM – 8:00 PM
- Sunday: 11:30 AM – 6:30 PM","restaurant","ChIJ9yXzCC59hYAR44ho2cVTyl0"
+ Sunday: 11:30 AM – 6:30 PM","restaurant","ChIJ9yXzCC59hYAR44ho2cVTyl0","food"
 "Taco Sinaloa","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Try the shrimp tacos with a cheese topping in this Telegraph Avenue spot for some simple and high-quality tacos.","2384 Telegraph Ave, Berkeley, CA 94704, United States",4.4,501,"https://www.google.com/maps/search/?api=1&query=2384%20Telegraph%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJhQLUOi98hYARI1hus_3fG9M",37.8672523,-122.2590519,"Monday: 11:00 AM – 11:00 PM
  Tuesday: 11:00 AM – 11:00 PM
  Wednesday: 11:00 AM – 11:00 PM
  Thursday: 11:00 AM – 11:00 PM
  Friday: 11:00 AM – 12:00 AM
  Saturday: 11:00 AM – 12:00 AM
- Sunday: 11:00 AM – 11:00 PM","restaurant","ChIJhQLUOi98hYARI1hus_3fG9M"
+ Sunday: 11:00 AM – 11:00 PM","restaurant","ChIJhQLUOi98hYARI1hus_3fG9M","food"
 "Brenda’s","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Whatever other dish you get, the crawfish beignets are a must: there is no coming back from that level of new flavor discovery.","652 Polk St, San Francisco, CA 94102, United States",4.5,5388,"https://www.google.com/maps/search/?api=1&query=652%20Polk%20St,%20San%20Francisco,%20CA%2094102,%20United%20States&query_place_id=ChIJZ9s5SJeAhYARIX3Fxl6oj6c",37.7829132,-122.4188995,"Monday: 8:00 AM – 8:00 PM
  Tuesday: 8:00 AM – 3:00 PM
  Wednesday: 8:00 AM – 8:00 PM
  Thursday: 8:00 AM – 8:00 PM
  Friday: 8:00 AM – 8:00 PM
  Saturday: 8:00 AM – 8:00 PM
- Sunday: 8:00 AM – 8:00 PM","restaurant","ChIJZ9s5SJeAhYARIX3Fxl6oj6c"
+ Sunday: 8:00 AM – 8:00 PM","restaurant","ChIJZ9s5SJeAhYARIX3Fxl6oj6c","food"
 "Donato","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Amazing Italian food also on a corner of College Avenue: the pasta and rice dishes are my go-tos.","2635 Ashby Ave, Berkeley, CA 94705, United States",4.3,341,"https://www.google.com/maps/search/?api=1&query=2635%20Ashby%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJ7duu8c19hYARVXrcEsI7p2g",37.8571053,-122.2534871,"Monday: Closed
  Tuesday: 12:00 – 2:30 PM, 5:00 – 9:00 PM
  Wednesday: 12:00 – 2:30 PM, 5:00 – 9:00 PM
  Thursday: 12:00 – 2:30 PM, 5:00 – 9:00 PM
  Friday: 12:00 – 2:30 PM, 5:00 – 9:30 PM
  Saturday: 12:00 – 2:30 PM, 5:00 – 9:30 PM
- Sunday: 12:00 – 2:30 PM, 5:00 – 8:30 PM","restaurant","ChIJ7duu8c19hYARVXrcEsI7p2g"
+ Sunday: 12:00 – 2:30 PM, 5:00 – 8:30 PM","restaurant","ChIJ7duu8c19hYARVXrcEsI7p2g","food"
 "Sotto Mare","San Francisco Bay Area","San Francisco","California","United States of America",NA,"An old-style Italian spot known for their cioppino (which also originated in this neighborhood).","552 Green St, San Francisco, CA 94133, United States",4.6,3501,"https://www.google.com/maps/search/?api=1&query=552%20Green%20St,%20San%20Francisco,%20CA%2094133,%20United%20States&query_place_id=ChIJQfYyVvGAhYARJVwoboB1WKQ",37.7997075,-122.4083431,"Monday: 11:30 AM – 9:00 PM
  Tuesday: 11:30 AM – 9:00 PM
  Wednesday: 11:30 AM – 9:00 PM
  Thursday: 11:30 AM – 9:00 PM
  Friday: 11:30 AM – 10:00 PM
  Saturday: 11:30 AM – 10:00 PM
- Sunday: 11:30 AM – 9:00 PM","restaurant","ChIJQfYyVvGAhYARJVwoboB1WKQ"
+ Sunday: 11:30 AM – 9:00 PM","restaurant","ChIJQfYyVvGAhYARJVwoboB1WKQ","food"
 "Boichik Bagels","San Francisco Bay Area","Oakland","California","United States of America",NA,"Yet another Bay Area classic: arguably one of the best bagel stores on the East Bay. Get a lox bagel that will keep you full all day.","3170 College Ave, Berkeley, CA 94705, United States",4.5,502,"https://www.google.com/maps/search/?api=1&query=3170%20College%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJn9T-ECV9hYARV4O5ll6y04k",37.8514832,-122.2526696,"Monday: 7:30 AM – 1:00 PM
  Tuesday: 7:30 AM – 1:00 PM
  Wednesday: 7:30 AM – 1:00 PM
  Thursday: 7:30 AM – 1:00 PM
  Friday: 7:30 AM – 1:00 PM
  Saturday: 7:30 AM – 1:00 PM
- Sunday: 7:30 AM – 1:00 PM","bakery","ChIJn9T-ECV9hYARV4O5ll6y04k"
+ Sunday: 7:30 AM – 1:00 PM","bakery","ChIJn9T-ECV9hYARV4O5ll6y04k","food"
 "La Note","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Brunch spot a few blocks from Berkeley's campus: my favorites were the French toast on brioche bread or the creme fraiche pancakes. The place gets really busy very quickly, but it's a nice bustling spot with quality food.","2377 Shattuck Ave., Berkeley, CA 94704, United States",4.4,1580,"https://www.google.com/maps/search/?api=1&query=2377%20Shattuck%20Ave.,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJB_-A0oJ-hYARwmbyJJR3sUo",37.866206,-122.267249,"Monday: 8:00 AM – 2:00 PM
  Tuesday: 8:00 AM – 2:00 PM
  Wednesday: 8:00 AM – 2:00 PM
  Thursday: 8:00 AM – 2:00 PM
  Friday: 8:00 AM – 2:00 PM
  Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM","cafe","ChIJB_-A0oJ-hYARwmbyJJR3sUo"
+ Sunday: 8:00 AM – 3:00 PM","cafe","ChIJB_-A0oJ-hYARwmbyJJR3sUo","coffee"
 "Lazy Dog","San Francisco Bay Area","Cupertino","California","United States of America",NA,"American-style food: generous portions, tasty burgers and ample seating in a place that looks like a tribute to road-trips and US culture.","19359 Stevens Creek Blvd, Cupertino, CA 95014, United States",4.3,4405,"https://www.google.com/maps/search/?api=1&query=19359%20Stevens%20Creek%20Blvd,%20Cupertino,%20CA%2095014,%20United%20States&query_place_id=ChIJAb33GUS0j4ARjGKbpYi5jR4",37.3233964,-122.0086335,"Monday: 11:00 AM – 12:00 AM
  Tuesday: 11:00 AM – 12:00 AM
  Wednesday: 11:00 AM – 12:00 AM
  Thursday: 11:00 AM – 12:00 AM
  Friday: 11:00 AM – 12:00 AM
  Saturday: 10:00 AM – 12:00 AM
- Sunday: 10:00 AM – 12:00 AM","restaurant","ChIJAb33GUS0j4ARjGKbpYi5jR4"
+ Sunday: 10:00 AM – 12:00 AM","restaurant","ChIJAb33GUS0j4ARjGKbpYi5jR4","food"
 "Chez Panisse","San Francisco Bay Area","Berkeley","California","United States of America",NA,"A California classic: the place that popularized the farm-to-table, slow food movement which spread around the world. Definitely a splurge, but their upstairs cafe offers reasonably-priced items that are still super tasty.","1517 Shattuck Ave., Berkeley, CA 94709, United States",4.6,1944,"https://www.google.com/maps/search/?api=1&query=1517%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJcYtcJaF-hYAR-VzrwZpQY0E",37.879593,-122.2690371,"Monday: Closed
  Tuesday: 5:00 – 10:00 PM
  Wednesday: 5:00 – 10:00 PM
  Thursday: 5:00 – 10:00 PM
  Friday: 11:30 AM – 2:45 PM, 5:00 – 10:00 PM
  Saturday: 11:30 AM – 2:45 PM, 5:00 – 10:00 PM
- Sunday: Closed","cafe","ChIJcYtcJaF-hYAR-VzrwZpQY0E"
+ Sunday: Closed","cafe","ChIJcYtcJaF-hYAR-VzrwZpQY0E","coffee"
 "Hog Island Oysters","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Among the best seafood places in San Francisco: great selection of fresh oysters and a couple of other fish plates as well. The restaurant offers some Bay Bridge views but is also on the noisier side.","Ferry Building, #11, San Francisco, CA 94111, United States",4.6,2704,"https://www.google.com/maps/search/?api=1&query=Ferry%20Building,%20#11,%20San%20Francisco,%20CA%2094111,%20United%20States&query_place_id=ChIJWTGPjmaAhYARgXpiJ-aACYM",37.7954425,-122.3936136,"Monday: 11:00 AM – 8:00 PM
  Tuesday: 11:00 AM – 8:00 PM
  Wednesday: 11:00 AM – 8:00 PM
  Thursday: 11:00 AM – 8:00 PM
  Friday: 11:00 AM – 8:00 PM
  Saturday: 11:00 AM – 8:00 PM
- Sunday: 11:00 AM – 8:00 PM","bar","ChIJWTGPjmaAhYARgXpiJ-aACYM"
+ Sunday: 11:00 AM – 8:00 PM","bar","ChIJWTGPjmaAhYARgXpiJ-aACYM","food"
 "Bollywood Cafe","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Good Indian food and very friendly owners. Bonus for being really close to campus and for having some sunny outdoor seating.","1805 Euclid Ave, Berkeley, CA 94709, United States",4.5,63,"https://www.google.com/maps/search/?api=1&query=1805%20Euclid%20Ave,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJq8H9nml9hYARO2pGXW6_Tm8",37.8757904,-122.2601754,"Monday: 11:00 AM – 8:30 PM
  Tuesday: 11:00 AM – 8:30 PM
  Wednesday: 11:00 AM – 8:30 PM
  Thursday: 11:00 AM – 8:30 PM
  Friday: 11:00 AM – 8:30 PM
  Saturday: 12:00 – 8:30 PM
- Sunday: Closed","restaurant","ChIJq8H9nml9hYARO2pGXW6_Tm8"
+ Sunday: Closed","restaurant","ChIJq8H9nml9hYARO2pGXW6_Tm8","food"
 "Nabolom","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Tiny bakery (with occasional pizza) that is good for recharging after long bike rides or for a treat to start your day.","2708 Russell St, Berkeley, CA 94705, United States",4.7,288,"https://www.google.com/maps/search/?api=1&query=2708%20Russell%20St,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJo1PumM19hYARx4eP1QxtjSg",37.8583833,-122.2528287,"Monday: Closed
  Tuesday: Closed
  Wednesday: 8:00 AM – 2:00 PM
  Thursday: 8:00 AM – 2:00 PM
  Friday: 8:00 AM – 7:00 PM
  Saturday: 8:00 AM – 2:00 PM
- Sunday: 8:00 AM – 2:00 PM","bakery","ChIJo1PumM19hYARx4eP1QxtjSg"
+ Sunday: 8:00 AM – 2:00 PM","bakery","ChIJo1PumM19hYARx4eP1QxtjSg","food"
 "Viks Chaat","San Francisco Bay Area","Berkeley","California","United States of America","Yes","Another Bay Area classic that lives up to the hype. Get one of their chaat dishes or a selection of smaller snacks (pani puri was yummy).","2390 Fourth St, Berkeley, CA 94710, United States",4.2,3688,"https://www.google.com/maps/search/?api=1&query=2390%20Fourth%20St,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJfbzMc-h-hYARG3cEXmb1XRU",37.8614004,-122.2980248,"Monday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
  Tuesday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
  Wednesday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
  Thursday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
  Friday: 11:00 AM – 7:30 PM
  Saturday: 11:00 AM – 7:30 PM
- Sunday: 11:00 AM – 7:30 PM","grocery_or_supermarket","ChIJfbzMc-h-hYARG3cEXmb1XRU"
-"Cheeseboard","San Francisco Bay Area","Berkeley","California","United States of America","Yes","Worker-owned and operated pizza place with vegan ingredients and a new veggie-based set of toppings each day. One of Berkeley's landmarks and hugely influential in food movements.","1512 Shattuck Ave., Berkeley, CA 94709, United States",4.8,3153,"https://www.google.com/maps/search/?api=1&query=1512%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJr5hMNKF-hYARxmkk-5t0SzE",37.8798723,-122.2694794,NA,"restaurant","ChIJr5hMNKF-hYARxmkk-5t0SzE"
+ Sunday: 11:00 AM – 7:30 PM","grocery_or_supermarket","ChIJfbzMc-h-hYARG3cEXmb1XRU","others"
+"Cheeseboard","San Francisco Bay Area","Berkeley","California","United States of America","Yes","Worker-owned and operated pizza place with vegan ingredients and a new veggie-based set of toppings each day. One of Berkeley's landmarks and hugely influential in food movements.","1512 Shattuck Ave., Berkeley, CA 94709, United States",4.8,3153,"https://www.google.com/maps/search/?api=1&query=1512%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJr5hMNKF-hYARxmkk-5t0SzE",37.8798723,-122.2694794,NA,"restaurant","ChIJr5hMNKF-hYARxmkk-5t0SzE","food"
 "B Patisserie","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Vienna-style pastries: very fresh and tasty. This place is also good for larger parties or take out.","2821 California St, San Francisco, CA 94115, United States",4.7,2330,"https://www.google.com/maps/search/?api=1&query=2821%20California%20St,%20San%20Francisco,%20CA%2094115,%20United%20States&query_place_id=ChIJ59WgYcmAhYARu5gLD0FVpw4",37.7878941,-122.4408515,"Monday: Closed
  Tuesday: Closed
  Wednesday: 8:00 AM – 4:00 PM
  Thursday: 8:00 AM – 4:00 PM
  Friday: 8:00 AM – 4:00 PM
  Saturday: 8:00 AM – 5:00 PM
- Sunday: 8:00 AM – 5:00 PM","bakery","ChIJ59WgYcmAhYARu5gLD0FVpw4"
+ Sunday: 8:00 AM – 5:00 PM","bakery","ChIJ59WgYcmAhYARu5gLD0FVpw4","food"
 "Third Culture Bakery","San Francisco Bay Area","Berkeley","California","United States of America","Yes","Mochi donuts! Can't go wrong with any flavor since they'll always be the perfect mix of chewy and crunchy.","2701 Eighth St, Berkeley, CA 94710, United States",4.6,529,"https://www.google.com/maps/search/?api=1&query=2701%20Eighth%20St,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJy_LqU91-hYARrF2Z8bMXT-w",37.8569603,-122.2917118,"Monday: 9:00 AM – 4:00 PM
  Tuesday: 9:00 AM – 4:00 PM
  Wednesday: 9:00 AM – 4:00 PM
  Thursday: 9:00 AM – 4:00 PM
  Friday: 9:00 AM – 4:00 PM
  Saturday: 9:00 AM – 4:00 PM
- Sunday: 9:00 AM – 4:00 PM","bakery","ChIJy_LqU91-hYARrF2Z8bMXT-w"
+ Sunday: 9:00 AM – 4:00 PM","bakery","ChIJy_LqU91-hYARrF2Z8bMXT-w","food"
 "La Marcha Tapas Bar","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Great Spanish food in a fancy-looking space. The crab tapas and the octopus platter were amazing and definitely worth a try.","2026 San Pablo Ave, Berkeley, CA 94702, United States",4.4,956,"https://www.google.com/maps/search/?api=1&query=2026%20San%20Pablo%20Ave,%20Berkeley,%20CA%2094702,%20United%20States&query_place_id=ChIJZSVa58F-hYAR9fvuy-pr6Rg",37.8686448,-122.2921893,"Monday: 4:00 – 10:00 PM
  Tuesday: 4:00 – 10:00 PM
  Wednesday: 4:00 – 10:00 PM
  Thursday: 4:00 – 10:00 PM
  Friday: 4:00 – 10:00 PM
  Saturday: 4:00 – 10:00 PM
- Sunday: 4:00 – 10:00 PM","bar","ChIJZSVa58F-hYAR9fvuy-pr6Rg"
+ Sunday: 4:00 – 10:00 PM","bar","ChIJZSVa58F-hYAR9fvuy-pr6Rg","food"
 "Cinderella","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Russian bakery in a quiet part of the Richmond district. Don't be fooled, however, Cinderella has been around since 1953 and that's for good reason, their pastries are amazing!","436 Balboa St, San Francisco, CA 94118, United States",4.7,2259,"https://www.google.com/maps/search/?api=1&query=436%20Balboa%20St,%20San%20Francisco,%20CA%2094118,%20United%20States&query_place_id=ChIJG6DZVEeHhYARN90v8rBlRsY",37.7773724,-122.4636784,"Monday: 7:00 AM – 7:00 PM
  Tuesday: 7:00 AM – 7:00 PM
  Wednesday: 7:00 AM – 7:00 PM
  Thursday: 7:00 AM – 7:00 PM
  Friday: 7:00 AM – 7:00 PM
  Saturday: 7:00 AM – 7:00 PM
- Sunday: 7:00 AM – 7:00 PM","bakery","ChIJG6DZVEeHhYARN90v8rBlRsY"
+ Sunday: 7:00 AM – 7:00 PM","bakery","ChIJG6DZVEeHhYARN90v8rBlRsY","food"
 "Oma San Francisco Station","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Omakase spot hidden at the edge of a Japantown mall. Relatively affordable and amazing sushi and service.","1737 Post St #337, San Francisco, CA 94115, United States",4.6,160,"https://www.google.com/maps/search/?api=1&query=1737%20Post%20St%20#337,%20San%20Francisco,%20CA%2094115,%20United%20States&query_place_id=ChIJwbERTIWBhYARsQKbK5ikRuk",37.784985,-122.4310234,"Monday: 6:00 – 9:30 PM
  Tuesday: 6:00 – 9:30 PM
  Wednesday: 6:00 – 9:30 PM
  Thursday: 6:00 – 9:30 PM
  Friday: 5:00 – 10:00 PM
  Saturday: 5:00 – 10:00 PM
- Sunday: 5:00 – 10:00 PM","restaurant","ChIJwbERTIWBhYARsQKbK5ikRuk"
+ Sunday: 5:00 – 10:00 PM","restaurant","ChIJwbERTIWBhYARsQKbK5ikRuk","food"
 "The Anchovy Bar","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Anchovy-based spreads and dishes: an interesting concept executed in a creative way. If you're feeling brave, give the anchovy ice cream a try.","1740 O'Farrell St, San Francisco, CA 94115, United States",4.6,213,"https://www.google.com/maps/search/?api=1&query=1740%20O'Farrell%20St,%20San%20Francisco,%20CA%2094115,%20United%20States&query_place_id=ChIJN1jrY56BhYAROCDrviZM73k",37.7834015,-122.4332076,"Monday: 5:30 – 9:00 PM
  Tuesday: 5:30 – 9:00 PM
  Wednesday: 5:30 – 9:00 PM
  Thursday: 5:30 – 9:00 PM
  Friday: 5:00 – 9:30 PM
  Saturday: 5:00 – 9:30 PM
- Sunday: 5:00 – 9:00 PM","restaurant","ChIJN1jrY56BhYAROCDrviZM73k"
+ Sunday: 5:00 – 9:00 PM","restaurant","ChIJN1jrY56BhYAROCDrviZM73k","food"
 "Shawarmaji","San Francisco Bay Area","Oakland","California","United States of America","Yes","My favorite Middle Eastern spot in the Bay that's exactly what I imagine shawarma should taste like: flavorful, fresh, filling.","2123 Franklin St, Oakland, CA 94612, United States",4.5,554,"https://www.google.com/maps/search/?api=1&query=2123%20Franklin%20St,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJ06KARiyBj4ARJmSJSSDm0W4",37.8103351,-122.2668096,"Monday: 11:00 AM – 9:00 PM
  Tuesday: 11:00 AM – 9:00 PM
  Wednesday: 11:00 AM – 9:00 PM
  Thursday: 11:00 AM – 9:00 PM
  Friday: 11:00 AM – 9:00 PM
  Saturday: 11:00 AM – 9:00 PM
- Sunday: 11:00 AM – 7:00 PM","meal_takeaway","ChIJ06KARiyBj4ARJmSJSSDm0W4"
+ Sunday: 11:00 AM – 7:00 PM","meal_takeaway","ChIJ06KARiyBj4ARJmSJSSDm0W4","food"
 "Mama Oakland","San Francisco Bay Area","Oakland","California","United States of America",NA,"Awesome Italian food in a 3-items fixed menu style: very innovative dishes and presentation. For example, sometimes you'll get your soup constructed in front of you!","388 Grand Ave, Oakland, CA 94610, United States",4.7,286,"https://www.google.com/maps/search/?api=1&query=388%20Grand%20Ave,%20Oakland,%20CA%2094610,%20United%20States&query_place_id=ChIJP3byt5iHj4ARj2K4nYYLMco",37.8090835,-122.2545103,"Monday: 5:30 – 9:00 PM
  Tuesday: 5:30 – 9:00 PM
  Wednesday: 5:30 – 9:00 PM
  Thursday: 5:30 – 9:00 PM
  Friday: 5:00 – 10:00 PM
  Saturday: 5:00 – 10:00 PM
- Sunday: 5:00 – 9:00 PM","bar","ChIJP3byt5iHj4ARj2K4nYYLMco"
+ Sunday: 5:00 – 9:00 PM","bar","ChIJP3byt5iHj4ARj2K4nYYLMco","food"
 "Cupcakin Bake Shop","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Some of the best mini cupcakes around and highly crave-inducing. The place is on the busy Telegraph Avenue right next to Berkeley's campus.","2391 Telegraph Ave, Berkeley, CA 94704, United States",4.6,253,"https://www.google.com/maps/search/?api=1&query=2391%20Telegraph%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJlzvpsih8hYAR6DCl58938GY",37.8671287,-122.2587296,"Monday: 11:00 AM – 6:00 PM
  Tuesday: 11:00 AM – 6:00 PM
  Wednesday: 11:00 AM – 6:00 PM
  Thursday: 11:00 AM – 6:00 PM
  Friday: 11:00 AM – 7:00 PM
  Saturday: 11:00 AM – 7:00 PM
- Sunday: 11:00 AM – 6:00 PM","bakery","ChIJlzvpsih8hYAR6DCl58938GY"
+ Sunday: 11:00 AM – 6:00 PM","bakery","ChIJlzvpsih8hYAR6DCl58938GY","food"
 "Bob Donuts","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Simple but very tasty donuts to enjoy while walking around Nob Hill.","1621 Polk St, San Francisco, CA 94109, United States",4.6,3481,"https://www.google.com/maps/search/?api=1&query=1621%20Polk%20St,%20San%20Francisco,%20CA%2094109,%20United%20States&query_place_id=ChIJj-FdH-uAhYARIp6mvqK3HNM",37.7918782,-122.4211769,"Monday: Open 24 hours
  Tuesday: Open 24 hours
  Wednesday: Open 24 hours
  Thursday: Open 24 hours
  Friday: Open 24 hours
  Saturday: Open 24 hours
- Sunday: Open 24 hours","bakery","ChIJj-FdH-uAhYARIp6mvqK3HNM"
+ Sunday: Open 24 hours","bakery","ChIJj-FdH-uAhYARIp6mvqK3HNM","food"
 "Saul’s Deli","San Francisco Bay Area","Berkeley","California","United States of America",NA,"A real staple for deli food in the Bay: try out the shakshouka for an explosion of flavor and freshness.","1475 Shattuck Ave., Berkeley, CA 94709, United States",4.5,1783,"https://www.google.com/maps/search/?api=1&query=1475%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJgcIf0KZ-hYAR_yowREPdtsY",37.8806714,-122.2690485,"Monday: 8:00 AM – 9:00 PM
  Tuesday: 8:00 AM – 9:00 PM
  Wednesday: 8:00 AM – 9:00 PM
  Thursday: 8:00 AM – 9:00 PM
  Friday: 8:00 AM – 9:00 PM
  Saturday: 8:00 AM – 9:00 PM
- Sunday: 8:00 AM – 9:00 PM","restaurant","ChIJgcIf0KZ-hYAR_yowREPdtsY"
+ Sunday: 8:00 AM – 9:00 PM","restaurant","ChIJgcIf0KZ-hYAR_yowREPdtsY","food"
 "Arizmendi","San Francisco Bay Area","Oakland","California","United States of America",NA,"A classic Bay Area bakery and pizza co-op with pizza-of-the-day offerings and a huge selection of bread and baked goods.","1331 9th Ave, San Francisco, CA 94122, United States",4.7,1596,"https://www.google.com/maps/search/?api=1&query=1331%209th%20Ave,%20San%20Francisco,%20CA%2094122,%20United%20States&query_place_id=ChIJMdUfNVyHhYAR7pvCohDZC70",37.7634047,-122.466442,"Monday: Closed
  Tuesday: 7:30 AM – 6:00 PM
  Wednesday: 7:30 AM – 6:00 PM
  Thursday: 7:30 AM – 6:00 PM
  Friday: 7:30 AM – 6:00 PM
  Saturday: 7:30 AM – 6:00 PM
- Sunday: 7:30 AM – 6:00 PM","bakery","ChIJMdUfNVyHhYAR7pvCohDZC70"
+ Sunday: 7:30 AM – 6:00 PM","bakery","ChIJMdUfNVyHhYAR7pvCohDZC70","food"
 "Fish and Bird Sousaku Izakaya","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Great Japanese curry I would highly recommend, but many of their dishes are carefully thought-out and creatively executed. One of Berkeley's food destinations in my opinion.","2451 Shattuck Ave., Berkeley, CA 94704, United States",4.3,262,"https://www.google.com/maps/search/?api=1&query=2451%20Shattuck%20Ave.,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJSVtssxl_hYAR2l6XqAe_ylA",37.8648104,-122.2671991,"Monday: 4:30 – 9:00 PM
  Tuesday: Closed
  Wednesday: 5:00 – 9:00 PM
  Thursday: 5:00 – 9:00 PM
  Friday: 4:30 – 9:30 PM
  Saturday: 4:30 – 9:30 PM
- Sunday: 4:30 – 9:00 PM","restaurant","ChIJSVtssxl_hYAR2l6XqAe_ylA"
+ Sunday: 4:30 – 9:00 PM","restaurant","ChIJSVtssxl_hYAR2l6XqAe_ylA","food"
 "Rick and Ann’s","San Francisco Bay Area","Berkeley","California","United States of America",NA,"French-inspired brunch place, a bit out of the way but still worth it for their lemon ricotta pancakes and rustic vibes.","2922 Domingo Ave, Berkeley, CA 94705, United States",4.5,667,"https://www.google.com/maps/search/?api=1&query=2922%20Domingo%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJ4RFe8sl9hYARBEIC4MggivE",37.8585403,-122.2440731,"Monday: 8:30 AM – 2:00 PM
  Tuesday: Closed
  Wednesday: Closed
  Thursday: 8:30 AM – 2:00 PM
  Friday: 8:30 AM – 2:00 PM
  Saturday: 8:30 AM – 2:00 PM
- Sunday: 8:30 AM – 2:00 PM","cafe","ChIJ4RFe8sl9hYARBEIC4MggivE"
+ Sunday: 8:30 AM – 2:00 PM","cafe","ChIJ4RFe8sl9hYARBEIC4MggivE","coffee"
 "Takoyaki Yamachan","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Japanese streetfood takoyakis (octopus-filled dough balls) in a busy indoor mall in Japantown.","1737 Post St STE395, San Francisco, CA 94115, United States",4.4,100,"https://www.google.com/maps/search/?api=1&query=1737%20Post%20St%20STE395,%20San%20Francisco,%20CA%2094115,%20United%20States&query_place_id=ChIJsw58pmiBhYARl8AD1CNFAyw",37.785076,-122.4305494,"Monday: 11:00 AM – 7:00 PM
  Tuesday: 11:00 AM – 7:00 PM
  Wednesday: 11:00 AM – 7:00 PM
  Thursday: 11:00 AM – 7:00 PM
  Friday: 11:00 AM – 7:00 PM
  Saturday: 11:00 AM – 7:00 PM
- Sunday: 11:00 AM – 7:00 PM","meal_takeaway","ChIJsw58pmiBhYARl8AD1CNFAyw"
+ Sunday: 11:00 AM – 7:00 PM","meal_takeaway","ChIJsw58pmiBhYARl8AD1CNFAyw","food"
 "Mochill Mochi Donuts","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Very crave-inducing mochi donut spot. My favorite is the black sesame which is a great mix of chewy-ness and flowery-looking donut.","1737 Post St STE395, San Francisco, CA 94115, United States",4.6,313,"https://www.google.com/maps/search/?api=1&query=1737%20Post%20St%20STE395,%20San%20Francisco,%20CA%2094115,%20United%20States&query_place_id=ChIJYTeHK0SBhYARyEEvKzjrBl8",37.7850952,-122.4305392,"Monday: 11:00 AM – 7:00 PM
  Tuesday: 11:00 AM – 7:00 PM
  Wednesday: 11:00 AM – 7:00 PM
  Thursday: 11:00 AM – 7:00 PM
  Friday: 11:00 AM – 7:00 PM
  Saturday: 11:00 AM – 7:00 PM
- Sunday: 11:00 AM – 7:00 PM","bakery","ChIJYTeHK0SBhYARyEEvKzjrBl8"
+ Sunday: 11:00 AM – 7:00 PM","bakery","ChIJYTeHK0SBhYARyEEvKzjrBl8","food"
 "Daily Driver","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Bagel shop that gets creative with its recipes: I got the goat cheese and honey cinammon raising bagel and enjoyed it in their airy space in the Dogpatch.","2535 3rd St, San Francisco, CA 94107, United States",4.2,321,"https://www.google.com/maps/search/?api=1&query=2535%203rd%20St,%20San%20Francisco,%20CA%2094107,%20United%20States&query_place_id=ChIJbTcNCG9_j4AR8ezdnQGFXHo",37.7573474,-122.38801,"Monday: 8:00 AM – 2:00 PM
  Tuesday: 8:00 AM – 2:00 PM
  Wednesday: 8:00 AM – 2:00 PM
  Thursday: 8:00 AM – 2:00 PM
  Friday: 8:00 AM – 2:00 PM
  Saturday: 8:00 AM – 2:00 PM
- Sunday: 8:00 AM – 2:00 PM","cafe","ChIJbTcNCG9_j4AR8ezdnQGFXHo"
+ Sunday: 8:00 AM – 2:00 PM","cafe","ChIJbTcNCG9_j4AR8ezdnQGFXHo","coffee"
 "Imm Thai Street Food","San Francisco Bay Area","Berkeley","California","United States of America",NA,"Classic Thai place a few steps from Berkeley's campus. Usually bustling with students, you'll be impressed by the quality of food and service.","2068 University Ave, Berkeley, CA 94704, United States",4.5,1212,"https://www.google.com/maps/search/?api=1&query=2068%20University%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJYx5P7J5-hYARctvMDW_ZVF8",37.8719079,-122.2691186,"Monday: 11:00 AM – 9:00 PM
  Tuesday: 11:00 AM – 9:00 PM
  Wednesday: 11:00 AM – 9:00 PM
  Thursday: 11:00 AM – 9:00 PM
  Friday: 11:00 AM – 9:30 PM
  Saturday: 11:00 AM – 9:30 PM
- Sunday: 11:00 AM – 9:30 PM","restaurant","ChIJYx5P7J5-hYARctvMDW_ZVF8"
+ Sunday: 11:00 AM – 9:30 PM","restaurant","ChIJYx5P7J5-hYARctvMDW_ZVF8","food"
 "Reem’s California Mission","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Fantastic Arab-inspired plates: really fresh and bursting with flavor. Get any of the savory plates but don't skip the dessert; I recommend the knafeh.","2901 Mission St, San Francisco, CA 94110, United States",4.4,176,"https://www.google.com/maps/search/?api=1&query=2901%20Mission%20St,%20San%20Francisco,%20CA%2094110,%20United%20States&query_place_id=ChIJo5ZK6U1_j4ARzzvu7N7rK5I",37.7505546,-122.4179873,"Monday: Closed
  Tuesday: 8:00 AM – 3:00 PM, 5:00 – 9:00 PM
  Wednesday: 8:00 AM – 2:00 PM, 5:00 – 9:00 PM
  Thursday: 8:00 AM – 3:00 PM, 5:00 – 9:00 PM
  Friday: 8:00 AM – 3:00 PM, 5:00 – 9:00 PM
  Saturday: 10:00 AM – 8:00 PM
- Sunday: 10:00 AM – 3:00 PM","restaurant","ChIJo5ZK6U1_j4ARzzvu7N7rK5I"
+ Sunday: 10:00 AM – 3:00 PM","restaurant","ChIJo5ZK6U1_j4ARzzvu7N7rK5I","food"
 "El Porteno","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Empandas tiny spot inside the Ferry building with a great selection of flavors. The ham and cheese is my go-to.","2293 Mission St, San Francisco, CA 94110, United States",4.4,112,"https://www.google.com/maps/search/?api=1&query=2293%20Mission%20St,%20San%20Francisco,%20CA%2094110,%20United%20States&query_place_id=ChIJuWJlch9_j4ARICDjkBU68-g",37.7604692,-122.4189732,"Monday: 12:00 – 10:00 PM
  Tuesday: 12:00 – 10:00 PM
  Wednesday: 12:00 – 10:00 PM
  Thursday: 12:00 – 10:00 PM
  Friday: 12:00 PM – 1:45 AM
  Saturday: 12:00 PM – 1:45 AM
- Sunday: 12:00 PM – 1:00 AM","restaurant","ChIJNScElRl-j4AR-fmZkyj5o80"
+ Sunday: 12:00 PM – 1:00 AM","restaurant","ChIJNScElRl-j4AR-fmZkyj5o80","food"
 "La Coqueta","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Spanish restaurant by the Embarcadero with innovative dishes and cocktails. Go for a classic paella or one of their seafood tapas and pair it with their rosemary gin tonics.","Pier 5 The Embarcadero, San Francisco, CA 94111, United States",4.4,2211,"https://www.google.com/maps/search/?api=1&query=Pier%205%20The%20Embarcadero,%20San%20Francisco,%20CA%2094111,%20United%20States&query_place_id=ChIJA8_SN2eAhYARCIvEx44Zvfw",37.7985824,-122.3966387,"Monday: 12:00 – 9:00 PM
  Tuesday: 12:00 – 9:00 PM
  Wednesday: 12:00 – 9:00 PM
  Thursday: 12:00 – 9:00 PM
  Friday: 11:00 AM – 10:00 PM
  Saturday: 11:00 AM – 10:00 PM
- Sunday: 11:00 AM – 10:00 PM","bar","ChIJA8_SN2eAhYARCIvEx44Zvfw"
+ Sunday: 11:00 AM – 10:00 PM","bar","ChIJA8_SN2eAhYARCIvEx44Zvfw","food"
 "La Mar Cebicheria Peruana","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Famous Peruvian spot, with some of the best nigiri I've had. Very fresh and tasty, and a great balcony area overlooking the Bay Bridge and Embarcadero.","PIER 1 1/2 The Embarcadero N, San Francisco, CA 94105, United States",4.5,3715,"https://www.google.com/maps/search/?api=1&query=PIER%201%201/2%20The%20Embarcadero%20N,%20San%20Francisco,%20CA%2094105,%20United%20States&query_place_id=ChIJURDKN2eAhYARN0AMzUEaiKo",37.7971425,-122.3953713,"Monday: 11:30 AM – 2:30 PM, 5:00 – 9:00 PM
  Tuesday: 11:30 AM – 2:30 PM, 5:00 – 9:00 PM
  Wednesday: 11:30 AM – 2:30 PM, 5:00 – 9:00 PM
  Thursday: 11:30 AM – 2:30 PM, 5:00 – 9:00 PM
  Friday: 11:30 AM – 2:30 PM, 5:00 – 9:30 PM
  Saturday: 11:30 AM – 2:30 PM, 5:00 – 9:30 PM
- Sunday: 11:30 AM – 2:30 PM, 5:00 – 9:00 PM","restaurant","ChIJURDKN2eAhYARN0AMzUEaiKo"
+ Sunday: 11:30 AM – 2:30 PM, 5:00 – 9:00 PM","restaurant","ChIJURDKN2eAhYARN0AMzUEaiKo","food"
 "Top Dog","San Francisco Bay Area","Berkeley","California","United States of America","Yes","Simple hot dog spot a block and a half from UC Berkeley's campus. The perfectly simple recipe of a bun, hot dog and mustard served in a place that has been there since 1966.","2534 Durant Ave, Berkeley, CA 94704, United States",4.6,1189,"https://www.google.com/maps/search/?api=1&query=2534%20Durant%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJ82ILDy98hYARmDyblkFWaBQ",37.8678601,-122.2573808,"Monday: 10:00 AM – 2:00 AM
  Tuesday: 10:00 AM – 2:00 AM
  Wednesday: 10:00 AM – 2:00 AM
  Thursday: 10:00 AM – 2:00 AM
  Friday: 10:00 AM – 3:00 AM
  Saturday: 11:00 AM – 3:00 AM
- Sunday: 11:00 AM – 2:00 AM","meal_takeaway","ChIJ82ILDy98hYARmDyblkFWaBQ"
+ Sunday: 11:00 AM – 2:00 AM","meal_takeaway","ChIJ82ILDy98hYARmDyblkFWaBQ","food"
 "Besharam","San Francisco Bay Area","San Francisco","California","United States of America","Yes","Great Gujarati cuisine with menu sections named after cities: for me, Khaman (lentil cake with coconut chutney) and their house-made cocktails were the hightlight of the experience.","1275 Minnesota St, San Francisco, CA 94107, United States",4.3,443,"https://www.google.com/maps/search/?api=1&query=1275%20Minnesota%20St,%20San%20Francisco,%20CA%2094107,%20United%20States&query_place_id=ChIJpVAZ4wx_j4AR4j8Q0COpGHc",37.7541896,-122.3897345,"Monday: Closed
  Tuesday: Closed
  Wednesday: 5:00 – 9:00 PM
  Thursday: 5:00 – 9:00 PM
  Friday: 5:00 – 9:00 PM
  Saturday: 5:00 – 9:00 PM
- Sunday: 5:00 – 9:00 PM","restaurant","ChIJpVAZ4wx_j4AR4j8Q0COpGHc"
+ Sunday: 5:00 – 9:00 PM","restaurant","ChIJpVAZ4wx_j4AR4j8Q0COpGHc","food"
 "Pier Market Seafood Restaurant","San Francisco Bay Area","San Francisco","California","United States of America",NA,"A bustling place in the middle of Fisherman's Wharf: great seafood selection, including pasta and risottos and views of the Golden Gate Bridge.","39 Pier 39, San Francisco, CA 94133, United States",4.4,6281,"https://www.google.com/maps/search/?api=1&query=39%20Pier%2039,%20San%20Francisco,%20CA%2094133,%20United%20States&query_place_id=ChIJHSGzi_yAhYAR9CGTkz3GiJ0",37.809932,-122.4105757,"Monday: 11:00 AM – 10:00 PM
  Tuesday: 11:00 AM – 10:00 PM
  Wednesday: 11:00 AM – 10:00 PM
  Thursday: 11:00 AM – 10:00 PM
  Friday: 11:00 AM – 10:00 PM
  Saturday: 11:00 AM – 10:00 PM
- Sunday: 11:00 AM – 10:00 PM","restaurant","ChIJHSGzi_yAhYAR9CGTkz3GiJ0"
+ Sunday: 11:00 AM – 10:00 PM","restaurant","ChIJHSGzi_yAhYAR9CGTkz3GiJ0","food"
 "Hillstone","San Francisco Bay Area","San Francisco","California","United States of America",NA,"An American diner with a few twists: they happen to have great espresso and a few seafood plates.","1800 Montgomery St, San Francisco, CA 94111, United States",4.4,1759,"https://www.google.com/maps/search/?api=1&query=1800%20Montgomery%20St,%20San%20Francisco,%20CA%2094111,%20United%20States&query_place_id=ChIJ3a33xfmAhYAR5tbOg8ouvf8",37.805984,-122.405143,"Monday: 11:30 AM – 9:00 PM
  Tuesday: 11:30 AM – 9:00 PM
  Wednesday: 11:30 AM – 9:00 PM
  Thursday: 11:30 AM – 9:00 PM
  Friday: 11:30 AM – 9:30 PM
  Saturday: 11:30 AM – 9:30 PM
- Sunday: 11:30 AM – 9:00 PM","restaurant","ChIJ3a33xfmAhYAR5tbOg8ouvf8"
+ Sunday: 11:30 AM – 9:00 PM","restaurant","ChIJ3a33xfmAhYAR5tbOg8ouvf8","food"
 "Joyride Pizza","San Francisco Bay Area","San Francisco","California","United States of America",NA,"Casual pizza spot with great views of the Yerba Buena gardens and the Downtown SF skyline.","730 Howard St, San Francisco, CA 94103, United States",4.3,946,"https://www.google.com/maps/search/?api=1&query=730%20Howard%20St,%20San%20Francisco,%20CA%2094103,%20United%20States&query_place_id=ChIJwRoTbYeAhYARRVVpbPgZvdw",37.7844794,-122.4019232,"Monday: 12:00 – 8:00 PM
  Tuesday: 12:00 – 8:00 PM
  Wednesday: 12:00 – 8:00 PM
  Thursday: 12:00 – 8:00 PM
  Friday: 12:00 – 8:00 PM
  Saturday: 12:00 – 8:00 PM
- Sunday: 12:00 – 8:00 PM","meal_takeaway","ChIJG6XOLiJ-j4ARwnJDDxPKAs8"
+ Sunday: 12:00 – 8:00 PM","meal_takeaway","ChIJG6XOLiJ-j4ARwnJDDxPKAs8","food"
 "Zachary’s Chicago Pizza","San Francisco Bay Area","Oakland","California","United States of America","Yes","Local legend pizza place that serves Chicago-style pizza with yummy stuffings. Once the pizza is ready, the friendly staff will offer to serve you the first piece. The spinach and mushroom  is a classic!","5801 College Ave, Oakland, CA 94618, United States",4.7,2545,"https://www.google.com/maps/search/?api=1&query=5801%20College%20Ave,%20Oakland,%20CA%2094618,%20United%20States&query_place_id=ChIJ9bZJbMN9hYARZ3JGwPCPnfc",37.8462961,-122.2521527,"Monday: 11:00 AM – 9:00 PM
  Tuesday: 11:00 AM – 9:00 PM
  Wednesday: 11:00 AM – 9:00 PM
  Thursday: 11:00 AM – 9:00 PM
  Friday: 11:00 AM – 9:30 PM
  Saturday: 11:00 AM – 9:30 PM
- Sunday: 11:00 AM – 9:00 PM","restaurant","ChIJ9bZJbMN9hYARZ3JGwPCPnfc"
+ Sunday: 11:00 AM – 9:00 PM","restaurant","ChIJ9bZJbMN9hYARZ3JGwPCPnfc","food"
 "Ralph’s","New York, NY","New York City","New York","United States of America",NA,"Interesting experience in this Ralph Lauren coffee shop. The decor was fancier than the coffee, but still not your usual drink.","160 5th Ave, New York, NY 10010, United States",4.3,301,"https://www.google.com/maps/search/?api=1&query=160%205th%20Ave,%20New%20York,%20NY%2010010,%20United%20States&query_place_id=ChIJXaZb6BJZwokRtn0wzmpDqV4",40.7401079,-73.9908573,"Monday: 7:30 AM – 6:00 PM
  Tuesday: 7:30 AM – 6:00 PM
  Wednesday: 7:30 AM – 6:00 PM
  Thursday: 7:30 AM – 6:00 PM
  Friday: 7:30 AM – 6:00 PM
  Saturday: 7:30 AM – 6:00 PM
- Sunday: 8:00 AM – 5:00 PM","cafe","ChIJLx2u_exZwokRRATuJZ5qHJQ"
+ Sunday: 8:00 AM – 5:00 PM","cafe","ChIJLx2u_exZwokRRATuJZ5qHJQ","coffee"
 "Cafe Grumpy","Hoboken, NJ","Hoboken","New Jersey","United States of America",NA,"Cute spot in a Whole Foods (convenient). The espresso was pretty good as well!","1400 Waterfront Terrace, Weehawken, NJ 07086, United States",4.4,29,"https://www.google.com/maps/search/?api=1&query=1400%20Waterfront%20Terrace,%20Weehawken,%20NJ%2007086,%20United%20States&query_place_id=ChIJX8LJ1hBZwokRKyDZuW-MTiM",40.7614445,-74.0224297,"Monday: 8:00 AM – 7:00 PM
  Tuesday: 8:00 AM – 7:00 PM
  Wednesday: 8:00 AM – 7:00 PM
  Thursday: 8:00 AM – 7:00 PM
  Friday: 8:00 AM – 7:00 PM
  Saturday: 8:00 AM – 7:00 PM
- Sunday: 8:00 AM – 7:00 PM","cafe","ChIJX8LJ1hBZwokRKyDZuW-MTiM"
+ Sunday: 8:00 AM – 7:00 PM","cafe","ChIJX8LJ1hBZwokRKyDZuW-MTiM","coffee"
 "%Arabica","New York, NY","New York City","New York","United States of America",NA,"Great coffee in an awesome location: get your coffee to go and walk over to the park overlooking the Manhattan skyline.","20 Old Fulton St, Brooklyn, NY 11201, United States",4.4,650,"https://www.google.com/maps/search/?api=1&query=20%20Old%20Fulton%20St,%20Brooklyn,%20NY%2011201,%20United%20States&query_place_id=ChIJd1M9O0xbwokRi1mu1DC93xY",40.7026045,-73.9941637,"Monday: 8:00 AM – 6:00 PM
  Tuesday: 8:00 AM – 6:00 PM
  Wednesday: 8:00 AM – 6:00 PM
  Thursday: 8:00 AM – 6:00 PM
  Friday: 8:00 AM – 6:00 PM
  Saturday: 8:00 AM – 6:00 PM
- Sunday: 8:00 AM – 6:00 PM","cafe","ChIJd1M9O0xbwokRi1mu1DC93xY"
+ Sunday: 8:00 AM – 6:00 PM","cafe","ChIJd1M9O0xbwokRi1mu1DC93xY","coffee"
 "Black Fox Coffee","New York, NY","New York City","New York","United States of America","Yes","Fave NYC coffee spot! Singular attention to making very high quality coffee drinks provides for some of the best espresso I've had. Checkout one of their three spots around New York, but I recommend their Pine Street flagship.","438 W 33rd St, New York, NY 10001, United States",4.6,85,"https://www.google.com/maps/search/?api=1&query=438%20W%2033rd%20St,%20New%20York,%20NY%2010001,%20United%20States&query_place_id=ChIJOcDofCpZwokRuUs6afge9dE",40.7532346,-73.9982743,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJKeU4NBZawokROz07vTp32BQ"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJKeU4NBZawokROz07vTp32BQ","coffee"
 "Cafe Patoro","New York, NY","New York City","New York","United States of America","Yes","Quaint shop in the Front Street historical district. You'll enjoy the calm atmosphere if you like a cozy spot to read, write or meet up with the shop's regulars. Also pretty good coffee is a bonus.","223 Front St, New York, NY 10038, United States",4.6,433,"https://www.google.com/maps/search/?api=1&query=223%20Front%20St,%20New%20York,%20NY%2010038,%20United%20States&query_place_id=ChIJHdfkwDxawokRxtRRUo4z2BQ",40.707366,-74.002252,"Monday: 8:00 AM – 4:00 PM
  Tuesday: 8:00 AM – 4:00 PM
  Wednesday: 8:00 AM – 4:00 PM
  Thursday: 8:00 AM – 4:00 PM
  Friday: 8:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJHdfkwDxawokRxtRRUo4z2BQ"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJHdfkwDxawokRxtRRUo4z2BQ","coffee"
 "Coffee Project","New York, NY","New York City","New York","United States of America",NA,"Deconstructed coffees are the star of the show at this small coffee shop. Give it a try for a different and revealing coffee experience in which your typical latte with come as 3 separate cups.","239 E 5th St, New York, NY 10003, United States",4.7,692,"https://www.google.com/maps/search/?api=1&query=239%20E%205th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJ_dckWptZwokR_LkU9WxPNZ4",40.7270658,-73.9893977,"Monday: 7:30 AM – 5:00 PM
  Tuesday: 7:30 AM – 5:00 PM
  Wednesday: 7:30 AM – 5:00 PM
  Thursday: 7:30 AM – 5:00 PM
  Friday: 7:30 AM – 5:00 PM
  Saturday: 8:00 AM – 5:30 PM
- Sunday: 8:00 AM – 5:30 PM","cafe","ChIJ_dckWptZwokR_LkU9WxPNZ4"
+ Sunday: 8:00 AM – 5:30 PM","cafe","ChIJ_dckWptZwokR_LkU9WxPNZ4","coffee"
 "Cortaditos","Union City, NJ","Union City","New Jersey","United States of America",NA,"Cuban coffee shop with lively decor and music. Get one of their signature drinks and enjoy the happy atmosphere.","4501 Park Ave, Union City, NJ 07087, United States",4.6,329,"https://www.google.com/maps/search/?api=1&query=4501%20Park%20Ave,%20Union%20City,%20NJ%2007087,%20United%20States&query_place_id=ChIJi9xEDhlZwokRZXXlcZ6Ubkw",40.7771886,-74.0188043,"Monday: 6:00 AM – 8:00 PM
  Tuesday: 6:00 AM – 8:00 PM
  Wednesday: 6:00 AM – 8:00 PM
  Thursday: 6:00 AM – 8:00 PM
  Friday: 6:00 AM – 8:00 PM
  Saturday: 6:00 AM – 8:00 PM
- Sunday: 8:00 AM – 8:00 PM","cafe","ChIJi9xEDhlZwokRZXXlcZ6Ubkw"
+ Sunday: 8:00 AM – 8:00 PM","cafe","ChIJi9xEDhlZwokRZXXlcZ6Ubkw","coffee"
 "Joe Coffee Company","New York, NY","New York City","New York","United States of America","Yes","Coffee kiosk in Bryant Park. My recommendation is to get a coffee and drink it slowly taking in the sounds and sights of the city seeping in at the edges of this urban park.","9 E 13th St, New York, NY 10003, United States",4.3,226,"https://www.google.com/maps/search/?api=1&query=9%20E%2013th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJbSf_R5hZwokRsiFxyNhkkHo",40.7351714,-73.9932621,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 9:00 AM – 5:00 PM
- Sunday: 9:00 AM – 5:00 PM","cafe","ChIJs_ON7LlZwokRmKAaVhqevLo"
+ Sunday: 9:00 AM – 5:00 PM","cafe","ChIJs_ON7LlZwokRmKAaVhqevLo","coffee"
 "Hungry Ghost","New York, NY","New York City","New York","United States of America","Yes","Their Fulton St Brooklyn location makes for a nice neighbor-ly coffee experience. My recommendation: take your drink to go and walk around the street lined with bookstores and cafes, a nice getaway from the bustle of Manhattan visible from the distance.","165 Church St, New York, NY 10007, United States",4.6,111,"https://www.google.com/maps/search/?api=1&query=165%20Church%20St,%20New%20York,%20NY%2010007,%20United%20States&query_place_id=ChIJoX8prKxbwokRRdoG4EbHC14",40.7153096,-74.0074639,"Monday: 7:00 AM – 7:00 PM
  Tuesday: 7:00 AM – 7:00 PM
  Wednesday: 7:00 AM – 7:00 PM
  Thursday: 7:00 AM – 7:00 PM
  Friday: 7:00 AM – 7:00 PM
  Saturday: 7:00 AM – 7:00 PM
- Sunday: 7:00 AM – 7:00 PM","cafe","ChIJoX8prKxbwokRRdoG4EbHC14"
+ Sunday: 7:00 AM – 7:00 PM","cafe","ChIJoX8prKxbwokRRdoG4EbHC14","coffee"
 "Devocion","New York, NY","New York City","New York","United States of America",NA,"Some of the best coffee in NYC: at their Brooklyn location you can enjoy a glass-roofed coffee room with stage-like seating.","25 E 20th St, New York, NY 10003, United States",4.5,594,"https://www.google.com/maps/search/?api=1&query=25%20E%2020th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJH1KZKilZwokRYwSxtHI3_N0",40.7391337,-73.9890961,"Monday: 7:30 AM – 6:00 PM
  Tuesday: 7:30 AM – 6:00 PM
  Wednesday: 7:30 AM – 6:00 PM
  Thursday: 7:30 AM – 6:00 PM
  Friday: 7:30 AM – 6:00 PM
  Saturday: 8:00 AM – 6:00 PM
- Sunday: 8:00 AM – 6:00 PM","cafe","ChIJH1KZKilZwokRYwSxtHI3_N0"
+ Sunday: 8:00 AM – 6:00 PM","cafe","ChIJH1KZKilZwokRYwSxtHI3_N0","coffee"
 "Lillo Cucina Italiana","New York, NY","New York City","New York","United States of America","Yes","Tiny cash-only pasta spot with only a handful of tables. Can't go wrong with any of the dishes and the Italian decor and the friendliness of the people dining creates a heart-warming food atmosphere!","331 Henry St, Brooklyn, NY 11201, United States",4.8,310,"https://www.google.com/maps/search/?api=1&query=331%20Henry%20St,%20Brooklyn,%20NY%2011201,%20United%20States&query_place_id=ChIJtzWlCkVawokRCojY8KfHqqI",40.6901828,-73.9963759,"Monday: Closed
  Tuesday: 12:30 – 8:30 PM
  Wednesday: 12:30 – 8:30 PM
  Thursday: 12:30 – 8:30 PM
  Friday: 12:30 – 8:30 PM
  Saturday: 12:30 – 8:30 PM
- Sunday: 12:30 – 8:30 PM","restaurant","ChIJtzWlCkVawokRCojY8KfHqqI"
+ Sunday: 12:30 – 8:30 PM","restaurant","ChIJtzWlCkVawokRCojY8KfHqqI","food"
 "YUBU","New York, NY","New York City","New York","United States of America","Yes","Innovative food items in this casual Korean spot: get a set of their 3 sushi-like small eats. I recommend the salmon and spicy tuna.","86 E 7th St, New York, NY 10003, United States",4.6,207,"https://www.google.com/maps/search/?api=1&query=86%20E%207th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJCzymus9ZwokRwUnRIM76cKU",40.7270357,-73.986148,"Monday: Closed
  Tuesday: Closed
  Wednesday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM
  Thursday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM
  Friday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM
  Saturday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM
- Sunday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM","meal_takeaway","ChIJCzymus9ZwokRwUnRIM76cKU"
+ Sunday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM","meal_takeaway","ChIJCzymus9ZwokRwUnRIM76cKU","food"
 "L’Industrie","New York, NY","New York City","New York","United States of America",NA,"NYC style pizza at its best. The burrata and truffle slices are a must if you ask me and the lines are worth it for these slices.","254 S 2nd St, Brooklyn, NY 11211, United States",4.8,2071,"https://www.google.com/maps/search/?api=1&query=254%20S%202nd%20St,%20Brooklyn,%20NY%2011211,%20United%20States&query_place_id=ChIJQ-hJIuBbwokRRUdquw_5w5U",40.711627,-73.9578546,"Monday: 12:00 – 10:00 PM
  Tuesday: 12:00 – 10:00 PM
  Wednesday: 12:00 – 10:00 PM
  Thursday: 12:00 – 10:00 PM
  Friday: 12:00 – 10:00 PM
  Saturday: 12:00 – 10:00 PM
- Sunday: 12:00 – 10:00 PM","restaurant","ChIJQ-hJIuBbwokRRUdquw_5w5U"
+ Sunday: 12:00 – 10:00 PM","restaurant","ChIJQ-hJIuBbwokRRUdquw_5w5U","food"
 "Sam’s Falafel","New York, NY","New York City","New York","United States of America","Yes","Giant falafel sandwich that will leave you full for the rest of the day, definitely worth it! Staff is passionate and friendly, but I recommend taking the sandwich and walking over to the Hudson river and enjoy it watching the ships.","100 Cedar St #90, New York, NY 10006, United States",4.8,205,"https://www.google.com/maps/search/?api=1&query=100%20Cedar%20St%20#90,%20New%20York,%20NY%2010006,%20United%20States&query_place_id=ChIJha_VQhdawokRuVhfhUyURGg",40.7089751,-74.0113558,"Monday: 10:00 AM – 3:30 PM
  Tuesday: 10:00 AM – 3:30 PM
  Wednesday: 10:00 AM – 3:30 PM
  Thursday: 10:00 AM – 3:30 PM
  Friday: 10:00 AM – 3:30 PM
  Saturday: 10:00 AM – 4:30 PM
- Sunday: Closed","restaurant","ChIJha_VQhdawokRuVhfhUyURGg"
+ Sunday: Closed","restaurant","ChIJha_VQhdawokRuVhfhUyURGg","food"
 "Leo’s Bagel","New York, NY","New York City","New York","United States of America",NA,"Great bagel spot in the Wall Street area: get one of their special bagels (I recommend the avocado and bacon). Simple but very filling!","3 Hanover Square, New York, NY 10004, United States",4.3,1912,"https://www.google.com/maps/search/?api=1&query=3%20Hanover%20Square,%20New%20York,%20NY%2010004,%20United%20States&query_place_id=ChIJST0cgRZawokRZcRLEH3ylJ0",40.7049369,-74.0097345,"Monday: 6:00 AM – 3:00 PM
  Tuesday: 6:00 AM – 3:00 PM
  Wednesday: 6:00 AM – 3:00 PM
  Thursday: 6:00 AM – 3:00 PM
  Friday: 6:00 AM – 3:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","bakery","ChIJST0cgRZawokRZcRLEH3ylJ0"
+ Sunday: 7:00 AM – 4:00 PM","bakery","ChIJST0cgRZawokRZcRLEH3ylJ0","food"
 "Van Leeuwen Ice Cream","New York, NY","New York City","New York","United States of America",NA,"Funky (always appreciated) flavors. I recommend their seasonal specials, the passion fruit was colorful and very tasty.","48 1/2 E 7th St, New York, NY 10003, United States",4.5,1351,"https://www.google.com/maps/search/?api=1&query=48%201/2%20E%207th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJFzjg4FFawokRzq3tGzrnVhM",40.727698,-73.9876762,"Monday: 11:00 AM – 12:00 AM
  Tuesday: 11:00 AM – 12:00 AM
  Wednesday: 11:00 AM – 12:00 AM
  Thursday: 11:00 AM – 12:00 AM
  Friday: 11:00 AM – 1:00 AM
  Saturday: 11:00 AM – 1:00 AM
- Sunday: 11:00 AM – 12:00 AM","store","ChIJFzjg4FFawokRzq3tGzrnVhM"
+ Sunday: 11:00 AM – 12:00 AM","store","ChIJFzjg4FFawokRzq3tGzrnVhM","others"
 "Pita Yeero","New York, NY","New York City","New York","United States of America",NA,"Greek kiosk in an indoor food court: get the chicken gyro. Yummy!","URBANSPACE 570 Lexington, 570 Lexington Ave, New York, NY 10022, United States",4.1,73,"https://www.google.com/maps/search/?api=1&query=URBANSPACE%20570%20Lexington,%20570%20Lexington%20Ave,%20New%20York,%20NY%2010022,%20United%20States&query_place_id=ChIJA4zMd0BZwokRd8jGr1prd38",40.7570686,-73.9724885,"Monday: 11:00 AM – 8:00 PM
  Tuesday: 11:00 AM – 8:00 PM
  Wednesday: 11:00 AM – 8:00 PM
  Thursday: 11:00 AM – 8:00 PM
  Friday: 11:00 AM – 8:00 PM
  Saturday: Closed
- Sunday: Closed","restaurant","ChIJA4zMd0BZwokRd8jGr1prd38"
+ Sunday: Closed","restaurant","ChIJA4zMd0BZwokRd8jGr1prd38","food"
 "Orale! Mexican Kitchen","Hoboken, NJ","Hoboken","New Jersey","United States of America","Yes","I've only ever ordered takeout from this Mexican spot, but the battered fish tacos and their rice side dish is something I go back to week after week.","1426 Willow Ave, Hoboken, NJ 07030, United States",4.3,642,"https://www.google.com/maps/search/?api=1&query=1426%20Willow%20Ave,%20Hoboken,%20NJ%2007030,%20United%20States&query_place_id=ChIJQ2aGW41ZwokRDKs2nyGEdHA",40.7548868,-74.0295297,"Monday: Closed
  Tuesday: 3:00 – 10:00 PM
  Wednesday: 3:00 – 10:00 PM
  Thursday: 3:00 – 10:00 PM
  Friday: 3:00 – 10:00 PM
  Saturday: 12:00 – 10:00 PM
- Sunday: 12:00 – 9:00 PM","restaurant","ChIJQ2aGW41ZwokRDKs2nyGEdHA"
-"Khiladi NYC","New York, NY","New York City","New York","United States of America",NA,"Great dosa, I recommend the ""everything"" filling with cheese, potatoes and lentils.","175 Avenue B, New York, NY 10009, United States",4.4,349,"https://www.google.com/maps/search/?api=1&query=175%20Avenue%20B,%20New%20York,%20NY%2010009,%20United%20States&query_place_id=ChIJ4bznWw1ZwokRfCZCl74RhOs",40.7274737,-73.9791691,NA,"restaurant","ChIJ4bznWw1ZwokRfCZCl74RhOs"
+ Sunday: 12:00 – 9:00 PM","restaurant","ChIJQ2aGW41ZwokRDKs2nyGEdHA","food"
+"Khiladi NYC","New York, NY","New York City","New York","United States of America",NA,"Great dosa, I recommend the ""everything"" filling with cheese, potatoes and lentils.","175 Avenue B, New York, NY 10009, United States",4.4,349,"https://www.google.com/maps/search/?api=1&query=175%20Avenue%20B,%20New%20York,%20NY%2010009,%20United%20States&query_place_id=ChIJ4bznWw1ZwokRfCZCl74RhOs",40.7274737,-73.9791691,NA,"restaurant","ChIJ4bznWw1ZwokRfCZCl74RhOs","food"
 "Mariscos El Submarino","New York, NY","New York City","New York","United States of America",NA,"Fish tacos in this small but very busy Queens Mexican restaurant.","8805 Roosevelt Ave, Queens, NY 11372, United States",4.6,354,"https://www.google.com/maps/search/?api=1&query=8805%20Roosevelt%20Ave,%20Queens,%20NY%2011372,%20United%20States&query_place_id=ChIJCURgyldfwokRvBpy5nCp7qY",40.7484748,-73.8781318,"Monday: 12:00 – 9:00 PM
  Tuesday: 12:00 – 9:00 PM
  Wednesday: 12:00 – 9:00 PM
  Thursday: 12:00 – 9:00 PM
  Friday: 12:00 – 9:00 PM
  Saturday: 12:00 – 9:00 PM
- Sunday: 12:00 – 9:00 PM","restaurant","ChIJCURgyldfwokRvBpy5nCp7qY"
+ Sunday: 12:00 – 9:00 PM","restaurant","ChIJCURgyldfwokRvBpy5nCp7qY","food"
 "Nada","New York, NY","New York City","New York","United States of America",NA,"Vegan empanadas: warm and filling. The black bean and corn was great!","548 W 22nd St, New York, NY 10011, United States",0,0,"https://www.google.com/maps/search/?api=1&query=548%20W%2022nd%20St,%20New%20York,%20NY%2010011,%20United%20States&query_place_id=ChIJLYGkXixawokR1a_a84zM9AE",40.747812,-74.007014,"Monday: Closed
  Tuesday: Closed
  Wednesday: Closed
  Thursday: 10:00 AM – 8:00 PM
  Friday: 11:00 AM – 7:00 PM
  Saturday: 11:00 AM – 7:00 PM
- Sunday: 11:00 AM – 5:00 PM","point_of_interest","ChIJLYGkXixawokR1a_a84zM9AE"
+ Sunday: 11:00 AM – 5:00 PM","point_of_interest","ChIJLYGkXixawokR1a_a84zM9AE","others"
 "Spicy Moon","New York, NY","New York City","New York","United States of America",NA,"Scallion pancakes and dan dan noodles in this vegan spot really hit the spot! Tasty and good portion sizes for our noodle cravings.","328 E 6th St, New York, NY 10003, United States",4.6,683,"https://www.google.com/maps/search/?api=1&query=328%20E%206th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJ7x3Pe11ZwokRLpfe6va9dqs",40.726741,-73.9872123,"Monday: 11:30 AM – 10:00 PM
  Tuesday: 11:30 AM – 10:00 PM
  Wednesday: 11:30 AM – 10:00 PM
  Thursday: 11:30 AM – 10:00 PM
  Friday: 11:30 AM – 10:00 PM
  Saturday: 11:30 AM – 10:00 PM
- Sunday: 11:30 AM – 10:00 PM","meal_delivery","ChIJ7x3Pe11ZwokRLpfe6va9dqs"
+ Sunday: 11:30 AM – 10:00 PM","meal_delivery","ChIJ7x3Pe11ZwokRLpfe6va9dqs","food"
 "Taqueria Al Pastor","New York, NY","New York City","New York","United States of America","Yes","Some of the tastiest tacos al pastor NYC has to offer. As always, the marinated pork, sauces and pinapple make for a great food experience. Props for being right outside of the subway stop.","128 Wyckoff Ave, Brooklyn, NY 11237, United States",4.6,511,"https://www.google.com/maps/search/?api=1&query=128%20Wyckoff%20Ave,%20Brooklyn,%20NY%2011237,%20United%20States&query_place_id=ChIJVxxLjhhdwokRljQPK_XWGzw",40.7033949,-73.9179709,"Monday: 11:00 AM – 12:00 AM
  Tuesday: 11:00 AM – 12:00 AM
  Wednesday: 11:00 AM – 12:00 AM
  Thursday: 11:00 AM – 12:00 AM
  Friday: 11:00 AM – 1:00 AM
  Saturday: 11:00 AM – 1:00 AM
- Sunday: 11:00 AM – 12:00 AM","restaurant","ChIJVxxLjhhdwokRljQPK_XWGzw"
+ Sunday: 11:00 AM – 12:00 AM","restaurant","ChIJVxxLjhhdwokRljQPK_XWGzw","food"
 "Miss Ada","New York, NY","New York City","New York","United States of America","Yes","Whipped ricotta + any other dish from this former Michelin spot that serves creative and super tasty Middle Eastern food.","184 Dekalb Ave, Brooklyn, NY 11205, United States",4.7,1109,"https://www.google.com/maps/search/?api=1&query=184%20Dekalb%20Ave,%20Brooklyn,%20NY%2011205,%20United%20States&query_place_id=ChIJqzhkS7dbwokRtGCdHcorPvU",40.689495,-73.9723826,"Monday: Closed
  Tuesday: 5:30 – 9:30 PM
  Wednesday: 5:30 – 9:30 PM
  Thursday: 5:30 – 9:30 PM
  Friday: 5:00 – 10:00 PM
  Saturday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM
- Sunday: 11:00 AM – 2:30 PM, 5:00 – 9:00 PM","restaurant","ChIJqzhkS7dbwokRtGCdHcorPvU"
+ Sunday: 11:00 AM – 2:30 PM, 5:00 – 9:00 PM","restaurant","ChIJqzhkS7dbwokRtGCdHcorPvU","food"
 "For Five Coffee","Washington, DC","Washington D.C.","Washington D.C.","United States of America",NA,"Great DC coffee! Their espresso was really good: bright and complex. A good afternoon coffee option for that post-lunch lethargic feeling.","2000 L St NW, Washington, DC 20036, United States",4.1,175,"https://www.google.com/maps/search/?api=1&query=2000%20L%20St%20NW,%20Washington,%20DC%2020036,%20United%20States&query_place_id=ChIJ7VQx7Xq3t4kR4BpEdS54OQs",38.9034384,-77.0457423,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 6:00 PM
  Friday: 7:00 AM – 6:00 PM
  Saturday: 7:00 AM – 6:00 PM
- Sunday: 7:00 AM – 6:00 PM","cafe","ChIJ7VQx7Xq3t4kR4BpEdS54OQs"
+ Sunday: 7:00 AM – 6:00 PM","cafe","ChIJ7VQx7Xq3t4kR4BpEdS54OQs","coffee"
 "Gregorys Coffee","Washington, DC","Washington D.C.","Washington D.C.","United States of America","Yes","One of DC's best coffee shops: sit in their glass cubicles by the window watching the world go by having a snack and drinking a nice afternoon coffee.","1101 Connecticut Ave NW, Washington, DC 20036, United States",4.2,240,"https://www.google.com/maps/search/?api=1&query=1101%20Connecticut%20Ave%20NW,%20Washington,%20DC%2020036,%20United%20States&query_place_id=ChIJJaEe5Dy3t4kRtsUGWUb6phg",38.9040347,-77.0396252,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJJaEe5Dy3t4kRtsUGWUb6phg"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJJaEe5Dy3t4kRtsUGWUb6phg","coffee"
 "George’s King of Falafel and Cheesesteak","Washington, DC","Washington D.C.","Washington D.C.","United States of America",NA,"Great shawarma: very filling and fresh!","1205 28th St NW, Washington, DC 20007, United States",4.4,2405,"https://www.google.com/maps/search/?api=1&query=1205%2028th%20St%20NW,%20Washington,%20DC%2020007,%20United%20States&query_place_id=ChIJIZ4QLku2t4kRcEijGVOjmJ0",38.905492,-77.0568947,"Monday: 12:00 PM – 2:00 AM
  Tuesday: 12:00 PM – 2:00 AM
  Wednesday: 12:00 PM – 2:00 AM
  Thursday: 12:00 PM – 3:00 AM
  Friday: 12:00 PM – 4:00 AM
  Saturday: 12:00 PM – 4:00 AM
- Sunday: 12:00 PM – 2:00 AM","restaurant","ChIJIZ4QLku2t4kRcEijGVOjmJ0"
+ Sunday: 12:00 PM – 2:00 AM","restaurant","ChIJIZ4QLku2t4kRcEijGVOjmJ0","food"
 "The Exchange Saloon","Washington, DC","Washington D.C.","Washington D.C.","United States of America",NA,"Nice bar with a cool rooftop overlooking DC: spot the airport and the National Mall.","1719 G St NW, Washington, DC 20006, United States",3.7,479,"https://www.google.com/maps/search/?api=1&query=1719%20G%20St%20NW,%20Washington,%20DC%2020006,%20United%20States&query_place_id=ChIJr3GLbbu3t4kRu9DFOwORiuo",38.89851,-77.040441,"Monday: 11:00 AM – 8:00 PM
  Tuesday: 11:00 AM – 11:00 PM
  Wednesday: 11:00 AM – 11:00 PM
  Thursday: 11:00 AM – 11:00 PM
  Friday: 11:00 AM – 11:00 PM
  Saturday: 11:00 AM – 8:00 PM
- Sunday: 11:00 AM – 6:00 PM","bar","ChIJr3GLbbu3t4kRu9DFOwORiuo"
+ Sunday: 11:00 AM – 6:00 PM","bar","ChIJr3GLbbu3t4kRu9DFOwORiuo","food"
 "Eye Street Grill","Washington, DC","Washington D.C.","Washington D.C.","United States of America",NA,"Self-serve lunch restaurant. A lot of options, all tasty and healthy. Check it out when you're in the White House area.","1575 I St NW #1, Washington, DC 20005, United States",4.3,124,"https://www.google.com/maps/search/?api=1&query=1575%20I%20St%20NW%20#1,%20Washington,%20DC%2020005,%20United%20States&query_place_id=ChIJxcidcL63t4kRuIjzYG7tVuA",38.9015132,-77.0353358,"Monday: 7:00 AM – 2:30 PM
  Tuesday: 7:00 AM – 2:30 PM
  Wednesday: 7:00 AM – 2:30 PM
  Thursday: 7:00 AM – 2:30 PM
  Friday: 7:00 AM – 2:30 PM
  Saturday: Closed
- Sunday: Closed","restaurant","ChIJxcidcL63t4kRuIjzYG7tVuA"
+ Sunday: Closed","restaurant","ChIJxcidcL63t4kRuIjzYG7tVuA","food"
 "Stumptown Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Landmark coffee spot: pretty good coffee and bonus points for nice mugs.","128 SW 3rd Ave, Portland, OR 97204, United States",4.4,1587,"https://www.google.com/maps/search/?api=1&query=128%20SW%203rd%20Ave,%20Portland,%20OR%2097204,%20United%20States&query_place_id=ChIJbT5i5AYKlVQRHZOtE8vGAz4",45.5218022,-122.6734564,"Monday: 7:00 AM – 3:00 PM
  Tuesday: 7:00 AM – 3:00 PM
  Wednesday: 7:00 AM – 3:00 PM
  Thursday: 7:00 AM – 3:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 7:00 AM – 5:00 PM
- Sunday: 7:00 AM – 5:00 PM","cafe","ChIJbT5i5AYKlVQRHZOtE8vGAz4"
+ Sunday: 7:00 AM – 5:00 PM","cafe","ChIJbT5i5AYKlVQRHZOtE8vGAz4","coffee"
 "Heart Coffee Roasters","Portland, OR","Portland","Oregon","United States of America",NA,"Let's say they won the world Aeropress competition for a reason, so can't go wrong with the pourover!","2211 E Burnside St, Portland, OR 97214, United States",4.5,610,"https://www.google.com/maps/search/?api=1&query=2211%20E%20Burnside%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJZV6m-buglVQR0sMmh83Ajo8",45.5230255,-122.6431961,"Monday: 7:00 AM – 3:00 PM
  Tuesday: 7:00 AM – 3:00 PM
  Wednesday: 7:00 AM – 3:00 PM
  Thursday: 7:00 AM – 3:00 PM
  Friday: 7:00 AM – 3:00 PM
  Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM","cafe","ChIJZV6m-buglVQR0sMmh83Ajo8"
+ Sunday: 8:00 AM – 3:00 PM","cafe","ChIJZV6m-buglVQR0sMmh83Ajo8","coffee"
 "Never Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Fun minimalistic coffee spot in Downtown. I liked their colorful setup and their nicely brewed espresso.","4243 SE Belmont St UNIT 200, Portland, OR 97215, United States",4.5,465,"https://www.google.com/maps/search/?api=1&query=4243%20SE%20Belmont%20St%20UNIT%20200,%20Portland,%20OR%2097215,%20United%20States&query_place_id=ChIJPZn5x-2glVQR9JZ4JDOkNYw",45.5166569,-122.6187919,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 6:00 PM
  Friday: 7:00 AM – 6:00 PM
  Saturday: 7:00 AM – 6:00 PM
- Sunday: 7:00 AM – 6:00 PM","cafe","ChIJPZn5x-2glVQR9JZ4JDOkNYw"
+ Sunday: 7:00 AM – 6:00 PM","cafe","ChIJPZn5x-2glVQR9JZ4JDOkNYw","coffee"
 "Sunny Day","Portland, OR","Portland","Oregon","United States of America","Yes","Nice coffee kiosk at the corner of 23rd street.","2310 NW Everett St, Portland, OR 97210, United States",4.7,78,"https://www.google.com/maps/search/?api=1&query=2310%20NW%20Everett%20St,%20Portland,%20OR%2097210,%20United%20States&query_place_id=ChIJoQlvezMSlVQRqyew02WF_q8",45.5245789,-122.6987308,"Monday: Closed
  Tuesday: Closed
  Wednesday: 8:30 AM – 3:00 PM
  Thursday: 8:30 AM – 3:00 PM
  Friday: 8:30 AM – 3:00 PM
  Saturday: 9:00 AM – 4:00 PM
- Sunday: 9:00 AM – 4:00 PM","cafe","ChIJoQlvezMSlVQRqyew02WF_q8"
+ Sunday: 9:00 AM – 4:00 PM","cafe","ChIJoQlvezMSlVQRqyew02WF_q8","coffee"
 "Sisters Coffee Company","Portland, OR","Portland","Oregon","United States of America",NA,"Fancy-feeling spot in Portland's Pearl District: go there for a great coffee, calm ambiance and if you are feeling philosophical.","1235 NW Marshall St, Portland, OR 97209, United States",4.6,620,"https://www.google.com/maps/search/?api=1&query=1235%20NW%20Marshall%20St,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJU4ctK_wJlVQRbb48HvJzz4Q",45.530904,-122.6843336,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 7:00 AM – 5:00 PM
- Sunday: 7:00 AM – 5:00 PM","cafe","ChIJU4ctK_wJlVQRbb48HvJzz4Q"
+ Sunday: 7:00 AM – 5:00 PM","cafe","ChIJU4ctK_wJlVQRbb48HvJzz4Q","coffee"
 "Rain or Shine","Portland, OR","Portland","Oregon","United States of America",NA,"Cozy coffee shop at the foot of Mount Tabor. Friendly staff and a good place to meet new folks.","5941 SE Division St, Portland, OR 97206, United States",4.6,599,"https://www.google.com/maps/search/?api=1&query=5941%20SE%20Division%20St,%20Portland,%20OR%2097206,%20United%20States&query_place_id=ChIJzXbStF6glVQRAiQsYc84F7w",45.5055098,-122.601839,"Monday: 7:00 AM – 2:00 PM
  Tuesday: 7:00 AM – 2:00 PM
  Wednesday: 7:00 AM – 2:00 PM
  Thursday: 7:00 AM – 2:00 PM
  Friday: 7:00 AM – 2:00 PM
  Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM","cafe","ChIJzXbStF6glVQRAiQsYc84F7w"
+ Sunday: 8:00 AM – 3:00 PM","cafe","ChIJzXbStF6glVQRAiQsYc84F7w","coffee"
 "Tov Coffee","Portland, OR","Portland","Oregon","United States of America","Yes","Turkish coffee in a double-decker bus decorated with Egyptian souvenirs.","3207 SE Hawthorne Blvd #5044, Portland, OR 97214, United States",4.8,662,"https://www.google.com/maps/search/?api=1&query=3207%20SE%20Hawthorne%20Blvd%20#5044,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJDYLRsZGglVQRfr9u2xi1hZc",45.512272,-122.632436,"Monday: 10:30 AM – 3:00 PM
  Tuesday: Closed
  Wednesday: 10:30 AM – 3:00 PM
  Thursday: 10:30 AM – 3:00 PM
  Friday: 10:00 AM – 4:00 PM
  Saturday: 9:30 AM – 5:00 PM
- Sunday: 9:30 AM – 5:00 PM","cafe","ChIJDYLRsZGglVQRfr9u2xi1hZc"
+ Sunday: 9:30 AM – 5:00 PM","cafe","ChIJDYLRsZGglVQRfr9u2xi1hZc","coffee"
 "Barista Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Awesome coffee, very passionate baristas and a lot of space to sit outside and enjoy the coffee.","1725 NE Alberta St, Portland, OR 97211, United States",4.5,542,"https://www.google.com/maps/search/?api=1&query=1725%20NE%20Alberta%20St,%20Portland,%20OR%2097211,%20United%20States&query_place_id=ChIJaaD1mx-nlVQRxrlc1PoZyIc",45.5592288,-122.6473559,"Monday: 6:00 AM – 6:00 PM
  Tuesday: 6:00 AM – 6:00 PM
  Wednesday: 6:00 AM – 6:00 PM
  Thursday: 6:00 AM – 6:00 PM
  Friday: 6:00 AM – 6:00 PM
  Saturday: 7:00 AM – 6:00 PM
- Sunday: 7:00 AM – 6:00 PM","cafe","ChIJWRzGWfAJlVQRwFrpQMShl9w"
+ Sunday: 7:00 AM – 6:00 PM","cafe","ChIJWRzGWfAJlVQRwFrpQMShl9w","coffee"
 "Dandelion Teahouse & Apothecary","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Great selection of teas and a nicely decorated space with a lot of fun quirks!","109 W 7th St, Vancouver, WA 98660, United States",5,91,"https://www.google.com/maps/search/?api=1&query=109%20W%207th%20St,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJJzKGu9KplVQRtInNj7gdz14",45.6263336,-122.6723079,"Monday: Closed
  Tuesday: 10:00 AM – 4:00 PM
  Wednesday: 10:00 AM – 4:00 PM
  Thursday: 10:00 AM – 4:00 PM
  Friday: 10:00 AM – 6:00 PM
  Saturday: 10:00 AM – 6:00 PM
- Sunday: 10:00 AM – 4:00 PM","cafe","ChIJJzKGu9KplVQRtInNj7gdz14"
+ Sunday: 10:00 AM – 4:00 PM","cafe","ChIJJzKGu9KplVQRtInNj7gdz14","coffee"
 "Terrain Coffee","Vancouver, WA","Vancouver","Washington","United States of America",NA,"Rustic spot with sunlit wooden decor, great espresso and cool barista/owner couple running the place.","106 W 6th St, Vancouver, WA 98660, United States",4.7,83,"https://www.google.com/maps/search/?api=1&query=106%20W%206th%20St,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJQR6zVUWplVQRU4uHkWIu5ho",45.6257984,-122.6722009,"Monday: 7:00 AM – 3:00 PM
  Tuesday: 7:00 AM – 3:00 PM
  Wednesday: 7:00 AM – 3:00 PM
  Thursday: 7:00 AM – 3:00 PM
  Friday: 7:00 AM – 3:00 PM
  Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM","cafe","ChIJQR6zVUWplVQRU4uHkWIu5ho"
+ Sunday: 8:00 AM – 3:00 PM","cafe","ChIJQR6zVUWplVQRU4uHkWIu5ho","coffee"
 "Pajaro","Portland, OR","Portland","Oregon","United States of America","Yes","Small coffee shop: self-made plant milk, cute cups and very enthusiastic owner who loves to chat about coffee making.","1816 S River Dr, Portland, OR 97201, United States",4.8,271,"https://www.google.com/maps/search/?api=1&query=1816%20S%20River%20Dr,%20Portland,%20OR%2097201,%20United%20States&query_place_id=ChIJ8yCM3BIKlVQROi5IpJ3p20E",45.5088201,-122.6732924,"Monday: 2:00 – 4:00 PM
  Tuesday: 2:00 – 4:00 PM
  Wednesday: 2:00 – 4:00 PM
  Thursday: 2:00 – 4:00 PM
  Friday: 2:00 – 4:00 PM
  Saturday: 2:00 – 4:00 PM
- Sunday: 2:00 – 4:00 PM","cafe","ChIJ8yCM3BIKlVQROi5IpJ3p20E"
+ Sunday: 2:00 – 4:00 PM","cafe","ChIJ8yCM3BIKlVQROi5IpJ3p20E","coffee"
 "Good Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Good coffee! But also a cute cafe in a middle of a calm neighborhood, surrounded by greenery.","1150 SE 12th Ave, Portland, OR 97214, United States",4.7,447,"https://www.google.com/maps/search/?api=1&query=1150%20SE%2012th%20Ave,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJORqe0aGglVQR2ofSVbXQ-QI",45.5144887,-122.6535728,"Monday: 7:00 AM – 3:00 PM
  Tuesday: 7:00 AM – 3:00 PM
  Wednesday: 7:00 AM – 3:00 PM
  Thursday: 7:00 AM – 3:00 PM
  Friday: 7:00 AM – 3:00 PM
  Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM","cafe","ChIJORqe0aGglVQR2ofSVbXQ-QI"
+ Sunday: 8:00 AM – 3:00 PM","cafe","ChIJORqe0aGglVQR2ofSVbXQ-QI","coffee"
 "Coava","Portland, OR","Portland","Oregon","United States of America",NA,"One of the best coffee shops in Portland: very high quality, sustainably-sourced beans and great coffee + dessert combos. Their spaces are well-designed as well: airy and welcoming.","1300 SE Grand Ave a, Portland, OR 97214, United States",4.6,1354,"https://www.google.com/maps/search/?api=1&query=1300%20SE%20Grand%20Ave%20a,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJeWs-6QoKlVQRrTobPU_sOsY",45.5135494,-122.6606018,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 6:00 PM
  Friday: 7:00 AM – 6:00 PM
  Saturday: 7:00 AM – 6:00 PM
- Sunday: 7:00 AM – 6:00 PM","cafe","ChIJeWs-6QoKlVQRrTobPU_sOsY"
+ Sunday: 7:00 AM – 6:00 PM","cafe","ChIJeWs-6QoKlVQRrTobPU_sOsY","coffee"
 "Nossa Familia","Portland, OR","Portland","Oregon","United States of America",NA,"Coffee shop focused on Brazilian direct coffee farming and a heart-warming focus on building relationships with people first. Check them out for their guest roaster rotations and their awesome community events.","1633 SE 3rd Ave, Portland, OR 97214, United States",4.6,152,"https://www.google.com/maps/search/?api=1&query=1633%20SE%203rd%20Ave,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJczsDUgsKlVQRCRGikSc3yig",45.5113116,-122.6630847,"Monday: 7:30 AM – 4:30 PM
  Tuesday: 7:30 AM – 4:30 PM
  Wednesday: 7:30 AM – 4:30 PM
  Thursday: 7:30 AM – 4:30 PM
  Friday: 7:30 AM – 4:30 PM
  Saturday: 8:00 AM – 4:30 PM
- Sunday: 8:00 AM – 4:30 PM","cafe","ChIJR1obzqaglVQRPAromI64Fyg"
+ Sunday: 8:00 AM – 4:30 PM","cafe","ChIJR1obzqaglVQRPAromI64Fyg","coffee"
 "Case Study Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Convenient downtown spot with good coffee, friendly staff and classic decor.","802 SW 10th Ave, Portland, OR 97205, United States",4.4,1187,"https://www.google.com/maps/search/?api=1&query=802%20SW%2010th%20Ave,%20Portland,%20OR%2097205,%20United%20States&query_place_id=ChIJa92lywQKlVQRXlkX4rXNbnM",45.5190805,-122.6823427,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","cafe","ChIJa92lywQKlVQRXlkX4rXNbnM"
+ Sunday: 7:00 AM – 4:00 PM","cafe","ChIJa92lywQKlVQRXlkX4rXNbnM","coffee"
 "Queue Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Modern spot with great coffee: a nice place to do some work or get inspired to stop procrastinating.","2112 NW Quimby St, Portland, OR 97210, United States",4.5,102,"https://www.google.com/maps/search/?api=1&query=2112%20NW%20Quimby%20St,%20Portland,%20OR%2097210,%20United%20States&query_place_id=ChIJp33-3oMJlVQREjG4J-gSO28",45.5332338,-122.6948478,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 7:00 AM – 3:00 PM
- Sunday: 7:00 AM – 3:00 PM","cafe","ChIJp33-3oMJlVQREjG4J-gSO28"
+ Sunday: 7:00 AM – 3:00 PM","cafe","ChIJp33-3oMJlVQREjG4J-gSO28","coffee"
 "Super Joy Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Cute place with almost the bare essentials for coffee making, but don't be fooled; their coffee is awesome and it will energize you to start your day.","1401 SW Yamhill St, Portland, OR 97205, United States",4.9,124,"https://www.google.com/maps/search/?api=1&query=1401%20SW%20Yamhill%20St,%20Portland,%20OR%2097205,%20United%20States&query_place_id=ChIJL9lj76ILlVQRVp_0vEBQ0SQ",45.5205734,-122.6867277,"Monday: 7:00 AM – 1:00 PM
  Tuesday: 7:00 AM – 1:00 PM
  Wednesday: 7:00 AM – 1:00 PM
  Thursday: 7:00 AM – 1:00 PM
  Friday: 7:00 AM – 1:00 PM
  Saturday: 8:00 AM – 1:00 PM
- Sunday: 8:00 AM – 1:00 PM","cafe","ChIJL9lj76ILlVQRVp_0vEBQ0SQ"
+ Sunday: 8:00 AM – 1:00 PM","cafe","ChIJL9lj76ILlVQRVp_0vEBQ0SQ","coffee"
 "Upper Left Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Colorful smoothies, mochi donuts and a nice minimalist set-up: check them out after eating at the food trucks just across the street.","1204 SE Clay St, Portland, OR 97214, United States",4.6,594,"https://www.google.com/maps/search/?api=1&query=1204%20SE%20Clay%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJ07z6Mp6glVQRE-BnTUYuxBo",45.5113699,-122.6534292,"Monday: Closed
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJ07z6Mp6glVQRE-BnTUYuxBo"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJ07z6Mp6glVQRE-BnTUYuxBo","coffee"
 "Ovation Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"My recommendation at this Moroccan coffee spot: the Moroccan Spiced Coffee with cardamom. It's a unique blend of flavors.","941 NW Overton St, Portland, OR 97209, United States",4.7,720,"https://www.google.com/maps/search/?api=1&query=941%20NW%20Overton%20St,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJX61eHFanlVQRnEQpuATt68g",45.5324934,-122.6812614,"Monday: 6:00 AM – 6:00 PM
  Tuesday: 6:00 AM – 6:00 PM
  Wednesday: 6:00 AM – 6:00 PM
  Thursday: 6:00 AM – 6:00 PM
  Friday: 6:00 AM – 6:00 PM
  Saturday: 7:00 AM – 5:00 PM
- Sunday: 7:00 AM – 5:00 PM","cafe","ChIJX61eHFanlVQRnEQpuATt68g"
+ Sunday: 7:00 AM – 5:00 PM","cafe","ChIJX61eHFanlVQRnEQpuATt68g","coffee"
 "Deadstock Coffee","Portland, OR","Portland","Oregon","United States of America",NA,"Good coffee in a sneaker-themed shop: if you get a latte, they'll make a nice sneaker with the foam.","408 NW Couch St Suite 408, Portland, OR 97209, United States",4.8,485,"https://www.google.com/maps/search/?api=1&query=408%20NW%20Couch%20St%20Suite%20408,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJG6gpPP0LlVQRHe3kcr-SPIQ",45.5237271,-122.6747967,"Monday: 8:00 AM – 3:00 PM
  Tuesday: 8:00 AM – 3:00 PM
  Wednesday: 8:00 AM – 3:00 PM
  Thursday: 8:00 AM – 3:00 PM
  Friday: 8:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 9:00 AM – 3:00 PM","cafe","ChIJG6gpPP0LlVQRHe3kcr-SPIQ"
+ Sunday: 9:00 AM – 3:00 PM","cafe","ChIJG6gpPP0LlVQRHe3kcr-SPIQ","coffee"
 "Voodoo Doughnuts","Portland, OR","Portland","Oregon","United States of America",NA,"Classic spot for funky donuts, I would go with the staff recommendations but don't be afraid to venture out your comfort zone with these goodies.","22 SW 3rd Ave, Portland, OR 97204, United States",4.4,17838,"https://www.google.com/maps/search/?api=1&query=22%20SW%203rd%20Ave,%20Portland,%20OR%2097204,%20United%20States&query_place_id=ChIJ70AxJAcKlVQRde9D82gpfSU",45.5226855,-122.6731434,"Monday: 5:00 AM – 3:00 AM
  Tuesday: 5:00 AM – 3:00 AM
  Wednesday: 5:00 AM – 3:00 AM
  Thursday: 5:00 AM – 3:00 AM
  Friday: 5:00 AM – 3:00 AM
  Saturday: 5:00 AM – 3:00 AM
- Sunday: 5:00 AM – 3:00 AM","bakery","ChIJ70AxJAcKlVQRde9D82gpfSU"
+ Sunday: 5:00 AM – 3:00 AM","bakery","ChIJ70AxJAcKlVQRde9D82gpfSU","food"
 "Foode Cafe","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Sandwich shop with super friendly staff: get a Turkey & Havarti and enjoy it in a cozy and calm atmosphere.","900 Washington St #120, Vancouver, WA 98660, United States",4.6,104,"https://www.google.com/maps/search/?api=1&query=900%20Washington%20St%20#120,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJ5f1j97SolVQRd4l-oD46vxE",45.6283793,-122.6731579,"Monday: 8:00 AM – 3:00 PM
  Tuesday: 8:00 AM – 3:00 PM
  Wednesday: 8:00 AM – 3:00 PM
  Thursday: 8:00 AM – 3:00 PM
  Friday: 8:00 AM – 3:00 PM
  Saturday: Closed
- Sunday: Closed","cafe","ChIJ5f1j97SolVQRd4l-oD46vxE"
+ Sunday: Closed","cafe","ChIJ5f1j97SolVQRd4l-oD46vxE","coffee"
 "Lan Su","Portland, OR","Portland","Oregon","United States of America",NA,"Chinese restaurant inside of the Chinese gardens. They have great tea and light food items in a traditional teahouse which makes for a unique experience!","239 NW Everett St, Portland, OR 97209, United States",4.6,3122,"https://www.google.com/maps/search/?api=1&query=239%20NW%20Everett%20St,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJ_5QZeKqglVQRaTkbdQnoF0w",45.5256321,-122.6729955,"Monday: 10:00 AM – 6:00 PM
  Tuesday: 10:00 AM – 6:00 PM
  Wednesday: 10:00 AM – 6:00 PM
  Thursday: 10:00 AM – 6:00 PM
  Friday: 10:00 AM – 6:00 PM
  Saturday: 10:00 AM – 6:00 PM
- Sunday: 10:00 AM – 6:00 PM","tourist_attraction","ChIJ_5QZeKqglVQRaTkbdQnoF0w"
+ Sunday: 10:00 AM – 6:00 PM","tourist_attraction","ChIJ_5QZeKqglVQRaTkbdQnoF0w","others"
 "Salt and Straw","Portland, OR","Portland","Oregon","United States of America",NA,"Fun ice cream shop with very innovative rotating flavors that changed my idea of what ice cream can be. Don't be afraid to try salty flavors or the more complex mixes of things like cheese and marionberry.","838 NW 23rd Ave, Portland, OR 97210, United States",4.7,5529,"https://www.google.com/maps/search/?api=1&query=838%20NW%2023rd%20Ave,%20Portland,%20OR%2097210,%20United%20States&query_place_id=ChIJQ4VlWfAJlVQRPXN-039EJCo",45.5289487,-122.6983163,"Monday: 11:00 AM – 11:00 PM
  Tuesday: 11:00 AM – 11:00 PM
  Wednesday: 11:00 AM – 11:00 PM
  Thursday: 11:00 AM – 11:00 PM
  Friday: 11:00 AM – 11:00 PM
  Saturday: 11:00 AM – 11:00 PM
- Sunday: 11:00 AM – 11:00 PM","point_of_interest","ChIJQ4VlWfAJlVQRPXN-039EJCo"
+ Sunday: 11:00 AM – 11:00 PM","point_of_interest","ChIJQ4VlWfAJlVQRPXN-039EJCo","others"
 "Mirisata","Portland, OR","Portland","Oregon","United States of America","Yes","Great Sri Lankan food that is bursting with flavor in a very relaxed spot.","2420 SE Belmont St, Portland, OR 97214, United States",4.6,448,"https://www.google.com/maps/search/?api=1&query=2420%20SE%20Belmont%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJqQ9sQA6nlVQRFewpK9i-v88",45.5163026,-122.6409989,"Monday: 12:00 – 9:00 PM
  Tuesday: 12:00 – 9:00 PM
  Wednesday: 12:00 – 9:00 PM
  Thursday: 12:00 – 9:00 PM
  Friday: 12:00 – 10:00 PM
  Saturday: 12:00 – 10:00 PM
- Sunday: 10:00 AM – 9:00 PM","restaurant","ChIJqQ9sQA6nlVQRFewpK9i-v88"
-"Nola Doughnuts","Portland, OR","Portland","Oregon","United States of America",NA,"Fluffy beignets and a side of jam: colorful spot with New Orleans vibes.","110 NW 10th Ave, Portland, OR 97209, United States",4.5,685,"https://www.google.com/maps/search/?api=1&query=110%20NW%2010th%20Ave,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJVVVlLQIKlVQRX3GXyicH5vc",45.5238703,-122.680976,NA,"bakery","ChIJVVVlLQIKlVQRX3GXyicH5vc"
+ Sunday: 10:00 AM – 9:00 PM","restaurant","ChIJqQ9sQA6nlVQRFewpK9i-v88","food"
+"Nola Doughnuts","Portland, OR","Portland","Oregon","United States of America",NA,"Fluffy beignets and a side of jam: colorful spot with New Orleans vibes.","110 NW 10th Ave, Portland, OR 97209, United States",4.5,685,"https://www.google.com/maps/search/?api=1&query=110%20NW%2010th%20Ave,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJVVVlLQIKlVQRX3GXyicH5vc",45.5238703,-122.680976,NA,"bakery","ChIJVVVlLQIKlVQRX3GXyicH5vc","food"
 "Flying Fish Company","Portland, OR","Portland","Oregon","United States of America",NA,"Fish market and restaurant with a super fresh and tasty selection. Get one or two of the extra butter-y salmon or tuna dishes and enjoy them in the casual market-style seating in the garden.","3004 E Burnside St, Portland, OR 97214, United States",4.5,778,"https://www.google.com/maps/search/?api=1&query=3004%20E%20Burnside%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJQW9jR7iglVQRm1D5OSXZE5A",45.522754,-122.6347412,"Monday: 10:00 AM – 8:00 PM
  Tuesday: Closed
  Wednesday: 10:00 AM – 8:00 PM
  Thursday: 10:00 AM – 8:00 PM
  Friday: 10:00 AM – 8:00 PM
  Saturday: 10:00 AM – 8:00 PM
- Sunday: 10:00 AM – 8:00 PM","restaurant","ChIJQW9jR7iglVQRm1D5OSXZE5A"
+ Sunday: 10:00 AM – 8:00 PM","restaurant","ChIJQW9jR7iglVQRm1D5OSXZE5A","food"
 "Dediko","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Cool spot for great Georgian food in sleepy Downtown Vancouver WA. Get the dumplings (khinkali) and cheese boat (khachapuri).","210 W Evergreen Blvd #700, Vancouver, WA 98660, United States",4.7,482,"https://www.google.com/maps/search/?api=1&query=210%20W%20Evergreen%20Blvd%20#700,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJYWK0GEuplVQRe3Ej3Z0_u7E",45.6290346,-122.6736225,"Monday: Closed
  Tuesday: 5:00 – 9:00 PM
  Wednesday: 5:00 – 9:00 PM
  Thursday: 5:00 – 9:00 PM
  Friday: 12:00 – 3:00 PM, 5:00 – 9:00 PM
  Saturday: 12:00 – 3:00 PM, 5:00 – 9:00 PM
- Sunday: Closed","restaurant","ChIJYWK0GEuplVQRe3Ej3Z0_u7E"
+ Sunday: Closed","restaurant","ChIJYWK0GEuplVQRe3Ej3Z0_u7E","food"
 "La Sorrentina","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Personal top 2 pizza spots in the US in the most random of locations, next to a largely empty business park and car lot. Some of the best Neapolitan pizza you can get.","3000 SE 164th Ave Suite 107, Vancouver, WA 98683, United States",4.6,474,"https://www.google.com/maps/search/?api=1&query=3000%20SE%20164th%20Ave%20Suite%20107,%20Vancouver,%20WA%2098683,%20United%20States&query_place_id=ChIJ7xrZdvOulVQRngdbwaRoK7Q",45.59937,-122.5043818,"Monday: Closed
  Tuesday: Closed
  Wednesday: 12:00 – 9:00 PM
  Thursday: 12:00 – 9:00 PM
  Friday: 12:00 – 9:00 PM
  Saturday: 12:00 – 9:00 PM
- Sunday: 12:00 – 8:00 PM","restaurant","ChIJ7xrZdvOulVQRngdbwaRoK7Q"
+ Sunday: 12:00 – 8:00 PM","restaurant","ChIJ7xrZdvOulVQRngdbwaRoK7Q","food"
 "Gustav's","Vancouver, WA","Vancouver","Washington","United States of America",NA,"German restaurant in unassuming location right next to a busy road. The servings are generous, the decor recalls a German fairytale pub. Good place for a filling lunch.","1705 SE 164th Ave, Vancouver, WA 98683, United States",4.4,2225,"https://www.google.com/maps/search/?api=1&query=1705%20SE%20164th%20Ave,%20Vancouver,%20WA%2098683,%20United%20States&query_place_id=ChIJfzXkw8iklVQR4x-Qp9Wg_L8",45.608191,-122.5036726,"Monday: 12:00 – 8:00 PM
  Tuesday: 12:00 – 8:00 PM
  Wednesday: 12:00 – 8:00 PM
  Thursday: 12:00 – 8:00 PM
  Friday: 12:00 – 8:30 PM
  Saturday: 12:00 – 8:30 PM
- Sunday: 12:00 – 8:00 PM","restaurant","ChIJfzXkw8iklVQR4x-Qp9Wg_L8"
+ Sunday: 12:00 – 8:00 PM","restaurant","ChIJfzXkw8iklVQR4x-Qp9Wg_L8","food"
 "Mumbo Gumbo","Portland, OR","Portland","Oregon","United States of America","Yes","Great Cajun food served out of a funky food truck. The nipsey hussle is the perfect combo of fried shrimp, garlic butter and cajun spices.","5205 SE Foster Rd, Portland, OR 97206, United States",4.5,307,"https://www.google.com/maps/search/?api=1&query=5205%20SE%20Foster%20Rd,%20Portland,%20OR%2097206,%20United%20States&query_place_id=ChIJP6GXb1ELlVQRL34xihsY0Xs",45.4957413,-122.6081631,"Monday: 11:00 AM – 2:00 AM
  Tuesday: 11:00 AM – 2:00 AM
  Wednesday: 11:00 AM – 2:00 AM
  Thursday: 11:00 AM – 2:00 AM
  Friday: 11:00 AM – 2:00 AM
  Saturday: 11:00 AM – 2:00 AM
- Sunday: 11:00 AM – 2:00 AM","restaurant","ChIJP6GXb1ELlVQRL34xihsY0Xs"
+ Sunday: 11:00 AM – 2:00 AM","restaurant","ChIJP6GXb1ELlVQRL34xihsY0Xs","food"
 "Ash Wood Fired","Vancouver, WA","Vancouver","Washington","United States of America",NA,"Simple pizza truck with tasty and light options by the slice.","2420 Columbia House Blvd, Vancouver, WA 98661, United States",4.2,1757,"https://www.google.com/maps/search/?api=1&query=2420%20Columbia%20House%20Blvd,%20Vancouver,%20WA%2098661,%20United%20States&query_place_id=ChIJ8yoCK_6llVQRhyIqXYUJy4o",45.6191551,-122.6457258,"Monday: 11:00 AM – 12:00 AM
  Tuesday: 11:00 AM – 12:00 AM
  Wednesday: 11:00 AM – 12:00 AM
  Thursday: 11:00 AM – 12:00 AM
  Friday: 11:00 AM – 12:00 AM
  Saturday: 11:00 AM – 12:00 AM
- Sunday: 11:00 AM – 12:00 AM","restaurant","ChIJ8yoCK_6llVQRhyIqXYUJy4o"
+ Sunday: 11:00 AM – 12:00 AM","restaurant","ChIJ8yoCK_6llVQRhyIqXYUJy4o","food"
 "El Pilon","Portland, OR","Portland","Oregon","United States of America",NA,"Great empanadas and arepas truck, you can do take-out and walk over to the river to enjoy.","329 SW 2nd Ave, Portland, OR 97204, United States",4.9,324,"https://www.google.com/maps/search/?api=1&query=329%20SW%202nd%20Ave,%20Portland,%20OR%2097204,%20United%20States&query_place_id=ChIJc4abXQYKlVQRbcM-kggs-Rc",45.5204801,-122.6732916,"Monday: Closed
  Tuesday: Closed
  Wednesday: 10:00 AM – 5:00 PM
  Thursday: 10:00 AM – 5:00 PM
  Friday: 10:00 AM – 5:00 PM
  Saturday: 10:00 AM – 5:00 PM
- Sunday: 10:00 AM – 5:00 PM","restaurant","ChIJc4abXQYKlVQRbcM-kggs-Rc"
+ Sunday: 10:00 AM – 5:00 PM","restaurant","ChIJc4abXQYKlVQRbcM-kggs-Rc","food"
 "Viking Soul Food","Portland, OR","Portland","Oregon","United States of America","Yes","Norwegian goodies in a vintage food truck: try out the lefse and pickled eggs.","4255 SE Belmont St, Portland, OR 97215, United States",4.7,349,"https://www.google.com/maps/search/?api=1&query=4255%20SE%20Belmont%20St,%20Portland,%20OR%2097215,%20United%20States&query_place_id=ChIJ3XX7MbqglVQRnB1FRgD4aWg",45.5168317,-122.6184734,"Monday: 12:00 – 8:00 PM
  Tuesday: 12:00 – 8:00 PM
  Wednesday: 12:00 – 8:00 PM
  Thursday: 12:00 – 8:00 PM
  Friday: 12:00 – 8:00 PM
  Saturday: 12:00 – 8:00 PM
- Sunday: 12:00 – 8:00 PM","restaurant","ChIJ3XX7MbqglVQRnB1FRgD4aWg"
+ Sunday: 12:00 – 8:00 PM","restaurant","ChIJ3XX7MbqglVQRnB1FRgD4aWg","food"
 "Tall Boy Fish and Chips","Portland, OR","Portland","Oregon","United States of America",NA,"Fish and chips spot in the busy Hawthorne food court. Try any of the fish choices, you can't go wrong!","1080 SE Madison St, Portland, OR 97214, United States",4.4,80,"https://www.google.com/maps/search/?api=1&query=1080%20SE%20Madison%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJqfbQtxqhlVQRyQmPtOJGLJQ",45.51279,-122.6552887,"Monday: Closed
  Tuesday: Closed
  Wednesday: 11:30 AM – 8:00 PM
  Thursday: 11:30 AM – 8:00 PM
  Friday: 11:30 AM – 8:00 PM
  Saturday: 11:30 AM – 8:00 PM
- Sunday: 11:30 AM – 8:00 PM","restaurant","ChIJqfbQtxqhlVQRyQmPtOJGLJQ"
+ Sunday: 11:30 AM – 8:00 PM","restaurant","ChIJqfbQtxqhlVQRyQmPtOJGLJQ","food"
 "Bobablastic","Portland, OR","Portland","Oregon","United States of America",NA,"Food truck selling boba and various sweets: the churros were great!","8145 SE 82nd Ave, Portland, OR 97266, United States",3.2,53,"https://www.google.com/maps/search/?api=1&query=8145%20SE%2082nd%20Ave,%20Portland,%20OR%2097266,%20United%20States&query_place_id=ChIJyZdnwCGilVQRsaFDtUA7UUk",45.4635501,-122.5796876,"Monday: 11:30 AM – 8:30 PM
  Tuesday: 11:30 AM – 8:30 PM
  Wednesday: 11:30 AM – 8:30 PM
  Thursday: 11:30 AM – 8:30 PM
  Friday: 11:30 AM – 9:00 PM
  Saturday: 11:30 AM – 9:00 PM
- Sunday: 11:30 AM – 9:00 PM","cafe","ChIJyZdnwCGilVQRsaFDtUA7UUk"
+ Sunday: 11:30 AM – 9:00 PM","cafe","ChIJyZdnwCGilVQRsaFDtUA7UUk","coffee"
 "Vesta Coffee Roasters","Las Vegas, Nevada","Las Vegas","Nevada","United States of America","Yes","Good coffee in the Arts District: great for sitting down and planning your first day in Vegas. Minimalist decor + espresso comes in cute little tray.","1114 S Casino Center Blvd #1, Las Vegas, NV 89104, United States",4.8,763,"https://www.google.com/maps/search/?api=1&query=1114%20S%20Casino%20Center%20Blvd%20#1,%20Las%20Vegas,%20NV%2089104,%20United%20States&query_place_id=ChIJt3AWTYXDyIARcYXpVjOsvAU",36.1581634,-115.1524651,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJt3AWTYXDyIARcYXpVjOsvAU"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJt3AWTYXDyIARcYXpVjOsvAU","coffee"
 "Mothership","Las Vegas, Nevada","Las Vegas","Nevada","United States of America","Yes","Great coffee hidden behind a neighbor's market and next to a live music amphitheater. Bonus for quirky sculptures at the entrance and for neighborly vibes.","1028 E Fremont St, Las Vegas, NV 89101, United States",4.7,369,"https://www.google.com/maps/search/?api=1&query=1028%20E%20Fremont%20St,%20Las%20Vegas,%20NV%2089101,%20United%20States&query_place_id=ChIJkbda4CXDyIARSGNPfnmbb-4",36.1669661,-115.1338836,"Monday: 8:00 AM – 5:00 PM
  Tuesday: 8:00 AM – 5:00 PM
  Wednesday: 8:00 AM – 5:00 PM
  Thursday: 8:00 AM – 5:00 PM
  Friday: 8:00 AM – 5:00 PM
  Saturday: 8:00 AM – 5:00 PM
- Sunday: 8:00 AM – 5:00 PM","cafe","ChIJkbda4CXDyIARSGNPfnmbb-4"
+ Sunday: 8:00 AM – 5:00 PM","cafe","ChIJkbda4CXDyIARSGNPfnmbb-4","coffee"
 "Bungalow","Las Vegas, Nevada","Las Vegas","Nevada","United States of America",NA,"The espresso and the minimalist-industrial decor make this place a bit of a hidden gem in an unassuming parking lot.","201 E Charleston Blvd Suite 180, Las Vegas, NV 89104, United States",4.8,268,"https://www.google.com/maps/search/?api=1&query=201%20E%20Charleston%20Blvd%20Suite%20180,%20Las%20Vegas,%20NV%2089104,%20United%20States&query_place_id=ChIJlVObWefDyIARNbWpPqDlcKo",36.1590041,-115.151478,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","cafe","ChIJlVObWefDyIARNbWpPqDlcKo"
+ Sunday: 8:00 AM – 4:00 PM","cafe","ChIJlVObWefDyIARNbWpPqDlcKo","coffee"
 "The Writer's Block","Las Vegas, Nevada","Las Vegas","Nevada","United States of America","Yes","Coffee shop and bookstore in one: get a coffee drink, browse the books or listen in to the cafe's literary events.","519 S 6th St #100, Las Vegas, NV 89101, United States",4.8,809,"https://www.google.com/maps/search/?api=1&query=519%20S%206th%20St%20#100,%20Las%20Vegas,%20NV%2089101,%20United%20States&query_place_id=ChIJRUZSQ3HDyIAR6UiWgOtvN10",36.1630147,-115.1431163,"Monday: 10:00 AM – 7:00 PM
  Tuesday: 10:00 AM – 7:00 PM
  Wednesday: 10:00 AM – 7:00 PM
  Thursday: 10:00 AM – 7:00 PM
  Friday: 10:00 AM – 7:00 PM
  Saturday: 10:00 AM – 7:00 PM
- Sunday: 10:00 AM – 7:00 PM","book_store","ChIJRUZSQ3HDyIAR6UiWgOtvN10"
+ Sunday: 10:00 AM – 7:00 PM","book_store","ChIJRUZSQ3HDyIAR6UiWgOtvN10","others"
 "Esther’s Kitchen","Las Vegas, Nevada","Las Vegas","Nevada","United States of America",NA,"Inventive but still filling Italian food. A lively spot in the colorful Arts district, this place is a great Vegas food destination.","1130 S Casino Center Blvd STE 110, Las Vegas, NV 89104, United States",4.7,2588,"https://www.google.com/maps/search/?api=1&query=1130%20S%20Casino%20Center%20Blvd%20STE%20110,%20Las%20Vegas,%20NV%2089104,%20United%20States&query_place_id=ChIJ44w1UIXDyIAR4Gj6uVkFoPY",36.1575051,-115.1528674,"Monday: 11:00 AM – 3:00 PM, 5:00 – 11:00 PM
  Tuesday: 11:00 AM – 3:00 PM, 5:00 – 11:00 PM
  Wednesday: 11:00 AM – 3:00 PM, 5:00 – 11:00 PM
  Thursday: 11:00 AM – 3:00 PM, 5:00 – 11:00 PM
  Friday: 11:00 AM – 3:00 PM, 5:00 – 11:00 PM
  Saturday: 10:00 AM – 3:00 PM, 5:00 – 11:00 PM
- Sunday: 10:00 AM – 3:00 PM, 5:00 – 11:00 PM","bar","ChIJ44w1UIXDyIAR4Gj6uVkFoPY"
+ Sunday: 10:00 AM – 3:00 PM, 5:00 – 11:00 PM","bar","ChIJ44w1UIXDyIAR4Gj6uVkFoPY","food"
 "PublicUs","Las Vegas, Nevada","Las Vegas","Nevada","United States of America",NA,"Colorful brunch spot with fresh, farm-to-table goodies and interesting decorations all over.","1126 E Fremont St, Las Vegas, NV 89101, United States",4.6,2011,"https://www.google.com/maps/search/?api=1&query=1126%20E%20Fremont%20St,%20Las%20Vegas,%20NV%2089101,%20United%20States&query_place_id=ChIJM7jaCHHDyIARPHMuFhyy8hI",36.1657782,-115.132962,"Monday: 7:00 AM – 3:00 PM
  Tuesday: 7:00 AM – 3:00 PM
  Wednesday: 7:00 AM – 3:00 PM
  Thursday: 7:00 AM – 3:00 PM
  Friday: 7:00 AM – 3:00 PM
  Saturday: 7:00 AM – 3:00 PM
- Sunday: 7:00 AM – 3:00 PM","cafe","ChIJM7jaCHHDyIARPHMuFhyy8hI"
+ Sunday: 7:00 AM – 3:00 PM","cafe","ChIJM7jaCHHDyIARPHMuFhyy8hI","coffee"
 "Bouchon Bakery","Las Vegas, Nevada","Las Vegas","Nevada","United States of America",NA,"Tiny kiosk in the Venetian serving fresh and tasty desserts. Sister to the Bouchon restaurant run by Thomas Keller 10 floors above it, you'll enjoy the French pastries from this spot.","3355 S Las Vegas Blvd, Las Vegas, NV 89109, United States",4.3,569,"https://www.google.com/maps/search/?api=1&query=3355%20S%20Las%20Vegas%20Blvd,%20Las%20Vegas,%20NV%2089109,%20United%20States&query_place_id=ChIJiwV3rBXEyIARPpyXRo1lb_w",36.1215874,-115.1692281,"Monday: 6:00 AM – 5:00 PM
  Tuesday: 6:00 AM – 5:00 PM
  Wednesday: 6:00 AM – 5:00 PM
  Thursday: 6:00 AM – 5:00 PM
  Friday: 6:00 AM – 5:00 PM
  Saturday: 6:00 AM – 5:00 PM
- Sunday: 6:00 AM – 5:00 PM","bakery","ChIJiwV3rBXEyIARPpyXRo1lb_w"
+ Sunday: 6:00 AM – 5:00 PM","bakery","ChIJiwV3rBXEyIARPpyXRo1lb_w","food"
 "Gordon Ramsay Fish and Chips","Las Vegas, Nevada","Las Vegas","Nevada","United States of America",NA,"Simple but tasty fish and chips spot. Try out one of their special sauces (my rec: Gordon's tartar)","3545 S Las Vegas Blvd, Las Vegas, NV 89109, United States",4.2,5016,"https://www.google.com/maps/search/?api=1&query=3545%20S%20Las%20Vegas%20Blvd,%20Las%20Vegas,%20NV%2089109,%20United%20States&query_place_id=ChIJ19Ov9DvEyIARAvrfwqpPpNg",36.1173845,-115.1717955,"Monday: 11:00 AM – 10:00 PM
  Tuesday: 11:00 AM – 10:00 PM
  Wednesday: 11:00 AM – 10:00 PM
  Thursday: 11:00 AM – 10:00 PM
  Friday: 11:00 AM – 11:00 PM
  Saturday: 11:00 AM – 11:00 PM
- Sunday: 11:00 AM – 10:00 PM","restaurant","ChIJ19Ov9DvEyIARAvrfwqpPpNg"
+ Sunday: 11:00 AM – 10:00 PM","restaurant","ChIJ19Ov9DvEyIARAvrfwqpPpNg","food"
 "Makers and Finders","Las Vegas, Nevada","Las Vegas","Nevada","United States of America",NA,"Latin brunch place: try out one of their signature coffee drinks and pair it with a flavorful entree (churro waffle!)","1120 S Main St Suite 110, Las Vegas, NV 89104, United States",4.4,2222,"https://www.google.com/maps/search/?api=1&query=1120%20S%20Main%20St%20Suite%20110,%20Las%20Vegas,%20NV%2089104,%20United%20States&query_place_id=ChIJyY-QApDDyIARAuN4Vd8aYhQ",36.1578972,-115.1539448,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 9:00 AM – 5:00 PM","cafe","ChIJyY-QApDDyIARAuN4Vd8aYhQ"
+ Sunday: 9:00 AM – 5:00 PM","cafe","ChIJyY-QApDDyIARAuN4Vd8aYhQ","coffee"
 "Gordon Ramsay Burgers","Las Vegas, Nevada","Las Vegas","Nevada","United States of America","Yes","World famous burgers living up to the hype: skip the lines, get your order as takeout and sit outside people-watching on the Strip.","3667 S Las Vegas Blvd, Las Vegas, NV 89109, United States",4.3,13769,"https://www.google.com/maps/search/?api=1&query=3667%20S%20Las%20Vegas%20Blvd,%20Las%20Vegas,%20NV%2089109,%20United%20States&query_place_id=ChIJ7QDYIjHEyIARV4A_QyuQ21w",36.1099868,-115.1702691,"Monday: 10:00 AM – 12:00 AM
  Tuesday: 10:00 AM – 12:00 AM
  Wednesday: 10:00 AM – 12:00 AM
  Thursday: 10:00 AM – 12:00 AM
  Friday: 10:00 AM – 12:00 AM
  Saturday: 10:00 AM – 12:00 AM
- Sunday: 10:00 AM – 12:00 AM","restaurant","ChIJ7QDYIjHEyIARV4A_QyuQ21w"
+ Sunday: 10:00 AM – 12:00 AM","restaurant","ChIJ7QDYIjHEyIARV4A_QyuQ21w","food"
 "Freed’s Bakery","Las Vegas, Nevada","Las Vegas","Nevada","United States of America",NA,"Family-owned cake shop, you can choose from their wide selection of pastries, including classics like tiramisu and new fun sweets.","9815 S Eastern Ave, Las Vegas, NV 89183, United States",4.5,1848,"https://www.google.com/maps/search/?api=1&query=9815%20S%20Eastern%20Ave,%20Las%20Vegas,%20NV%2089183,%20United%20States&query_place_id=ChIJrxKCyxfFyIARo17Ru9qDLDk",36.0109897,-115.1199876,"Monday: 9:00 AM – 6:00 PM
  Tuesday: 9:00 AM – 6:00 PM
  Wednesday: 9:00 AM – 6:00 PM
  Thursday: 9:00 AM – 6:00 PM
  Friday: 9:00 AM – 6:00 PM
  Saturday: 9:00 AM – 6:00 PM
- Sunday: 9:00 AM – 6:00 PM","bakery","ChIJS_Kn3re_yIARuwCnh_z4H_U"
+ Sunday: 9:00 AM – 6:00 PM","bakery","ChIJS_Kn3re_yIARuwCnh_z4H_U","food"
 "Golden Roast","Knoxville, TN","Knoxville","Tennessee","United States of America","Yes","A delightful haven of superb coffee within the UT campus, both easily reachable and delectable.","825 Melrose Pl, Knoxville, TN 37916, United States",4.4,136,"https://www.google.com/maps/search/?api=1&query=825%20Melrose%20Pl,%20Knoxville,%20TN%2037916,%20United%20States&query_place_id=ChIJYQlrKeAXXIgRtbhIfNesNmI",35.955683,-83.932047,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 8:00 AM – 5:00 PM
- Sunday: 8:00 AM – 5:00 PM","cafe","ChIJYQlrKeAXXIgRtbhIfNesNmI"
+ Sunday: 8:00 AM – 5:00 PM","cafe","ChIJYQlrKeAXXIgRtbhIfNesNmI","coffee"
 "Frothy Monkey, Downtown","Knoxville, TN","Knoxville","Tennessee","United States of America","Yes","The perfect blend of excellent coffee, tasteful decor, and a welcoming atmosphere conducive to both work and dining.","419 S Gay St, Knoxville, TN 37902, United States",4.4,98,"https://www.google.com/maps/search/?api=1&query=419%20S%20Gay%20St,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJx5q5oJkXXIgRFK1BrzaLOQk",35.9657154,-83.9187589,"Monday: 7:00 AM – 9:00 PM
  Tuesday: 7:00 AM – 9:00 PM
  Wednesday: 7:00 AM – 9:00 PM
  Thursday: 7:00 AM – 9:00 PM
  Friday: 7:00 AM – 9:00 PM
  Saturday: 7:00 AM – 9:00 PM
- Sunday: 7:00 AM – 4:00 PM","restaurant","ChIJx5q5oJkXXIgRFK1BrzaLOQk"
+ Sunday: 7:00 AM – 4:00 PM","restaurant","ChIJx5q5oJkXXIgRFK1BrzaLOQk","food"
 "French Market Creperie","Knoxville, TN","Knoxville","Tennessee","United States of America",NA,"While the coffee is passable, the diverse and enticing crepe selection steals the show.","412 Clinch Ave, Knoxville, TN 37902, United States",4.6,2152,"https://www.google.com/maps/search/?api=1&query=412%20Clinch%20Ave,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJAx4eR8QXXIgRz_5Gbp4VKww",35.963538,-83.9190402,"Monday: 9:00 AM – 4:00 PM
  Tuesday: 9:00 AM – 4:00 PM
  Wednesday: 9:00 AM – 4:00 PM
  Thursday: 9:00 AM – 9:00 PM
  Friday: 9:00 AM – 9:00 PM
  Saturday: 8:00 AM – 3:00 PM, 4:00 – 9:00 PM
- Sunday: 9:00 AM – 3:00 PM","cafe","ChIJAx4eR8QXXIgRz_5Gbp4VKww"
+ Sunday: 9:00 AM – 3:00 PM","cafe","ChIJAx4eR8QXXIgRz_5Gbp4VKww","coffee"
 "Coffee and Chocolate","Knoxville, TN","Knoxville","Tennessee","United States of America",NA,"Known for heavenly chocolate cookies and the rare perk of being open until 10 pm, this cafe is a must-visit.","327 Union Ave, Knoxville, TN 37902, United States",4.7,456,"https://www.google.com/maps/search/?api=1&query=327%20Union%20Ave,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJ71tZUcQXXIgRlNXT-k3IwC0",35.9649171,-83.9189009,"Monday: 7:00 AM – 10:00 PM
  Tuesday: 7:00 AM – 10:00 PM
  Wednesday: 7:00 AM – 10:00 PM
  Thursday: 7:00 AM – 10:00 PM
  Friday: 7:00 AM – 10:00 PM
  Saturday: 7:00 AM – 10:00 PM
- Sunday: 7:00 AM – 10:00 PM","cafe","ChIJ71tZUcQXXIgRlNXT-k3IwC0"
+ Sunday: 7:00 AM – 10:00 PM","cafe","ChIJ71tZUcQXXIgRlNXT-k3IwC0","coffee"
 "HoneyBee Coffee Co","Knoxville, TN","Knoxville","Tennessee","United States of America","Yes","An ideal indoor locale for productive work sessions, casual gatherings, and coffee rendezvous.","700 Sevier Ave, Knoxville, TN 37920, United States",4.5,642,"https://www.google.com/maps/search/?api=1&query=700%20Sevier%20Ave,%20Knoxville,%20TN%2037920,%20United%20States&query_place_id=ChIJzbuV2r8XXIgRjukBkaRJkIU",35.9573672,-83.9089882,"Monday: 7:00 AM – 7:00 PM
  Tuesday: 7:00 AM – 7:00 PM
  Wednesday: 7:00 AM – 7:00 PM
  Thursday: 7:00 AM – 7:00 PM
  Friday: 7:00 AM – 7:00 PM
  Saturday: 8:00 AM – 7:00 PM
- Sunday: 8:00 AM – 7:00 PM","cafe","ChIJzbuV2r8XXIgRjukBkaRJkIU"
+ Sunday: 8:00 AM – 7:00 PM","cafe","ChIJzbuV2r8XXIgRjukBkaRJkIU","coffee"
 "Jacks Coffee and Plants","Knoxville, TN","Knoxville","Tennessee","United States of America",NA,"An urban retreat offering more than just coffee - also a charming spot to buy plants in the heart of the city.","854 N Central St, Knoxville, TN 37917, United States",4.5,110,"https://www.google.com/maps/search/?api=1&query=854%20N%20Central%20St,%20Knoxville,%20TN%2037917,%20United%20States&query_place_id=ChIJJ3N33h0XXIgR_6gdL9NAXA4",35.9778003,-83.9250891,"Monday: 7:30 AM – 5:00 PM
  Tuesday: 7:30 AM – 5:00 PM
  Wednesday: 7:30 AM – 5:00 PM
  Thursday: 7:30 AM – 5:00 PM
  Friday: 7:30 AM – 5:00 PM
  Saturday: 9:00 AM – 6:00 PM
- Sunday: 9:00 AM – 5:00 PM","cafe","ChIJu6QQZVMXXIgRKH9SbKrBH-0"
+ Sunday: 9:00 AM – 5:00 PM","cafe","ChIJu6QQZVMXXIgRKH9SbKrBH-0","coffee"
 "Spice and Tea Exchange","Knoxville, TN","Knoxville","Tennessee","United States of America","Yes","An olfactory paradise offering an immense range of teas and spices, all available for a pre-purchase sniff.","522 S Gay St, Knoxville, TN 37902, United States",5,25,"https://www.google.com/maps/search/?api=1&query=522%20S%20Gay%20St,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJlaN-8lkXXIgRZMipnDxx38A",35.9646709,-83.9178033,"Monday: 10:00 AM – 6:00 PM
  Tuesday: 10:00 AM – 6:00 PM
  Wednesday: 10:00 AM – 6:00 PM
  Thursday: 10:00 AM – 7:00 PM
  Friday: 10:00 AM – 9:00 PM
  Saturday: 10:00 AM – 9:00 PM
- Sunday: 11:00 AM – 6:00 PM","point_of_interest","ChIJlaN-8lkXXIgRZMipnDxx38A"
+ Sunday: 11:00 AM – 6:00 PM","point_of_interest","ChIJlaN-8lkXXIgRZMipnDxx38A","others"
 "Wild Love Bakehouse","Knoxville, TN","Knoxville","Tennessee","United States of America",NA,"A sanctuary for coffee and croissant lovers, with the added charm of indoor and outdoor seating.","1625 N Central St, Knoxville, TN 37917, United States",4.6,745,"https://www.google.com/maps/search/?api=1&query=1625%20N%20Central%20St,%20Knoxville,%20TN%2037917,%20United%20States&query_place_id=ChIJ-wFdM4c9XIgR2V4T7sYEwtE",35.9854173,-83.9344115,"Monday: Closed
  Tuesday: Closed
  Wednesday: 8:00 AM – 4:00 PM
  Thursday: 8:00 AM – 4:00 PM
  Friday: 8:00 AM – 4:00 PM
  Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM","bakery","ChIJ-wFdM4c9XIgR2V4T7sYEwtE"
+ Sunday: 8:00 AM – 4:00 PM","bakery","ChIJ-wFdM4c9XIgR2V4T7sYEwtE","food"
 "Mahalo Coffee Roasters","Knoxville, TN","Knoxville","Tennessee","United States of America","Yes","Experience the magic of a couple-run café (with interesting backstory) delivering sublime lattes.","513 Union Ave, Knoxville, TN 37902, United States",4.6,111,"https://www.google.com/maps/search/?api=1&query=513%20Union%20Ave,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJMcXMHRgXXIgR5hJfXj1oWYM",35.9642163,-83.9207179,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 6:00 PM
  Friday: 7:00 AM – 7:00 PM
  Saturday: 7:00 AM – 7:00 PM
- Sunday: Closed","cafe","ChIJMcXMHRgXXIgR5hJfXj1oWYM"
+ Sunday: Closed","cafe","ChIJMcXMHRgXXIgR5hJfXj1oWYM","coffee"
 "Capycabara Coffee","Knoxville, TN","Knoxville","Tennessee","United States of America",NA,"A welcoming spot featuring a friendly, well-versed staff, in a prime location with an adorable aesthetic.","2457 University Commons Way, Knoxville, TN 37919, United States",4.8,228,"https://www.google.com/maps/search/?api=1&query=2457%20University%20Commons%20Way,%20Knoxville,%20TN%2037919,%20United%20States&query_place_id=ChIJv8kQXQA9XIgRfVnhmo0tsG0",35.9509102,-83.9397853,"Monday: 7:30 AM – 6:00 PM
  Tuesday: 7:30 AM – 6:00 PM
  Wednesday: 7:30 AM – 6:00 PM
  Thursday: 7:30 AM – 6:00 PM
  Friday: 7:30 AM – 6:00 PM
  Saturday: 8:30 AM – 5:00 PM
- Sunday: 8:30 AM – 5:00 PM","cafe","ChIJv8kQXQA9XIgRfVnhmo0tsG0"
+ Sunday: 8:30 AM – 5:00 PM","cafe","ChIJv8kQXQA9XIgRfVnhmo0tsG0","coffee"
 "Old City Java","Knoxville, TN","Knoxville","Tennessee","United States of America","Yes","Immerse yourself in an environment of great vibes for reading, chatting with friends, excellent coffee, and versatile seating options, both indoors and outdoors.","109 S Central St, Knoxville, TN 37902, United States",4.6,477,"https://www.google.com/maps/search/?api=1&query=109%20S%20Central%20St,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJ6_RpD88XXIgRV7VWHB_Tqo0",35.9700788,-83.9184277,"Monday: 7:00 AM – 6:00 PM
  Tuesday: 7:00 AM – 6:00 PM
  Wednesday: 7:00 AM – 6:00 PM
  Thursday: 7:00 AM – 6:00 PM
  Friday: 7:00 AM – 6:00 PM
  Saturday: 8:00 AM – 6:00 PM
- Sunday: 8:00 AM – 6:00 PM","cafe","ChIJ6_RpD88XXIgRV7VWHB_Tqo0"
+ Sunday: 8:00 AM – 6:00 PM","cafe","ChIJ6_RpD88XXIgRV7VWHB_Tqo0","coffee"
 "Bida Saigon","Knoxville, TN","Knoxville","Tennessee","United States of America","Yes","Delicious Pho, brimming with irresistible Vietnamese culinary delights.","8078 Kingston Pike, Knoxville, TN 37919, United States",4.5,988,"https://www.google.com/maps/search/?api=1&query=8078%20Kingston%20Pike,%20Knoxville,%20TN%2037919,%20United%20States&query_place_id=ChIJAee079wkXIgR6mAXxyID-pA",35.9229527,-84.0498243,"Monday: 11:00 AM – 9:00 PM
  Tuesday: Closed
  Wednesday: 11:00 AM – 9:00 PM
  Thursday: 11:00 AM – 9:00 PM
  Friday: 11:00 AM – 9:00 PM
  Saturday: 11:00 AM – 9:00 PM
- Sunday: 11:00 AM – 9:00 PM","restaurant","ChIJAee079wkXIgR6mAXxyID-pA"
+ Sunday: 11:00 AM – 9:00 PM","restaurant","ChIJAee079wkXIgR6mAXxyID-pA","food"
 "Aroma Indian Kitchen","Knoxville, TN","Knoxville","Tennessee","United States of America",NA,"The destination for scrumptious masala dosa and biryani, though the mutton offerings fall short of expectations.","138 N Cedar Bluff Rd, Knoxville, TN 37923, United States",4.3,619,"https://www.google.com/maps/search/?api=1&query=138%20N%20Cedar%20Bluff%20Rd,%20Knoxville,%20TN%2037923,%20United%20States&query_place_id=ChIJyfiBGG4lXIgR3jTkFRS6X9Q",35.9130971,-84.0868281,"Monday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM
  Tuesday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM
  Wednesday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM
  Thursday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM
  Friday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM
  Saturday: 11:00 AM – 2:30 PM, 5:00 – 10:00 PM
- Sunday: 11:00 AM – 2:30 PM, 5:00 – 9:00 PM","restaurant","ChIJyfiBGG4lXIgR3jTkFRS6X9Q"
+ Sunday: 11:00 AM – 2:30 PM, 5:00 – 9:00 PM","restaurant","ChIJyfiBGG4lXIgR3jTkFRS6X9Q","food"
 "The Tomato Head","Knoxville, TN","Knoxville","Tennessee","United States of America",NA,"A trendy American pizzeria, dishing up a mix of vegetarian options, paired with a curated selection of beer and wine.","12 Market Square, Knoxville, TN 37902, United States",4.5,2268,"https://www.google.com/maps/search/?api=1&query=12%20Market%20Square,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJTbL0_sQXXIgRmrNflbYf2dw",35.9651887,-83.9192821,"Monday: 11:00 AM – 9:00 PM
  Tuesday: 11:00 AM – 9:00 PM
  Wednesday: 11:00 AM – 9:00 PM
  Thursday: 11:00 AM – 9:00 PM
  Friday: 11:00 AM – 10:00 PM
  Saturday: 10:30 AM – 10:00 PM
- Sunday: 10:30 AM – 9:00 PM","restaurant","ChIJTbL0_sQXXIgRmrNflbYf2dw"
+ Sunday: 10:30 AM – 9:00 PM","restaurant","ChIJTbL0_sQXXIgRmrNflbYf2dw","food"
 "Kafiex Roasters","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Good coffee and a nice collection of books on the history of coffee and coffee culture.","720 Esther St, Vancouver, WA 98660, United States",4.3,284,"https://www.google.com/maps/search/?api=1&query=720%20Esther%20St,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJCWrs3hOwlVQROxma3SGMRu0",45.6271099,-122.6762403,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","cafe","ChIJCWrs3hOwlVQROxma3SGMRu0"
+ Sunday: 7:00 AM – 4:00 PM","cafe","ChIJCWrs3hOwlVQROxma3SGMRu0","coffee"
 "Krays Coffee and Bakery","Vancouver, WA","Vancouver","Washington","United States of America",NA,"Nice coffee and their parfaits are amazing!","7809 NE Vancouver Plaza Dr #150, Vancouver, WA 98662, United States",4.6,662,"https://www.google.com/maps/search/?api=1&query=7809%20NE%20Vancouver%20Plaza%20Dr%20#150,%20Vancouver,%20WA%2098662,%20United%20States&query_place_id=ChIJoanuxfuvlVQRa4I9RvMXYsg",45.6483957,-122.5918642,"Monday: 8:00 AM – 6:00 PM
  Tuesday: 8:00 AM – 6:00 PM
  Wednesday: 8:00 AM – 6:00 PM
  Thursday: 8:00 AM – 6:00 PM
  Friday: 8:00 AM – 6:00 PM
  Saturday: 8:00 AM – 6:00 PM
- Sunday: 8:00 AM – 6:00 PM","cafe","ChIJoanuxfuvlVQRa4I9RvMXYsg"
+ Sunday: 8:00 AM – 6:00 PM","cafe","ChIJoanuxfuvlVQRa4I9RvMXYsg","coffee"
 "Roseline Coffee","Portland, OR","Portland","Oregon","United States of America",NA,NA,"1015 SE 11th Ave #100, Portland, OR 97214, United States",4.6,107,"https://www.google.com/maps/search/?api=1&query=1015%20SE%2011th%20Ave%20#100,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJF3SVEEKhlVQREbGnR20iOl8",45.5157163,-122.6548319,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 8:00 AM – 5:00 PM
- Sunday: 8:00 AM – 5:00 PM","cafe","ChIJF3SVEEKhlVQREbGnR20iOl8"
+ Sunday: 8:00 AM – 5:00 PM","cafe","ChIJF3SVEEKhlVQREbGnR20iOl8","coffee"
 "Compass Coffee","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Good place to work or hangout with friends. Also has an outdoor patio.","817 Washington St, Vancouver, WA 98660, United States",4.6,846,"https://www.google.com/maps/search/?api=1&query=817%20Washington%20St,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJmxa1JrSolVQRAxKuFoFVVbo",45.6278365,-122.672555,"Monday: 6:00 AM – 7:00 PM
  Tuesday: 6:00 AM – 7:00 PM
  Wednesday: 6:00 AM – 7:00 PM
  Thursday: 6:00 AM – 7:00 PM
  Friday: 6:00 AM – 7:00 PM
  Saturday: 6:00 AM – 7:00 PM
- Sunday: 6:00 AM – 7:00 PM","cafe","ChIJmxa1JrSolVQRAxKuFoFVVbo"
+ Sunday: 6:00 AM – 7:00 PM","cafe","ChIJmxa1JrSolVQRAxKuFoFVVbo","coffee"
 "Keeper Coffee","Portland, OR","Portland","Oregon","United States of America","Yes","Cozy but bustling! If you're lucky enough, you will get coffee from Morgan, world barista champion.","4515 SE 41st Ave, Portland, OR 97202, United States",4.8,283,"https://www.google.com/maps/search/?api=1&query=4515%20SE%2041st%20Ave,%20Portland,%20OR%2097202,%20United%20States&query_place_id=ChIJwVBb6R0LlVQR52pe_0J9y4E",45.4899881,-122.619976,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 7:00 AM – 5:00 PM
- Sunday: 7:00 AM – 5:00 PM","cafe","ChIJwVBb6R0LlVQR52pe_0J9y4E"
+ Sunday: 7:00 AM – 5:00 PM","cafe","ChIJwVBb6R0LlVQR52pe_0J9y4E","coffee"
 "Foode Catering","Vancouver, WA","Vancouver","Washington","United States of America",NA,"A delicious sandwich place with good coffee.","900 Washington St #120, Vancouver, WA 98660, United States",4.6,104,"https://www.google.com/maps/search/?api=1&query=900%20Washington%20St%20#120,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJ5f1j97SolVQRd4l-oD46vxE",45.6283793,-122.6731579,"Monday: 8:00 AM – 3:00 PM
  Tuesday: 8:00 AM – 3:00 PM
  Wednesday: 8:00 AM – 3:00 PM
  Thursday: 8:00 AM – 3:00 PM
  Friday: 8:00 AM – 3:00 PM
  Saturday: Closed
- Sunday: Closed","cafe","ChIJ5f1j97SolVQRd4l-oD46vxE"
+ Sunday: Closed","cafe","ChIJ5f1j97SolVQRd4l-oD46vxE","coffee"
 "Relevant Coffee","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Spacious cafe with interesting group of goers. Great place to read a book, finish a project, or just have some philosophical chat with friends relaxing on the couch.","1703 Main St suite a, Vancouver, WA 98660, United States",4.7,579,"https://www.google.com/maps/search/?api=1&query=1703%20Main%20St%20suite%20a,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJHdwhlsqolVQRBLx-7-LuOrY",45.6343802,-122.6711534,"Monday: 7:00 AM – 5:00 PM
  Tuesday: 7:00 AM – 5:00 PM
  Wednesday: 7:00 AM – 5:00 PM
  Thursday: 7:00 AM – 5:00 PM
  Friday: 7:00 AM – 5:00 PM
  Saturday: 7:00 AM – 5:00 PM
- Sunday: 7:00 AM – 5:00 PM","cafe","ChIJHdwhlsqolVQRBLx-7-LuOrY"
+ Sunday: 7:00 AM – 5:00 PM","cafe","ChIJHdwhlsqolVQRBLx-7-LuOrY","coffee"
 "Case Study Coffee Roasters","Portland, OR","Portland","Oregon","United States of America","Yes","Fine inner decor. Good crowd of people; I was inspired to read.","802 SW 10th Ave, Portland, OR 97205, United States",4.4,1187,"https://www.google.com/maps/search/?api=1&query=802%20SW%2010th%20Ave,%20Portland,%20OR%2097205,%20United%20States&query_place_id=ChIJa92lywQKlVQRXlkX4rXNbnM",45.5190805,-122.6823427,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","cafe","ChIJNTayFi-hlVQRnBUUqts9cRM"
+ Sunday: 7:00 AM – 4:00 PM","cafe","ChIJNTayFi-hlVQRnBUUqts9cRM","coffee"
 "Brewed Awakenings","Vancouver, WA","Vancouver","Washington","United States of America",NA,"I love this cafe for its variety of seating. You will meet groups plaing board games, high schoolers doing homework, people with headphones, and people reading. Big menu; more than coffee.","6709 NE 63rd St #101, Vancouver, WA 98661, United States",4.6,407,"https://www.google.com/maps/search/?api=1&query=6709%20NE%2063rd%20St%20#101,%20Vancouver,%20WA%2098661,%20United%20States&query_place_id=ChIJmcwBkLevlVQR6Tk-faeWxpc",45.6676817,-122.6039947,"Monday: 5:30 AM – 6:00 PM
  Tuesday: 5:30 AM – 6:00 PM
  Wednesday: 5:30 AM – 6:00 PM
  Thursday: 5:30 AM – 6:00 PM
  Friday: 5:30 AM – 6:00 PM
  Saturday: 6:00 AM – 6:00 PM
- Sunday: 6:30 AM – 6:00 PM","cafe","ChIJ8zoCXs6klVQRN5kQyJY-wrM"
+ Sunday: 6:30 AM – 6:00 PM","cafe","ChIJ8zoCXs6klVQRN5kQyJY-wrM","coffee"
 "Bollywood Theater","Portland, OR","Portland","Oregon","United States of America","Yes","Good collection of Indian street food. Not spicy but full of flavours.","3010 SE Division St, Portland, OR 97202, United States",4.4,2159,"https://www.google.com/maps/search/?api=1&query=3010%20SE%20Division%20St,%20Portland,%20OR%2097202,%20United%20States&query_place_id=ChIJG5ZIIYSglVQRppLQUCpUpws",45.5046167,-122.6343861,"Monday: 4:00 – 9:00 PM
  Tuesday: Closed
  Wednesday: 4:00 – 9:00 PM
  Thursday: 4:00 – 9:00 PM
  Friday: 4:00 – 9:00 PM
  Saturday: 4:00 – 9:00 PM
- Sunday: 4:00 – 9:00 PM","restaurant","ChIJG5ZIIYSglVQRppLQUCpUpws"
+ Sunday: 4:00 – 9:00 PM","restaurant","ChIJG5ZIIYSglVQRppLQUCpUpws","food"
 "Mon Ami","Vancouver, WA","Vancouver","Washington","United States of America","Yes","Great ambience, lots of board games, lots of books, and wonderful inviting decor.","1906 Main St, Vancouver, WA 98660, United States",4.6,438,"https://www.google.com/maps/search/?api=1&query=1906%20Main%20St,%20Vancouver,%20WA%2098660,%20United%20States&query_place_id=ChIJt2DdlMqolVQR9_8bSgsyYCY",45.6359,-122.6717694,"Monday: Closed
  Tuesday: Closed
  Wednesday: 9:00 AM – 5:30 PM
  Thursday: 9:00 AM – 5:30 PM
  Friday: 9:00 AM – 7:00 PM
  Saturday: 9:00 AM – 8:00 PM
- Sunday: 9:00 AM – 3:00 PM","cafe","ChIJt2DdlMqolVQR9_8bSgsyYCY"
+ Sunday: 9:00 AM – 3:00 PM","cafe","ChIJt2DdlMqolVQR9_8bSgsyYCY","coffee"
 "Short & Sweet","Vancouver, WA","Vancouver","Washington","United States of America",NA,"Inviting atmosphere, lots of boba tea options.","1231 NW Couch St, Portland, OR 97209, United States",4.2,93,"https://www.google.com/maps/search/?api=1&query=1231%20NW%20Couch%20St,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJjyUxWQIKlVQRTKIK5VO-khY",45.5238033,-122.6839393,"Monday: 10:00 AM – 7:00 PM
  Tuesday: 10:00 AM – 7:00 PM
  Wednesday: 10:00 AM – 7:00 PM
  Thursday: 10:00 AM – 7:00 PM
  Friday: 10:00 AM – 7:00 PM
  Saturday: 10:00 AM – 7:00 PM
- Sunday: 11:00 AM – 6:00 PM","clothing_store","ChIJBZQqyTIjXIgRgla5sZhF_-0"
-"TOIT","Toit Brewpub, 100 Feet Road, Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka","Bengaluru","Karnataka","India","Yes","Best light beer brewery- Tin-Tin Beer, nice food, affordable place, good memories","Indiranagar, 100 Feet Rd, Near Drops Total Spirites, Bengaluru, Karnataka 560038, India",4.5,52918,"https://www.google.com/maps/search/?api=1&query=Indiranagar,%20100%20Feet%20Rd,%20Near%20Drops%20Total%20Spirites,%20Bengaluru,%20Karnataka%20560038,%20India&query_place_id=ChIJc0JAFaUWrjsRRXSXJPX7YFo",12.979208,77.6405456,"Monday: 8:30 AM – 1:00 AM
+ Sunday: 11:00 AM – 6:00 PM","clothing_store","ChIJBZQqyTIjXIgRgla5sZhF_-0","others"
+"TOIT","Toit Brewpub, 100 Feet Road, Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka","Bengaluru","Karnataka","India","Yes","Tin-Tin Beer excels in crafting light beers, offers delectable cuisine, and provides an economical setting that evokes nostalgia.","Indiranagar, 100 Feet Rd, Near Drops Total Spirites, Bengaluru, Karnataka 560038, India",4.5,52918,"https://www.google.com/maps/search/?api=1&query=Indiranagar,%20100%20Feet%20Rd,%20Near%20Drops%20Total%20Spirites,%20Bengaluru,%20Karnataka%20560038,%20India&query_place_id=ChIJc0JAFaUWrjsRRXSXJPX7YFo",12.979208,77.6405456,"Monday: 8:30 AM – 1:00 AM
  Tuesday: 8:30 AM – 1:00 AM
  Wednesday: 8:30 AM – 1:00 AM
  Thursday: 8:30 AM – 1:00 AM
  Friday: 8:30 AM – 1:00 AM
  Saturday: 8:30 AM – 1:00 AM
- Sunday: 8:30 AM – 1:00 AM","bar","ChIJc0JAFaUWrjsRRXSXJPX7YFo"
-"Pecos - Classic","34, Rest House Rd, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India",NA,"Looking for a cheap place and tap beer, the staff is old and will show you magic tricks once they get to know you :)","34, Rest House Rd, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",4.3,1993,"https://www.google.com/maps/search/?api=1&query=34,%20Rest%20House%20Rd,%20Shanthala%20Nagar,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJQVqlWGQWrjsRNmNTzeUOMI0",12.973678,77.607354,"Monday: 10:30 AM – 11:00 PM
+ Sunday: 8:30 AM – 1:00 AM","bar","ChIJc0JAFaUWrjsRRXSXJPX7YFo","food"
+"Pecos - Classic","34, Rest House Rd, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India",NA,"If you're in the mood for budget-friendly tap beer, this venue has seasoned staff who will entertain you with magic tricks once you become a familiar face.","34, Rest House Rd, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",4.3,1993,"https://www.google.com/maps/search/?api=1&query=34,%20Rest%20House%20Rd,%20Shanthala%20Nagar,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJQVqlWGQWrjsRNmNTzeUOMI0",12.973678,77.607354,"Monday: 10:30 AM – 11:00 PM
  Tuesday: 10:30 AM – 11:00 PM
  Wednesday: 10:30 AM – 11:00 PM
  Thursday: 10:30 AM – 11:00 PM
  Friday: 10:30 AM – 11:00 PM
  Saturday: 10:30 AM – 11:00 PM
- Sunday: 10:30 AM – 11:00 PM","bar","ChIJQVqlWGQWrjsRNmNTzeUOMI0"
-"Cubbon Park","Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India","Bengaluru","Karnataka","India","Yes","Cubbon Park is big and beautiful but this particular trail is relatively quieter and peaceful","Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",4.4,128891,"https://www.google.com/maps/search/?api=1&query=Kasturba%20Rd,%20behind%20High%20Court%20of%20Karnataka,%20Ambedkar%20Veedhi,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJL2fQ53MWrjsRuN9D6aalLMY",12.9779291,77.5951549,NA,"park","ChIJL2fQ53MWrjsRuN9D6aalLMY"
-"Chin Lung","19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009","Bengaluru","Karnataka","India",NA,"For a not so crowded cheap place with alcohol and really good food, butter garlic prawns to die for","19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009, India",4.8,1013,"https://www.google.com/maps/search/?api=1&query=19%20&%2020,%203rd%20Main%20Rd,%20opposite%20Sapna%20Book%20House,%20Gandhi%20Nagar,%20Bengaluru,%20Karnataka%20560009,%20India&query_place_id=ChIJvdFUrNIXrjsRvYvc85Mgw4A",12.976182,77.578656,"Monday: 11:30 AM – 1:00 AM
+ Sunday: 10:30 AM – 11:00 PM","bar","ChIJQVqlWGQWrjsRNmNTzeUOMI0","food"
+"Cubbon Park","Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India","Bengaluru","Karnataka","India","Yes","This specific trail within Cubbon Park offers a serene environment that stands in contrast to its larger, busier surroundings.","Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",4.4,128891,"https://www.google.com/maps/search/?api=1&query=Kasturba%20Rd,%20behind%20High%20Court%20of%20Karnataka,%20Ambedkar%20Veedhi,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJL2fQ53MWrjsRuN9D6aalLMY",12.9779291,77.5951549,NA,"park","ChIJL2fQ53MWrjsRuN9D6aalLMY","others"
+"Chin Lung","19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009","Bengaluru","Karnataka","India",NA,"For an uncrowded, cost-effective experience with exceptional food, their butter garlic prawns are a must-try.","19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009, India",4.8,1013,"https://www.google.com/maps/search/?api=1&query=19%20&%2020,%203rd%20Main%20Rd,%20opposite%20Sapna%20Book%20House,%20Gandhi%20Nagar,%20Bengaluru,%20Karnataka%20560009,%20India&query_place_id=ChIJvdFUrNIXrjsRvYvc85Mgw4A",12.976182,77.578656,"Monday: 11:30 AM – 1:00 AM
  Tuesday: 11:30 AM – 1:00 AM
  Wednesday: 11:30 AM – 1:00 AM
  Thursday: 11:30 AM – 1:00 AM
  Friday: 11:30 AM – 1:00 AM
  Saturday: 11:30 AM – 1:00 AM
- Sunday: 11:30 AM – 1:00 AM","bar","ChIJvdFUrNIXrjsRvYvc85Mgw4A"
-"Suzy Q","No.1, Express Building, Queens Road, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","Fancy, good food, amazing cocktails, great music, hip crowd","No.1, Express Building, Queens Road, Bengaluru, Karnataka 560001, India",4.4,3093,"https://www.google.com/maps/search/?api=1&query=No.1,%20Express%20Building,%20Queens%20Road,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJ_5IDe7YXrjsRdu79rZOI1E0",12.9837428,77.5966959,"Monday: 12:00 PM – 12:30 AM
+ Sunday: 11:30 AM – 1:00 AM","bar","ChIJvdFUrNIXrjsRvYvc85Mgw4A","food"
+"Suzy Q","No.1, Express Building, Queens Road, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","With its elegant ambiance, gourmet dishes, artisan cocktails, pulsating music, and a fashionable clientele, this place is a hit.","No.1, Express Building, Queens Road, Bengaluru, Karnataka 560001, India",4.4,3093,"https://www.google.com/maps/search/?api=1&query=No.1,%20Express%20Building,%20Queens%20Road,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJ_5IDe7YXrjsRdu79rZOI1E0",12.9837428,77.5966959,"Monday: 12:00 PM – 12:30 AM
  Tuesday: 12:00 PM – 12:30 AM
  Wednesday: 12:00 PM – 12:30 AM
  Thursday: 12:00 PM – 12:30 AM
  Friday: 12:00 PM – 12:30 AM
  Saturday: 12:00 PM – 12:30 AM
- Sunday: 12:00 PM – 12:30 AM","bar","ChIJ_5IDe7YXrjsRdu79rZOI1E0"
-"Milano","Sobha Mall, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","Fancy choices, variety that is updated frequently, opens till 12:30 am","Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",4.5,841,"https://www.google.com/maps/search/?api=1&query=Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJoSGp8FYXrjsReShvdOYXFzg",12.9753638,77.6018504,"Monday: 9:00 AM – 10:00 PM
+ Sunday: 12:00 PM – 12:30 AM","bar","ChIJ_5IDe7YXrjsRdu79rZOI1E0","food"
+"Milano","Sobha Mall, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","This establishment boasts a rotating selection of sophisticated options and stays open until 12:30 am.","Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",4.5,841,"https://www.google.com/maps/search/?api=1&query=Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJoSGp8FYXrjsReShvdOYXFzg",12.9753638,77.6018504,"Monday: 9:00 AM – 10:00 PM
  Tuesday: 9:00 AM – 10:00 PM
  Wednesday: 9:00 AM – 10:00 PM
  Thursday: 9:00 AM – 10:00 PM
  Friday: 9:00 AM – 10:00 PM
  Saturday: 9:00 AM – 10:00 PM
- Sunday: 9:00 AM – 10:00 PM","shopping_mall","ChIJoSGp8FYXrjsReShvdOYXFzg"
-"Momos stall","29-34, Rest House Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India","Bengaluru","Karnataka","India","Yes","Best momos found in Bangalore, no fancy name/place, just a stall","XJ95+R23, Markham Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",4.4,66,"https://www.google.com/maps/search/?api=1&query=XJ95+R23,%20Markham%20Rd,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560025,%20India&query_place_id=ChIJEwIT238WrjsRfoG2sfoOIac",12.9695465,77.6075444,"Monday: 11:00 AM – 10:30 PM
+ Sunday: 9:00 AM – 10:00 PM","shopping_mall","ChIJoSGp8FYXrjsReShvdOYXFzg","others"
+"Momos stall","29-34, Rest House Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India","Bengaluru","Karnataka","India","Yes","The best momos in Bangalore can be discovered at this unassuming stall, which eschews branding for quality.","XJ95+R23, Markham Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",4.4,66,"https://www.google.com/maps/search/?api=1&query=XJ95+R23,%20Markham%20Rd,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560025,%20India&query_place_id=ChIJEwIT238WrjsRfoG2sfoOIac",12.9695465,77.6075444,"Monday: 11:00 AM – 10:30 PM
  Tuesday: 11:00 AM – 10:30 PM
  Wednesday: 11:00 AM – 10:30 PM
  Thursday: 11:00 AM – 10:30 PM
  Friday: 11:00 AM – 10:30 PM
  Saturday: 11:00 AM – 10:30 PM
- Sunday: 11:00 AM – 10:30 PM","restaurant","ChIJcRt-rLEXrjsREIt6bo9jgHg"
-"Orion Mall - Lakeview","BRIGADE GATEWAY, Chai Point, 26/1, 1st Floor, Dr. Rajkumar Road, Orion Mall, Malleshwara, Bengaluru, Karnataka 560003","Bengaluru","Karnataka","India",NA,"Nice place to relax and have a chai/coffee","Dr Rajkumar Rd, Rajajinagar, Bengaluru, Karnataka 560055, India",4.5,176990,"https://www.google.com/maps/search/?api=1&query=Dr%20Rajkumar%20Rd,%20Rajajinagar,%20Bengaluru,%20Karnataka%20560055,%20India&query_place_id=ChIJZ0FegEs9rjsRZFR-C-hVwqQ",13.011023,77.5547152,"Monday: 10:00 AM – 10:00 PM
+ Sunday: 11:00 AM – 10:30 PM","restaurant","ChIJcRt-rLEXrjsREIt6bo9jgHg","food"
+"Orion Mall - Lakeview","BRIGADE GATEWAY, Chai Point, 26/1, 1st Floor, Dr. Rajkumar Road, Orion Mall, Malleshwara, Bengaluru, Karnataka 560003","Bengaluru","Karnataka","India",NA,"It's an ideal spot for unwinding over a comforting cup of chai or coffee.","Dr Rajkumar Rd, Rajajinagar, Bengaluru, Karnataka 560055, India",4.5,176990,"https://www.google.com/maps/search/?api=1&query=Dr%20Rajkumar%20Rd,%20Rajajinagar,%20Bengaluru,%20Karnataka%20560055,%20India&query_place_id=ChIJZ0FegEs9rjsRZFR-C-hVwqQ",13.011023,77.5547152,"Monday: 10:00 AM – 10:00 PM
  Tuesday: 10:00 AM – 10:00 PM
  Wednesday: 10:00 AM – 10:00 PM
  Thursday: 10:00 AM – 10:00 PM
  Friday: 10:00 AM – 10:00 PM
  Saturday: 10:00 AM – 10:00 PM
- Sunday: 10:00 AM – 10:00 PM","shopping_mall","ChIJg3bVF-09rjsRozhTJiYrS8g"
-"Orion Mall - Tuscano","26/1, Dr Rajkumar Rd, Malleshwara, Bengaluru, Karnataka 560055","Bengaluru","Karnataka","India","Yes","Best Italian Pizza, paired with Sangria, nice for dinner dates","26/1, Dr Rajkumar Rd, Malleshwara, Bengaluru, Karnataka 560055, India",4.2,4748,"https://www.google.com/maps/search/?api=1&query=26/1,%20Dr%20Rajkumar%20Rd,%20Malleshwara,%20Bengaluru,%20Karnataka%20560055,%20India&query_place_id=ChIJXx535Io9rjsRxPHSPe5DJvw",13.0113262,77.5553361,"Monday: 12:00 – 11:00 PM
+ Sunday: 10:00 AM – 10:00 PM","shopping_mall","ChIJg3bVF-09rjsRozhTJiYrS8g","others"
+"Orion Mall - Tuscano","26/1, Dr Rajkumar Rd, Malleshwara, Bengaluru, Karnataka 560055","Bengaluru","Karnataka","India","Yes","Known for its authentic Italian pizzas and complementing Sangrias, this place sets the mood for romantic dinner dates.","26/1, Dr Rajkumar Rd, Malleshwara, Bengaluru, Karnataka 560055, India",4.2,4748,"https://www.google.com/maps/search/?api=1&query=26/1,%20Dr%20Rajkumar%20Rd,%20Malleshwara,%20Bengaluru,%20Karnataka%20560055,%20India&query_place_id=ChIJXx535Io9rjsRxPHSPe5DJvw",13.0113262,77.5553361,"Monday: 12:00 – 11:00 PM
  Tuesday: 12:00 – 11:00 PM
  Wednesday: 12:00 – 11:00 PM
  Thursday: 12:00 – 11:00 PM
  Friday: 12:00 – 11:00 PM
  Saturday: 12:00 – 11:00 PM
- Sunday: 12:00 – 11:00 PM","restaurant","ChIJXx535Io9rjsRxPHSPe5DJvw"
-"Vatadahosahalli Lake","MJVX+68, Thokalahalli, Karnataka 561209","Bengaluru","Karnataka","India",NA,"Away from the bustling city, refreshing wind, perfect for road trip","Vatadahosahalli Lake, Sabbanahalli, Karnataka 561209",4.6,365,"https://www.google.com/maps/search/?api=1&query=Vatadahosahalli%20Lake,%20Sabbanahalli,%20Karnataka%20561209&query_place_id=ChIJM_WWnKqWsTsRqQEYEvIa7E8",13.6962239,77.6514648,NA,"natural_feature","VLMTK5BK"
-"Glen's Bakehouse","24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","Good food, red velvet small cupcakes recommended","24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",4.4,10105,"https://www.google.com/maps/search/?api=1&query=24/1,%20Lavelle%20Road,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJKaFXNHgWrjsRuoVUhT-DzDY",12.9698289,77.597437,"Monday: 9:00 AM – 1:00 AM
+ Sunday: 12:00 – 11:00 PM","restaurant","ChIJXx535Io9rjsRxPHSPe5DJvw","food"
+"Vatadahosahalli Lake","MJVX+68, Thokalahalli, Karnataka 561209","Bengaluru","Karnataka","India",NA,"Situated away from the urban hustle, the locale offers a rejuvenating breeze, making it perfect for road trips.","Vatadahosahalli Lake, Sabbanahalli, Karnataka 561209",4.6,365,"https://www.google.com/maps/search/?api=1&query=Vatadahosahalli%20Lake,%20Sabbanahalli,%20Karnataka%20561209&query_place_id=ChIJM_WWnKqWsTsRqQEYEvIa7E8",13.6962239,77.6514648,NA,"natural_feature","VLMTK5BK","others"
+"Glen's Bakehouse","24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","This caf� serves top-notch food, with their mini red velvet cupcakes coming highly recommended.","24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",4.4,10105,"https://www.google.com/maps/search/?api=1&query=24/1,%20Lavelle%20Road,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJKaFXNHgWrjsRuoVUhT-DzDY",12.9698289,77.597437,"Monday: 9:00 AM – 1:00 AM
  Tuesday: 9:00 AM – 1:00 AM
  Wednesday: 9:00 AM – 1:00 AM
  Thursday: 9:00 AM – 1:00 AM
  Friday: 9:00 AM – 1:00 AM
  Saturday: 9:00 AM – 1:00 AM
- Sunday: 9:00 AM – 1:00 AM","cafe","ChIJKaFXNHgWrjsRuoVUhT-DzDY"
-"Fatty Bao","25/4, 1st floor, Lavelle Road, opposite Harley Davidson showroom, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India",NA,"Good food and cocktails, Bao recommended","25/4, 1st floor, Lavelle Road, opposite Harley Davidson showroom, Bengaluru, Karnataka 560001, India",4.4,236,"https://www.google.com/maps/search/?api=1&query=25/4,%201st%20floor,%20Lavelle%20Road,%20opposite%20Harley%20Davidson%20showroom,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJj2WheQEXrjsR7r9boXZ8YcU",12.9706853,77.5975659,"Monday: 12:00 – 11:00 PM
+ Sunday: 9:00 AM – 1:00 AM","cafe","ChIJKaFXNHgWrjsRuoVUhT-DzDY","coffee"
+"Fatty Bao","25/4, 1st floor, Lavelle Road, opposite Harley Davidson showroom, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India",NA,"The venue shines in both its culinary and mixology offerings, with Bao being a standout dish.","25/4, 1st floor, Lavelle Road, opposite Harley Davidson showroom, Bengaluru, Karnataka 560001, India",4.4,236,"https://www.google.com/maps/search/?api=1&query=25/4,%201st%20floor,%20Lavelle%20Road,%20opposite%20Harley%20Davidson%20showroom,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJj2WheQEXrjsR7r9boXZ8YcU",12.9706853,77.5975659,"Monday: 12:00 – 11:00 PM
  Tuesday: 12:00 – 11:00 PM
  Wednesday: 12:00 – 11:00 PM
  Thursday: 12:00 – 11:00 PM
  Friday: 12:00 PM – 12:00 AM
  Saturday: 12:00 PM – 12:00 AM
- Sunday: 12:00 PM – 12:00 AM","restaurant","ChIJj2WheQEXrjsR7r9boXZ8YcU"
-"Misu","4th Floor Halcyon Complex, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025","Bengaluru","Karnataka","India","Yes","Amazing Ramen, and Dimsums","4th Floor Halcyon Complex, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",4.3,2392,"https://www.google.com/maps/search/?api=1&query=4th%20Floor%20Halcyon%20Complex,%20St%20Mark's%20Rd,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560025,%20India&query_place_id=ChIJe01wInkWrjsR_FyvHuyXJu0",12.970785,77.600661,"Monday: 12:00 – 11:30 PM
+ Sunday: 12:00 PM – 12:00 AM","restaurant","ChIJj2WheQEXrjsR7r9boXZ8YcU","food"
+"Misu","4th Floor Halcyon Complex, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025","Bengaluru","Karnataka","India","Yes","For those craving authentic Ramen and Dimsums, this restaurant is an unmissable stop.","4th Floor Halcyon Complex, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",4.3,2392,"https://www.google.com/maps/search/?api=1&query=4th%20Floor%20Halcyon%20Complex,%20St%20Mark's%20Rd,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560025,%20India&query_place_id=ChIJe01wInkWrjsR_FyvHuyXJu0",12.970785,77.600661,"Monday: 12:00 – 11:30 PM
  Tuesday: 12:00 – 11:30 PM
  Wednesday: 12:00 – 11:30 PM
  Thursday: 12:00 – 11:30 PM
  Friday: 12:00 – 11:30 PM
  Saturday: 12:00 – 11:30 PM
- Sunday: 12:00 – 11:30 PM","restaurant","ChIJe01wInkWrjsR_FyvHuyXJu0"
-"Chianti","Ramanashree Arcade, Ground Floor, Ashok Nagar Post, 18, Mahatma Gandhi Rd, Sivanchetti Gardens, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","Amazing Italian food paired with wine cocktails","Ramanashree Arcade, Ground Floor, Ashok Nagar Post, 18, Mahatma Gandhi Rd, Sivanchetti Gardens, Bengaluru, Karnataka 560001, India",4.3,1808,"https://www.google.com/maps/search/?api=1&query=Ramanashree%20Arcade,%20Ground%20Floor,%20Ashok%20Nagar%20Post,%2018,%20Mahatma%20Gandhi%20Rd,%20Sivanchetti%20Gardens,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJ184uJb0XrjsRFuBTcHkYSYA",12.9723397,77.6188268,"Monday: 12:00 – 3:30 PM, 6:30 – 10:30 PM
+ Sunday: 12:00 – 11:30 PM","restaurant","ChIJe01wInkWrjsR_FyvHuyXJu0","food"
+"Chianti","Ramanashree Arcade, Ground Floor, Ashok Nagar Post, 18, Mahatma Gandhi Rd, Sivanchetti Gardens, Bengaluru, Karnataka 560001","Bengaluru","Karnataka","India","Yes","Exceptional Italian cuisine is expertly paired with wine-based cocktails at this establishment.","Ramanashree Arcade, Ground Floor, Ashok Nagar Post, 18, Mahatma Gandhi Rd, Sivanchetti Gardens, Bengaluru, Karnataka 560001, India",4.3,1808,"https://www.google.com/maps/search/?api=1&query=Ramanashree%20Arcade,%20Ground%20Floor,%20Ashok%20Nagar%20Post,%2018,%20Mahatma%20Gandhi%20Rd,%20Sivanchetti%20Gardens,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJ184uJb0XrjsRFuBTcHkYSYA",12.9723397,77.6188268,"Monday: 12:00 – 3:30 PM, 6:30 – 10:30 PM
  Tuesday: 12:00 – 3:30 PM, 6:30 – 10:30 PM
  Wednesday: 12:00 – 3:30 PM, 6:30 – 10:30 PM
  Thursday: 12:00 – 3:30 PM, 6:30 – 10:30 PM
  Friday: 12:00 – 3:30 PM, 6:30 – 10:30 PM
  Saturday: 12:00 – 11:00 PM
- Sunday: 12:00 – 10:30 PM","bar","ChIJ184uJb0XrjsRFuBTcHkYSYA"
+ Sunday: 12:00 – 10:30 PM","bar","ChIJ184uJb0XrjsRFuBTcHkYSYA","food"
 "Rose Park Roasters","Long Beach, CA","Long Beach","California","United States",NA,"Great collection of coffee beans. The barista was knowledgeable about different ways to make coffee. I liked their Cortado.","800 Pine Ave, Long Beach, CA 90813, United States",4.7,145,"https://www.google.com/maps/search/?api=1&query=800%20Pine%20Ave,%20Long%20Beach,%20CA%2090813,%20United%20States&query_place_id=ChIJ9QLjsfUx3YARWEIbOymgqd4",33.7766575,-118.1922098,"Monday: 7:00 AM – 4:00 PM
  Tuesday: 7:00 AM – 4:00 PM
  Wednesday: 7:00 AM – 4:00 PM
  Thursday: 7:00 AM – 4:00 PM
  Friday: 7:00 AM – 4:00 PM
  Saturday: 7:00 AM – 4:00 PM
- Sunday: 7:00 AM – 4:00 PM","cafe","ChIJ9QLjsfUx3YARWEIbOymgqd4"
+ Sunday: 7:00 AM – 4:00 PM","cafe","ChIJ9QLjsfUx3YARWEIbOymgqd4","coffee"
 "Awaken Coffee","Downtown Knoxville","Knoxville","Tennessee","United States",NA,"It took me a while to discover this amazing cafe. Their coffee is awesome and they have great welcoming interior. They often have board game meet-ups and are open till 7 pm.","125 W Jackson Ave, Knoxville, TN 37902, United States",4.7,378,"https://www.google.com/maps/search/?api=1&query=125%20W%20Jackson%20Ave,%20Knoxville,%20TN%2037902,%20United%20States&query_place_id=ChIJBZE6pc8XXIgRE5kd92E1gjA",35.9699297,-83.9193168,"Monday: 7:30 AM – 7:00 PM
  Tuesday: 7:30 AM – 7:00 PM
  Wednesday: 7:30 AM – 7:00 PM
  Thursday: 7:30 AM – 7:00 PM
  Friday: 7:30 AM – 7:00 PM
  Saturday: 8:00 AM – 7:00 PM
- Sunday: 1:00 – 6:00 PM","cafe","ChIJBZE6pc8XXIgRE5kd92E1gjA"
+ Sunday: 1:00 – 6:00 PM","cafe","ChIJBZE6pc8XXIgRE5kd92E1gjA","coffee"
 "Museum of Reclaimed Urban Space","155 Loisaida Ave, New York, NY 10009","New York","New York","United States of America",NA,"A hidden place on the history of top-down action, especially in urban planning and environmental issues. Kinda cool snapshot of East Village's history.","155 Loisaida Ave, New York, NY 10009, United States",4.7,78,"https://www.google.com/maps/search/?api=1&query=155%20Loisaida%20Ave,%20New%20York,%20NY%2010009,%20United%20States&query_place_id=ChIJCYNcT3dZwokRghlU3rGC_-o",40.7257283,-73.9778485,"Monday: Closed
  Tuesday: Closed
  Wednesday: 12:00 – 5:30 PM
  Thursday: 12:00 – 5:30 PM
  Friday: 12:00 – 5:30 PM
  Saturday: 12:00 – 5:30 PM
- Sunday: 12:00 – 5:30 PM","tourist_attraction","ChIJCYNcT3dZwokRghlU3rGC_-o"
+ Sunday: 12:00 – 5:30 PM","tourist_attraction","ChIJCYNcT3dZwokRghlU3rGC_-o","others"
 "Cooper Hewitt Smithsonian Design Museum","2 E 91st St, New York, NY 10128","New York","New York","United States of America",NA,"A museum dedicated to design: exhibits starting from data viz from WEB Du Bois to the history of interior decoration, you will learn cool stuff about how design affects our lives.","2 E 91st St, New York, NY 10128, United States",4.5,2612,"https://www.google.com/maps/search/?api=1&query=2%20E%2091st%20St,%20New%20York,%20NY%2010128,%20United%20States&query_place_id=ChIJsT8qSaJYwokR-m20OGJUKCA",40.7843958,-73.9578732,"Monday: 10:00 AM – 6:00 PM
  Tuesday: 10:00 AM – 6:00 PM
  Wednesday: 10:00 AM – 6:00 PM
  Thursday: 10:00 AM – 6:00 PM
  Friday: 10:00 AM – 6:00 PM
  Saturday: 10:00 AM – 6:00 PM
- Sunday: 10:00 AM – 6:00 PM","museum","ChIJsT8qSaJYwokR-m20OGJUKCA"
+ Sunday: 10:00 AM – 6:00 PM","museum","ChIJsT8qSaJYwokR-m20OGJUKCA","others"
 "Museum of the City of New York","1220 5th Ave, New York, NY 10029","New York","New York","United States of America",NA,"A tribute to the complex and varied history of NYC, my fave exhibits were the multimedia ones using interactive maps to show how the city has changed over the centuries.","1220 5th Ave, New York, NY 10029, United States",4.5,4871,"https://www.google.com/maps/search/?api=1&query=1220%205th%20Ave,%20New%20York,%20NY%2010029,%20United%20States&query_place_id=ChIJi4hYtB32wokR1Npx_Tv7phk",40.7925329,-73.9519922,"Monday: 10:00 AM – 5:00 PM
  Tuesday: Closed
  Wednesday: Closed
  Thursday: 10:00 AM – 9:00 PM
  Friday: 10:00 AM – 5:00 PM
  Saturday: 10:00 AM – 5:00 PM
- Sunday: 10:00 AM – 5:00 PM","tourist_attraction","ChIJi4hYtB32wokR1Npx_Tv7phk"
-"Lincoln Center for the Performing Arts","Lincoln Center Plaza, New York, NY 10023","New York","New York","United States of America",NA,"A venue for cool events: concerts, operas, theater. Checkout some of their summertime events for our fix of classical music!","Lincoln Center Plaza, New York, NY 10023, United States",4.8,18132,"https://www.google.com/maps/search/?api=1&query=Lincoln%20Center%20Plaza,%20New%20York,%20NY%2010023,%20United%20States&query_place_id=ChIJN6W-X_VYwokRTqwcBnTw1Uk",40.7724641,-73.9834889,NA,"tourist_attraction","ChIJN6W-X_VYwokRTqwcBnTw1Uk"
+ Sunday: 10:00 AM – 5:00 PM","tourist_attraction","ChIJi4hYtB32wokR1Npx_Tv7phk","others"
+"Lincoln Center for the Performing Arts","Lincoln Center Plaza, New York, NY 10023","New York","New York","United States of America",NA,"A venue for cool events: concerts, operas, theater. Checkout some of their summertime events for our fix of classical music!","Lincoln Center Plaza, New York, NY 10023, United States",4.8,18132,"https://www.google.com/maps/search/?api=1&query=Lincoln%20Center%20Plaza,%20New%20York,%20NY%2010023,%20United%20States&query_place_id=ChIJN6W-X_VYwokRTqwcBnTw1Uk",40.7724641,-73.9834889,NA,"tourist_attraction","ChIJN6W-X_VYwokRTqwcBnTw1Uk","others"
 "Mysterious Book Shop","58 Warren St, New York, NY 10007","New York","New York","United States of America",NA,"A bookstore dedicated to the mystery genre. All sorts of novels, from sci-fi mystery to historical to romantic spy stories. They often have interesting events as well.","58 Warren St, New York, NY 10007, United States",4.7,361,"https://www.google.com/maps/search/?api=1&query=58%20Warren%20St,%20New%20York,%20NY%2010007,%20United%20States&query_place_id=ChIJbZ8tKB9awokRyPUoMpXSycs",40.7148749,-74.0092498,"Monday: 11:00 AM – 7:00 PM
  Tuesday: 11:00 AM – 7:00 PM
  Wednesday: 11:00 AM – 7:00 PM
  Thursday: 11:00 AM – 7:00 PM
  Friday: 11:00 AM – 7:00 PM
  Saturday: 11:00 AM – 7:00 PM
- Sunday: Closed","book_store","ChIJbZ8tKB9awokRyPUoMpXSycs"
-"Poster House","119 W 23rd St, New York, NY 10011","New York","New York","United States of America",NA,"A museum dedicated to posters, with some interesting exhibits such as their Japan in the 20th century or the one dedicated to the Black Panther movements. Interesting to see how posters reflect the broader state of the society that they come from or how they become tools for activism.","119 W 23rd St, New York, NY 10011, United States",4.7,447,"https://www.google.com/maps/search/?api=1&query=119%20W%2023rd%20St,%20New%20York,%20NY%2010011,%20United%20States&query_place_id=ChIJ6UitwqRZwokR2UuUi8NrdAg",40.7435919,-73.9933284,NA,"museum","ChIJ6UitwqRZwokR2UuUi8NrdAg"
+ Sunday: Closed","book_store","ChIJbZ8tKB9awokRyPUoMpXSycs","others"
+"Poster House","119 W 23rd St, New York, NY 10011","New York","New York","United States of America",NA,"A museum dedicated to posters, with some interesting exhibits such as their Japan in the 20th century or the one dedicated to the Black Panther movements. Interesting to see how posters reflect the broader state of the society that they come from or how they become tools for activism.","119 W 23rd St, New York, NY 10011, United States",4.7,447,"https://www.google.com/maps/search/?api=1&query=119%20W%2023rd%20St,%20New%20York,%20NY%2010011,%20United%20States&query_place_id=ChIJ6UitwqRZwokR2UuUi8NrdAg",40.7435919,-73.9933284,NA,"museum","ChIJ6UitwqRZwokR2UuUi8NrdAg","others"
 "New York Transit Museum","99 Schermerhorn St, Brooklyn, NY 11201","New York","New York","United States of America",NA,"Interesting museum dedicated to the history of NYC's subways. Go for their collection of real subway cars or their cool exhibits talking about all sorts of subway-related things, like turnstiles, fake money people used or things that workers found when digging underground during construction.","99 Schermerhorn St, Brooklyn, NY 11201, United States",4.6,4702,"https://www.google.com/maps/search/?api=1&query=99%20Schermerhorn%20St,%20Brooklyn,%20NY%2011201,%20United%20States&query_place_id=ChIJdThqNVVawokRFk58UQOvtuM",40.6905696,-73.9900672,"Monday: Closed
  Tuesday: Closed
  Wednesday: Closed
  Thursday: 10:00 AM – 4:00 PM
  Friday: 10:00 AM – 4:00 PM
  Saturday: 10:00 AM – 4:00 PM
- Sunday: 10:00 AM – 4:00 PM","museum","ChIJdThqNVVawokRFk58UQOvtuM"
+ Sunday: 10:00 AM – 4:00 PM","museum","ChIJdThqNVVawokRFk58UQOvtuM","others"
 "Fellini Coffee","174 7th Ave S, New York, NY 10014","New York","New York","United States of America",NA,"New coffee shop in an interesting tiny triangular building with a scattering of chairs. Sip on a coffee or lemonade and take in the sounds and sights of Greenwich Village.","174 7th Ave S, New York, NY 10014, United States",4.4,47,"https://www.google.com/maps/search/?api=1&query=174%207th%20Ave%20S,%20New%20York,%20NY%2010014,%20United%20States&query_place_id=ChIJ-wdgG0hZwokRCMFcDSA7EX4",40.7358975,-74.0017165,"Monday: 8:00 AM – 11:00 PM
  Tuesday: 8:00 AM – 11:00 PM
  Wednesday: 8:00 AM – 11:00 PM
  Thursday: 8:00 AM – 11:00 PM
  Friday: 8:00 AM – 11:00 PM
  Saturday: 8:00 AM – 11:00 PM
- Sunday: 8:30 AM – 11:00 PM","cafe","ChIJ-wdgG0hZwokRCMFcDSA7EX4"
+ Sunday: 8:30 AM – 11:00 PM","cafe","ChIJ-wdgG0hZwokRCMFcDSA7EX4","coffee"
 "Gasoline Alley Coffee","325 Lafayette St, New York, NY 10012","New York","New York","United States of America",NA,"Interesting alley coffee shop with great coffee and space for reading and taking in the sights of NYC.","325 Lafayette St, New York, NY 10012, United States",4.6,464,"https://www.google.com/maps/search/?api=1&query=325%20Lafayette%20St,%20New%20York,%20NY%2010012,%20United%20States&query_place_id=ChIJu0pLiI9ZwokRHb_t5VKxqy8",40.7255177,-73.9947951,"Monday: 7:00 AM – 7:00 PM
  Tuesday: 7:00 AM – 7:00 PM
  Wednesday: 7:00 AM – 7:00 PM
  Thursday: 7:00 AM – 7:00 PM
  Friday: 7:00 AM – 7:00 PM
  Saturday: 8:00 AM – 7:00 PM
- Sunday: 8:00 AM – 7:00 PM","cafe","ChIJu0pLiI9ZwokRHb_t5VKxqy8"
+ Sunday: 8:00 AM – 7:00 PM","cafe","ChIJu0pLiI9ZwokRHb_t5VKxqy8","coffee"
 "Joe’s Pizza","7 Carmine St, New York, NY 10014","New York","New York","United States of America",NA,"A classic representation of a New York slice: cheap and delicious pizza (since the 70s).","7 Carmine St, New York, NY 10014, United States",4.5,7786,"https://www.google.com/maps/search/?api=1&query=7%20Carmine%20St,%20New%20York,%20NY%2010014,%20United%20States&query_place_id=ChIJ8Q2WSpJZwokRQz-bYYgEskM",40.7305879,-74.0021336,"Monday: 10:00 AM – 3:00 AM
  Tuesday: 10:00 AM – 3:00 AM
  Wednesday: 10:00 AM – 3:00 AM
  Thursday: 10:00 AM – 3:00 AM
  Friday: 10:00 AM – 5:00 AM
  Saturday: 10:00 AM – 5:00 AM
- Sunday: 10:00 AM – 3:00 AM","meal_takeaway","ChIJ8Q2WSpJZwokRQz-bYYgEskM"
+ Sunday: 10:00 AM – 3:00 AM","meal_takeaway","ChIJ8Q2WSpJZwokRQz-bYYgEskM","food"
 "Brooklyn Suya","717 Franklin Ave, Brooklyn, NY 11238","New York","New York","United States of America",NA,"A West African spot that offers an explosion of flavors in their bowls. Everything was fresh and really tasty.","717 Franklin Ave, Brooklyn, NY 11238, United States",4.6,327,"https://www.google.com/maps/search/?api=1&query=717%20Franklin%20Ave,%20Brooklyn,%20NY%2011238,%20United%20States&query_place_id=ChIJLauqb4B8wokRwrSsm4hGNTM",40.673981,-73.9566372,"Monday: 12:00 – 9:00 PM
  Tuesday: 12:00 – 9:00 PM
  Wednesday: 12:00 – 9:00 PM
  Thursday: 12:00 – 9:00 PM
  Friday: 12:00 – 9:00 PM
  Saturday: 12:00 – 9:00 PM
- Sunday: 12:00 – 9:00 PM","restaurant","ChIJLauqb4B8wokRwrSsm4hGNTM"
+ Sunday: 12:00 – 9:00 PM","restaurant","ChIJLauqb4B8wokRwrSsm4hGNTM","food"
 "Sushi by M","300 E 5th St, New York, NY 10003","New York","New York","United States of America",NA,"On the more affordable side of omakase spots. Very tasty sushi with some interesting explorations of flavors as you go through the pieces.","300 E 5th St, New York, NY 10003, United States",4.5,694,"https://www.google.com/maps/search/?api=1&query=300%20E%205th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJk2lnfqxZwokR33xBYJtyR_E",40.72663,-73.9888342,"Monday: 12:00 – 3:00 PM, 5:00 – 11:00 PM
  Tuesday: 12:00 – 3:00 PM, 5:00 – 11:00 PM
  Wednesday: 12:00 – 3:00 PM, 5:00 – 11:00 PM
  Thursday: 12:00 – 3:00 PM, 5:00 – 11:00 PM
  Friday: 12:00 – 3:00 PM, 5:00 – 11:00 PM
  Saturday: 12:00 – 3:00 PM, 5:00 – 11:00 PM
- Sunday: 12:00 – 3:00 PM, 5:00 – 11:00 PM","restaurant","ChIJk2lnfqxZwokR33xBYJtyR_E"
+ Sunday: 12:00 – 3:00 PM, 5:00 – 11:00 PM","restaurant","ChIJk2lnfqxZwokR33xBYJtyR_E","food"
 "Sunday C&C Eatery","348 Bowery, New York, NY 10012","New York","New York","United States of America",NA,"Hidden vegan spot in a tiny tiny food court: great plates with cool combinations of flavors. I recommend the cachapa: an arepa recipe with mozzarella and ssamjang.","1398 C St, Knoxville, TN 37924, United States",4.9,18,"https://www.google.com/maps/search/?api=1&query=1398%20C%20St,%20Knoxville,%20TN%2037924,%20United%20States&query_place_id=ChIJoeFXiMcTXIgRws7dGpfNB9o",36.0391534,-83.8170901,"Monday: Closed
  Tuesday: Closed
  Wednesday: 6:30 – 8:30 PM
  Thursday: Closed
  Friday: Closed
  Saturday: Closed
- Sunday: 10:00 AM – 12:30 PM","church","ChIJoeFXiMcTXIgRws7dGpfNB9o"
-"Suki (Katsu Katsu)","100 Pearl St, New York, NY 10004","New York","New York","United States of America",NA,"Michelin-starred but affordable Japanese curry: super fresh, super tasty. The chicken curry is my go to.","32 St Marks Pl, New York, NY 10003, United States",4.2,303,"https://www.google.com/maps/search/?api=1&query=32%20St%20Marks%20Pl,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJI6Fyq0dZwokRzHGWG9_YM50",40.7287976,-73.988417,NA,"restaurant","ChIJI6Fyq0dZwokRzHGWG9_YM50"
+ Sunday: 10:00 AM – 12:30 PM","church","ChIJoeFXiMcTXIgRws7dGpfNB9o","others"
+"Suki (Katsu Katsu)","100 Pearl St, New York, NY 10004","New York","New York","United States of America",NA,"Michelin-starred but affordable Japanese curry: super fresh, super tasty. The chicken curry is my go to.","32 St Marks Pl, New York, NY 10003, United States",4.2,303,"https://www.google.com/maps/search/?api=1&query=32%20St%20Marks%20Pl,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJI6Fyq0dZwokRzHGWG9_YM50",40.7287976,-73.988417,NA,"restaurant","ChIJI6Fyq0dZwokRzHGWG9_YM50","food"
 "Letterform Archive","2325 3rd St Floor 4R, San Francisco, CA 94107","San Francisco","California","United States of America",NA,"A history of letters and their role in activism and politics in a tiny spot in San Francisco's Dogpatch. Interesting exhibits that expanded my idea of what papers and posters can achieve.","2325 3rd St Floor 4R, San Francisco, CA 94107, United States",4.4,22,"https://www.google.com/maps/search/?api=1&query=2325%203rd%20St%20Floor%204R,%20San%20Francisco,%20CA%2094107,%20United%20States&query_place_id=ChIJ-wTvDcl_j4AR6aTm9O_DUII",37.7601343,-122.3882609,"Monday: Closed
  Tuesday: Closed
  Wednesday: Closed
  Thursday: 1:00 – 8:00 PM
  Friday: 11:00 AM – 6:00 PM
  Saturday: 11:00 AM – 6:00 PM
- Sunday: 11:00 AM – 6:00 PM","library","ChIJ-wTvDcl_j4AR6aTm9O_DUII"
+ Sunday: 11:00 AM – 6:00 PM","library","ChIJ-wTvDcl_j4AR6aTm9O_DUII","others"
 "Berkeley Art Museum and Pacific Film Archive","2155 Center St, Berkeley, CA 94720","Berkeley","California","United States of America",NA,"One of the campus' museums with interesting exhibits and occasional film showings. Worth a visit if you are in the Downtown/Campus area.","2155 Center St, Berkeley, CA 94720, United States",4.5,723,"https://www.google.com/maps/search/?api=1&query=2155%20Center%20St,%20Berkeley,%20CA%2094720,%20United%20States&query_place_id=ChIJB8EriZ1-hYAReKDxrhGFK-o",37.8707356,-122.2664841,"Monday: Closed
  Tuesday: Closed
  Wednesday: 11:00 AM – 7:00 PM
  Thursday: 11:00 AM – 7:00 PM
  Friday: 11:00 AM – 7:00 PM
  Saturday: 11:00 AM – 7:00 PM
- Sunday: 11:00 AM – 7:00 PM","tourist_attraction","ChIJB8EriZ1-hYAReKDxrhGFK-o"
+ Sunday: 11:00 AM – 7:00 PM","tourist_attraction","ChIJB8EriZ1-hYAReKDxrhGFK-o","others"
 "Omnivore Books on Food","3885 Cesar Chavez St, San Francisco, CA 94131","San Francisco","California","United States of America",NA,"A bookstore dedicated to food! Find all about cooking, plants, coffee or other drinks and have a chat with the very passionate owner.","3885 Cesar Chavez St, San Francisco, CA 94131, United States",4.9,194,"https://www.google.com/maps/search/?api=1&query=3885%20Cesar%20Chavez%20St,%20San%20Francisco,%20CA%2094131,%20United%20States&query_place_id=ChIJ1QGwTWp-j4ARb4w3FhbHyos",37.7476327,-122.4267641,"Monday: 11:00 AM – 6:00 PM
  Tuesday: 11:00 AM – 6:00 PM
  Wednesday: 11:00 AM – 6:00 PM
  Thursday: 11:00 AM – 6:00 PM
  Friday: 11:00 AM – 6:00 PM
  Saturday: 11:00 AM – 6:00 PM
- Sunday: 12:00 – 5:00 PM","book_store","ChIJ1QGwTWp-j4ARb4w3FhbHyos"
+ Sunday: 12:00 – 5:00 PM","book_store","ChIJ1QGwTWp-j4ARb4w3FhbHyos","others"
