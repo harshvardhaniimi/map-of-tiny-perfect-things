@@ -99,7 +99,6 @@ library(googleway)
 set_key(key = api_key)
 ```
 
-
 ## Get data from Google API
 
 ```{r}
@@ -119,7 +118,6 @@ get_google_place_id = function(name, location, city, state) {
       return(unlist(result$results$place_id[1]))
 }
 ```
-
 
 ```{r}
 get_place_info = function(data) {

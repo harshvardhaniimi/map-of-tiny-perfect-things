@@ -7,14 +7,49 @@ editor: visual
 
 ## Purpose
 
+<<<<<<< HEAD
 This notebook reads `master_data.csv` and consolidates Google Maps provided category into three types: "coffee", "food", and "others".
+=======
+This notebook adds a column for type of place, consolidated to three categories: food, coffee, and others.
+
+## Read Master Data
+>>>>>>> 6389285c (edits)
 
 ```{r}
 library(tidyverse)
 ```
 
+<<<<<<< HEAD
 
 ## Function to use for consolidation
+=======
+```{r}
+save_to_files = function(df) {
+  # check if directory exists, if not create it
+  if (!dir.exists("/master_data")) {
+    dir.create("/master_data")
+  }
+  
+  # write to csv and json files
+  write.csv(df, file = "master_data/master_data.csv", row.names = FALSE)
+  jsonlite::write_json(df, path = "master_data/master_data.json")
+}
+```
+
+```{r}
+df_all = read_csv("./master_data/master_data.csv")
+```
+
+Currently types in the data:
+```{r}
+df_all %>%
+   group_by(type) %>% 
+   count() %>% 
+   arrange(desc(n))
+```
+
+Function to create type2:
+>>>>>>> 6389285c (edits)
 
 ```{r}
 consolidate_types = function(df) {
@@ -29,6 +64,7 @@ consolidate_types = function(df) {
 }
 ```
 
+<<<<<<< HEAD
 ## Read in Master Data
 
 ```{r}
@@ -67,3 +103,15 @@ save_to_files(df)
 
 
 
+=======
+```{r}
+df_all = consolidate_types(df_all)
+```
+
+Save data frame:
+
+```{r}
+save_to_files(df_all)
+```
+
+>>>>>>> 6389285c (edits)
