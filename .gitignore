@@ -3,8 +3,9 @@
 .RData
 .Ruserdata
 google_places_api_key.txt
-mapping/harsh_map_attempt/mapbox_key.txt
-mapping/node_modules/.cache
+map/perfect-places/node_modules/
 openai_key.txt
 chatbot/flask_secret_key.txt
-.env
+map/perfect-places/.env
+chatbot/.streamlit/secrets.toml
+chatbot/openai_key.txt
