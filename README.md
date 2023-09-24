@@ -12,8 +12,6 @@ Mark and Margaret had been living the same da over and over for several years. E
 
 This map captures some of them from our (and now your) own experience. No AI, no robots, no machines. Good old crowd-based knowledge.
 
-Share away!
-
 ### Adding New Places
 
 - Use Google Form to add new places: [Link](https://docs.google.com/forms/d/e/1FAIpQLSf3zX9ItXAS6JM4cO9JdrQFSpNtew-AETsG88M7jPOhexa-Dg/viewform)
