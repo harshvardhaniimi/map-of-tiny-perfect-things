@@ -24,11 +24,7 @@ Here are some notes on how the files are organised here.
 
 1. `master_data` has the master data files in two formats: CSV and JSON. All apps (map, chatbots) should build from there. One source of truth.
 2. `data_creation` has Quarto (R) notebooks for getting data from [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSf3zX9ItXAS6JM4cO9JdrQFSpNtew-AETsG88M7jPOhexa-Dg/viewform) (its corresponding Google Sheets) to get the required information and add it to master data.
-   1. `01_create_master_data` is the first notebook that creates data from Dea and Harsh's entries.
-   2. `02_add_new_places` adds new places from the Google Forms.
-   3. **To Do:** Set up Github Actions to automate running of 02 notebook periodically. Not a priority right now.
 3. `chatbot` has files related to GPT based chatbot.
-4. `old_attempts` are irrelevant attempts that didn't make the cut. 
 
 ### Ideas
 
