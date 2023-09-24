@@ -9,8 +9,7 @@ import GeocoderControl from './geocoder';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 
@@ -29,10 +28,6 @@ function App() {
   const filteredData = selectedType === 'all' ? data : data.filter(location => location.type2 === selectedType);
   const [expanded, setExpanded] = useState(false);
   const [expandedPopup, setExpandedPopup] = useState(null);
-
-  const handleExpandToggle = () => {
-    setExpanded(!expanded);
-  };
 
   const handlePopupClick = (location) => {
     if (expandedPopup === location) {
