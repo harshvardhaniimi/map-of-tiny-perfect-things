@@ -26,7 +26,7 @@ function App() {
   const [PopupOpen, setPopupOpen] = useState(null);
   const [selectedType, setSelectedType] = useState('all')
   const filteredData = selectedType === 'all' ? data : data.filter(location => location.type2 === selectedType);
-  const [expanded, setExpanded] = useState(false);
+  const [expanded] = useState(false); //removed setExpanded
   const [expandedPopup, setExpandedPopup] = useState(null);
 
   const handlePopupClick = (location) => {
@@ -52,7 +52,6 @@ function App() {
     window.location.href = 'about.html'; 
     return null;
   };
-
 
 
   return (
