@@ -137,7 +137,7 @@ function App() {
         {location.creators_rec === 'Yes' ? '⭐️' : 
         location.type2 === 'coffee' ? '☕️' : 
         location.type2 === 'food' ? '🍱' : 
-        location.type2 === 'others' ? '🌮' : '🏝'}
+        location.type2 === 'others' ? '🏝': '⁉️'}
 </button>
       </Marker>
       ))
