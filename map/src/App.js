@@ -84,7 +84,7 @@ function App() {
         <h4>🍱 Food </h4>
       </MDBBtn>
       <MDBBtn className="btn btn-outline-dark" style={{ background: '#FF3131', textTransform: 'none', fontFamily: 'HelveticaNeue-Bold' }} onClick={() => setSelectedType('others')}>
-        <h4>🌮 Other </h4>
+        <h4>🏝 Other </h4>
       </MDBBtn>
     </div>
   </div>
