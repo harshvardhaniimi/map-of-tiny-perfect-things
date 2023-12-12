@@ -19,7 +19,12 @@ import pandas as pd
 
 # load API key from secrets
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
+# OpenAI package version change to v1
 openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(
+  api_key=os.environ['OPENAI_API_KEY'],  # this is also the default, it can be omitted
+)
 
 # switch default sqllite
 # https://discuss.streamlit.io/t/issues-with-chroma-and-sqlite/47950/5
@@ -69,7 +74,7 @@ def query_refiner(conversation, query):
         frequency_penalty=0,
         presence_penalty=0
     )
-    return response['choices'][0]['text']
+    return response.choices[0].text
 
 
 def get_conversation_string():
