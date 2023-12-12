@@ -65,7 +65,7 @@ def query_refiner(conversation, query):
     prompt = f"""Refine the query based on the conversation. Use variations of proper nouns for precision. Keep simple queries unchanged.
     \n\nCONVERSATION LOG: \n{conversation}\n\nQuery: {query}\n\nRefined Query:"""
     
-    response = openai.Completion.create(
+    response = openai.completions.create(
         model="gpt-3.5-turbo-instruct",
         prompt=prompt,
         temperature=0.3,  # Slightly reduce randomness for more consistent outputs
