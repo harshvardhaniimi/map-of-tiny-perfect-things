@@ -118,9 +118,8 @@ function App() {
             </MDBCardBody>
           </MDBCard>
         </div>
-  );
 
-  {filteredData.map((location) => (
+        {filteredData.map((location) => (
         
         <Marker key={location.id} 
                   latitude={Number(location.lat)} 
@@ -140,26 +139,23 @@ function App() {
         location.type2 === 'others' ? '🏝': '⁉️'}
 </button>
       </Marker>
-      ))
-}
+      ))}
 
-<div className="d-flex justify-content-end p-2 bd-highlight" style={{ marginTop: '50px' }}>
+      <div className="d-flex justify-content-end p-2 bd-highlight" style={{ marginTop: '50px' }}>
         {PopupOpen && (
           <MDBCard style={{ width: '350px' }}>
-          <MDBCardBody className = "btn-outline-primary">
-            <MDBCardTitle style = {{fontFamily: 'HelveticaNeue'}} >{PopupOpen.name}</MDBCardTitle>
-            <MDBCardText style = {{fontFamily: 'HelveticaNeue'}}>
-  
-              {PopupOpen.creators_rec && <p>Creator's Rec: Yes</p>}
-              <p> <b>Notes: </b> {PopupOpen.notes}</p>
-            
-              
-              <div class="card-footer text-muted"><p>
-                Google Maps:{' '} <a href={PopupOpen.google_maps_link}>Link</a>   (Rating: {PopupOpen.rating}   {PopupOpen.user_ratings_total} ratings) </p>  </div>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard> )}
-        </div>
+            <MDBCardBody className = "btn-outline-primary">
+              <MDBCardTitle style = {{fontFamily: 'HelveticaNeue'}} >{PopupOpen.name}</MDBCardTitle>
+              <MDBCardText style = {{fontFamily: 'HelveticaNeue'}}>
+                {PopupOpen.creators_rec && <p>Creator's Rec: Yes</p>}
+                <p> <b>Notes: </b> {PopupOpen.notes}</p>
+                <div className="card-footer text-muted"><p>
+                  Google Maps:{' '} <a href={PopupOpen.google_maps_link}>Link</a>   (Rating: {PopupOpen.rating}   {PopupOpen.user_ratings_total} ratings) </p>  </div>
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+        )}
+      </div>
       </MapGL>
 
       <Routes>
