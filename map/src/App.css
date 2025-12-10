@@ -1,38 +1,608 @@
-.App {
-  text-align: center;
+/* ===========================
+   The Map of Tiny Perfect Things
+   Responsive CSS Styles
+   =========================== */
+
+/* CSS Custom Properties for consistent theming */
+:root {
+  --color-primary: #3498DB;
+  --color-all: #0FFF50;
+  --color-coffee: #FF5F1F;
+  --color-food: #3498DB;
+  --color-others: #FF3131;
+  --font-primary: 'HelveticaNeue', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-bold: 'HelveticaNeue-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-button: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ===========================
+   Base & Reset
+   =========================== */
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ===========================
+   Map Container
+   =========================== */
+.map-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fix for mobile viewport height issues (iOS Safari) */
+@supports (-webkit-touch-callout: none) {
+  .map-container {
+    height: -webkit-fill-available;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ===========================
+   Info Card (Top Left)
+   =========================== */
+.info-card {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 420px;
+  max-width: calc(100vw - 20px);
+  z-index: 10;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-speed) ease;
+}
+
+.info-card .card-body {
+  padding: 16px;
+}
+
+.info-card-title {
+  font-family: var(--font-bold);
+  font-size: 1.25rem;
+  text-transform: none;
+  margin-bottom: 8px;
+}
+
+.info-card-text {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-transform: none;
+  margin-bottom: 12px;
+}
+
+.info-card-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.info-card-btn {
+  font-family: var(--font-bold);
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.info-card-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-button);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Mobile: Collapsed info card */
+.info-card-collapsed {
+  width: auto;
+  max-width: calc(100vw - 80px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.info-card-collapsed .info-card-text,
+.info-card-collapsed .info-card-buttons {
+  display: none;
+}
+
+.info-card-collapsed .info-card-title {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* Toggle button for mobile */
+.info-card-toggle {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 11;
+}
+
+.info-card-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* ===========================
+   Location Popup Card (Right Side / Bottom on Mobile)
+   =========================== */
+.popup-container {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 10;
+  transition: all var(--transition-speed) ease;
+}
+
+.popup-card {
+  width: 320px;
+  max-width: calc(100vw - 20px);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  background: white;
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+.popup-card .card-body {
+  padding: 16px;
+}
+
+.popup-card-title {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.popup-card-text {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.popup-card-text p {
+  margin-bottom: 8px;
+}
+
+.popup-card-footer {
+  font-size: 0.85rem;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  margin-top: 12px;
+}
+
+.popup-card-footer a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 50%;
+  line-height: 1;
+  transition: background 0.2s;
+}
+
+.popup-close-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Creators Recommendation Badge */
+.creators-rec-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* ===========================
+   Filter Buttons (Bottom)
+   =========================== */
+.filter-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding: 12px;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.95));
+  display: flex;
+  justify-content: center;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 4px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filter-buttons::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  font-family: var(--font-bold);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+  text-transform: none;
+  box-shadow: var(--shadow-button);
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.filter-btn:active {
+  transform: scale(0.98);
+}
+
+.filter-btn.active {
+  border-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.filter-btn-all {
+  background-color: var(--color-all);
+}
+
+.filter-btn-coffee {
+  background-color: var(--color-coffee);
+  color: white;
+}
+
+.filter-btn-food {
+  background-color: var(--color-food);
+  color: white;
+}
+
+.filter-btn-others {
+  background-color: var(--color-others);
+  color: white;
+}
+
+.filter-btn-icon {
+  font-size: 1.2rem;
+}
+
+.filter-btn-text {
+  font-weight: 600;
+}
+
+/* ===========================
+   Map Markers
+   =========================== */
+.map-marker {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.75rem;
+  transition: transform 0.2s;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.map-marker:hover {
+  transform: scale(1.2);
+}
+
+.map-marker:active {
+  transform: scale(1.1);
+}
+
+/* ===========================
+   Geocoder Overrides
+   =========================== */
+.mapboxgl-ctrl-geocoder {
+  min-width: 200px;
+  max-width: 350px;
+  font-family: var(--font-primary);
+  box-shadow: var(--shadow-card);
+  border-radius: 8px;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+  font-size: 15px;
+  padding: 8px 35px;
+}
+
+/* ===========================
+   Responsive Breakpoints
+   =========================== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .info-card {
+    width: calc(100vw - 20px);
+    max-width: 400px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .info-card-title {
+    font-size: 1.1rem;
+  }
+
+  .info-card-text {
+    font-size: 0.85rem;
+  }
+
+  .popup-card {
+    width: calc(100vw - 20px);
+    max-width: 350px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .mapboxgl-ctrl-geocoder {
+    max-width: 280px;
+  }
+}
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+  /* Info card becomes compact */
+  .info-card {
+    top: 8px;
+    left: 8px;
+    width: auto;
+    max-width: calc(100vw - 70px);
+  }
+
+  .info-card .card-body {
+    padding: 12px;
+  }
+
+  .info-card-title {
+    font-size: 0.95rem;
+    padding-right: 30px;
+  }
+
+  .info-card-text {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .info-card-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .info-card-btn {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  .info-card-toggle {
+    display: block;
+  }
+
+  /* Collapsed state for mobile */
+  .info-card.collapsed {
+    max-width: none;
+    width: auto;
+  }
+
+  .info-card.collapsed .info-card-text,
+  .info-card.collapsed .info-card-buttons {
+    display: none;
+  }
+
+  .info-card.collapsed .info-card-title {
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+
+  /* Popup becomes bottom sheet */
+  .popup-container {
+    position: fixed;
+    top: auto;
+    bottom: 80px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .popup-card {
+    width: 100%;
+    max-width: none;
+    max-height: 45vh;
+    border-radius: 16px 16px 8px 8px;
+  }
+
+  /* Filter buttons scroll horizontally */
+  .filter-container {
+    padding: 10px 8px;
+  }
+
+  .filter-buttons {
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .filter-btn {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .filter-btn-icon {
+    font-size: 1.1rem;
+  }
+
+  /* Larger touch targets for markers */
+  .map-marker {
+    font-size: 1.5rem;
+    padding: 4px;
+  }
+
+  /* Geocoder adjustments */
+  .mapboxgl-ctrl-geocoder {
+    max-width: calc(100vw - 140px);
+    min-width: 150px;
+  }
+
+  .mapboxgl-ctrl-geocoder--input {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+/* Extra small devices (360px and below) */
+@media (max-width: 360px) {
+  .info-card {
+    top: 6px;
+    left: 6px;
+  }
+
+  .info-card-title {
+    font-size: 0.85rem;
+  }
+
+  .filter-btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .popup-card {
+    max-height: 40vh;
+  }
+
+  .popup-card .card-body {
+    padding: 12px;
+  }
+
+  .popup-card-title {
+    font-size: 1rem;
+  }
+
+  .popup-card-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .info-card {
+    max-width: 300px;
+  }
+
+  .info-card-text {
+    display: none;
+  }
+
+  .popup-container {
+    top: 10px;
+    bottom: auto;
+    left: auto;
+    right: 10px;
+  }
+
+  .popup-card {
+    max-height: calc(100vh - 100px);
+    width: 280px;
+  }
+
+  .filter-container {
+    padding: 6px;
+  }
+
+  .filter-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ===========================
+   Dark Mode Support (optional)
+   =========================== */
+@media (prefers-color-scheme: dark) {
+  .popup-card,
+  .info-card .card {
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  .popup-card-footer {
+    border-top-color: #333;
+  }
+
+  .filter-container {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  }
+}
+
+/* ===========================
+   Accessibility
+   =========================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus states for keyboard navigation */
+.filter-btn:focus,
+.info-card-btn:focus,
+.map-marker:focus,
+.popup-close-btn:focus,
+.info-card-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .filter-btn {
+    border-width: 3px;
+  }
+
+  .popup-card,
+  .info-card {
+    border: 2px solid #000;
   }
 }
