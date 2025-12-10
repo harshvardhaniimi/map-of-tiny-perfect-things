@@ -5,7 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
     <!-- Mobile-first viewport configuration -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover" />
 
     <!-- Theme and appearance -->
     <meta name="theme-color" content="#3498DB" />
@@ -34,39 +34,79 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo.png" />
 
-    <!-- Preconnect to external resources for faster loading -->
-    <link rel="preconnect" href="https://api.mapbox.com" />
-    <link rel="preconnect" href="https://tiles.mapbox.com" />
-    <link rel="dns-prefetch" href="https://api.mapbox.com" />
-    <link rel="dns-prefetch" href="https://tiles.mapbox.com" />
+    <!-- Preconnect to external resources for faster loading (CartoDB tiles) -->
+    <link rel="preconnect" href="https://a.basemaps.cartocdn.com" />
+    <link rel="preconnect" href="https://b.basemaps.cartocdn.com" />
+    <link rel="preconnect" href="https://c.basemaps.cartocdn.com" />
+    <link rel="dns-prefetch" href="https://basemaps.cartocdn.com" />
+    <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" />
 
     <!-- PWA manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>Perfect Places - The Map of Tiny Perfect Things</title>
 
-    <!-- Prevent flash of unstyled content on mobile -->
+    <!-- Critical CSS for preventing layout shift on mobile -->
     <style>
-      html, body, #root {
+      html, body {
         margin: 0;
         padding: 0;
         height: 100%;
         width: 100%;
         overflow: hidden;
-        -webkit-overflow-scrolling: touch;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      #root {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
       }
 
       /* Prevent pull-to-refresh on mobile */
       body {
         overscroll-behavior-y: contain;
+        -webkit-overflow-scrolling: touch;
       }
 
-      /* Safe area insets for notched devices */
+      /* Safe area insets for notched devices (iPhone X+) */
       @supports (padding: max(0px)) {
         body {
           padding-left: env(safe-area-inset-left);
           padding-right: env(safe-area-inset-right);
+          padding-bottom: env(safe-area-inset-bottom);
         }
+      }
+
+      /* iOS Safari fix for 100vh */
+      @supports (-webkit-touch-callout: none) {
+        html, body, #root {
+          height: -webkit-fill-available;
+          min-height: -webkit-fill-available;
+        }
+      }
+
+      /* Loading state */
+      #root:empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f5f5f5;
+      }
+
+      #root:empty::after {
+        content: "Loading map...";
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        color: #666;
+        font-size: 16px;
       }
     </style>
   </head>

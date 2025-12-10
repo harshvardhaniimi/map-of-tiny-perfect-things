@@ -14,6 +14,8 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  height: 100%;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -28,18 +30,25 @@ body {
   /* Prevent overscroll bounce on iOS */
   overscroll-behavior: none;
 
-  /* Ensure full height */
+  /* Ensure full height - critical for mobile */
+  height: 100%;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-}
 
-html {
-  height: -webkit-fill-available;
+  /* Prevent body scrolling */
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 #root {
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* Improve tap highlight on mobile */
@@ -54,9 +63,26 @@ html {
   }
 }
 
-/* Better touch action for map */
-.mapboxgl-map {
+/* Leaflet map touch action */
+.leaflet-container {
   touch-action: pan-x pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure Leaflet grabs events properly on mobile */
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-overlay-pane svg,
+.leaflet-overlay-pane canvas,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Code font */
@@ -107,40 +133,54 @@ a:hover {
   background: rgba(52, 152, 219, 0.3);
 }
 
-/* Mapbox attribution styling for mobile */
+/* Leaflet attribution styling */
+.leaflet-control-attribution {
+  font-size: 10px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  padding: 2px 5px !important;
+}
+
+/* Mobile-specific Leaflet styling */
 @media (max-width: 576px) {
-  .mapboxgl-ctrl-attrib {
-    font-size: 10px !important;
+  .leaflet-control-attribution {
+    font-size: 8px !important;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .mapboxgl-ctrl-attrib.mapboxgl-compact {
-    min-height: 20px;
-  }
-
-  .mapboxgl-ctrl-logo {
-    width: 60px !important;
-  }
-}
-
-/* Ensure Mapbox controls don't overlap with our UI */
-.mapboxgl-ctrl-top-right {
-  top: 10px;
-  right: 10px;
-}
-
-@media (max-width: 576px) {
-  .mapboxgl-ctrl-top-right {
-    top: 8px;
-    right: 8px;
+  /* Position zoom controls better on mobile */
+  .leaflet-top.leaflet-right {
+    top: 60px;
+    right: 10px;
   }
 }
 
-/* Improve Mapbox navigation control on touch devices */
+/* Improve Leaflet navigation control on touch devices */
 @media (hover: none) and (pointer: coarse) {
-  .mapboxgl-ctrl-zoom-in,
-  .mapboxgl-ctrl-zoom-out,
-  .mapboxgl-ctrl-compass {
-    width: 36px !important;
-    height: 36px !important;
+  .leaflet-control-zoom a {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    font-size: 20px !important;
+  }
+
+  .leaflet-touch .leaflet-bar a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* Use dvh for dynamic viewport height on iOS */
+    min-height: 100dvh;
+  }
+
+  #root {
+    min-height: 100dvh;
   }
 }
