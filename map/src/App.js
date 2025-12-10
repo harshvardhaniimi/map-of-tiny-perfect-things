@@ -136,6 +136,34 @@ const MapClickHandler = ({ onMapClick, markerClickedRef }) => {
   return null;
 };
 
+// Fix for Leaflet not rendering on mobile - invalidate size after mount
+const MapResizeFix = () => {
+  const map = useMap();
+
+  useEffect(() => {
+    // Force Leaflet to recalculate container size
+    const timer = setTimeout(() => {
+      map.invalidateSize();
+    }, 100);
+
+    // Also invalidate on window resize
+    const handleResize = () => {
+      map.invalidateSize();
+    };
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', handleResize);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
+    };
+  }, [map]);
+
+  return null;
+};
+
 function App() {
   const [center] = useState([37.8803, -122.2699]);
   const [zoom] = useState(10);
@@ -207,6 +235,9 @@ function App() {
 
           {/* Map click handler */}
           <MapClickHandler onMapClick={handleMapClick} markerClickedRef={markerClickedRef} />
+
+          {/* Fix for mobile rendering */}
+          <MapResizeFix />
 
           {/* Search Control */}
           <SearchControl />
