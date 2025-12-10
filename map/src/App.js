@@ -117,9 +117,14 @@ const SearchControl = () => {
 };
 
 // Map click handler component
-const MapClickHandler = ({ onMapClick }) => {
+const MapClickHandler = ({ onMapClick, markerClickedRef }) => {
   useMapEvents({
     click: () => {
+      // Ignore map clicks that originated from marker clicks
+      if (markerClickedRef.current) {
+        markerClickedRef.current = false;
+        return;
+      }
       onMapClick();
     },
   });
@@ -133,12 +138,14 @@ function App() {
   const [selectedType, setSelectedType] = useState('all');
   const [infoCardCollapsed, setInfoCardCollapsed] = useState(false);
   const isMobile = useIsMobile();
+  const markerClickedRef = useRef(false);
 
   const filteredData = selectedType === 'all'
     ? data
     : data.filter(location => location.type2 === selectedType);
 
   const handleMarkerClick = useCallback((location) => {
+    markerClickedRef.current = true;
     setPopupOpen(location);
   }, []);
 
@@ -192,7 +199,7 @@ function App() {
           />
 
           {/* Map click handler */}
-          <MapClickHandler onMapClick={handleMapClick} />
+          <MapClickHandler onMapClick={handleMapClick} markerClickedRef={markerClickedRef} />
 
           {/* Search Control */}
           <SearchControl />
