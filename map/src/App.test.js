@@ -1,17 +1,20 @@
 import { render, screen, within } from '@testing-library/react';
 import App from './App';
 
-// Mock Mapbox GL as it requires WebGL which is not available in test environment
-jest.mock('react-map-gl', () => ({
-  __esModule: true,
-  default: ({ children }) => <div data-testid="mock-map">{children}</div>,
+// Mock React-Leaflet components
+jest.mock('react-leaflet', () => ({
+  MapContainer: ({ children }) => <div data-testid="mock-map">{children}</div>,
+  TileLayer: () => <div data-testid="mock-tilelayer" />,
   Marker: ({ children }) => <div data-testid="mock-marker">{children}</div>,
+  useMap: () => ({
+    flyTo: jest.fn(),
+  }),
+  useMapEvents: () => null,
 }));
 
-// Mock the geocoder control
-jest.mock('./geocoder', () => ({
-  __esModule: true,
-  default: () => <div data-testid="mock-geocoder" />,
+// Mock Leaflet
+jest.mock('leaflet', () => ({
+  divIcon: jest.fn(() => ({})),
 }));
 
 // Mock the data to reduce test complexity
@@ -43,7 +46,6 @@ jest.mock('./master_data.json', () => [
 describe('App Component', () => {
   test('renders the app title in the info card', () => {
     render(<App />);
-    // Find the title specifically in the card title element
     const titleElement = document.querySelector('.info-card-title');
     expect(titleElement).toBeInTheDocument();
     expect(titleElement.textContent).toContain('The Map of Tiny Perfect Things');
@@ -51,7 +53,6 @@ describe('App Component', () => {
 
   test('renders all filter buttons', () => {
     render(<App />);
-    // Find the filter container first, then look for buttons within it
     const filterContainer = document.querySelector('.filter-container');
     expect(filterContainer).toBeInTheDocument();
 
@@ -83,5 +84,11 @@ describe('App Component', () => {
     render(<App />);
     const markers = screen.getAllByTestId('mock-marker');
     expect(markers.length).toBeGreaterThan(0);
+  });
+
+  test('renders search input', () => {
+    render(<App />);
+    const searchInput = screen.getByPlaceholderText(/search location/i);
+    expect(searchInput).toBeInTheDocument();
   });
 });
