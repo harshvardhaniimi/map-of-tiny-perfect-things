@@ -28,13 +28,18 @@ const useIsMobile = (breakpoint = 576) => {
   return isMobile;
 };
 
-// Create custom emoji icons for markers
-const createEmojiIcon = (emoji) => {
+// Create custom emoji icons for markers - Apple-inspired design with white pill background
+const createEmojiIcon = (emoji, isCreatorRec = false) => {
+  const bgColor = isCreatorRec ? '#FFD700' : 'white';
+  const borderColor = isCreatorRec ? '#E6B800' : 'rgba(0,0,0,0.1)';
+
   return L.divIcon({
-    html: `<span class="emoji-marker">${emoji}</span>`,
+    html: `<div class="emoji-marker-pill" style="background: ${bgColor}; border-color: ${borderColor};">
+             <span class="emoji-marker-icon">${emoji}</span>
+           </div>`,
     className: 'emoji-marker-container',
-    iconSize: [30, 30],
-    iconAnchor: [15, 15],
+    iconSize: [44, 44],
+    iconAnchor: [22, 22],
   });
 };
 
@@ -192,10 +197,12 @@ function App() {
           style={{ width: '100%', height: '100%' }}
           zoomControl={true}
         >
-          {/* OpenStreetMap Tiles - Free, no API key needed */}
+          {/* CartoDB Positron - Clean, minimal map style (free, no API key) */}
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            subdomains="abcd"
+            maxZoom={20}
           />
 
           {/* Map click handler */}
@@ -209,7 +216,7 @@ function App() {
             <Marker
               key={`${location.google_place_id || location.name}-${location.lat}-${location.lng}-${index}`}
               position={[Number(location.lat), Number(location.lng)]}
-              icon={createEmojiIcon(getMarkerEmoji(location))}
+              icon={createEmojiIcon(getMarkerEmoji(location), location.creators_rec === 'Yes')}
               eventHandlers={{
                 click: () => handleMarkerClick(location),
               }}
