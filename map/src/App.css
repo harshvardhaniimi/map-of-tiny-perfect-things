@@ -336,12 +336,45 @@
   font-family: var(--font-primary);
 }
 
-/* Emoji Marker Styles */
+/* Emoji Marker Styles - Apple-inspired design */
 .emoji-marker-container {
   background: transparent !important;
   border: none !important;
 }
 
+.emoji-marker-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.15),
+    0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.emoji-marker-pill:hover {
+  transform: scale(1.15);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.2),
+    0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.emoji-marker-pill:active {
+  transform: scale(1.05);
+}
+
+.emoji-marker-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  display: block;
+}
+
+/* Legacy marker style (fallback) */
 .emoji-marker {
   font-size: 1.75rem;
   cursor: pointer;
