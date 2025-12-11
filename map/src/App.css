@@ -26,20 +26,28 @@
 }
 
 /* ===========================
-   Map Container
+   Map Container - Mobile-friendly approach
    =========================== */
 .map-container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-/* Fix for mobile viewport height issues (iOS Safari) */
-@supports (-webkit-touch-callout: none) {
-  .map-container {
-    height: -webkit-fill-available;
-  }
+/* Ensure Leaflet container fills parent */
+.map-container .leaflet-container {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* ===========================
