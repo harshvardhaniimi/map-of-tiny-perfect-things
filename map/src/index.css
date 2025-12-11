@@ -63,10 +63,18 @@ body {
   }
 }
 
-/* Leaflet map touch action */
+/* Leaflet map - ensure it renders on mobile */
 .leaflet-container {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
   touch-action: pan-x pan-y;
   -webkit-tap-highlight-color: transparent;
+  z-index: 1;
 }
 
 /* Ensure Leaflet grabs events properly on mobile */
