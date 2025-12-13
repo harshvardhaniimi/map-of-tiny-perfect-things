@@ -63,14 +63,14 @@ describe('App Component', () => {
     expect(withinFilter.getByText('Other')).toBeInTheDocument();
   });
 
-  test('renders info card action links', () => {
+  test('renders info card action buttons and links', () => {
     render(<App />);
     const aboutLink = screen.getByRole('link', { name: /about/i });
-    const addPlaceLink = screen.getByRole('link', { name: /add a place/i });
+    const addPlaceButton = screen.getByRole('button', { name: /add a place/i });
     const askQuestionLink = screen.getByRole('link', { name: /ask a question/i });
 
     expect(aboutLink).toBeInTheDocument();
-    expect(addPlaceLink).toBeInTheDocument();
+    expect(addPlaceButton).toBeInTheDocument();
     expect(askQuestionLink).toBeInTheDocument();
   });
 

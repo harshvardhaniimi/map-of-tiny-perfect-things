@@ -11,6 +11,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import SubmitPlace from './SubmitPlace';
 
 // Custom hook for detecting mobile viewport
 const useIsMobile = (breakpoint = 576) => {
@@ -170,6 +171,7 @@ function App() {
   const [PopupOpen, setPopupOpen] = useState(null);
   const [selectedType, setSelectedType] = useState('all');
   const [infoCardCollapsed, setInfoCardCollapsed] = useState(false);
+  const [showSubmitModal, setShowSubmitModal] = useState(false);
   const isMobile = useIsMobile();
   const markerClickedRef = useRef(false);
 
@@ -282,14 +284,12 @@ function App() {
                 <a href="about.html" className="info-card-btn">
                   About
                 </a>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSf3zX9ItXAS6JM4cO9JdrQFSpNtew-AETsG88M7jPOhexa-Dg/viewform"
+                <button
                   className="info-card-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() => setShowSubmitModal(true)}
                 >
                   Add a Place
-                </a>
+                </button>
                 <a
                   href="https://perfectplaces.streamlit.app/"
                   className="info-card-btn"
@@ -386,6 +386,12 @@ function App() {
             </button>
           </div>
         </div>
+
+        {/* Submit Place Modal */}
+        <SubmitPlace
+          isOpen={showSubmitModal}
+          onClose={() => setShowSubmitModal(false)}
+        />
 
         <Routes>
           <Route path="/about" element={<AboutComponent />} />
