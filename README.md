@@ -29,7 +29,8 @@ A crowd-powered map of meaningful places: cafes, food spots, parks, museums, and
 - Added feature request form (`/feature`) with same no-login approach.
 
 2. **Creator override on form**
-- If contributor name matches Harsh/Dea aliases, the form shows a Creator's Rec checkbox.
+- The form has maintainer-only options for creator recommendations.
+- Overrides are validated server-side during ingestion via secret access codes, not public name checks.
 - Requests are still reviewed before dataset merge.
 
 3. **Native hosted chat**
@@ -88,6 +89,7 @@ This is now automated.
 Required GitHub Action secrets:
 - `NETLIFY_ACCESS_TOKEN`
 - `NETLIFY_SITE_ID`
+- `CREATOR_ACCESS_CODES` (comma-separated maintainer codes for creator override validation)
 
 Optional secret:
 - `GOOGLE_PLACES_API_KEY` (if missing, fallback geocoding still runs via Nominatim)

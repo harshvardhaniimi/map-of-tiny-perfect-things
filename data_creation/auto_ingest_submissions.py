@@ -116,6 +116,11 @@ def parse_args() -> argparse.Namespace:
         help="Google Places API key (optional)",
     )
     parser.add_argument(
+        "--creator-access-codes",
+        default=os.getenv("CREATOR_ACCESS_CODES", ""),
+        help="Comma-separated maintainer access codes to validate creator overrides",
+    )
+    parser.add_argument(
         "--skip-export",
         action="store_true",
         help="Skip fetching from Netlify and use existing submissions CSV",
@@ -202,6 +207,12 @@ def _norm_key(value: object) -> str:
     text = _normalize_text(value).lower()
     text = re.sub(r"[^a-z0-9]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _parse_creator_codes(raw: str) -> set[str]:
+    if not raw:
+        return set()
+    return {_norm_key(item) for item in raw.split(",") if _norm_key(item)}
 
 
 def _dedupe_key(row: pd.Series) -> Tuple[str, str, str, str, str]:
@@ -431,8 +442,24 @@ def _write_json_records(df: pd.DataFrame, output_path: str) -> None:
         json.dump(records, fh, ensure_ascii=False)
 
 
-def _to_master_row(submission: pd.Series, enrichment: EnrichmentResult) -> Dict[str, object]:
-    creators_rec = "Yes" if _norm_key(submission.get("creators_rec_requested", "")) == "yes" else ""
+def _has_valid_creator_override(submission: pd.Series, valid_codes: set[str]) -> bool:
+    requested = _norm_key(submission.get("creators_rec_requested", "")) == "yes"
+    if not requested:
+        return False
+
+    if not valid_codes:
+        return False
+
+    submitted_code = _norm_key(submission.get("creator_access_code", ""))
+    return submitted_code in valid_codes
+
+
+def _to_master_row(
+    submission: pd.Series,
+    enrichment: EnrichmentResult,
+    creator_override_allowed: bool,
+) -> Dict[str, object]:
+    creators_rec = "Yes" if creator_override_allowed else ""
 
     google_maps_link = _normalize_text(submission.get("google_maps_link", ""))
     if not google_maps_link:
@@ -546,6 +573,7 @@ def run(args: argparse.Namespace) -> int:
             "google_maps_link",
             "contributor_name",
             "contributor_email",
+            "creator_access_code",
             "creators_rec_requested",
         ],
     )
@@ -554,16 +582,27 @@ def run(args: argparse.Namespace) -> int:
 
     master_df = _read_master_dataset(args.master_csv, args.master_json, args.map_json)
     master_df = _clean_dataframe(master_df)
+    valid_creator_codes = _parse_creator_codes(args.creator_access_codes)
 
     new_submissions = _filter_new_submissions(submissions_df, master_df)
     enriched_rows: List[Dict[str, object]] = []
+    creator_overrides_applied = 0
 
     for _, submission in new_submissions.iterrows():
         if not _normalize_text(submission.get("name", "")):
             continue
 
         enrichment = _enrich_submission(submission, args.google_api_key)
-        enriched_rows.append(_to_master_row(submission, enrichment))
+        creator_override_allowed = _has_valid_creator_override(submission, valid_creator_codes)
+        if creator_override_allowed:
+            creator_overrides_applied += 1
+        enriched_rows.append(
+            _to_master_row(
+                submission,
+                enrichment,
+                creator_override_allowed=creator_override_allowed,
+            )
+        )
 
     if enriched_rows:
         additions_df = pd.DataFrame(enriched_rows)
@@ -579,9 +618,11 @@ def run(args: argparse.Namespace) -> int:
         "submissions_in_csv": int(len(submissions_df)),
         "new_unique_submissions": int(len(new_submissions)),
         "added_rows": int(len(enriched_rows)),
+        "creator_overrides_applied": int(creator_overrides_applied),
         "master_rows_before": int(len(master_df)),
         "master_rows_after": int(len(merged)),
         "google_places_enabled": bool(args.google_api_key),
+        "creator_override_validation_enabled": bool(valid_creator_codes),
         "dry_run": bool(args.dry_run),
     }
 
