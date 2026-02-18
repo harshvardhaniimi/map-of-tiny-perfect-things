@@ -90,6 +90,11 @@ const CATEGORY_ALIASES = {
 };
 
 const CREATOR_QUERY_TOKENS = new Set(['creator', 'creators', 'harsh', 'dea']);
+const LOCATION_TOKEN_ALIASES = {
+  bangalore: ['bengaluru', 'blr'],
+  bengaluru: ['bangalore', 'blr'],
+  blr: ['bangalore', 'bengaluru'],
+};
 
 const encodeFormData = (payload) =>
   Object.entries(payload)
@@ -130,6 +135,17 @@ const tokenizeForQuery = (value) =>
     .filter((token) => token && !QUERY_STOPWORDS.has(token));
 
 const toTokenSet = (value) => new Set(tokenize(value));
+
+const expandLocationTokens = (tokens) => {
+  const expanded = new Set(tokens);
+
+  tokens.forEach((token) => {
+    const aliases = LOCATION_TOKEN_ALIASES[token] || [];
+    aliases.forEach((alias) => expanded.add(alias));
+  });
+
+  return Array.from(expanded);
+};
 
 const buildTypeTokenSet = (placeType) => {
   const tokens = toTokenSet(placeType);
@@ -174,7 +190,9 @@ const extractRequestedLocation = (question) => {
 const findRelevantPlaces = (query, limit = 6) => {
   const queryTokens = tokenizeForQuery(query);
   const requestedLocation = extractRequestedLocation(query);
-  const requestedLocationTokens = tokenize(requestedLocation).map(normalizeQueryToken);
+  const requestedLocationTokensBase = tokenize(requestedLocation).map(normalizeQueryToken);
+  const requestedLocationTokens = expandLocationTokens(requestedLocationTokensBase);
+  const requiredLocationMatches = requestedLocationTokensBase.length <= 1 ? 1 : 2;
 
   const scored = data
     .map((place) => {
@@ -186,10 +204,12 @@ const findRelevantPlaces = (query, limit = 6) => {
       const supportTokens = toTokenSet([place.location, place.notes, place.address].join(' '));
       const geoTokens = toTokenSet([place.city, place.state, place.country, place.location, place.address].join(' '));
 
-      if (
-        requestedLocationTokens.length > 0 &&
-        !requestedLocationTokens.every((token) => geoTokens.has(token))
-      ) {
+      const locationMatchCount = requestedLocationTokens.reduce(
+        (count, token) => (geoTokens.has(token) ? count + 1 : count),
+        0,
+      );
+
+      if (requestedLocationTokensBase.length > 0 && locationMatchCount < requiredLocationMatches) {
         return null;
       }
 
