@@ -1,0 +1,78 @@
+name: Auto Sync Place Submissions
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: auto-sync-place-submissions
+  cancel-in-progress: false
+
+jobs:
+  sync-submissions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Preflight secrets check
+        id: preflight
+        run: |
+          if [ -z "${{ secrets.NETLIFY_ACCESS_TOKEN }}" ] || [ -z "${{ secrets.NETLIFY_SITE_ID }}" ]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Skipping sync because NETLIFY_ACCESS_TOKEN or NETLIFY_SITE_ID is missing."
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run automated ingestion
+        if: steps.preflight.outputs.ready == 'true'
+        env:
+          NETLIFY_ACCESS_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: |
+          python data_creation/auto_ingest_submissions.py
+
+      - name: Create pull request
+        if: steps.preflight.outputs.ready == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: codex/auto-place-submission-sync
+          delete-branch: true
+          commit-message: "chore(data): auto-sync place submissions"
+          title: "chore(data): auto-sync place submissions"
+          body: |
+            Automated sync from Netlify place submissions.
+
+            This PR includes:
+            - fetched and de-duplicated form submissions
+            - enriched place metadata and coordinates
+            - updated master data files and map data copy
+            - refreshed city docs for chatbot context
+          labels: |
+            automated
+            data
+          add-paths: |
+            data_creation/place_submissions.csv
+            data_creation/last_ingest_report.json
+            master_data/master_data.csv
+            master_data/master_data.json
+            master_data/city_files/*.txt
+            map/src/master_data.json

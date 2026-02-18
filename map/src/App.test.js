@@ -1,23 +1,21 @@
-import { render, screen, within } from '@testing-library/react';
+import { fireEvent, render, screen, within } from '@testing-library/react';
 import App from './App';
 
-// Mock React-Leaflet components
 jest.mock('react-leaflet', () => ({
   MapContainer: ({ children }) => <div data-testid="mock-map">{children}</div>,
-  TileLayer: () => <div data-testid="mock-tilelayer" />,
-  Marker: ({ children }) => <div data-testid="mock-marker">{children}</div>,
+  TileLayer: () => <div data-testid="mock-tile-layer" />,
+  Marker: () => <div data-testid="mock-marker" />,
   useMap: () => ({
     flyTo: jest.fn(),
+    invalidateSize: jest.fn(),
   }),
   useMapEvents: () => null,
 }));
 
-// Mock Leaflet
 jest.mock('leaflet', () => ({
   divIcon: jest.fn(() => ({})),
 }));
 
-// Mock the data to reduce test complexity
 jest.mock('./master_data.json', () => [
   {
     name: 'Test Coffee Shop',
@@ -28,67 +26,94 @@ jest.mock('./master_data.json', () => [
     google_place_id: 'test-place-1',
     rating: 4.5,
     user_ratings_total: 100,
-    google_maps_link: 'https://maps.google.com/test'
+    google_maps_link: 'https://maps.google.com/test',
   },
   {
     name: 'Test Restaurant',
-    lat: 37.8900,
-    lng: -122.2800,
+    lat: 37.89,
+    lng: -122.28,
     type2: 'food',
     notes: 'A test restaurant',
     google_place_id: 'test-place-2',
     rating: 4.2,
     user_ratings_total: 200,
-    google_maps_link: 'https://maps.google.com/test2'
-  }
+    google_maps_link: 'https://maps.google.com/test2',
+  },
 ]);
 
-describe('App Component', () => {
-  test('renders the app title in the info card', () => {
+describe('App', () => {
+  beforeEach(() => {
+    window.history.pushState({}, '', '/');
+  });
+
+  test('renders project title and core actions', () => {
     render(<App />);
-    const titleElement = document.querySelector('.info-card-title');
-    expect(titleElement).toBeInTheDocument();
-    expect(titleElement.textContent).toContain('The Map of Tiny Perfect Things');
+
+    expect(screen.getByText(/The Map of Tiny Perfect Things/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Add a Place/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Feature Requests/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Ask Ava/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /About/i })).toBeInTheDocument();
+  });
+
+  test('renders map and marker list', () => {
+    render(<App />);
+
+    expect(screen.getByTestId('mock-map')).toBeInTheDocument();
+    expect(screen.getAllByTestId('mock-marker')).toHaveLength(2);
   });
 
   test('renders all filter buttons', () => {
     render(<App />);
-    const filterContainer = document.querySelector('.filter-container');
-    expect(filterContainer).toBeInTheDocument();
 
-    const withinFilter = within(filterContainer);
-    expect(withinFilter.getByText('All')).toBeInTheDocument();
-    expect(withinFilter.getByText('Coffee')).toBeInTheDocument();
-    expect(withinFilter.getByText('Food')).toBeInTheDocument();
-    expect(withinFilter.getByText('Other')).toBeInTheDocument();
+    const filterBar = screen.getByRole('navigation', { name: /filter places/i });
+    const scoped = within(filterBar);
+
+    expect(scoped.getByRole('button', { name: 'All' })).toBeInTheDocument();
+    expect(scoped.getByRole('button', { name: 'Coffee' })).toBeInTheDocument();
+    expect(scoped.getByRole('button', { name: 'Food' })).toBeInTheDocument();
+    expect(scoped.getByRole('button', { name: 'Other' })).toBeInTheDocument();
   });
 
-  test('renders info card action links', () => {
+  test('navigates to submit form and exposes creator override for creator names', () => {
     render(<App />);
-    const aboutLink = screen.getByRole('link', { name: /about/i });
-    const addPlaceLink = screen.getByRole('link', { name: /add a place/i });
-    const askQuestionLink = screen.getByRole('link', { name: /ask a question/i });
 
-    expect(aboutLink).toBeInTheDocument();
-    expect(addPlaceLink).toBeInTheDocument();
-    expect(askQuestionLink).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Add a Place/i }));
+
+    expect(screen.getByRole('heading', { name: /Add a Place/i })).toBeInTheDocument();
+
+    fireEvent.change(screen.getByLabelText(/Contributor Name/i), {
+      target: { value: 'Dea' },
+    });
+
+    expect(
+      screen.getByLabelText(/Mark this as a Creator's Rec \(Harsh or Dea only\)/i),
+    ).toBeInTheDocument();
   });
 
-  test('renders the map container', () => {
+  test('does not show creator override for non-creator names', () => {
     render(<App />);
-    const mapContainer = screen.getByTestId('mock-map');
-    expect(mapContainer).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Add a Place/i }));
+
+    fireEvent.change(screen.getByLabelText(/Contributor Name/i), {
+      target: { value: 'Someone Else' },
+    });
+
+    expect(screen.queryByLabelText(/Mark this as a Creator's Rec/i)).not.toBeInTheDocument();
+    expect(
+      screen.getByText(/Creator override appears automatically when contributor name matches Harsh\/Dea./i),
+    ).toBeInTheDocument();
   });
 
-  test('renders map markers for locations', () => {
+  test('opens no-login chat page from main map panel', () => {
     render(<App />);
-    const markers = screen.getAllByTestId('mock-marker');
-    expect(markers.length).toBeGreaterThan(0);
-  });
 
-  test('renders search input', () => {
-    render(<App />);
-    const searchInput = screen.getByPlaceholderText(/search location/i);
-    expect(searchInput).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Ask Ava/i }));
+
+    expect(screen.getByRole('heading', { name: /Ask Ava/i })).toBeInTheDocument();
+    expect(
+      screen.getByText(/No login required\. Ava answers using submitted map data and cites matching places\./i),
+    ).toBeInTheDocument();
   });
 });

@@ -1,194 +1,31 @@
-/* ===========================
-   Global Base Styles
-   =========================== */
+:root {
+  color-scheme: light;
+}
 
-/* Reset and base */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
-html {
-  /* Prevent font size inflation on mobile */
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-  height: 100%;
-  height: -webkit-fill-available;
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'HelveticaNeue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'VT323', monospace;
+  color: #1d1b18;
+  background: #f6f3e8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Prevent overscroll bounce on iOS */
-  overscroll-behavior: none;
-
-  /* Ensure full height - critical for mobile */
-  height: 100%;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-
-  /* Prevent body scrolling */
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
 }
 
-#root {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-/* Improve tap highlight on mobile */
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Smooth scrolling when supported */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-/* Leaflet map - ensure it renders on mobile */
-.leaflet-container {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100% !important;
-  height: 100% !important;
-  touch-action: pan-x pan-y;
-  -webkit-tap-highlight-color: transparent;
-  z-index: 1;
-}
-
-/* Ensure Leaflet grabs events properly on mobile */
-.leaflet-pane,
-.leaflet-tile,
-.leaflet-marker-icon,
-.leaflet-marker-shadow,
-.leaflet-tile-container,
-.leaflet-overlay-pane svg,
-.leaflet-overlay-pane canvas,
-.leaflet-zoom-box,
-.leaflet-image-layer,
-.leaflet-layer {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* Code font */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-/* Fix button and input styling */
 button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-/* Remove default button styles */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Ensure links are properly styled */
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Improve focus visibility */
-:focus-visible {
-  outline: 2px solid #3498DB;
-  outline-offset: 2px;
-}
-
-/* Hide focus outline for mouse users */
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
-/* Selection color */
-::selection {
-  background: rgba(52, 152, 219, 0.3);
-}
-
-/* Leaflet attribution styling */
-.leaflet-control-attribution {
-  font-size: 10px !important;
-  background: rgba(255, 255, 255, 0.8) !important;
-  padding: 2px 5px !important;
-}
-
-/* Mobile-specific Leaflet styling */
-@media (max-width: 576px) {
-  .leaflet-control-attribution {
-    font-size: 8px !important;
-    max-width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  /* Position zoom controls better on mobile */
-  .leaflet-top.leaflet-right {
-    top: 60px;
-    right: 10px;
-  }
-}
-
-/* Improve Leaflet navigation control on touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .leaflet-control-zoom a {
-    width: 40px !important;
-    height: 40px !important;
-    line-height: 40px !important;
-    font-size: 20px !important;
-  }
-
-  .leaflet-touch .leaflet-bar a {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-  }
-}
-
-/* iOS Safari specific fixes */
-@supports (-webkit-touch-callout: none) {
-  body {
-    /* Use dvh for dynamic viewport height on iOS */
-    min-height: 100dvh;
-  }
-
-  #root {
-    min-height: 100dvh;
-  }
+  font: inherit;
 }

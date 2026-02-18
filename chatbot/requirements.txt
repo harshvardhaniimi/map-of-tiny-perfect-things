@@ -1,7 +1,4 @@
-langchain
-openai
-pandas
-streamlit
-tiktoken
-chromadb
-pysqlite3-binary
+chromadb==1.0.15
+ollama==0.5.3
+pandas==2.3.2
+streamlit==1.48.1

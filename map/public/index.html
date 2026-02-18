@@ -4,114 +4,123 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
-    <!-- Mobile-first viewport configuration -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover" />
-
-    <!-- Theme and appearance -->
-    <meta name="theme-color" content="#3498DB" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#f6f3e8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Perfect Places" />
     <meta name="mobile-web-app-capable" content="yes" />
 
-    <!-- SEO and description -->
-    <meta name="description" content="The Map of Tiny Perfect Things - Discover amazing restaurants, cafes, and hidden gems in the San Francisco Bay Area" />
-    <meta name="keywords" content="map, restaurants, cafes, San Francisco, Bay Area, food, coffee, recommendations" />
+    <meta
+      name="description"
+      content="The Map of Tiny Perfect Things - discover crowd-sourced cafes, food spots, and tiny gems."
+    />
+    <meta
+      name="keywords"
+      content="map, recommendations, cafes, restaurants, hidden gems, crowdsourced"
+    />
     <meta name="author" content="Dea and Harsh" />
 
-    <!-- Open Graph / Social sharing -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The Map of Tiny Perfect Things" />
-    <meta property="og:description" content="Discover amazing restaurants, cafes, and hidden gems in the San Francisco Bay Area" />
+    <meta
+      property="og:description"
+      content="Discover and submit tiny perfect places with no-login forms and no-login chat."
+    />
     <meta property="og:image" content="%PUBLIC_URL%/logo.png" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="The Map of Tiny Perfect Things" />
-    <meta name="twitter:description" content="Discover amazing restaurants, cafes, and hidden gems in the San Francisco Bay Area" />
+    <meta
+      name="twitter:description"
+      content="Discover and submit tiny perfect places with no-login forms and no-login chat."
+    />
 
-    <!-- Apple touch icon -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo.png" />
 
-    <!-- Preconnect to external resources for faster loading (CartoDB tiles) -->
     <link rel="preconnect" href="https://a.basemaps.cartocdn.com" />
     <link rel="preconnect" href="https://b.basemaps.cartocdn.com" />
     <link rel="preconnect" href="https://c.basemaps.cartocdn.com" />
     <link rel="dns-prefetch" href="https://basemaps.cartocdn.com" />
     <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" />
 
-    <!-- PWA manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>Perfect Places - The Map of Tiny Perfect Things</title>
 
-    <!-- Critical CSS for preventing layout shift on mobile -->
     <style>
-      html, body {
+      html,
+      body,
+      #root {
+        width: 100%;
+        min-height: 100%;
         margin: 0;
         padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
       }
 
-      #root {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      /* Prevent pull-to-refresh on mobile */
       body {
-        overscroll-behavior-y: contain;
-        -webkit-overflow-scrolling: touch;
+        background: #f6f3e8;
+        overflow-x: hidden;
       }
 
-      /* Safe area insets for notched devices (iPhone X+) */
-      @supports (padding: max(0px)) {
-        body {
-          padding-left: env(safe-area-inset-left);
-          padding-right: env(safe-area-inset-right);
-          padding-bottom: env(safe-area-inset-bottom);
-        }
-      }
-
-      /* iOS Safari fix for 100vh */
-      @supports (-webkit-touch-callout: none) {
-        html, body, #root {
-          height: -webkit-fill-available;
-          min-height: -webkit-fill-available;
-        }
-      }
-
-      /* Loading state */
       #root:empty {
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #f5f5f5;
+        background: #f6f3e8;
       }
 
       #root:empty::after {
-        content: "Loading map...";
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        color: #666;
-        font-size: 16px;
+        content: 'Loading map...';
+        font-family: monospace;
+        color: #5e5a50;
+        font-size: 15px;
       }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Hidden Netlify Forms (required for static form detection) -->
+    <form
+      name="place-submissions"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="contributor_name" />
+      <input type="email" name="contributor_email" />
+      <input type="text" name="place_name" />
+      <input type="text" name="location" />
+      <input type="text" name="city" />
+      <input type="text" name="state" />
+      <input type="text" name="country" />
+      <input type="text" name="category" />
+      <input type="text" name="google_maps_link" />
+      <input type="text" name="notes" />
+      <input type="text" name="creators_rec_requested" />
+      <input type="text" name="bot-field" />
+    </form>
+
+    <form
+      name="feature-requests"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="requester_name" />
+      <input type="email" name="requester_email" />
+      <input type="text" name="summary" />
+      <input type="text" name="problem" />
+      <input type="text" name="proposal" />
+      <input type="text" name="component" />
+      <input type="text" name="bot-field" />
+    </form>
   </body>
 </html>

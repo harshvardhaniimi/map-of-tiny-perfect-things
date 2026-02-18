@@ -1,5 +1,5 @@
 ---
-title: "01_add_new_places"
+title: "02_add_new_places"
 author: "Harshvardhan"
 format: html
 editor: visual
@@ -7,286 +7,182 @@ editor: visual
 
 ## Purpose
 
-In addition to the places that Dea and I added to the map, there will be crowdsourced entries along with entries from us that have to come through a streamlined route. This notebook takes the entries from the [Google Forms](https://docs.google.com/forms/d/1o0yYoC79gZ4V3tRanV9BpnLpBoRLFnJt65O5xc0_xuQ/edit).
+This notebook is the manual fallback path for ingestion.
 
-Steps:
+Default ingestion is automated by:
 
-1.  Read the new Google Sheet associated with the responses of the Google Form
-2.  Create a new DataFrame for the places
-3.  Remove Duplicates - Create a function to compare entries in the new DataFrame with the old one to remove duplicates.
-4.  Query Google Maps for the Information - Use the existing `get_place_info` function on the non-duplicate DataFrame.
-5.  Merge the Maps Data with existing data
+- `data_creation/auto_ingest_submissions.py`
+- `.github/workflows/auto-sync-submissions.yml`
+
+The notebook remains available for one-off manual runs and debugging.
+
+## Submission Source (Netlify Forms)
+
+Manual export (only if you are not using the automated script/workflow):
+
+```bash
+python data_creation/export_netlify_submissions.py --site-id "$NETLIFY_SITE_ID"
+```
+
+This creates `data_creation/place_submissions.csv`.
 
 ## Loading Packages
 
-First step is to load the packages.
-
 ```{r}
-# install and load necessary packages
-# install.packages(c("googledrive", "googlesheets4"))
-library(googledrive)
-library(googlesheets4)
 library(tidyverse)
+library(janitor)
+library(googleway)
 ```
 
-## Read in Google Forms responses
+## Read Submissions + Master Data
 
 ```{r}
-# Define the URL of the new Google Sheet
-new_url = "https://docs.google.com/spreadsheets/d/1stS_awlA_C5fIaSi0HUSAEtNejs0abW2ik2RvUqeLuU/edit?resourcekey#gid=1755512290"
+new_data = read_csv("data_creation/place_submissions.csv") %>%
+  clean_names() %>%
+  mutate(
+    creators_rec = if_else(creators_rec_requested == "Yes", "Yes", NA_character_)
+  )
 
-# Get the ID of the Google Sheet from the URL
-new_sheet_id = sub(".*/d/(.*)/.*", "\\1", new_url)
-
-# Get info about the new Google Sheet
-new_sheet_info = drive_get(id = new_sheet_id)
-
-# Read the specific sheet from the new Google Sheet
-new_data = read_sheet(new_sheet_info) %>% 
-   janitor::clean_names()
+master_data = read_csv("master_data/master_data.csv")
 ```
 
 ## Remove Duplicates
 
-Jugglery to remove duplicates. Basically a function.
-
 ```{r}
 remove_duplicates = function(new_df, old_df) {
-   distinct_df = anti_join(
-      new_df,
-      old_df,
-      by = c(
-         "name_of_the_place" = "name",
-         "location",
-         "city",
-         "state",
-         "country"
-      )
-   ) %>% 
-      rename("name" = "name_of_the_place")
-   return(distinct_df)
+  anti_join(
+    new_df,
+    old_df,
+    by = c("name", "location", "city", "state", "country")
+  )
 }
 
-# Read in master data
-master_data = read_csv("master_data/master_data.csv")
-
-# Apply the function to get non-duplicate entries
 non_duplicate_data = remove_duplicates(new_data, master_data)
 ```
 
-## Getting Google Maps API working
+## Google Places API Setup
 
 ```{r}
-library(httr)
-library(jsonlite)
-library(purrr)
-```
-
-```{r}
-# API key function
 read_api_key = function(file_path) {
-   # returning the first line of the text file at the file_path
-   return(readLines(file_path)[1])
+  readLines(file_path)[1]
 }
-```
 
-```{r}
-# API Key (Harsh's API Key)
 api_key = read_api_key("google_places_api_key.txt")
-
-# load googleway
-library(googleway)
 set_key(key = api_key)
 ```
 
-## Get data from Google API
-
-```{r}
-# Function to get Google Places ID using googleway
-get_google_place_id = function(name, location, city, state) {
-   # Construct the search query
-   query = paste(name, location, city, state, sep = " ")
-   print(query)
-   
-   # Query Google Maps using googleway
-   result = google_places(search_string = query, simplify = TRUE)
-   
-   # Extract the place_id if available
-   if (is.null(result$results$place_id[1]))
-      return(abbreviate(query))
-   else
-      return(unlist(result$results$place_id[1]))
-}
-```
+## Enrich Submissions with Place Details
 
 ```{r}
 get_place_info = function(data) {
-   name = data$name
-   location = data$location
-   city = data$city
-   state = data$state
-   country = data$country
-   
-   if (is.na(location)) {
-      print(paste0("Location name not provided for place ", name))
-      return(
-         tibble(
-            name = name,
-            address = NA,
-            rating = NA,
-            user_ratings_total = NA,
-            google_maps_link = NA,
-            lat = NA,
-            lng = NA,
-            opening_hours = NA,
-            type = NA
-         )
+  name = data$name
+  location = data$location
+  city = data$city
+  state = data$state
+  country = data$country
+
+  query = paste(name, location, city, state, country, sep = " ")
+  result_search = google_places(search_string = query)
+
+  if (length(result_search$results) == 0) {
+    return(
+      tibble(
+        name = name,
+        address = NA,
+        rating = NA,
+        user_ratings_total = NA,
+        google_maps_link = data$google_maps_link,
+        lat = NA,
+        lng = NA,
+        opening_hours = NA,
+        type = NA,
+        google_place_id = NA
       )
-   }
-   
-   # Construct the search query
-   query = paste(name, location, city, state, country, sep = " ")
-   
-   # Perform a Google Places search
-   result_search = google_places(search_string = query)
-   
-   if (length(result_search$results) == 0) {
-      print(paste0("Couldn't find place ", name, " at ", location))
-      
-      return(
-         tibble(
-            name = name,
-            address = NA,
-            rating = NA,
-            user_ratings_total = NA,
-            google_maps_link = NA,
-            lat = NA,
-            lng = NA,
-            opening_hours = NA,
-            type = NA
-         )
-      )
-   } else {
-      # Extract the information
-      print(paste0("Working on ", name, " ", location))
-      result_details = result_search$results[1,]
-      place_id = result_details$place_id
-      
-      address = ifelse(
-         !is.null(result_details$formatted_address),
-         result_details$formatted_address,
-         NA
-      )
-      
-      type = ifelse(!is.null(result_search$results$types[[1]][1]),
-                    result_search$results$types[[1]][1],
-                    NA)
-      
-      # Get opening hours and more details
-      result_details_2 = google_place_details(place_id = place_id)
-      
-      # opening hours may not exist
-      # case in point: Cheeseboard, SF Bay Area
-      if (!is.null(result_details_2$result$current_opening_hours$weekday_text)) {
-         opening_hours = result_details_2$result$current_opening_hours$weekday_text %>%
-            glue::glue_collapse(sep = "\n ")
-      } else {
-         opening_hours = NA
-      }
-      
-      rating = ifelse(!is.null(result_details$rating),
-                      result_details$rating,
-                      NA)
-      user_ratings_total = ifelse(
-         !is.null(result_details$user_ratings_total),
-         result_details$user_ratings_total,
-         NA
-      )
-      
-      google_maps_link = paste0(
-         "https://www.google.com/maps/search/?api=1&query=",
-         URLencode(address),
-         "&query_place_id=",
-         place_id
-      )
-      
-      lat = result_details$geometry$location$lat
-      lng = result_details$geometry$location$lng
-      
-      return(
-         tibble(
-            name = name,
-            address = address,
-            rating = rating,
-            user_ratings_total = user_ratings_total,
-            google_maps_link = google_maps_link,
-            lat = lat,
-            lng = lng,
-            opening_hours = opening_hours,
-            type = type,
-            google_place_id = place_id
-         )
-      )
-   }
-}
-```
-
-## Query Google Maps for Information
-
-```{r}
-for (i in 1:nrow(non_duplicate_data))
-{
-   place = list(name = non_duplicate_data$name[i],
-             location = non_duplicate_data$location[i],
-             city = non_duplicate_data$city[i],
-             state = non_duplicate_data$state[i],
-             country = non_duplicate_data$country[i])
-   new_info = get_place_info(place)
-   
-   if (i == 1)
-      new_df_maps = new_info
-   else
-      new_df_maps = rbind(new_df_maps, new_info)
-}
-```
-
-## Merge with maps data
-
-```{r}
-new_places = left_join(non_duplicate_data, new_df_maps)
-new_places
-```
-
-## Removing Timestamp and adding creator's rec
-
-Google Forms' timestamp needs to be removed. Also, since these are crowd sourced entries, they will not have Creator's rec. (Dea and I have to decide how we could continue having creator's rec.)
-
-```{r}
-new_places = new_places %>% 
-   select(-timestamp) %>% 
-   mutate(creators_rec = NA)
-```
-
-## Add new places to Maps and add to master_data
-
-Note that, here I'm NOT putting them to Google sheets because it will cause mismatch between what we have city-wise and master data sheet. When needed, we can always use CSV and JSON for exploration.
-
-```{r}
-df_all = rbind(master_data, new_places)
-```
-
-```{r}
-save_to_files = function(df) {
-  # check if directory exists, if not create it
-  if (!dir.exists("/master_data")) {
-    dir.create("/master_data")
+    )
   }
-  
-  # write to csv and json files
-  write.csv(df, file = "master_data/master_data.csv", row.names = FALSE)
-  jsonlite::write_json(df, path = "master_data/master_data.json")
+
+  result_details = result_search$results[1,]
+  place_id = result_details$place_id
+  address = result_details$formatted_address
+
+  result_details_2 = google_place_details(place_id = place_id)
+  opening_hours = if (!is.null(result_details_2$result$current_opening_hours$weekday_text)) {
+    result_details_2$result$current_opening_hours$weekday_text %>% glue::glue_collapse(sep = "\n")
+  } else {
+    NA
+  }
+
+  tibble(
+    name = name,
+    address = address,
+    rating = result_details$rating,
+    user_ratings_total = result_details$user_ratings_total,
+    google_maps_link = ifelse(is.na(data$google_maps_link), paste0(
+      "https://www.google.com/maps/search/?api=1&query=",
+      URLencode(address),
+      "&query_place_id=",
+      place_id
+    ), data$google_maps_link),
+    lat = result_details$geometry$location$lat,
+    lng = result_details$geometry$location$lng,
+    opening_hours = opening_hours,
+    type = result_search$results$types[[1]][1],
+    google_place_id = place_id
+  )
+}
+```
+
+```{r}
+if (nrow(non_duplicate_data) > 0) {
+  for (i in 1:nrow(non_duplicate_data)) {
+    place = list(
+      name = non_duplicate_data$name[i],
+      location = non_duplicate_data$location[i],
+      city = non_duplicate_data$city[i],
+      state = non_duplicate_data$state[i],
+      country = non_duplicate_data$country[i],
+      google_maps_link = non_duplicate_data$google_maps_link[i]
+    )
+
+    new_info = get_place_info(place)
+
+    if (i == 1) new_df_maps = new_info else new_df_maps = rbind(new_df_maps, new_info)
+  }
+} else {
+  new_df_maps = tibble()
+}
+```
+
+## Merge + Save
+
+```{r}
+if (nrow(non_duplicate_data) > 0) {
+  new_places = left_join(non_duplicate_data, new_df_maps, by = "name") %>%
+    select(
+      name,
+      location,
+      city,
+      state,
+      country,
+      creators_rec,
+      notes,
+      address,
+      rating,
+      user_ratings_total,
+      google_maps_link,
+      lat,
+      lng,
+      opening_hours,
+      type,
+      google_place_id,
+      type2
+    )
+
+  df_all = bind_rows(master_data, new_places)
+} else {
+  df_all = master_data
 }
 
-
-save_to_files(df_all)
+write.csv(df_all, file = "master_data/master_data.csv", row.names = FALSE)
+jsonlite::write_json(df_all, path = "master_data/master_data.json")
 ```

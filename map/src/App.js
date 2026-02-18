@@ -1,20 +1,237 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { MapContainer, TileLayer, Marker, useMap, useMapEvents } from 'react-leaflet';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { MapContainer, Marker, TileLayer, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import data from './master_data.json';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from 'mdb-react-ui-kit';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
 
-// Custom hook for detecting mobile viewport
-const useIsMobile = (breakpoint = 576) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= breakpoint);
+const DEFAULT_CENTER = [37.8803, -122.2699];
+const DEFAULT_ZOOM = 10;
+const PLACE_FORM_NAME = 'place-submissions';
+const FEATURE_FORM_NAME = 'feature-requests';
+
+const CREATOR_ALIASES = new Set([
+  'harsh',
+  'harshvardhan',
+  'harshvardhaniimi',
+  'dea',
+  'deabardhoshi',
+  'deabhardoshi',
+]);
+
+const SUBMISSION_DEFAULTS = {
+  contributorName: '',
+  contributorEmail: '',
+  placeName: '',
+  location: '',
+  city: '',
+  state: '',
+  country: '',
+  category: 'others',
+  googleMapsLink: '',
+  notes: '',
+  creatorRec: false,
+  botField: '',
+};
+
+const FEATURE_DEFAULTS = {
+  requesterName: '',
+  requesterEmail: '',
+  summary: '',
+  problem: '',
+  proposal: '',
+  component: 'map web app',
+  botField: '',
+};
+
+const normalizeCreatorName = (name) =>
+  name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]/g, '');
+
+const isCreatorName = (name) => CREATOR_ALIASES.has(normalizeCreatorName(name));
+
+const encodeFormData = (payload) =>
+  Object.entries(payload)
+    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+    .join('&');
+
+const submitNetlifyForm = async (formName, payload) => {
+  const response = await fetch('/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: encodeFormData({
+      'form-name': formName,
+      ...payload,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Form submit failed: ${response.status}`);
+  }
+};
+
+const normalizeSearchText = (value) =>
+  (value || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const tokenize = (value) => normalizeSearchText(value).split(' ').filter((token) => token.length > 1);
+
+const findRelevantPlaces = (query, limit = 6) => {
+  const tokens = tokenize(query);
+
+  const scored = data
+    .map((place) => {
+      const searchable = normalizeSearchText(
+        [
+          place.name,
+          place.location,
+          place.city,
+          place.state,
+          place.country,
+          place.type2,
+          place.notes,
+          place.address,
+        ].join(' '),
+      );
+
+      let score = 0;
+      tokens.forEach((token) => {
+        if (searchable.includes(token)) {
+          score += 2;
+        }
+
+        if (normalizeSearchText(place.city).includes(token)) {
+          score += 3;
+        }
+
+        if (normalizeSearchText(place.type2).includes(token)) {
+          score += 3;
+        }
+
+        if (
+          token === 'creator' &&
+          place.creators_rec === 'Yes'
+        ) {
+          score += 4;
+        }
+      });
+
+      if (score === 0 && tokens.length === 0) {
+        score = 1;
+      }
+
+      if (place.creators_rec === 'Yes') {
+        score += 0.4;
+      }
+
+      return {
+        place,
+        score,
+      };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((item) => item.place);
+
+  return scored;
+};
+
+const buildFallbackChatAnswer = (question, places) => {
+  if (!places.length) {
+    return (
+      "I couldn't find a close match in the dataset yet. " +
+      'Try adding city names, place type (coffee/food/other), or ask about creator picks.'
+    );
+  }
+
+  const bullets = places
+    .slice(0, 5)
+    .map((place, index) => {
+      const cityPart = place.city ? ` (${place.city})` : '';
+      const note = place.notes ? place.notes : 'No notes yet.';
+      return `${index + 1}. **${place.name || 'Unnamed place'}${cityPart}** - ${note}`;
+    })
+    .join('\n');
+
+  return [
+    `Here are the best matches I found for: "${question}"`,
+    '',
+    bullets,
+    '',
+    'Want better results? Add a city and preferred vibe (e.g. quiet cafe, creator rec, late-night food).',
+  ].join('\n');
+};
+
+const fetchModelChatAnswer = async (question, places) => {
+  const context = places.map((place) => ({
+    name: place.name || '',
+    city: place.city || '',
+    state: place.state || '',
+    country: place.country || '',
+    type2: place.type2 || '',
+    creators_rec: place.creators_rec || '',
+    notes: place.notes || '',
+    address: place.address || '',
+    google_maps_link: place.google_maps_link || '',
+    rating: place.rating || '',
+  }));
+
+  const response = await fetch('/.netlify/functions/ask-ava', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      question,
+      context,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Chat function failed with ${response.status}`);
+  }
+
+  const payload = await response.json();
+
+  if (!payload.answer) {
+    throw new Error('No answer in function response');
+  }
+
+  return payload.answer;
+};
+
+const viewFromPath = (pathname) => {
+  if (pathname === '/submit' || pathname === '/add') {
+    return 'submit';
+  }
+
+  if (pathname === '/feature') {
+    return 'feature';
+  }
+
+  if (pathname === '/chat') {
+    return 'chat';
+  }
+
+  if (pathname === '/about') {
+    return 'about';
+  }
+
+  return 'map';
+};
+
+const useIsMobile = (breakpoint = 820) => {
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== 'undefined' ? window.innerWidth <= breakpoint : false,
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,91 +245,95 @@ const useIsMobile = (breakpoint = 576) => {
   return isMobile;
 };
 
-// Create custom emoji icons for markers - Apple-inspired design with white pill background
-const createEmojiIcon = (emoji, isCreatorRec = false) => {
-  const bgColor = isCreatorRec ? '#FFD700' : 'white';
-  const borderColor = isCreatorRec ? '#E6B800' : 'rgba(0,0,0,0.1)';
-
-  return L.divIcon({
-    html: `<div class="emoji-marker-pill" style="background: ${bgColor}; border-color: ${borderColor};">
-             <span class="emoji-marker-icon">${emoji}</span>
-           </div>`,
-    className: 'emoji-marker-container',
-    iconSize: [44, 44],
-    iconAnchor: [22, 22],
+const createPixelMarkerIcon = (emoji, creatorRec = false) =>
+  L.divIcon({
+    html: `<div class="pixel-marker${creatorRec ? ' pixel-marker-creator' : ''}">${emoji}</div>`,
+    className: 'pixel-marker-wrapper',
+    iconSize: [40, 40],
+    iconAnchor: [20, 20],
   });
-};
 
-// Search Control Component using Nominatim (free OpenStreetMap geocoding)
 const SearchControl = () => {
   const map = useMap();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
-  const [isSearching, setIsSearching] = useState(false);
   const [showResults, setShowResults] = useState(false);
-  const searchRef = useRef(null);
+  const [isSearching, setIsSearching] = useState(false);
+  const wrapperRef = useRef(null);
 
-  // Close results when clicking outside
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (searchRef.current && !searchRef.current.contains(e.target)) {
+    const handleOutsideClick = (event) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
         setShowResults(false);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => document.removeEventListener('mousedown', handleOutsideClick);
   }, []);
 
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    if (!query.trim()) return;
+  const handleSearch = async (event) => {
+    event.preventDefault();
+
+    const trimmed = query.trim();
+    if (!trimmed) {
+      return;
+    }
 
     setIsSearching(true);
+
     try {
       const response = await fetch(
-        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=5`,
+        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(trimmed)}&limit=5`,
         {
           headers: {
-            'User-Agent': 'PerfectPlacesMap/1.0'
-          }
-        }
+            'Accept-Language': 'en',
+          },
+        },
       );
-      const data = await response.json();
-      setResults(data);
-      setShowResults(true);
+      const payload = await response.json();
+      setResults(payload);
+      setShowResults(payload.length > 0);
     } catch (error) {
-      console.error('Search error:', error);
+      setResults([]);
+      setShowResults(false);
+      console.error('Search failed:', error);
     }
+
     setIsSearching(false);
   };
 
-  const handleResultClick = (result) => {
+  const handleSelect = (result) => {
     const lat = parseFloat(result.lat);
     const lon = parseFloat(result.lon);
-    map.flyTo([lat, lon], 14);
-    setShowResults(false);
+    map.flyTo([lat, lon], 13, { duration: 1.2 });
     setQuery(result.display_name.split(',')[0]);
+    setShowResults(false);
   };
 
   return (
-    <div className="search-control" ref={searchRef}>
+    <div className="search-control" ref={wrapperRef}>
       <form onSubmit={handleSearch}>
         <input
           type="text"
-          placeholder="Search location..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
           className="search-input"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="Search a city or place"
+          aria-label="Search places"
         />
         <button type="submit" className="search-btn" disabled={isSearching}>
-          {isSearching ? '...' : '🔍'}
+          {isSearching ? '...' : 'GO'}
         </button>
       </form>
-      {showResults && results.length > 0 && (
+
+      {showResults && (
         <ul className="search-results">
-          {results.map((result, idx) => (
-            <li key={idx} onClick={() => handleResultClick(result)}>
-              {result.display_name}
+          {results.map((result) => (
+            <li key={`${result.place_id}-${result.lat}-${result.lon}`}>
+              <button type="button" onClick={() => handleSelect(result)}>
+                {result.display_name}
+              </button>
             </li>
           ))}
         </ul>
@@ -121,278 +342,735 @@ const SearchControl = () => {
   );
 };
 
-// Map click handler component
 const MapClickHandler = ({ onMapClick, markerClickedRef }) => {
   useMapEvents({
     click: () => {
-      // Ignore map clicks that originated from marker clicks
       if (markerClickedRef.current) {
         markerClickedRef.current = false;
         return;
       }
+
       onMapClick();
     },
   });
+
   return null;
 };
 
-// Fix for Leaflet not rendering on mobile - invalidate size after mount
 const MapResizeFix = () => {
   const map = useMap();
 
   useEffect(() => {
-    // Force Leaflet to recalculate container size
     const timer = setTimeout(() => {
       map.invalidateSize();
-    }, 100);
+    }, 120);
 
-    // Also invalidate on window resize
-    const handleResize = () => {
-      map.invalidateSize();
-    };
-
-    window.addEventListener('resize', handleResize);
-    window.addEventListener('orientationchange', handleResize);
+    const invalidate = () => map.invalidateSize();
+    window.addEventListener('resize', invalidate);
+    window.addEventListener('orientationchange', invalidate);
 
     return () => {
       clearTimeout(timer);
-      window.removeEventListener('resize', handleResize);
-      window.removeEventListener('orientationchange', handleResize);
+      window.removeEventListener('resize', invalidate);
+      window.removeEventListener('orientationchange', invalidate);
     };
   }, [map]);
 
   return null;
 };
 
-function App() {
-  const [center] = useState([37.8803, -122.2699]);
-  const [zoom] = useState(10);
-  const [PopupOpen, setPopupOpen] = useState(null);
-  const [selectedType, setSelectedType] = useState('all');
-  const [infoCardCollapsed, setInfoCardCollapsed] = useState(false);
-  const isMobile = useIsMobile();
-  const markerClickedRef = useRef(false);
+const SubmitPage = ({ onNavigate }) => {
+  const [formData, setFormData] = useState(SUBMISSION_DEFAULTS);
+  const [status, setStatus] = useState('idle');
+  const canSetCreatorRec = isCreatorName(formData.contributorName);
 
-  const filteredData = selectedType === 'all'
-    ? data
-    : data.filter(location => location.type2 === selectedType);
-
-  const handleMarkerClick = useCallback((location) => {
-    markerClickedRef.current = true;
-    setPopupOpen(location);
-  }, []);
-
-  const handleClosePopup = useCallback(() => {
-    setPopupOpen(null);
-  }, []);
-
-  const handleMapClick = useCallback(() => {
-    setPopupOpen(null);
-  }, []);
-
-  const toggleInfoCard = useCallback(() => {
-    setInfoCardCollapsed(prev => !prev);
-  }, []);
-
-  // Auto-collapse info card on mobile
-  useEffect(() => {
-    if (isMobile) {
-      setInfoCardCollapsed(true);
-    } else {
-      setInfoCardCollapsed(false);
-    }
-  }, [isMobile]);
-
-  const AboutComponent = () => {
-    window.location.href = 'about.html';
-    return null;
+  const handleFieldChange = (event) => {
+    const { name, value, type, checked } = event.target;
+    setStatus('idle');
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
   };
 
-  const getMarkerEmoji = (location) => {
-    if (location.creators_rec === 'Yes') return '⭐️';
-    if (location.type2 === 'coffee') return '☕️';
-    if (location.type2 === 'food') return '🍱';
-    if (location.type2 === 'others') return '🏝';
-    return '📍';
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (formData.botField.trim()) {
+      return;
+    }
+
+    setStatus('submitting');
+
+    try {
+      await submitNetlifyForm(PLACE_FORM_NAME, {
+        contributor_name: formData.contributorName.trim(),
+        contributor_email: formData.contributorEmail.trim(),
+        place_name: formData.placeName.trim(),
+        location: formData.location.trim(),
+        city: formData.city.trim(),
+        state: formData.state.trim(),
+        country: formData.country.trim(),
+        category: formData.category,
+        google_maps_link: formData.googleMapsLink.trim(),
+        notes: formData.notes.trim(),
+        creators_rec_requested: canSetCreatorRec && formData.creatorRec ? 'Yes' : 'No',
+        'bot-field': formData.botField,
+      });
+      setStatus('success');
+      setFormData(SUBMISSION_DEFAULTS);
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    }
   };
 
   return (
-    <Router>
-      <div className="map-container">
-        <MapContainer
-          center={center}
-          zoom={zoom}
-          style={{ width: '100%', height: '100%' }}
-          zoomControl={true}
-        >
-          {/* CartoDB Positron - Clean, minimal map style (free, no API key) */}
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-            subdomains="abcd"
-            maxZoom={20}
+    <main className="content-page">
+      <header className="page-header">
+        <button type="button" className="pixel-link" onClick={() => onNavigate('map')}>
+          <span aria-hidden="true">&lt;</span> Back to Map
+        </button>
+        <h1>Add a Place</h1>
+        <p>
+          This form submits directly to Netlify Forms with no account required. Every entry is
+          reviewed before being merged into the map.
+        </p>
+      </header>
+
+      <form className="pixel-form" onSubmit={handleSubmit} data-netlify="true" name={PLACE_FORM_NAME}>
+        <input type="hidden" name="form-name" value={PLACE_FORM_NAME} />
+        <label className="hidden-field" aria-hidden="true">
+          Don&apos;t fill this out if you&apos;re human
+          <input name="botField" value={formData.botField} onChange={handleFieldChange} tabIndex="-1" />
+        </label>
+
+        <label>
+          Contributor Name
+          <input
+            name="contributorName"
+            value={formData.contributorName}
+            onChange={handleFieldChange}
+            required
+            placeholder="Your name"
           />
+        </label>
 
-          {/* Map click handler */}
-          <MapClickHandler onMapClick={handleMapClick} markerClickedRef={markerClickedRef} />
+        <label>
+          Contributor Email (optional)
+          <input
+            name="contributorEmail"
+            type="email"
+            value={formData.contributorEmail}
+            onChange={handleFieldChange}
+            placeholder="name@example.com"
+          />
+        </label>
 
-          {/* Fix for mobile rendering */}
-          <MapResizeFix />
+        <label>
+          Place Name
+          <input
+            name="placeName"
+            value={formData.placeName}
+            onChange={handleFieldChange}
+            required
+            placeholder="e.g. Hidden Cafe"
+          />
+        </label>
 
-          {/* Search Control */}
-          <SearchControl />
+        <label>
+          Location / Neighborhood
+          <input
+            name="location"
+            value={formData.location}
+            onChange={handleFieldChange}
+            required
+            placeholder="e.g. Downtown Berkeley"
+          />
+        </label>
 
-          {/* Map Markers */}
-          {filteredData.map((location, index) => (
-            <Marker
-              key={`${location.google_place_id || location.name}-${location.lat}-${location.lng}-${index}`}
-              position={[Number(location.lat), Number(location.lng)]}
-              icon={createEmojiIcon(getMarkerEmoji(location), location.creators_rec === 'Yes')}
-              eventHandlers={{
-                click: () => handleMarkerClick(location),
-              }}
-            />
-          ))}
-        </MapContainer>
-
-        {/* Info Card - Outside MapContainer for proper z-index */}
-        <div className={`info-card ${infoCardCollapsed ? 'collapsed' : ''}`}>
-          <MDBCard>
-            <MDBCardBody>
-              {isMobile && (
-                <button
-                  className="info-card-toggle"
-                  onClick={toggleInfoCard}
-                  aria-label={infoCardCollapsed ? 'Expand info' : 'Collapse info'}
-                >
-                  {infoCardCollapsed ? '▼' : '▲'}
-                </button>
-              )}
-              <MDBCardTitle className="info-card-title">
-                🗺 The Map of Tiny Perfect Things
-              </MDBCardTitle>
-              <MDBCardText className="info-card-text">
-                Your stomach rumbles. Do you go to the Italian restaurant that you know and love,
-                or the new Thai place that just opened up? Is there a map that answers your questions
-                about restaurants, cafes, parks and everything in between? Until now, the answer was no.
-                But starting today, Dea and Harsh present to the world the first iteration of
-                'The Map of Tiny Perfect Things'.
-              </MDBCardText>
-              <div className="info-card-buttons">
-                <a href="about.html" className="info-card-btn">
-                  About
-                </a>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSf3zX9ItXAS6JM4cO9JdrQFSpNtew-AETsG88M7jPOhexa-Dg/viewform"
-                  className="info-card-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Add a Place
-                </a>
-                <a
-                  href="https://perfectplaces.streamlit.app/"
-                  className="info-card-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ask a Question
-                </a>
-              </div>
-            </MDBCardBody>
-          </MDBCard>
+        <div className="form-grid">
+          <label>
+            City
+            <input name="city" value={formData.city} onChange={handleFieldChange} required />
+          </label>
+          <label>
+            State / Region
+            <input name="state" value={formData.state} onChange={handleFieldChange} required />
+          </label>
+          <label>
+            Country
+            <input name="country" value={formData.country} onChange={handleFieldChange} required />
+          </label>
         </div>
 
-        {/* Location Popup Card */}
-        {PopupOpen && (
-          <div className="popup-container">
-            <MDBCard className="popup-card">
-              <MDBCardBody style={{ position: 'relative' }}>
-                <button
-                  className="popup-close-btn"
-                  onClick={handleClosePopup}
-                  aria-label="Close popup"
-                >
-                  ×
-                </button>
-                <MDBCardTitle className="popup-card-title">
-                  {PopupOpen.name}
-                </MDBCardTitle>
-                <MDBCardText className="popup-card-text">
-                  {PopupOpen.creators_rec === 'Yes' && (
-                    <span className="creators-rec-badge">⭐ Creator's Pick</span>
-                  )}
-                  <p><strong>Notes:</strong> {PopupOpen.notes}</p>
-                  {PopupOpen.address && (
-                    <p><strong>Address:</strong> {PopupOpen.address}</p>
-                  )}
-                  {PopupOpen.opening_hours && (
-                    <p><strong>Hours:</strong> {PopupOpen.opening_hours}</p>
-                  )}
-                  <div className="popup-card-footer">
-                    <a
-                      href={PopupOpen.google_maps_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View on Google Maps
-                    </a>
-                    {PopupOpen.rating && (
-                      <span style={{ marginLeft: '12px' }}>
-                        ⭐ {PopupOpen.rating} ({PopupOpen.user_ratings_total} reviews)
-                      </span>
-                    )}
-                  </div>
-                </MDBCardText>
-              </MDBCardBody>
-            </MDBCard>
-          </div>
+        <label>
+          Category
+          <select name="category" value={formData.category} onChange={handleFieldChange}>
+            <option value="coffee">Coffee</option>
+            <option value="food">Food</option>
+            <option value="others">Other</option>
+          </select>
+        </label>
+
+        <label>
+          Google Maps Link (optional)
+          <input
+            name="googleMapsLink"
+            value={formData.googleMapsLink}
+            onChange={handleFieldChange}
+            placeholder="https://maps.google.com/..."
+          />
+        </label>
+
+        <label>
+          Why is this place special?
+          <textarea
+            name="notes"
+            value={formData.notes}
+            onChange={handleFieldChange}
+            required
+            rows={5}
+            placeholder="Share what makes this a tiny perfect thing."
+          />
+        </label>
+
+        {canSetCreatorRec ? (
+          <label className="creator-toggle">
+            <input
+              type="checkbox"
+              name="creatorRec"
+              checked={formData.creatorRec}
+              onChange={handleFieldChange}
+            />
+            Mark this as a Creator&apos;s Rec (Harsh or Dea only)
+          </label>
+        ) : (
+          <p className="creator-hint">
+            Creator override appears automatically when contributor name matches Harsh/Dea.
+          </p>
         )}
 
-        {/* Filter Buttons */}
-        <div className="filter-container">
-          <div className="filter-buttons">
-            <button
-              className={`filter-btn filter-btn-all ${selectedType === 'all' ? 'active' : ''}`}
-              onClick={() => setSelectedType('all')}
-              aria-pressed={selectedType === 'all'}
-            >
-              <span className="filter-btn-icon">🧺</span>
-              <span className="filter-btn-text">All</span>
-            </button>
-            <button
-              className={`filter-btn filter-btn-coffee ${selectedType === 'coffee' ? 'active' : ''}`}
-              onClick={() => setSelectedType('coffee')}
-              aria-pressed={selectedType === 'coffee'}
-            >
-              <span className="filter-btn-icon">☕️</span>
-              <span className="filter-btn-text">Coffee</span>
-            </button>
-            <button
-              className={`filter-btn filter-btn-food ${selectedType === 'food' ? 'active' : ''}`}
-              onClick={() => setSelectedType('food')}
-              aria-pressed={selectedType === 'food'}
-            >
-              <span className="filter-btn-icon">🍱</span>
-              <span className="filter-btn-text">Food</span>
-            </button>
-            <button
-              className={`filter-btn filter-btn-others ${selectedType === 'others' ? 'active' : ''}`}
-              onClick={() => setSelectedType('others')}
-              aria-pressed={selectedType === 'others'}
-            >
-              <span className="filter-btn-icon">🏝</span>
-              <span className="filter-btn-text">Other</span>
-            </button>
-          </div>
+        <button type="submit" className="pixel-button primary" disabled={status === 'submitting'}>
+          {status === 'submitting' ? 'Submitting...' : 'Submit Place'}
+        </button>
+
+        {status === 'success' ? (
+          <p className="submit-note">Thanks. Your place was submitted successfully.</p>
+        ) : null}
+        {status === 'error' ? (
+          <p className="submit-note error">Submission failed. Please try again in a moment.</p>
+        ) : null}
+      </form>
+    </main>
+  );
+};
+
+const FeaturePage = ({ onNavigate }) => {
+  const [formData, setFormData] = useState(FEATURE_DEFAULTS);
+  const [status, setStatus] = useState('idle');
+
+  const handleFieldChange = (event) => {
+    const { name, value } = event.target;
+    setStatus('idle');
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (formData.botField.trim()) {
+      return;
+    }
+
+    setStatus('submitting');
+
+    try {
+      await submitNetlifyForm(FEATURE_FORM_NAME, {
+        requester_name: formData.requesterName.trim(),
+        requester_email: formData.requesterEmail.trim(),
+        summary: formData.summary.trim(),
+        problem: formData.problem.trim(),
+        proposal: formData.proposal.trim(),
+        component: formData.component,
+        'bot-field': formData.botField,
+      });
+      setStatus('success');
+      setFormData(FEATURE_DEFAULTS);
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    }
+  };
+
+  return (
+    <main className="content-page">
+      <header className="page-header">
+        <button type="button" className="pixel-link" onClick={() => onNavigate('map')}>
+          <span aria-hidden="true">&lt;</span> Back to Map
+        </button>
+        <h1>Feature Requests</h1>
+        <p>
+          Share improvements for the map, data workflow, or chatbot. No sign-in required.
+        </p>
+      </header>
+
+      <form className="pixel-form" onSubmit={handleSubmit} data-netlify="true" name={FEATURE_FORM_NAME}>
+        <input type="hidden" name="form-name" value={FEATURE_FORM_NAME} />
+        <label className="hidden-field" aria-hidden="true">
+          Don&apos;t fill this out if you&apos;re human
+          <input name="botField" value={formData.botField} onChange={handleFieldChange} tabIndex="-1" />
+        </label>
+
+        <label>
+          Your Name
+          <input name="requesterName" value={formData.requesterName} onChange={handleFieldChange} required />
+        </label>
+
+        <label>
+          Email (optional)
+          <input
+            name="requesterEmail"
+            type="email"
+            value={formData.requesterEmail}
+            onChange={handleFieldChange}
+          />
+        </label>
+
+        <label>
+          Feature Summary
+          <input name="summary" value={formData.summary} onChange={handleFieldChange} required />
+        </label>
+
+        <label>
+          Problem Statement
+          <textarea name="problem" value={formData.problem} onChange={handleFieldChange} required rows={4} />
+        </label>
+
+        <label>
+          Proposed Solution
+          <textarea
+            name="proposal"
+            value={formData.proposal}
+            onChange={handleFieldChange}
+            required
+            rows={5}
+          />
+        </label>
+
+        <label>
+          Component
+          <select name="component" value={formData.component} onChange={handleFieldChange}>
+            <option value="map web app">Map Web App</option>
+            <option value="submission flow">Submission Flow</option>
+            <option value="chatbot">Chatbot</option>
+            <option value="data pipeline">Data Pipeline</option>
+            <option value="docs">Documentation</option>
+          </select>
+        </label>
+
+        <button type="submit" className="pixel-button primary" disabled={status === 'submitting'}>
+          {status === 'submitting' ? 'Submitting...' : 'Submit Feature Request'}
+        </button>
+
+        {status === 'success' ? (
+          <p className="submit-note">Thanks. Your feature request was submitted successfully.</p>
+        ) : null}
+        {status === 'error' ? (
+          <p className="submit-note error">Submission failed. Please try again in a moment.</p>
+        ) : null}
+      </form>
+    </main>
+  );
+};
+
+const ChatPage = ({ onNavigate }) => {
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content:
+        'Ask me for places by city, vibe, or category. I will answer from the map dataset with no login required.',
+      sources: [],
+    },
+  ]);
+  const [input, setInput] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const question = input.trim();
+    if (!question || isLoading) {
+      return;
+    }
+
+    const userMessage = { role: 'user', content: question, sources: [] };
+    setMessages((prev) => [...prev, userMessage]);
+    setInput('');
+    setIsLoading(true);
+
+    const candidates = findRelevantPlaces(question, 6);
+
+    let answer = buildFallbackChatAnswer(question, candidates);
+    let usedModel = false;
+
+    try {
+      answer = await fetchModelChatAnswer(question, candidates);
+      usedModel = true;
+    } catch (error) {
+      console.info('Falling back to local retrieval response:', error);
+    }
+
+    const sources = candidates
+      .slice(0, 6)
+      .map((place) => ({
+        label: `${place.name}${place.city ? ` (${place.city})` : ''}`,
+        href: place.google_maps_link || '',
+      }));
+
+    const assistantMessage = {
+      role: 'assistant',
+      content: usedModel ? answer : `${answer}\n\n_Using retrieval-only fallback mode._`,
+      sources,
+    };
+
+    setMessages((prev) => [...prev, assistantMessage]);
+    setIsLoading(false);
+  };
+
+  return (
+    <main className="content-page chat-page">
+      <header className="page-header">
+        <button type="button" className="pixel-link" onClick={() => onNavigate('map')}>
+          <span aria-hidden="true">&lt;</span> Back to Map
+        </button>
+        <h1>Ask Ava</h1>
+        <p>No login required. Ava answers using submitted map data and cites matching places.</p>
+      </header>
+
+      <section className="chat-shell" aria-live="polite">
+        <div className="chat-log">
+          {messages.map((message, index) => (
+            <article key={`${message.role}-${index}`} className={`chat-bubble ${message.role}`}>
+              <p>{message.content}</p>
+              {message.sources?.length ? (
+                <div className="chat-sources">
+                  <strong>Sources:</strong>
+                  <ul>
+                    {message.sources.map((source) => (
+                      <li key={source.label}>
+                        {source.href ? (
+                          <a href={source.href} target="_blank" rel="noopener noreferrer">
+                            {source.label}
+                          </a>
+                        ) : (
+                          source.label
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </article>
+          ))}
+
+          {isLoading ? <article className="chat-bubble assistant">Thinking...</article> : null}
         </div>
 
-        <Routes>
-          <Route path="/about" element={<AboutComponent />} />
-        </Routes>
-      </div>
-    </Router>
+        <form className="chat-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={input}
+            onChange={(event) => setInput(event.target.value)}
+            placeholder="Ask for cafes, food, hidden gems, or creator picks..."
+            aria-label="Ask Ava"
+          />
+          <button type="submit" className="pixel-button primary" disabled={isLoading}>
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
   );
+};
+
+const AboutPage = ({ onNavigate }) => (
+  <main className="content-page">
+    <header className="page-header">
+      <button type="button" className="pixel-link" onClick={() => onNavigate('map')}>
+        <span aria-hidden="true">&lt;</span> Back to Map
+      </button>
+      <h1>About the Project</h1>
+      <p>
+        The Map of Tiny Perfect Things is a community atlas of places worth revisiting, built and
+        curated by Dea, Harsh, and contributors from everywhere.
+      </p>
+    </header>
+
+    <section className="about-grid">
+      <article>
+        <h2>What&apos;s inside</h2>
+        <p>
+          The map app helps you browse and filter entries. Ava turns the same dataset into a
+          searchable recommendations assistant.
+        </p>
+      </article>
+
+      <article>
+        <h2>How to contribute</h2>
+        <p>
+          Add places or feature requests through no-login forms. Every contribution is reviewed
+          before it lands in the master dataset.
+        </p>
+      </article>
+
+      <article>
+        <h2>Open Source</h2>
+        <p>
+          Source code is public, and submissions are collected in a moderation inbox on Netlify.
+        </p>
+      </article>
+    </section>
+  </main>
+);
+
+const MapView = ({ onNavigate }) => {
+  const [selectedType, setSelectedType] = useState('all');
+  const [selectedPlace, setSelectedPlace] = useState(null);
+  const [panelCollapsed, setPanelCollapsed] = useState(false);
+  const markerClickedRef = useRef(false);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    setPanelCollapsed(isMobile);
+  }, [isMobile]);
+
+  const filteredData = useMemo(() => {
+    if (selectedType === 'all') {
+      return data;
+    }
+
+    return data.filter((entry) => entry.type2 === selectedType);
+  }, [selectedType]);
+
+  const getMarkerEmoji = (place) => {
+    if (place.creators_rec === 'Yes') {
+      return '⭐';
+    }
+
+    if (place.type2 === 'coffee') {
+      return '☕';
+    }
+
+    if (place.type2 === 'food') {
+      return '🍜';
+    }
+
+    return '🗺';
+  };
+
+  const handleMarkerClick = useCallback((place) => {
+    markerClickedRef.current = true;
+    setSelectedPlace(place);
+  }, []);
+
+  return (
+    <div className="app-shell map-view">
+      <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} className="leaflet-root" zoomControl>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          subdomains="abcd"
+          maxZoom={20}
+        />
+
+        <SearchControl />
+        <MapClickHandler onMapClick={() => setSelectedPlace(null)} markerClickedRef={markerClickedRef} />
+        <MapResizeFix />
+
+        {filteredData.map((place, index) => {
+          const lat = Number(place.lat);
+          const lng = Number(place.lng);
+
+          if (Number.isNaN(lat) || Number.isNaN(lng)) {
+            return null;
+          }
+
+          return (
+            <Marker
+              key={`${place.google_place_id || place.name}-${lat}-${lng}-${index}`}
+              position={[lat, lng]}
+              icon={createPixelMarkerIcon(getMarkerEmoji(place), place.creators_rec === 'Yes')}
+              eventHandlers={{ click: () => handleMarkerClick(place) }}
+            />
+          );
+        })}
+      </MapContainer>
+
+      <aside className={`intro-panel${panelCollapsed ? ' collapsed' : ''}`}>
+        <div className="panel-title-row">
+          <h1>The Map of Tiny Perfect Things</h1>
+          {isMobile ? (
+            <button
+              type="button"
+              className="panel-toggle"
+              onClick={() => setPanelCollapsed((prev) => !prev)}
+              aria-label={panelCollapsed ? 'Expand project panel' : 'Collapse project panel'}
+            >
+              {panelCollapsed ? '+' : '-'}
+            </button>
+          ) : null}
+        </div>
+
+        {!panelCollapsed ? (
+          <>
+            <p>
+              A living, crowd-powered atlas of coffee spots, food gems, and offbeat discoveries that
+              feel like tiny perfect moments.
+            </p>
+
+            <div className="component-block">
+              <h2>Project Components</h2>
+              <ul>
+                <li>Map Explorer for place discovery</li>
+                <li>No-login submission form</li>
+                <li>No-login Ava chat assistant</li>
+                <li>Feature request inbox</li>
+              </ul>
+            </div>
+
+            <div className="panel-actions">
+              <button type="button" className="pixel-button" onClick={() => onNavigate('submit')}>
+                Add a Place
+              </button>
+              <button type="button" className="pixel-button" onClick={() => onNavigate('feature')}>
+                Feature Requests
+              </button>
+              <button type="button" className="pixel-button" onClick={() => onNavigate('chat')}>
+                Ask Ava
+              </button>
+              <button type="button" className="pixel-button" onClick={() => onNavigate('about')}>
+                About
+              </button>
+            </div>
+          </>
+        ) : null}
+      </aside>
+
+      {selectedPlace ? (
+        <section className="place-card" role="dialog" aria-label={`Details for ${selectedPlace.name}`}>
+          <button
+            type="button"
+            className="place-close"
+            onClick={() => setSelectedPlace(null)}
+            aria-label="Close place details"
+          >
+            x
+          </button>
+          <h3>{selectedPlace.name}</h3>
+          {selectedPlace.creators_rec === 'Yes' ? (
+            <p className="creator-badge">Creator&apos;s Rec</p>
+          ) : null}
+          <p>{selectedPlace.notes || 'No notes yet.'}</p>
+          {selectedPlace.address ? <p><strong>Address:</strong> {selectedPlace.address}</p> : null}
+          {selectedPlace.opening_hours ? (
+            <p>
+              <strong>Hours:</strong> {selectedPlace.opening_hours}
+            </p>
+          ) : null}
+          <div className="place-footer">
+            {selectedPlace.google_maps_link ? (
+              <a href={selectedPlace.google_maps_link} target="_blank" rel="noopener noreferrer">
+                Open in Google Maps
+              </a>
+            ) : null}
+            {selectedPlace.rating ? (
+              <span>
+                {selectedPlace.rating} ({selectedPlace.user_ratings_total || 0} reviews)
+              </span>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
+
+      <nav className="filter-bar" aria-label="Filter places">
+        <button
+          type="button"
+          className={`filter-button${selectedType === 'all' ? ' active' : ''}`}
+          onClick={() => setSelectedType('all')}
+        >
+          All
+        </button>
+        <button
+          type="button"
+          className={`filter-button${selectedType === 'coffee' ? ' active' : ''}`}
+          onClick={() => setSelectedType('coffee')}
+        >
+          Coffee
+        </button>
+        <button
+          type="button"
+          className={`filter-button${selectedType === 'food' ? ' active' : ''}`}
+          onClick={() => setSelectedType('food')}
+        >
+          Food
+        </button>
+        <button
+          type="button"
+          className={`filter-button${selectedType === 'others' ? ' active' : ''}`}
+          onClick={() => setSelectedType('others')}
+        >
+          Other
+        </button>
+      </nav>
+    </div>
+  );
+};
+
+function App() {
+  const [view, setView] = useState(() => viewFromPath(window.location.pathname));
+
+  const navigate = useCallback((nextView) => {
+    const path = nextView === 'map' ? '/' : `/${nextView}`;
+
+    if (window.location.pathname !== path) {
+      window.history.pushState({}, '', path);
+    }
+
+    setView(nextView);
+  }, []);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setView(viewFromPath(window.location.pathname));
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle('map-mode', view === 'map');
+    return () => document.body.classList.remove('map-mode');
+  }, [view]);
+
+  if (view === 'submit') {
+    return <SubmitPage onNavigate={navigate} />;
+  }
+
+  if (view === 'feature') {
+    return <FeaturePage onNavigate={navigate} />;
+  }
+
+  if (view === 'chat') {
+    return <ChatPage onNavigate={navigate} />;
+  }
+
+  if (view === 'about') {
+    return <AboutPage onNavigate={navigate} />;
+  }
+
+  return <MapView onNavigate={navigate} />;
 }
 
 export default App;
