@@ -75,35 +75,32 @@ describe('App', () => {
     expect(scoped.getByRole('button', { name: 'Other' })).toBeInTheDocument();
   });
 
-  test('navigates to submit form and exposes creator override for creator names', () => {
+  test('navigates to submit form and shows maintainer override controls', () => {
     render(<App />);
 
     fireEvent.click(screen.getByRole('button', { name: /Add a Place/i }));
 
     expect(screen.getByRole('heading', { name: /Add a Place/i })).toBeInTheDocument();
+    expect(screen.getByText(/Maintainer options/i)).toBeInTheDocument();
 
-    fireEvent.change(screen.getByLabelText(/Contributor Name/i), {
-      target: { value: 'Dea' },
+    const creatorToggle = screen.getByLabelText(/Mark as creator recommendation/i);
+    expect(creatorToggle).toBeDisabled();
+
+    fireEvent.change(screen.getByLabelText(/Maintainer access code \(optional\)/i), {
+      target: { value: 'test-code' },
     });
 
-    expect(
-      screen.getByLabelText(/Mark this as a Creator's Rec \(Harsh or Dea only\)/i),
-    ).toBeInTheDocument();
+    expect(screen.getByLabelText(/Mark as creator recommendation/i)).not.toBeDisabled();
   });
 
-  test('does not show creator override for non-creator names', () => {
+  test('does not reveal creator rules in public form copy', () => {
     render(<App />);
 
     fireEvent.click(screen.getByRole('button', { name: /Add a Place/i }));
 
-    fireEvent.change(screen.getByLabelText(/Contributor Name/i), {
-      target: { value: 'Someone Else' },
-    });
-
-    expect(screen.queryByLabelText(/Mark this as a Creator's Rec/i)).not.toBeInTheDocument();
     expect(
-      screen.getByText(/Creator override appears automatically when contributor name matches Harsh\/Dea./i),
-    ).toBeInTheDocument();
+      screen.queryByText(/Creator override appears automatically when contributor name matches Harsh\/Dea./i),
+    ).not.toBeInTheDocument();
   });
 
   test('opens no-login chat page from main map panel', () => {
@@ -115,5 +112,21 @@ describe('App', () => {
     expect(
       screen.getByText(/No login required\. Ava answers using submitted map data and cites matching places\./i),
     ).toBeInTheDocument();
+  });
+
+  test('about page includes creator profile links', () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole('button', { name: /About/i }));
+
+    expect(screen.getByRole('heading', { name: /About the Project/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /blog\.harsh17\.in/i })).toHaveAttribute(
+      'href',
+      'https://blog.harsh17.in/',
+    );
+    expect(screen.getByRole('link', { name: /deabardhoshi\.com/i })).toHaveAttribute(
+      'href',
+      'https://deabardhoshi.com/',
+    );
   });
 });

@@ -47,6 +47,7 @@ jobs:
           NETLIFY_ACCESS_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          CREATOR_ACCESS_CODES: ${{ secrets.CREATOR_ACCESS_CODES }}
         run: |
           python data_creation/auto_ingest_submissions.py
 

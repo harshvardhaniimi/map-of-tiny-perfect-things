@@ -107,13 +107,6 @@ body.map-mode {
   padding-left: 1.25rem;
 }
 
-.component-block {
-  border-top: 2px dashed var(--line);
-  border-bottom: 2px dashed var(--line);
-  margin: var(--space-3) 0;
-  padding: var(--space-2) 0;
-}
-
 .panel-actions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -317,26 +310,23 @@ body.map-mode {
   box-shadow: 1px 1px 0 var(--line);
 }
 
-.pixel-marker-wrapper {
+.emoji-marker-wrapper {
   background: transparent;
   border: 0;
 }
 
-.pixel-marker {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border: 3px solid var(--line);
-  background: var(--paper);
-  box-shadow: 2px 2px 0 var(--line);
-  font-size: 1.15rem;
-  transform: rotate(-3deg);
+.emoji-marker {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1;
+  transform: translate(-2px, -2px);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
 }
 
-.pixel-marker-creator {
-  background: var(--sun);
+.emoji-marker-creator {
+  filter:
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35))
+    drop-shadow(0 0 3px rgba(255, 179, 0, 0.8));
 }
 
 .content-page {
@@ -397,7 +387,6 @@ body.map-mode {
 }
 
 .pixel-form label,
-.creator-hint,
 .submit-note {
   display: grid;
   gap: 6px;
@@ -437,11 +426,28 @@ body.map-mode {
   height: 16px;
 }
 
-.creator-hint {
-  padding: 10px;
+.maintainer-options {
   border: 2px dashed var(--line);
+  padding: 10px;
   background: rgba(0, 0, 0, 0.04);
-  margin: 0;
+}
+
+.maintainer-options summary {
+  cursor: pointer;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.52rem;
+  line-height: 1.4;
+}
+
+.maintainer-options > label {
+  margin-top: 10px;
+}
+
+.maintainer-note {
+  margin: 8px 0 0;
+  font-family: 'VT323', monospace;
+  font-size: 1.15rem;
+  line-height: 1.2;
 }
 
 .submit-note {

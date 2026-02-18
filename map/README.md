@@ -8,6 +8,7 @@ Frontend for The Map of Tiny Perfect Things.
 - No-login place submission form (`/submit`) using Netlify Forms
 - No-login feature request form (`/feature`) using Netlify Forms
 - Native chat page (`/chat`) with retrieval over map data and Netlify Function model call
+- Maintainer-only creator override validation during ingestion (secret-code based)
 - Light pixel-art responsive UI for desktop and mobile
 
 ## Scripts

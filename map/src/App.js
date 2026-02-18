@@ -10,15 +10,6 @@ const DEFAULT_ZOOM = 10;
 const PLACE_FORM_NAME = 'place-submissions';
 const FEATURE_FORM_NAME = 'feature-requests';
 
-const CREATOR_ALIASES = new Set([
-  'harsh',
-  'harshvardhan',
-  'harshvardhaniimi',
-  'dea',
-  'deabardhoshi',
-  'deabhardoshi',
-]);
-
 const SUBMISSION_DEFAULTS = {
   contributorName: '',
   contributorEmail: '',
@@ -30,6 +21,7 @@ const SUBMISSION_DEFAULTS = {
   category: 'others',
   googleMapsLink: '',
   notes: '',
+  creatorAccessCode: '',
   creatorRec: false,
   botField: '',
 };
@@ -43,14 +35,6 @@ const FEATURE_DEFAULTS = {
   component: 'map web app',
   botField: '',
 };
-
-const normalizeCreatorName = (name) =>
-  name
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]/g, '');
-
-const isCreatorName = (name) => CREATOR_ALIASES.has(normalizeCreatorName(name));
 
 const encodeFormData = (payload) =>
   Object.entries(payload)
@@ -245,12 +229,12 @@ const useIsMobile = (breakpoint = 820) => {
   return isMobile;
 };
 
-const createPixelMarkerIcon = (emoji, creatorRec = false) =>
+const createEmojiMarkerIcon = (emoji, creatorRec = false) =>
   L.divIcon({
-    html: `<div class="pixel-marker${creatorRec ? ' pixel-marker-creator' : ''}">${emoji}</div>`,
-    className: 'pixel-marker-wrapper',
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
+    html: `<span class="emoji-marker${creatorRec ? ' emoji-marker-creator' : ''}">${emoji}</span>`,
+    className: 'emoji-marker-wrapper',
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
   });
 
 const SearchControl = () => {
@@ -382,7 +366,7 @@ const MapResizeFix = () => {
 const SubmitPage = ({ onNavigate }) => {
   const [formData, setFormData] = useState(SUBMISSION_DEFAULTS);
   const [status, setStatus] = useState('idle');
-  const canSetCreatorRec = isCreatorName(formData.contributorName);
+  const hasCreatorCode = formData.creatorAccessCode.trim().length > 0;
 
   const handleFieldChange = (event) => {
     const { name, value, type, checked } = event.target;
@@ -414,7 +398,8 @@ const SubmitPage = ({ onNavigate }) => {
         category: formData.category,
         google_maps_link: formData.googleMapsLink.trim(),
         notes: formData.notes.trim(),
-        creators_rec_requested: canSetCreatorRec && formData.creatorRec ? 'Yes' : 'No',
+        creator_access_code: formData.creatorAccessCode.trim(),
+        creators_rec_requested: hasCreatorCode && formData.creatorRec ? 'Yes' : 'No',
         'bot-field': formData.botField,
       });
       setStatus('success');
@@ -535,21 +520,30 @@ const SubmitPage = ({ onNavigate }) => {
           />
         </label>
 
-        {canSetCreatorRec ? (
+        <details className="maintainer-options">
+          <summary>Maintainer options</summary>
+          <label>
+            Maintainer access code (optional)
+            <input
+              type="password"
+              name="creatorAccessCode"
+              value={formData.creatorAccessCode}
+              onChange={handleFieldChange}
+              autoComplete="off"
+            />
+          </label>
           <label className="creator-toggle">
             <input
               type="checkbox"
               name="creatorRec"
               checked={formData.creatorRec}
               onChange={handleFieldChange}
+              disabled={!hasCreatorCode}
             />
-            Mark this as a Creator&apos;s Rec (Harsh or Dea only)
+            Mark as creator recommendation
           </label>
-        ) : (
-          <p className="creator-hint">
-            Creator override appears automatically when contributor name matches Harsh/Dea.
-          </p>
-        )}
+          <p className="maintainer-note">Creator overrides are validated server-side.</p>
+        </details>
 
         <button type="submit" className="pixel-button primary" disabled={status === 'submitting'}>
           {status === 'submitting' ? 'Submitting...' : 'Submit Place'}
@@ -825,6 +819,16 @@ const AboutPage = ({ onNavigate }) => (
       </article>
 
       <article>
+        <h2>Creators</h2>
+        <p>
+          Harshvardhan: <a href="https://blog.harsh17.in/" target="_blank" rel="noopener noreferrer">blog.harsh17.in</a>
+        </p>
+        <p>
+          Dea Bardhoshi: <a href="https://deabardhoshi.com/" target="_blank" rel="noopener noreferrer">deabardhoshi.com</a>
+        </p>
+      </article>
+
+      <article>
         <h2>Open Source</h2>
         <p>
           Source code is public, and submissions are collected in a moderation inbox on Netlify.
@@ -900,7 +904,7 @@ const MapView = ({ onNavigate }) => {
             <Marker
               key={`${place.google_place_id || place.name}-${lat}-${lng}-${index}`}
               position={[lat, lng]}
-              icon={createPixelMarkerIcon(getMarkerEmoji(place), place.creators_rec === 'Yes')}
+              icon={createEmojiMarkerIcon(getMarkerEmoji(place), place.creators_rec === 'Yes')}
               eventHandlers={{ click: () => handleMarkerClick(place) }}
             />
           );
@@ -928,16 +932,6 @@ const MapView = ({ onNavigate }) => {
               A living, crowd-powered atlas of coffee spots, food gems, and offbeat discoveries that
               feel like tiny perfect moments.
             </p>
-
-            <div className="component-block">
-              <h2>Project Components</h2>
-              <ul>
-                <li>Map Explorer for place discovery</li>
-                <li>No-login submission form</li>
-                <li>No-login Ava chat assistant</li>
-                <li>Feature request inbox</li>
-              </ul>
-            </div>
 
             <div className="panel-actions">
               <button type="button" className="pixel-button" onClick={() => onNavigate('submit')}>

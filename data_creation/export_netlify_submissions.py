@@ -105,6 +105,7 @@ def to_rows(submissions: List[Dict[str, object]]) -> List[Dict[str, str]]:
             "google_maps_link": str(data.get("google_maps_link", "")).strip(),
             "contributor_name": str(data.get("contributor_name", "")).strip(),
             "contributor_email": str(data.get("contributor_email", "")).strip(),
+            "creator_access_code": str(data.get("creator_access_code", "")).strip(),
             "creators_rec_requested": str(data.get("creators_rec_requested", "No")).strip() or "No",
         }
 
@@ -128,6 +129,7 @@ def write_csv(rows: List[Dict[str, str]], output_path: str) -> None:
         "google_maps_link",
         "contributor_name",
         "contributor_email",
+        "creator_access_code",
         "creators_rec_requested",
     ]
 
