@@ -114,12 +114,12 @@ describe('App', () => {
     ).toBeInTheDocument();
   });
 
-  test('chat returns no-data message for unknown city without fallback suffix', async () => {
+  test('chat returns no-data message for unknown city even with category in query', async () => {
     render(<App />);
 
     fireEvent.click(screen.getByRole('button', { name: /Ask Ava/i }));
     fireEvent.change(screen.getByLabelText(/Ask Ava/i), {
-      target: { value: 'any place suggestion in Dubai?' },
+      target: { value: 'any cafes in Dubai?' },
     });
     fireEvent.click(screen.getByRole('button', { name: /Send/i }));
 
