@@ -1,31 +1,122 @@
-# A Map of Tiny Perfect Things
+# The Map of Tiny Perfect Things
 
-Your stomach rumbles. Do you go to the Italian restaurant that you know and love, or the new Thai place that just opened up? Do you go to the cafe rated 4.6 stars on Google Maps that looks hip or the cafe that promises to provide an ambient reading environment? What about the momos stall that aren't even listed on Google Maps?
+A crowd-powered map of meaningful places: cafes, food spots, parks, museums, and other tiny perfect things discovered by real people.
 
-Is there an *Atlas Obscura* of restaurants, cafes, parks, hikes and viewpoints?
+## Organization
 
-Until now, the answer was no. But starting today, Dea and I present to the world the first iteration of "The Map of Tiny Perfect Things".
+- **Creators and maintainers:** Dea Bhardoshi and Harshvardhan
+- **Mission:** document places that feel memorable, not just highly rated
+- **Contribution model:** open submissions + maintainer review
 
-What are tiny perfect things?
+## Monorepo Structure
 
-Mark and Margaret had been living the same da over and over for several years. Every day, they woke up to the same routine where everyone, oblivious to what they did yesterday, did the exact same thing. Except the two of them. Eventually, Mark started making a map of the "tiny perfect things" in the world. Places where you had to be at the right time to observe something spectacular.
+- `map/`
+  - Public web app (React + Leaflet)
+  - Netlify-hosted no-login forms for place submissions and feature requests
+  - Native no-login chat page (`/chat`) with retrieval + Netlify Function backed by OpenAI
+- `master_data/`
+  - Source-of-truth dataset (`master_data.csv`, `master_data.json`)
+- `data_creation/`
+  - Data ingestion notebooks/scripts for moderation and merge workflows
+  - Includes Netlify form export script
+- `chatbot/`
+  - Local RAG experimentation utilities (Ollama + Chroma + Streamlit)
 
-This map captures some of them from our (and now your) own experience. No AI, no robots, no machines. Good old crowd-based knowledge.
+## What Changed
 
-### Adding New Places
+1. **Submission flow moved off Google Forms**
+- Replaced with Netlify Forms (`/submit`) so users do not need GitHub or any login.
+- Added feature request form (`/feature`) with same no-login approach.
 
-- Use Google Form to add new places: [Link](https://docs.google.com/forms/d/e/1FAIpQLSf3zX9ItXAS6JM4cO9JdrQFSpNtew-AETsG88M7jPOhexa-Dg/viewform)
+2. **Creator override on form**
+- If contributor name matches Harsh/Dea aliases, the form shows a Creator's Rec checkbox.
+- Requests are still reviewed before dataset merge.
 
-### Github Files Organisation
+3. **Native hosted chat**
+- New `/chat` page in the web app (no user login required).
+- Retrieval happens on submitted data.
+- Generation uses Netlify Function + OpenAI API key from deployment secrets.
+- Fallback mode still returns retrieval-based recommendations if model call fails.
 
-Here are some notes on how the files are organised here.
+4. **UI refresh**
+- New light pixel-art interface, mobile-friendly layout, and component-focused intro panel.
 
-1. `master_data` has the master data files in two formats: CSV and JSON. All apps (map, chatbots) should build from there. One source of truth.
-2. `data_creation` has Quarto (R) notebooks for getting data from [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSf3zX9ItXAS6JM4cO9JdrQFSpNtew-AETsG88M7jPOhexa-Dg/viewform) (its corresponding Google Sheets) to get the required information and add it to master data.
-3. `chatbot` has files related to GPT based chatbot.
+## Deployment (Netlify)
 
-### Ideas
+`map/` is designed for automatic Netlify deploys on push.
 
-If you have a concrete idea, raise an issue. When you do it, close it via a pull request/making a change.
+### Required Netlify env vars
 
-If you have a *maybe* idea, put it in Projects tracker.
+- `OPENAI_API_KEY` (for `map/netlify/functions/ask-ava.mjs`)
+
+### Optional env vars
+
+- `OPENAI_MODEL` (default: `gpt-5.2`)
+
+## Local Development
+
+### Web app
+
+```bash
+cd map
+npm install
+npm start
+```
+
+### Production build check
+
+```bash
+cd map
+npm run build
+```
+
+### Tests
+
+```bash
+cd map
+CI=true npm test
+```
+
+## Submission Moderation + Data Merge
+
+This is now automated.
+
+- Workflow: `.github/workflows/auto-sync-submissions.yml`
+- Schedule: every 6 hours (and manual `workflow_dispatch`)
+- Output: an auto PR with updated submission export + master dataset + map dataset copy + city docs
+
+Required GitHub Action secrets:
+- `NETLIFY_ACCESS_TOKEN`
+- `NETLIFY_SITE_ID`
+
+Optional secret:
+- `GOOGLE_PLACES_API_KEY` (if missing, fallback geocoding still runs via Nominatim)
+
+Manual fallback command:
+
+```bash
+python data_creation/auto_ingest_submissions.py
+```
+
+Notebook `data_creation/02_add_new_places.qmd` is now optional/manual-only.
+
+## Local Chatbot Utilities
+
+Production chat is in `map/`, but local experiments remain in `chatbot/`.
+
+```bash
+pip install -r chatbot/requirements.txt
+python chatbot/ingest.py
+streamlit run chatbot/main.py
+```
+
+## Security Status
+
+- Dependency updates were applied and critical vulnerabilities are currently **0** in the web app audit.
+- Remaining high/moderate findings are primarily from the legacy `react-scripts` toolchain.
+
+## Contribution Guidelines
+
+- Use no-login forms in the app for place submissions and feature requests.
+- For code changes, open PRs with focused commits and test/build evidence.
+- Keep `master_data/` as the canonical data source.
