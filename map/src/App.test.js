@@ -39,6 +39,20 @@ jest.mock('./master_data.json', () => [
     user_ratings_total: 200,
     google_maps_link: 'https://maps.google.com/test2',
   },
+  {
+    name: 'MG Road Cafe',
+    lat: 12.9716,
+    lng: 77.5946,
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    country: 'India',
+    type2: 'coffee',
+    notes: 'Great filter coffee in Bengaluru.',
+    google_place_id: 'test-place-3',
+    rating: 4.7,
+    user_ratings_total: 89,
+    google_maps_link: 'https://maps.google.com/test3',
+  },
 ]);
 
 describe('App', () => {
@@ -60,7 +74,7 @@ describe('App', () => {
     render(<App />);
 
     expect(screen.getByTestId('mock-map')).toBeInTheDocument();
-    expect(screen.getAllByTestId('mock-marker')).toHaveLength(2);
+    expect(screen.getAllByTestId('mock-marker')).toHaveLength(3);
   });
 
   test('renders all filter buttons', () => {
@@ -128,6 +142,23 @@ describe('App', () => {
     });
 
     expect(screen.queryByText(/Using retrieval-only fallback mode/i)).not.toBeInTheDocument();
+  });
+
+  test('chat matches Bangalore query to Bengaluru entries', async () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Ask Ava/i }));
+    fireEvent.change(screen.getByLabelText(/Ask Ava/i), {
+      target: { value: 'any cafes in Bangalore?' },
+    });
+    fireEvent.click(screen.getByRole('button', { name: /Send/i }));
+
+    await waitFor(() => {
+      expect(screen.getByText(/Best matches for "any cafes in Bangalore\?":/i)).toBeInTheDocument();
+    });
+    expect(screen.getByRole('link', { name: /MG Road Cafe \(Bengaluru\)/i })).toBeInTheDocument();
+
+    expect(screen.queryByText(/I do not have any submissions for Bangalore yet\./i)).not.toBeInTheDocument();
   });
 
   test('about page includes creator profile links', () => {
