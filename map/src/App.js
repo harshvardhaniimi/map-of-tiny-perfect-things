@@ -173,6 +173,8 @@ const extractRequestedLocation = (question) => {
 
 const findRelevantPlaces = (query, limit = 6) => {
   const queryTokens = tokenizeForQuery(query);
+  const requestedLocation = extractRequestedLocation(query);
+  const requestedLocationTokens = tokenize(requestedLocation).map(normalizeQueryToken);
 
   const scored = data
     .map((place) => {
@@ -182,6 +184,15 @@ const findRelevantPlaces = (query, limit = 6) => {
       const typeTokens = buildTypeTokenSet(place.type2);
       const nameTokens = toTokenSet(place.name);
       const supportTokens = toTokenSet([place.location, place.notes, place.address].join(' '));
+      const geoTokens = toTokenSet([place.city, place.state, place.country, place.location, place.address].join(' '));
+
+      if (
+        requestedLocationTokens.length > 0 &&
+        !requestedLocationTokens.every((token) => geoTokens.has(token))
+      ) {
+        return null;
+      }
+
       let score = 0;
       let matchedTokens = 0;
 
@@ -841,7 +852,7 @@ const ChatPage = ({ onNavigate }) => {
     }
 
     const sources = candidates
-      .slice(0, 6)
+      .slice(0, 5)
       .map((place) => ({
         label: `${place.name}${place.city ? ` (${place.city})` : ''}`,
         href: place.google_maps_link || '',
