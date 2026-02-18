@@ -47,10 +47,20 @@ export async function handler(event) {
     rating: item.rating || '',
   }));
 
+  if (clippedContext.length === 0) {
+    return json(200, {
+      answer:
+        "I do not have any matching places in the dataset yet. Try another city or submit a place through the Add a Place form.",
+      model: 'retrieval-only',
+      sources: 0,
+    });
+  }
+
   const systemPrompt =
     "You are Ava, assistant for The Map of Tiny Perfect Things. " +
     'Only answer from provided context. If context is insufficient, say so clearly. ' +
-    'Return concise practical recommendations in plain markdown.';
+    'Never invent places. If the user asks for a city that is not in context, explicitly say no entries exist for that city yet. ' +
+    'Write concise plain text, not markdown styling.';
 
   const userPrompt = [
     `Question: ${question}`,
@@ -61,7 +71,8 @@ export async function handler(event) {
     'Instructions:',
     '- Recommend 2 to 5 places when possible.',
     '- Mention city and one reason for each place.',
-    '- Keep response concise.',
+    '- If context does not support the requested location, say no data is available for that location yet.',
+    '- Keep response concise and plain text only.',
   ].join('\n');
 
   try {

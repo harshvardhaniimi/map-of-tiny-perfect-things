@@ -486,15 +486,16 @@ def _to_master_row(
     }
 
 
-def _fetch_submissions_csv(site_id: str, form_name: str, output_csv: str) -> int:
+def _fetch_submissions_csv(site_id: str, form_name: str, output_csv: str) -> Tuple[int, List[Dict[str, str]]]:
     if not site_id:
         raise RuntimeError("NETLIFY_SITE_ID/--site-id is required when export is enabled")
 
     form_id = get_form_id(site_id, form_name)
     submissions = get_submissions(form_id)
-    rows = to_rows(submissions)
-    write_csv(rows, output_csv)
-    return len(rows)
+    rows_with_codes = to_rows(submissions, include_creator_access_code=True)
+    rows_for_csv = to_rows(submissions, include_creator_access_code=False)
+    write_csv(rows_for_csv, output_csv, include_creator_access_code=False)
+    return len(rows_with_codes), rows_with_codes
 
 
 def _parse_timestamp(value: object) -> datetime:
@@ -553,10 +554,14 @@ def run(args: argparse.Namespace) -> int:
     os.makedirs(os.path.dirname(args.submissions_csv) or ".", exist_ok=True)
 
     fetched_count = 0
+    fetched_rows: Optional[List[Dict[str, str]]] = None
     if not args.skip_export:
-        fetched_count = _fetch_submissions_csv(args.site_id, args.form_name, args.submissions_csv)
+        fetched_count, fetched_rows = _fetch_submissions_csv(args.site_id, args.form_name, args.submissions_csv)
 
-    submissions_df = _read_csv_fallback(args.submissions_csv)
+    if fetched_rows is not None:
+        submissions_df = pd.DataFrame(fetched_rows)
+    else:
+        submissions_df = _read_csv_fallback(args.submissions_csv)
     submissions_df = _ensure_columns(
         submissions_df,
         [

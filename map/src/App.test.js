@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import App from './App';
 
 jest.mock('react-leaflet', () => ({
@@ -112,6 +112,22 @@ describe('App', () => {
     expect(
       screen.getByText(/No login required\. Ava answers using submitted map data and cites matching places\./i),
     ).toBeInTheDocument();
+  });
+
+  test('chat returns no-data message for unknown city without fallback suffix', async () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Ask Ava/i }));
+    fireEvent.change(screen.getByLabelText(/Ask Ava/i), {
+      target: { value: 'any place suggestion in Dubai?' },
+    });
+    fireEvent.click(screen.getByRole('button', { name: /Send/i }));
+
+    await waitFor(() => {
+      expect(screen.getByText(/I do not have any submissions for Dubai yet\./i)).toBeInTheDocument();
+    });
+
+    expect(screen.queryByText(/Using retrieval-only fallback mode/i)).not.toBeInTheDocument();
   });
 
   test('about page includes creator profile links', () => {

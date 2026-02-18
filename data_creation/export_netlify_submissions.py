@@ -83,7 +83,10 @@ def get_submissions(form_id: str) -> List[Dict[str, object]]:
     return submissions
 
 
-def to_rows(submissions: List[Dict[str, object]]) -> List[Dict[str, str]]:
+def to_rows(
+    submissions: List[Dict[str, object]],
+    include_creator_access_code: bool = False,
+) -> List[Dict[str, str]]:
     rows: List[Dict[str, str]] = []
 
     for submission in submissions:
@@ -91,7 +94,7 @@ def to_rows(submissions: List[Dict[str, object]]) -> List[Dict[str, str]]:
         if not isinstance(data, dict):
             data = {}
 
-        row = {
+        row: Dict[str, str] = {
             "submission_id": str(submission.get("id", "")),
             "number": str(submission.get("number", "")),
             "submitted_at": str(submission.get("created_at", "")),
@@ -105,16 +108,21 @@ def to_rows(submissions: List[Dict[str, object]]) -> List[Dict[str, str]]:
             "google_maps_link": str(data.get("google_maps_link", "")).strip(),
             "contributor_name": str(data.get("contributor_name", "")).strip(),
             "contributor_email": str(data.get("contributor_email", "")).strip(),
-            "creator_access_code": str(data.get("creator_access_code", "")).strip(),
             "creators_rec_requested": str(data.get("creators_rec_requested", "No")).strip() or "No",
         }
+        if include_creator_access_code:
+            row["creator_access_code"] = str(data.get("creator_access_code", "")).strip()
 
         rows.append(row)
 
     return rows
 
 
-def write_csv(rows: List[Dict[str, str]], output_path: str) -> None:
+def write_csv(
+    rows: List[Dict[str, str]],
+    output_path: str,
+    include_creator_access_code: bool = False,
+) -> None:
     fieldnames = [
         "submission_id",
         "number",
@@ -129,9 +137,10 @@ def write_csv(rows: List[Dict[str, str]], output_path: str) -> None:
         "google_maps_link",
         "contributor_name",
         "contributor_email",
-        "creator_access_code",
         "creators_rec_requested",
     ]
+    if include_creator_access_code:
+        fieldnames.insert(-1, "creator_access_code")
 
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
 
@@ -155,8 +164,8 @@ def main() -> int:
         print(f"Failed to fetch Netlify submissions: {exc}", file=sys.stderr)
         return 1
 
-    rows = to_rows(submissions)
-    write_csv(rows, args.output)
+    rows = to_rows(submissions, include_creator_access_code=False)
+    write_csv(rows, args.output, include_creator_access_code=False)
     print(f"Exported {len(rows)} submissions to {args.output}")
     return 0
 

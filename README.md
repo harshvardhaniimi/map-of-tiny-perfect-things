@@ -4,7 +4,8 @@ A crowd-powered map of meaningful places: cafes, food spots, parks, museums, and
 
 ## Organization
 
-- **Creators and maintainers:** Dea Bhardoshi and Harshvardhan
+- **Creators and maintainers:** Dea Bardhoshi and Harshvardhan
+- **Creator websites:** https://deabardhoshi.com/ and https://blog.harsh17.in/
 - **Mission:** document places that feel memorable, not just highly rated
 - **Contribution model:** open submissions + maintainer review
 
