@@ -36,6 +36,61 @@ const FEATURE_DEFAULTS = {
   botField: '',
 };
 
+const QUERY_STOPWORDS = new Set([
+  'a',
+  'an',
+  'any',
+  'are',
+  'around',
+  'at',
+  'best',
+  'can',
+  'do',
+  'for',
+  'get',
+  'give',
+  'good',
+  'hey',
+  'i',
+  'in',
+  'is',
+  'looking',
+  'me',
+  'near',
+  'need',
+  'of',
+  'on',
+  'place',
+  'places',
+  'please',
+  'recommend',
+  'recommendation',
+  'recommendations',
+  'show',
+  'suggest',
+  'suggestion',
+  'suggestions',
+  'the',
+  'to',
+  'want',
+  'what',
+  'where',
+  'which',
+  'with',
+  'you',
+]);
+
+const CATEGORY_ALIASES = {
+  cafe: 'coffee',
+  cafes: 'coffee',
+  espresso: 'coffee',
+  restaurant: 'food',
+  restaurants: 'food',
+  eat: 'food',
+};
+
+const CREATOR_QUERY_TOKENS = new Set(['creator', 'creators', 'harsh', 'dea']);
+
 const encodeFormData = (payload) =>
   Object.entries(payload)
     .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
@@ -67,48 +122,112 @@ const normalizeSearchText = (value) =>
 
 const tokenize = (value) => normalizeSearchText(value).split(' ').filter((token) => token.length > 1);
 
+const normalizeQueryToken = (token) => CATEGORY_ALIASES[token] || token;
+
+const tokenizeForQuery = (value) =>
+  tokenize(value)
+    .map((token) => normalizeQueryToken(token))
+    .filter((token) => token && !QUERY_STOPWORDS.has(token));
+
+const toTokenSet = (value) => new Set(tokenize(value));
+
+const buildTypeTokenSet = (placeType) => {
+  const tokens = toTokenSet(placeType);
+
+  if (tokens.has('coffee')) {
+    tokens.add('cafe');
+    tokens.add('cafes');
+    tokens.add('espresso');
+  }
+
+  if (tokens.has('food')) {
+    tokens.add('restaurant');
+    tokens.add('restaurants');
+    tokens.add('eat');
+  }
+
+  return tokens;
+};
+
+const extractRequestedLocation = (question) => {
+  const match = question.match(/\b(?:in|near|around|at)\s+([a-z][a-z\s.'-]{1,40})\b/i);
+  if (!match) {
+    return '';
+  }
+
+  const cleaned = match[1]
+    .replace(/\?+$/g, '')
+    .replace(/\b(?:please|thanks|thank|with|for)\b.*$/i, '')
+    .trim();
+
+  if (!cleaned) {
+    return '';
+  }
+
+  return cleaned
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+    .join(' ');
+};
+
 const findRelevantPlaces = (query, limit = 6) => {
-  const tokens = tokenize(query);
+  const queryTokens = tokenizeForQuery(query);
 
   const scored = data
     .map((place) => {
-      const searchable = normalizeSearchText(
-        [
-          place.name,
-          place.location,
-          place.city,
-          place.state,
-          place.country,
-          place.type2,
-          place.notes,
-          place.address,
-        ].join(' '),
-      );
-
+      const cityTokens = toTokenSet(place.city);
+      const stateTokens = toTokenSet(place.state);
+      const countryTokens = toTokenSet(place.country);
+      const typeTokens = buildTypeTokenSet(place.type2);
+      const nameTokens = toTokenSet(place.name);
+      const supportTokens = toTokenSet([place.location, place.notes, place.address].join(' '));
       let score = 0;
-      tokens.forEach((token) => {
-        if (searchable.includes(token)) {
-          score += 2;
+      let matchedTokens = 0;
+
+      queryTokens.forEach((token) => {
+        if (CREATOR_QUERY_TOKENS.has(token)) {
+          if (place.creators_rec === 'Yes') {
+            score += 6;
+            matchedTokens += 1;
+          }
+          return;
         }
 
-        if (normalizeSearchText(place.city).includes(token)) {
-          score += 3;
+        if (cityTokens.has(token)) {
+          score += 6;
+          matchedTokens += 1;
+          return;
         }
 
-        if (normalizeSearchText(place.type2).includes(token)) {
-          score += 3;
+        if (stateTokens.has(token) || countryTokens.has(token)) {
+          score += 5;
+          matchedTokens += 1;
+          return;
         }
 
-        if (
-          token === 'creator' &&
-          place.creators_rec === 'Yes'
-        ) {
+        if (typeTokens.has(token)) {
           score += 4;
+          matchedTokens += 1;
+          return;
+        }
+
+        if (nameTokens.has(token)) {
+          score += 3;
+          matchedTokens += 1;
+          return;
+        }
+
+        if (supportTokens.has(token)) {
+          score += 2;
+          matchedTokens += 1;
         }
       });
 
-      if (score === 0 && tokens.length === 0) {
-        score = 1;
+      if (queryTokens.length === 0) {
+        score = place.creators_rec === 'Yes' ? 2 : 1;
+      } else if (matchedTokens === 0) {
+        return null;
       }
 
       if (place.creators_rec === 'Yes') {
@@ -120,7 +239,7 @@ const findRelevantPlaces = (query, limit = 6) => {
         score,
       };
     })
-    .filter((item) => item.score > 0)
+    .filter((item) => item && item.score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
     .map((item) => item.place);
@@ -129,10 +248,16 @@ const findRelevantPlaces = (query, limit = 6) => {
 };
 
 const buildFallbackChatAnswer = (question, places) => {
+  const requestedLocation = extractRequestedLocation(question);
+
   if (!places.length) {
+    if (requestedLocation) {
+      return `I do not have any submissions for ${requestedLocation} yet. You can add one through the Add a Place form and I will include it once it is reviewed.`;
+    }
+
     return (
       "I couldn't find a close match in the dataset yet. " +
-      'Try adding city names, place type (coffee/food/other), or ask about creator picks.'
+      'Try adding a city name, place type (coffee/food/other), or asking for creator picks.'
     );
   }
 
@@ -141,16 +266,16 @@ const buildFallbackChatAnswer = (question, places) => {
     .map((place, index) => {
       const cityPart = place.city ? ` (${place.city})` : '';
       const note = place.notes ? place.notes : 'No notes yet.';
-      return `${index + 1}. **${place.name || 'Unnamed place'}${cityPart}** - ${note}`;
+      return `${index + 1}. ${place.name || 'Unnamed place'}${cityPart} - ${note}`;
     })
     .join('\n');
 
   return [
-    `Here are the best matches I found for: "${question}"`,
+    `Best matches for "${question}":`,
     '',
     bullets,
     '',
-    'Want better results? Add a city and preferred vibe (e.g. quiet cafe, creator rec, late-night food).',
+    'Want better results? Add a city and preferred vibe (for example: quiet cafe, creator rec, late-night food).',
   ].join('\n');
 };
 
@@ -706,13 +831,13 @@ const ChatPage = ({ onNavigate }) => {
     const candidates = findRelevantPlaces(question, 6);
 
     let answer = buildFallbackChatAnswer(question, candidates);
-    let usedModel = false;
 
-    try {
-      answer = await fetchModelChatAnswer(question, candidates);
-      usedModel = true;
-    } catch (error) {
-      console.info('Falling back to local retrieval response:', error);
+    if (candidates.length > 0) {
+      try {
+        answer = await fetchModelChatAnswer(question, candidates);
+      } catch (error) {
+        console.info('Falling back to local retrieval response:', error);
+      }
     }
 
     const sources = candidates
@@ -724,7 +849,7 @@ const ChatPage = ({ onNavigate }) => {
 
     const assistantMessage = {
       role: 'assistant',
-      content: usedModel ? answer : `${answer}\n\n_Using retrieval-only fallback mode._`,
+      content: answer,
       sources,
     };
 
@@ -821,10 +946,16 @@ const AboutPage = ({ onNavigate }) => (
       <article>
         <h2>Creators</h2>
         <p>
-          Harshvardhan: <a href="https://blog.harsh17.in/" target="_blank" rel="noopener noreferrer">blog.harsh17.in</a>
+          Harshvardhan builds the data and product systems behind the project.
         </p>
         <p>
-          Dea Bardhoshi: <a href="https://deabardhoshi.com/" target="_blank" rel="noopener noreferrer">deabardhoshi.com</a>
+          Website: <a href="https://blog.harsh17.in/" target="_blank" rel="noopener noreferrer">blog.harsh17.in</a>
+        </p>
+        <p>
+          Dea Bardhoshi leads curation and community storytelling for the map.
+        </p>
+        <p>
+          Website: <a href="https://deabardhoshi.com/" target="_blank" rel="noopener noreferrer">deabardhoshi.com</a>
         </p>
       </article>
 
