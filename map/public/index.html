@@ -90,10 +90,14 @@
     <!-- Hidden Netlify Forms (required for static form detection) -->
     <form
       name="place-submissions"
+      method="POST"
+      action="/"
+      netlify
       data-netlify="true"
       netlify-honeypot="bot-field"
       hidden
     >
+      <input type="hidden" name="form-name" value="place-submissions" />
       <input type="text" name="contributor_name" />
       <input type="email" name="contributor_email" />
       <input type="text" name="place_name" />
@@ -111,10 +115,14 @@
 
     <form
       name="feature-requests"
+      method="POST"
+      action="/"
+      netlify
       data-netlify="true"
       netlify-honeypot="bot-field"
       hidden
     >
+      <input type="hidden" name="form-name" value="feature-requests" />
       <input type="text" name="requester_name" />
       <input type="email" name="requester_email" />
       <input type="text" name="summary" />
