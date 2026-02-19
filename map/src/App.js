@@ -9,6 +9,7 @@ const DEFAULT_CENTER = [20, 0];
 const DEFAULT_ZOOM = 2;
 const PLACE_FORM_NAME = 'place-submissions';
 const FEATURE_FORM_NAME = 'feature-requests';
+const NETLIFY_FORM_ENDPOINT = '/netlify-forms.html';
 
 const SUBMISSION_DEFAULTS = {
   contributorName: '',
@@ -96,13 +97,10 @@ const LOCATION_TOKEN_ALIASES = {
   blr: ['bangalore', 'bengaluru'],
 };
 
-const encodeFormData = (payload) =>
-  Object.entries(payload)
-    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
-    .join('&');
+const encodeFormData = (payload) => new URLSearchParams(payload).toString();
 
 const submitNetlifyForm = async (formName, payload) => {
-  const response = await fetch('/', {
+  const response = await fetch(NETLIFY_FORM_ENDPOINT, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
@@ -526,10 +524,11 @@ const SubmitPage = ({ onNavigate }) => {
 
   const handleFieldChange = (event) => {
     const { name, value, type, checked } = event.target;
+    const fieldName = name === 'bot-field' ? 'botField' : name;
     setStatus('idle');
     setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value,
+      [fieldName]: type === 'checkbox' ? checked : value,
     }));
   };
 
@@ -584,14 +583,14 @@ const SubmitPage = ({ onNavigate }) => {
         onSubmit={handleSubmit}
         name={PLACE_FORM_NAME}
         method="POST"
-        action="/"
+        action={NETLIFY_FORM_ENDPOINT}
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value={PLACE_FORM_NAME} />
         <label className="hidden-field" aria-hidden="true">
           Don&apos;t fill this out if you&apos;re human
-          <input name="botField" value={formData.botField} onChange={handleFieldChange} tabIndex="-1" />
+          <input name="bot-field" value={formData.botField} onChange={handleFieldChange} tabIndex="-1" />
         </label>
 
         <label>
@@ -730,8 +729,9 @@ const FeaturePage = ({ onNavigate }) => {
 
   const handleFieldChange = (event) => {
     const { name, value } = event.target;
+    const fieldName = name === 'bot-field' ? 'botField' : name;
     setStatus('idle');
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [fieldName]: value }));
   };
 
   const handleSubmit = async (event) => {
@@ -778,14 +778,14 @@ const FeaturePage = ({ onNavigate }) => {
         onSubmit={handleSubmit}
         name={FEATURE_FORM_NAME}
         method="POST"
-        action="/"
+        action={NETLIFY_FORM_ENDPOINT}
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value={FEATURE_FORM_NAME} />
         <label className="hidden-field" aria-hidden="true">
           Don&apos;t fill this out if you&apos;re human
-          <input name="botField" value={formData.botField} onChange={handleFieldChange} tabIndex="-1" />
+          <input name="bot-field" value={formData.botField} onChange={handleFieldChange} tabIndex="-1" />
         </label>
 
         <label>

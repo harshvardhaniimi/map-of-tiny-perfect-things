@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netlify Forms Endpoint</title>
+  </head>
+  <body>
+    <p>This page registers Netlify forms for programmatic submissions.</p>
+
+    <form
+      name="place-submissions"
+      method="POST"
+      action="/netlify-forms.html"
+      netlify
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="place-submissions" />
+      <input type="text" name="contributor_name" />
+      <input type="email" name="contributor_email" />
+      <input type="text" name="place_name" />
+      <input type="text" name="location" />
+      <input type="text" name="city" />
+      <input type="text" name="state" />
+      <input type="text" name="country" />
+      <input type="text" name="category" />
+      <input type="text" name="google_maps_link" />
+      <input type="text" name="notes" />
+      <input type="text" name="creator_access_code" />
+      <input type="text" name="creators_rec_requested" />
+      <input type="text" name="bot-field" />
+      <button type="submit">Submit place</button>
+    </form>
+
+    <form
+      name="feature-requests"
+      method="POST"
+      action="/netlify-forms.html"
+      netlify
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="feature-requests" />
+      <input type="text" name="requester_name" />
+      <input type="email" name="requester_email" />
+      <input type="text" name="summary" />
+      <input type="text" name="problem" />
+      <input type="text" name="proposal" />
+      <input type="text" name="component" />
+      <input type="text" name="bot-field" />
+      <button type="submit">Submit feature</button>
+    </form>
+  </body>
+</html>

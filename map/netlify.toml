@@ -2,5 +2,8 @@
   command = "CI= npm run build"
   publish = "build/"
 
+[build.processing]
+  ignore_html_forms = false
+
 [functions]
   directory = "netlify/functions"
