@@ -5,8 +5,8 @@ import data from './master_data.json';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
 
-const DEFAULT_CENTER = [37.8803, -122.2699];
-const DEFAULT_ZOOM = 10;
+const DEFAULT_CENTER = [20, 0];
+const DEFAULT_ZOOM = 2;
 const PLACE_FORM_NAME = 'place-submissions';
 const FEATURE_FORM_NAME = 'feature-requests';
 
@@ -1004,12 +1004,43 @@ const MapView = ({ onNavigate }) => {
   const [selectedType, setSelectedType] = useState('all');
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
+  const [introPanelHeight, setIntroPanelHeight] = useState(0);
   const markerClickedRef = useRef(false);
+  const introPanelRef = useRef(null);
   const isMobile = useIsMobile();
 
   useEffect(() => {
     setPanelCollapsed(isMobile);
   }, [isMobile]);
+
+  useEffect(() => {
+    const panelElement = introPanelRef.current;
+    if (!panelElement) {
+      return undefined;
+    }
+
+    const syncPanelHeight = () => {
+      setIntroPanelHeight(Math.ceil(panelElement.getBoundingClientRect().height));
+    };
+
+    syncPanelHeight();
+
+    window.addEventListener('resize', syncPanelHeight);
+
+    if (typeof ResizeObserver === 'undefined') {
+      return () => {
+        window.removeEventListener('resize', syncPanelHeight);
+      };
+    }
+
+    const resizeObserver = new ResizeObserver(syncPanelHeight);
+    resizeObserver.observe(panelElement);
+
+    return () => {
+      window.removeEventListener('resize', syncPanelHeight);
+      resizeObserver.disconnect();
+    };
+  }, [panelCollapsed, isMobile]);
 
   const filteredData = useMemo(() => {
     if (selectedType === 'all') {
@@ -1041,7 +1072,10 @@ const MapView = ({ onNavigate }) => {
   }, []);
 
   return (
-    <div className="app-shell map-view">
+    <div
+      className="app-shell map-view"
+      style={{ '--intro-panel-height': `${introPanelHeight}px` }}
+    >
       <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} className="leaflet-root" zoomControl>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
@@ -1073,7 +1107,7 @@ const MapView = ({ onNavigate }) => {
         })}
       </MapContainer>
 
-      <aside className={`intro-panel${panelCollapsed ? ' collapsed' : ''}`}>
+      <aside className={`intro-panel${panelCollapsed ? ' collapsed' : ''}`} ref={introPanelRef}>
         <div className="panel-title-row">
           <h1>The Map of Tiny Perfect Things</h1>
           {isMobile ? (
