@@ -579,7 +579,15 @@ const SubmitPage = ({ onNavigate }) => {
         </p>
       </header>
 
-      <form className="pixel-form" onSubmit={handleSubmit} data-netlify="true" name={PLACE_FORM_NAME}>
+      <form
+        className="pixel-form"
+        onSubmit={handleSubmit}
+        name={PLACE_FORM_NAME}
+        method="POST"
+        action="/"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value={PLACE_FORM_NAME} />
         <label className="hidden-field" aria-hidden="true">
           Don&apos;t fill this out if you&apos;re human
@@ -765,7 +773,15 @@ const FeaturePage = ({ onNavigate }) => {
         </p>
       </header>
 
-      <form className="pixel-form" onSubmit={handleSubmit} data-netlify="true" name={FEATURE_FORM_NAME}>
+      <form
+        className="pixel-form"
+        onSubmit={handleSubmit}
+        name={FEATURE_FORM_NAME}
+        method="POST"
+        action="/"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value={FEATURE_FORM_NAME} />
         <label className="hidden-field" aria-hidden="true">
           Don&apos;t fill this out if you&apos;re human
