@@ -19,7 +19,7 @@ const SUBMISSION_DEFAULTS = {
   city: '',
   state: '',
   country: '',
-  category: 'others',
+  category: 'other',
   googleMapsLink: '',
   notes: '',
   creatorAccessCode: '',
@@ -153,11 +153,43 @@ const buildTypeTokenSet = (placeType) => {
     tokens.add('cafes');
     tokens.add('espresso');
   }
-
   if (tokens.has('food')) {
     tokens.add('restaurant');
     tokens.add('restaurants');
     tokens.add('eat');
+    tokens.add('bakery');
+  }
+  if (tokens.has('drinks')) {
+    tokens.add('bar');
+    tokens.add('bars');
+    tokens.add('pub');
+    tokens.add('cocktail');
+  }
+  if (tokens.has('culture')) {
+    tokens.add('museum');
+    tokens.add('library');
+    tokens.add('bookstore');
+    tokens.add('gallery');
+    tokens.add('church');
+  }
+  if (tokens.has('outdoors')) {
+    tokens.add('park');
+    tokens.add('nature');
+    tokens.add('garden');
+    tokens.add('trail');
+    tokens.add('hike');
+  }
+  if (tokens.has('shopping')) {
+    tokens.add('shop');
+    tokens.add('store');
+    tokens.add('mall');
+    tokens.add('market');
+  }
+  if (tokens.has('attraction')) {
+    tokens.add('landmark');
+    tokens.add('monument');
+    tokens.add('sightseeing');
+    tokens.add('tourist');
   }
 
   return tokens;
@@ -674,7 +706,12 @@ const SubmitPage = ({ onNavigate }) => {
           <select name="category" value={formData.category} onChange={handleFieldChange}>
             <option value="coffee">Coffee</option>
             <option value="food">Food</option>
-            <option value="others">Other</option>
+            <option value="drinks">Drinks</option>
+            <option value="culture">Culture</option>
+            <option value="outdoors">Outdoors</option>
+            <option value="shopping">Shopping</option>
+            <option value="attraction">Attraction</option>
+            <option value="other">Other</option>
           </select>
         </label>
 
@@ -1106,15 +1143,16 @@ const MapView = ({ onNavigate }) => {
       return '⭐';
     }
 
-    if (place.type2 === 'coffee') {
-      return '☕';
+    switch (place.type2) {
+      case 'coffee': return '☕';
+      case 'food': return '🍜';
+      case 'drinks': return '🍷';
+      case 'culture': return '🏛';
+      case 'outdoors': return '🌳';
+      case 'shopping': return '🛍';
+      case 'attraction': return '📍';
+      default: return '🗺';
     }
-
-    if (place.type2 === 'food') {
-      return '🍜';
-    }
-
-    return '🗺';
   };
 
   const handleMarkerClick = useCallback((place) => {
@@ -1235,34 +1273,26 @@ const MapView = ({ onNavigate }) => {
       ) : null}
 
       <nav className="filter-bar" aria-label="Filter places">
-        <button
-          type="button"
-          className={`filter-button${selectedType === 'all' ? ' active' : ''}`}
-          onClick={() => setSelectedType('all')}
-        >
-          All
-        </button>
-        <button
-          type="button"
-          className={`filter-button${selectedType === 'coffee' ? ' active' : ''}`}
-          onClick={() => setSelectedType('coffee')}
-        >
-          Coffee
-        </button>
-        <button
-          type="button"
-          className={`filter-button${selectedType === 'food' ? ' active' : ''}`}
-          onClick={() => setSelectedType('food')}
-        >
-          Food
-        </button>
-        <button
-          type="button"
-          className={`filter-button${selectedType === 'others' ? ' active' : ''}`}
-          onClick={() => setSelectedType('others')}
-        >
-          Other
-        </button>
+        {[
+          ['all', 'All'],
+          ['coffee', '☕ Coffee'],
+          ['food', '🍜 Food'],
+          ['drinks', '🍷 Drinks'],
+          ['culture', '🏛 Culture'],
+          ['outdoors', '🌳 Outdoors'],
+          ['shopping', '🛍 Shopping'],
+          ['attraction', '📍 Attraction'],
+          ['other', '🗺 Other'],
+        ].map(([value, label]) => (
+          <button
+            key={value}
+            type="button"
+            className={`filter-button${selectedType === value ? ' active' : ''}`}
+            onClick={() => setSelectedType(value)}
+          >
+            {label}
+          </button>
+        ))}
       </nav>
     </div>
   );

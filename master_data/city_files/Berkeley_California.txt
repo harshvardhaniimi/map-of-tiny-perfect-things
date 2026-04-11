@@ -128,7 +128,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Sleek spot with high quality beans and great espresso! Give their baked goods a try too.
 Address: Berkeley, CA, USA
-Rating:  with  ratings
+Rating: nan with nan ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=Berkeley,%20CA,%20USA&query_place_id=ChIJ00mFOjZ5hYARk-l1ppUV6pQ
 Opening Hours: 
 

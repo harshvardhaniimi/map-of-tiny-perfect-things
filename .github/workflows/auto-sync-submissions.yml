@@ -2,7 +2,8 @@ name: Auto Sync Place Submissions
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    # Run once daily (cron doesn't support 26h intervals; daily is the closest)
+    - cron: "17 8 * * *"
   workflow_dispatch:
 
 permissions:
@@ -57,33 +58,73 @@ jobs:
         if: steps.preflight.outputs.ready == 'true'
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json
+          import json, csv
           from pathlib import Path
 
           report_path = Path("data_creation/last_ingest_report.json")
           report = json.loads(report_path.read_text(encoding="utf-8"))
+          added = int(report.get('added_rows', 0))
           print(f"new_unique_submissions={int(report.get('new_unique_submissions', 0))}")
-          print(f"added_rows={int(report.get('added_rows', 0))}")
+          print(f"added_rows={added}")
           print(f"creator_overrides_applied={int(report.get('creator_overrides_applied', 0))}")
+
+          # Build a markdown list of newly added places from the diff
+          master_before = int(report.get('master_rows_before', 0))
+          master_after = int(report.get('master_rows_after', 0))
+          change_list = ""
+          if added > 0:
+              try:
+                  data = json.loads(Path("master_data/master_data.json").read_text(encoding="utf-8"))
+                  new_places = data[master_before:]
+                  lines = []
+                  for p in new_places:
+                      name = p.get("name", "Unknown")
+                      city = p.get("city", "")
+                      country = p.get("country", "")
+                      cat = p.get("type2", "other")
+                      loc = ", ".join(part for part in [city, country] if part)
+                      lines.append(f"- **{name}** ({loc}) [{cat}]")
+                  change_list = "\n".join(lines)
+              except Exception:
+                  change_list = f"- {added} new place(s) added"
+
+          # Write multiline output
+          import os
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"change_list<<CHANGELIST_EOF\n{change_list}\nCHANGELIST_EOF\n")
           PY
+
+      - name: Check for file changes
+        id: changes
+        if: steps.preflight.outputs.ready == 'true'
+        run: |
+          if git diff --quiet HEAD; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Create pull request
         id: create_pr
-        if: steps.preflight.outputs.ready == 'true'
+        if: steps.preflight.outputs.ready == 'true' && steps.changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           branch: codex/auto-place-submission-sync
           delete-branch: true
           commit-message: "chore(data): auto-sync place submissions"
-          title: "chore(data): auto-sync place submissions"
+          title: "chore(data): auto-sync ${{ steps.report.outputs.added_rows }} new place submission(s)"
           body: |
             Automated sync from Netlify place submissions.
 
-            This PR includes:
-            - fetched and de-duplicated form submissions
-            - enriched place metadata and coordinates
-            - updated master data files and map data copy
-            - refreshed city docs for chatbot context
+            **New submissions:** ${{ steps.report.outputs.new_unique_submissions }}
+            **Added to dataset:** ${{ steps.report.outputs.added_rows }}
+            **Creator overrides:** ${{ steps.report.outputs.creator_overrides_applied }}
+
+            ### Places added
+            ${{ steps.report.outputs.change_list }}
+
+            ---
+            *Pipeline: fetch → de-duplicate → enrich via Google Places API → update master data → refresh city docs*
           labels: |
             automated
             data
@@ -96,7 +137,7 @@ jobs:
             map/src/master_data.json
 
       - name: Email maintainers on new submissions
-        if: steps.preflight.outputs.ready == 'true' && steps.report.outputs.added_rows != '0' && steps.create_pr.outputs.pull-request-operation != 'none'
+        if: steps.preflight.outputs.ready == 'true' && steps.changes.outputs.has_changes == 'true' && steps.report.outputs.added_rows != '0'
         continue-on-error: true
         env:
           SMTP_SERVER: ${{ secrets.NOTIFY_SMTP_SERVER }}
