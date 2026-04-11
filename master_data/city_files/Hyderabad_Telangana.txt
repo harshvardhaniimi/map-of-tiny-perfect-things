@@ -6,86 +6,86 @@ Name: Malkam Cheruvu
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Quiet and clean park with a lake to walk around, may catch a good sunset when not cloudy.
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/tLKgsDrfQzVgtMXA8
-Opening Hours: nan
+Opening Hours: 
 
 Name: Roast 24 Seven
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Coffee provided with all popular methods of coffee making, amazing taste.
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/WtUJoR4H31hQNYsHA?g_st=ac
-Opening Hours: nan
+Opening Hours: 
 
 Name: The Coforge Public Library
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Well maintained public library with no gadgets, no external books allowed, just sit, read and enjoy silently. No fees required for entering and browsing books, only refundable deposit in case you want to borrow books. Absolutely refreshing as a third place.
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/Fyb6gg7baxfuzVsQ8?g_st=ac
-Opening Hours: nan
+Opening Hours: 
 
 Name: Broadway The Brewery
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Hands down the best brewery of Hyderabad, enjoyed it more for a day time drinking and vibes. You can never go wrong with the food, anything you order will be delicious - highlight-puffpastry base pizza- , needless to say beer is must try.
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/Fyb6gg7baxfuzVsQ8?g_st=ac
-Opening Hours: nan
+Opening Hours: 
 
 Name: 10 Downing Street
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Nice pub with different settings whether you want loud music, quieter seating with a view, rooftop with screening or dance floor room. Experienced staff and food that has never disappointed.
 Address: 10 Downing Street, Gachibowli - Miyapur Highway, Studiorigin - Interior Designer in Hyderabad, Ward 106 Serilingampally, Hyderabad, Serilingampalle mandal, Ranga Reddy, Telangana, 500084, India
-Rating: nan with nan ratings
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/Fyb6gg7baxfuzVsQ8?g_st=ac
-Opening Hours: nan
+Opening Hours: 
 
 Name: Karafa
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Both good coffee and good food
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/bY2WZwnztKkouEeG6
-Opening Hours: nan
+Opening Hours: 
 
 Name: True Black
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Coffee place
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/NEKb7TfKfAuLopAu8?g_st=ac
-Opening Hours: nan
+Opening Hours: 
 
 Name: Yum Yum Tree
 City: Hyderabad
 State: Telangana
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Mandi and fried fish
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://maps.app.goo.gl/Fyb6gg7baxfuzVsQ8?g_st=ac
-Opening Hours: nan
+Opening Hours:

@@ -6,218 +6,218 @@ Name: Museum of Reclaimed Urban Space
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A hidden place on the history of top-down action, especially in urban planning and environmental issues. Kinda cool snapshot of East Village's history.
 Address: 155 Loisaida Ave, New York, NY 10009, United States
 Rating: 4.7 with 78.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=155%20Loisaida%20Ave,%20New%20York,%20NY%2010009,%20United%20States&query_place_id=ChIJCYNcT3dZwokRghlU3rGC_-o
 Opening Hours: Monday: Closed
- Tuesday: Closed
- Wednesday: 12:00âââ5:30â¯PM
- Thursday: 12:00âââ5:30â¯PM
- Friday: 12:00âââ5:30â¯PM
- Saturday: 12:00âââ5:30â¯PM
- Sunday: 12:00âââ5:30â¯PM
+Tuesday: Closed
+Wednesday: 12:00 - 5:30 PM
+Thursday: 12:00 - 5:30 PM
+Friday: 12:00 - 5:30 PM
+Saturday: 12:00 - 5:30 PM
+Sunday: 12:00 - 5:30 PM
 
 Name: Cooper Hewitt Smithsonian Design Museum
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A museum dedicated to design: exhibits starting from data viz from WEB Du Bois to the history of interior decoration, you will learn cool stuff about how design affects our lives.
 Address: 2 E 91st St, New York, NY 10128, United States
 Rating: 4.5 with 2612.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2%20E%2091st%20St,%20New%20York,%20NY%2010128,%20United%20States&query_place_id=ChIJsT8qSaJYwokR-m20OGJUKCA
-Opening Hours: Monday: 10:00â¯AMâââ6:00â¯PM
- Tuesday: 10:00â¯AMâââ6:00â¯PM
- Wednesday: 10:00â¯AMâââ6:00â¯PM
- Thursday: 10:00â¯AMâââ6:00â¯PM
- Friday: 10:00â¯AMâââ6:00â¯PM
- Saturday: 10:00â¯AMâââ6:00â¯PM
- Sunday: 10:00â¯AMâââ6:00â¯PM
+Opening Hours: Monday: 10:00 AM - 6:00 PM
+Tuesday: 10:00 AM - 6:00 PM
+Wednesday: 10:00 AM - 6:00 PM
+Thursday: 10:00 AM - 6:00 PM
+Friday: 10:00 AM - 6:00 PM
+Saturday: 10:00 AM - 6:00 PM
+Sunday: 10:00 AM - 6:00 PM
 
 Name: Museum of the City of New York
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A tribute to the complex and varied history of NYC, my fave exhibits were the multimedia ones using interactive maps to show how the city has changed over the centuries.
 Address: 1220 5th Ave, New York, NY 10029, United States
 Rating: 4.5 with 4871.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1220%205th%20Ave,%20New%20York,%20NY%2010029,%20United%20States&query_place_id=ChIJi4hYtB32wokR1Npx_Tv7phk
-Opening Hours: Monday: 10:00â¯AMâââ5:00â¯PM
- Tuesday: Closed
- Wednesday: Closed
- Thursday: 10:00â¯AMâââ9:00â¯PM
- Friday: 10:00â¯AMâââ5:00â¯PM
- Saturday: 10:00â¯AMâââ5:00â¯PM
- Sunday: 10:00â¯AMâââ5:00â¯PM
+Opening Hours: Monday: 10:00 AM - 5:00 PM
+Tuesday: Closed
+Wednesday: Closed
+Thursday: 10:00 AM - 9:00 PM
+Friday: 10:00 AM - 5:00 PM
+Saturday: 10:00 AM - 5:00 PM
+Sunday: 10:00 AM - 5:00 PM
 
 Name: Lincoln Center for the Performing Arts
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A venue for cool events: concerts, operas, theater. Checkout some of their summertime events for our fix of classical music!
 Address: Lincoln Center Plaza, New York, NY 10023, United States
 Rating: 4.8 with 18132.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=Lincoln%20Center%20Plaza,%20New%20York,%20NY%2010023,%20United%20States&query_place_id=ChIJN6W-X_VYwokRTqwcBnTw1Uk
-Opening Hours: nan
+Opening Hours: 
 
 Name: Mysterious Book Shop
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A bookstore dedicated to the mystery genre. All sorts of novels, from sci-fi mystery to historical to romantic spy stories. They often have interesting events as well.
 Address: 58 Warren St, New York, NY 10007, United States
 Rating: 4.7 with 361.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=58%20Warren%20St,%20New%20York,%20NY%2010007,%20United%20States&query_place_id=ChIJbZ8tKB9awokRyPUoMpXSycs
-Opening Hours: Monday: 11:00â¯AMâââ7:00â¯PM
- Tuesday: 11:00â¯AMâââ7:00â¯PM
- Wednesday: 11:00â¯AMâââ7:00â¯PM
- Thursday: 11:00â¯AMâââ7:00â¯PM
- Friday: 11:00â¯AMâââ7:00â¯PM
- Saturday: 11:00â¯AMâââ7:00â¯PM
- Sunday: Closed
+Opening Hours: Monday: 11:00 AM - 7:00 PM
+Tuesday: 11:00 AM - 7:00 PM
+Wednesday: 11:00 AM - 7:00 PM
+Thursday: 11:00 AM - 7:00 PM
+Friday: 11:00 AM - 7:00 PM
+Saturday: 11:00 AM - 7:00 PM
+Sunday: Closed
 
 Name: Poster House
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A museum dedicated to posters, with some interesting exhibits such as their Japan in the 20th century or the one dedicated to the Black Panther movements. Interesting to see how posters reflect the broader state of the society that they come from or how they become tools for activism.
 Address: 119 W 23rd St, New York, NY 10011, United States
 Rating: 4.7 with 447.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=119%20W%2023rd%20St,%20New%20York,%20NY%2010011,%20United%20States&query_place_id=ChIJ6UitwqRZwokR2UuUi8NrdAg
-Opening Hours: nan
+Opening Hours: 
 
 Name: New York Transit Museum
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Interesting museum dedicated to the history of NYC's subways. Go for their collection of real subway cars or their cool exhibits talking about all sorts of subway-related things, like turnstiles, fake money people used or things that workers found when digging underground during construction.
 Address: 99 Schermerhorn St, Brooklyn, NY 11201, United States
 Rating: 4.6 with 4702.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=99%20Schermerhorn%20St,%20Brooklyn,%20NY%2011201,%20United%20States&query_place_id=ChIJdThqNVVawokRFk58UQOvtuM
 Opening Hours: Monday: Closed
- Tuesday: Closed
- Wednesday: Closed
- Thursday: 10:00â¯AMâââ4:00â¯PM
- Friday: 10:00â¯AMâââ4:00â¯PM
- Saturday: 10:00â¯AMâââ4:00â¯PM
- Sunday: 10:00â¯AMâââ4:00â¯PM
+Tuesday: Closed
+Wednesday: Closed
+Thursday: 10:00 AM - 4:00 PM
+Friday: 10:00 AM - 4:00 PM
+Saturday: 10:00 AM - 4:00 PM
+Sunday: 10:00 AM - 4:00 PM
 
 Name: Fellini Coffee
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: New coffee shop in an interesting tiny triangular building with a scattering of chairs. Sip on a coffee or lemonade and take in the sounds and sights of Greenwich Village.
 Address: 174 7th Ave S, New York, NY 10014, United States
 Rating: 4.4 with 47.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=174%207th%20Ave%20S,%20New%20York,%20NY%2010014,%20United%20States&query_place_id=ChIJ-wdgG0hZwokRCMFcDSA7EX4
-Opening Hours: Monday: 8:00â¯AMâââ11:00â¯PM
- Tuesday: 8:00â¯AMâââ11:00â¯PM
- Wednesday: 8:00â¯AMâââ11:00â¯PM
- Thursday: 8:00â¯AMâââ11:00â¯PM
- Friday: 8:00â¯AMâââ11:00â¯PM
- Saturday: 8:00â¯AMâââ11:00â¯PM
- Sunday: 8:30â¯AMâââ11:00â¯PM
+Opening Hours: Monday: 8:00 AM - 11:00 PM
+Tuesday: 8:00 AM - 11:00 PM
+Wednesday: 8:00 AM - 11:00 PM
+Thursday: 8:00 AM - 11:00 PM
+Friday: 8:00 AM - 11:00 PM
+Saturday: 8:00 AM - 11:00 PM
+Sunday: 8:30 AM - 11:00 PM
 
 Name: Gasoline Alley Coffee
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Interesting alley coffee shop with great coffee and space for reading and taking in the sights of NYC.
 Address: 325 Lafayette St, New York, NY 10012, United States
 Rating: 4.6 with 464.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=325%20Lafayette%20St,%20New%20York,%20NY%2010012,%20United%20States&query_place_id=ChIJu0pLiI9ZwokRHb_t5VKxqy8
-Opening Hours: Monday: 7:00â¯AMâââ7:00â¯PM
- Tuesday: 7:00â¯AMâââ7:00â¯PM
- Wednesday: 7:00â¯AMâââ7:00â¯PM
- Thursday: 7:00â¯AMâââ7:00â¯PM
- Friday: 7:00â¯AMâââ7:00â¯PM
- Saturday: 8:00â¯AMâââ7:00â¯PM
- Sunday: 8:00â¯AMâââ7:00â¯PM
+Opening Hours: Monday: 7:00 AM - 7:00 PM
+Tuesday: 7:00 AM - 7:00 PM
+Wednesday: 7:00 AM - 7:00 PM
+Thursday: 7:00 AM - 7:00 PM
+Friday: 7:00 AM - 7:00 PM
+Saturday: 8:00 AM - 7:00 PM
+Sunday: 8:00 AM - 7:00 PM
 
-Name: Joeâs Pizza
+Name: Joe’s Pizza
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A classic representation of a New York slice: cheap and delicious pizza (since the 70s).
 Address: 7 Carmine St, New York, NY 10014, United States
 Rating: 4.5 with 7786.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=7%20Carmine%20St,%20New%20York,%20NY%2010014,%20United%20States&query_place_id=ChIJ8Q2WSpJZwokRQz-bYYgEskM
-Opening Hours: Monday: 10:00â¯AMâââ3:00â¯AM
- Tuesday: 10:00â¯AMâââ3:00â¯AM
- Wednesday: 10:00â¯AMâââ3:00â¯AM
- Thursday: 10:00â¯AMâââ3:00â¯AM
- Friday: 10:00â¯AMâââ5:00â¯AM
- Saturday: 10:00â¯AMâââ5:00â¯AM
- Sunday: 10:00â¯AMâââ3:00â¯AM
+Opening Hours: Monday: 10:00 AM - 3:00 AM
+Tuesday: 10:00 AM - 3:00 AM
+Wednesday: 10:00 AM - 3:00 AM
+Thursday: 10:00 AM - 3:00 AM
+Friday: 10:00 AM - 5:00 AM
+Saturday: 10:00 AM - 5:00 AM
+Sunday: 10:00 AM - 3:00 AM
 
 Name: Brooklyn Suya
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: A West African spot that offers an explosion of flavors in their bowls. Everything was fresh and really tasty.
 Address: 717 Franklin Ave, Brooklyn, NY 11238, United States
 Rating: 4.6 with 327.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=717%20Franklin%20Ave,%20Brooklyn,%20NY%2011238,%20United%20States&query_place_id=ChIJLauqb4B8wokRwrSsm4hGNTM
-Opening Hours: Monday: 12:00âââ9:00â¯PM
- Tuesday: 12:00âââ9:00â¯PM
- Wednesday: 12:00âââ9:00â¯PM
- Thursday: 12:00âââ9:00â¯PM
- Friday: 12:00âââ9:00â¯PM
- Saturday: 12:00âââ9:00â¯PM
- Sunday: 12:00âââ9:00â¯PM
+Opening Hours: Monday: 12:00 - 9:00 PM
+Tuesday: 12:00 - 9:00 PM
+Wednesday: 12:00 - 9:00 PM
+Thursday: 12:00 - 9:00 PM
+Friday: 12:00 - 9:00 PM
+Saturday: 12:00 - 9:00 PM
+Sunday: 12:00 - 9:00 PM
 
 Name: Sushi by M
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: On the more affordable side of omakase spots. Very tasty sushi with some interesting explorations of flavors as you go through the pieces.
 Address: 300 E 5th St, New York, NY 10003, United States
 Rating: 4.5 with 694.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=300%20E%205th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJk2lnfqxZwokR33xBYJtyR_E
-Opening Hours: Monday: 12:00âââ3:00â¯PM, 5:00âââ11:00â¯PM
- Tuesday: 12:00âââ3:00â¯PM, 5:00âââ11:00â¯PM
- Wednesday: 12:00âââ3:00â¯PM, 5:00âââ11:00â¯PM
- Thursday: 12:00âââ3:00â¯PM, 5:00âââ11:00â¯PM
- Friday: 12:00âââ3:00â¯PM, 5:00âââ11:00â¯PM
- Saturday: 12:00âââ3:00â¯PM, 5:00âââ11:00â¯PM
- Sunday: 12:00âââ3:00â¯PM, 5:00âââ11:00â¯PM
+Opening Hours: Monday: 12:00 - 3:00 PM, 5:00 - 11:00 PM
+Tuesday: 12:00 - 3:00 PM, 5:00 - 11:00 PM
+Wednesday: 12:00 - 3:00 PM, 5:00 - 11:00 PM
+Thursday: 12:00 - 3:00 PM, 5:00 - 11:00 PM
+Friday: 12:00 - 3:00 PM, 5:00 - 11:00 PM
+Saturday: 12:00 - 3:00 PM, 5:00 - 11:00 PM
+Sunday: 12:00 - 3:00 PM, 5:00 - 11:00 PM
 
 Name: Sunday C&C Eatery
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Hidden vegan spot in a tiny tiny food court: great plates with cool combinations of flavors. I recommend the cachapa: an arepa recipe with mozzarella and ssamjang.
 Address: 1398 C St, Knoxville, TN 37924, United States
 Rating: 4.9 with 18.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1398%20C%20St,%20Knoxville,%20TN%2037924,%20United%20States&query_place_id=ChIJoeFXiMcTXIgRws7dGpfNB9o
 Opening Hours: Monday: Closed
- Tuesday: Closed
- Wednesday: 6:30âââ8:30â¯PM
- Thursday: Closed
- Friday: Closed
- Saturday: Closed
- Sunday: 10:00â¯AMâââ12:30â¯PM
+Tuesday: Closed
+Wednesday: 6:30 - 8:30 PM
+Thursday: Closed
+Friday: Closed
+Saturday: Closed
+Sunday: 10:00 AM - 12:30 PM
 
 Name: Suki (Katsu Katsu)
 City: New York
 State: New York
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Michelin-starred but affordable Japanese curry: super fresh, super tasty. The chicken curry is my go to.
 Address: 32 St Marks Pl, New York, NY 10003, United States
 Rating: 4.2 with 303.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=32%20St%20Marks%20Pl,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJI6Fyq0dZwokRzHGWG9_YM50
-Opening Hours: nan
+Opening Hours:
