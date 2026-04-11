@@ -437,7 +437,7 @@ def _write_city_files(df: pd.DataFrame, output_dir: str) -> None:
 
 
 def _write_json_records(df: pd.DataFrame, output_path: str) -> None:
-    records = df.to_dict(orient="records")
+    records = df.fillna("").to_dict(orient="records")
     with open(output_path, "w", encoding="utf-8") as fh:
         json.dump(records, fh, ensure_ascii=False)
 
