@@ -42,6 +42,7 @@ jobs:
           fi
 
       - name: Run automated ingestion
+        id: ingest
         if: steps.preflight.outputs.ready == 'true'
         env:
           NETLIFY_ACCESS_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
@@ -51,7 +52,23 @@ jobs:
         run: |
           python data_creation/auto_ingest_submissions.py
 
+      - name: Read ingest report
+        id: report
+        if: steps.preflight.outputs.ready == 'true'
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+
+          report_path = Path("data_creation/last_ingest_report.json")
+          report = json.loads(report_path.read_text(encoding="utf-8"))
+          print(f"new_unique_submissions={int(report.get('new_unique_submissions', 0))}")
+          print(f"added_rows={int(report.get('added_rows', 0))}")
+          print(f"creator_overrides_applied={int(report.get('creator_overrides_applied', 0))}")
+          PY
+
       - name: Create pull request
+        id: create_pr
         if: steps.preflight.outputs.ready == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
@@ -77,3 +94,24 @@ jobs:
             master_data/master_data.json
             master_data/city_files/*.txt
             map/src/master_data.json
+
+      - name: Email maintainers on new submissions
+        if: steps.preflight.outputs.ready == 'true' && steps.report.outputs.added_rows != '0' && steps.create_pr.outputs.pull-request-operation != 'none' && secrets.NOTIFY_SMTP_SERVER != '' && secrets.NOTIFY_SMTP_PORT != '' && secrets.NOTIFY_SMTP_USERNAME != '' && secrets.NOTIFY_SMTP_PASSWORD != '' && secrets.NOTIFY_SMTP_FROM != ''
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.NOTIFY_SMTP_SERVER }}
+          server_port: ${{ secrets.NOTIFY_SMTP_PORT }}
+          username: ${{ secrets.NOTIFY_SMTP_USERNAME }}
+          password: ${{ secrets.NOTIFY_SMTP_PASSWORD }}
+          subject: "[MTPT] ${{ steps.report.outputs.added_rows }} new place submission(s) ingested"
+          to: hvsc1708@gmail.com, dea.bardhoshi@berkeley.edu
+          from: ${{ secrets.NOTIFY_SMTP_FROM }}
+          body: |
+            The auto-sync workflow ingested new place submissions.
+
+            New unique submissions: ${{ steps.report.outputs.new_unique_submissions }}
+            Added rows to dataset: ${{ steps.report.outputs.added_rows }}
+            Creator overrides applied: ${{ steps.report.outputs.creator_overrides_applied }}
+
+            Pull request: ${{ steps.create_pr.outputs.pull-request-url }}
+            Workflow run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}

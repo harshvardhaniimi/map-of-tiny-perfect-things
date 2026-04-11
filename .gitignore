@@ -10,3 +10,6 @@ map/.env
 chatbot/.streamlit/secrets.toml
 chatbot/openai_key.txt
 map/node_modules/
+
+# Local Netlify folder
+.netlify

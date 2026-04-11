@@ -92,8 +92,17 @@ Required GitHub Action secrets:
 - `NETLIFY_SITE_ID`
 - `CREATOR_ACCESS_CODES` (comma-separated maintainer codes for creator override validation)
 
+If `NETLIFY_ACCESS_TOKEN` or `NETLIFY_SITE_ID` is missing, the workflow run succeeds but skips ingestion and PR creation.
+
 Optional secret:
 - `GOOGLE_PLACES_API_KEY` (if missing, fallback geocoding still runs via Nominatim)
+
+Optional email notifications (sent only when new rows are ingested and a PR is created/updated):
+- `NOTIFY_SMTP_SERVER`
+- `NOTIFY_SMTP_PORT`
+- `NOTIFY_SMTP_USERNAME`
+- `NOTIFY_SMTP_PASSWORD`
+- `NOTIFY_SMTP_FROM`
 
 Manual fallback command:
 
