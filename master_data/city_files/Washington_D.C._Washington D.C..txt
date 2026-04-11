@@ -8,14 +8,14 @@ State: Washington D.C.
 Country: United States of America
 Creator's Rec: 
 Notes: Great DC coffee! Their espresso was really good: bright and complex. A good afternoon coffee option for that post-lunch lethargic feeling.
-Address: 2000 L St NW, Washington, DC 20036, United States
-Rating: 4.1 with 175.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2000%20L%20St%20NW,%20Washington,%20DC%2020036,%20United%20States&query_place_id=ChIJ7VQx7Xq3t4kR4BpEdS54OQs
-Opening Hours: Monday: 7:00 AM - 6:00 PM
-Tuesday: 7:00 AM - 6:00 PM
-Wednesday: 7:00 AM - 6:00 PM
-Thursday: 7:00 AM - 6:00 PM
-Friday: 7:00 AM - 6:00 PM
+Address: 2000 L St NW, Washington, DC 20036, USA
+Rating: 3.9 with 338 ratings
+Google Maps Link: https://maps.google.com/?cid=808809749020941024
+Opening Hours: Monday: 7:00 AM - 7:00 PM
+Tuesday: 7:00 AM - 7:00 PM
+Wednesday: 7:00 AM - 7:00 PM
+Thursday: 7:00 AM - 7:00 PM
+Friday: 7:00 AM - 7:00 PM
 Saturday: 7:00 AM - 6:00 PM
 Sunday: 7:00 AM - 6:00 PM
 
@@ -25,16 +25,16 @@ State: Washington D.C.
 Country: United States of America
 Creator's Rec: Yes
 Notes: One of DC's best coffee shops: sit in their glass cubicles by the window watching the world go by having a snack and drinking a nice afternoon coffee.
-Address: 1101 Connecticut Ave NW, Washington, DC 20036, United States
-Rating: 4.2 with 240.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1101%20Connecticut%20Ave%20NW,%20Washington,%20DC%2020036,%20United%20States&query_place_id=ChIJJaEe5Dy3t4kRtsUGWUb6phg
-Opening Hours: Monday: 7:00 AM - 5:00 PM
-Tuesday: 7:00 AM - 5:00 PM
-Wednesday: 7:00 AM - 5:00 PM
-Thursday: 7:00 AM - 5:00 PM
-Friday: 7:00 AM - 5:00 PM
-Saturday: 8:00 AM - 4:00 PM
-Sunday: 8:00 AM - 4:00 PM
+Address: 443 7th St NW, Washington, DC 20004, USA
+Rating: 4 with 576 ratings
+Google Maps Link: https://maps.google.com/?cid=12169068223179599954
+Opening Hours: Monday: 6:00 AM - 7:00 PM
+Tuesday: 6:00 AM - 7:00 PM
+Wednesday: 6:00 AM - 7:00 PM
+Thursday: 6:00 AM - 7:00 PM
+Friday: 6:00 AM - 8:00 PM
+Saturday: 7:00 AM - 8:00 PM
+Sunday: 7:00 AM - 7:00 PM
 
 Name: George’s King of Falafel and Cheesesteak
 City: Washington D.C.
@@ -42,16 +42,16 @@ State: Washington D.C.
 Country: United States of America
 Creator's Rec: 
 Notes: Great shawarma: very filling and fresh!
-Address: 1205 28th St NW, Washington, DC 20007, United States
-Rating: 4.4 with 2405.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1205%2028th%20St%20NW,%20Washington,%20DC%2020007,%20United%20States&query_place_id=ChIJIZ4QLku2t4kRcEijGVOjmJ0
-Opening Hours: Monday: 12:00 PM - 2:00 AM
-Tuesday: 12:00 PM - 2:00 AM
-Wednesday: 12:00 PM - 2:00 AM
-Thursday: 12:00 PM - 3:00 AM
-Friday: 12:00 PM - 4:00 AM
-Saturday: 12:00 PM - 4:00 AM
-Sunday: 12:00 PM - 2:00 AM
+Address: 1205 28th St NW, Washington, DC 20007, USA
+Rating: 4.4 with 3325 ratings
+Google Maps Link: https://maps.google.com/?cid=11356006037722450032
+Opening Hours: Monday: 11:30 AM - 2:00 AM
+Tuesday: 11:30 AM - 2:00 AM
+Wednesday: 11:30 AM - 2:00 AM
+Thursday: 11:30 AM - 3:00 AM
+Friday: 11:30 AM - 4:00 AM
+Saturday: 11:30 AM - 4:00 AM
+Sunday: 11:30 AM - 2:00 AM
 
 Name: The Exchange Saloon
 City: Washington D.C.
@@ -59,16 +59,16 @@ State: Washington D.C.
 Country: United States of America
 Creator's Rec: 
 Notes: Nice bar with a cool rooftop overlooking DC: spot the airport and the National Mall.
-Address: 1719 G St NW, Washington, DC 20006, United States
-Rating: 3.7 with 479.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1719%20G%20St%20NW,%20Washington,%20DC%2020006,%20United%20States&query_place_id=ChIJr3GLbbu3t4kRu9DFOwORiuo
+Address: 1719 G St NW, Washington, DC 20006, USA
+Rating: 3.8 with 573 ratings
+Google Maps Link: https://maps.google.com/?cid=16900479994734956731
 Opening Hours: Monday: 11:00 AM - 8:00 PM
 Tuesday: 11:00 AM - 11:00 PM
 Wednesday: 11:00 AM - 11:00 PM
 Thursday: 11:00 AM - 11:00 PM
 Friday: 11:00 AM - 11:00 PM
-Saturday: 11:00 AM - 8:00 PM
-Sunday: 11:00 AM - 6:00 PM
+Saturday: 12:00 - 8:00 PM
+Sunday: Closed
 
 Name: Eye Street Grill
 City: Washington D.C.
@@ -76,13 +76,13 @@ State: Washington D.C.
 Country: United States of America
 Creator's Rec: 
 Notes: Self-serve lunch restaurant. A lot of options, all tasty and healthy. Check it out when you're in the White House area.
-Address: 1575 I St NW #1, Washington, DC 20005, United States
-Rating: 4.3 with 124.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1575%20I%20St%20NW%20#1,%20Washington,%20DC%2020005,%20United%20States&query_place_id=ChIJxcidcL63t4kRuIjzYG7tVuA
-Opening Hours: Monday: 7:00 AM - 2:30 PM
-Tuesday: 7:00 AM - 2:30 PM
-Wednesday: 7:00 AM - 2:30 PM
-Thursday: 7:00 AM - 2:30 PM
-Friday: 7:00 AM - 2:30 PM
+Address: 1575 I St NW #1, Washington, DC 20005, USA
+Rating: 4.4 with 213 ratings
+Google Maps Link: https://maps.google.com/?cid=16165368970821732536
+Opening Hours: Monday: 6:40 AM - 2:30 PM
+Tuesday: 6:40 AM - 2:30 PM
+Wednesday: 6:40 AM - 2:30 PM
+Thursday: 6:40 AM - 2:30 PM
+Friday: 6:40 AM - 2:30 PM
 Saturday: Closed
 Sunday: Closed
