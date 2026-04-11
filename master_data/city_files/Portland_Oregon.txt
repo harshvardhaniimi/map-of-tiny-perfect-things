@@ -8,16 +8,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Landmark coffee spot: pretty good coffee and bonus points for nice mugs.
-Address: 128 SW 3rd Ave, Portland, OR 97204, United States
-Rating: 4.4 with 1587.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=128%20SW%203rd%20Ave,%20Portland,%20OR%2097204,%20United%20States&query_place_id=ChIJbT5i5AYKlVQRHZOtE8vGAz4
-Opening Hours: Monday: 7:00 AM - 3:00 PM
-Tuesday: 7:00 AM - 3:00 PM
-Wednesday: 7:00 AM - 3:00 PM
-Thursday: 7:00 AM - 3:00 PM
-Friday: 7:00 AM - 5:00 PM
-Saturday: 7:00 AM - 5:00 PM
-Sunday: 7:00 AM - 5:00 PM
+Address: 7000 NE Airport Way, Portland, OR 97218, USA
+Rating: 3.1 with 254 ratings
+Google Maps Link: https://maps.google.com/?cid=18404796192271955650
+Opening Hours: Monday: 5:00 AM - 2:00 PM
+Tuesday: 5:00 AM - 2:00 PM
+Wednesday: 5:00 AM - 2:00 PM
+Thursday: 5:00 AM - 2:00 PM
+Friday: 5:00 AM - 2:00 PM
+Saturday: 6:30 AM - 2:00 PM
+Sunday: 6:30 AM - 2:00 PM
 
 Name: Heart Coffee Roasters
 City: Portland
@@ -25,9 +25,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Let's say they won the world Aeropress competition for a reason, so can't go wrong with the pourover!
-Address: 2211 E Burnside St, Portland, OR 97214, United States
-Rating: 4.5 with 610.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2211%20E%20Burnside%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJZV6m-buglVQR0sMmh83Ajo8
+Address: 2211 E Burnside St, Portland, OR 97214, USA
+Rating: 4.5 with 705 ratings
+Google Maps Link: https://maps.google.com/?cid=10344417383084901330
 Opening Hours: Monday: 7:00 AM - 3:00 PM
 Tuesday: 7:00 AM - 3:00 PM
 Wednesday: 7:00 AM - 3:00 PM
@@ -42,9 +42,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Fun minimalistic coffee spot in Downtown. I liked their colorful setup and their nicely brewed espresso.
-Address: 4243 SE Belmont St UNIT 200, Portland, OR 97215, United States
-Rating: 4.5 with 465.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=4243%20SE%20Belmont%20St%20UNIT%20200,%20Portland,%20OR%2097215,%20United%20States&query_place_id=ChIJPZn5x-2glVQR9JZ4JDOkNYw
+Address: 4243 SE Belmont St UNIT 200, Portland, OR 97215, USA
+Rating: 4.5 with 559 ratings
+Google Maps Link: https://maps.google.com/?cid=10103161878637745908
 Opening Hours: Monday: 7:00 AM - 6:00 PM
 Tuesday: 7:00 AM - 6:00 PM
 Wednesday: 7:00 AM - 6:00 PM
@@ -59,16 +59,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Nice coffee kiosk at the corner of 23rd street.
-Address: 2310 NW Everett St, Portland, OR 97210, United States
-Rating: 4.7 with 78.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2310%20NW%20Everett%20St,%20Portland,%20OR%2097210,%20United%20States&query_place_id=ChIJoQlvezMSlVQRqyew02WF_q8
+Address: 2310 NW Everett St, Portland, OR 97210, USA
+Rating: 4.8 with 113 ratings
+Google Maps Link: https://maps.google.com/?cid=12681720273111623595
 Opening Hours: Monday: Closed
 Tuesday: Closed
 Wednesday: 8:30 AM - 3:00 PM
 Thursday: 8:30 AM - 3:00 PM
 Friday: 8:30 AM - 3:00 PM
 Saturday: 9:00 AM - 4:00 PM
-Sunday: 9:00 AM - 4:00 PM
+Sunday: 9:00 AM - 3:00 PM
 
 Name: Sisters Coffee Company
 City: Portland
@@ -76,9 +76,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Fancy-feeling spot in Portland's Pearl District: go there for a great coffee, calm ambiance and if you are feeling philosophical.
-Address: 1235 NW Marshall St, Portland, OR 97209, United States
-Rating: 4.6 with 620.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1235%20NW%20Marshall%20St,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJU4ctK_wJlVQRbb48HvJzz4Q
+Address: 1235 NW Marshall St, Portland, OR 97209, USA
+Rating: 4.6 with 837 ratings
+Google Maps Link: https://maps.google.com/?cid=9569995216912170605
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
 Wednesday: 7:00 AM - 5:00 PM
@@ -93,16 +93,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Cozy coffee shop at the foot of Mount Tabor. Friendly staff and a good place to meet new folks.
-Address: 5941 SE Division St, Portland, OR 97206, United States
-Rating: 4.6 with 599.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=5941%20SE%20Division%20St,%20Portland,%20OR%2097206,%20United%20States&query_place_id=ChIJzXbStF6glVQRAiQsYc84F7w
+Address: 5941 SE Division St, Portland, OR 97206, USA
+Rating: 4.5 with 712 ratings
+Google Maps Link: https://maps.google.com/?cid=13553364066934465538
 Opening Hours: Monday: 7:00 AM - 2:00 PM
 Tuesday: 7:00 AM - 2:00 PM
 Wednesday: 7:00 AM - 2:00 PM
 Thursday: 7:00 AM - 2:00 PM
 Friday: 7:00 AM - 2:00 PM
-Saturday: 8:00 AM - 3:00 PM
-Sunday: 8:00 AM - 3:00 PM
+Saturday: 7:00 AM - 2:00 PM
+Sunday: 7:00 AM - 2:00 PM
 
 Name: Tov Coffee
 City: Portland
@@ -110,16 +110,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Turkish coffee in a double-decker bus decorated with Egyptian souvenirs.
-Address: 3207 SE Hawthorne Blvd #5044, Portland, OR 97214, United States
-Rating: 4.8 with 662.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=3207%20SE%20Hawthorne%20Blvd%20#5044,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJDYLRsZGglVQRfr9u2xi1hZc
-Opening Hours: Monday: 10:30 AM - 3:00 PM
-Tuesday: Closed
-Wednesday: 10:30 AM - 3:00 PM
-Thursday: 10:30 AM - 3:00 PM
-Friday: 10:00 AM - 4:00 PM
-Saturday: 9:30 AM - 5:00 PM
-Sunday: 9:30 AM - 5:00 PM
+Address: 3639 SE Hawthorne Blvd #5044, Portland, OR 97214, USA
+Rating: 4.7 with 946 ratings
+Google Maps Link: https://maps.google.com/?cid=10918331989994946430
+Opening Hours: Monday: 9:45 AM - 4:00 PM
+Tuesday: 10:00 AM - 4:00 PM
+Wednesday: 10:00 AM - 4:00 PM
+Thursday: 10:00 AM - 4:00 PM
+Friday: 9:45 AM - 6:00 PM
+Saturday: 9:00 AM - 6:00 PM
+Sunday: 9:00 AM - 5:00 PM
 
 Name: Barista Coffee
 City: Portland
@@ -127,9 +127,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Awesome coffee, very passionate baristas and a lot of space to sit outside and enjoy the coffee.
-Address: 1725 NE Alberta St, Portland, OR 97211, United States
-Rating: 4.5 with 542.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1725%20NE%20Alberta%20St,%20Portland,%20OR%2097211,%20United%20States&query_place_id=ChIJaaD1mx-nlVQRxrlc1PoZyIc
+Address: 823 NW 23rd Ave, Portland, OR 97210, USA
+Rating: 4.4 with 676 ratings
+Google Maps Link: https://maps.google.com/?cid=15895351274102151872
 Opening Hours: Monday: 6:00 AM - 6:00 PM
 Tuesday: 6:00 AM - 6:00 PM
 Wednesday: 6:00 AM - 6:00 PM
@@ -144,9 +144,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Small coffee shop: self-made plant milk, cute cups and very enthusiastic owner who loves to chat about coffee making.
-Address: 1816 S River Dr, Portland, OR 97201, United States
-Rating: 4.8 with 271.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1816%20S%20River%20Dr,%20Portland,%20OR%2097201,%20United%20States&query_place_id=ChIJ8yCM3BIKlVQROi5IpJ3p20E
+Address: 1816 S River Dr, Portland, OR 97201, USA
+Rating: 4.8 with 285 ratings
+Google Maps Link: https://maps.google.com/?cid=4745643495640280634
 Opening Hours: Monday: 2:00 - 4:00 PM
 Tuesday: 2:00 - 4:00 PM
 Wednesday: 2:00 - 4:00 PM
@@ -161,9 +161,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Good coffee! But also a cute cafe in a middle of a calm neighborhood, surrounded by greenery.
-Address: 1150 SE 12th Ave, Portland, OR 97214, United States
-Rating: 4.7 with 447.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1150%20SE%2012th%20Ave,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJORqe0aGglVQR2ofSVbXQ-QI
+Address: 1150 SE 12th Ave, Portland, OR 97214, USA
+Rating: 4.7 with 504 ratings
+Google Maps Link: https://maps.google.com/?cid=214431934524327898
 Opening Hours: Monday: 7:00 AM - 3:00 PM
 Tuesday: 7:00 AM - 3:00 PM
 Wednesday: 7:00 AM - 3:00 PM
@@ -178,14 +178,14 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: One of the best coffee shops in Portland: very high quality, sustainably-sourced beans and great coffee + dessert combos. Their spaces are well-designed as well: airy and welcoming.
-Address: 1300 SE Grand Ave a, Portland, OR 97214, United States
-Rating: 4.6 with 1354.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1300%20SE%20Grand%20Ave%20a,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJeWs-6QoKlVQRrTobPU_sOsY
+Address: 1300 SE Grand Ave a, Portland, OR 97214, USA
+Rating: 4.6 with 1653 ratings
+Google Maps Link: https://maps.google.com/?cid=14283988993230715565
 Opening Hours: Monday: 7:00 AM - 6:00 PM
 Tuesday: 7:00 AM - 6:00 PM
 Wednesday: 7:00 AM - 6:00 PM
 Thursday: 7:00 AM - 6:00 PM
-Friday: 7:00 AM - 6:00 PM
+Friday: 8:00 AM - 6:00 PM
 Saturday: 7:00 AM - 6:00 PM
 Sunday: 7:00 AM - 6:00 PM
 
@@ -195,16 +195,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Coffee shop focused on Brazilian direct coffee farming and a heart-warming focus on building relationships with people first. Check them out for their guest roaster rotations and their awesome community events.
-Address: 1633 SE 3rd Ave, Portland, OR 97214, United States
-Rating: 4.6 with 152.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1633%20SE%203rd%20Ave,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJczsDUgsKlVQRCRGikSc3yig
+Address: 1633 SE 3rd Ave, Portland, OR 97214, USA
+Rating: 4.6 with 230 ratings
+Google Maps Link: https://maps.google.com/?cid=2939222349899239689
 Opening Hours: Monday: 7:30 AM - 4:30 PM
 Tuesday: 7:30 AM - 4:30 PM
 Wednesday: 7:30 AM - 4:30 PM
 Thursday: 7:30 AM - 4:30 PM
 Friday: 7:30 AM - 4:30 PM
-Saturday: 8:00 AM - 4:30 PM
-Sunday: 8:00 AM - 4:30 PM
+Saturday: 7:30 AM - 4:30 PM
+Sunday: 7:30 AM - 4:30 PM
 
 Name: Case Study Coffee
 City: Portland
@@ -212,9 +212,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Convenient downtown spot with good coffee, friendly staff and classic decor.
-Address: 802 SW 10th Ave, Portland, OR 97205, United States
-Rating: 4.4 with 1187.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=802%20SW%2010th%20Ave,%20Portland,%20OR%2097205,%20United%20States&query_place_id=ChIJa92lywQKlVQRXlkX4rXNbnM
+Address: 802 SW 10th Ave, Portland, OR 97205, USA
+Rating: 4.4 with 1418 ratings
+Google Maps Link: https://maps.google.com/?cid=8317811742865840478
 Opening Hours: Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
 Wednesday: 7:00 AM - 4:00 PM
@@ -229,9 +229,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Modern spot with great coffee: a nice place to do some work or get inspired to stop procrastinating.
-Address: 2112 NW Quimby St, Portland, OR 97210, United States
-Rating: 4.5 with 102.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2112%20NW%20Quimby%20St,%20Portland,%20OR%2097210,%20United%20States&query_place_id=ChIJp33-3oMJlVQREjG4J-gSO28
+Address: 2112 NW Quimby St, Portland, OR 97210, USA
+Rating: 4.5 with 111 ratings
+Google Maps Link: https://maps.google.com/?cid=8015020750144024850
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
 Wednesday: 7:00 AM - 5:00 PM
@@ -246,16 +246,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Cute place with almost the bare essentials for coffee making, but don't be fooled; their coffee is awesome and it will energize you to start your day.
-Address: 1401 SW Yamhill St, Portland, OR 97205, United States
-Rating: 4.9 with 124.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1401%20SW%20Yamhill%20St,%20Portland,%20OR%2097205,%20United%20States&query_place_id=ChIJL9lj76ILlVQRVp_0vEBQ0SQ
-Opening Hours: Monday: 7:00 AM - 1:00 PM
-Tuesday: 7:00 AM - 1:00 PM
-Wednesday: 7:00 AM - 1:00 PM
-Thursday: 7:00 AM - 1:00 PM
-Friday: 7:00 AM - 1:00 PM
-Saturday: 8:00 AM - 1:00 PM
-Sunday: 8:00 AM - 1:00 PM
+Address: 1401 SW Yamhill St, Portland, OR 97205, USA
+Rating: 4.8 with 237 ratings
+Google Maps Link: https://maps.google.com/?cid=2652989894476210006
+Opening Hours: Monday: 8:00 AM - 2:00 PM
+Tuesday: 8:00 AM - 2:00 PM
+Wednesday: 8:00 AM - 2:00 PM
+Thursday: 8:00 AM - 2:00 PM
+Friday: 8:00 AM - 2:00 PM
+Saturday: 8:00 AM - 2:00 PM
+Sunday: 8:00 AM - 2:00 PM
 
 Name: Upper Left Coffee
 City: Portland
@@ -263,10 +263,10 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Colorful smoothies, mochi donuts and a nice minimalist set-up: check them out after eating at the food trucks just across the street.
-Address: 1204 SE Clay St, Portland, OR 97214, United States
-Rating: 4.6 with 594.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1204%20SE%20Clay%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJ07z6Mp6glVQRE-BnTUYuxBo
-Opening Hours: Monday: Closed
+Address: 1204 SE Clay St, Portland, OR 97214, USA
+Rating: 4.6 with 756 ratings
+Google Maps Link: https://maps.google.com/?cid=1928717419902656531
+Opening Hours: Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
 Wednesday: 7:00 AM - 4:00 PM
 Thursday: 7:00 AM - 4:00 PM
@@ -280,16 +280,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: My recommendation at this Moroccan coffee spot: the Moroccan Spiced Coffee with cardamom. It's a unique blend of flavors.
-Address: 941 NW Overton St, Portland, OR 97209, United States
-Rating: 4.7 with 720.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=941%20NW%20Overton%20St,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJX61eHFanlVQRnEQpuATt68g
-Opening Hours: Monday: 6:00 AM - 6:00 PM
-Tuesday: 6:00 AM - 6:00 PM
-Wednesday: 6:00 AM - 6:00 PM
-Thursday: 6:00 AM - 6:00 PM
-Friday: 6:00 AM - 6:00 PM
-Saturday: 7:00 AM - 5:00 PM
-Sunday: 7:00 AM - 5:00 PM
+Address: 1810 SW 5th Ave Suite C, Portland, OR 97201, USA
+Rating: 4.8 with 51 ratings
+Google Maps Link: https://maps.google.com/?cid=2068955280567592625
+Opening Hours: Monday: 7:00 AM - 4:00 PM
+Tuesday: 7:00 AM - 4:00 PM
+Wednesday: 7:00 AM - 4:00 PM
+Thursday: 7:00 AM - 4:00 PM
+Friday: 7:00 AM - 4:00 PM
+Saturday: 8:00 AM - 1:00 PM
+Sunday: 8:00 AM - 1:00 PM
 
 Name: Deadstock Coffee
 City: Portland
@@ -297,16 +297,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Good coffee in a sneaker-themed shop: if you get a latte, they'll make a nice sneaker with the foam.
-Address: 408 NW Couch St Suite 408, Portland, OR 97209, United States
-Rating: 4.8 with 485.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=408%20NW%20Couch%20St%20Suite%20408,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJG6gpPP0LlVQRHe3kcr-SPIQ
-Opening Hours: Monday: 8:00 AM - 3:00 PM
-Tuesday: 8:00 AM - 3:00 PM
-Wednesday: 8:00 AM - 3:00 PM
-Thursday: 8:00 AM - 3:00 PM
-Friday: 8:00 AM - 4:00 PM
-Saturday: 8:00 AM - 4:00 PM
-Sunday: 9:00 AM - 3:00 PM
+Address: 15 NW 4th Ave, Portland, OR 97209, USA
+Rating: 4.7 with 593 ratings
+Google Maps Link: https://maps.google.com/?cid=9528652262573141277
+Opening Hours: Monday: 7:00 AM - 3:00 PM
+Tuesday: 7:00 AM - 3:00 PM
+Wednesday: 7:00 AM - 3:00 PM
+Thursday: 7:00 AM - 3:00 PM
+Friday: 7:00 AM - 3:00 PM
+Saturday: 7:00 AM - 3:00 PM
+Sunday: 7:00 AM - 3:00 PM
 
 Name: Voodoo Doughnuts
 City: Portland
@@ -314,16 +314,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Classic spot for funky donuts, I would go with the staff recommendations but don't be afraid to venture out your comfort zone with these goodies.
-Address: 22 SW 3rd Ave, Portland, OR 97204, United States
-Rating: 4.4 with 17838.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=22%20SW%203rd%20Ave,%20Portland,%20OR%2097204,%20United%20States&query_place_id=ChIJ70AxJAcKlVQRde9D82gpfSU
-Opening Hours: Monday: 5:00 AM - 3:00 AM
-Tuesday: 5:00 AM - 3:00 AM
-Wednesday: 5:00 AM - 3:00 AM
-Thursday: 5:00 AM - 3:00 AM
-Friday: 5:00 AM - 3:00 AM
-Saturday: 5:00 AM - 3:00 AM
-Sunday: 5:00 AM - 3:00 AM
+Address: 22 SW 3rd Ave, Portland, OR 97204, USA
+Rating: 4.4 with 19429 ratings
+Google Maps Link: https://maps.google.com/?cid=2701360882226818933
+Opening Hours: Monday: 6:00 AM - 12:00 AM
+Tuesday: 6:00 AM - 12:00 AM
+Wednesday: 6:00 AM - 12:00 AM
+Thursday: 6:00 AM - 3:00 AM
+Friday: 6:00 AM - 3:00 AM
+Saturday: 6:00 AM - 3:00 AM
+Sunday: 6:00 AM - 3:00 AM
 
 Name: Lan Su
 City: Portland
@@ -331,16 +331,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Chinese restaurant inside of the Chinese gardens. They have great tea and light food items in a traditional teahouse which makes for a unique experience!
-Address: 239 NW Everett St, Portland, OR 97209, United States
-Rating: 4.6 with 3122.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=239%20NW%20Everett%20St,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJ_5QZeKqglVQRaTkbdQnoF0w
-Opening Hours: Monday: 10:00 AM - 6:00 PM
-Tuesday: 10:00 AM - 6:00 PM
-Wednesday: 10:00 AM - 6:00 PM
-Thursday: 10:00 AM - 6:00 PM
-Friday: 10:00 AM - 6:00 PM
-Saturday: 10:00 AM - 6:00 PM
-Sunday: 10:00 AM - 6:00 PM
+Address: 239 NW Everett St, Portland, OR 97209, USA
+Rating: 4.7 with 3556 ratings
+Google Maps Link: https://maps.google.com/?cid=5483106198663936361
+Opening Hours: Monday: 10:00 AM - 6:30 PM
+Tuesday: 10:00 AM - 6:30 PM
+Wednesday: 10:00 AM - 6:30 PM
+Thursday: 10:00 AM - 6:30 PM
+Friday: 10:00 AM - 6:30 PM
+Saturday: 10:00 AM - 6:30 PM
+Sunday: 10:00 AM - 6:30 PM
 
 Name: Salt and Straw
 City: Portland
@@ -348,9 +348,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Fun ice cream shop with very innovative rotating flavors that changed my idea of what ice cream can be. Don't be afraid to try salty flavors or the more complex mixes of things like cheese and marionberry.
-Address: 838 NW 23rd Ave, Portland, OR 97210, United States
-Rating: 4.7 with 5529.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=838%20NW%2023rd%20Ave,%20Portland,%20OR%2097210,%20United%20States&query_place_id=ChIJQ4VlWfAJlVQRPXN-039EJCo
+Address: 838 NW 23rd Ave, Portland, OR 97210, USA
+Rating: 4.7 with 6057 ratings
+Google Maps Link: https://maps.google.com/?cid=3036627364554371901
 Opening Hours: Monday: 11:00 AM - 11:00 PM
 Tuesday: 11:00 AM - 11:00 PM
 Wednesday: 11:00 AM - 11:00 PM
@@ -365,16 +365,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Great Sri Lankan food that is bursting with flavor in a very relaxed spot.
-Address: 2420 SE Belmont St, Portland, OR 97214, United States
-Rating: 4.6 with 448.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2420%20SE%20Belmont%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJqQ9sQA6nlVQRFewpK9i-v88
-Opening Hours: Monday: 12:00 - 9:00 PM
-Tuesday: 12:00 - 9:00 PM
-Wednesday: 12:00 - 9:00 PM
-Thursday: 12:00 - 9:00 PM
-Friday: 12:00 - 10:00 PM
-Saturday: 12:00 - 10:00 PM
-Sunday: 10:00 AM - 9:00 PM
+Address: 2420 SE Belmont St, Portland, OR 97214, USA
+Rating: 4.6 with 949 ratings
+Google Maps Link: https://maps.google.com/?cid=14969893522049199125
+Opening Hours: Monday: 11:00 AM - 10:00 PM
+Tuesday: 11:00 AM - 10:00 PM
+Wednesday: 11:00 AM - 10:00 PM
+Thursday: 11:00 AM - 10:00 PM
+Friday: 11:00 AM - 11:00 PM
+Saturday: 10:00 AM - 11:00 PM
+Sunday: 10:00 AM - 10:00 PM
 
 Name: Nola Doughnuts
 City: Portland
@@ -382,10 +382,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Fluffy beignets and a side of jam: colorful spot with New Orleans vibes.
-Address: 110 NW 10th Ave, Portland, OR 97209, United States
-Rating: 4.5 with 685.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=110%20NW%2010th%20Ave,%20Portland,%20OR%2097209,%20United%20States&query_place_id=ChIJVVVlLQIKlVQRX3GXyicH5vc
-Opening Hours: 
+Address: 22 SW 3rd Ave, Portland, OR 97204, USA
+Rating: 4.4 with 19429 ratings
+Google Maps Link: https://maps.google.com/?cid=2701360882226818933
+Opening Hours: Monday: 6:00 AM - 12:00 AM
+Tuesday: 6:00 AM - 12:00 AM
+Wednesday: 6:00 AM - 12:00 AM
+Thursday: 6:00 AM - 3:00 AM
+Friday: 6:00 AM - 3:00 AM
+Saturday: 6:00 AM - 3:00 AM
+Sunday: 6:00 AM - 3:00 AM
 
 Name: Flying Fish Company
 City: Portland
@@ -393,16 +399,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Fish market and restaurant with a super fresh and tasty selection. Get one or two of the extra butter-y salmon or tuna dishes and enjoy them in the casual market-style seating in the garden.
-Address: 3004 E Burnside St, Portland, OR 97214, United States
-Rating: 4.5 with 778.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=3004%20E%20Burnside%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJQW9jR7iglVQRm1D5OSXZE5A
-Opening Hours: Monday: 10:00 AM - 8:00 PM
+Address: 3004 E Burnside St, Portland, OR 97214, USA
+Rating: 4.5 with 1136 ratings
+Google Maps Link: https://maps.google.com/?cid=10381880319928783003
+Opening Hours: Monday: 11:30 AM - 8:30 PM
 Tuesday: Closed
-Wednesday: 10:00 AM - 8:00 PM
-Thursday: 10:00 AM - 8:00 PM
-Friday: 10:00 AM - 8:00 PM
-Saturday: 10:00 AM - 8:00 PM
-Sunday: 10:00 AM - 8:00 PM
+Wednesday: Closed
+Thursday: 11:30 AM - 8:30 PM
+Friday: 11:30 AM - 8:30 PM
+Saturday: 11:30 AM - 8:30 PM
+Sunday: 11:30 AM - 8:30 PM
 
 Name: Mumbo Gumbo
 City: Portland
@@ -410,16 +416,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Great Cajun food served out of a funky food truck. The nipsey hussle is the perfect combo of fried shrimp, garlic butter and cajun spices.
-Address: 5205 SE Foster Rd, Portland, OR 97206, United States
-Rating: 4.5 with 307.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=5205%20SE%20Foster%20Rd,%20Portland,%20OR%2097206,%20United%20States&query_place_id=ChIJP6GXb1ELlVQRL34xihsY0Xs
-Opening Hours: Monday: 11:00 AM - 2:00 AM
-Tuesday: 11:00 AM - 2:00 AM
-Wednesday: 11:00 AM - 2:00 AM
-Thursday: 11:00 AM - 2:00 AM
-Friday: 11:00 AM - 2:00 AM
-Saturday: 11:00 AM - 2:00 AM
-Sunday: 11:00 AM - 2:00 AM
+Address: 5205 SE Foster Rd, Portland, OR 97206, USA
+Rating: 4.5 with 386 ratings
+Google Maps Link: https://maps.google.com/?cid=8921938843359346223
+Opening Hours: Monday: Closed
+Tuesday: 11:00 AM - 11:00 PM
+Wednesday: 11:00 AM - 11:00 PM
+Thursday: 11:00 AM - 11:00 PM
+Friday: 11:00 AM - 1:00 AM
+Saturday: 11:00 AM - 1:00 AM
+Sunday: 11:00 AM - 1:00 AM
 
 Name: El Pilon
 City: Portland
@@ -427,16 +433,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Great empanadas and arepas truck, you can do take-out and walk over to the river to enjoy.
-Address: 329 SW 2nd Ave, Portland, OR 97204, United States
-Rating: 4.9 with 324.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=329%20SW%202nd%20Ave,%20Portland,%20OR%2097204,%20United%20States&query_place_id=ChIJc4abXQYKlVQRbcM-kggs-Rc
-Opening Hours: Monday: Closed
-Tuesday: Closed
-Wednesday: 10:00 AM - 5:00 PM
-Thursday: 10:00 AM - 5:00 PM
-Friday: 10:00 AM - 5:00 PM
-Saturday: 10:00 AM - 5:00 PM
-Sunday: 10:00 AM - 5:00 PM
+Address: 431 SW Harvey Milk St, Portland, OR 97204, USA
+Rating: 4.8 with 513 ratings
+Google Maps Link: https://maps.google.com/?cid=1727460347398243181
+Opening Hours: Monday: 10:45 AM - 8:00 PM
+Tuesday: 10:45 AM - 8:00 PM
+Wednesday: 10:45 AM - 8:00 PM
+Thursday: 10:45 AM - 8:00 PM
+Friday: 10:45 AM - 8:00 PM
+Saturday: 10:45 AM - 8:00 PM
+Sunday: 10:45 AM - 6:00 PM
 
 Name: Viking Soul Food
 City: Portland
@@ -444,16 +450,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Norwegian goodies in a vintage food truck: try out the lefse and pickled eggs.
-Address: 4255 SE Belmont St, Portland, OR 97215, United States
-Rating: 4.7 with 349.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=4255%20SE%20Belmont%20St,%20Portland,%20OR%2097215,%20United%20States&query_place_id=ChIJ3XX7MbqglVQRnB1FRgD4aWg
-Opening Hours: Monday: 12:00 - 8:00 PM
-Tuesday: 12:00 - 8:00 PM
-Wednesday: 12:00 - 8:00 PM
-Thursday: 12:00 - 8:00 PM
-Friday: 12:00 - 8:00 PM
-Saturday: 12:00 - 8:00 PM
-Sunday: 12:00 - 8:00 PM
+Address: 4422 SE Woodstock Blvd, Portland, OR 97206, USA
+Rating: 4.8 with 187 ratings
+Google Maps Link: https://maps.google.com/?cid=4931158536718716923
+Opening Hours: Monday: Closed
+Tuesday: 11:00 AM - 7:00 PM
+Wednesday: 11:00 AM - 7:00 PM
+Thursday: 11:00 AM - 7:00 PM
+Friday: 11:00 AM - 7:00 PM
+Saturday: 11:00 AM - 7:00 PM
+Sunday: 11:00 AM - 7:00 PM
 
 Name: Tall Boy Fish and Chips
 City: Portland
@@ -461,15 +467,15 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Fish and chips spot in the busy Hawthorne food court. Try any of the fish choices, you can't go wrong!
-Address: 1080 SE Madison St, Portland, OR 97214, United States
-Rating: 4.4 with 80.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1080%20SE%20Madison%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJqfbQtxqhlVQRyQmPtOJGLJQ
-Opening Hours: Monday: Closed
+Address: 1080 SE Madison St, Portland, OR 97214, USA
+Rating: 4.4 with 167 ratings
+Google Maps Link: https://maps.google.com/?cid=10676986756094429641
+Opening Hours: Monday: 11:30 AM - 8:00 PM
 Tuesday: Closed
 Wednesday: 11:30 AM - 8:00 PM
 Thursday: 11:30 AM - 8:00 PM
-Friday: 11:30 AM - 8:00 PM
-Saturday: 11:30 AM - 8:00 PM
+Friday: 11:30 AM - 10:00 PM
+Saturday: 11:30 AM - 10:00 PM
 Sunday: 11:30 AM - 8:00 PM
 
 Name: Bobablastic
@@ -478,16 +484,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: Food truck selling boba and various sweets: the churros were great!
-Address: 8145 SE 82nd Ave, Portland, OR 97266, United States
-Rating: 3.2 with 53.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=8145%20SE%2082nd%20Ave,%20Portland,%20OR%2097266,%20United%20States&query_place_id=ChIJyZdnwCGilVQRsaFDtUA7UUk
+Address: 7339 NE Martin Luther King Jr Blvd, Portland, OR 97211, USA
+Rating: 4.9 with 16 ratings
+Google Maps Link: https://maps.google.com/?cid=13832937183666268248
 Opening Hours: Monday: 11:30 AM - 8:30 PM
 Tuesday: 11:30 AM - 8:30 PM
 Wednesday: 11:30 AM - 8:30 PM
 Thursday: 11:30 AM - 8:30 PM
-Friday: 11:30 AM - 9:00 PM
-Saturday: 11:30 AM - 9:00 PM
-Sunday: 11:30 AM - 9:00 PM
+Friday: 11:30 AM - 8:30 PM
+Saturday: 11:30 AM - 8:30 PM
+Sunday: 11:30 AM - 8:30 PM
 
 Name: Roseline Coffee
 City: Portland
@@ -495,16 +501,16 @@ State: Oregon
 Country: United States of America
 Creator's Rec: 
 Notes: 
-Address: 1015 SE 11th Ave #100, Portland, OR 97214, United States
-Rating: 4.6 with 107.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1015%20SE%2011th%20Ave%20#100,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJF3SVEEKhlVQREbGnR20iOl8
+Address: 1015 SE 11th Ave #100, Portland, OR 97214, USA
+Rating: 4.6 with 192 ratings
+Google Maps Link: https://maps.google.com/?cid=6861834835001323793
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
 Wednesday: 7:00 AM - 5:00 PM
 Thursday: 7:00 AM - 5:00 PM
 Friday: 7:00 AM - 5:00 PM
-Saturday: 8:00 AM - 5:00 PM
-Sunday: 8:00 AM - 5:00 PM
+Saturday: 7:00 AM - 5:00 PM
+Sunday: 7:00 AM - 5:00 PM
 
 Name: Keeper Coffee
 City: Portland
@@ -512,9 +518,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Cozy but bustling! If you're lucky enough, you will get coffee from Morgan, world barista champion.
-Address: 4515 SE 41st Ave, Portland, OR 97202, United States
-Rating: 4.8 with 283.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=4515%20SE%2041st%20Ave,%20Portland,%20OR%2097202,%20United%20States&query_place_id=ChIJwVBb6R0LlVQR52pe_0J9y4E
+Address: 4515 SE 41st Ave, Portland, OR 97202, USA
+Rating: 4.7 with 611 ratings
+Google Maps Link: https://maps.google.com/?cid=9352706777870658279
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
 Wednesday: 7:00 AM - 5:00 PM
@@ -529,9 +535,9 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Fine inner decor. Good crowd of people; I was inspired to read.
-Address: 802 SW 10th Ave, Portland, OR 97205, United States
-Rating: 4.4 with 1187.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=802%20SW%2010th%20Ave,%20Portland,%20OR%2097205,%20United%20States&query_place_id=ChIJa92lywQKlVQRXlkX4rXNbnM
+Address: 802 SW 10th Ave, Portland, OR 97205, USA
+Rating: 4.4 with 1418 ratings
+Google Maps Link: https://maps.google.com/?cid=8317811742865840478
 Opening Hours: Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
 Wednesday: 7:00 AM - 4:00 PM
@@ -546,13 +552,13 @@ State: Oregon
 Country: United States of America
 Creator's Rec: Yes
 Notes: Good collection of Indian street food. Not spicy but full of flavours.
-Address: 3010 SE Division St, Portland, OR 97202, United States
-Rating: 4.4 with 2159.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=3010%20SE%20Division%20St,%20Portland,%20OR%2097202,%20United%20States&query_place_id=ChIJG5ZIIYSglVQRppLQUCpUpws
-Opening Hours: Monday: 4:00 - 9:00 PM
-Tuesday: Closed
-Wednesday: 4:00 - 9:00 PM
-Thursday: 4:00 - 9:00 PM
-Friday: 4:00 - 9:00 PM
-Saturday: 4:00 - 9:00 PM
-Sunday: 4:00 - 9:00 PM
+Address: 2039 NE Alberta St, Portland, OR 97211, USA
+Rating: 4.4 with 1480 ratings
+Google Maps Link: https://maps.google.com/?cid=5694526382816804702
+Opening Hours: Monday: 11:00 AM - 9:00 PM
+Tuesday: 11:00 AM - 9:00 PM
+Wednesday: 11:00 AM - 9:00 PM
+Thursday: 11:00 AM - 9:00 PM
+Friday: 11:00 AM - 9:00 PM
+Saturday: 11:00 AM - 9:00 PM
+Sunday: 11:00 AM - 9:00 PM

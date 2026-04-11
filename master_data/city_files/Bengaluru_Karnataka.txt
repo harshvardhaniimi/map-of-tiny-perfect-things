@@ -8,9 +8,9 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: Tin-Tin Beer excels in crafting light beers, offers delectable cuisine, and provides an economical setting that evokes nostalgia.
-Address: Indiranagar, 100 Feet Rd, Near Drops Total Spirites, Bengaluru, Karnataka 560038, India
-Rating: 4.5 with 52918.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=Indiranagar,%20100%20Feet%20Rd,%20Near%20Drops%20Total%20Spirites,%20Bengaluru,%20Karnataka%20560038,%20India&query_place_id=ChIJc0JAFaUWrjsRRXSXJPX7YFo
+Address: 6/2, 100 Feet Rd, near Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India
+Rating: 4.5 with 61389 ratings
+Google Maps Link: https://maps.google.com/?cid=6512482091477201989
 Opening Hours: Monday: 8:30 AM - 1:00 AM
 Tuesday: 8:30 AM - 1:00 AM
 Wednesday: 8:30 AM - 1:00 AM
@@ -25,16 +25,16 @@ State: Karnataka
 Country: India
 Creator's Rec: 
 Notes: If you're in the mood for budget-friendly tap beer, this venue has seasoned staff who will entertain you with magic tricks once you become a familiar face.
-Address: 34, Rest House Rd, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India
-Rating: 4.3 with 1993.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=34,%20Rest%20House%20Rd,%20Shanthala%20Nagar,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJQVqlWGQWrjsRNmNTzeUOMI0
-Opening Hours: Monday: 10:30 AM - 11:00 PM
-Tuesday: 10:30 AM - 11:00 PM
-Wednesday: 10:30 AM - 11:00 PM
-Thursday: 10:30 AM - 11:00 PM
-Friday: 10:30 AM - 11:00 PM
-Saturday: 10:30 AM - 11:00 PM
-Sunday: 10:30 AM - 11:00 PM
+Address: 34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India
+Rating: 4.3 with 2418 ratings
+Google Maps Link: https://maps.google.com/?cid=10173647938385044278
+Opening Hours: Monday: 11:00 AM - 11:00 PM
+Tuesday: 11:00 AM - 11:00 PM
+Wednesday: 11:00 AM - 11:00 PM
+Thursday: 11:00 AM - 11:00 PM
+Friday: 11:00 AM - 11:30 PM
+Saturday: 11:00 AM - 11:30 PM
+Sunday: 11:00 AM - 11:30 PM
 
 Name: Cubbon Park
 City: Bengaluru
@@ -42,10 +42,16 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: This specific trail within Cubbon Park offers a serene environment that stands in contrast to its larger, busier surroundings.
-Address: Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India
-Rating: 4.4 with 128891.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=Kasturba%20Rd,%20behind%20High%20Court%20of%20Karnataka,%20Ambedkar%20Veedhi,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJL2fQ53MWrjsRuN9D6aalLMY
-Opening Hours: 
+Address: Nunegundlapalli, Ambedkar Veedhi, Bengaluru, Karnataka 560001, India
+Rating: 4.4 with 142684 ratings
+Google Maps Link: https://maps.google.com/?cid=14279970654781693880
+Opening Hours: Monday: Closed
+Tuesday: 6:00 AM - 6:00 PM
+Wednesday: 6:00 AM - 6:00 PM
+Thursday: 6:00 AM - 6:00 PM
+Friday: 6:00 AM - 6:00 PM
+Saturday: 6:00 AM - 6:00 PM
+Sunday: 6:00 AM - 6:00 PM
 
 Name: Chin Lung
 City: Bengaluru
@@ -54,15 +60,15 @@ Country: India
 Creator's Rec: 
 Notes: For an uncrowded, cost-effective experience with exceptional food, their butter garlic prawns are a must-try.
 Address: 19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009, India
-Rating: 4.8 with 1013.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=19%20&%2020,%203rd%20Main%20Rd,%20opposite%20Sapna%20Book%20House,%20Gandhi%20Nagar,%20Bengaluru,%20Karnataka%20560009,%20India&query_place_id=ChIJvdFUrNIXrjsRvYvc85Mgw4A
-Opening Hours: Monday: 11:30 AM - 1:00 AM
-Tuesday: 11:30 AM - 1:00 AM
-Wednesday: 11:30 AM - 1:00 AM
-Thursday: 11:30 AM - 1:00 AM
-Friday: 11:30 AM - 1:00 AM
-Saturday: 11:30 AM - 1:00 AM
-Sunday: 11:30 AM - 1:00 AM
+Rating: 4.5 with 1282 ratings
+Google Maps Link: https://maps.google.com/?cid=9278295477136952253
+Opening Hours: Monday: 11:00 AM - 1:00 AM
+Tuesday: 11:00 AM - 1:00 AM
+Wednesday: 11:00 AM - 1:00 AM
+Thursday: 11:00 AM - 1:00 AM
+Friday: 11:00 AM - 1:00 AM
+Saturday: 11:00 AM - 1:00 AM
+Sunday: 11:00 AM - 1:00 AM
 
 Name: Suzy Q
 City: Bengaluru
@@ -70,9 +76,9 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: With its elegant ambiance, gourmet dishes, artisan cocktails, pulsating music, and a fashionable clientele, this place is a hit.
-Address: No.1, Express Building, Queens Road, Bengaluru, Karnataka 560001, India
-Rating: 4.4 with 3093.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=No.1,%20Express%20Building,%20Queens%20Road,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJ_5IDe7YXrjsRdu79rZOI1E0
+Address: No.1, Express Building, Queens Rd, Vasanth Nagar, Bengaluru, Karnataka 560001, India
+Rating: 4.3 with 4107 ratings
+Google Maps Link: https://maps.google.com/?cid=5608257603843780214
 Opening Hours: Monday: 12:00 PM - 12:30 AM
 Tuesday: 12:00 PM - 12:30 AM
 Wednesday: 12:00 PM - 12:30 AM
@@ -87,16 +93,16 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: This establishment boasts a rotating selection of sophisticated options and stays open until 12:30 am.
-Address: Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.5 with 841.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJoSGp8FYXrjsReShvdOYXFzg
-Opening Hours: Monday: 9:00 AM - 10:00 PM
-Tuesday: 9:00 AM - 10:00 PM
-Wednesday: 9:00 AM - 10:00 PM
-Thursday: 9:00 AM - 10:00 PM
-Friday: 9:00 AM - 10:00 PM
-Saturday: 9:00 AM - 10:00 PM
-Sunday: 9:00 AM - 10:00 PM
+Address: Ground Floor, Sobha Mall, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
+Rating: 4.2 with 600 ratings
+Google Maps Link: https://maps.google.com/?cid=12772292625641296938
+Opening Hours: Monday: 7:30 AM - 12:30 AM
+Tuesday: 7:30 AM - 12:30 AM
+Wednesday: 7:30 AM - 12:30 AM
+Thursday: 7:30 AM - 12:30 AM
+Friday: 7:30 AM - 12:30 AM
+Saturday: 7:30 AM - 12:30 AM
+Sunday: 7:30 AM - 12:30 AM
 
 Name: Momos stall
 City: Bengaluru
@@ -104,16 +110,16 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: The best momos in Bangalore can be discovered at this unassuming stall, which eschews branding for quality.
-Address: XJ95+R23, Markham Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India
-Rating: 4.4 with 66.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=XJ95+R23,%20Markham%20Rd,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560025,%20India&query_place_id=ChIJEwIT238WrjsRfoG2sfoOIac
-Opening Hours: Monday: 11:00 AM - 10:30 PM
-Tuesday: 11:00 AM - 10:30 PM
-Wednesday: 11:00 AM - 10:30 PM
-Thursday: 11:00 AM - 10:30 PM
-Friday: 11:00 AM - 10:30 PM
-Saturday: 11:00 AM - 10:30 PM
-Sunday: 11:00 AM - 10:30 PM
+Address: 5, Rest House Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
+Rating: 4.2 with 1766 ratings
+Google Maps Link: https://maps.google.com/?cid=9311748553411056094
+Opening Hours: Monday: 12:00 - 9:30 PM
+Tuesday: 12:00 - 9:30 PM
+Wednesday: 12:00 - 9:30 PM
+Thursday: 12:00 - 9:30 PM
+Friday: 12:00 - 9:30 PM
+Saturday: 12:00 - 9:30 PM
+Sunday: 12:00 - 9:30 PM
 
 Name: Orion Mall - Lakeview
 City: Bengaluru
@@ -122,15 +128,15 @@ Country: India
 Creator's Rec: 
 Notes: It's an ideal spot for unwinding over a comforting cup of chai or coffee.
 Address: Dr Rajkumar Rd, Rajajinagar, Bengaluru, Karnataka 560055, India
-Rating: 4.5 with 176990.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=Dr%20Rajkumar%20Rd,%20Rajajinagar,%20Bengaluru,%20Karnataka%20560055,%20India&query_place_id=ChIJZ0FegEs9rjsRZFR-C-hVwqQ
-Opening Hours: Monday: 10:00 AM - 10:00 PM
-Tuesday: 10:00 AM - 10:00 PM
-Wednesday: 10:00 AM - 10:00 PM
-Thursday: 10:00 AM - 10:00 PM
-Friday: 10:00 AM - 10:00 PM
-Saturday: 10:00 AM - 10:00 PM
-Sunday: 10:00 AM - 10:00 PM
+Rating: 4.5 with 196734 ratings
+Google Maps Link: https://maps.google.com/?cid=11872146022815650916
+Opening Hours: Monday: 10:00 AM - 11:00 PM
+Tuesday: 10:00 AM - 11:00 PM
+Wednesday: 10:00 AM - 11:00 PM
+Thursday: 10:00 AM - 11:00 PM
+Friday: 10:00 AM - 11:00 PM
+Saturday: 10:00 AM - 11:00 PM
+Sunday: 10:00 AM - 11:00 PM
 
 Name: Orion Mall - Tuscano
 City: Bengaluru
@@ -138,16 +144,16 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: Known for its authentic Italian pizzas and complementing Sangrias, this place sets the mood for romantic dinner dates.
-Address: 26/1, Dr Rajkumar Rd, Malleshwara, Bengaluru, Karnataka 560055, India
-Rating: 4.2 with 4748.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=26/1,%20Dr%20Rajkumar%20Rd,%20Malleshwara,%20Bengaluru,%20Karnataka%20560055,%20India&query_place_id=ChIJXx535Io9rjsRxPHSPe5DJvw
-Opening Hours: Monday: 12:00 - 11:00 PM
-Tuesday: 12:00 - 11:00 PM
-Wednesday: 12:00 - 11:00 PM
-Thursday: 12:00 - 11:00 PM
-Friday: 12:00 - 11:00 PM
-Saturday: 12:00 - 11:00 PM
-Sunday: 12:00 - 11:00 PM
+Address: Dr Rajkumar Rd, Rajajinagar, Bengaluru, Karnataka 560055, India
+Rating: 4.5 with 196734 ratings
+Google Maps Link: https://maps.google.com/?cid=11872146022815650916
+Opening Hours: Monday: 10:00 AM - 11:00 PM
+Tuesday: 10:00 AM - 11:00 PM
+Wednesday: 10:00 AM - 11:00 PM
+Thursday: 10:00 AM - 11:00 PM
+Friday: 10:00 AM - 11:00 PM
+Saturday: 10:00 AM - 11:00 PM
+Sunday: 10:00 AM - 11:00 PM
 
 Name: Vatadahosahalli Lake
 City: Bengaluru
@@ -155,9 +161,9 @@ State: Karnataka
 Country: India
 Creator's Rec: 
 Notes: Situated away from the urban hustle, the locale offers a rejuvenating breeze, making it perfect for road trips.
-Address: Vatadahosahalli Lake, Sabbanahalli, Karnataka 561209
-Rating: 4.6 with 365.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=Vatadahosahalli%20Lake,%20Sabbanahalli,%20Karnataka%20561209&query_place_id=ChIJM_WWnKqWsTsRqQEYEvIa7E8
+Address: Vatadahosahalli Lake, Sabbanahalli, Karnataka 561228
+Rating: 4.6 with 656 ratings
+Google Maps Link: https://maps.google.com/?cid=5759007650487992745
 Opening Hours: 
 
 Name: Glen's Bakehouse
@@ -167,8 +173,8 @@ Country: India
 Creator's Rec: Yes
 Notes: This caf serves top-notch food, with their mini red velvet cupcakes coming highly recommended.
 Address: 24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.4 with 10105.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=24/1,%20Lavelle%20Road,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJKaFXNHgWrjsRuoVUhT-DzDY
+Rating: 4.4 with 11424 ratings
+Google Maps Link: https://maps.google.com/?cid=3948675282140169658
 Opening Hours: Monday: 9:00 AM - 1:00 AM
 Tuesday: 9:00 AM - 1:00 AM
 Wednesday: 9:00 AM - 1:00 AM
@@ -183,9 +189,9 @@ State: Karnataka
 Country: India
 Creator's Rec: 
 Notes: The venue shines in both its culinary and mixology offerings, with Bao being a standout dish.
-Address: 25/4, 1st floor, Lavelle Road, opposite Harley Davidson showroom, Bengaluru, Karnataka 560001, India
-Rating: 4.4 with 236.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=25/4,%201st%20floor,%20Lavelle%20Road,%20opposite%20Harley%20Davidson%20showroom,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJj2WheQEXrjsR7r9boXZ8YcU
+Address: 25/4, 1st floor, Lavelle Road, opposite Harley Davidson showroom, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India
+Rating: 4.6 with 501 ratings
+Google Maps Link: https://maps.google.com/?cid=14222785947167866862
 Opening Hours: Monday: 12:00 - 11:00 PM
 Tuesday: 12:00 - 11:00 PM
 Wednesday: 12:00 - 11:00 PM
@@ -200,12 +206,12 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: For those craving authentic Ramen and Dimsums, this restaurant is an unmissable stop.
-Address: 4th Floor Halcyon Complex, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India
-Rating: 4.3 with 2392.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=4th%20Floor%20Halcyon%20Complex,%20St%20Mark's%20Rd,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560025,%20India&query_place_id=ChIJe01wInkWrjsR_FyvHuyXJu0
-Opening Hours: Monday: 12:00 - 11:30 PM
-Tuesday: 12:00 - 11:30 PM
-Wednesday: 12:00 - 11:30 PM
+Address: 1Sobha Mall, 50, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
+Rating: 4.4 with 3300 ratings
+Google Maps Link: https://maps.google.com/?cid=17088512876486810876
+Opening Hours: Monday: 12:00 - 11:00 PM
+Tuesday: 12:00 - 11:00 PM
+Wednesday: 12:00 - 11:00 PM
 Thursday: 12:00 - 11:30 PM
 Friday: 12:00 - 11:30 PM
 Saturday: 12:00 - 11:30 PM
@@ -217,13 +223,13 @@ State: Karnataka
 Country: India
 Creator's Rec: Yes
 Notes: Exceptional Italian cuisine is expertly paired with wine-based cocktails at this establishment.
-Address: Ramanashree Arcade, Ground Floor, Ashok Nagar Post, 18, Mahatma Gandhi Rd, Sivanchetti Gardens, Bengaluru, Karnataka 560001, India
-Rating: 4.3 with 1808.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=Ramanashree%20Arcade,%20Ground%20Floor,%20Ashok%20Nagar%20Post,%2018,%20Mahatma%20Gandhi%20Rd,%20Sivanchetti%20Gardens,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJ184uJb0XrjsRFuBTcHkYSYA
+Address: Ground Floor, Ramanashree Arcade, Post Old Kid's Kemo Building, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India
+Rating: 4.5 with 3333 ratings
+Google Maps Link: https://maps.google.com/?cid=9243946620009308182
 Opening Hours: Monday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
 Tuesday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
 Wednesday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
 Thursday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
-Friday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
-Saturday: 12:00 - 11:00 PM
-Sunday: 12:00 - 10:30 PM
+Friday: 12:00 - 3:30 PM, 6:30 - 11:30 PM
+Saturday: 12:00 - 11:30 PM
+Sunday: 12:00 - 11:30 PM

@@ -8,16 +8,16 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: Homely coffee shop in a neighborhood lined with other cute restaurants and cafes. Sit outside sipping your drink in the tiny plaza-like area they have, taking in the sun, reading or just having an interesting conversation.
-Address: 5701 College Ave, Oakland, CA 94618, United States
-Rating: 4.7 with 146.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=5701%20College%20Ave,%20Oakland,%20CA%2094618,%20United%20States&query_place_id=ChIJUborLjx_hYARle9InnFaRGA
-Opening Hours: Monday: 7:00 AM - 7:00 PM
-Tuesday: 7:00 AM - 7:00 PM
-Wednesday: 7:00 AM - 7:00 PM
-Thursday: 7:00 AM - 7:00 PM
-Friday: 7:00 AM - 7:00 PM
-Saturday: 7:00 AM - 7:00 PM
-Sunday: 7:00 AM - 7:00 PM
+Address: 5701 College Ave, Oakland, CA 94618, USA
+Rating: 4.5 with 327 ratings
+Google Maps Link: https://maps.google.com/?cid=6936768770090790805
+Opening Hours: Monday: 7:00 AM - 6:00 PM
+Tuesday: 7:00 AM - 6:00 PM
+Wednesday: 7:00 AM - 6:00 PM
+Thursday: 7:00 AM - 6:00 PM
+Friday: 7:00 AM - 6:00 PM
+Saturday: 7:00 AM - 6:00 PM
+Sunday: 7:00 AM - 6:00 PM
 
 Name: Red Bay Coffee Box
 City: Oakland
@@ -25,9 +25,9 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: A quiet and hidden coffee truck in downtown Oakland, but great coffee and some seating to enjoy it on.
-Address: 2327 Broadway, Oakland, CA 94612, United States
-Rating: 4.7 with 83.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2327%20Broadway,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJ_-pWxayAj4ARh4qLGoszSn0
+Address: 2327 Broadway, Oakland, CA 94612, USA
+Rating: 4.7 with 82 ratings
+Google Maps Link: https://maps.google.com/?cid=9028085075556403847
 Opening Hours: 
 
 Name: Crown Coffee Lab
@@ -36,9 +36,9 @@ State: California
 Country: United States of America
 Creator's Rec: Yes
 Notes: Coffee meets tasting menus: get their sample of 3 coffees and nerd out over tasting notes. Also offers classes, consultations and a podcast!
-Address: 2523 Broadway, Oakland, CA 94612, United States
-Rating: 4.7 with 110.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2523%20Broadway,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJrVeVEOWHj4ARvUAZyJpyVY4
+Address: 2523 Broadway, Oakland, CA 94612, USA
+Rating: 4.6 with 230 ratings
+Google Maps Link: https://maps.google.com/?cid=10256229735513800893
 Opening Hours: Monday: 9:00 AM - 4:00 PM
 Tuesday: 9:00 AM - 4:00 PM
 Wednesday: 9:00 AM - 4:00 PM
@@ -53,16 +53,16 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: Co-working space and coffee shop all in one: would recommend for when you need to get work done but are tired of staying in your house.
-Address: 1528 Webster St, Oakland, CA 94612, United States
-Rating: 4.7 with 61.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1528%20Webster%20St,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJe3cJT3eBj4ARyfavUlH0Wqw
+Address: 1528 Webster St, Oakland, CA 94612, USA
+Rating: 4.8 with 230 ratings
+Google Maps Link: https://maps.google.com/?cid=12419507552544356041
 Opening Hours: Monday: 7:30 AM - 3:30 PM
 Tuesday: 7:30 AM - 3:30 PM
 Wednesday: 7:30 AM - 3:30 PM
 Thursday: 7:30 AM - 3:30 PM
 Friday: 7:30 AM - 3:30 PM
 Saturday: 7:30 AM - 3:30 PM
-Sunday: Closed
+Sunday: 9:00 AM - 3:30 PM
 
 Name: Bicycle Coffee
 City: Oakland
@@ -70,9 +70,9 @@ State: California
 Country: United States of America
 Creator's Rec: Yes
 Notes: Bike-themed shop geared towards cyclists. Expect to be served with both coffee and cycling gear if interested. They give you discounts if you show them your helmet!
-Address: 377 2nd St #110, Oakland, CA 94607, United States
-Rating: 4.6 with 503.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=377%202nd%20St%20#110,%20Oakland,%20CA%2094607,%20United%20States&query_place_id=ChIJSbBdUciAj4ARwTBjTQ6u0FY
+Address: 377 2nd St #110, Oakland, CA 94607, USA
+Rating: 4.6 with 590 ratings
+Google Maps Link: https://maps.google.com/?cid=6255691258868740289
 Opening Hours: Monday: 7:30 AM - 3:00 PM
 Tuesday: 7:30 AM - 3:00 PM
 Wednesday: 7:30 AM - 3:00 PM
@@ -87,16 +87,16 @@ State: California
 Country: United States of America
 Creator's Rec: Yes
 Notes: Downtown Oakland spot with pretty good espresso and oversized beach lounging chairs in front of the shop that let you people-watch and bask in the sun.
-Address: 4096 Piedmont Ave #724, Oakland, CA 94611, United States
-Rating: 0.0 with 0.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=4096%20Piedmont%20Ave%20#724,%20Oakland,%20CA%2094611,%20United%20States&query_place_id=ChIJdYqLhraAj4ARFXdC_5afCMg
-Opening Hours: Monday: 9:00 AM - 6:00 PM
-Tuesday: 9:00 AM - 6:00 PM
-Wednesday: 9:00 AM - 6:00 PM
-Thursday: 9:00 AM - 6:00 PM
-Friday: 9:00 AM - 6:00 PM
-Saturday: Closed
-Sunday: Closed
+Address: 1429 Broadway, Oakland, CA 94612, USA
+Rating: 4.4 with 713 ratings
+Google Maps Link: https://maps.google.com/?cid=18348858976162353078
+Opening Hours: Monday: 7:30 AM - 5:00 PM
+Tuesday: 7:30 AM - 5:00 PM
+Wednesday: 7:30 AM - 5:00 PM
+Thursday: 7:30 AM - 5:00 PM
+Friday: 7:30 AM - 5:00 PM
+Saturday: 7:30 AM - 5:00 PM
+Sunday: 7:30 AM - 5:00 PM
 
 Name: Kilovolt
 City: Oakland
@@ -104,16 +104,16 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: A nice pitstop when cycling around West Oakland, or when in the mood to see futuristic-looking concoctions in a garage-like decorated space.
-Address: 1829 Mandela Pkwy, Oakland, CA 94607, United States
-Rating: 4.4 with 378.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1829%20Mandela%20Pkwy,%20Oakland,%20CA%2094607,%20United%20States&query_place_id=ChIJk0lM_uJ_hYARUers_89-3s0
-Opening Hours: Monday: 7:00 AM - 4:00 PM
-Tuesday: 7:00 AM - 4:00 PM
-Wednesday: 7:00 AM - 4:00 PM
-Thursday: 7:00 AM - 4:00 PM
-Friday: 7:00 AM - 4:00 PM
-Saturday: 7:00 AM - 4:00 PM
-Sunday: 7:00 AM - 4:00 PM
+Address: 1746 13th St, Oakland, CA 94607, USA
+Rating: 4.4 with 426 ratings
+Google Maps Link: https://maps.google.com/?cid=14834433654422039121
+Opening Hours: Monday: Closed
+Tuesday: 7:00 AM - 5:00 PM
+Wednesday: 7:00 AM - 5:00 PM
+Thursday: 7:00 AM - 5:00 PM
+Friday: 7:00 AM - 5:00 PM
+Saturday: 7:00 AM - 5:00 PM
+Sunday: 7:00 AM - 5:00 PM
 
 Name: Haddon Hill
 City: Oakland
@@ -121,9 +121,9 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: As the name suggests, on an actual hill hidden from the main street. This cafe is great for reading out when the weather is nice and it's a quiet spot to meditate.
-Address: 504 Wesley Ave, Oakland, CA 94606, United States
-Rating: 4.7 with 148.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=504%20Wesley%20Ave,%20Oakland,%20CA%2094606,%20United%20States&query_place_id=ChIJX946rDiHj4AR9IBVQMmvTNM
+Address: 504 Wesley Ave, Oakland, CA 94606, USA
+Rating: 4.6 with 186 ratings
+Google Maps Link: https://maps.google.com/?cid=15225737719135437044
 Opening Hours: Monday: 8:00 AM - 2:00 PM
 Tuesday: 8:00 AM - 2:00 PM
 Wednesday: 8:00 AM - 2:00 PM
@@ -138,9 +138,9 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: Minimalistic spot in a hidden corridor in Oakland's Temescal: you'll see some dogs, some babies, some people walking curiously around and have good coffee in the processs. Nice for meditating on the future.
-Address: Alley 49, Oakland, CA 94609, United States
-Rating: 4.4 with 100.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=Alley%2049,%20Oakland,%20CA%2094609,%20United%20States&query_place_id=ChIJcdGPDeF9hYARrf-L17vFVzY
+Address: Alley 49, Oakland, CA 94609, USA
+Rating: 4.3 with 111 ratings
+Google Maps Link: https://maps.google.com/?cid=3915815811587768237
 Opening Hours: Monday: 7:00 AM - 3:00 PM
 Tuesday: 7:00 AM - 3:00 PM
 Wednesday: 7:00 AM - 3:00 PM
@@ -155,16 +155,16 @@ State: California
 Country: United States of America
 Creator's Rec: Yes
 Notes: Among the only Italian streetfood spots in the Bay. Choose a few small slices from their selection and enjoy.
-Address: 3204 College Ave, Berkeley, CA 94705, United States
-Rating: 4.7 with 120.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=3204%20College%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJ9yXzCC59hYAR44ho2cVTyl0
+Address: 3204 College Ave, Berkeley, CA 94705, USA
+Rating: 4.6 with 194 ratings
+Google Maps Link: https://maps.google.com/?cid=6758306300044019939
 Opening Hours: Monday: Closed
-Tuesday: 11:30 AM - 8:00 PM
-Wednesday: 11:30 AM - 8:00 PM
-Thursday: 11:30 AM - 8:00 PM
-Friday: 11:30 AM - 8:00 PM
-Saturday: 11:30 AM - 8:00 PM
-Sunday: 11:30 AM - 6:30 PM
+Tuesday: 10:00 AM - 8:00 PM
+Wednesday: 10:00 AM - 8:00 PM
+Thursday: 10:00 AM - 8:00 PM
+Friday: 10:00 AM - 8:00 PM
+Saturday: 10:00 AM - 8:00 PM
+Sunday: 10:00 AM - 6:30 PM
 
 Name: Boichik Bagels
 City: Oakland
@@ -172,16 +172,16 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: Yet another Bay Area classic: arguably one of the best bagel stores on the East Bay. Get a lox bagel that will keep you full all day.
-Address: 3170 College Ave, Berkeley, CA 94705, United States
-Rating: 4.5 with 502.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=3170%20College%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJn9T-ECV9hYARV4O5ll6y04k
-Opening Hours: Monday: 7:30 AM - 1:00 PM
-Tuesday: 7:30 AM - 1:00 PM
-Wednesday: 7:30 AM - 1:00 PM
-Thursday: 7:30 AM - 1:00 PM
-Friday: 7:30 AM - 1:00 PM
-Saturday: 7:30 AM - 1:00 PM
-Sunday: 7:30 AM - 1:00 PM
+Address: 3665 Sacramento St, San Francisco, CA 94118, USA
+Rating: 4.2 with 80 ratings
+Google Maps Link: https://maps.google.com/?cid=4347638760765465889
+Opening Hours: Monday: 7:30 AM - 1:30 PM
+Tuesday: 7:30 AM - 1:30 PM
+Wednesday: 7:30 AM - 1:30 PM
+Thursday: 7:30 AM - 1:30 PM
+Friday: 7:30 AM - 1:30 PM
+Saturday: 7:30 AM - 1:30 PM
+Sunday: 7:30 AM - 1:30 PM
 
 Name: Shawarmaji
 City: Oakland
@@ -189,16 +189,16 @@ State: California
 Country: United States of America
 Creator's Rec: Yes
 Notes: My favorite Middle Eastern spot in the Bay that's exactly what I imagine shawarma should taste like: flavorful, fresh, filling.
-Address: 2123 Franklin St, Oakland, CA 94612, United States
-Rating: 4.5 with 554.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=2123%20Franklin%20St,%20Oakland,%20CA%2094612,%20United%20States&query_place_id=ChIJ06KARiyBj4ARJmSJSSDm0W4
+Address: 2100 Franklin St Suite 2190, Oakland, CA 94612, USA
+Rating: 4.4 with 956 ratings
+Google Maps Link: https://maps.google.com/?cid=7985416640651682854
 Opening Hours: Monday: 11:00 AM - 9:00 PM
 Tuesday: 11:00 AM - 9:00 PM
 Wednesday: 11:00 AM - 9:00 PM
 Thursday: 11:00 AM - 9:00 PM
-Friday: 11:00 AM - 9:00 PM
-Saturday: 11:00 AM - 9:00 PM
-Sunday: 11:00 AM - 7:00 PM
+Friday: 11:00 AM - 12:00 AM
+Saturday: 11:00 AM - 12:00 AM
+Sunday: 11:00 AM - 9:00 PM
 
 Name: Mama Oakland
 City: Oakland
@@ -206,13 +206,13 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: Awesome Italian food in a 3-items fixed menu style: very innovative dishes and presentation. For example, sometimes you'll get your soup constructed in front of you!
-Address: 388 Grand Ave, Oakland, CA 94610, United States
-Rating: 4.7 with 286.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=388%20Grand%20Ave,%20Oakland,%20CA%2094610,%20United%20States&query_place_id=ChIJP3byt5iHj4ARj2K4nYYLMco
-Opening Hours: Monday: 5:30 - 9:00 PM
-Tuesday: 5:30 - 9:00 PM
-Wednesday: 5:30 - 9:00 PM
-Thursday: 5:30 - 9:00 PM
+Address: 388 Grand Ave, Oakland, CA 94610, USA
+Rating: 4.6 with 626 ratings
+Google Maps Link: https://maps.google.com/?cid=14569438942319895183
+Opening Hours: Monday: 5:00 - 9:00 PM
+Tuesday: 5:00 - 9:00 PM
+Wednesday: 5:00 - 9:00 PM
+Thursday: 5:00 - 9:00 PM
 Friday: 5:00 - 10:00 PM
 Saturday: 5:00 - 10:00 PM
 Sunday: 5:00 - 9:00 PM
@@ -223,9 +223,9 @@ State: California
 Country: United States of America
 Creator's Rec: 
 Notes: A classic Bay Area bakery and pizza co-op with pizza-of-the-day offerings and a huge selection of bread and baked goods.
-Address: 1331 9th Ave, San Francisco, CA 94122, United States
-Rating: 4.7 with 1596.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=1331%209th%20Ave,%20San%20Francisco,%20CA%2094122,%20United%20States&query_place_id=ChIJMdUfNVyHhYAR7pvCohDZC70
+Address: 1331 9th Ave, San Francisco, CA 94122, USA
+Rating: 4.7 with 1961 ratings
+Google Maps Link: https://maps.google.com/?cid=13622220163385564142
 Opening Hours: Monday: Closed
 Tuesday: 7:30 AM - 6:00 PM
 Wednesday: 7:30 AM - 6:00 PM
@@ -240,9 +240,9 @@ State: California
 Country: United States of America
 Creator's Rec: Yes
 Notes: Local legend pizza place that serves Chicago-style pizza with yummy stuffings. Once the pizza is ready, the friendly staff will offer to serve you the first piece. The spinach and mushroom is a classic!
-Address: 5801 College Ave, Oakland, CA 94618, United States
-Rating: 4.7 with 2545.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=5801%20College%20Ave,%20Oakland,%20CA%2094618,%20United%20States&query_place_id=ChIJ9bZJbMN9hYARZ3JGwPCPnfc
+Address: 5801 College Ave, Oakland, CA 94618, USA
+Rating: 4.7 with 2890 ratings
+Google Maps Link: https://maps.google.com/?cid=17842575562892538471
 Opening Hours: Monday: 11:00 AM - 9:00 PM
 Tuesday: 11:00 AM - 9:00 PM
 Wednesday: 11:00 AM - 9:00 PM

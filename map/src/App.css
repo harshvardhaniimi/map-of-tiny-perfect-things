@@ -292,9 +292,10 @@ body.map-mode {
   transform: translateX(-50%);
   bottom: calc(var(--space-2) + var(--safe-bottom));
   z-index: 1002;
-  width: min(620px, calc(100vw - 24px));
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(720px, calc(100vw - 24px));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-2);
 }
 
@@ -306,6 +307,8 @@ body.map-mode {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.54rem;
   cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 10px;
 }
 
 .filter-button.active {
@@ -635,11 +638,22 @@ body.map-mode {
   .filter-bar {
     width: calc(100vw - 16px);
     bottom: calc(12px + var(--safe-bottom));
-    gap: 8px;
+    gap: 6px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
   }
 
   .filter-button {
     font-size: 0.5rem;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 }
 

@@ -8,16 +8,16 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Interesting experience in this Ralph Lauren coffee shop. The decor was fancier than the coffee, but still not your usual drink.
-Address: 160 5th Ave, New York, NY 10010, United States
-Rating: 4.3 with 301.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=160%205th%20Ave,%20New%20York,%20NY%2010010,%20United%20States&query_place_id=ChIJXaZb6BJZwokRtn0wzmpDqV4
-Opening Hours: Monday: 7:30 AM - 6:00 PM
-Tuesday: 7:30 AM - 6:00 PM
-Wednesday: 7:30 AM - 6:00 PM
-Thursday: 7:30 AM - 6:00 PM
-Friday: 7:30 AM - 6:00 PM
-Saturday: 7:30 AM - 6:00 PM
-Sunday: 8:00 AM - 5:00 PM
+Address: 888 Madison Ave, New York, NY 10021, USA
+Rating: 4.2 with 1505 ratings
+Google Maps Link: https://maps.google.com/?cid=10672522444434965572
+Opening Hours: Monday: 8:00 AM - 6:00 PM
+Tuesday: 8:00 AM - 6:00 PM
+Wednesday: 8:00 AM - 6:00 PM
+Thursday: 8:00 AM - 6:00 PM
+Friday: 8:00 AM - 7:00 PM
+Saturday: 8:00 AM - 7:00 PM
+Sunday: 8:00 AM - 6:00 PM
 
 Name: %Arabica
 City: New York City
@@ -25,9 +25,9 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Great coffee in an awesome location: get your coffee to go and walk over to the park overlooking the Manhattan skyline.
-Address: 20 Old Fulton St, Brooklyn, NY 11201, United States
-Rating: 4.4 with 650.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=20%20Old%20Fulton%20St,%20Brooklyn,%20NY%2011201,%20United%20States&query_place_id=ChIJd1M9O0xbwokRi1mu1DC93xY
+Address: 20 Old Fulton St, Brooklyn, NY 11201, USA
+Rating: 4.4 with 1617 ratings
+Google Maps Link: https://maps.google.com/?cid=1648244006065166731
 Opening Hours: Monday: 8:00 AM - 6:00 PM
 Tuesday: 8:00 AM - 6:00 PM
 Wednesday: 8:00 AM - 6:00 PM
@@ -42,16 +42,16 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Fave NYC coffee spot! Singular attention to making very high quality coffee drinks provides for some of the best espresso I've had. Checkout one of their three spots around New York, but I recommend their Pine Street flagship.
-Address: 438 W 33rd St, New York, NY 10001, United States
-Rating: 4.6 with 85.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=438%20W%2033rd%20St,%20New%20York,%20NY%2010001,%20United%20States&query_place_id=ChIJOcDofCpZwokRuUs6afge9dE
+Address: Garden, 550 Madison Ave, New York, NY 10022, USA
+Rating: 4.5 with 308 ratings
+Google Maps Link: https://maps.google.com/?cid=10500149527148169405
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
 Wednesday: 7:00 AM - 5:00 PM
 Thursday: 7:00 AM - 5:00 PM
 Friday: 7:00 AM - 5:00 PM
-Saturday: 8:00 AM - 4:00 PM
-Sunday: 8:00 AM - 4:00 PM
+Saturday: 9:00 AM - 4:00 PM
+Sunday: 9:00 AM - 4:00 PM
 
 Name: Cafe Patoro
 City: New York City
@@ -59,9 +59,9 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Quaint shop in the Front Street historical district. You'll enjoy the calm atmosphere if you like a cozy spot to read, write or meet up with the shop's regulars. Also pretty good coffee is a bonus.
-Address: 223 Front St, New York, NY 10038, United States
-Rating: 4.6 with 433.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=223%20Front%20St,%20New%20York,%20NY%2010038,%20United%20States&query_place_id=ChIJHdfkwDxawokRxtRRUo4z2BQ
+Address: 223 Front St, New York, NY 10038, USA
+Rating: 4.6 with 604 ratings
+Google Maps Link: https://maps.google.com/?cid=1502007162087527622
 Opening Hours: Monday: 8:00 AM - 4:00 PM
 Tuesday: 8:00 AM - 4:00 PM
 Wednesday: 8:00 AM - 4:00 PM
@@ -76,14 +76,14 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Deconstructed coffees are the star of the show at this small coffee shop. Give it a try for a different and revealing coffee experience in which your typical latte with come as 3 separate cups.
-Address: 239 E 5th St, New York, NY 10003, United States
-Rating: 4.7 with 692.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=239%20E%205th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJ_dckWptZwokR_LkU9WxPNZ4
-Opening Hours: Monday: 7:30 AM - 5:00 PM
-Tuesday: 7:30 AM - 5:00 PM
-Wednesday: 7:30 AM - 5:00 PM
-Thursday: 7:30 AM - 5:00 PM
-Friday: 7:30 AM - 5:00 PM
+Address: 155 7th Ave, New York, NY 10011, USA
+Rating: 4.2 with 374 ratings
+Google Maps Link: https://maps.google.com/?cid=5191776571549983482
+Opening Hours: Monday: 7:00 AM - 5:30 PM
+Tuesday: 7:00 AM - 5:30 PM
+Wednesday: 7:00 AM - 5:30 PM
+Thursday: 7:00 AM - 5:30 PM
+Friday: 7:00 AM - 5:30 PM
 Saturday: 8:00 AM - 5:30 PM
 Sunday: 8:00 AM - 5:30 PM
 
@@ -93,16 +93,16 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Coffee kiosk in Bryant Park. My recommendation is to get a coffee and drink it slowly taking in the sounds and sights of the city seeping in at the edges of this urban park.
-Address: 9 E 13th St, New York, NY 10003, United States
-Rating: 4.3 with 226.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=9%20E%2013th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJbSf_R5hZwokRsiFxyNhkkHo
-Opening Hours: Monday: 7:00 AM - 5:00 PM
-Tuesday: 7:00 AM - 5:00 PM
-Wednesday: 7:00 AM - 5:00 PM
-Thursday: 7:00 AM - 5:00 PM
-Friday: 7:00 AM - 5:00 PM
-Saturday: 9:00 AM - 5:00 PM
-Sunday: 9:00 AM - 5:00 PM
+Address: 9 E 13th St, New York, NY 10003, USA
+Rating: 4.2 with 255 ratings
+Google Maps Link: https://maps.google.com/?cid=8831669751512113586
+Opening Hours: Monday: 7:00 AM - 7:00 PM
+Tuesday: 7:00 AM - 7:00 PM
+Wednesday: 7:00 AM - 7:00 PM
+Thursday: 7:00 AM - 7:00 PM
+Friday: 7:00 AM - 7:00 PM
+Saturday: 8:00 AM - 6:00 PM
+Sunday: 8:00 AM - 6:00 PM
 
 Name: Hungry Ghost
 City: New York City
@@ -110,16 +110,16 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Their Fulton St Brooklyn location makes for a nice neighbor-ly coffee experience. My recommendation: take your drink to go and walk around the street lined with bookstores and cafes, a nice getaway from the bustle of Manhattan visible from the distance.
-Address: 165 Church St, New York, NY 10007, United States
-Rating: 4.6 with 111.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=165%20Church%20St,%20New%20York,%20NY%2010007,%20United%20States&query_place_id=ChIJoX8prKxbwokRRdoG4EbHC14
-Opening Hours: Monday: 7:00 AM - 7:00 PM
-Tuesday: 7:00 AM - 7:00 PM
-Wednesday: 7:00 AM - 7:00 PM
-Thursday: 7:00 AM - 7:00 PM
-Friday: 7:00 AM - 7:00 PM
-Saturday: 7:00 AM - 7:00 PM
-Sunday: 7:00 AM - 7:00 PM
+Address: 315 Bleecker St, New York, NY 10014, USA
+Rating: 3.8 with 231 ratings
+Google Maps Link: https://maps.google.com/?cid=17915338291263358519
+Opening Hours: Monday: 7:00 AM - 8:00 PM
+Tuesday: 7:00 AM - 8:00 PM
+Wednesday: 7:00 AM - 8:00 PM
+Thursday: 7:00 AM - 8:00 PM
+Friday: 7:00 AM - 8:00 PM
+Saturday: 7:00 AM - 8:00 PM
+Sunday: 7:00 AM - 8:00 PM
 
 Name: Devocion
 City: New York City
@@ -127,16 +127,16 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Some of the best coffee in NYC: at their Brooklyn location you can enjoy a glass-roofed coffee room with stage-like seating.
-Address: 25 E 20th St, New York, NY 10003, United States
-Rating: 4.5 with 594.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=25%20E%2020th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJH1KZKilZwokRYwSxtHI3_N0
-Opening Hours: Monday: 7:30 AM - 6:00 PM
-Tuesday: 7:30 AM - 6:00 PM
-Wednesday: 7:30 AM - 6:00 PM
-Thursday: 7:30 AM - 6:00 PM
-Friday: 7:30 AM - 6:00 PM
-Saturday: 8:00 AM - 6:00 PM
-Sunday: 8:00 AM - 6:00 PM
+Address: 25 E 20th St, New York, NY 10003, USA
+Rating: 4.5 with 971 ratings
+Google Maps Link: https://maps.google.com/?cid=15995720942310458467
+Opening Hours: Monday: 7:00 AM - 6:00 PM
+Tuesday: 7:00 AM - 6:00 PM
+Wednesday: 7:00 AM - 6:00 PM
+Thursday: 7:00 AM - 6:00 PM
+Friday: 7:00 AM - 6:00 PM
+Saturday: 7:30 AM - 6:00 PM
+Sunday: 7:30 AM - 6:00 PM
 
 Name: Lillo Cucina Italiana
 City: New York City
@@ -144,16 +144,16 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Tiny cash-only pasta spot with only a handful of tables. Can't go wrong with any of the dishes and the Italian decor and the friendliness of the people dining creates a heart-warming food atmosphere!
-Address: 331 Henry St, Brooklyn, NY 11201, United States
-Rating: 4.8 with 310.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=331%20Henry%20St,%20Brooklyn,%20NY%2011201,%20United%20States&query_place_id=ChIJtzWlCkVawokRCojY8KfHqqI
+Address: 331 Henry St, Brooklyn, NY 11201, USA
+Rating: 4.8 with 517 ratings
+Google Maps Link: https://maps.google.com/?cid=11721400504299325450
 Opening Hours: Monday: Closed
-Tuesday: 12:30 - 8:30 PM
-Wednesday: 12:30 - 8:30 PM
+Tuesday: Closed
+Wednesday: 2:00 - 8:30 PM
 Thursday: 12:30 - 8:30 PM
 Friday: 12:30 - 8:30 PM
 Saturday: 12:30 - 8:30 PM
-Sunday: 12:30 - 8:30 PM
+Sunday: 12:30 - 8:00 PM
 
 Name: YUBU
 City: New York City
@@ -161,16 +161,16 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Innovative food items in this casual Korean spot: get a set of their 3 sushi-like small eats. I recommend the salmon and spicy tuna.
-Address: 86 E 7th St, New York, NY 10003, United States
-Rating: 4.6 with 207.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=86%20E%207th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJCzymus9ZwokRwUnRIM76cKU
-Opening Hours: Monday: Closed
-Tuesday: Closed
-Wednesday: 11:00 AM - 3:00 PM, 4:00 - 8:00 PM
-Thursday: 11:00 AM - 3:00 PM, 4:00 - 8:00 PM
-Friday: 11:00 AM - 3:00 PM, 4:00 - 8:00 PM
-Saturday: 11:00 AM - 3:00 PM, 4:00 - 8:00 PM
-Sunday: 11:00 AM - 3:00 PM, 4:00 - 8:00 PM
+Address: 46 Grand St, New York, NY 10013, USA
+Rating: 4.6 with 545 ratings
+Google Maps Link: https://maps.google.com/?cid=11921303976870496705
+Opening Hours: Monday: 10:30 AM - 7:30 PM
+Tuesday: 10:30 AM - 7:30 PM
+Wednesday: 10:30 AM - 7:30 PM
+Thursday: 10:30 AM - 7:30 PM
+Friday: 10:30 AM - 7:30 PM
+Saturday: 10:30 AM - 7:30 PM
+Sunday: 10:30 AM - 7:30 PM
 
 Name: L’Industrie
 City: New York City
@@ -178,9 +178,9 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: NYC style pizza at its best. The burrata and truffle slices are a must if you ask me and the lines are worth it for these slices.
-Address: 254 S 2nd St, Brooklyn, NY 11211, United States
-Rating: 4.8 with 2071.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=254%20S%202nd%20St,%20Brooklyn,%20NY%2011211,%20United%20States&query_place_id=ChIJQ-hJIuBbwokRRUdquw_5w5U
+Address: 254 S 2nd St, Brooklyn, NY 11211, USA
+Rating: 4.7 with 5554 ratings
+Google Maps Link: https://maps.google.com/?cid=10791742978073970501
 Opening Hours: Monday: 12:00 - 10:00 PM
 Tuesday: 12:00 - 10:00 PM
 Wednesday: 12:00 - 10:00 PM
@@ -195,9 +195,9 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Giant falafel sandwich that will leave you full for the rest of the day, definitely worth it! Staff is passionate and friendly, but I recommend taking the sandwich and walking over to the Hudson river and enjoy it watching the ships.
-Address: 100 Cedar St #90, New York, NY 10006, United States
-Rating: 4.8 with 205.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=100%20Cedar%20St%20#90,%20New%20York,%20NY%2010006,%20United%20States&query_place_id=ChIJha_VQhdawokRuVhfhUyURGg
+Address: 100 Cedar St #90, New York, NY 10006, USA
+Rating: 4.9 with 287 ratings
+Google Maps Link: https://maps.google.com/?cid=7513293134736873657
 Opening Hours: Monday: 10:00 AM - 3:30 PM
 Tuesday: 10:00 AM - 3:30 PM
 Wednesday: 10:00 AM - 3:30 PM
@@ -212,16 +212,16 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Great bagel spot in the Wall Street area: get one of their special bagels (I recommend the avocado and bacon). Simple but very filling!
-Address: 3 Hanover Square, New York, NY 10004, United States
-Rating: 4.3 with 1912.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=3%20Hanover%20Square,%20New%20York,%20NY%2010004,%20United%20States&query_place_id=ChIJST0cgRZawokRZcRLEH3ylJ0
-Opening Hours: Monday: 6:00 AM - 3:00 PM
-Tuesday: 6:00 AM - 3:00 PM
-Wednesday: 6:00 AM - 3:00 PM
-Thursday: 6:00 AM - 3:00 PM
-Friday: 6:00 AM - 3:00 PM
-Saturday: 7:00 AM - 4:00 PM
-Sunday: 7:00 AM - 4:00 PM
+Address: 3 Hanover Square, New York, NY 10004, USA
+Rating: 4.3 with 2713 ratings
+Google Maps Link: https://maps.google.com/?cid=11354967179466097765
+Opening Hours: Monday: 6:00 AM - 4:00 PM
+Tuesday: 6:00 AM - 4:00 PM
+Wednesday: 6:00 AM - 4:00 PM
+Thursday: 6:00 AM - 4:00 PM
+Friday: 6:00 AM - 4:00 PM
+Saturday: 7:00 AM - 5:00 PM
+Sunday: 7:00 AM - 5:00 PM
 
 Name: Van Leeuwen Ice Cream
 City: New York City
@@ -229,9 +229,9 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Funky (always appreciated) flavors. I recommend their seasonal specials, the passion fruit was colorful and very tasty.
-Address: 48 1/2 E 7th St, New York, NY 10003, United States
-Rating: 4.5 with 1351.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=48%201/2%20E%207th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJFzjg4FFawokRzq3tGzrnVhM
+Address: 48 1/2 E 7th St, New York, NY 10003, USA
+Rating: 4.5 with 1544 ratings
+Google Maps Link: https://maps.google.com/?cid=1393555371480427982
 Opening Hours: Monday: 11:00 AM - 12:00 AM
 Tuesday: 11:00 AM - 12:00 AM
 Wednesday: 11:00 AM - 12:00 AM
@@ -246,16 +246,16 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Greek kiosk in an indoor food court: get the chicken gyro. Yummy!
-Address: URBANSPACE 570 Lexington, 570 Lexington Ave, New York, NY 10022, United States
-Rating: 4.1 with 73.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=URBANSPACE%20570%20Lexington,%20570%20Lexington%20Ave,%20New%20York,%20NY%2010022,%20United%20States&query_place_id=ChIJA4zMd0BZwokRd8jGr1prd38
-Opening Hours: Monday: 11:00 AM - 8:00 PM
-Tuesday: 11:00 AM - 8:00 PM
-Wednesday: 11:00 AM - 8:00 PM
-Thursday: 11:00 AM - 8:00 PM
-Friday: 11:00 AM - 8:00 PM
-Saturday: Closed
-Sunday: Closed
+Address: 1229 1st Ave, New York, NY 10065, USA
+Rating: 4.8 with 195 ratings
+Google Maps Link: https://maps.google.com/?cid=2621215973474162142
+Opening Hours: Monday: 11:00 AM - 9:00 PM
+Tuesday: 11:00 AM - 9:00 PM
+Wednesday: 11:00 AM - 9:00 PM
+Thursday: 11:00 AM - 9:00 PM
+Friday: 11:00 AM - 9:00 PM
+Saturday: 11:00 AM - 9:00 PM
+Sunday: 11:00 AM - 8:45 PM
 
 Name: Khiladi NYC
 City: New York City
@@ -263,9 +263,9 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Great dosa, I recommend the "everything" filling with cheese, potatoes and lentils.
-Address: 175 Avenue B, New York, NY 10009, United States
-Rating: 4.4 with 349.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=175%20Avenue%20B,%20New%20York,%20NY%2010009,%20United%20States&query_place_id=ChIJ4bznWw1ZwokRfCZCl74RhOs
+Address: 175 Avenue B, New York, NY 10009, USA
+Rating: 4.4 with 338 ratings
+Google Maps Link: https://maps.google.com/?cid=16970708806118024828
 Opening Hours: 
 
 Name: Mariscos El Submarino
@@ -274,16 +274,16 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Fish tacos in this small but very busy Queens Mexican restaurant.
-Address: 8805 Roosevelt Ave, Queens, NY 11372, United States
-Rating: 4.6 with 354.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=8805%20Roosevelt%20Ave,%20Queens,%20NY%2011372,%20United%20States&query_place_id=ChIJCURgyldfwokRvBpy5nCp7qY
-Opening Hours: Monday: 12:00 - 9:00 PM
-Tuesday: 12:00 - 9:00 PM
-Wednesday: 12:00 - 9:00 PM
-Thursday: 12:00 - 9:00 PM
-Friday: 12:00 - 9:00 PM
-Saturday: 12:00 - 9:00 PM
-Sunday: 12:00 - 9:00 PM
+Address: 88-05 Roosevelt Ave, Jackson Heights, NY 11372, USA
+Rating: 4.5 with 1001 ratings
+Google Maps Link: https://maps.google.com/?cid=12028737957120842428
+Opening Hours: Monday: 11:00 AM - 10:00 PM
+Tuesday: 11:00 AM - 10:00 PM
+Wednesday: 11:00 AM - 10:00 PM
+Thursday: 11:00 AM - 10:00 PM
+Friday: 11:00 AM - 11:00 PM
+Saturday: 11:00 AM - 11:00 PM
+Sunday: 10:00 AM - 10:00 PM
 
 Name: Nada
 City: New York City
@@ -291,13 +291,13 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Vegan empanadas: warm and filling. The black bean and corn was great!
-Address: 548 W 22nd St, New York, NY 10011, United States
-Rating: 0.0 with 0.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=548%20W%2022nd%20St,%20New%20York,%20NY%2010011,%20United%20States&query_place_id=ChIJLYGkXixawokR1a_a84zM9AE
+Address: 601 W 26th St, New York, NY 10001, USA
+Rating: 5 with 69 ratings
+Google Maps Link: https://maps.google.com/?cid=140962394114011093
 Opening Hours: Monday: Closed
 Tuesday: Closed
-Wednesday: Closed
-Thursday: 10:00 AM - 8:00 PM
+Wednesday: 4:00 - 7:00 PM
+Thursday: 11:00 AM - 7:00 PM
 Friday: 11:00 AM - 7:00 PM
 Saturday: 11:00 AM - 7:00 PM
 Sunday: 11:00 AM - 5:00 PM
@@ -308,16 +308,16 @@ State: New York
 Country: United States of America
 Creator's Rec: 
 Notes: Scallion pancakes and dan dan noodles in this vegan spot really hit the spot! Tasty and good portion sizes for our noodle cravings.
-Address: 328 E 6th St, New York, NY 10003, United States
-Rating: 4.6 with 683.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=328%20E%206th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJ7x3Pe11ZwokRLpfe6va9dqs
-Opening Hours: Monday: 11:30 AM - 10:00 PM
-Tuesday: 11:30 AM - 10:00 PM
-Wednesday: 11:30 AM - 10:00 PM
-Thursday: 11:30 AM - 10:00 PM
-Friday: 11:30 AM - 10:00 PM
-Saturday: 11:30 AM - 10:00 PM
-Sunday: 11:30 AM - 10:00 PM
+Address: 68 W 3rd St, New York, NY 10012, USA
+Rating: 4.4 with 1410 ratings
+Google Maps Link: https://maps.google.com/?cid=1326183607580613096
+Opening Hours: Monday: 11:30 AM - 10:30 PM
+Tuesday: 11:30 AM - 10:30 PM
+Wednesday: 11:30 AM - 10:30 PM
+Thursday: 11:30 AM - 10:30 PM
+Friday: 11:30 AM - 12:00 AM
+Saturday: 11:30 AM - 12:00 AM
+Sunday: 11:30 AM - 10:30 PM
 
 Name: Taqueria Al Pastor
 City: New York City
@@ -325,16 +325,16 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Some of the tastiest tacos al pastor NYC has to offer. As always, the marinated pork, sauces and pinapple make for a great food experience. Props for being right outside of the subway stop.
-Address: 128 Wyckoff Ave, Brooklyn, NY 11237, United States
-Rating: 4.6 with 511.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=128%20Wyckoff%20Ave,%20Brooklyn,%20NY%2011237,%20United%20States&query_place_id=ChIJVxxLjhhdwokRljQPK_XWGzw
-Opening Hours: Monday: 11:00 AM - 12:00 AM
-Tuesday: 11:00 AM - 12:00 AM
-Wednesday: 11:00 AM - 12:00 AM
-Thursday: 11:00 AM - 12:00 AM
-Friday: 11:00 AM - 1:00 AM
-Saturday: 11:00 AM - 1:00 AM
-Sunday: 11:00 AM - 12:00 AM
+Address: 1966 3rd Ave, New York, NY 10029, USA
+Rating: 4.9 with 146 ratings
+Google Maps Link: https://maps.google.com/?cid=8643357877075571482
+Opening Hours: Monday: 11:00 AM - 9:00 PM
+Tuesday: 11:00 AM - 9:00 PM
+Wednesday: 11:00 AM - 9:00 PM
+Thursday: 11:00 AM - 9:00 PM
+Friday: 11:00 AM - 9:00 PM
+Saturday: 11:00 AM - 9:00 PM
+Sunday: 11:00 AM - 9:00 PM
 
 Name: Miss Ada
 City: New York City
@@ -342,13 +342,13 @@ State: New York
 Country: United States of America
 Creator's Rec: Yes
 Notes: Whipped ricotta + any other dish from this former Michelin spot that serves creative and super tasty Middle Eastern food.
-Address: 184 Dekalb Ave, Brooklyn, NY 11205, United States
-Rating: 4.7 with 1109.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=184%20Dekalb%20Ave,%20Brooklyn,%20NY%2011205,%20United%20States&query_place_id=ChIJqzhkS7dbwokRtGCdHcorPvU
+Address: 184 Dekalb Ave, Brooklyn, NY 11205, USA
+Rating: 4.6 with 1706 ratings
+Google Maps Link: https://maps.google.com/?cid=17671610134928646324
 Opening Hours: Monday: Closed
-Tuesday: 5:30 - 9:30 PM
-Wednesday: 5:30 - 9:30 PM
-Thursday: 5:30 - 9:30 PM
+Tuesday: 5:30 - 9:45 PM
+Wednesday: 5:30 - 9:45 PM
+Thursday: 5:30 - 9:45 PM
 Friday: 5:00 - 10:00 PM
 Saturday: 11:00 AM - 2:30 PM, 5:00 - 10:00 PM
 Sunday: 11:00 AM - 2:30 PM, 5:00 - 9:00 PM

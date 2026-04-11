@@ -8,13 +8,13 @@ State: California
 Country: United States of America
 Creator's Rec: Yes
 Notes: Great coffee in a pink, tropical-themed shop. The staff is incredibly friendly and it shows: the shop even has a coffee Spotify playlist!
-Address: 315 S 1st St, San Jose, CA 95113, United States
-Rating: 4.8 with 474.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=315%20S%201st%20St,%20San%20Jose,%20CA%2095113,%20United%20States&query_place_id=ChIJz1LOsPnNj4ARsOE14qXH6v0
+Address: 315 S 1st St, San Jose, CA 95113, USA
+Rating: 4.7 with 765 ratings
+Google Maps Link: https://maps.google.com/?cid=18296655951424774576
 Opening Hours: Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
 Wednesday: 7:00 AM - 7:00 PM
-Thursday: 7:00 AM - 9:00 PM
-Friday: 7:00 AM - 9:00 PM
+Thursday: 7:00 AM - 7:00 PM
+Friday: 7:00 AM - 7:00 PM
 Saturday: 7:00 AM - 7:00 PM
 Sunday: 7:00 AM - 12:00 PM

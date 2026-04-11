@@ -8,13 +8,13 @@ State: California
 Country: United States
 Creator's Rec: 
 Notes: Great collection of coffee beans. The barista was knowledgeable about different ways to make coffee. I liked their Cortado.
-Address: 800 Pine Ave, Long Beach, CA 90813, United States
-Rating: 4.7 with 145.0 ratings
-Google Maps Link: https://www.google.com/maps/search/?api=1&query=800%20Pine%20Ave,%20Long%20Beach,%20CA%2090813,%20United%20States&query_place_id=ChIJ9QLjsfUx3YARWEIbOymgqd4
-Opening Hours: Monday: 7:00 AM - 4:00 PM
-Tuesday: 7:00 AM - 4:00 PM
-Wednesday: 7:00 AM - 4:00 PM
-Thursday: 7:00 AM - 4:00 PM
-Friday: 7:00 AM - 4:00 PM
-Saturday: 7:00 AM - 4:00 PM
-Sunday: 7:00 AM - 4:00 PM
+Address: 455 E Ocean Blvd, Long Beach, CA 90802, USA
+Rating: 4.6 with 226 ratings
+Google Maps Link: https://maps.google.com/?cid=6039313331091062078
+Opening Hours: Monday: 6:00 AM - 5:00 PM
+Tuesday: 6:00 AM - 5:00 PM
+Wednesday: 6:00 AM - 5:00 PM
+Thursday: 6:00 AM - 5:00 PM
+Friday: 6:00 AM - 5:00 PM
+Saturday: 6:00 AM - 5:00 PM
+Sunday: 6:00 AM - 5:00 PM
