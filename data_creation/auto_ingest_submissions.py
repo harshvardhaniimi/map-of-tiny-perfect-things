@@ -139,7 +139,7 @@ def _read_csv_fallback(path: str) -> pd.DataFrame:
 
     for encoding in ("utf-8", "utf-8-sig", "latin1"):
         try:
-            return pd.read_csv(path, encoding=encoding)
+            return pd.read_csv(path, encoding=encoding, engine="python")
         except UnicodeDecodeError as exc:
             decode_errors.append(f"{encoding}: {exc}")
         except pd.errors.ParserError as exc:
@@ -312,7 +312,13 @@ def _enrich_with_google(query: str, google_api_key: str) -> EnrichmentResult:
         opening = details.get("opening_hours") or {}
         weekday = opening.get("weekday_text") or []
         if weekday:
-            opening_hours = "\n".join(str(item) for item in weekday)
+            raw = "\n".join(str(item) for item in weekday)
+            # Replace Unicode whitespace/dashes with ASCII equivalents
+            opening_hours = (raw
+                .replace("\u202f", " ")
+                .replace("\u2009", " ")
+                .replace("\u2013", "-")
+                .replace("\u00a0", " "))
 
     return EnrichmentResult(
         address=address,
