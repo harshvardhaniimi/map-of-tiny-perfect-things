@@ -1,26 +1,23 @@
 This document is about City Berkeley in State California, Country United States of America.
 Following are some noteworthy places that we'd like to revisit again and again.
-This list is not exhaustive but a collection of things we found awesome. 
- 
+This list is not exhaustive but a collection of things we found awesome.
 
 Name: Cafenated Coffee
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Cat-themed designs, great coffee and an outdoor patio good for reading: quality coffee spot!
 Address: 2085 Vine St, Berkeley, CA 94709, United States
-Rating: 4.3 with 373 ratings
+Rating: 4.3 with 373.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2085%20Vine%20St,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJz4VbokB_hYAR95axLBoPul4
-Opening Hours: Monday: 7:00 AM – 6:00 PM
- Tuesday: 7:00 AM – 6:00 PM
- Wednesday: 7:00 AM – 6:00 PM
- Thursday: 7:00 AM – 6:00 PM
- Friday: 7:00 AM – 6:00 PM
- Saturday: 8:00 AM – 6:00 PM
- Sunday: 8:00 AM – 6:00 PM
-
-
+Opening Hours: Monday: 7:00â¯AMâââ6:00â¯PM
+ Tuesday: 7:00â¯AMâââ6:00â¯PM
+ Wednesday: 7:00â¯AMâââ6:00â¯PM
+ Thursday: 7:00â¯AMâââ6:00â¯PM
+ Friday: 7:00â¯AMâââ6:00â¯PM
+ Saturday: 8:00â¯AMâââ6:00â¯PM
+ Sunday: 8:00â¯AMâââ6:00â¯PM
 
 Name: Victory Point
 City: Berkeley
@@ -29,17 +26,15 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Good espresso in a board game cafe: pick a game from their wall and spend fun times at their playing events.
 Address: 1797 Shattuck Ave. Ste A, Berkeley, CA 94709, United States
-Rating: 4.7 with 779 ratings
+Rating: 4.7 with 779.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1797%20Shattuck%20Ave.%20Ste%20A,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJc4U-eZ9-hYAR5ih4d-bZpBI
-Opening Hours: Monday: 9:00 AM – 11:00 PM
- Tuesday: 9:00 AM – 11:00 PM
- Wednesday: 9:00 AM – 11:00 PM
- Thursday: 9:00 AM – 11:00 PM
- Friday: 9:00 AM – 11:00 PM
- Saturday: 10:00 AM – 11:00 PM
- Sunday: 10:00 AM – 10:00 PM
-
-
+Opening Hours: Monday: 9:00â¯AMâââ11:00â¯PM
+ Tuesday: 9:00â¯AMâââ11:00â¯PM
+ Wednesday: 9:00â¯AMâââ11:00â¯PM
+ Thursday: 9:00â¯AMâââ11:00â¯PM
+ Friday: 9:00â¯AMâââ11:00â¯PM
+ Saturday: 10:00â¯AMâââ11:00â¯PM
+ Sunday: 10:00â¯AMâââ10:00â¯PM
 
 Name: My Coffee Roastery
 City: Berkeley
@@ -48,182 +43,162 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Fairytale cottage coffee shop, with incredible attention to detail. Look out for sorted jars of bad coffee beans ("floater" and "immature" among others).
 Address: 2080 Martin Luther King Jr Way, Berkeley, CA 94704, United States
-Rating: 4.8 with 270 ratings
+Rating: 4.8 with 270.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2080%20Martin%20Luther%20King%20Jr%20Way,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJxapf8PF_hYARPg1Ki7Ws9pE
 Opening Hours: Monday: Closed
  Tuesday: Closed
- Wednesday: 8:00 AM – 4:00 PM
- Thursday: 8:00 AM – 4:00 PM
- Friday: 8:00 AM – 4:00 PM
- Saturday: 9:00 AM – 5:00 PM
- Sunday: 9:00 AM – 5:00 PM
-
-
+ Wednesday: 8:00â¯AMâââ4:00â¯PM
+ Thursday: 8:00â¯AMâââ4:00â¯PM
+ Friday: 8:00â¯AMâââ4:00â¯PM
+ Saturday: 9:00â¯AMâââ5:00â¯PM
+ Sunday: 9:00â¯AMâââ5:00â¯PM
 
 Name: Artis
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: High quality coffee and a sleek decor: would recommend for one of those very complex, single origin coffees you want every now and then.
 Address: 1717 Fourth St B, Berkeley, CA 94710, United States
-Rating: 4.4 with 643 ratings
+Rating: 4.4 with 643.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1717%20Fourth%20St%20B,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJMbB3FNt-hYAR-FZpf8Lpdxs
-Opening Hours: Monday: 8:00 AM – 5:00 PM
- Tuesday: 8:00 AM – 5:00 PM
- Wednesday: 8:00 AM – 5:00 PM
- Thursday: 8:00 AM – 5:00 PM
- Friday: 8:00 AM – 5:00 PM
- Saturday: 9:00 AM – 6:00 PM
- Sunday: 9:00 AM – 6:00 PM
-
-
+Opening Hours: Monday: 8:00â¯AMâââ5:00â¯PM
+ Tuesday: 8:00â¯AMâââ5:00â¯PM
+ Wednesday: 8:00â¯AMâââ5:00â¯PM
+ Thursday: 8:00â¯AMâââ5:00â¯PM
+ Friday: 8:00â¯AMâââ5:00â¯PM
+ Saturday: 9:00â¯AMâââ6:00â¯PM
+ Sunday: 9:00â¯AMâââ6:00â¯PM
 
 Name: Hidden Cafe
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Cozy coffee shop next to Strawberry Creek Park, so you can get your coffee, a tasty snack and your dose of sunshine and people watching all in one go.
 Address: 1250 Addison St Suite 111, Berkeley, CA 94702, United States
-Rating: 4.8 with 195 ratings
+Rating: 4.8 with 195.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1250%20Addison%20St%20Suite%20111,%20Berkeley,%20CA%2094702,%20United%20States&query_place_id=ChIJBXOowZl_hYARlyq3_rFQii0
 Opening Hours: Monday: Closed
- Tuesday: 8:30 AM – 6:00 PM
- Wednesday: 8:30 AM – 6:00 PM
- Thursday: 8:30 AM – 6:00 PM
- Friday: 8:30 AM – 6:00 PM
- Saturday: 8:30 AM – 6:00 PM
- Sunday: 8:30 AM – 6:00 PM
-
-
+ Tuesday: 8:30â¯AMâââ6:00â¯PM
+ Wednesday: 8:30â¯AMâââ6:00â¯PM
+ Thursday: 8:30â¯AMâââ6:00â¯PM
+ Friday: 8:30â¯AMâââ6:00â¯PM
+ Saturday: 8:30â¯AMâââ6:00â¯PM
+ Sunday: 8:30â¯AMâââ6:00â¯PM
 
 Name: Timeless Cafe
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Among the best coffee in Berkeley, in the middle of College Avenue, a cute street with a ton of other small businesses to explore.
 Address: 2965 College Ave, Berkeley, CA 94705, United States
-Rating: 4.6 with 313 ratings
+Rating: 4.6 with 313.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2965%20College%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJFZLL5s19hYAR-PoPkSWG7yc
-Opening Hours: Monday: 7:00 AM – 4:00 PM
- Tuesday: 7:00 AM – 4:00 PM
- Wednesday: 7:00 AM – 4:00 PM
- Thursday: 7:00 AM – 4:00 PM
- Friday: 7:00 AM – 4:00 PM
- Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM
-
-
+Opening Hours: Monday: 7:00â¯AMâââ4:00â¯PM
+ Tuesday: 7:00â¯AMâââ4:00â¯PM
+ Wednesday: 7:00â¯AMâââ4:00â¯PM
+ Thursday: 7:00â¯AMâââ4:00â¯PM
+ Friday: 7:00â¯AMâââ4:00â¯PM
+ Saturday: 8:00â¯AMâââ4:00â¯PM
+ Sunday: 8:00â¯AMâââ4:00â¯PM
 
 Name: Free Speech Movement
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Coffee shop on the first floor of Berkeley's Moffit Library, a place that pays homage to the 60s Berkeley student protests on freedom of speech. The coffee is about average but you might be inspired by the crowds of students studying on their laptops.
 Address: 3rd Floor, U C, University Dr, Berkeley, CA 94709, United States
-Rating: 4.3 with 208 ratings
+Rating: 4.3 with 208.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=3rd%20Floor,%20U%20C,%20University%20Dr,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJ60w1qN9-hYARtzxtM7Qwdw4
-Opening Hours: Monday: 7:00 AM – 10:00 PM
- Tuesday: 7:00 AM – 10:00 PM
- Wednesday: 7:00 AM – 10:00 PM
- Thursday: 7:00 AM – 10:00 PM
- Friday: 7:00 AM – 10:00 PM
- Saturday: 9:00 AM – 7:00 PM
- Sunday: 1:00 – 7:00 PM
-
-
+Opening Hours: Monday: 7:00â¯AMâââ10:00â¯PM
+ Tuesday: 7:00â¯AMâââ10:00â¯PM
+ Wednesday: 7:00â¯AMâââ10:00â¯PM
+ Thursday: 7:00â¯AMâââ10:00â¯PM
+ Friday: 7:00â¯AMâââ10:00â¯PM
+ Saturday: 9:00â¯AMâââ7:00â¯PM
+ Sunday: 1:00âââ7:00â¯PM
 
 Name: States
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Sleek spot with high quality beans and great espresso! Give their baked goods a try too.
 Address: Berkeley, CA, USA
-Rating: NA with NA ratings
+Rating: nan with nan ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=Berkeley,%20CA,%20USA&query_place_id=ChIJ00mFOjZ5hYARk-l1ppUV6pQ
-Opening Hours: NA
-
-
+Opening Hours: nan
 
 Name: CoRo Coffee
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: On the science-y side of coffee: super dedicated to making very tasty drinks but also being innovative. Go there for great coffee and the nice street-side seating.
 Address: 2324 Fifth St, Berkeley, CA 94710, United States
-Rating: 4.8 with 137 ratings
+Rating: 4.8 with 137.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2324%20Fifth%20St,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJ4-0j0Oh-hYAR_rDr6cfh-N4
-Opening Hours: Monday: 7:30 AM – 4:00 PM
- Tuesday: 7:30 AM – 4:00 PM
- Wednesday: 7:30 AM – 4:00 PM
- Thursday: 7:30 AM – 4:00 PM
- Friday: 7:30 AM – 4:00 PM
- Saturday: 8:30 AM – 4:00 PM
- Sunday: 8:30 AM – 4:00 PM
-
-
+Opening Hours: Monday: 7:30â¯AMâââ4:00â¯PM
+ Tuesday: 7:30â¯AMâââ4:00â¯PM
+ Wednesday: 7:30â¯AMâââ4:00â¯PM
+ Thursday: 7:30â¯AMâââ4:00â¯PM
+ Friday: 7:30â¯AMâââ4:00â¯PM
+ Saturday: 8:30â¯AMâââ4:00â¯PM
+ Sunday: 8:30â¯AMâââ4:00â¯PM
 
 Name: 1951 Coffee
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Another good coffee place close to Berkeley's campus. Their refuge mission is very inspiring; go and learn more about the work they are doing!
 Address: 2410 Channing Way, Berkeley, CA 94704, United States
-Rating: 4.7 with 327 ratings
+Rating: 4.7 with 327.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2410%20Channing%20Way,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJW2yuxCh8hYARGGQHIaJzsZc
-Opening Hours: Monday: 8:00 AM – 5:00 PM
- Tuesday: 8:00 AM – 5:00 PM
- Wednesday: 8:00 AM – 5:00 PM
- Thursday: 8:00 AM – 5:00 PM
- Friday: 8:00 AM – 5:00 PM
- Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM
-
-
+Opening Hours: Monday: 8:00â¯AMâââ5:00â¯PM
+ Tuesday: 8:00â¯AMâââ5:00â¯PM
+ Wednesday: 8:00â¯AMâââ5:00â¯PM
+ Thursday: 8:00â¯AMâââ5:00â¯PM
+ Friday: 8:00â¯AMâââ5:00â¯PM
+ Saturday: 8:00â¯AMâââ3:00â¯PM
+ Sunday: 8:00â¯AMâââ3:00â¯PM
 
 Name: Mind Coffee
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: New coffee shop on Euclid next to campus, surprisingly great coffee and a nice minimalistic decor. Nice book selection on the wall next to the baristas too.
 Address: 1816 Euclid Ave, Berkeley, CA 94709, United States
-Rating: 4.8 with 35 ratings
+Rating: 4.8 with 35.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1816%20Euclid%20Ave,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJgz3oXhJ9hYARlD3v3inA8uY
-Opening Hours: Monday: 8:00 AM – 5:00 PM
- Tuesday: 8:00 AM – 5:00 PM
- Wednesday: 8:00 AM – 5:00 PM
- Thursday: 8:00 AM – 5:00 PM
- Friday: 8:00 AM – 5:00 PM
- Saturday: 10:00 AM – 5:00 PM
- Sunday: 10:00 AM – 5:00 PM
-
-
+Opening Hours: Monday: 8:00â¯AMâââ5:00â¯PM
+ Tuesday: 8:00â¯AMâââ5:00â¯PM
+ Wednesday: 8:00â¯AMâââ5:00â¯PM
+ Thursday: 8:00â¯AMâââ5:00â¯PM
+ Friday: 8:00â¯AMâââ5:00â¯PM
+ Saturday: 10:00â¯AMâââ5:00â¯PM
+ Sunday: 10:00â¯AMâââ5:00â¯PM
 
 Name: Signal Coffee
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Great coffee and service: another of those good-for-cycling refreshment places. Bonus for having ridgeplots as their logo.
 Address: 1707 Solano Ave, Berkeley, CA 94707, United States
-Rating: 4.7 with 41 ratings
+Rating: 4.7 with 41.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1707%20Solano%20Ave,%20Berkeley,%20CA%2094707,%20United%20States&query_place_id=ChIJAV1cKb55hYARvn8EgKZdkMM
-Opening Hours: Monday: 7:00 AM – 4:00 PM
- Tuesday: 7:00 AM – 4:00 PM
- Wednesday: 7:00 AM – 4:00 PM
- Thursday: 7:00 AM – 4:00 PM
- Friday: 7:00 AM – 4:00 PM
- Saturday: 8:00 AM – 4:00 PM
- Sunday: 8:00 AM – 4:00 PM
-
-
+Opening Hours: Monday: 7:00â¯AMâââ4:00â¯PM
+ Tuesday: 7:00â¯AMâââ4:00â¯PM
+ Wednesday: 7:00â¯AMâââ4:00â¯PM
+ Thursday: 7:00â¯AMâââ4:00â¯PM
+ Friday: 7:00â¯AMâââ4:00â¯PM
+ Saturday: 8:00â¯AMâââ4:00â¯PM
+ Sunday: 8:00â¯AMâââ4:00â¯PM
 
 Name: Little Gem Belgian Waffles
 City: Berkeley
@@ -232,36 +207,32 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: A very tasty surprise in the middle of Telegraph avenue. Some of the best waffles I've tried, but I'd recommend keeping it to 2 toppings.
 Address: 2468 Telegraph Ave Suite A, Berkeley, CA 94704, United States
-Rating: 4.5 with 214 ratings
+Rating: 4.5 with 214.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2468%20Telegraph%20Ave%20Suite%20A,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJOaTDxi58hYARnB1yJXzRhdE
-Opening Hours: Monday: 3:00 PM – 12:00 AM
- Tuesday: 3:00 PM – 12:00 AM
- Wednesday: 3:00 PM – 12:00 AM
- Thursday: 3:00 PM – 12:00 AM
- Friday: 12:00 PM – 12:30 AM
- Saturday: 12:00 PM – 1:00 AM
- Sunday: 12:00 PM – 12:00 AM
+Opening Hours: Monday: 3:00â¯PMâââ12:00â¯AM
+ Tuesday: 3:00â¯PMâââ12:00â¯AM
+ Wednesday: 3:00â¯PMâââ12:00â¯AM
+ Thursday: 3:00â¯PMâââ12:00â¯AM
+ Friday: 12:00â¯PMâââ12:30â¯AM
+ Saturday: 12:00â¯PMâââ1:00â¯AM
+ Sunday: 12:00â¯PMâââ12:00â¯AM
 
-
-
-Name: Artichoke’s Basille Pizza
+Name: Artichokeâs Basille Pizza
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: One of those student classic places for a quick slice of pizza. The slice itself is average, but it's a quintessential Berkeley experience.
 Address: 2590 Durant Ave, Berkeley, CA 94704, United States
-Rating: 4.5 with 992 ratings
+Rating: 4.5 with 992.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2590%20Durant%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJDbudpy98hYARBRu1gsKfwGk
-Opening Hours: Monday: 11:00 AM – 2:00 AM
- Tuesday: 11:00 AM – 2:00 AM
- Wednesday: 11:00 AM – 2:00 AM
- Thursday: 11:00 AM – 2:00 AM
- Friday: 11:00 AM – 3:00 AM
- Saturday: 11:00 AM – 3:00 AM
- Sunday: 11:00 AM – 2:00 AM
-
-
+Opening Hours: Monday: 11:00â¯AMâââ2:00â¯AM
+ Tuesday: 11:00â¯AMâââ2:00â¯AM
+ Wednesday: 11:00â¯AMâââ2:00â¯AM
+ Thursday: 11:00â¯AMâââ2:00â¯AM
+ Friday: 11:00â¯AMâââ3:00â¯AM
+ Saturday: 11:00â¯AMâââ3:00â¯AM
+ Sunday: 11:00â¯AMâââ2:00â¯AM
 
 Name: Gregoire
 City: Berkeley
@@ -270,131 +241,117 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: The notorious potato puffs with truffle oil. Non-optional and highly craveable.
 Address: 2109 Cedar St, Berkeley, CA 94709, United States
-Rating: 4.5 with 827 ratings
+Rating: 4.5 with 827.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2109%20Cedar%20St,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJtd1mG6F-hYARojnUY51ID8Q
-Opening Hours: Monday: 11:30 AM – 7:00 PM
- Tuesday: 11:30 AM – 7:00 PM
- Wednesday: 11:30 AM – 7:00 PM
- Thursday: 11:30 AM – 7:00 PM
- Friday: 11:30 AM – 7:00 PM
- Saturday: 11:30 AM – 7:00 PM
- Sunday: 11:30 AM – 7:00 PM
-
-
+Opening Hours: Monday: 11:30â¯AMâââ7:00â¯PM
+ Tuesday: 11:30â¯AMâââ7:00â¯PM
+ Wednesday: 11:30â¯AMâââ7:00â¯PM
+ Thursday: 11:30â¯AMâââ7:00â¯PM
+ Friday: 11:30â¯AMâââ7:00â¯PM
+ Saturday: 11:30â¯AMâââ7:00â¯PM
+ Sunday: 11:30â¯AMâââ7:00â¯PM
 
 Name: Taco Sinaloa
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Try the shrimp tacos with a cheese topping in this Telegraph Avenue spot for some simple and high-quality tacos.
 Address: 2384 Telegraph Ave, Berkeley, CA 94704, United States
-Rating: 4.4 with 501 ratings
+Rating: 4.4 with 501.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2384%20Telegraph%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJhQLUOi98hYARI1hus_3fG9M
-Opening Hours: Monday: 11:00 AM – 11:00 PM
- Tuesday: 11:00 AM – 11:00 PM
- Wednesday: 11:00 AM – 11:00 PM
- Thursday: 11:00 AM – 11:00 PM
- Friday: 11:00 AM – 12:00 AM
- Saturday: 11:00 AM – 12:00 AM
- Sunday: 11:00 AM – 11:00 PM
-
-
+Opening Hours: Monday: 11:00â¯AMâââ11:00â¯PM
+ Tuesday: 11:00â¯AMâââ11:00â¯PM
+ Wednesday: 11:00â¯AMâââ11:00â¯PM
+ Thursday: 11:00â¯AMâââ11:00â¯PM
+ Friday: 11:00â¯AMâââ12:00â¯AM
+ Saturday: 11:00â¯AMâââ12:00â¯AM
+ Sunday: 11:00â¯AMâââ11:00â¯PM
 
 Name: Donato
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Amazing Italian food also on a corner of College Avenue: the pasta and rice dishes are my go-tos.
 Address: 2635 Ashby Ave, Berkeley, CA 94705, United States
-Rating: 4.3 with 341 ratings
+Rating: 4.3 with 341.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2635%20Ashby%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJ7duu8c19hYARVXrcEsI7p2g
 Opening Hours: Monday: Closed
- Tuesday: 12:00 – 2:30 PM, 5:00 – 9:00 PM
- Wednesday: 12:00 – 2:30 PM, 5:00 – 9:00 PM
- Thursday: 12:00 – 2:30 PM, 5:00 – 9:00 PM
- Friday: 12:00 – 2:30 PM, 5:00 – 9:30 PM
- Saturday: 12:00 – 2:30 PM, 5:00 – 9:30 PM
- Sunday: 12:00 – 2:30 PM, 5:00 – 8:30 PM
-
-
+ Tuesday: 12:00âââ2:30â¯PM, 5:00âââ9:00â¯PM
+ Wednesday: 12:00âââ2:30â¯PM, 5:00âââ9:00â¯PM
+ Thursday: 12:00âââ2:30â¯PM, 5:00âââ9:00â¯PM
+ Friday: 12:00âââ2:30â¯PM, 5:00âââ9:30â¯PM
+ Saturday: 12:00âââ2:30â¯PM, 5:00âââ9:30â¯PM
+ Sunday: 12:00âââ2:30â¯PM, 5:00âââ8:30â¯PM
 
 Name: La Note
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Brunch spot a few blocks from Berkeley's campus: my favorites were the French toast on brioche bread or the creme fraiche pancakes. The place gets really busy very quickly, but it's a nice bustling spot with quality food.
 Address: 2377 Shattuck Ave., Berkeley, CA 94704, United States
-Rating: 4.4 with 1580 ratings
+Rating: 4.4 with 1580.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2377%20Shattuck%20Ave.,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJB_-A0oJ-hYARwmbyJJR3sUo
-Opening Hours: Monday: 8:00 AM – 2:00 PM
- Tuesday: 8:00 AM – 2:00 PM
- Wednesday: 8:00 AM – 2:00 PM
- Thursday: 8:00 AM – 2:00 PM
- Friday: 8:00 AM – 2:00 PM
- Saturday: 8:00 AM – 3:00 PM
- Sunday: 8:00 AM – 3:00 PM
-
-
+Opening Hours: Monday: 8:00â¯AMâââ2:00â¯PM
+ Tuesday: 8:00â¯AMâââ2:00â¯PM
+ Wednesday: 8:00â¯AMâââ2:00â¯PM
+ Thursday: 8:00â¯AMâââ2:00â¯PM
+ Friday: 8:00â¯AMâââ2:00â¯PM
+ Saturday: 8:00â¯AMâââ3:00â¯PM
+ Sunday: 8:00â¯AMâââ3:00â¯PM
 
 Name: Chez Panisse
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: A California classic: the place that popularized the farm-to-table, slow food movement which spread around the world. Definitely a splurge, but their upstairs cafe offers reasonably-priced items that are still super tasty.
 Address: 1517 Shattuck Ave., Berkeley, CA 94709, United States
-Rating: 4.6 with 1944 ratings
+Rating: 4.6 with 1944.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1517%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJcYtcJaF-hYAR-VzrwZpQY0E
 Opening Hours: Monday: Closed
- Tuesday: 5:00 – 10:00 PM
- Wednesday: 5:00 – 10:00 PM
- Thursday: 5:00 – 10:00 PM
- Friday: 11:30 AM – 2:45 PM, 5:00 – 10:00 PM
- Saturday: 11:30 AM – 2:45 PM, 5:00 – 10:00 PM
+ Tuesday: 5:00âââ10:00â¯PM
+ Wednesday: 5:00âââ10:00â¯PM
+ Thursday: 5:00âââ10:00â¯PM
+ Friday: 11:30â¯AMâââ2:45â¯PM, 5:00âââ10:00â¯PM
+ Saturday: 11:30â¯AMâââ2:45â¯PM, 5:00âââ10:00â¯PM
  Sunday: Closed
-
-
 
 Name: Bollywood Cafe
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Good Indian food and very friendly owners. Bonus for being really close to campus and for having some sunny outdoor seating.
 Address: 1805 Euclid Ave, Berkeley, CA 94709, United States
-Rating: 4.5 with 63 ratings
+Rating: 4.5 with 63.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1805%20Euclid%20Ave,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJq8H9nml9hYARO2pGXW6_Tm8
-Opening Hours: Monday: 11:00 AM – 8:30 PM
- Tuesday: 11:00 AM – 8:30 PM
- Wednesday: 11:00 AM – 8:30 PM
- Thursday: 11:00 AM – 8:30 PM
- Friday: 11:00 AM – 8:30 PM
- Saturday: 12:00 – 8:30 PM
+Opening Hours: Monday: 11:00â¯AMâââ8:30â¯PM
+ Tuesday: 11:00â¯AMâââ8:30â¯PM
+ Wednesday: 11:00â¯AMâââ8:30â¯PM
+ Thursday: 11:00â¯AMâââ8:30â¯PM
+ Friday: 11:00â¯AMâââ8:30â¯PM
+ Saturday: 12:00âââ8:30â¯PM
  Sunday: Closed
-
-
 
 Name: Nabolom
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Tiny bakery (with occasional pizza) that is good for recharging after long bike rides or for a treat to start your day.
 Address: 2708 Russell St, Berkeley, CA 94705, United States
-Rating: 4.7 with 288 ratings
+Rating: 4.7 with 288.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2708%20Russell%20St,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJo1PumM19hYARx4eP1QxtjSg
 Opening Hours: Monday: Closed
  Tuesday: Closed
- Wednesday: 8:00 AM – 2:00 PM
- Thursday: 8:00 AM – 2:00 PM
- Friday: 8:00 AM – 7:00 PM
- Saturday: 8:00 AM – 2:00 PM
- Sunday: 8:00 AM – 2:00 PM
-
-
+ Wednesday: 8:00â¯AMâââ2:00â¯PM
+ Thursday: 8:00â¯AMâââ2:00â¯PM
+ Friday: 8:00â¯AMâââ7:00â¯PM
+ Saturday: 8:00â¯AMâââ2:00â¯PM
+ Sunday: 8:00â¯AMâââ2:00â¯PM
 
 Name: Viks Chaat
 City: Berkeley
@@ -403,17 +360,15 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Another Bay Area classic that lives up to the hype. Get one of their chaat dishes or a selection of smaller snacks (pani puri was yummy).
 Address: 2390 Fourth St, Berkeley, CA 94710, United States
-Rating: 4.2 with 3688 ratings
+Rating: 4.2 with 3688.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2390%20Fourth%20St,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJfbzMc-h-hYARG3cEXmb1XRU
-Opening Hours: Monday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
- Tuesday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
- Wednesday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
- Thursday: 11:00 AM – 2:30 PM, 5:00 – 7:30 PM
- Friday: 11:00 AM – 7:30 PM
- Saturday: 11:00 AM – 7:30 PM
- Sunday: 11:00 AM – 7:30 PM
-
-
+Opening Hours: Monday: 11:00â¯AMâââ2:30â¯PM, 5:00âââ7:30â¯PM
+ Tuesday: 11:00â¯AMâââ2:30â¯PM, 5:00âââ7:30â¯PM
+ Wednesday: 11:00â¯AMâââ2:30â¯PM, 5:00âââ7:30â¯PM
+ Thursday: 11:00â¯AMâââ2:30â¯PM, 5:00âââ7:30â¯PM
+ Friday: 11:00â¯AMâââ7:30â¯PM
+ Saturday: 11:00â¯AMâââ7:30â¯PM
+ Sunday: 11:00â¯AMâââ7:30â¯PM
 
 Name: Cheeseboard
 City: Berkeley
@@ -422,11 +377,9 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Worker-owned and operated pizza place with vegan ingredients and a new veggie-based set of toppings each day. One of Berkeley's landmarks and hugely influential in food movements.
 Address: 1512 Shattuck Ave., Berkeley, CA 94709, United States
-Rating: 4.8 with 3153 ratings
+Rating: 4.8 with 3153.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1512%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJr5hMNKF-hYARxmkk-5t0SzE
-Opening Hours: NA
-
-
+Opening Hours: nan
 
 Name: Third Culture Bakery
 City: Berkeley
@@ -435,131 +388,117 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Mochi donuts! Can't go wrong with any flavor since they'll always be the perfect mix of chewy and crunchy.
 Address: 2701 Eighth St, Berkeley, CA 94710, United States
-Rating: 4.6 with 529 ratings
+Rating: 4.6 with 529.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2701%20Eighth%20St,%20Berkeley,%20CA%2094710,%20United%20States&query_place_id=ChIJy_LqU91-hYARrF2Z8bMXT-w
-Opening Hours: Monday: 9:00 AM – 4:00 PM
- Tuesday: 9:00 AM – 4:00 PM
- Wednesday: 9:00 AM – 4:00 PM
- Thursday: 9:00 AM – 4:00 PM
- Friday: 9:00 AM – 4:00 PM
- Saturday: 9:00 AM – 4:00 PM
- Sunday: 9:00 AM – 4:00 PM
-
-
+Opening Hours: Monday: 9:00â¯AMâââ4:00â¯PM
+ Tuesday: 9:00â¯AMâââ4:00â¯PM
+ Wednesday: 9:00â¯AMâââ4:00â¯PM
+ Thursday: 9:00â¯AMâââ4:00â¯PM
+ Friday: 9:00â¯AMâââ4:00â¯PM
+ Saturday: 9:00â¯AMâââ4:00â¯PM
+ Sunday: 9:00â¯AMâââ4:00â¯PM
 
 Name: La Marcha Tapas Bar
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Great Spanish food in a fancy-looking space. The crab tapas and the octopus platter were amazing and definitely worth a try.
 Address: 2026 San Pablo Ave, Berkeley, CA 94702, United States
-Rating: 4.4 with 956 ratings
+Rating: 4.4 with 956.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2026%20San%20Pablo%20Ave,%20Berkeley,%20CA%2094702,%20United%20States&query_place_id=ChIJZSVa58F-hYAR9fvuy-pr6Rg
-Opening Hours: Monday: 4:00 – 10:00 PM
- Tuesday: 4:00 – 10:00 PM
- Wednesday: 4:00 – 10:00 PM
- Thursday: 4:00 – 10:00 PM
- Friday: 4:00 – 10:00 PM
- Saturday: 4:00 – 10:00 PM
- Sunday: 4:00 – 10:00 PM
-
-
+Opening Hours: Monday: 4:00âââ10:00â¯PM
+ Tuesday: 4:00âââ10:00â¯PM
+ Wednesday: 4:00âââ10:00â¯PM
+ Thursday: 4:00âââ10:00â¯PM
+ Friday: 4:00âââ10:00â¯PM
+ Saturday: 4:00âââ10:00â¯PM
+ Sunday: 4:00âââ10:00â¯PM
 
 Name: Cupcakin Bake Shop
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Some of the best mini cupcakes around and highly crave-inducing. The place is on the busy Telegraph Avenue right next to Berkeley's campus.
 Address: 2391 Telegraph Ave, Berkeley, CA 94704, United States
-Rating: 4.6 with 253 ratings
+Rating: 4.6 with 253.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2391%20Telegraph%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJlzvpsih8hYAR6DCl58938GY
-Opening Hours: Monday: 11:00 AM – 6:00 PM
- Tuesday: 11:00 AM – 6:00 PM
- Wednesday: 11:00 AM – 6:00 PM
- Thursday: 11:00 AM – 6:00 PM
- Friday: 11:00 AM – 7:00 PM
- Saturday: 11:00 AM – 7:00 PM
- Sunday: 11:00 AM – 6:00 PM
+Opening Hours: Monday: 11:00â¯AMâââ6:00â¯PM
+ Tuesday: 11:00â¯AMâââ6:00â¯PM
+ Wednesday: 11:00â¯AMâââ6:00â¯PM
+ Thursday: 11:00â¯AMâââ6:00â¯PM
+ Friday: 11:00â¯AMâââ7:00â¯PM
+ Saturday: 11:00â¯AMâââ7:00â¯PM
+ Sunday: 11:00â¯AMâââ6:00â¯PM
 
-
-
-Name: Saul’s Deli
+Name: Saulâs Deli
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: A real staple for deli food in the Bay: try out the shakshouka for an explosion of flavor and freshness.
 Address: 1475 Shattuck Ave., Berkeley, CA 94709, United States
-Rating: 4.5 with 1783 ratings
+Rating: 4.5 with 1783.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1475%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJgcIf0KZ-hYAR_yowREPdtsY
-Opening Hours: Monday: 8:00 AM – 9:00 PM
- Tuesday: 8:00 AM – 9:00 PM
- Wednesday: 8:00 AM – 9:00 PM
- Thursday: 8:00 AM – 9:00 PM
- Friday: 8:00 AM – 9:00 PM
- Saturday: 8:00 AM – 9:00 PM
- Sunday: 8:00 AM – 9:00 PM
-
-
+Opening Hours: Monday: 8:00â¯AMâââ9:00â¯PM
+ Tuesday: 8:00â¯AMâââ9:00â¯PM
+ Wednesday: 8:00â¯AMâââ9:00â¯PM
+ Thursday: 8:00â¯AMâââ9:00â¯PM
+ Friday: 8:00â¯AMâââ9:00â¯PM
+ Saturday: 8:00â¯AMâââ9:00â¯PM
+ Sunday: 8:00â¯AMâââ9:00â¯PM
 
 Name: Fish and Bird Sousaku Izakaya
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Great Japanese curry I would highly recommend, but many of their dishes are carefully thought-out and creatively executed. One of Berkeley's food destinations in my opinion.
 Address: 2451 Shattuck Ave., Berkeley, CA 94704, United States
-Rating: 4.3 with 262 ratings
+Rating: 4.3 with 262.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2451%20Shattuck%20Ave.,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJSVtssxl_hYAR2l6XqAe_ylA
-Opening Hours: Monday: 4:30 – 9:00 PM
+Opening Hours: Monday: 4:30âââ9:00â¯PM
  Tuesday: Closed
- Wednesday: 5:00 – 9:00 PM
- Thursday: 5:00 – 9:00 PM
- Friday: 4:30 – 9:30 PM
- Saturday: 4:30 – 9:30 PM
- Sunday: 4:30 – 9:00 PM
+ Wednesday: 5:00âââ9:00â¯PM
+ Thursday: 5:00âââ9:00â¯PM
+ Friday: 4:30âââ9:30â¯PM
+ Saturday: 4:30âââ9:30â¯PM
+ Sunday: 4:30âââ9:00â¯PM
 
-
-
-Name: Rick and Ann’s
+Name: Rick and Annâs
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: French-inspired brunch place, a bit out of the way but still worth it for their lemon ricotta pancakes and rustic vibes.
 Address: 2922 Domingo Ave, Berkeley, CA 94705, United States
-Rating: 4.5 with 667 ratings
+Rating: 4.5 with 667.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2922%20Domingo%20Ave,%20Berkeley,%20CA%2094705,%20United%20States&query_place_id=ChIJ4RFe8sl9hYARBEIC4MggivE
-Opening Hours: Monday: 8:30 AM – 2:00 PM
+Opening Hours: Monday: 8:30â¯AMâââ2:00â¯PM
  Tuesday: Closed
  Wednesday: Closed
- Thursday: 8:30 AM – 2:00 PM
- Friday: 8:30 AM – 2:00 PM
- Saturday: 8:30 AM – 2:00 PM
- Sunday: 8:30 AM – 2:00 PM
-
-
+ Thursday: 8:30â¯AMâââ2:00â¯PM
+ Friday: 8:30â¯AMâââ2:00â¯PM
+ Saturday: 8:30â¯AMâââ2:00â¯PM
+ Sunday: 8:30â¯AMâââ2:00â¯PM
 
 Name: Imm Thai Street Food
 City: Berkeley
 State: California
 Country: United States of America
-Creator's Rec: NA
+Creator's Rec: nan
 Notes: Classic Thai place a few steps from Berkeley's campus. Usually bustling with students, you'll be impressed by the quality of food and service.
 Address: 2068 University Ave, Berkeley, CA 94704, United States
-Rating: 4.5 with 1212 ratings
+Rating: 4.5 with 1212.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2068%20University%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJYx5P7J5-hYARctvMDW_ZVF8
-Opening Hours: Monday: 11:00 AM – 9:00 PM
- Tuesday: 11:00 AM – 9:00 PM
- Wednesday: 11:00 AM – 9:00 PM
- Thursday: 11:00 AM – 9:00 PM
- Friday: 11:00 AM – 9:30 PM
- Saturday: 11:00 AM – 9:30 PM
- Sunday: 11:00 AM – 9:30 PM
-
-
+Opening Hours: Monday: 11:00â¯AMâââ9:00â¯PM
+ Tuesday: 11:00â¯AMâââ9:00â¯PM
+ Wednesday: 11:00â¯AMâââ9:00â¯PM
+ Thursday: 11:00â¯AMâââ9:00â¯PM
+ Friday: 11:00â¯AMâââ9:30â¯PM
+ Saturday: 11:00â¯AMâââ9:30â¯PM
+ Sunday: 11:00â¯AMâââ9:30â¯PM
 
 Name: Top Dog
 City: Berkeley
@@ -568,15 +507,29 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Simple hot dog spot a block and a half from UC Berkeley's campus. The perfectly simple recipe of a bun, hot dog and mustard served in a place that has been there since 1966.
 Address: 2534 Durant Ave, Berkeley, CA 94704, United States
-Rating: 4.6 with 1189 ratings
+Rating: 4.6 with 1189.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=2534%20Durant%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJ82ILDy98hYARmDyblkFWaBQ
-Opening Hours: Monday: 10:00 AM – 2:00 AM
- Tuesday: 10:00 AM – 2:00 AM
- Wednesday: 10:00 AM – 2:00 AM
- Thursday: 10:00 AM – 2:00 AM
- Friday: 10:00 AM – 3:00 AM
- Saturday: 11:00 AM – 3:00 AM
- Sunday: 11:00 AM – 2:00 AM
+Opening Hours: Monday: 10:00â¯AMâââ2:00â¯AM
+ Tuesday: 10:00â¯AMâââ2:00â¯AM
+ Wednesday: 10:00â¯AMâââ2:00â¯AM
+ Thursday: 10:00â¯AMâââ2:00â¯AM
+ Friday: 10:00â¯AMâââ3:00â¯AM
+ Saturday: 11:00â¯AMâââ3:00â¯AM
+ Sunday: 11:00â¯AMâââ2:00â¯AM
 
-
-
+Name: Berkeley Art Museum and Pacific Film Archive
+City: Berkeley
+State: California
+Country: United States of America
+Creator's Rec: nan
+Notes: One of the campus' museums with interesting exhibits and occasional film showings. Worth a visit if you are in the Downtown/Campus area.
+Address: 2155 Center St, Berkeley, CA 94720, United States
+Rating: 4.5 with 723.0 ratings
+Google Maps Link: https://www.google.com/maps/search/?api=1&query=2155%20Center%20St,%20Berkeley,%20CA%2094720,%20United%20States&query_place_id=ChIJB8EriZ1-hYAReKDxrhGFK-o
+Opening Hours: Monday: Closed
+ Tuesday: Closed
+ Wednesday: 11:00â¯AMâââ7:00â¯PM
+ Thursday: 11:00â¯AMâââ7:00â¯PM
+ Friday: 11:00â¯AMâââ7:00â¯PM
+ Saturday: 11:00â¯AMâââ7:00â¯PM
+ Sunday: 11:00â¯AMâââ7:00â¯PM
