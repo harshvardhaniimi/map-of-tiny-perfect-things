@@ -6,15 +6,15 @@ Name: Rose Park Roasters
 City: Long Beach
 State: California
 Country: United States
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Great collection of coffee beans. The barista was knowledgeable about different ways to make coffee. I liked their Cortado.
 Address: 800 Pine Ave, Long Beach, CA 90813, United States
 Rating: 4.7 with 145.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=800%20Pine%20Ave,%20Long%20Beach,%20CA%2090813,%20United%20States&query_place_id=ChIJ9QLjsfUx3YARWEIbOymgqd4
-Opening Hours: Monday: 7:00â¯AMâââ4:00â¯PM
- Tuesday: 7:00â¯AMâââ4:00â¯PM
- Wednesday: 7:00â¯AMâââ4:00â¯PM
- Thursday: 7:00â¯AMâââ4:00â¯PM
- Friday: 7:00â¯AMâââ4:00â¯PM
- Saturday: 7:00â¯AMâââ4:00â¯PM
- Sunday: 7:00â¯AMâââ4:00â¯PM
+Opening Hours: Monday: 7:00 AM - 4:00 PM
+Tuesday: 7:00 AM - 4:00 PM
+Wednesday: 7:00 AM - 4:00 PM
+Thursday: 7:00 AM - 4:00 PM
+Friday: 7:00 AM - 4:00 PM
+Saturday: 7:00 AM - 4:00 PM
+Sunday: 7:00 AM - 4:00 PM

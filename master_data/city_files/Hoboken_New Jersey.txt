@@ -6,18 +6,18 @@ Name: Cafe Grumpy
 City: Hoboken
 State: New Jersey
 Country: United States of America
-Creator's Rec: nan
+Creator's Rec: 
 Notes: Cute spot in a Whole Foods (convenient). The espresso was pretty good as well!
 Address: 1400 Waterfront Terrace, Weehawken, NJ 07086, United States
 Rating: 4.4 with 29.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1400%20Waterfront%20Terrace,%20Weehawken,%20NJ%2007086,%20United%20States&query_place_id=ChIJX8LJ1hBZwokRKyDZuW-MTiM
-Opening Hours: Monday: 8:00â¯AMâââ7:00â¯PM
- Tuesday: 8:00â¯AMâââ7:00â¯PM
- Wednesday: 8:00â¯AMâââ7:00â¯PM
- Thursday: 8:00â¯AMâââ7:00â¯PM
- Friday: 8:00â¯AMâââ7:00â¯PM
- Saturday: 8:00â¯AMâââ7:00â¯PM
- Sunday: 8:00â¯AMâââ7:00â¯PM
+Opening Hours: Monday: 8:00 AM - 7:00 PM
+Tuesday: 8:00 AM - 7:00 PM
+Wednesday: 8:00 AM - 7:00 PM
+Thursday: 8:00 AM - 7:00 PM
+Friday: 8:00 AM - 7:00 PM
+Saturday: 8:00 AM - 7:00 PM
+Sunday: 8:00 AM - 7:00 PM
 
 Name: Orale! Mexican Kitchen
 City: Hoboken
@@ -29,9 +29,9 @@ Address: 1426 Willow Ave, Hoboken, NJ 07030, United States
 Rating: 4.3 with 642.0 ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=1426%20Willow%20Ave,%20Hoboken,%20NJ%2007030,%20United%20States&query_place_id=ChIJQ2aGW41ZwokRDKs2nyGEdHA
 Opening Hours: Monday: Closed
- Tuesday: 3:00âââ10:00â¯PM
- Wednesday: 3:00âââ10:00â¯PM
- Thursday: 3:00âââ10:00â¯PM
- Friday: 3:00âââ10:00â¯PM
- Saturday: 12:00âââ10:00â¯PM
- Sunday: 12:00âââ9:00â¯PM
+Tuesday: 3:00 - 10:00 PM
+Wednesday: 3:00 - 10:00 PM
+Thursday: 3:00 - 10:00 PM
+Friday: 3:00 - 10:00 PM
+Saturday: 12:00 - 10:00 PM
+Sunday: 12:00 - 9:00 PM

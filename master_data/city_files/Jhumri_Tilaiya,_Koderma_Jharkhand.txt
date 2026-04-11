@@ -6,9 +6,9 @@ Name: Bawarchi Rolls
 City: Jhumri Tilaiya, Koderma
 State: Jharkhand
 Country: India
-Creator's Rec: nan
+Creator's Rec: 
 Notes: The best Chicken roll in the whole world... I've had chicken rolls from hundreds of places, but this is definitely the best one.
-Address: nan
-Rating: nan with nan ratings
+Address: 
+Rating:  with  ratings
 Google Maps Link: https://www.google.com/maps/search/?api=1&query=Bawarchi%20Rolls%20Under%20Railway%20Overbridge%20Jhumri%20Tilaiya%2C%20Koderma%20Jharkhand%20India
-Opening Hours: nan
+Opening Hours:
