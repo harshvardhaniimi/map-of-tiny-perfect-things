@@ -48,7 +48,7 @@ Thursday: 7:00 AM - 10:00 PM
 Friday: 7:00 AM - 10:00 PM
 Saturday: 9:00 AM - 7:00 PM
 Sunday: 1:00 - 7:00 PM",cafe,ChIJ60w1qN9-hYARtzxtM7Qwdw4,coffee
-States,San Francisco Bay Area,Berkeley,California,United States of America,,Sleek spot with high quality beans and great espresso! Give their baked goods a try too.,"Berkeley, CA, USA",,,"https://www.google.com/maps/search/?api=1&query=Berkeley,%20CA,%20USA&query_place_id=ChIJ00mFOjZ5hYARk-l1ppUV6pQ",37.8715,-122.273,,locality,ChIJ00mFOjZ5hYARk-l1ppUV6pQ,others
+States,San Francisco Bay Area,Berkeley,California,United States of America,,Sleek spot with high quality beans and great espresso! Give their baked goods a try too.,"Berkeley, CA, USA",,,"https://www.google.com/maps/search/?api=1&query=Berkeley,%20CA,%20USA&query_place_id=ChIJ00mFOjZ5hYARk-l1ppUV6pQ",37.8715,-122.273,,locality,ChIJ00mFOjZ5hYARk-l1ppUV6pQ,attraction
 Equator Coffee,San Francisco Bay Area,San Francisco,California,United States of America,,"Classic Bay Area coffee: speciality drinks, single-origin beans and their Fort Mason tiny spot is great for enjoying the views of the Bay and the Marina.","2 Marina Blvd, San Francisco, CA 94123, United States",4.4,347.0,"https://www.google.com/maps/search/?api=1&query=2%20Marina%20Blvd,%20San%20Francisco,%20CA%2094123,%20United%20States&query_place_id=ChIJA_rvjdiAhYARb0vVE-Pyauk",37.8053,-122.4319,"Monday: Closed
 Tuesday: Closed
 Wednesday: Closed
@@ -83,14 +83,14 @@ Wednesday: 10:00 AM - 6:00 PM
 Thursday: 10:00 AM - 6:00 PM
 Friday: 10:00 AM - 6:00 PM
 Saturday: 10:00 AM - 6:00 PM
-Sunday: 11:00 AM - 6:00 PM",electronics_store,ChIJ0aPn18W1j4ARgC9zTSPeQRc,others
+Sunday: 11:00 AM - 6:00 PM",electronics_store,ChIJ0aPn18W1j4ARgC9zTSPeQRc,shopping
 Ain’t Normal,San Francisco Bay Area,Oakland,California,United States of America,,"Homely coffee shop in a neighborhood lined with other cute restaurants and cafes. Sit outside sipping your drink in the tiny plaza-like area they have, taking in the sun, reading or just having an interesting conversation.","5701 College Ave, Oakland, CA 94618, United States",4.7,146.0,"https://www.google.com/maps/search/?api=1&query=5701%20College%20Ave,%20Oakland,%20CA%2094618,%20United%20States&query_place_id=ChIJUborLjx_hYARle9InnFaRGA",37.8453,-122.252,"Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
 Wednesday: 7:00 AM - 7:00 PM
 Thursday: 7:00 AM - 7:00 PM
 Friday: 7:00 AM - 7:00 PM
 Saturday: 7:00 AM - 7:00 PM
-Sunday: 7:00 AM - 7:00 PM",liquor_store,ChIJUborLjx_hYARle9InnFaRGA,food
+Sunday: 7:00 AM - 7:00 PM",liquor_store,ChIJUborLjx_hYARle9InnFaRGA,drinks
 Goody Cafe,San Francisco Bay Area,San Francisco,California,United States of America,,"Good-y coffee: also a tiny location in an usually busy part of Fort Mason, so prepare for lines. But it offers a good dose of caffeine after getting lunch from the Farmer's market next to it.","Landmark Building C, 2 Marina Blvd, San Francisco, CA 94123, United States",4.4,76.0,"https://www.google.com/maps/search/?api=1&query=Landmark%20Building%20C,%202%20Marina%20Blvd,%20San%20Francisco,%20CA%2094123,%20United%20States&query_place_id=ChIJ02-LXyeBhYARMKR34YswheM",37.8065,-122.4314,"Monday: 8:30 AM - 2:00 PM
 Tuesday: 8:30 AM - 5:00 PM
 Wednesday: 8:30 AM - 5:00 PM
@@ -168,7 +168,7 @@ Wednesday: 9:00 AM - 6:00 PM
 Thursday: 9:00 AM - 6:00 PM
 Friday: 9:00 AM - 6:00 PM
 Saturday: Closed
-Sunday: Closed",point_of_interest,ChIJdYqLhraAj4ARFXdC_5afCMg,others
+Sunday: Closed",point_of_interest,ChIJdYqLhraAj4ARFXdC_5afCMg,attraction
 Kilovolt,San Francisco Bay Area,Oakland,California,United States of America,,"A nice pitstop when cycling around West Oakland, or when in the mood to see futuristic-looking concoctions in a garage-like decorated space.","1829 Mandela Pkwy, Oakland, CA 94607, United States",4.4,378.0,"https://www.google.com/maps/search/?api=1&query=1829%20Mandela%20Pkwy,%20Oakland,%20CA%2094607,%20United%20States&query_place_id=ChIJk0lM_uJ_hYARUers_89-3s0",37.8143,-122.2906,"Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
 Wednesday: 7:00 AM - 4:00 PM
@@ -336,7 +336,7 @@ Wednesday: 11:00 AM - 8:00 PM
 Thursday: 11:00 AM - 8:00 PM
 Friday: 11:00 AM - 8:00 PM
 Saturday: 11:00 AM - 8:00 PM
-Sunday: 11:00 AM - 8:00 PM",bar,ChIJWTGPjmaAhYARgXpiJ-aACYM,food
+Sunday: 11:00 AM - 8:00 PM",bar,ChIJWTGPjmaAhYARgXpiJ-aACYM,drinks
 Bollywood Cafe,San Francisco Bay Area,Berkeley,California,United States of America,,Good Indian food and very friendly owners. Bonus for being really close to campus and for having some sunny outdoor seating.,"1805 Euclid Ave, Berkeley, CA 94709, United States",4.5,63.0,"https://www.google.com/maps/search/?api=1&query=1805%20Euclid%20Ave,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJq8H9nml9hYARO2pGXW6_Tm8",37.8758,-122.2602,"Monday: 11:00 AM - 8:30 PM
 Tuesday: 11:00 AM - 8:30 PM
 Wednesday: 11:00 AM - 8:30 PM
@@ -357,7 +357,7 @@ Wednesday: 11:00 AM - 2:30 PM, 5:00 - 7:30 PM
 Thursday: 11:00 AM - 2:30 PM, 5:00 - 7:30 PM
 Friday: 11:00 AM - 7:30 PM
 Saturday: 11:00 AM - 7:30 PM
-Sunday: 11:00 AM - 7:30 PM",grocery_or_supermarket,ChIJfbzMc-h-hYARG3cEXmb1XRU,others
+Sunday: 11:00 AM - 7:30 PM",grocery_or_supermarket,ChIJfbzMc-h-hYARG3cEXmb1XRU,shopping
 Cheeseboard,San Francisco Bay Area,Berkeley,California,United States of America,Yes,Worker-owned and operated pizza place with vegan ingredients and a new veggie-based set of toppings each day. One of Berkeley's landmarks and hugely influential in food movements.,"1512 Shattuck Ave., Berkeley, CA 94709, United States",4.8,3153.0,"https://www.google.com/maps/search/?api=1&query=1512%20Shattuck%20Ave.,%20Berkeley,%20CA%2094709,%20United%20States&query_place_id=ChIJr5hMNKF-hYARxmkk-5t0SzE",37.8799,-122.2695,,restaurant,ChIJr5hMNKF-hYARxmkk-5t0SzE,food
 B Patisserie,San Francisco Bay Area,San Francisco,California,United States of America,,Vienna-style pastries: very fresh and tasty. This place is also good for larger parties or take out.,"2821 California St, San Francisco, CA 94115, United States",4.7,2330.0,"https://www.google.com/maps/search/?api=1&query=2821%20California%20St,%20San%20Francisco,%20CA%2094115,%20United%20States&query_place_id=ChIJ59WgYcmAhYARu5gLD0FVpw4",37.7879,-122.4409,"Monday: Closed
 Tuesday: Closed
@@ -379,7 +379,7 @@ Wednesday: 4:00 - 10:00 PM
 Thursday: 4:00 - 10:00 PM
 Friday: 4:00 - 10:00 PM
 Saturday: 4:00 - 10:00 PM
-Sunday: 4:00 - 10:00 PM",bar,ChIJZSVa58F-hYAR9fvuy-pr6Rg,food
+Sunday: 4:00 - 10:00 PM",bar,ChIJZSVa58F-hYAR9fvuy-pr6Rg,drinks
 Cinderella,San Francisco Bay Area,San Francisco,California,United States of America,,"Russian bakery in a quiet part of the Richmond district. Don't be fooled, however, Cinderella has been around since 1953 and that's for good reason, their pastries are amazing!","436 Balboa St, San Francisco, CA 94118, United States",4.7,2259.0,"https://www.google.com/maps/search/?api=1&query=436%20Balboa%20St,%20San%20Francisco,%20CA%2094118,%20United%20States&query_place_id=ChIJG6DZVEeHhYARN90v8rBlRsY",37.7774,-122.4637,"Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
 Wednesday: 7:00 AM - 7:00 PM
@@ -414,7 +414,7 @@ Wednesday: 5:30 - 9:00 PM
 Thursday: 5:30 - 9:00 PM
 Friday: 5:00 - 10:00 PM
 Saturday: 5:00 - 10:00 PM
-Sunday: 5:00 - 9:00 PM",bar,ChIJP3byt5iHj4ARj2K4nYYLMco,food
+Sunday: 5:00 - 9:00 PM",bar,ChIJP3byt5iHj4ARj2K4nYYLMco,drinks
 Cupcakin Bake Shop,San Francisco Bay Area,Berkeley,California,United States of America,,Some of the best mini cupcakes around and highly crave-inducing. The place is on the busy Telegraph Avenue right next to Berkeley's campus.,"2391 Telegraph Ave, Berkeley, CA 94704, United States",4.6,253.0,"https://www.google.com/maps/search/?api=1&query=2391%20Telegraph%20Ave,%20Berkeley,%20CA%2094704,%20United%20States&query_place_id=ChIJlzvpsih8hYAR6DCl58938GY",37.8671,-122.2587,"Monday: 11:00 AM - 6:00 PM
 Tuesday: 11:00 AM - 6:00 PM
 Wednesday: 11:00 AM - 6:00 PM
@@ -505,7 +505,7 @@ Wednesday: 12:00 - 9:00 PM
 Thursday: 12:00 - 9:00 PM
 Friday: 11:00 AM - 10:00 PM
 Saturday: 11:00 AM - 10:00 PM
-Sunday: 11:00 AM - 10:00 PM",bar,ChIJA8_SN2eAhYARCIvEx44Zvfw,food
+Sunday: 11:00 AM - 10:00 PM",bar,ChIJA8_SN2eAhYARCIvEx44Zvfw,drinks
 La Mar Cebicheria Peruana,San Francisco Bay Area,San Francisco,California,United States of America,Yes,"Famous Peruvian spot, with some of the best nigiri I've had. Very fresh and tasty, and a great balcony area overlooking the Bay Bridge and Embarcadero.","PIER 1 1/2 The Embarcadero N, San Francisco, CA 94105, United States",4.5,3715.0,"https://www.google.com/maps/search/?api=1&query=PIER%201%201/2%20The%20Embarcadero%20N,%20San%20Francisco,%20CA%2094105,%20United%20States&query_place_id=ChIJURDKN2eAhYARN0AMzUEaiKo",37.7971,-122.3954,"Monday: 11:30 AM - 2:30 PM, 5:00 - 9:00 PM
 Tuesday: 11:30 AM - 2:30 PM, 5:00 - 9:00 PM
 Wednesday: 11:30 AM - 2:30 PM, 5:00 - 9:00 PM
@@ -666,7 +666,7 @@ Wednesday: 11:00 AM - 12:00 AM
 Thursday: 11:00 AM - 12:00 AM
 Friday: 11:00 AM - 1:00 AM
 Saturday: 11:00 AM - 1:00 AM
-Sunday: 11:00 AM - 12:00 AM",store,ChIJFzjg4FFawokRzq3tGzrnVhM,others
+Sunday: 11:00 AM - 12:00 AM",store,ChIJFzjg4FFawokRzq3tGzrnVhM,shopping
 Pita Yeero,"New York, NY",New York City,New York,United States of America,,Greek kiosk in an indoor food court: get the chicken gyro. Yummy!,"URBANSPACE 570 Lexington, 570 Lexington Ave, New York, NY 10022, United States",4.1,73.0,"https://www.google.com/maps/search/?api=1&query=URBANSPACE%20570%20Lexington,%20570%20Lexington%20Ave,%20New%20York,%20NY%2010022,%20United%20States&query_place_id=ChIJA4zMd0BZwokRd8jGr1prd38",40.7571,-73.9725,"Monday: 11:00 AM - 8:00 PM
 Tuesday: 11:00 AM - 8:00 PM
 Wednesday: 11:00 AM - 8:00 PM
@@ -695,7 +695,7 @@ Wednesday: Closed
 Thursday: 10:00 AM - 8:00 PM
 Friday: 11:00 AM - 7:00 PM
 Saturday: 11:00 AM - 7:00 PM
-Sunday: 11:00 AM - 5:00 PM",point_of_interest,ChIJLYGkXixawokR1a_a84zM9AE,others
+Sunday: 11:00 AM - 5:00 PM",point_of_interest,ChIJLYGkXixawokR1a_a84zM9AE,attraction
 Spicy Moon,"New York, NY",New York City,New York,United States of America,,Scallion pancakes and dan dan noodles in this vegan spot really hit the spot! Tasty and good portion sizes for our noodle cravings.,"328 E 6th St, New York, NY 10003, United States",4.6,683.0,"https://www.google.com/maps/search/?api=1&query=328%20E%206th%20St,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJ7x3Pe11ZwokRLpfe6va9dqs",40.7267,-73.9872,"Monday: 11:30 AM - 10:00 PM
 Tuesday: 11:30 AM - 10:00 PM
 Wednesday: 11:30 AM - 10:00 PM
@@ -744,7 +744,7 @@ Wednesday: 11:00 AM - 11:00 PM
 Thursday: 11:00 AM - 11:00 PM
 Friday: 11:00 AM - 11:00 PM
 Saturday: 11:00 AM - 8:00 PM
-Sunday: 11:00 AM - 6:00 PM",bar,ChIJr3GLbbu3t4kRu9DFOwORiuo,food
+Sunday: 11:00 AM - 6:00 PM",bar,ChIJr3GLbbu3t4kRu9DFOwORiuo,drinks
 Eye Street Grill,"Washington, DC",Washington D.C.,Washington D.C.,United States of America,,"Self-serve lunch restaurant. A lot of options, all tasty and healthy. Check it out when you're in the White House area.","1575 I St NW #1, Washington, DC 20005, United States",4.3,124.0,"https://www.google.com/maps/search/?api=1&query=1575%20I%20St%20NW%20#1,%20Washington,%20DC%2020005,%20United%20States&query_place_id=ChIJxcidcL63t4kRuIjzYG7tVuA",38.9015,-77.0353,"Monday: 7:00 AM - 2:30 PM
 Tuesday: 7:00 AM - 2:30 PM
 Wednesday: 7:00 AM - 2:30 PM
@@ -912,14 +912,14 @@ Wednesday: 10:00 AM - 6:00 PM
 Thursday: 10:00 AM - 6:00 PM
 Friday: 10:00 AM - 6:00 PM
 Saturday: 10:00 AM - 6:00 PM
-Sunday: 10:00 AM - 6:00 PM",tourist_attraction,ChIJ_5QZeKqglVQRaTkbdQnoF0w,others
+Sunday: 10:00 AM - 6:00 PM",tourist_attraction,ChIJ_5QZeKqglVQRaTkbdQnoF0w,attraction
 Salt and Straw,"Portland, OR",Portland,Oregon,United States of America,,Fun ice cream shop with very innovative rotating flavors that changed my idea of what ice cream can be. Don't be afraid to try salty flavors or the more complex mixes of things like cheese and marionberry.,"838 NW 23rd Ave, Portland, OR 97210, United States",4.7,5529.0,"https://www.google.com/maps/search/?api=1&query=838%20NW%2023rd%20Ave,%20Portland,%20OR%2097210,%20United%20States&query_place_id=ChIJQ4VlWfAJlVQRPXN-039EJCo",45.5289,-122.6983,"Monday: 11:00 AM - 11:00 PM
 Tuesday: 11:00 AM - 11:00 PM
 Wednesday: 11:00 AM - 11:00 PM
 Thursday: 11:00 AM - 11:00 PM
 Friday: 11:00 AM - 11:00 PM
 Saturday: 11:00 AM - 11:00 PM
-Sunday: 11:00 AM - 11:00 PM",point_of_interest,ChIJQ4VlWfAJlVQRPXN-039EJCo,others
+Sunday: 11:00 AM - 11:00 PM",point_of_interest,ChIJQ4VlWfAJlVQRPXN-039EJCo,attraction
 Mirisata,"Portland, OR",Portland,Oregon,United States of America,Yes,Great Sri Lankan food that is bursting with flavor in a very relaxed spot.,"2420 SE Belmont St, Portland, OR 97214, United States",4.6,448.0,"https://www.google.com/maps/search/?api=1&query=2420%20SE%20Belmont%20St,%20Portland,%20OR%2097214,%20United%20States&query_place_id=ChIJqQ9sQA6nlVQRFewpK9i-v88",45.5163,-122.641,"Monday: 12:00 - 9:00 PM
 Tuesday: 12:00 - 9:00 PM
 Wednesday: 12:00 - 9:00 PM
@@ -1025,14 +1025,14 @@ Wednesday: 10:00 AM - 7:00 PM
 Thursday: 10:00 AM - 7:00 PM
 Friday: 10:00 AM - 7:00 PM
 Saturday: 10:00 AM - 7:00 PM
-Sunday: 10:00 AM - 7:00 PM",book_store,ChIJRUZSQ3HDyIAR6UiWgOtvN10,others
+Sunday: 10:00 AM - 7:00 PM",book_store,ChIJRUZSQ3HDyIAR6UiWgOtvN10,culture
 Esther’s Kitchen,"Las Vegas, Nevada",Las Vegas,Nevada,United States of America,,"Inventive but still filling Italian food. A lively spot in the colorful Arts district, this place is a great Vegas food destination.","1130 S Casino Center Blvd STE 110, Las Vegas, NV 89104, United States",4.7,2588.0,"https://www.google.com/maps/search/?api=1&query=1130%20S%20Casino%20Center%20Blvd%20STE%20110,%20Las%20Vegas,%20NV%2089104,%20United%20States&query_place_id=ChIJ44w1UIXDyIAR4Gj6uVkFoPY",36.1575,-115.1529,"Monday: 11:00 AM - 3:00 PM, 5:00 - 11:00 PM
 Tuesday: 11:00 AM - 3:00 PM, 5:00 - 11:00 PM
 Wednesday: 11:00 AM - 3:00 PM, 5:00 - 11:00 PM
 Thursday: 11:00 AM - 3:00 PM, 5:00 - 11:00 PM
 Friday: 11:00 AM - 3:00 PM, 5:00 - 11:00 PM
 Saturday: 10:00 AM - 3:00 PM, 5:00 - 11:00 PM
-Sunday: 10:00 AM - 3:00 PM, 5:00 - 11:00 PM",bar,ChIJ44w1UIXDyIAR4Gj6uVkFoPY,food
+Sunday: 10:00 AM - 3:00 PM, 5:00 - 11:00 PM",bar,ChIJ44w1UIXDyIAR4Gj6uVkFoPY,drinks
 PublicUs,"Las Vegas, Nevada",Las Vegas,Nevada,United States of America,,"Colorful brunch spot with fresh, farm-to-table goodies and interesting decorations all over.","1126 E Fremont St, Las Vegas, NV 89101, United States",4.6,2011.0,"https://www.google.com/maps/search/?api=1&query=1126%20E%20Fremont%20St,%20Las%20Vegas,%20NV%2089101,%20United%20States&query_place_id=ChIJM7jaCHHDyIARPHMuFhyy8hI",36.1658,-115.133,"Monday: 7:00 AM - 3:00 PM
 Tuesday: 7:00 AM - 3:00 PM
 Wednesday: 7:00 AM - 3:00 PM
@@ -1123,7 +1123,7 @@ Wednesday: 10:00 AM - 6:00 PM
 Thursday: 10:00 AM - 7:00 PM
 Friday: 10:00 AM - 9:00 PM
 Saturday: 10:00 AM - 9:00 PM
-Sunday: 11:00 AM - 6:00 PM",point_of_interest,ChIJlaN-8lkXXIgRZMipnDxx38A,others
+Sunday: 11:00 AM - 6:00 PM",point_of_interest,ChIJlaN-8lkXXIgRZMipnDxx38A,attraction
 Wild Love Bakehouse,"Knoxville, TN",Knoxville,Tennessee,United States of America,,"A sanctuary for coffee and croissant lovers, with the added charm of indoor and outdoor seating.","1625 N Central St, Knoxville, TN 37917, United States",4.6,745.0,"https://www.google.com/maps/search/?api=1&query=1625%20N%20Central%20St,%20Knoxville,%20TN%2037917,%20United%20States&query_place_id=ChIJ-wFdM4c9XIgR2V4T7sYEwtE",35.9854,-83.9344,"Monday: Closed
 Tuesday: Closed
 Wednesday: 8:00 AM - 4:00 PM
@@ -1256,43 +1256,43 @@ Wednesday: 10:00 AM - 7:00 PM
 Thursday: 10:00 AM - 7:00 PM
 Friday: 10:00 AM - 7:00 PM
 Saturday: 10:00 AM - 7:00 PM
-Sunday: 11:00 AM - 6:00 PM",clothing_store,ChIJBZQqyTIjXIgRgla5sZhF_-0,others
+Sunday: 11:00 AM - 6:00 PM",clothing_store,ChIJBZQqyTIjXIgRgla5sZhF_-0,shopping
 TOIT,"Toit Brewpub, 100 Feet Road, Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka",Bengaluru,Karnataka,India,Yes,"Tin-Tin Beer excels in crafting light beers, offers delectable cuisine, and provides an economical setting that evokes nostalgia.","Indiranagar, 100 Feet Rd, Near Drops Total Spirites, Bengaluru, Karnataka 560038, India",4.5,52918.0,"https://www.google.com/maps/search/?api=1&query=Indiranagar,%20100%20Feet%20Rd,%20Near%20Drops%20Total%20Spirites,%20Bengaluru,%20Karnataka%20560038,%20India&query_place_id=ChIJc0JAFaUWrjsRRXSXJPX7YFo",12.9792,77.6405,"Monday: 8:30 AM - 1:00 AM
 Tuesday: 8:30 AM - 1:00 AM
 Wednesday: 8:30 AM - 1:00 AM
 Thursday: 8:30 AM - 1:00 AM
 Friday: 8:30 AM - 1:00 AM
 Saturday: 8:30 AM - 1:00 AM
-Sunday: 8:30 AM - 1:00 AM",bar,ChIJc0JAFaUWrjsRRXSXJPX7YFo,food
+Sunday: 8:30 AM - 1:00 AM",bar,ChIJc0JAFaUWrjsRRXSXJPX7YFo,drinks
 Pecos - Classic,"34, Rest House Rd, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001",Bengaluru,Karnataka,India,,"If you're in the mood for budget-friendly tap beer, this venue has seasoned staff who will entertain you with magic tricks once you become a familiar face.","34, Rest House Rd, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",4.3,1993.0,"https://www.google.com/maps/search/?api=1&query=34,%20Rest%20House%20Rd,%20Shanthala%20Nagar,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJQVqlWGQWrjsRNmNTzeUOMI0",12.9737,77.6074,"Monday: 10:30 AM - 11:00 PM
 Tuesday: 10:30 AM - 11:00 PM
 Wednesday: 10:30 AM - 11:00 PM
 Thursday: 10:30 AM - 11:00 PM
 Friday: 10:30 AM - 11:00 PM
 Saturday: 10:30 AM - 11:00 PM
-Sunday: 10:30 AM - 11:00 PM",bar,ChIJQVqlWGQWrjsRNmNTzeUOMI0,food
-Cubbon Park,"Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",Bengaluru,Karnataka,India,Yes,"This specific trail within Cubbon Park offers a serene environment that stands in contrast to its larger, busier surroundings.","Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",4.4,128891.0,"https://www.google.com/maps/search/?api=1&query=Kasturba%20Rd,%20behind%20High%20Court%20of%20Karnataka,%20Ambedkar%20Veedhi,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJL2fQ53MWrjsRuN9D6aalLMY",12.9779,77.5952,,park,ChIJL2fQ53MWrjsRuN9D6aalLMY,others
+Sunday: 10:30 AM - 11:00 PM",bar,ChIJQVqlWGQWrjsRNmNTzeUOMI0,drinks
+Cubbon Park,"Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",Bengaluru,Karnataka,India,Yes,"This specific trail within Cubbon Park offers a serene environment that stands in contrast to its larger, busier surroundings.","Kasturba Rd, behind High Court of Karnataka, Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India",4.4,128891.0,"https://www.google.com/maps/search/?api=1&query=Kasturba%20Rd,%20behind%20High%20Court%20of%20Karnataka,%20Ambedkar%20Veedhi,%20Sampangi%20Rama%20Nagara,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJL2fQ53MWrjsRuN9D6aalLMY",12.9779,77.5952,,park,ChIJL2fQ53MWrjsRuN9D6aalLMY,outdoors
 Chin Lung,"19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009",Bengaluru,Karnataka,India,,"For an uncrowded, cost-effective experience with exceptional food, their butter garlic prawns are a must-try.","19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009, India",4.8,1013.0,"https://www.google.com/maps/search/?api=1&query=19%20&%2020,%203rd%20Main%20Rd,%20opposite%20Sapna%20Book%20House,%20Gandhi%20Nagar,%20Bengaluru,%20Karnataka%20560009,%20India&query_place_id=ChIJvdFUrNIXrjsRvYvc85Mgw4A",12.9762,77.5787,"Monday: 11:30 AM - 1:00 AM
 Tuesday: 11:30 AM - 1:00 AM
 Wednesday: 11:30 AM - 1:00 AM
 Thursday: 11:30 AM - 1:00 AM
 Friday: 11:30 AM - 1:00 AM
 Saturday: 11:30 AM - 1:00 AM
-Sunday: 11:30 AM - 1:00 AM",bar,ChIJvdFUrNIXrjsRvYvc85Mgw4A,food
+Sunday: 11:30 AM - 1:00 AM",bar,ChIJvdFUrNIXrjsRvYvc85Mgw4A,drinks
 Suzy Q,"No.1, Express Building, Queens Road, Bengaluru, Karnataka 560001",Bengaluru,Karnataka,India,Yes,"With its elegant ambiance, gourmet dishes, artisan cocktails, pulsating music, and a fashionable clientele, this place is a hit.","No.1, Express Building, Queens Road, Bengaluru, Karnataka 560001, India",4.4,3093.0,"https://www.google.com/maps/search/?api=1&query=No.1,%20Express%20Building,%20Queens%20Road,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJ_5IDe7YXrjsRdu79rZOI1E0",12.9837,77.5967,"Monday: 12:00 PM - 12:30 AM
 Tuesday: 12:00 PM - 12:30 AM
 Wednesday: 12:00 PM - 12:30 AM
 Thursday: 12:00 PM - 12:30 AM
 Friday: 12:00 PM - 12:30 AM
 Saturday: 12:00 PM - 12:30 AM
-Sunday: 12:00 PM - 12:30 AM",bar,ChIJ_5IDe7YXrjsRdu79rZOI1E0,food
+Sunday: 12:00 PM - 12:30 AM",bar,ChIJ_5IDe7YXrjsRdu79rZOI1E0,drinks
 Milano,"Sobha Mall, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",Bengaluru,Karnataka,India,Yes,This establishment boasts a rotating selection of sophisticated options and stays open until 12:30 am.,"Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",4.5,841.0,"https://www.google.com/maps/search/?api=1&query=Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJoSGp8FYXrjsReShvdOYXFzg",12.9754,77.6019,"Monday: 9:00 AM - 10:00 PM
 Tuesday: 9:00 AM - 10:00 PM
 Wednesday: 9:00 AM - 10:00 PM
 Thursday: 9:00 AM - 10:00 PM
 Friday: 9:00 AM - 10:00 PM
 Saturday: 9:00 AM - 10:00 PM
-Sunday: 9:00 AM - 10:00 PM",shopping_mall,ChIJoSGp8FYXrjsReShvdOYXFzg,others
+Sunday: 9:00 AM - 10:00 PM",shopping_mall,ChIJoSGp8FYXrjsReShvdOYXFzg,shopping
 Momos stall,"29-34, Rest House Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",Bengaluru,Karnataka,India,Yes,"The best momos in Bangalore can be discovered at this unassuming stall, which eschews branding for quality.","XJ95+R23, Markham Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025, India",4.4,66.0,"https://www.google.com/maps/search/?api=1&query=XJ95+R23,%20Markham%20Rd,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560025,%20India&query_place_id=ChIJEwIT238WrjsRfoG2sfoOIac",12.9695,77.6075,"Monday: 11:00 AM - 10:30 PM
 Tuesday: 11:00 AM - 10:30 PM
 Wednesday: 11:00 AM - 10:30 PM
@@ -1306,7 +1306,7 @@ Wednesday: 10:00 AM - 10:00 PM
 Thursday: 10:00 AM - 10:00 PM
 Friday: 10:00 AM - 10:00 PM
 Saturday: 10:00 AM - 10:00 PM
-Sunday: 10:00 AM - 10:00 PM",shopping_mall,ChIJg3bVF-09rjsRozhTJiYrS8g,others
+Sunday: 10:00 AM - 10:00 PM",shopping_mall,ChIJg3bVF-09rjsRozhTJiYrS8g,shopping
 Orion Mall - Tuscano,"26/1, Dr Rajkumar Rd, Malleshwara, Bengaluru, Karnataka 560055",Bengaluru,Karnataka,India,Yes,"Known for its authentic Italian pizzas and complementing Sangrias, this place sets the mood for romantic dinner dates.","26/1, Dr Rajkumar Rd, Malleshwara, Bengaluru, Karnataka 560055, India",4.2,4748.0,"https://www.google.com/maps/search/?api=1&query=26/1,%20Dr%20Rajkumar%20Rd,%20Malleshwara,%20Bengaluru,%20Karnataka%20560055,%20India&query_place_id=ChIJXx535Io9rjsRxPHSPe5DJvw",13.0113,77.5553,"Monday: 12:00 - 11:00 PM
 Tuesday: 12:00 - 11:00 PM
 Wednesday: 12:00 - 11:00 PM
@@ -1314,7 +1314,7 @@ Thursday: 12:00 - 11:00 PM
 Friday: 12:00 - 11:00 PM
 Saturday: 12:00 - 11:00 PM
 Sunday: 12:00 - 11:00 PM",restaurant,ChIJXx535Io9rjsRxPHSPe5DJvw,food
-Vatadahosahalli Lake,"MJVX+68, Thokalahalli, Karnataka 561209",Bengaluru,Karnataka,India,,"Situated away from the urban hustle, the locale offers a rejuvenating breeze, making it perfect for road trips.","Vatadahosahalli Lake, Sabbanahalli, Karnataka 561209",4.6,365.0,"https://www.google.com/maps/search/?api=1&query=Vatadahosahalli%20Lake,%20Sabbanahalli,%20Karnataka%20561209&query_place_id=ChIJM_WWnKqWsTsRqQEYEvIa7E8",13.6962,77.6515,,natural_feature,VLMTK5BK,others
+Vatadahosahalli Lake,"MJVX+68, Thokalahalli, Karnataka 561209",Bengaluru,Karnataka,India,,"Situated away from the urban hustle, the locale offers a rejuvenating breeze, making it perfect for road trips.","Vatadahosahalli Lake, Sabbanahalli, Karnataka 561209",4.6,365.0,"https://www.google.com/maps/search/?api=1&query=Vatadahosahalli%20Lake,%20Sabbanahalli,%20Karnataka%20561209&query_place_id=ChIJM_WWnKqWsTsRqQEYEvIa7E8",13.6962,77.6515,,natural_feature,VLMTK5BK,outdoors
 Glen's Bakehouse,"24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001",Bengaluru,Karnataka,India,Yes,"This caf serves top-notch food, with their mini red velvet cupcakes coming highly recommended.","24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",4.4,10105.0,"https://www.google.com/maps/search/?api=1&query=24/1,%20Lavelle%20Road,%20Shanthala%20Nagar,%20Ashok%20Nagar,%20Bengaluru,%20Karnataka%20560001,%20India&query_place_id=ChIJKaFXNHgWrjsRuoVUhT-DzDY",12.9698,77.5974,"Monday: 9:00 AM - 1:00 AM
 Tuesday: 9:00 AM - 1:00 AM
 Wednesday: 9:00 AM - 1:00 AM
@@ -1342,7 +1342,7 @@ Wednesday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
 Thursday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
 Friday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
 Saturday: 12:00 - 11:00 PM
-Sunday: 12:00 - 10:30 PM",bar,ChIJ184uJb0XrjsRFuBTcHkYSYA,food
+Sunday: 12:00 - 10:30 PM",bar,ChIJ184uJb0XrjsRFuBTcHkYSYA,drinks
 Rose Park Roasters,"Long Beach, CA",Long Beach,California,United States,,Great collection of coffee beans. The barista was knowledgeable about different ways to make coffee. I liked their Cortado.,"800 Pine Ave, Long Beach, CA 90813, United States",4.7,145.0,"https://www.google.com/maps/search/?api=1&query=800%20Pine%20Ave,%20Long%20Beach,%20CA%2090813,%20United%20States&query_place_id=ChIJ9QLjsfUx3YARWEIbOymgqd4",33.7767,-118.1922,"Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
 Wednesday: 7:00 AM - 4:00 PM
@@ -1363,37 +1363,37 @@ Wednesday: 12:00 - 5:30 PM
 Thursday: 12:00 - 5:30 PM
 Friday: 12:00 - 5:30 PM
 Saturday: 12:00 - 5:30 PM
-Sunday: 12:00 - 5:30 PM",tourist_attraction,ChIJCYNcT3dZwokRghlU3rGC_-o,others
+Sunday: 12:00 - 5:30 PM",tourist_attraction,ChIJCYNcT3dZwokRghlU3rGC_-o,attraction
 Cooper Hewitt Smithsonian Design Museum,"2 E 91st St, New York, NY 10128",New York,New York,United States of America,,"A museum dedicated to design: exhibits starting from data viz from WEB Du Bois to the history of interior decoration, you will learn cool stuff about how design affects our lives.","2 E 91st St, New York, NY 10128, United States",4.5,2612.0,"https://www.google.com/maps/search/?api=1&query=2%20E%2091st%20St,%20New%20York,%20NY%2010128,%20United%20States&query_place_id=ChIJsT8qSaJYwokR-m20OGJUKCA",40.7844,-73.9579,"Monday: 10:00 AM - 6:00 PM
 Tuesday: 10:00 AM - 6:00 PM
 Wednesday: 10:00 AM - 6:00 PM
 Thursday: 10:00 AM - 6:00 PM
 Friday: 10:00 AM - 6:00 PM
 Saturday: 10:00 AM - 6:00 PM
-Sunday: 10:00 AM - 6:00 PM",museum,ChIJsT8qSaJYwokR-m20OGJUKCA,others
+Sunday: 10:00 AM - 6:00 PM",museum,ChIJsT8qSaJYwokR-m20OGJUKCA,culture
 Museum of the City of New York,"1220 5th Ave, New York, NY 10029",New York,New York,United States of America,,"A tribute to the complex and varied history of NYC, my fave exhibits were the multimedia ones using interactive maps to show how the city has changed over the centuries.","1220 5th Ave, New York, NY 10029, United States",4.5,4871.0,"https://www.google.com/maps/search/?api=1&query=1220%205th%20Ave,%20New%20York,%20NY%2010029,%20United%20States&query_place_id=ChIJi4hYtB32wokR1Npx_Tv7phk",40.7925,-73.952,"Monday: 10:00 AM - 5:00 PM
 Tuesday: Closed
 Wednesday: Closed
 Thursday: 10:00 AM - 9:00 PM
 Friday: 10:00 AM - 5:00 PM
 Saturday: 10:00 AM - 5:00 PM
-Sunday: 10:00 AM - 5:00 PM",tourist_attraction,ChIJi4hYtB32wokR1Npx_Tv7phk,others
-Lincoln Center for the Performing Arts,"Lincoln Center Plaza, New York, NY 10023",New York,New York,United States of America,,"A venue for cool events: concerts, operas, theater. Checkout some of their summertime events for our fix of classical music!","Lincoln Center Plaza, New York, NY 10023, United States",4.8,18132.0,"https://www.google.com/maps/search/?api=1&query=Lincoln%20Center%20Plaza,%20New%20York,%20NY%2010023,%20United%20States&query_place_id=ChIJN6W-X_VYwokRTqwcBnTw1Uk",40.7725,-73.9835,,tourist_attraction,ChIJN6W-X_VYwokRTqwcBnTw1Uk,others
+Sunday: 10:00 AM - 5:00 PM",tourist_attraction,ChIJi4hYtB32wokR1Npx_Tv7phk,attraction
+Lincoln Center for the Performing Arts,"Lincoln Center Plaza, New York, NY 10023",New York,New York,United States of America,,"A venue for cool events: concerts, operas, theater. Checkout some of their summertime events for our fix of classical music!","Lincoln Center Plaza, New York, NY 10023, United States",4.8,18132.0,"https://www.google.com/maps/search/?api=1&query=Lincoln%20Center%20Plaza,%20New%20York,%20NY%2010023,%20United%20States&query_place_id=ChIJN6W-X_VYwokRTqwcBnTw1Uk",40.7725,-73.9835,,tourist_attraction,ChIJN6W-X_VYwokRTqwcBnTw1Uk,attraction
 Mysterious Book Shop,"58 Warren St, New York, NY 10007",New York,New York,United States of America,,"A bookstore dedicated to the mystery genre. All sorts of novels, from sci-fi mystery to historical to romantic spy stories. They often have interesting events as well.","58 Warren St, New York, NY 10007, United States",4.7,361.0,"https://www.google.com/maps/search/?api=1&query=58%20Warren%20St,%20New%20York,%20NY%2010007,%20United%20States&query_place_id=ChIJbZ8tKB9awokRyPUoMpXSycs",40.7149,-74.0092,"Monday: 11:00 AM - 7:00 PM
 Tuesday: 11:00 AM - 7:00 PM
 Wednesday: 11:00 AM - 7:00 PM
 Thursday: 11:00 AM - 7:00 PM
 Friday: 11:00 AM - 7:00 PM
 Saturday: 11:00 AM - 7:00 PM
-Sunday: Closed",book_store,ChIJbZ8tKB9awokRyPUoMpXSycs,others
-Poster House,"119 W 23rd St, New York, NY 10011",New York,New York,United States of America,,"A museum dedicated to posters, with some interesting exhibits such as their Japan in the 20th century or the one dedicated to the Black Panther movements. Interesting to see how posters reflect the broader state of the society that they come from or how they become tools for activism.","119 W 23rd St, New York, NY 10011, United States",4.7,447.0,"https://www.google.com/maps/search/?api=1&query=119%20W%2023rd%20St,%20New%20York,%20NY%2010011,%20United%20States&query_place_id=ChIJ6UitwqRZwokR2UuUi8NrdAg",40.7436,-73.9933,,museum,ChIJ6UitwqRZwokR2UuUi8NrdAg,others
+Sunday: Closed",book_store,ChIJbZ8tKB9awokRyPUoMpXSycs,culture
+Poster House,"119 W 23rd St, New York, NY 10011",New York,New York,United States of America,,"A museum dedicated to posters, with some interesting exhibits such as their Japan in the 20th century or the one dedicated to the Black Panther movements. Interesting to see how posters reflect the broader state of the society that they come from or how they become tools for activism.","119 W 23rd St, New York, NY 10011, United States",4.7,447.0,"https://www.google.com/maps/search/?api=1&query=119%20W%2023rd%20St,%20New%20York,%20NY%2010011,%20United%20States&query_place_id=ChIJ6UitwqRZwokR2UuUi8NrdAg",40.7436,-73.9933,,museum,ChIJ6UitwqRZwokR2UuUi8NrdAg,culture
 New York Transit Museum,"99 Schermerhorn St, Brooklyn, NY 11201",New York,New York,United States of America,,"Interesting museum dedicated to the history of NYC's subways. Go for their collection of real subway cars or their cool exhibits talking about all sorts of subway-related things, like turnstiles, fake money people used or things that workers found when digging underground during construction.","99 Schermerhorn St, Brooklyn, NY 11201, United States",4.6,4702.0,"https://www.google.com/maps/search/?api=1&query=99%20Schermerhorn%20St,%20Brooklyn,%20NY%2011201,%20United%20States&query_place_id=ChIJdThqNVVawokRFk58UQOvtuM",40.6906,-73.9901,"Monday: Closed
 Tuesday: Closed
 Wednesday: Closed
 Thursday: 10:00 AM - 4:00 PM
 Friday: 10:00 AM - 4:00 PM
 Saturday: 10:00 AM - 4:00 PM
-Sunday: 10:00 AM - 4:00 PM",museum,ChIJdThqNVVawokRFk58UQOvtuM,others
+Sunday: 10:00 AM - 4:00 PM",museum,ChIJdThqNVVawokRFk58UQOvtuM,culture
 Fellini Coffee,"174 7th Ave S, New York, NY 10014",New York,New York,United States of America,,New coffee shop in an interesting tiny triangular building with a scattering of chairs. Sip on a coffee or lemonade and take in the sounds and sights of Greenwich Village.,"174 7th Ave S, New York, NY 10014, United States",4.4,47.0,"https://www.google.com/maps/search/?api=1&query=174%207th%20Ave%20S,%20New%20York,%20NY%2010014,%20United%20States&query_place_id=ChIJ-wdgG0hZwokRCMFcDSA7EX4",40.7359,-74.0017,"Monday: 8:00 AM - 11:00 PM
 Tuesday: 8:00 AM - 11:00 PM
 Wednesday: 8:00 AM - 11:00 PM
@@ -1435,7 +1435,7 @@ Wednesday: 6:30 - 8:30 PM
 Thursday: Closed
 Friday: Closed
 Saturday: Closed
-Sunday: 10:00 AM - 12:30 PM",church,ChIJoeFXiMcTXIgRws7dGpfNB9o,others
+Sunday: 10:00 AM - 12:30 PM",church,ChIJoeFXiMcTXIgRws7dGpfNB9o,culture
 Suki (Katsu Katsu),"100 Pearl St, New York, NY 10004",New York,New York,United States of America,,"Michelin-starred but affordable Japanese curry: super fresh, super tasty. The chicken curry is my go to.","32 St Marks Pl, New York, NY 10003, United States",4.2,303.0,"https://www.google.com/maps/search/?api=1&query=32%20St%20Marks%20Pl,%20New%20York,%20NY%2010003,%20United%20States&query_place_id=ChIJI6Fyq0dZwokRzHGWG9_YM50",40.7288,-73.9884,,restaurant,ChIJI6Fyq0dZwokRzHGWG9_YM50,food
 Letterform Archive,"2325 3rd St Floor 4R, San Francisco, CA 94107",San Francisco,California,United States of America,,A history of letters and their role in activism and politics in a tiny spot in San Francisco's Dogpatch. Interesting exhibits that expanded my idea of what papers and posters can achieve.,"2325 3rd St Floor 4R, San Francisco, CA 94107, United States",4.4,22.0,"https://www.google.com/maps/search/?api=1&query=2325%203rd%20St%20Floor%204R,%20San%20Francisco,%20CA%2094107,%20United%20States&query_place_id=ChIJ-wTvDcl_j4AR6aTm9O_DUII",37.7601,-122.3883,"Monday: Closed
 Tuesday: Closed
@@ -1443,79 +1443,79 @@ Wednesday: Closed
 Thursday: 1:00 - 8:00 PM
 Friday: 11:00 AM - 6:00 PM
 Saturday: 11:00 AM - 6:00 PM
-Sunday: 11:00 AM - 6:00 PM",library,ChIJ-wTvDcl_j4AR6aTm9O_DUII,others
+Sunday: 11:00 AM - 6:00 PM",library,ChIJ-wTvDcl_j4AR6aTm9O_DUII,culture
 Berkeley Art Museum and Pacific Film Archive,"2155 Center St, Berkeley, CA 94720",Berkeley,California,United States of America,,One of the campus' museums with interesting exhibits and occasional film showings. Worth a visit if you are in the Downtown/Campus area.,"2155 Center St, Berkeley, CA 94720, United States",4.5,723.0,"https://www.google.com/maps/search/?api=1&query=2155%20Center%20St,%20Berkeley,%20CA%2094720,%20United%20States&query_place_id=ChIJB8EriZ1-hYAReKDxrhGFK-o",37.8707,-122.2665,"Monday: Closed
 Tuesday: Closed
 Wednesday: 11:00 AM - 7:00 PM
 Thursday: 11:00 AM - 7:00 PM
 Friday: 11:00 AM - 7:00 PM
 Saturday: 11:00 AM - 7:00 PM
-Sunday: 11:00 AM - 7:00 PM",tourist_attraction,ChIJB8EriZ1-hYAReKDxrhGFK-o,others
+Sunday: 11:00 AM - 7:00 PM",tourist_attraction,ChIJB8EriZ1-hYAReKDxrhGFK-o,attraction
 Omnivore Books on Food,"3885 Cesar Chavez St, San Francisco, CA 94131",San Francisco,California,United States of America,,"A bookstore dedicated to food! Find all about cooking, plants, coffee or other drinks and have a chat with the very passionate owner.","3885 Cesar Chavez St, San Francisco, CA 94131, United States",4.9,194.0,"https://www.google.com/maps/search/?api=1&query=3885%20Cesar%20Chavez%20St,%20San%20Francisco,%20CA%2094131,%20United%20States&query_place_id=ChIJ1QGwTWp-j4ARb4w3FhbHyos",37.7476,-122.4268,"Monday: 11:00 AM - 6:00 PM
 Tuesday: 11:00 AM - 6:00 PM
 Wednesday: 11:00 AM - 6:00 PM
 Thursday: 11:00 AM - 6:00 PM
 Friday: 11:00 AM - 6:00 PM
 Saturday: 11:00 AM - 6:00 PM
-Sunday: 12:00 - 5:00 PM",book_store,ChIJ1QGwTWp-j4ARb4w3FhbHyos,others
-Bawarchi Rolls,Under Railway Overbridge,"Jhumri Tilaiya, Koderma",Jharkhand,India,,"The best Chicken roll in the whole world... I've had chicken rolls from hundreds of places, but this is definitely the best one.","10, Station Rd, Bawarchi, Jhumri Telaiya, Jharkhand 825409, India",3.2,35,https://maps.google.com/?cid=7765042094137648800,24.4353823,85.53124869999999,"Monday: 11:00 AM - 9:00 PM
+Sunday: 12:00 - 5:00 PM",book_store,ChIJ1QGwTWp-j4ARb4w3FhbHyos,culture
+Bawarchi Rolls,Under Railway Overbridge,"Jhumri Tilaiya, Koderma",Jharkhand,India,,"The best Chicken roll in the whole world... I've had chicken rolls from hundreds of places, but this is definitely the best one.","10, Station Rd, Bawarchi, Jhumri Telaiya, Jharkhand 825409, India",3.2,35.0,https://maps.google.com/?cid=7765042094137648800,24.4353823,85.53124869999999,"Monday: 11:00 AM - 9:00 PM
 Tuesday: 11:00 AM - 9:00 PM
 Wednesday: 11:00 AM - 9:00 PM
 Thursday: 11:00 AM - 9:00 PM
 Friday: 11:00 AM - 9:00 PM
 Saturday: 11:00 AM - 9:00 PM
 Sunday: 11:00 AM - 9:00 PM",,ChIJldKHopd08zkRoKYHx6T4wms,food
-Malkam Cheruvu,Manikonda,Hyderabad,Telangana,India,,"Quiet and clean park with a lake to walk around, may catch a good sunset when not cloudy.","Malkam Cheruvu Rd, Manikonda, Hyderabad, Telangana, India",,,"https://maps.google.com/?q=Malkam+Cheruvu+Rd,+Manikonda,+Hyderabad,+Telangana,+India&ftid=0x3bcb96aaecc5b2e9:0xdd8b781f2f1a215b",17.4123901,78.3762687,,,EjlNYWxrYW0gQ2hlcnV2dSBSZCwgTWFuaWtvbmRhLCBIeWRlcmFiYWQsIFRlbGFuZ2FuYSwgSW5kaWEiLiosChQKEgnpssXsqpbLOxFbIRovH3iL3RIUChIJ97MvUyKUyzsR8SouPdD6k8c,others
-Roast 24 Seven,Gachibowli,Hyderabad,Telangana,India,,"Coffee provided with all popular methods of coffee making, amazing taste.","42, 44, Sy no 18 & 19, Plot No: 25, behind Vyshnavi Cynosure, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032, India",4.5,6720,https://maps.google.com/?cid=14743928966464117332,17.4373126,78.3671708,"Monday: 6:00 AM - 1:00 AM
+Malkam Cheruvu,Manikonda,Hyderabad,Telangana,India,,"Quiet and clean park with a lake to walk around, may catch a good sunset when not cloudy.","Malkam Cheruvu Rd, Manikonda, Hyderabad, Telangana, India",,,"https://maps.google.com/?q=Malkam+Cheruvu+Rd,+Manikonda,+Hyderabad,+Telangana,+India&ftid=0x3bcb96aaecc5b2e9:0xdd8b781f2f1a215b",17.4123901,78.3762687,,,EjlNYWxrYW0gQ2hlcnV2dSBSZCwgTWFuaWtvbmRhLCBIeWRlcmFiYWQsIFRlbGFuZ2FuYSwgSW5kaWEiLiosChQKEgnpssXsqpbLOxFbIRovH3iL3RIUChIJ97MvUyKUyzsR8SouPdD6k8c,other
+Roast 24 Seven,Gachibowli,Hyderabad,Telangana,India,,"Coffee provided with all popular methods of coffee making, amazing taste.","42, 44, Sy no 18 & 19, Plot No: 25, behind Vyshnavi Cynosure, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032, India",4.5,6720.0,https://maps.google.com/?cid=14743928966464117332,17.4373126,78.3671708,"Monday: 6:00 AM - 1:00 AM
 Tuesday: 6:00 AM - 1:00 AM
 Wednesday: 6:00 AM - 1:00 AM
 Thursday: 6:00 AM - 1:00 AM
 Friday: 6:00 AM - 1:00 AM
 Saturday: 6:00 AM - 1:00 AM
 Sunday: 6:00 AM - 1:00 AM",,ChIJmRdU_8KTyzsRVJqvP0f1nMw,coffee
-The Coforge Public Library,Kothaguda,Hyderabad,Telangana,India,,"Well maintained public library with no gadgets, no external books allowed, just sit, read and enjoy silently. No fees required for entering and browsing books, only refundable deposit in case you want to borrow books. Absolutely refreshing as a third place.","The coforge Public library, Land Mark Residency, Kothaguda, Hyderabad, Telangana 500084, India",4.5,199,https://maps.google.com/?cid=13019510011764747352,17.4612766,78.3677263,"Monday: 9:00 AM - 8:00 PM
+The Coforge Public Library,Kothaguda,Hyderabad,Telangana,India,,"Well maintained public library with no gadgets, no external books allowed, just sit, read and enjoy silently. No fees required for entering and browsing books, only refundable deposit in case you want to borrow books. Absolutely refreshing as a third place.","The coforge Public library, Land Mark Residency, Kothaguda, Hyderabad, Telangana 500084, India",4.5,199.0,https://maps.google.com/?cid=13019510011764747352,17.4612766,78.3677263,"Monday: 9:00 AM - 8:00 PM
 Tuesday: 9:00 AM - 8:00 PM
 Wednesday: 9:00 AM - 8:00 PM
 Thursday: 9:00 AM - 8:00 PM
 Friday: 9:00 AM - 8:00 PM
 Saturday: 9:00 AM - 8:00 PM
-Sunday: 9:00 AM - 8:00 PM",,ChIJAS3aLgCTyzsRWCzhGGCXrrQ,others
-Broadway The Brewery,Jubilee Hills,Hyderabad,Telangana,India,,"Hands down the best brewery of Hyderabad, enjoyed it more for a day time drinking and vibes. You can never go wrong with the food, anything you order will be delicious - highlight-puffpastry base pizza- , needless to say beer is must try.","Rina Mandal Road, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033, India",4.3,10621,https://maps.google.com/?cid=6114398597934448005,17.4288156,78.4035214,"Monday: 12:00 - 11:30 PM
+Sunday: 9:00 AM - 8:00 PM",,ChIJAS3aLgCTyzsRWCzhGGCXrrQ,other
+Broadway The Brewery,Jubilee Hills,Hyderabad,Telangana,India,,"Hands down the best brewery of Hyderabad, enjoyed it more for a day time drinking and vibes. You can never go wrong with the food, anything you order will be delicious - highlight-puffpastry base pizza- , needless to say beer is must try.","Rina Mandal Road, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033, India",4.3,10621.0,https://maps.google.com/?cid=6114398597934448005,17.4288156,78.4035214,"Monday: 12:00 - 11:30 PM
 Tuesday: 12:00 - 11:30 PM
 Wednesday: 12:00 - 11:30 PM
 Thursday: 12:00 - 11:30 PM
 Friday: 12:00 PM - 12:30 AM
 Saturday: 12:00 PM - 12:30 AM
-Sunday: 12:00 - 11:30 PM",,ChIJ7Ytbpx2RyzsRhX0HHSG12lQ,others
-10 Downing Street,Gachibowli,Hyderabad,Telangana,India,,"Nice pub with different settings whether you want loud music, quieter seating with a view, rooftop with screening or dance floor room. Experienced staff and food that has never disappointed.","133, Botanical Garden Rd, Jayabheri Enclave, Gachibowli, Hyderabad, Telangana 500032, India",4.2,6598,https://maps.google.com/?cid=14893666634314082409,17.4523348,78.3632756,"Monday: 12:00 - 11:30 PM
+Sunday: 12:00 - 11:30 PM",,ChIJ7Ytbpx2RyzsRhX0HHSG12lQ,other
+10 Downing Street,Gachibowli,Hyderabad,Telangana,India,,"Nice pub with different settings whether you want loud music, quieter seating with a view, rooftop with screening or dance floor room. Experienced staff and food that has never disappointed.","133, Botanical Garden Rd, Jayabheri Enclave, Gachibowli, Hyderabad, Telangana 500032, India",4.2,6598.0,https://maps.google.com/?cid=14893666634314082409,17.4523348,78.3632756,"Monday: 12:00 - 11:30 PM
 Tuesday: 12:00 - 11:30 PM
 Wednesday: 12:00 - 11:30 PM
 Thursday: 12:00 - 11:30 PM
 Friday: 12:00 PM - 12:00 AM
 Saturday: 12:00 PM - 12:00 AM
-Sunday: 12:00 - 11:30 PM",,ChIJ5-joE8eTyzsRaehg1eTusM4,others
-Karafa,"Hyderabad, Telangana, IND",Hyderabad,Telangana,India,,Both good coffee and good food,"Plot no 1182, Road No. 45 Jubilee Hills, Jubilee Hills, Hyderabad, Telangana 500033, India",4.4,1126,https://maps.google.com/?cid=3592144807931946867,17.4272943,78.40643,"Monday: 7:00 AM - 11:00 PM
+Sunday: 12:00 - 11:30 PM",,ChIJ5-joE8eTyzsRaehg1eTusM4,other
+Karafa,"Hyderabad, Telangana, IND",Hyderabad,Telangana,India,,Both good coffee and good food,"Plot no 1182, Road No. 45 Jubilee Hills, Jubilee Hills, Hyderabad, Telangana 500033, India",4.4,1126.0,https://maps.google.com/?cid=3592144807931946867,17.4272943,78.40643,"Monday: 7:00 AM - 11:00 PM
 Tuesday: 7:00 AM - 11:00 PM
 Wednesday: 7:00 AM - 11:00 PM
 Thursday: 7:00 AM - 11:00 PM
 Friday: 7:00 AM - 11:00 PM
 Saturday: 7:00 AM - 11:00 PM
-Sunday: 7:00 AM - 11:00 PM",,ChIJ28vip-mRyzsRcyeMuqvc2TE,others
-True Black,Knowledge City,Hyderabad,Telangana,India,,Coffee place,"THE LOFT, Silpa Gram Craft Village, HITEC City, Hyderabad, Telangana 500032, India",4.4,499,https://maps.google.com/?cid=4323347363067860555,17.4323211,78.3825729,"Monday: 7:00 AM - 11:00 PM
+Sunday: 7:00 AM - 11:00 PM",,ChIJ28vip-mRyzsRcyeMuqvc2TE,other
+True Black,Knowledge City,Hyderabad,Telangana,India,,Coffee place,"THE LOFT, Silpa Gram Craft Village, HITEC City, Hyderabad, Telangana 500032, India",4.4,499.0,https://maps.google.com/?cid=4323347363067860555,17.4323211,78.3825729,"Monday: 7:00 AM - 11:00 PM
 Tuesday: 7:00 AM - 11:00 PM
 Wednesday: 7:00 AM - 11:00 PM
 Thursday: 7:00 AM - 11:00 PM
 Friday: 7:00 AM - 11:00 PM
 Saturday: 7:00 AM - 11:00 PM
-Sunday: 7:00 AM - 11:00 PM",,ChIJ77Hp9T2TyzsRSxZISIWd_zs,others
-Yum Yum Tree,Madhapur,Hyderabad,Telangana,India,,Mandi and fried fish,"pillar no 1749, 1-10-54/A, opposite Krishe Sapphire Building, Deccan Plateau, Madhapur, Hyderabad, Telangana 500081, India",4.2,18069,https://maps.google.com/?cid=3262073794853801247,17.4425679,78.3880121,"Monday: 12:00 PM - 3:00 AM
+Sunday: 7:00 AM - 11:00 PM",,ChIJ77Hp9T2TyzsRSxZISIWd_zs,other
+Yum Yum Tree,Madhapur,Hyderabad,Telangana,India,,Mandi and fried fish,"pillar no 1749, 1-10-54/A, opposite Krishe Sapphire Building, Deccan Plateau, Madhapur, Hyderabad, Telangana 500081, India",4.2,18069.0,https://maps.google.com/?cid=3262073794853801247,17.4425679,78.3880121,"Monday: 12:00 PM - 3:00 AM
 Tuesday: 12:00 PM - 3:00 AM
 Wednesday: 12:00 PM - 3:00 AM
 Thursday: 12:00 PM - 3:00 AM
 Friday: 12:00 PM - 3:00 AM
 Saturday: 12:00 PM - 3:00 AM
 Sunday: 12:00 PM - 3:00 AM",,ChIJp-NtWF6RyzsRHw1fTdU2RS0,food
-Archers Coffee,Sharjah,Sharjah,Sharjah,UAE,,Rated the top 100 roasters in the world. Amazing collection. Also the only place outside India that has Indian coffee beans. (Chikmanglur beans are speciality coffee's best kept secret.),Industrial Areas - Sharjah - United Arab Emirates,4.6,338,https://maps.google.com/?cid=3299891731002246113,25.2586495,55.5093009,"Monday: 10:00 AM - 7:00 PM
+Archers Coffee,Sharjah,Sharjah,Sharjah,UAE,,Rated the top 100 roasters in the world. Amazing collection. Also the only place outside India that has Indian coffee beans. (Chikmanglur beans are speciality coffee's best kept secret.),Industrial Areas - Sharjah - United Arab Emirates,4.6,338.0,https://maps.google.com/?cid=3299891731002246113,25.2586495,55.5093009,"Monday: 10:00 AM - 7:00 PM
 Tuesday: 10:00 AM - 7:00 PM
 Wednesday: 10:00 AM - 7:00 PM
 Thursday: 10:00 AM - 7:00 PM

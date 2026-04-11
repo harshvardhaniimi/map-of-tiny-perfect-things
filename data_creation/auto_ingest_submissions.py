@@ -38,6 +38,48 @@ DEFAULT_REPORT = "data_creation/last_ingest_report.json"
 DEFAULT_FORM_NAME = "place-submissions"
 NETLIFY_API_BASE = "https://api.netlify.com/api/v1"
 
+# Maps Google Places API type → consolidated type2 category.
+# Order matters: first match wins.
+_TYPE_TO_TYPE2: Dict[str, str] = {
+    "cafe": "coffee",
+    "restaurant": "food",
+    "bakery": "food",
+    "meal_takeaway": "food",
+    "meal_delivery": "food",
+    "bar": "drinks",
+    "liquor_store": "drinks",
+    "night_club": "drinks",
+    "museum": "culture",
+    "library": "culture",
+    "book_store": "culture",
+    "church": "culture",
+    "art_gallery": "culture",
+    "park": "outdoors",
+    "natural_feature": "outdoors",
+    "campground": "outdoors",
+    "store": "shopping",
+    "clothing_store": "shopping",
+    "electronics_store": "shopping",
+    "shopping_mall": "shopping",
+    "grocery_or_supermarket": "shopping",
+    "tourist_attraction": "attraction",
+    "point_of_interest": "attraction",
+    "locality": "attraction",
+}
+
+VALID_TYPE2_VALUES = {"coffee", "food", "drinks", "culture", "outdoors", "shopping", "attraction", "other"}
+
+
+def consolidate_type2(google_type: str, fallback: str = "other") -> str:
+    """Derive type2 from Google Maps type, with fallback."""
+    google_type = _normalize_text(google_type).lower()
+    if google_type in _TYPE_TO_TYPE2:
+        return _TYPE_TO_TYPE2[google_type]
+    fallback = _normalize_text(fallback).lower()
+    if fallback in VALID_TYPE2_VALUES:
+        return fallback
+    return "other"
+
 MASTER_COLUMNS = [
     "name",
     "location",
@@ -129,6 +171,11 @@ def parse_args() -> argparse.Namespace:
         "--dry-run",
         action="store_true",
         help="Run pipeline without writing files",
+    )
+    parser.add_argument(
+        "--re-enrich",
+        action="store_true",
+        help="Re-enrich ALL existing master_data entries via Google Places API and re-consolidate type2",
     )
     return parser.parse_args()
 
@@ -488,7 +535,10 @@ def _to_master_row(
         "opening_hours": enrichment.opening_hours,
         "type": enrichment.place_type,
         "google_place_id": enrichment.google_place_id,
-        "type2": _normalize_text(submission.get("type2", "others")) or "others",
+        "type2": consolidate_type2(
+            enrichment.place_type,
+            fallback=_normalize_text(submission.get("type2", "other")) or "other",
+        ),
     }
 
 
@@ -555,9 +605,78 @@ def _clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def _re_enrich_master(master_df: pd.DataFrame, google_api_key: str) -> pd.DataFrame:
+    """Re-enrich every row in master_data via Google Places API and re-consolidate type2."""
+    if not google_api_key:
+        print("WARNING: --re-enrich requires a Google API key. Only re-consolidating type2 from existing type.", file=sys.stderr)
+        master_df = master_df.copy()
+        master_df["type2"] = master_df.apply(
+            lambda row: consolidate_type2(str(row.get("type", "")), fallback=str(row.get("type2", "other"))),
+            axis=1,
+        )
+        return master_df
+
+    updated_rows: List[Dict[str, object]] = []
+    total = len(master_df)
+    for idx, (_, row) in enumerate(master_df.iterrows(), 1):
+        name = _normalize_text(row.get("name", ""))
+        if not name:
+            updated_rows.append(row.to_dict())
+            continue
+
+        print(f"  Re-enriching [{idx}/{total}]: {name}")
+        enrichment = _enrich_submission(row, google_api_key)
+
+        updated = row.to_dict()
+        # Update enrichment fields but keep human-curated fields (name, location, city, etc.)
+        if enrichment.address:
+            updated["address"] = enrichment.address
+        if enrichment.rating:
+            updated["rating"] = enrichment.rating
+        if enrichment.user_ratings_total:
+            updated["user_ratings_total"] = enrichment.user_ratings_total
+        if enrichment.lat:
+            updated["lat"] = enrichment.lat
+        if enrichment.lng:
+            updated["lng"] = enrichment.lng
+        if enrichment.opening_hours:
+            updated["opening_hours"] = enrichment.opening_hours
+        if enrichment.place_type:
+            updated["type"] = enrichment.place_type
+        if enrichment.google_place_id:
+            updated["google_place_id"] = enrichment.google_place_id
+        if enrichment.google_maps_link:
+            updated["google_maps_link"] = enrichment.google_maps_link
+
+        updated["type2"] = consolidate_type2(
+            updated.get("type", ""),
+            fallback=str(row.get("type2", "other")),
+        )
+        updated_rows.append(updated)
+
+    return pd.DataFrame(updated_rows)
+
+
 def run(args: argparse.Namespace) -> int:
     os.makedirs(os.path.dirname(args.report_path) or ".", exist_ok=True)
     os.makedirs(os.path.dirname(args.submissions_csv) or ".", exist_ok=True)
+
+    # --re-enrich mode: re-enrich all existing entries and exit
+    if args.re_enrich:
+        master_df = _read_master_dataset(args.master_csv, args.master_json, args.map_json)
+        master_df = _clean_dataframe(master_df)
+        print(f"Re-enriching {len(master_df)} existing entries...")
+        enriched = _re_enrich_master(master_df, args.google_api_key)
+        enriched = _clean_dataframe(enriched)
+        if not args.dry_run:
+            enriched.to_csv(args.master_csv, index=False, encoding="utf-8")
+            _write_json_records(enriched, args.master_json)
+            shutil.copyfile(args.master_json, args.map_json)
+            _write_city_files(enriched, args.city_files_dir)
+            print(f"Re-enriched and saved {len(enriched)} entries.")
+        else:
+            print(f"Dry run: would update {len(enriched)} entries.")
+        return 0
 
     fetched_count = 0
     fetched_rows: Optional[List[Dict[str, str]]] = None
