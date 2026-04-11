@@ -517,9 +517,17 @@ const MapResizeFix = () => {
   return null;
 };
 
+const generateChallenge = () => {
+  const a = Math.floor(Math.random() * 10) + 1;
+  const b = Math.floor(Math.random() * 10) + 1;
+  return { question: `What is ${a} + ${b}?`, answer: a + b };
+};
+
 const SubmitPage = ({ onNavigate }) => {
   const [formData, setFormData] = useState(SUBMISSION_DEFAULTS);
   const [status, setStatus] = useState('idle');
+  const [challenge, setChallenge] = useState(generateChallenge);
+  const [challengeInput, setChallengeInput] = useState('');
   const hasCreatorCode = formData.creatorAccessCode.trim().length > 0;
 
   const handleFieldChange = (event) => {
@@ -536,6 +544,13 @@ const SubmitPage = ({ onNavigate }) => {
     event.preventDefault();
 
     if (formData.botField.trim()) {
+      return;
+    }
+
+    if (parseInt(challengeInput, 10) !== challenge.answer) {
+      setStatus('bad-captcha');
+      setChallenge(generateChallenge());
+      setChallengeInput('');
       return;
     }
 
@@ -559,6 +574,8 @@ const SubmitPage = ({ onNavigate }) => {
       });
       setStatus('success');
       setFormData(SUBMISSION_DEFAULTS);
+      setChallenge(generateChallenge());
+      setChallengeInput('');
     } catch (error) {
       console.error(error);
       setStatus('error');
@@ -708,6 +725,21 @@ const SubmitPage = ({ onNavigate }) => {
           <p className="maintainer-note">Creator overrides are validated server-side.</p>
         </details>
 
+        <label>
+          {challenge.question} <span className="required-hint">(anti-spam check)</span>
+          <input
+            name="captcha"
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            value={challengeInput}
+            onChange={(e) => { setChallengeInput(e.target.value); setStatus('idle'); }}
+            required
+            placeholder="Your answer"
+            autoComplete="off"
+          />
+        </label>
+
         <button type="submit" className="pixel-button primary" disabled={status === 'submitting'}>
           {status === 'submitting' ? 'Submitting...' : 'Submit Place'}
         </button>
@@ -717,6 +749,9 @@ const SubmitPage = ({ onNavigate }) => {
         ) : null}
         {status === 'error' ? (
           <p className="submit-note error">Submission failed. Please try again in a moment.</p>
+        ) : null}
+        {status === 'bad-captcha' ? (
+          <p className="submit-note error">Incorrect answer. Please try the new question.</p>
         ) : null}
       </form>
     </main>

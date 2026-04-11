@@ -454,6 +454,11 @@ body.map-mode {
   line-height: 1.2;
 }
 
+.required-hint {
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
 .submit-note {
   margin: 0;
   padding: 10px;
