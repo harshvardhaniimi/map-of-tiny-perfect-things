@@ -20,7 +20,7 @@ Country: India
 Creator's Rec: 
 Notes: Coffee provided with all popular methods of coffee making, amazing taste.
 Address: 42, 44, Sy no 18 & 19, Plot No: 25, behind Vyshnavi Cynosure, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032, India
-Rating: 4.5 with 6723 ratings
+Rating: 4.5 with 6723.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14743928966464117332
 Opening Hours: Monday: 6:00 AM - 1:00 AM
 Tuesday: 6:00 AM - 1:00 AM
@@ -37,7 +37,7 @@ Country: India
 Creator's Rec: 
 Notes: Well maintained public library with no gadgets, no external books allowed, just sit, read and enjoy silently. No fees required for entering and browsing books, only refundable deposit in case you want to borrow books. Absolutely refreshing as a third place.
 Address: The coforge Public library, Land Mark Residency, Kothaguda, Hyderabad, Telangana 500084, India
-Rating: 4.5 with 199 ratings
+Rating: 4.5 with 199.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13019510011764747352
 Opening Hours: Monday: 9:00 AM - 8:00 PM
 Tuesday: 9:00 AM - 8:00 PM
@@ -54,7 +54,7 @@ Country: India
 Creator's Rec: 
 Notes: Hands down the best brewery of Hyderabad, enjoyed it more for a day time drinking and vibes. You can never go wrong with the food, anything you order will be delicious - highlight-puffpastry base pizza- , needless to say beer is must try.
 Address: Rina Mandal Road, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033, India
-Rating: 4.3 with 10622 ratings
+Rating: 4.3 with 10622.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6114398597934448005
 Opening Hours: Monday: 12:00 - 11:30 PM
 Tuesday: 12:00 - 11:30 PM
@@ -71,7 +71,7 @@ Country: India
 Creator's Rec: 
 Notes: Nice pub with different settings whether you want loud music, quieter seating with a view, rooftop with screening or dance floor room. Experienced staff and food that has never disappointed.
 Address: 133, Botanical Garden Rd, Jayabheri Enclave, Gachibowli, Hyderabad, Telangana 500032, India
-Rating: 4.2 with 6599 ratings
+Rating: 4.2 with 6599.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14893666634314082409
 Opening Hours: Monday: 12:00 - 11:30 PM
 Tuesday: 12:00 - 11:30 PM
@@ -88,7 +88,7 @@ Country: India
 Creator's Rec: 
 Notes: Both good coffee and good food
 Address: Plot no 1182, Road No. 45 Jubilee Hills, Jubilee Hills, Hyderabad, Telangana 500033, India
-Rating: 4.4 with 1126 ratings
+Rating: 4.4 with 1126.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3592144807931946867
 Opening Hours: Monday: 7:00 AM - 11:00 PM
 Tuesday: 7:00 AM - 11:00 PM
@@ -105,7 +105,7 @@ Country: India
 Creator's Rec: 
 Notes: Coffee place
 Address: THE LOFT, Silpa Gram Craft Village, HITEC City, Hyderabad, Telangana 500032, India
-Rating: 4.4 with 500 ratings
+Rating: 4.4 with 500.0 ratings
 Google Maps Link: https://maps.google.com/?cid=4323347363067860555
 Opening Hours: Monday: 7:00 AM - 11:00 PM
 Tuesday: 7:00 AM - 11:00 PM
@@ -122,7 +122,7 @@ Country: India
 Creator's Rec: 
 Notes: Mandi and fried fish
 Address: pillar no 1749, 1-10-54/A, opposite Krishe Sapphire Building, Deccan Plateau, Madhapur, Hyderabad, Telangana 500081, India
-Rating: 4.2 with 18071 ratings
+Rating: 4.2 with 18071.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3262073794853801247
 Opening Hours: Monday: 12:00 PM - 3:00 AM
 Tuesday: 12:00 PM - 3:00 AM

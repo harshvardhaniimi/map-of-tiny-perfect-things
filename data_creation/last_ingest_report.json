@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-04-25T09:11:07.061580Z",
+  "fetched_submissions": 10,
+  "submissions_in_csv": 10,
+  "new_unique_submissions": 0,
+  "added_rows": 0,
+  "creator_overrides_applied": 0,
+  "master_rows_before": 227,
+  "master_rows_after": 227,
+  "google_places_enabled": true,
+  "creator_override_validation_enabled": true,
+  "dry_run": false
+}

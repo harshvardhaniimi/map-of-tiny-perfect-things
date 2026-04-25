@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Homely coffee shop in a neighborhood lined with other cute restaurants and cafes. Sit outside sipping your drink in the tiny plaza-like area they have, taking in the sun, reading or just having an interesting conversation.
 Address: 5701 College Ave, Oakland, CA 94618, USA
-Rating: 4.5 with 327 ratings
+Rating: 4.5 with 327.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6936768770090790805
 Opening Hours: Monday: 7:00 AM - 6:00 PM
 Tuesday: 7:00 AM - 6:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A quiet and hidden coffee truck in downtown Oakland, but great coffee and some seating to enjoy it on.
 Address: 2327 Broadway, Oakland, CA 94612, USA
-Rating: 4.7 with 82 ratings
+Rating: 4.7 with 82.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9028085075556403847
 Opening Hours: 
 
@@ -37,7 +37,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Coffee meets tasting menus: get their sample of 3 coffees and nerd out over tasting notes. Also offers classes, consultations and a podcast!
 Address: 2523 Broadway, Oakland, CA 94612, USA
-Rating: 4.6 with 230 ratings
+Rating: 4.6 with 230.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10256229735513800893
 Opening Hours: Monday: 9:00 AM - 4:00 PM
 Tuesday: 9:00 AM - 4:00 PM
@@ -54,7 +54,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Co-working space and coffee shop all in one: would recommend for when you need to get work done but are tired of staying in your house.
 Address: 1528 Webster St, Oakland, CA 94612, USA
-Rating: 4.8 with 230 ratings
+Rating: 4.8 with 230.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12419507552544356041
 Opening Hours: Monday: 7:30 AM - 3:30 PM
 Tuesday: 7:30 AM - 3:30 PM
@@ -71,7 +71,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Bike-themed shop geared towards cyclists. Expect to be served with both coffee and cycling gear if interested. They give you discounts if you show them your helmet!
 Address: 377 2nd St #110, Oakland, CA 94607, USA
-Rating: 4.6 with 590 ratings
+Rating: 4.6 with 590.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6255691258868740289
 Opening Hours: Monday: 7:30 AM - 3:00 PM
 Tuesday: 7:30 AM - 3:00 PM
@@ -88,7 +88,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Downtown Oakland spot with pretty good espresso and oversized beach lounging chairs in front of the shop that let you people-watch and bask in the sun.
 Address: 1429 Broadway, Oakland, CA 94612, USA
-Rating: 4.4 with 713 ratings
+Rating: 4.4 with 713.0 ratings
 Google Maps Link: https://maps.google.com/?cid=18348858976162353078
 Opening Hours: Monday: 7:30 AM - 5:00 PM
 Tuesday: 7:30 AM - 5:00 PM
@@ -105,7 +105,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A nice pitstop when cycling around West Oakland, or when in the mood to see futuristic-looking concoctions in a garage-like decorated space.
 Address: 1746 13th St, Oakland, CA 94607, USA
-Rating: 4.4 with 426 ratings
+Rating: 4.4 with 426.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14834433654422039121
 Opening Hours: Monday: Closed
 Tuesday: 7:00 AM - 5:00 PM
@@ -122,7 +122,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: As the name suggests, on an actual hill hidden from the main street. This cafe is great for reading out when the weather is nice and it's a quiet spot to meditate.
 Address: 504 Wesley Ave, Oakland, CA 94606, USA
-Rating: 4.6 with 186 ratings
+Rating: 4.6 with 186.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15225737719135437044
 Opening Hours: Monday: 8:00 AM - 2:00 PM
 Tuesday: 8:00 AM - 2:00 PM
@@ -139,7 +139,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Minimalistic spot in a hidden corridor in Oakland's Temescal: you'll see some dogs, some babies, some people walking curiously around and have good coffee in the processs. Nice for meditating on the future.
 Address: Alley 49, Oakland, CA 94609, USA
-Rating: 4.3 with 111 ratings
+Rating: 4.3 with 111.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3915815811587768237
 Opening Hours: Monday: 7:00 AM - 3:00 PM
 Tuesday: 7:00 AM - 3:00 PM
@@ -156,7 +156,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Among the only Italian streetfood spots in the Bay. Choose a few small slices from their selection and enjoy.
 Address: 3204 College Ave, Berkeley, CA 94705, USA
-Rating: 4.6 with 194 ratings
+Rating: 4.6 with 194.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6758306300044019939
 Opening Hours: Monday: Closed
 Tuesday: 10:00 AM - 8:00 PM
@@ -173,7 +173,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Yet another Bay Area classic: arguably one of the best bagel stores on the East Bay. Get a lox bagel that will keep you full all day.
 Address: 3665 Sacramento St, San Francisco, CA 94118, USA
-Rating: 4.2 with 80 ratings
+Rating: 4.2 with 80.0 ratings
 Google Maps Link: https://maps.google.com/?cid=4347638760765465889
 Opening Hours: Monday: 7:30 AM - 1:30 PM
 Tuesday: 7:30 AM - 1:30 PM
@@ -190,7 +190,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: My favorite Middle Eastern spot in the Bay that's exactly what I imagine shawarma should taste like: flavorful, fresh, filling.
 Address: 2100 Franklin St Suite 2190, Oakland, CA 94612, USA
-Rating: 4.4 with 956 ratings
+Rating: 4.4 with 956.0 ratings
 Google Maps Link: https://maps.google.com/?cid=7985416640651682854
 Opening Hours: Monday: 11:00 AM - 9:00 PM
 Tuesday: 11:00 AM - 9:00 PM
@@ -207,7 +207,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Awesome Italian food in a 3-items fixed menu style: very innovative dishes and presentation. For example, sometimes you'll get your soup constructed in front of you!
 Address: 388 Grand Ave, Oakland, CA 94610, USA
-Rating: 4.6 with 626 ratings
+Rating: 4.6 with 626.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14569438942319895183
 Opening Hours: Monday: 5:00 - 9:00 PM
 Tuesday: 5:00 - 9:00 PM
@@ -224,7 +224,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A classic Bay Area bakery and pizza co-op with pizza-of-the-day offerings and a huge selection of bread and baked goods.
 Address: 1331 9th Ave, San Francisco, CA 94122, USA
-Rating: 4.7 with 1961 ratings
+Rating: 4.7 with 1961.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13622220163385564142
 Opening Hours: Monday: Closed
 Tuesday: 7:30 AM - 6:00 PM
@@ -241,7 +241,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Local legend pizza place that serves Chicago-style pizza with yummy stuffings. Once the pizza is ready, the friendly staff will offer to serve you the first piece. The spinach and mushroom is a classic!
 Address: 5801 College Ave, Oakland, CA 94618, USA
-Rating: 4.7 with 2890 ratings
+Rating: 4.7 with 2890.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17842575562892538471
 Opening Hours: Monday: 11:00 AM - 9:00 PM
 Tuesday: 11:00 AM - 9:00 PM

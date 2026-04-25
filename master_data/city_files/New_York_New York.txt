@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A hidden place on the history of top-down action, especially in urban planning and environmental issues. Kinda cool snapshot of East Village's history.
 Address: 155 Loisaida Ave, New York, NY 10009, USA
-Rating: 4.8 with 118 ratings
+Rating: 4.8 with 118.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16933396824387230082
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A museum dedicated to design: exhibits starting from data viz from WEB Du Bois to the history of interior decoration, you will learn cool stuff about how design affects our lives.
 Address: 2 E 91st St, New York, NY 10128, USA
-Rating: 4.4 with 3059 ratings
+Rating: 4.4 with 3059.0 ratings
 Google Maps Link: https://maps.google.com/?cid=2317194789116997114
 Opening Hours: Monday: 10:00 AM - 6:00 PM
 Tuesday: 10:00 AM - 6:00 PM
@@ -43,7 +43,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A tribute to the complex and varied history of NYC, my fave exhibits were the multimedia ones using interactive maps to show how the city has changed over the centuries.
 Address: 1220 5th Ave, New York, NY 10029, USA
-Rating: 4.5 with 6246 ratings
+Rating: 4.5 with 6246.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1848440932155906772
 Opening Hours: Monday: 10:00 AM - 5:00 PM
 Tuesday: 10:00 AM - 5:00 PM
@@ -60,7 +60,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A venue for cool events: concerts, operas, theater. Checkout some of their summertime events for our fix of classical music!
 Address: Lincoln Center Plaza, New York, NY 10023, USA
-Rating: 4.8 with 21516 ratings
+Rating: 4.8 with 21516.0 ratings
 Google Maps Link: https://maps.google.com/?cid=5320422915917524046
 Opening Hours: 
 
@@ -71,7 +71,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A bookstore dedicated to the mystery genre. All sorts of novels, from sci-fi mystery to historical to romantic spy stories. They often have interesting events as well.
 Address: 58 Warren St, New York, NY 10007, USA
-Rating: 4.7 with 528 ratings
+Rating: 4.7 with 528.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14684499598251718088
 Opening Hours: Monday: 11:00 AM - 7:00 PM
 Tuesday: 11:00 AM - 7:00 PM
@@ -88,7 +88,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A museum dedicated to posters, with some interesting exhibits such as their Japan in the 20th century or the one dedicated to the Black Panther movements. Interesting to see how posters reflect the broader state of the society that they come from or how they become tools for activism.
 Address: 119 W 23rd St, New York, NY 10011, USA
-Rating: 4.7 with 851 ratings
+Rating: 4.7 with 851.0 ratings
 Google Maps Link: https://maps.google.com/?cid=609230337206406105
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -105,7 +105,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Interesting museum dedicated to the history of NYC's subways. Go for their collection of real subway cars or their cool exhibits talking about all sorts of subway-related things, like turnstiles, fake money people used or things that workers found when digging underground during construction.
 Address: 99 Schermerhorn St, Brooklyn, NY 11201, USA
-Rating: 4.7 with 6341 ratings
+Rating: 4.7 with 6341.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16408494721157844502
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -122,7 +122,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: New coffee shop in an interesting tiny triangular building with a scattering of chairs. Sip on a coffee or lemonade and take in the sounds and sights of Greenwich Village.
 Address: 174 7th Ave S, New York, NY 10014, USA
-Rating: 4.3 with 678 ratings
+Rating: 4.3 with 678.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9084106932232175880
 Opening Hours: Monday: 8:00 AM - 10:00 PM
 Tuesday: 8:00 AM - 10:00 PM
@@ -139,7 +139,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Interesting alley coffee shop with great coffee and space for reading and taking in the sights of NYC.
 Address: 325 Lafayette St, New York, NY 10012, USA
-Rating: 4.6 with 559 ratings
+Rating: 4.6 with 559.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3435034110403133213
 Opening Hours: Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
@@ -156,7 +156,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A classic representation of a New York slice: cheap and delicious pizza (since the 70s).
 Address: 7 Carmine St, New York, NY 10014, USA
-Rating: 4.5 with 10221 ratings
+Rating: 4.5 with 10221.0 ratings
 Google Maps Link: https://maps.google.com/?cid=4877966330195296067
 Opening Hours: Monday: 10:00 AM - 3:00 AM
 Tuesday: 10:00 AM - 3:00 AM
@@ -173,7 +173,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A West African spot that offers an explosion of flavors in their bowls. Everything was fresh and really tasty.
 Address: 717 Franklin Ave, Brooklyn, NY 11238, USA
-Rating: 4.6 with 500 ratings
+Rating: 4.6 with 500.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3689933022241273026
 Opening Hours: Monday: 11:30 AM - 10:00 PM
 Tuesday: 11:30 AM - 10:00 PM
@@ -190,7 +190,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: On the more affordable side of omakase spots. Very tasty sushi with some interesting explorations of flavors as you go through the pieces.
 Address: 300 E 5th St, New York, NY 10003, USA
-Rating: 4.5 with 947 ratings
+Rating: 4.5 with 947.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17385990898147491039
 Opening Hours: Monday: 1:00 - 3:00 PM, 5:00 - 10:00 PM
 Tuesday: 1:00 - 3:00 PM, 5:00 - 10:00 PM
@@ -207,7 +207,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Hidden vegan spot in a tiny tiny food court: great plates with cool combinations of flavors. I recommend the cachapa: an arepa recipe with mozzarella and ssamjang.
 Address: 189 Wilson Ave, Brooklyn, NY 11237, USA
-Rating: 4.9 with 172 ratings
+Rating: 4.9 with 172.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10175622570890873884
 Opening Hours: Monday: Closed
 Tuesday: 8:00 AM - 5:00 PM
@@ -224,6 +224,6 @@ Country: United States of America
 Creator's Rec: 
 Notes: Michelin-starred but affordable Japanese curry: super fresh, super tasty. The chicken curry is my go to.
 Address: 100 Pearl St, New York, NY 10004, USA
-Rating: 4 with 19 ratings
+Rating: 4.0 with 19.0 ratings
 Google Maps Link: https://maps.google.com/?cid=7706991762168517526
 Opening Hours:

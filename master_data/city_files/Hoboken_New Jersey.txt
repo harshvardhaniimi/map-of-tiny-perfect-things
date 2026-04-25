@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Cute spot in a Whole Foods (convenient). The espresso was pretty good as well!
 Address: 1400 Waterfront Terrace, Weehawken Township, NJ 07086, USA
-Rating: 4 with 50 ratings
+Rating: 4.0 with 50.0 ratings
 Google Maps Link: https://maps.google.com/?cid=2544125250998181931
 Opening Hours: Monday: 8:00 AM - 3:00 PM
 Tuesday: 8:00 AM - 3:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: I've only ever ordered takeout from this Mexican spot, but the battered fish tacos and their rice side dish is something I go back to week after week.
 Address: 1426 Willow Ave, Hoboken, NJ 07030, USA
-Rating: 4.3 with 752 ratings
+Rating: 4.3 with 752.0 ratings
 Google Maps Link: https://maps.google.com/?cid=8103246909486312204
 Opening Hours: Monday: Closed
 Tuesday: 3:00 - 10:00 PM
