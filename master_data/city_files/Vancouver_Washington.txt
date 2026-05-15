@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Great selection of teas and a nicely decorated space with a lot of fun quirks!
 Address: 109 W 7th St, Vancouver, WA 98660, USA
-Rating: 4.9 with 273 ratings
+Rating: 4.9 with 273.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6831711838268131764
 Opening Hours: Monday: Closed
 Tuesday: 10:00 AM - 4:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Rustic spot with sunlit wooden decor, great espresso and cool barista/owner couple running the place.
 Address: 212 E Evergreen Blvd, Vancouver, WA 98660, USA
-Rating: 4.9 with 231 ratings
+Rating: 4.9 with 231.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1938287690512829267
 Opening Hours: Monday: 7:00 AM - 2:00 PM
 Tuesday: 7:00 AM - 2:00 PM
@@ -43,7 +43,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Sandwich shop with super friendly staff: get a Turkey & Havarti and enjoy it in a cozy and calm atmosphere.
 Address: 900 Washington St #120, Vancouver, WA 98660, USA
-Rating: 4.7 with 155 ratings
+Rating: 4.7 with 155.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1278804859851540855
 Opening Hours: Monday: 8:00 AM - 3:00 PM
 Tuesday: 8:00 AM - 3:00 PM
@@ -60,7 +60,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Cool spot for great Georgian food in sleepy Downtown Vancouver WA. Get the dumplings (khinkali) and cheese boat (khachapuri).
 Address: 210 W Evergreen Blvd #700, Vancouver, WA 98660, USA
-Rating: 4.7 with 789 ratings
+Rating: 4.7 with 789.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12806899912610640251
 Opening Hours: Monday: Closed
 Tuesday: 5:00 - 9:00 PM
@@ -77,7 +77,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Personal top 2 pizza spots in the US in the most random of locations, next to a largely empty business park and car lot. Some of the best Neapolitan pizza you can get.
 Address: 3000 SE 164th Ave Suite 107, Vancouver, WA 98683, USA
-Rating: 4.5 with 839 ratings
+Rating: 4.5 with 839.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12982585407653480350
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -94,7 +94,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: German restaurant in unassuming location right next to a busy road. The servings are generous, the decor recalls a German fairytale pub. Good place for a filling lunch.
 Address: 1705 SE 164th Ave, Vancouver, WA 98683, USA
-Rating: 4.5 with 3257 ratings
+Rating: 4.5 with 3257.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13834108994875039715
 Opening Hours: Monday: 11:00 AM - 10:00 PM
 Tuesday: 11:00 AM - 10:00 PM
@@ -111,7 +111,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Simple pizza truck with tasty and light options by the slice.
 Address: 8420 N Ivanhoe St #83133, Portland, OR 97203, USA
-Rating: 4.5 with 51 ratings
+Rating: 4.5 with 51.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10749592305929016910
 Opening Hours: Monday: 11:00 AM - 12:00 AM
 Tuesday: 11:00 AM - 12:00 AM
@@ -128,7 +128,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Good coffee and a nice collection of books on the history of coffee and coffee culture.
 Address: 720 Esther St, Vancouver, WA 98660, USA
-Rating: 4.3 with 378 ratings
+Rating: 4.3 with 378.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17097507112438339899
 Opening Hours: Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
@@ -145,7 +145,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Nice coffee and their parfaits are amazing!
 Address: 7809 NE Vancouver Plaza Dr #150, Vancouver, WA 98662, USA
-Rating: 4.5 with 854 ratings
+Rating: 4.5 with 854.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14439129688926159467
 Opening Hours: Monday: 8:00 AM - 6:00 PM
 Tuesday: 8:00 AM - 6:00 PM
@@ -162,7 +162,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Good place to work or hangout with friends. Also has an outdoor patio.
 Address: 817 Washington St, Vancouver, WA 98660, USA
-Rating: 4.5 with 1079 ratings
+Rating: 4.5 with 1079.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13426731876994650627
 Opening Hours: Monday: 6:00 AM - 7:00 PM
 Tuesday: 6:00 AM - 7:00 PM
@@ -179,7 +179,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A delicious sandwich place with good coffee.
 Address: 900 Washington St #120, Vancouver, WA 98660, USA
-Rating: 4.7 with 155 ratings
+Rating: 4.7 with 155.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1278804859851540855
 Opening Hours: Monday: 8:00 AM - 3:00 PM
 Tuesday: 8:00 AM - 3:00 PM
@@ -196,7 +196,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Spacious cafe with interesting group of goers. Great place to read a book, finish a project, or just have some philosophical chat with friends relaxing on the couch.
 Address: 1703 Main St suite a, Vancouver, WA 98660, USA
-Rating: 4.7 with 815 ratings
+Rating: 4.7 with 815.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13131070322000182276
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
@@ -213,7 +213,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: I love this cafe for its variety of seating. You will meet groups plaing board games, high schoolers doing homework, people with headphones, and people reading. Big menu; more than coffee.
 Address: 6500 NE 117th Ave, Vancouver, WA 98662, USA
-Rating: 4.5 with 751 ratings
+Rating: 4.5 with 751.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6663577453978314114
 Opening Hours: Monday: 5:00 AM - 6:00 PM
 Tuesday: 5:00 AM - 6:00 PM
@@ -230,7 +230,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Great ambience, lots of board games, lots of books, and wonderful inviting decor.
 Address: 1906 Main St, Vancouver, WA 98660, USA
-Rating: 4.6 with 457 ratings
+Rating: 4.6 with 457.0 ratings
 Google Maps Link: https://maps.google.com/?cid=2765265195274862583
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -247,7 +247,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Inviting atmosphere, lots of boba tea options.
 Address: 1001 Main St #3150, Vancouver, WA 98660, USA
-Rating: 4.8 with 283 ratings
+Rating: 4.8 with 283.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17566471637392697531
 Opening Hours: Monday: Closed
 Tuesday: 11:00 AM - 7:00 PM
