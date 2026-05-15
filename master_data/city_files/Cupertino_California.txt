@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Coffee: slightly average. Apple's HQ being across the street: kinda surreal. If you get a foamy drink, there's a nice litte surprise at the top :)
 Address: 10600 N Tantau Ave, Cupertino, CA 95014, USA
-Rating: 4.3 with 2639 ratings
+Rating: 4.3 with 2639.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1675864779563151232
 Opening Hours: Monday: 10:00 AM - 7:00 PM
 Tuesday: 10:00 AM - 7:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: American-style food: generous portions, tasty burgers and ample seating in a place that looks like a tribute to road-trips and US culture.
 Address: 19359 Stevens Creek Blvd, Cupertino, CA 95014, USA
-Rating: 4.3 with 5292 ratings
+Rating: 4.3 with 5292.0 ratings
 Google Maps Link: https://maps.google.com/?cid=2201619789399155340
 Opening Hours: Monday: 11:00 AM - 12:00 AM
 Tuesday: 11:00 AM - 12:00 AM

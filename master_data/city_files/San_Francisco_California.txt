@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Classic Bay Area coffee: speciality drinks, single-origin beans and their Fort Mason tiny spot is great for enjoying the views of the Bay and the Marina.
 Address: 2 Marina Blvd, San Francisco, CA 94123, USA
-Rating: 4.4 with 510 ratings
+Rating: 4.4 with 510.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16819522815472782191
 Opening Hours: Monday: 6:30 AM - 5:00 PM
 Tuesday: 6:30 AM - 5:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Favorite coffee shop in SF! Bonus points if you go in the summer and they have a repurposed orange VW van for people to sit in.
 Address: 1737 Balboa St, San Francisco, CA 94121, USA
-Rating: 4.8 with 558 ratings
+Rating: 4.8 with 558.0 ratings
 Google Maps Link: https://maps.google.com/?cid=2726196137705445702
 Opening Hours: Monday: 7:00 AM - 2:00 PM
 Tuesday: 7:00 AM - 2:00 PM
@@ -43,7 +43,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Come for the coffee, leave because they don't have Wi-Fi, but enjoy a good experience.
 Address: 270 7th St, San Francisco, CA 94103, USA
-Rating: 4.4 with 3347 ratings
+Rating: 4.4 with 3347.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13926460886861596347
 Opening Hours: Monday: 6:30 AM - 5:00 PM
 Tuesday: 6:30 AM - 5:00 PM
@@ -60,7 +60,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Good-y coffee: also a tiny location in an usually busy part of Fort Mason, so prepare for lines. But it offers a good dose of caffeine after getting lunch from the Farmer's market next to it.
 Address: 2 Marina Blvd, San Francisco, CA 94123, USA
-Rating: 4.1 with 110 ratings
+Rating: 4.1 with 110.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16394563395853460528
 Opening Hours: Monday: 8:30 AM - 2:00 PM
 Tuesday: 8:30 AM - 5:00 PM
@@ -77,7 +77,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Essentially a coffee window with a few squeaky tables around it on the street, but few coffee experiences beat getting an espresso shot, reading a book and taking in the beautiful North Beach SF neighborhood, especially in early fall.
 Address: 524 Union St, San Francisco, CA 94133, USA
-Rating: 4.6 with 228 ratings
+Rating: 4.6 with 228.0 ratings
 Google Maps Link: https://maps.google.com/?cid=18271389404811253985
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -94,7 +94,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Some of the best coffee the Bay Area has to offer. Also a quiet place for some concentrated work, reading or pondering life's philosophical questions.
 Address: 1415 Folsom St, San Francisco, CA 94103, USA
-Rating: 4.4 with 730 ratings
+Rating: 4.4 with 730.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16500984014294458956
 Opening Hours: Monday: 7:30 AM - 4:00 PM
 Tuesday: 7:30 AM - 4:00 PM
@@ -111,7 +111,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Cute shop overlooking the Pacific coast, and the coffee is very high quality. They have little quirks, like the descriptions on their coffee bean bags. Good for ruminating the vastness of the universe.
 Address: 3655 Lawton St, San Francisco, CA 94122, USA
-Rating: 4.6 with 1177 ratings
+Rating: 4.6 with 1177.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13814300623704401757
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
@@ -128,7 +128,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Great coffee right next to Golden Gate Park: get your drink to-go and walk over to one of the Park's striking green spaces.
 Address: 672 Stanyan St, San Francisco, CA 94117, USA
-Rating: 4.4 with 1285 ratings
+Rating: 4.4 with 1285.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15746101247581114744
 Opening Hours: Monday: 7:00 AM - 6:00 PM
 Tuesday: 7:00 AM - 6:00 PM
@@ -145,7 +145,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Tiny coffee shop attached to the larger Piccino restaurant: more of a to-go spot, but the coffee is high quality and the Dogpatch streets are worth exploring.
 Address: 1001 Minnesota St, San Francisco, CA 94107, USA
-Rating: 4.5 with 1358 ratings
+Rating: 4.5 with 1358.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9332737843888528132
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -162,7 +162,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A sunny neighborhood cafe: on a typical day, you'll find people walking their dogs, taking their babies out for walks or just reading. Great for meeting new people.
 Address: 1299 Sanchez St, San Francisco, CA 94114, USA
-Rating: 4.6 with 424 ratings
+Rating: 4.6 with 424.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9199359361190250334
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
@@ -179,7 +179,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Coffee truck alert!
 Address: 601 Mission Bay Blvd North, San Francisco, CA 94158, USA
-Rating: 4.6 with 347 ratings
+Rating: 4.6 with 347.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1947614175195825506
 Opening Hours: Monday: 7:00 AM - 2:00 PM
 Tuesday: 7:00 AM - 2:00 PM
@@ -196,7 +196,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: The other pizza spot in my top 2. Incredibly popular but also fully deserves all its hype. Props for getting creative with the pizza: I loved the jam-flavored one I got.
 Address: 1570 Stockton St, San Francisco, CA 94133, USA
-Rating: 4.5 with 9972 ratings
+Rating: 4.5 with 9972.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13813662513369709376
 Opening Hours: Monday: 12:00 - 10:00 PM
 Tuesday: 12:00 - 10:00 PM
@@ -213,7 +213,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: One of Ghirardelli Chocolate's San Francisco spots. You can buy all sorts of chocolate or have some ice cream or dessert, all of which taste divine.
 Address: 900 North Point St Ste 52, San Francisco, CA 94109, USA
-Rating: 4.5 with 1387 ratings
+Rating: 4.5 with 1387.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12552512488692444497
 Opening Hours: Monday: 9:00 AM - 11:00 PM
 Tuesday: 9:00 AM - 11:00 PM
@@ -230,7 +230,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Whatever other dish you get, the crawfish beignets are a must: there is no coming back from that level of new flavor discovery.
 Address: 652 Polk St, San Francisco, CA 94102, USA
-Rating: 4.5 with 6248 ratings
+Rating: 4.5 with 6248.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12074054251018812705
 Opening Hours: Monday: 8:00 AM - 8:00 PM
 Tuesday: 8:00 AM - 3:00 PM
@@ -247,7 +247,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: An old-style Italian spot known for their cioppino (which also originated in this neighborhood).
 Address: 552 Green St, San Francisco, CA 94133, USA
-Rating: 4.6 with 4975 ratings
+Rating: 4.6 with 4975.0 ratings
 Google Maps Link: https://maps.google.com/?cid=11842344414635121701
 Opening Hours: Monday: 11:30 AM - 9:00 PM
 Tuesday: 11:30 AM - 9:00 PM
@@ -264,7 +264,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Among the best seafood places in San Francisco: great selection of fresh oysters and a couple of other fish plates as well. The restaurant offers some Bay Bridge views but is also on the noisier side.
 Address: Ferry Building, #11, San Francisco, CA 94111, USA
-Rating: 4.6 with 3940 ratings
+Rating: 4.6 with 3940.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9442219819750554241
 Opening Hours: Monday: 11:30 AM - 8:00 PM
 Tuesday: 11:30 AM - 8:00 PM
@@ -281,7 +281,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Vienna-style pastries: very fresh and tasty. This place is also good for larger parties or take out.
 Address: 2821 California St, San Francisco, CA 94115, USA
-Rating: 4.7 with 2850 ratings
+Rating: 4.7 with 2850.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1055906375555324091
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -298,7 +298,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Russian bakery in a quiet part of the Richmond district. Don't be fooled, however, Cinderella has been around since 1953 and that's for good reason, their pastries are amazing!
 Address: 436 Balboa St, San Francisco, CA 94118, USA
-Rating: 4.7 with 3022 ratings
+Rating: 4.7 with 3022.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14287218678531349815
 Opening Hours: Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
@@ -315,7 +315,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Omakase spot hidden at the edge of a Japantown mall. Relatively affordable and amazing sushi and service.
 Address: 1737 Post St #337, San Francisco, CA 94115, USA
-Rating: 4.5 with 228 ratings
+Rating: 4.5 with 228.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16809303632680518321
 Opening Hours: Monday: 5:30 - 9:30 PM
 Tuesday: 5:30 - 9:30 PM
@@ -332,7 +332,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Anchovy-based spreads and dishes: an interesting concept executed in a creative way. If you're feeling brave, give the anchovy ice cream a try.
 Address: 1740 O'Farrell St, San Francisco, CA 94115, USA
-Rating: 4.6 with 409 ratings
+Rating: 4.6 with 409.0 ratings
 Google Maps Link: https://maps.google.com/?cid=8786325127318675512
 Opening Hours: Monday: 5:30 - 9:00 PM
 Tuesday: 5:30 - 9:00 PM
@@ -349,7 +349,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Simple but very tasty donuts to enjoy while walking around Nob Hill.
 Address: 1720 Polk St, San Francisco, CA 94109, USA
-Rating: 4.6 with 4240 ratings
+Rating: 4.6 with 4240.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15212235550961868322
 Opening Hours: Monday: Open 24 hours
 Tuesday: Open 24 hours
@@ -366,7 +366,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Japanese streetfood takoyakis (octopus-filled dough balls) in a busy indoor mall in Japantown.
 Address: 1737 Post St STE395, San Francisco, CA 94115, USA
-Rating: 4.2 with 207 ratings
+Rating: 4.2 with 207.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3171454582782148759
 Opening Hours: Monday: 11:00 AM - 7:00 PM
 Tuesday: 11:00 AM - 7:00 PM
@@ -383,7 +383,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Very crave-inducing mochi donut spot. My favorite is the black sesame which is a great mix of chewy-ness and flowery-looking donut.
 Address: 1737 Post St #395, San Francisco, CA 94115, USA
-Rating: 4.6 with 420 ratings
+Rating: 4.6 with 420.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6847418909938631112
 Opening Hours: Monday: 11:00 AM - 7:00 PM
 Tuesday: 11:00 AM - 7:00 PM
@@ -400,7 +400,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Bagel shop that gets creative with its recipes: I got the goat cheese and honey cinammon raising bagel and enjoyed it in their airy space in the Dogpatch.
 Address: 2535 3rd St, San Francisco, CA 94107, USA
-Rating: 4.1 with 372 ratings
+Rating: 4.1 with 372.0 ratings
 Google Maps Link: https://maps.google.com/?cid=8817068412474617073
 Opening Hours: Monday: 8:00 AM - 2:00 PM
 Tuesday: 8:00 AM - 2:00 PM
@@ -417,7 +417,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Fantastic Arab-inspired plates: really fresh and bursting with flavor. Get any of the savory plates but don't skip the dessert; I recommend the knafeh.
 Address: 2901 Mission St, San Francisco, CA 94110, USA
-Rating: 4.4 with 276 ratings
+Rating: 4.4 with 276.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10532771496226339791
 Opening Hours: Monday: 11:00 AM - 3:00 PM
 Tuesday: 11:00 AM - 9:00 PM
@@ -434,7 +434,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Empandas tiny spot inside the Ferry building with a great selection of flavors. The ham and cheese is my go-to.
 Address: Marketplace 1, Ferry Building, Ferry Plz Building, #18, San Francisco, CA 94111, USA
-Rating: 4.3 with 644 ratings
+Rating: 4.3 with 644.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16711778652254806945
 Opening Hours: Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
@@ -451,7 +451,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Spanish restaurant by the Embarcadero with innovative dishes and cocktails. Go for a classic paella or one of their seafood tapas and pair it with their rosemary gin tonics.
 Address: Pier 5 The Embarcadero, San Francisco, CA 94111, USA
-Rating: 4.4 with 2800 ratings
+Rating: 4.4 with 2800.0 ratings
 Google Maps Link: https://maps.google.com/?cid=18211740569183750920
 Opening Hours: Monday: 12:00 - 9:00 PM
 Tuesday: 12:00 - 9:00 PM
@@ -468,7 +468,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Famous Peruvian spot, with some of the best nigiri I've had. Very fresh and tasty, and a great balcony area overlooking the Bay Bridge and Embarcadero.
 Address: PIER 1 1/2 The Embarcadero N, San Francisco, CA 94111, USA
-Rating: 4.5 with 4802 ratings
+Rating: 4.5 with 4802.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12288100453195726903
 Opening Hours: Monday: 11:30 AM - 2:30 PM, 5:00 - 9:00 PM
 Tuesday: 11:30 AM - 2:30 PM, 5:00 - 9:00 PM
@@ -485,7 +485,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Great Gujarati cuisine with menu sections named after cities: for me, Khaman (lentil cake with coconut chutney) and their house-made cocktails were the hightlight of the experience.
 Address: 1275 Minnesota St, San Francisco, CA 94107, USA
-Rating: 4 with 774 ratings
+Rating: 4.0 with 774.0 ratings
 Google Maps Link: https://maps.google.com/?cid=8581795061234155490
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -502,7 +502,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A bustling place in the middle of Fisherman's Wharf: great seafood selection, including pasta and risottos and views of the Golden Gate Bridge.
 Address: 39 Pier, San Francisco, CA 94133, USA
-Rating: 4.4 with 8452 ratings
+Rating: 4.4 with 8452.0 ratings
 Google Maps Link: https://maps.google.com/?cid=11351540828558533108
 Opening Hours: Monday: 11:00 AM - 9:00 PM
 Tuesday: 11:00 AM - 9:00 PM
@@ -519,7 +519,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: An American diner with a few twists: they happen to have great espresso and a few seafood plates.
 Address: 1800 Montgomery St, San Francisco, CA 94111, USA
-Rating: 4.4 with 2171 ratings
+Rating: 4.4 with 2171.0 ratings
 Google Maps Link: https://maps.google.com/?cid=18427936697599579878
 Opening Hours: Monday: 11:30 AM - 9:00 PM
 Tuesday: 11:30 AM - 9:00 PM
@@ -536,7 +536,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Casual pizza spot with great views of the Yerba Buena gardens and the Downtown SF skyline.
 Address: 1 Ferry Plz, San Francisco, CA 94111, USA
-Rating: 4.1 with 122 ratings
+Rating: 4.1 with 122.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16449829398911974704
 Opening Hours: Monday: 10:00 AM - 8:00 PM
 Tuesday: 10:00 AM - 8:00 PM
@@ -553,7 +553,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A history of letters and their role in activism and politics in a tiny spot in San Francisco's Dogpatch. Interesting exhibits that expanded my idea of what papers and posters can achieve.
 Address: 2325 3rd St Floor 4R, San Francisco, CA 94107, USA
-Rating: 4.1 with 32 ratings
+Rating: 4.1 with 32.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9390220658440840425
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -570,7 +570,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A bookstore dedicated to food! Find all about cooking, plants, coffee or other drinks and have a chat with the very passionate owner.
 Address: 3885 Cesar Chavez St, San Francisco, CA 94131, USA
-Rating: 4.9 with 266 ratings
+Rating: 4.9 with 266.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10073082414243482735
 Opening Hours: Monday: 11:00 AM - 6:00 PM
 Tuesday: 11:00 AM - 6:00 PM

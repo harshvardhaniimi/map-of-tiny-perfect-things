@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Cat-themed designs, great coffee and an outdoor patio good for reading: quality coffee spot!
 Address: 2085 Vine St, Berkeley, CA 94709, USA
-Rating: 4.1 with 524 ratings
+Rating: 4.1 with 524.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6825784790326810359
 Opening Hours: Monday: 7:00 AM - 6:00 PM
 Tuesday: 7:00 AM - 6:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Good espresso in a board game cafe: pick a game from their wall and spend fun times at their playing events.
 Address: 1797 Shattuck Ave. Ste A, Berkeley, CA 94709, USA
-Rating: 4.7 with 929 ratings
+Rating: 4.7 with 929.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1343438172733319398
 Opening Hours: Monday: 9:00 AM - 11:00 PM
 Tuesday: 9:00 AM - 11:00 PM
@@ -43,7 +43,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Fairytale cottage coffee shop, with incredible attention to detail. Look out for sorted jars of bad coffee beans ("floater" and "immature" among others).
 Address: 2080 Martin Luther King Jr Way, Berkeley, CA 94704, USA
-Rating: 4.7 with 405 ratings
+Rating: 4.7 with 405.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10517783875496316222
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -60,7 +60,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: High quality coffee and a sleek decor: would recommend for one of those very complex, single origin coffees you want every now and then.
 Address: 1717 Fourth St B, Berkeley, CA 94710, USA
-Rating: 4.4 with 747 ratings
+Rating: 4.4 with 747.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1979307582823159544
 Opening Hours: Monday: 8:00 AM - 5:00 PM
 Tuesday: 8:00 AM - 5:00 PM
@@ -77,7 +77,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Cozy coffee shop next to Strawberry Creek Park, so you can get your coffee, a tasty snack and your dose of sunshine and people watching all in one go.
 Address: 1250 Addison St Suite 111, Berkeley, CA 94702, USA
-Rating: 4.6 with 419 ratings
+Rating: 4.6 with 419.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3281524003905677975
 Opening Hours: Monday: Closed
 Tuesday: 8:30 AM - 5:00 PM
@@ -94,7 +94,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Among the best coffee in Berkeley, in the middle of College Avenue, a cute street with a ton of other small businesses to explore.
 Address: 4252 Piedmont Ave, Oakland, CA 94611, USA
-Rating: 4.5 with 1001 ratings
+Rating: 4.5 with 1001.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17464679592596299538
 Opening Hours: Monday: 7:00 AM - 6:00 PM
 Tuesday: 7:00 AM - 6:00 PM
@@ -111,7 +111,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Coffee shop on the first floor of Berkeley's Moffit Library, a place that pays homage to the 60s Berkeley student protests on freedom of speech. The coffee is about average but you might be inspired by the crowds of students studying on their laptops.
 Address: 3rd Floor, U C, University Dr, Berkeley, CA 94709, USA
-Rating: 4.3 with 213 ratings
+Rating: 4.3 with 213.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1042355389274602679
 Opening Hours: Monday: 7:00 AM - 10:00 PM
 Tuesday: 7:00 AM - 10:00 PM
@@ -139,7 +139,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: On the science-y side of coffee: super dedicated to making very tasty drinks but also being innovative. Go there for great coffee and the nice street-side seating.
 Address: 2322 Fifth St, Berkeley, CA 94710, USA
-Rating: 4.7 with 156 ratings
+Rating: 4.7 with 156.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9491048398550824538
 Opening Hours: Monday: 7:30 AM - 4:00 PM
 Tuesday: 7:30 AM - 4:00 PM
@@ -156,7 +156,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Another good coffee place close to Berkeley's campus. Their refuge mission is very inspiring; go and learn more about the work they are doing!
 Address: 2410 Channing Way, Berkeley, CA 94704, USA
-Rating: 4.6 with 427 ratings
+Rating: 4.6 with 427.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10930644910780933144
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
@@ -173,7 +173,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: New coffee shop on Euclid next to campus, surprisingly great coffee and a nice minimalistic decor. Nice book selection on the wall next to the baristas too.
 Address: 1816 Euclid Ave, Berkeley, CA 94709, USA
-Rating: 4.6 with 229 ratings
+Rating: 4.6 with 229.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16641574859153816980
 Opening Hours: Monday: 7:30 AM - 5:00 PM
 Tuesday: 7:30 AM - 5:00 PM
@@ -190,7 +190,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Great coffee and service: another of those good-for-cycling refreshment places. Bonus for having ridgeplots as their logo.
 Address: 1707 Solano Ave, Berkeley, CA 94707, USA
-Rating: 4.4 with 121 ratings
+Rating: 4.4 with 121.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14091866203736014782
 Opening Hours: Monday: 7:15 AM - 3:30 PM
 Tuesday: 7:15 AM - 3:30 PM
@@ -207,7 +207,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: A very tasty surprise in the middle of Telegraph avenue. Some of the best waffles I've tried, but I'd recommend keeping it to 2 toppings.
 Address: 2468 Telegraph Ave Suite A, Berkeley, CA 94704, USA
-Rating: 4.5 with 257 ratings
+Rating: 4.5 with 257.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15097703656963841436
 Opening Hours: Monday: 12:00 PM - 12:00 AM
 Tuesday: 12:00 PM - 12:00 AM
@@ -224,7 +224,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: One of those student classic places for a quick slice of pizza. The slice itself is average, but it's a quintessential Berkeley experience.
 Address: 2590 Durant Ave, Berkeley, CA 94704, USA
-Rating: 4.5 with 1144 ratings
+Rating: 4.5 with 1144.0 ratings
 Google Maps Link: https://maps.google.com/?cid=7620266227276258053
 Opening Hours: Monday: 11:00 AM - 2:00 AM
 Tuesday: 11:00 AM - 2:00 AM
@@ -241,7 +241,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: The notorious potato puffs with truffle oil. Non-optional and highly craveable.
 Address: 2109 Cedar St, Berkeley, CA 94709, USA
-Rating: 4.6 with 1372 ratings
+Rating: 4.6 with 1372.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14127590396906453410
 Opening Hours: Monday: 11:30 AM - 7:00 PM
 Tuesday: 11:30 AM - 7:00 PM
@@ -258,7 +258,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Try the shrimp tacos with a cheese topping in this Telegraph Avenue spot for some simple and high-quality tacos.
 Address: 2384 Telegraph Ave, Berkeley, CA 94704, USA
-Rating: 4.3 with 597 ratings
+Rating: 4.3 with 597.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15211998447104055331
 Opening Hours: Monday: 10:00 AM - 1:00 AM
 Tuesday: 10:00 AM - 1:00 AM
@@ -275,7 +275,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Amazing Italian food also on a corner of College Avenue: the pasta and rice dishes are my go-tos.
 Address: 2635 Ashby Ave, Berkeley, CA 94705, USA
-Rating: 4.3 with 444 ratings
+Rating: 4.3 with 444.0 ratings
 Google Maps Link: https://maps.google.com/?cid=7541061805781318229
 Opening Hours: Monday: Closed
 Tuesday: 12:00 - 2:30 PM, 4:30 - 9:00 PM
@@ -292,7 +292,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Brunch spot a few blocks from Berkeley's campus: my favorites were the French toast on brioche bread or the creme fraiche pancakes. The place gets really busy very quickly, but it's a nice bustling spot with quality food.
 Address: 2377 Shattuck Ave., Berkeley, CA 94704, USA
-Rating: 4.4 with 2033 ratings
+Rating: 4.4 with 2033.0 ratings
 Google Maps Link: https://maps.google.com/?cid=5382214507843184322
 Opening Hours: Monday: 8:00 AM - 2:00 PM
 Tuesday: 8:00 AM - 2:00 PM
@@ -309,7 +309,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A California classic: the place that popularized the farm-to-table, slow food movement which spread around the world. Definitely a splurge, but their upstairs cafe offers reasonably-priced items that are still super tasty.
 Address: 1517 Shattuck Ave., Berkeley, CA 94709, USA
-Rating: 4.6 with 2404 ratings
+Rating: 4.6 with 2404.0 ratings
 Google Maps Link: https://maps.google.com/?cid=4711698260768283897
 Opening Hours: Monday: 5:00 - 10:00 PM
 Tuesday: 11:30 AM - 2:30 PM, 5:00 - 10:00 PM
@@ -326,7 +326,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Good Indian food and very friendly owners. Bonus for being really close to campus and for having some sunny outdoor seating.
 Address: 1805 Euclid Ave, Berkeley, CA 94709, USA
-Rating: 4.5 with 70 ratings
+Rating: 4.5 with 70.0 ratings
 Google Maps Link: https://maps.google.com/?cid=8020558467125635643
 Opening Hours: Monday: 11:00 AM - 8:30 PM
 Tuesday: 11:00 AM - 8:30 PM
@@ -343,7 +343,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Tiny bakery (with occasional pizza) that is good for recharging after long bike rides or for a treat to start your day.
 Address: 2708 Russell St, Berkeley, CA 94705, USA
-Rating: 4.7 with 352 ratings
+Rating: 4.7 with 352.0 ratings
 Google Maps Link: https://maps.google.com/?cid=2922111635123308487
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -360,7 +360,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Another Bay Area classic that lives up to the hype. Get one of their chaat dishes or a selection of smaller snacks (pani puri was yummy).
 Address: 2390 Fourth St, Berkeley, CA 94710, USA
-Rating: 4.2 with 4326 ratings
+Rating: 4.2 with 4326.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1539656467643397915
 Opening Hours: Monday: 11:00 AM - 7:30 PM
 Tuesday: 11:00 AM - 7:30 PM
@@ -377,7 +377,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Worker-owned and operated pizza place with vegan ingredients and a new veggie-based set of toppings each day. One of Berkeley's landmarks and hugely influential in food movements.
 Address: 1504 Shattuck Ave., Berkeley, CA 94709, USA
-Rating: 4.7 with 497 ratings
+Rating: 4.7 with 497.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3683419457903755488
 Opening Hours: Monday: Closed
 Tuesday: 7:00 AM - 6:00 PM
@@ -394,7 +394,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Mochi donuts! Can't go wrong with any flavor since they'll always be the perfect mix of chewy and crunchy.
 Address: 2701 Eighth St, Berkeley, CA 94710, USA
-Rating: 4.6 with 737 ratings
+Rating: 4.6 with 737.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17027854777731079596
 Opening Hours: Monday: 9:00 AM - 4:00 PM
 Tuesday: 9:00 AM - 4:00 PM
@@ -411,7 +411,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Great Spanish food in a fancy-looking space. The crab tapas and the octopus platter were amazing and definitely worth a try.
 Address: 2026 San Pablo Ave, Berkeley, CA 94702, USA
-Rating: 4.4 with 1245 ratings
+Rating: 4.4 with 1245.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1795084582671809525
 Opening Hours: Monday: 11:00 AM - 3:00 PM, 4:00 PM - 12:00 AM
 Tuesday: 11:00 AM - 3:00 PM, 4:00 PM - 12:00 AM
@@ -428,7 +428,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Some of the best mini cupcakes around and highly crave-inducing. The place is on the busy Telegraph Avenue right next to Berkeley's campus.
 Address: 2391 Telegraph Ave, Berkeley, CA 94704, USA
-Rating: 4.6 with 290 ratings
+Rating: 4.6 with 290.0 ratings
 Google Maps Link: https://maps.google.com/?cid=7417560321107505384
 Opening Hours: Monday: 11:00 AM - 6:00 PM
 Tuesday: 11:00 AM - 6:00 PM
@@ -445,7 +445,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A real staple for deli food in the Bay: try out the shakshouka for an explosion of flavor and freshness.
 Address: 1475 Shattuck Ave., Berkeley, CA 94709, USA
-Rating: 4.5 with 2279 ratings
+Rating: 4.5 with 2279.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14318875346247625471
 Opening Hours: Monday: 8:00 AM - 9:00 PM
 Tuesday: 8:00 AM - 9:00 PM
@@ -462,7 +462,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Great Japanese curry I would highly recommend, but many of their dishes are carefully thought-out and creatively executed. One of Berkeley's food destinations in my opinion.
 Address: 2451 Shattuck Ave., Berkeley, CA 94704, USA
-Rating: 4.3 with 346 ratings
+Rating: 4.3 with 346.0 ratings
 Google Maps Link: https://maps.google.com/?cid=5821675507943956186
 Opening Hours: Monday: 5:00 - 8:30 PM
 Tuesday: Closed
@@ -479,7 +479,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: French-inspired brunch place, a bit out of the way but still worth it for their lemon ricotta pancakes and rustic vibes.
 Address: 2922 Domingo Ave, Berkeley, CA 94705, USA
-Rating: 4.5 with 771 ratings
+Rating: 4.5 with 771.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17404759757050495492
 Opening Hours: Monday: 8:30 AM - 2:00 PM
 Tuesday: Closed
@@ -496,7 +496,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Classic Thai place a few steps from Berkeley's campus. Usually bustling with students, you'll be impressed by the quality of food and service.
 Address: 2068 University Ave, Berkeley, CA 94704, USA
-Rating: 4.4 with 1553 ratings
+Rating: 4.4 with 1553.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6869354402642975602
 Opening Hours: Monday: 11:00 AM - 9:30 PM
 Tuesday: 11:00 AM - 9:30 PM
@@ -513,7 +513,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Simple hot dog spot a block and a half from UC Berkeley's campus. The perfectly simple recipe of a bun, hot dog and mustard served in a place that has been there since 1966.
 Address: 2534 Durant Ave, Berkeley, CA 94704, USA
-Rating: 4.6 with 1467 ratings
+Rating: 4.6 with 1467.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1470520118036085912
 Opening Hours: Monday: 10:00 AM - 2:00 AM
 Tuesday: 10:00 AM - 2:00 AM
@@ -530,7 +530,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: One of the campus' museums with interesting exhibits and occasional film showings. Worth a visit if you are in the Downtown/Campus area.
 Address: 2155 Center St, Berkeley, CA 94720, USA
-Rating: 4.5 with 895 ratings
+Rating: 4.5 with 895.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16873726739869704312
 Opening Hours: Monday: Closed
 Tuesday: Closed
