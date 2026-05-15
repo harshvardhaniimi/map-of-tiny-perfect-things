@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: A delightful haven of superb coffee within the UT campus, both easily reachable and delectable.
 Address: 2815 Sutherland Ave, Knoxville, TN 37909, USA
-Rating: 4.9 with 66 ratings
+Rating: 4.9 with 66.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12003097376157375089
 Opening Hours: Monday: 9:00 AM - 4:00 PM
 Tuesday: 9:00 AM - 4:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: The perfect blend of excellent coffee, tasteful decor, and a welcoming atmosphere conducive to both work and dining.
 Address: 419 S Gay St, Knoxville, TN 37902, USA
-Rating: 4.2 with 257 ratings
+Rating: 4.2 with 257.0 ratings
 Google Maps Link: https://maps.google.com/?cid=664715486998670612
 Opening Hours: Monday: 7:00 AM - 9:00 PM
 Tuesday: 7:00 AM - 9:00 PM
@@ -43,7 +43,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: While the coffee is passable, the diverse and enticing crepe selection steals the show.
 Address: 412 Clinch Ave, Knoxville, TN 37902, USA
-Rating: 4.7 with 2637 ratings
+Rating: 4.7 with 2637.0 ratings
 Google Maps Link: https://maps.google.com/?cid=876818322652856015
 Opening Hours: Monday: 8:00 AM - 3:00 PM
 Tuesday: 8:00 AM - 3:00 PM
@@ -60,7 +60,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Known for heavenly chocolate cookies and the rare perk of being open until 10 pm, this cafe is a must-visit.
 Address: 327 Union Ave, Knoxville, TN 37902, USA
-Rating: 4.7 with 679 ratings
+Rating: 4.7 with 679.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3296855164481426836
 Opening Hours: Monday: 7:00 AM - 10:00 PM
 Tuesday: 7:00 AM - 10:00 PM
@@ -77,7 +77,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: An ideal indoor locale for productive work sessions, casual gatherings, and coffee rendezvous.
 Address: 700 Sevier Ave, Knoxville, TN 37920, USA
-Rating: 4.5 with 717 ratings
+Rating: 4.5 with 717.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9624273374847035790
 Opening Hours: Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
@@ -94,7 +94,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: An urban retreat offering more than just coffee - also a charming spot to buy plants in the heart of the city.
 Address: 854 N Central St, Knoxville, TN 37917, USA
-Rating: 4.4 with 183 ratings
+Rating: 4.4 with 183.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1034773290161121535
 Opening Hours: Monday: 7:30 AM - 5:00 PM
 Tuesday: 7:30 AM - 5:00 PM
@@ -111,7 +111,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: An olfactory paradise offering an immense range of teas and spices, all available for a pre-purchase sniff.
 Address: 522 S Gay St, Knoxville, TN 37902, USA
-Rating: 4.8 with 100 ratings
+Rating: 4.8 with 100.0 ratings
 Google Maps Link: https://maps.google.com/?cid=13897951480228989028
 Opening Hours: Monday: 10:00 AM - 7:00 PM
 Tuesday: 10:00 AM - 7:00 PM
@@ -128,7 +128,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A sanctuary for coffee and croissant lovers, with the added charm of indoor and outdoor seating.
 Address: 1625 N Central St, Knoxville, TN 37917, USA
-Rating: 4.7 with 996 ratings
+Rating: 4.7 with 996.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15114648551853088473
 Opening Hours: Monday: Closed
 Tuesday: Closed
@@ -145,7 +145,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Experience the magic of a couple-run café (with interesting backstory) delivering sublime lattes.
 Address: 513 Union Ave, Knoxville, TN 37902, USA
-Rating: 4.5 with 196 ratings
+Rating: 4.5 with 196.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9464710704681390822
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
@@ -162,7 +162,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A welcoming spot featuring a friendly, well-versed staff, in a prime location with an adorable aesthetic.
 Address: 2457 University Commons Way, Knoxville, TN 37919, USA
-Rating: 4.8 with 324 ratings
+Rating: 4.8 with 324.0 ratings
 Google Maps Link: https://maps.google.com/?cid=7903867432247318909
 Opening Hours: Monday: 7:00 AM - 5:00 PM
 Tuesday: 7:00 AM - 5:00 PM
@@ -179,7 +179,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Immerse yourself in an environment of great vibes for reading, chatting with friends, excellent coffee, and versatile seating options, both indoors and outdoors.
 Address: 109 S Central St, Knoxville, TN 37902, USA
-Rating: 4.6 with 566 ratings
+Rating: 4.6 with 566.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10208203635961541975
 Opening Hours: Monday: 7:00 AM - 6:00 PM
 Tuesday: 7:00 AM - 6:00 PM
@@ -196,7 +196,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Delicious Pho, brimming with irresistible Vietnamese culinary delights.
 Address: 8078 Kingston Pike, Knoxville, TN 37919, USA
-Rating: 4.4 with 1239 ratings
+Rating: 4.4 with 1239.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10446665733543256298
 Opening Hours: Monday: 11:00 AM - 9:00 PM
 Tuesday: Closed
@@ -213,7 +213,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: The destination for scrumptious masala dosa and biryani, though the mutton offerings fall short of expectations.
 Address: 138 N Cedar Bluff Rd, Knoxville, TN 37923, USA
-Rating: 4.2 with 964 ratings
+Rating: 4.2 with 964.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15303154654257624286
 Opening Hours: Monday: 11:00 AM - 2:30 PM, 5:00 - 10:00 PM
 Tuesday: 11:00 AM - 2:30 PM, 5:00 - 10:00 PM
@@ -230,7 +230,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: A trendy American pizzeria, dishing up a mix of vegetarian options, paired with a curated selection of beer and wine.
 Address: 12 Market Square, Knoxville, TN 37902, USA
-Rating: 4.5 with 2537 ratings
+Rating: 4.5 with 2537.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15913785627340944282
 Opening Hours: Monday: Closed
 Tuesday: 11:00 AM - 8:30 PM
