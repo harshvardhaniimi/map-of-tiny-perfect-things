@@ -58,55 +58,55 @@ jobs:
         if: steps.preflight.outputs.ready == 'true'
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, csv
+          import json, os
           from pathlib import Path
 
-          report_path = Path("data_creation/last_ingest_report.json")
-          report = json.loads(report_path.read_text(encoding="utf-8"))
+          report = json.loads(Path("data_creation/last_ingest_report.json").read_text(encoding="utf-8"))
           added = int(report.get('added_rows', 0))
           print(f"new_unique_submissions={int(report.get('new_unique_submissions', 0))}")
           print(f"added_rows={added}")
           print(f"creator_overrides_applied={int(report.get('creator_overrides_applied', 0))}")
 
-          # Build a markdown list of newly added places from the diff
-          master_before = int(report.get('master_rows_before', 0))
-          master_after = int(report.get('master_rows_after', 0))
-          change_list = ""
-          if added > 0:
-              try:
-                  data = json.loads(Path("master_data/master_data.json").read_text(encoding="utf-8"))
-                  new_places = data[master_before:]
-                  lines = []
-                  for p in new_places:
-                      name = p.get("name", "Unknown")
-                      city = p.get("city", "")
-                      country = p.get("country", "")
-                      cat = p.get("type2", "other")
-                      loc = ", ".join(part for part in [city, country] if part)
-                      lines.append(f"- **{name}** ({loc}) [{cat}]")
-                  change_list = "\n".join(lines)
-              except Exception:
-                  change_list = f"- {added} new place(s) added"
+          # Build a contributor-attributed markdown body for the PR.
+          # We deliberately exclude contributor_email — that stays private in
+          # the place_submissions.csv on the merged branch.
+          body_lines = []
+          for entry in report.get("additions", []):
+              name = entry.get("name") or "Unknown"
+              cat = entry.get("type2") or "other"
+              body_lines.append(f"#### {name} — {cat}")
+              loc_parts = [entry.get("location"), entry.get("city"),
+                           entry.get("state"), entry.get("country")]
+              loc = ", ".join(p for p in loc_parts if p)
+              if loc:
+                  body_lines.append(f"- **Location:** {loc}")
+              contrib = entry.get("contributor_name")
+              if contrib:
+                  body_lines.append(f"- **Contributor:** {contrib}")
+              submitted = entry.get("submitted_at")
+              if submitted:
+                  # Show only the date portion (the ISO timestamp is noisy).
+                  body_lines.append(f"- **Submitted:** {submitted[:10]}")
+              notes = entry.get("notes")
+              if notes:
+                  body_lines.append(f"- **Why special:** {notes}")
+              gmap = entry.get("google_maps_link")
+              if gmap:
+                  body_lines.append(f"- **Google Maps:** {gmap}")
+              body_lines.append("")
 
-          # Write multiline output
-          import os
+          change_list = "\n".join(body_lines).rstrip()
+          if not change_list and added > 0:
+              # Fallback for the case where additions list is missing (older runs)
+              change_list = f"- {added} new place(s) added"
+
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"change_list<<CHANGELIST_EOF\n{change_list}\nCHANGELIST_EOF\n")
           PY
 
-      - name: Check for file changes
-        id: changes
-        if: steps.preflight.outputs.ready == 'true'
-        run: |
-          if git diff --quiet HEAD; then
-            echo "has_changes=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "has_changes=true" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Create pull request
         id: create_pr
-        if: steps.preflight.outputs.ready == 'true' && steps.changes.outputs.has_changes == 'true'
+        if: steps.preflight.outputs.ready == 'true' && steps.report.outputs.added_rows != '0'
         uses: peter-evans/create-pull-request@v6
         with:
           branch: codex/auto-place-submission-sync
@@ -121,6 +121,7 @@ jobs:
             **Creator overrides:** ${{ steps.report.outputs.creator_overrides_applied }}
 
             ### Places added
+
             ${{ steps.report.outputs.change_list }}
 
             ---
@@ -137,7 +138,7 @@ jobs:
             map/src/master_data.json
 
       - name: Email maintainers on new submissions
-        if: steps.preflight.outputs.ready == 'true' && steps.changes.outputs.has_changes == 'true' && steps.report.outputs.added_rows != '0'
+        if: steps.preflight.outputs.ready == 'true' && steps.report.outputs.added_rows != '0'
         continue-on-error: true
         env:
           SMTP_SERVER: ${{ secrets.NOTIFY_SMTP_SERVER }}
