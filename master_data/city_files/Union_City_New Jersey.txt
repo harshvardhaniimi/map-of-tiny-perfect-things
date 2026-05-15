@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Cuban coffee shop with lively decor and music. Get one of their signature drinks and enjoy the happy atmosphere.
 Address: 4501 Park Ave, Union City, NJ 07087, USA
-Rating: 4.5 with 635 ratings
+Rating: 4.5 with 635.0 ratings
 Google Maps Link: https://maps.google.com/?cid=5507502802557302117
 Opening Hours: Monday: 6:00 AM - 9:00 PM
 Tuesday: 6:00 AM - 9:00 PM

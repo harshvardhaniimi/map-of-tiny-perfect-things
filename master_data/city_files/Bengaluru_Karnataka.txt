@@ -9,7 +9,7 @@ Country: India
 Creator's Rec: Yes
 Notes: Tin-Tin Beer excels in crafting light beers, offers delectable cuisine, and provides an economical setting that evokes nostalgia.
 Address: 6/2, 100 Feet Rd, near Drops Total Spirites, Binnamangala, Stage 1, Indiranagar, Bengaluru, Karnataka 560038, India
-Rating: 4.5 with 61389 ratings
+Rating: 4.5 with 61389.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6512482091477201989
 Opening Hours: Monday: 8:30 AM - 1:00 AM
 Tuesday: 8:30 AM - 1:00 AM
@@ -26,7 +26,7 @@ Country: India
 Creator's Rec: 
 Notes: If you're in the mood for budget-friendly tap beer, this venue has seasoned staff who will entertain you with magic tricks once you become a familiar face.
 Address: 34, Rest House Rd, off Brigade Road, below pecos pub, Shanthala Nagar, Sampangi Rama Nagara, Bengaluru, Karnataka 560001, India
-Rating: 4.3 with 2418 ratings
+Rating: 4.3 with 2418.0 ratings
 Google Maps Link: https://maps.google.com/?cid=10173647938385044278
 Opening Hours: Monday: 11:00 AM - 11:00 PM
 Tuesday: 11:00 AM - 11:00 PM
@@ -43,7 +43,7 @@ Country: India
 Creator's Rec: Yes
 Notes: This specific trail within Cubbon Park offers a serene environment that stands in contrast to its larger, busier surroundings.
 Address: Nunegundlapalli, Ambedkar Veedhi, Bengaluru, Karnataka 560001, India
-Rating: 4.4 with 142684 ratings
+Rating: 4.4 with 142684.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14279970654781693880
 Opening Hours: Monday: Closed
 Tuesday: 6:00 AM - 6:00 PM
@@ -60,7 +60,7 @@ Country: India
 Creator's Rec: 
 Notes: For an uncrowded, cost-effective experience with exceptional food, their butter garlic prawns are a must-try.
 Address: 19 & 20, 3rd Main Rd, opposite Sapna Book House, Gandhi Nagar, Bengaluru, Karnataka 560009, India
-Rating: 4.5 with 1282 ratings
+Rating: 4.5 with 1282.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9278295477136952253
 Opening Hours: Monday: 11:00 AM - 1:00 AM
 Tuesday: 11:00 AM - 1:00 AM
@@ -77,7 +77,7 @@ Country: India
 Creator's Rec: Yes
 Notes: With its elegant ambiance, gourmet dishes, artisan cocktails, pulsating music, and a fashionable clientele, this place is a hit.
 Address: No.1, Express Building, Queens Rd, Vasanth Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.3 with 4107 ratings
+Rating: 4.3 with 4107.0 ratings
 Google Maps Link: https://maps.google.com/?cid=5608257603843780214
 Opening Hours: Monday: 12:00 PM - 12:30 AM
 Tuesday: 12:00 PM - 12:30 AM
@@ -94,7 +94,7 @@ Country: India
 Creator's Rec: Yes
 Notes: This establishment boasts a rotating selection of sophisticated options and stays open until 12:30 am.
 Address: Ground Floor, Sobha Mall, Church St, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.2 with 600 ratings
+Rating: 4.2 with 600.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12772292625641296938
 Opening Hours: Monday: 7:30 AM - 12:30 AM
 Tuesday: 7:30 AM - 12:30 AM
@@ -111,7 +111,7 @@ Country: India
 Creator's Rec: Yes
 Notes: The best momos in Bangalore can be discovered at this unassuming stall, which eschews branding for quality.
 Address: 5, Rest House Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.2 with 1766 ratings
+Rating: 4.2 with 1766.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9311748553411056094
 Opening Hours: Monday: 12:00 - 9:30 PM
 Tuesday: 12:00 - 9:30 PM
@@ -128,7 +128,7 @@ Country: India
 Creator's Rec: 
 Notes: It's an ideal spot for unwinding over a comforting cup of chai or coffee.
 Address: Dr Rajkumar Rd, Rajajinagar, Bengaluru, Karnataka 560055, India
-Rating: 4.5 with 196734 ratings
+Rating: 4.5 with 196734.0 ratings
 Google Maps Link: https://maps.google.com/?cid=11872146022815650916
 Opening Hours: Monday: 10:00 AM - 11:00 PM
 Tuesday: 10:00 AM - 11:00 PM
@@ -145,7 +145,7 @@ Country: India
 Creator's Rec: Yes
 Notes: Known for its authentic Italian pizzas and complementing Sangrias, this place sets the mood for romantic dinner dates.
 Address: Dr Rajkumar Rd, Rajajinagar, Bengaluru, Karnataka 560055, India
-Rating: 4.5 with 196734 ratings
+Rating: 4.5 with 196734.0 ratings
 Google Maps Link: https://maps.google.com/?cid=11872146022815650916
 Opening Hours: Monday: 10:00 AM - 11:00 PM
 Tuesday: 10:00 AM - 11:00 PM
@@ -162,7 +162,7 @@ Country: India
 Creator's Rec: 
 Notes: Situated away from the urban hustle, the locale offers a rejuvenating breeze, making it perfect for road trips.
 Address: Vatadahosahalli Lake, Sabbanahalli, Karnataka 561228
-Rating: 4.6 with 656 ratings
+Rating: 4.6 with 656.0 ratings
 Google Maps Link: https://maps.google.com/?cid=5759007650487992745
 Opening Hours: 
 
@@ -173,7 +173,7 @@ Country: India
 Creator's Rec: Yes
 Notes: This caf serves top-notch food, with their mini red velvet cupcakes coming highly recommended.
 Address: 24/1, Lavelle Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.4 with 11424 ratings
+Rating: 4.4 with 11424.0 ratings
 Google Maps Link: https://maps.google.com/?cid=3948675282140169658
 Opening Hours: Monday: 9:00 AM - 1:00 AM
 Tuesday: 9:00 AM - 1:00 AM
@@ -190,7 +190,7 @@ Country: India
 Creator's Rec: 
 Notes: The venue shines in both its culinary and mixology offerings, with Bao being a standout dish.
 Address: 25/4, 1st floor, Lavelle Road, opposite Harley Davidson showroom, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.6 with 501 ratings
+Rating: 4.6 with 501.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14222785947167866862
 Opening Hours: Monday: 12:00 - 11:00 PM
 Tuesday: 12:00 - 11:00 PM
@@ -207,7 +207,7 @@ Country: India
 Creator's Rec: Yes
 Notes: For those craving authentic Ramen and Dimsums, this restaurant is an unmissable stop.
 Address: 1Sobha Mall, 50, St Mark's Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.4 with 3300 ratings
+Rating: 4.4 with 3300.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17088512876486810876
 Opening Hours: Monday: 12:00 - 11:00 PM
 Tuesday: 12:00 - 11:00 PM
@@ -224,7 +224,7 @@ Country: India
 Creator's Rec: Yes
 Notes: Exceptional Italian cuisine is expertly paired with wine-based cocktails at this establishment.
 Address: Ground Floor, Ramanashree Arcade, Post Old Kid's Kemo Building, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001, India
-Rating: 4.5 with 3333 ratings
+Rating: 4.5 with 3333.0 ratings
 Google Maps Link: https://maps.google.com/?cid=9243946620009308182
 Opening Hours: Monday: 12:00 - 3:30 PM, 6:30 - 10:30 PM
 Tuesday: 12:00 - 3:30 PM, 6:30 - 10:30 PM

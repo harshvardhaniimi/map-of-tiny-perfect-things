@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Good coffee in the Arts District: great for sitting down and planning your first day in Vegas. Minimalist decor + espresso comes in cute little tray.
 Address: 1114 S Casino Center Blvd #1, Las Vegas, NV 89104, USA
-Rating: 4.7 with 1231 ratings
+Rating: 4.7 with 1231.0 ratings
 Google Maps Link: https://maps.google.com/?cid=413394602312697201
 Opening Hours: Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Great coffee hidden behind a neighbor's market and next to a live music amphitheater. Bonus for quirky sculptures at the entrance and for neighborly vibes.
 Address: 1028 E Fremont St STE B122, Las Vegas, NV 89101, USA
-Rating: 4.7 with 758 ratings
+Rating: 4.7 with 758.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17181122049554211656
 Opening Hours: Monday: 8:00 AM - 5:00 PM
 Tuesday: 8:00 AM - 5:00 PM
@@ -43,7 +43,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: The espresso and the minimalist-industrial decor make this place a bit of a hidden gem in an unassuming parking lot.
 Address: 1236 S Las Vegas Blvd, Las Vegas, NV 89104, USA
-Rating: 4.1 with 1252 ratings
+Rating: 4.1 with 1252.0 ratings
 Google Maps Link: https://maps.google.com/?cid=14734678175921608594
 Opening Hours: Monday: 8:00 AM - 1:00 AM
 Tuesday: 8:00 AM - 1:00 AM
@@ -60,7 +60,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: Coffee shop and bookstore in one: get a coffee drink, browse the books or listen in to the cafe's literary events.
 Address: 519 S 6th St Ste 100, Las Vegas, NV 89101, USA
-Rating: 4.8 with 1338 ratings
+Rating: 4.8 with 1338.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6716960426511714537
 Opening Hours: Monday: 10:00 AM - 7:00 PM
 Tuesday: 10:00 AM - 7:00 PM
@@ -77,7 +77,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Inventive but still filling Italian food. A lively spot in the colorful Arts district, this place is a great Vegas food destination.
 Address: 1131 S Main St, Las Vegas, NV 89104, USA
-Rating: 4.6 with 4775 ratings
+Rating: 4.6 with 4775.0 ratings
 Google Maps Link: https://maps.google.com/?cid=17771210012534401248
 Opening Hours: Monday: 11:00 AM - 3:00 PM, 5:00 - 11:00 PM
 Tuesday: 11:00 AM - 3:00 PM, 5:00 - 11:00 PM
@@ -94,7 +94,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Colorful brunch spot with fresh, farm-to-table goodies and interesting decorations all over.
 Address: 1126 E Fremont St, Las Vegas, NV 89101, USA
-Rating: 4.7 with 2749 ratings
+Rating: 4.7 with 2749.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1365349470747652924
 Opening Hours: Monday: 7:00 AM - 3:00 PM
 Tuesday: 7:00 AM - 3:00 PM
@@ -111,7 +111,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Tiny kiosk in the Venetian serving fresh and tasty desserts. Sister to the Bouchon restaurant run by Thomas Keller 10 floors above it, you'll enjoy the French pastries from this spot.
 Address: 3355 S Las Vegas Blvd, Las Vegas, NV 89109, USA
-Rating: 4.3 with 737 ratings
+Rating: 4.3 with 737.0 ratings
 Google Maps Link: https://maps.google.com/?cid=18189869077421857854
 Opening Hours: Monday: 6:00 AM - 5:00 PM
 Tuesday: 6:00 AM - 5:00 PM
@@ -128,7 +128,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Simple but tasty fish and chips spot. Try out one of their special sauces (my rec: Gordon's tartar)
 Address: 3535 Las Vegas Blvd S, Las Vegas, NV 89109, USA
-Rating: 4 with 6415 ratings
+Rating: 4.0 with 6415.0 ratings
 Google Maps Link: https://maps.google.com/?cid=15610689803205474818
 Opening Hours: Monday: 11:00 AM - 10:00 PM
 Tuesday: 11:00 AM - 10:00 PM
@@ -145,7 +145,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Latin brunch place: try out one of their signature coffee drinks and pair it with a flavorful entree (churro waffle!)
 Address: 1120 S Main St Suite 110, Las Vegas, NV 89104, USA
-Rating: 4.4 with 2704 ratings
+Rating: 4.4 with 2704.0 ratings
 Google Maps Link: https://maps.google.com/?cid=1468765974990217986
 Opening Hours: Monday: 7:00 AM - 4:00 PM
 Tuesday: 7:00 AM - 4:00 PM
@@ -162,7 +162,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: World famous burgers living up to the hype: skip the lines, get your order as takeout and sit outside people-watching on the Strip.
 Address: 3667 Las Vegas Blvd S, Las Vegas, NV 89109, USA
-Rating: 4.2 with 18197 ratings
+Rating: 4.2 with 18197.0 ratings
 Google Maps Link: https://maps.google.com/?cid=6691100186875232343
 Opening Hours: Monday: 10:00 AM - 1:00 AM
 Tuesday: 10:00 AM - 1:00 AM
@@ -179,7 +179,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Family-owned cake shop, you can choose from their wide selection of pastries, including classics like tiramisu and new fun sweets.
 Address: 9815 S Eastern Ave, Las Vegas, NV 89183, USA
-Rating: 4.5 with 2491 ratings
+Rating: 4.5 with 2491.0 ratings
 Google Maps Link: https://maps.google.com/?cid=4119812734614331043
 Opening Hours: Monday: 9:00 AM - 6:00 PM
 Tuesday: 9:00 AM - 6:00 PM

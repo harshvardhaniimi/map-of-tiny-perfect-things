@@ -9,7 +9,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Great DC coffee! Their espresso was really good: bright and complex. A good afternoon coffee option for that post-lunch lethargic feeling.
 Address: 2000 L St NW, Washington, DC 20036, USA
-Rating: 3.9 with 338 ratings
+Rating: 3.9 with 338.0 ratings
 Google Maps Link: https://maps.google.com/?cid=808809749020941024
 Opening Hours: Monday: 7:00 AM - 7:00 PM
 Tuesday: 7:00 AM - 7:00 PM
@@ -26,7 +26,7 @@ Country: United States of America
 Creator's Rec: Yes
 Notes: One of DC's best coffee shops: sit in their glass cubicles by the window watching the world go by having a snack and drinking a nice afternoon coffee.
 Address: 443 7th St NW, Washington, DC 20004, USA
-Rating: 4 with 576 ratings
+Rating: 4.0 with 576.0 ratings
 Google Maps Link: https://maps.google.com/?cid=12169068223179599954
 Opening Hours: Monday: 6:00 AM - 7:00 PM
 Tuesday: 6:00 AM - 7:00 PM
@@ -43,7 +43,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Great shawarma: very filling and fresh!
 Address: 1205 28th St NW, Washington, DC 20007, USA
-Rating: 4.4 with 3325 ratings
+Rating: 4.4 with 3325.0 ratings
 Google Maps Link: https://maps.google.com/?cid=11356006037722450032
 Opening Hours: Monday: 11:30 AM - 2:00 AM
 Tuesday: 11:30 AM - 2:00 AM
@@ -60,7 +60,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Nice bar with a cool rooftop overlooking DC: spot the airport and the National Mall.
 Address: 1719 G St NW, Washington, DC 20006, USA
-Rating: 3.8 with 573 ratings
+Rating: 3.8 with 573.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16900479994734956731
 Opening Hours: Monday: 11:00 AM - 8:00 PM
 Tuesday: 11:00 AM - 11:00 PM
@@ -77,7 +77,7 @@ Country: United States of America
 Creator's Rec: 
 Notes: Self-serve lunch restaurant. A lot of options, all tasty and healthy. Check it out when you're in the White House area.
 Address: 1575 I St NW #1, Washington, DC 20005, USA
-Rating: 4.4 with 213 ratings
+Rating: 4.4 with 213.0 ratings
 Google Maps Link: https://maps.google.com/?cid=16165368970821732536
 Opening Hours: Monday: 6:40 AM - 2:30 PM
 Tuesday: 6:40 AM - 2:30 PM
