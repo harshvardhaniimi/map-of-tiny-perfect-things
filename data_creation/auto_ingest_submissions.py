@@ -742,6 +742,26 @@ def run(args: argparse.Namespace) -> int:
     else:
         merged = master_df
 
+    # Build a contributor-attributed list of additions for the PR body. The
+    # downstream workflow renders this verbatim, so include everything except
+    # contributor_email (kept out of the public PR).
+    additions_for_report: List[Dict[str, object]] = []
+    for _, submission in new_submissions.iterrows():
+        if not _normalize_text(submission.get("name", "")):
+            continue
+        additions_for_report.append({
+            "name": _normalize_text(submission.get("name", "")),
+            "location": _normalize_text(submission.get("location", "")),
+            "city": _normalize_text(submission.get("city", "")),
+            "state": _normalize_text(submission.get("state", "")),
+            "country": _normalize_text(submission.get("country", "")),
+            "type2": _normalize_text(submission.get("type2", "")),
+            "notes": _normalize_text(submission.get("notes", "")),
+            "google_maps_link": _normalize_text(submission.get("google_maps_link", "")),
+            "contributor_name": _normalize_text(submission.get("contributor_name", "")),
+            "submitted_at": _normalize_text(submission.get("submitted_at", "")),
+        })
+
     report = {
         "timestamp_utc": datetime.utcnow().isoformat() + "Z",
         "fetched_submissions": int(fetched_count) if not args.skip_export else None,
@@ -754,6 +774,7 @@ def run(args: argparse.Namespace) -> int:
         "google_places_enabled": bool(args.google_api_key),
         "creator_override_validation_enabled": bool(valid_creator_codes),
         "dry_run": bool(args.dry_run),
+        "additions": additions_for_report,
     }
 
     if not args.dry_run:

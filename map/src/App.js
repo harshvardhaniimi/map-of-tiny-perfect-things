@@ -650,6 +650,7 @@ const SubmitPage = ({ onNavigate }) => {
             onChange={handleFieldChange}
             required
             placeholder="Your name"
+            spellCheck="true"
           />
         </label>
 
@@ -672,6 +673,7 @@ const SubmitPage = ({ onNavigate }) => {
             onChange={handleFieldChange}
             required
             placeholder="e.g. Hidden Cafe"
+            spellCheck="true"
           />
         </label>
 
@@ -683,21 +685,22 @@ const SubmitPage = ({ onNavigate }) => {
             onChange={handleFieldChange}
             required
             placeholder="e.g. Downtown Berkeley"
+            spellCheck="true"
           />
         </label>
 
         <div className="form-grid">
           <label>
             City
-            <input name="city" value={formData.city} onChange={handleFieldChange} required />
+            <input name="city" value={formData.city} onChange={handleFieldChange} required spellCheck="true" />
           </label>
           <label>
             State / Region
-            <input name="state" value={formData.state} onChange={handleFieldChange} required />
+            <input name="state" value={formData.state} onChange={handleFieldChange} required spellCheck="true" />
           </label>
           <label>
             Country
-            <input name="country" value={formData.country} onChange={handleFieldChange} required />
+            <input name="country" value={formData.country} onChange={handleFieldChange} required spellCheck="true" />
           </label>
         </div>
 
@@ -734,6 +737,7 @@ const SubmitPage = ({ onNavigate }) => {
             required
             rows={5}
             placeholder="Share what makes this a tiny perfect thing."
+            spellCheck="true"
           />
         </label>
 
