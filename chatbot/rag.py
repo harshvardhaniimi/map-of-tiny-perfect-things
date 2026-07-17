@@ -3,16 +3,17 @@
 from __future__ import annotations
 
 import hashlib
+import json
+import math
 import os
 import re
 from dataclasses import dataclass
-from typing import Dict, List
+from typing import Dict, List, Sequence
 
-import chromadb
 import ollama
 import pandas as pd
-from chromadb.errors import NotFoundError
-from chromadb.utils.embedding_functions import OllamaEmbeddingFunction
+
+STORE_VERSION = 1
 
 
 @dataclass
@@ -69,35 +70,65 @@ def _row_id(row: pd.Series, index: int) -> str:
     return f"{_slug(str(row.get('name', 'place')))}-{digest}"
 
 
-def _client(persist_dir: str) -> chromadb.Client:
-    os.makedirs(persist_dir, exist_ok=True)
-    return chromadb.PersistentClient(path=persist_dir)
+def _store_path(persist_dir: str, collection_name: str) -> str:
+    return os.path.join(persist_dir, f"{_slug(collection_name)}.json")
 
 
-def _embedding_function(embedding_model: str, ollama_base_url: str) -> OllamaEmbeddingFunction:
-    return OllamaEmbeddingFunction(
-        model_name=embedding_model,
-        url=ollama_base_url,
-    )
+def _load_store(persist_dir: str, collection_name: str) -> Dict[str, object]:
+    path = _store_path(persist_dir, collection_name)
+    with open(path, encoding="utf-8") as handle:
+        payload = json.load(handle)
+
+    if payload.get("version") != STORE_VERSION or not isinstance(payload.get("items"), list):
+        raise ValueError(f"Unsupported or corrupt vector index: {path}")
+
+    return payload
+
+
+def _embed_texts(
+    texts: Sequence[str],
+    embedding_model: str,
+    ollama_base_url: str,
+) -> List[List[float]]:
+    if not texts:
+        return []
+
+    client = ollama.Client(host=ollama_base_url)
+    response = client.embed(model=embedding_model, input=list(texts))
+    embeddings = response.get("embeddings", [])
+    if len(embeddings) != len(texts):
+        raise RuntimeError(
+            f"Ollama returned {len(embeddings)} embeddings for {len(texts)} documents"
+        )
+
+    return [[float(value) for value in embedding] for embedding in embeddings]
+
+
+def _cosine_distance(left: Sequence[float], right: Sequence[float]) -> float:
+    if len(left) != len(right):
+        raise ValueError("Stored and query embeddings have different dimensions")
+
+    dot = sum(a * b for a, b in zip(left, right))
+    left_norm = math.sqrt(sum(value * value for value in left))
+    right_norm = math.sqrt(sum(value * value for value in right))
+    if not left_norm or not right_norm:
+        return 1.0
+
+    similarity = max(-1.0, min(1.0, dot / (left_norm * right_norm)))
+    return 1.0 - similarity
 
 
 def collection_exists(persist_dir: str, collection_name: str) -> bool:
-    client = _client(persist_dir)
-    try:
-        client.get_collection(collection_name)
-    except NotFoundError:
-        return False
-    return True
+    return os.path.isfile(_store_path(persist_dir, collection_name))
 
 
 def collection_count(persist_dir: str, collection_name: str) -> int:
-    client = _client(persist_dir)
     try:
-        collection = client.get_collection(collection_name)
-    except NotFoundError:
+        store = _load_store(persist_dir, collection_name)
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
         return 0
 
-    return collection.count()
+    return len(store["items"])
 
 
 def build_vectorstore(
@@ -109,18 +140,6 @@ def build_vectorstore(
 ) -> int:
     dataframe = pd.read_csv(csv_path).fillna("")
 
-    client = _client(persist_dir)
-    try:
-        client.delete_collection(collection_name)
-    except NotFoundError:
-        pass
-
-    collection = client.create_collection(
-        name=collection_name,
-        metadata={"hnsw:space": "cosine"},
-        embedding_function=_embedding_function(embedding_model, ollama_base_url),
-    )
-
     ids: List[str] = []
     documents: List[str] = []
     metadatas: List[Dict[str, str]] = []
@@ -130,16 +149,47 @@ def build_vectorstore(
         documents.append(_document_from_row(row))
         metadatas.append(_metadata_from_row(row))
 
-    batch_size = 100
+    embeddings: List[List[float]] = []
+    batch_size = 64
     for start in range(0, len(ids), batch_size):
         end = start + batch_size
-        collection.add(
-            ids=ids[start:end],
-            documents=documents[start:end],
-            metadatas=metadatas[start:end],
+        embeddings.extend(
+            _embed_texts(
+                documents[start:end],
+                embedding_model=embedding_model,
+                ollama_base_url=ollama_base_url,
+            )
         )
 
-    return collection.count()
+    items = [
+        {
+            "id": row_id,
+            "document": document,
+            "metadata": metadata,
+            "embedding": embedding,
+        }
+        for row_id, document, metadata, embedding in zip(
+            ids,
+            documents,
+            metadatas,
+            embeddings,
+        )
+    ]
+    payload = {
+        "version": STORE_VERSION,
+        "collection": collection_name,
+        "embedding_model": embedding_model,
+        "items": items,
+    }
+
+    os.makedirs(persist_dir, exist_ok=True)
+    path = _store_path(persist_dir, collection_name)
+    temporary_path = f"{path}.tmp"
+    with open(temporary_path, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, ensure_ascii=False)
+    os.replace(temporary_path, path)
+
+    return len(items)
 
 
 def retrieve_places(
@@ -150,29 +200,36 @@ def retrieve_places(
     ollama_base_url: str,
     top_k: int = 6,
 ) -> List[RetrievedPlace]:
-    client = _client(persist_dir)
-    collection = client.get_collection(
-        collection_name,
-        embedding_function=_embedding_function(embedding_model, ollama_base_url),
-    )
+    store = _load_store(persist_dir, collection_name)
+    if store.get("embedding_model") != embedding_model:
+        raise ValueError(
+            "The vector index uses a different embedding model. Rebuild the index first."
+        )
 
-    result = collection.query(
-        query_texts=[query],
-        n_results=top_k,
-        include=["documents", "metadatas", "distances"],
-    )
+    query_embedding = _embed_texts(
+        [query],
+        embedding_model=embedding_model,
+        ollama_base_url=ollama_base_url,
+    )[0]
 
-    documents = result.get("documents", [[]])[0]
-    metadatas = result.get("metadatas", [[]])[0]
-    distances = result.get("distances", [[]])[0]
+    ranked = sorted(
+        (
+            (
+                _cosine_distance(item["embedding"], query_embedding),
+                item,
+            )
+            for item in store["items"]
+        ),
+        key=lambda pair: pair[0],
+    )
 
     rows: List[RetrievedPlace] = []
-    for idx, document in enumerate(documents):
+    for distance, item in ranked[: max(0, top_k)]:
         rows.append(
             RetrievedPlace(
-                document=document,
-                metadata=metadatas[idx] if idx < len(metadatas) else {},
-                distance=distances[idx] if idx < len(distances) else None,
+                document=item["document"],
+                metadata=item["metadata"],
+                distance=distance,
             )
         )
 

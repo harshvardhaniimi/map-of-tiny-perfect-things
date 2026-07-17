@@ -1,59 +1,65 @@
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import App from './App';
 
-jest.mock('react-leaflet', () => ({
+vi.mock('react-leaflet', () => ({
   MapContainer: ({ children }) => <div data-testid="mock-map">{children}</div>,
   TileLayer: () => <div data-testid="mock-tile-layer" />,
   Marker: () => <div data-testid="mock-marker" />,
   useMap: () => ({
-    flyTo: jest.fn(),
-    invalidateSize: jest.fn(),
+    flyTo: vi.fn(),
+    invalidateSize: vi.fn(),
   }),
   useMapEvents: () => null,
 }));
 
-jest.mock('leaflet', () => ({
-  divIcon: jest.fn(() => ({})),
-}));
+vi.mock('leaflet', () => {
+  const divIcon = vi.fn(() => ({}));
+  return {
+    default: { divIcon },
+    divIcon,
+  };
+});
 
-jest.mock('./master_data.json', () => [
-  {
-    name: 'Test Coffee Shop',
-    lat: 37.8803,
-    lng: -122.2699,
-    type2: 'coffee',
-    notes: 'A test coffee shop',
-    google_place_id: 'test-place-1',
-    rating: 4.5,
-    user_ratings_total: 100,
-    google_maps_link: 'https://maps.google.com/test',
-  },
-  {
-    name: 'Test Restaurant',
-    lat: 37.89,
-    lng: -122.28,
-    type2: 'food',
-    notes: 'A test restaurant',
-    google_place_id: 'test-place-2',
-    rating: 4.2,
-    user_ratings_total: 200,
-    google_maps_link: 'https://maps.google.com/test2',
-  },
-  {
-    name: 'MG Road Cafe',
-    lat: 12.9716,
-    lng: 77.5946,
-    city: 'Bengaluru',
-    state: 'Karnataka',
-    country: 'India',
-    type2: 'coffee',
-    notes: 'Great filter coffee in Bengaluru.',
-    google_place_id: 'test-place-3',
-    rating: 4.7,
-    user_ratings_total: 89,
-    google_maps_link: 'https://maps.google.com/test3',
-  },
-]);
+vi.mock('./master_data.json', () => ({
+  default: [
+    {
+      name: 'Test Coffee Shop',
+      lat: 37.8803,
+      lng: -122.2699,
+      type2: 'coffee',
+      notes: 'A test coffee shop',
+      google_place_id: 'test-place-1',
+      rating: 4.5,
+      user_ratings_total: 100,
+      google_maps_link: 'https://maps.google.com/test',
+    },
+    {
+      name: 'Test Restaurant',
+      lat: 37.89,
+      lng: -122.28,
+      type2: 'food',
+      notes: 'A test restaurant',
+      google_place_id: 'test-place-2',
+      rating: 4.2,
+      user_ratings_total: 200,
+      google_maps_link: 'https://maps.google.com/test2',
+    },
+    {
+      name: 'MG Road Cafe',
+      lat: 12.9716,
+      lng: 77.5946,
+      city: 'Bengaluru',
+      state: 'Karnataka',
+      country: 'India',
+      type2: 'coffee',
+      notes: 'Great filter coffee in Bengaluru.',
+      google_place_id: 'test-place-3',
+      rating: 4.7,
+      user_ratings_total: 89,
+      google_maps_link: 'https://maps.google.com/test3',
+    },
+  ],
+}));
 
 describe('App', () => {
   beforeEach(() => {
@@ -84,9 +90,9 @@ describe('App', () => {
     const scoped = within(filterBar);
 
     expect(scoped.getByRole('button', { name: 'All' })).toBeInTheDocument();
-    expect(scoped.getByRole('button', { name: 'Coffee' })).toBeInTheDocument();
-    expect(scoped.getByRole('button', { name: 'Food' })).toBeInTheDocument();
-    expect(scoped.getByRole('button', { name: 'Other' })).toBeInTheDocument();
+    expect(scoped.getByRole('button', { name: /Coffee/ })).toBeInTheDocument();
+    expect(scoped.getByRole('button', { name: /Food/ })).toBeInTheDocument();
+    expect(scoped.getByRole('button', { name: /Other/ })).toBeInTheDocument();
   });
 
   test('navigates to submit form and shows maintainer override controls', () => {

@@ -3,13 +3,11 @@
 .RData
 .Ruserdata
 google_places_api_key.txt
-map/node_modules/
+node_modules/
 openai_key.txt
 chatbot/flask_secret_key.txt
 map/.env
 chatbot/.streamlit/secrets.toml
 chatbot/openai_key.txt
-map/node_modules/
-
 # Local Netlify folder
 .netlify
