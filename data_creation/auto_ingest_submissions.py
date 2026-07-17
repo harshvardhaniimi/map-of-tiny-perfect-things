@@ -42,6 +42,7 @@ NETLIFY_API_BASE = "https://api.netlify.com/api/v1"
 # Order matters: first match wins.
 _TYPE_TO_TYPE2: Dict[str, str] = {
     "cafe": "coffee",
+    "coffee_shop": "coffee",
     "restaurant": "food",
     "bakery": "food",
     "meal_takeaway": "food",
@@ -300,6 +301,49 @@ def _build_google_maps_link(address: str, place_id: str, fallback_query: str) ->
     return ""
 
 
+def _enrich_google_place_id(place_id: str, google_api_key: str) -> EnrichmentResult:
+    """Fetch exact Google Places details for a known place ID."""
+    details_url = (
+        "https://maps.googleapis.com/maps/api/place/details/json?place_id="
+        + urllib.parse.quote(place_id)
+        + "&fields=formatted_address,rating,user_ratings_total,url,opening_hours,geometry,types"
+        + "&key="
+        + urllib.parse.quote(google_api_key)
+    )
+    details_payload = _http_json(details_url)
+    details = details_payload.get("result") or {}
+    if not details:
+        return EnrichmentResult()
+
+    geometry = details.get("geometry") or {}
+    location = geometry.get("location") or {}
+    types = details.get("types") or []
+    opening = details.get("opening_hours") or {}
+    weekday = opening.get("weekday_text") or []
+
+    opening_hours = ""
+    if weekday:
+        raw = "\n".join(str(item) for item in weekday)
+        opening_hours = (
+            raw.replace("\u202f", " ")
+            .replace("\u2009", " ")
+            .replace("\u2013", "-")
+            .replace("\u00a0", " ")
+        )
+
+    return EnrichmentResult(
+        address=_normalize_text(details.get("formatted_address", "")),
+        rating=_normalize_text(details.get("rating", "")),
+        user_ratings_total=_normalize_text(details.get("user_ratings_total", "")),
+        google_maps_link=_normalize_text(details.get("url", "")),
+        lat=_normalize_text(location.get("lat", "")),
+        lng=_normalize_text(location.get("lng", "")),
+        opening_hours=opening_hours,
+        place_type=_normalize_text(types[0] if types else ""),
+        google_place_id=place_id,
+    )
+
+
 def _enrich_with_google(query: str, google_api_key: str) -> EnrichmentResult:
     search_url = (
         "https://maps.googleapis.com/maps/api/place/textsearch/json?query="
@@ -324,58 +368,19 @@ def _enrich_with_google(query: str, google_api_key: str) -> EnrichmentResult:
     types = first.get("types") or []
     place_type = _normalize_text(types[0] if types else "")
 
-    opening_hours = ""
-    details_maps_url = ""
+    details = EnrichmentResult()
     if place_id:
-        details_url = (
-            "https://maps.googleapis.com/maps/api/place/details/json?place_id="
-            + urllib.parse.quote(place_id)
-            + "&fields=formatted_address,rating,user_ratings_total,url,opening_hours,geometry,types"
-            + "&key="
-            + urllib.parse.quote(google_api_key)
-        )
-        details_payload = _http_json(details_url)
-        details = details_payload.get("result") or {}
-        details_maps_url = _normalize_text(details.get("url", ""))
-
-        if not address:
-            address = _normalize_text(details.get("formatted_address", ""))
-        if not rating:
-            rating = _normalize_text(details.get("rating", ""))
-        if not user_ratings_total:
-            user_ratings_total = _normalize_text(details.get("user_ratings_total", ""))
-
-        details_geometry = details.get("geometry") or {}
-        details_location = details_geometry.get("location") or {}
-        if not lat:
-            lat = _normalize_text(details_location.get("lat", ""))
-        if not lng:
-            lng = _normalize_text(details_location.get("lng", ""))
-
-        details_types = details.get("types") or []
-        if not place_type:
-            place_type = _normalize_text(details_types[0] if details_types else "")
-
-        opening = details.get("opening_hours") or {}
-        weekday = opening.get("weekday_text") or []
-        if weekday:
-            raw = "\n".join(str(item) for item in weekday)
-            # Replace Unicode whitespace/dashes with ASCII equivalents
-            opening_hours = (raw
-                .replace("\u202f", " ")
-                .replace("\u2009", " ")
-                .replace("\u2013", "-")
-                .replace("\u00a0", " "))
+        details = _enrich_google_place_id(place_id, google_api_key)
 
     return EnrichmentResult(
-        address=address,
-        rating=rating,
-        user_ratings_total=user_ratings_total,
-        google_maps_link=details_maps_url,
-        lat=lat,
-        lng=lng,
-        opening_hours=opening_hours,
-        place_type=place_type,
+        address=details.address or address,
+        rating=details.rating or rating,
+        user_ratings_total=details.user_ratings_total or user_ratings_total,
+        google_maps_link=details.google_maps_link,
+        lat=details.lat or lat,
+        lng=details.lng or lng,
+        opening_hours=details.opening_hours,
+        place_type=details.place_type or place_type,
         google_place_id=place_id,
     )
 
@@ -419,7 +424,11 @@ def _enrich_submission(row: pd.Series, google_api_key: str) -> EnrichmentResult:
 
     if google_api_key:
         try:
-            enrichment = _enrich_with_google(query, google_api_key)
+            existing_place_id = _normalize_text(row.get("google_place_id", ""))
+            if existing_place_id:
+                enrichment = _enrich_google_place_id(existing_place_id, google_api_key)
+            if not enrichment.google_place_id:
+                enrichment = _enrich_with_google(query, google_api_key)
         except urllib.error.URLError:
             enrichment = EnrichmentResult()
 

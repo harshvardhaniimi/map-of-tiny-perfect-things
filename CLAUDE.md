@@ -113,6 +113,7 @@ The category filter bar at the bottom of the map view uses:
 
 - `master_data/master_data.csv` is the canonical source of truth; JSON mirrors are derived from it
 - `map/src/master_data.json` is a copy of `master_data/master_data.json` — kept in sync by the pipeline; do not edit directly
+- `data_creation/place_submissions.csv` is committed, so it must remain public-safe; never export contributor emails or creator access codes to it
 - The R notebooks in `data_creation/` are legacy manual tools; the Python pipeline (`auto_ingest_submissions.py`) is authoritative
 - All form field changes must be reflected in **both** `App.js` and `netlify-forms.html`
 - The `type2` column must only contain values from `VALID_TYPE2_VALUES`
