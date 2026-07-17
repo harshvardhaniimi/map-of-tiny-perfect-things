@@ -1,0 +1,77 @@
+name: Alert on Stale Data PRs
+
+on:
+  schedule:
+    # Daily at 09:00 UTC — runs an hour after the ingest job so we never
+    # alert on a brand-new PR.
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read
+
+concurrency:
+  group: stale-pr-alert
+  cancel-in-progress: false
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find stale automated PRs (>7 days old)
+        id: scan
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const STALE_DAYS = 7;
+            const cutoff = new Date(Date.now() - STALE_DAYS * 86400 * 1000);
+
+            const prs = await github.paginate(github.rest.pulls.list, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100,
+            });
+
+            const stale = prs.filter(pr =>
+              pr.labels.some(l => l.name === 'automated') &&
+              new Date(pr.created_at) < cutoff
+            );
+
+            const lines = stale.map(pr => {
+              const ageDays = Math.floor(
+                (Date.now() - new Date(pr.created_at).getTime()) / 86400 / 1000
+              );
+              return `- #${pr.number} (${ageDays}d) — ${pr.title} — ${pr.html_url}`;
+            });
+
+            core.setOutput('count', stale.length);
+            core.setOutput('body', lines.join('\n'));
+
+            if (stale.length === 0) {
+              core.info('No stale automated PRs found.');
+            } else {
+              core.warning(`Found ${stale.length} stale automated PR(s) older than ${STALE_DAYS} days.`);
+            }
+
+      - name: Email maintainers about stale PRs
+        if: steps.scan.outputs.count != '0'
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.NOTIFY_SMTP_SERVER }}
+          server_port: ${{ secrets.NOTIFY_SMTP_PORT }}
+          username: ${{ secrets.NOTIFY_SMTP_USERNAME }}
+          password: ${{ secrets.NOTIFY_SMTP_PASSWORD }}
+          subject: "[MTPT] ${{ steps.scan.outputs.count }} stale automated PR(s) need review"
+          to: hvsc1708@gmail.com, dea.bardhoshi@berkeley.edu
+          from: ${{ secrets.NOTIFY_SMTP_FROM }}
+          body: |
+            The following automated data PR(s) have been open for more than 7 days
+            and may be holding place submissions that have not yet landed on the map.
+
+            ${{ steps.scan.outputs.body }}
+
+            Merge each PR (or close it if obsolete) to release the queued submissions.
+
+            Workflow run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
