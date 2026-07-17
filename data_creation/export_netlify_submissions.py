@@ -15,6 +15,21 @@ from typing import Dict, List
 NETLIFY_API_BASE = "https://api.netlify.com/api/v1"
 DEFAULT_OUTPUT = "data_creation/place_submissions.csv"
 DEFAULT_FORM_NAME = "place-submissions"
+PUBLIC_EXPORT_FIELDS = [
+    "submission_id",
+    "number",
+    "submitted_at",
+    "name",
+    "location",
+    "city",
+    "state",
+    "country",
+    "type2",
+    "notes",
+    "google_maps_link",
+    "contributor_name",
+    "creators_rec_requested",
+]
 
 
 def parse_args() -> argparse.Namespace:
@@ -87,6 +102,11 @@ def to_rows(
     submissions: List[Dict[str, object]],
     include_creator_access_code: bool = False,
 ) -> List[Dict[str, str]]:
+    """Convert Netlify submissions to public-safe ingestion rows.
+
+    Contributor emails remain in Netlify and are deliberately excluded from
+    returned rows so they cannot be written to the repository export.
+    """
     rows: List[Dict[str, str]] = []
 
     for submission in submissions:
@@ -107,7 +127,6 @@ def to_rows(
             "notes": str(data.get("notes", "")).strip(),
             "google_maps_link": str(data.get("google_maps_link", "")).strip(),
             "contributor_name": str(data.get("contributor_name", "")).strip(),
-            "contributor_email": str(data.get("contributor_email", "")).strip(),
             "creators_rec_requested": str(data.get("creators_rec_requested", "No")).strip() or "No",
         }
         if include_creator_access_code:
@@ -123,29 +142,19 @@ def write_csv(
     output_path: str,
     include_creator_access_code: bool = False,
 ) -> None:
-    fieldnames = [
-        "submission_id",
-        "number",
-        "submitted_at",
-        "name",
-        "location",
-        "city",
-        "state",
-        "country",
-        "type2",
-        "notes",
-        "google_maps_link",
-        "contributor_name",
-        "contributor_email",
-        "creators_rec_requested",
-    ]
+    fieldnames = list(PUBLIC_EXPORT_FIELDS)
     if include_creator_access_code:
         fieldnames.insert(-1, "creator_access_code")
 
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
 
     with open(output_path, "w", newline="", encoding="utf-8") as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer = csv.DictWriter(
+            csv_file,
+            fieldnames=fieldnames,
+            extrasaction="ignore",
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 

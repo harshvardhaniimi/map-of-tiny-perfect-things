@@ -86,6 +86,9 @@ This is now automated.
 - Workflow: `.github/workflows/auto-sync-submissions.yml`
 - Schedule: every 6 hours (and manual `workflow_dispatch`)
 - Output: an auto PR with updated submission export + master dataset + map dataset copy + city docs
+- Privacy: the tracked `data_creation/place_submissions.csv` is a public-safe
+  export. Contributor emails and creator access codes remain in Netlify and are
+  never written to the repository.
 
 Required GitHub Action secrets:
 - `NETLIFY_ACCESS_TOKEN`
