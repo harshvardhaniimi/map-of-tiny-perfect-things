@@ -22,12 +22,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--persist-dir",
         default=os.path.join(base_dir, "vectorstore"),
-        help="Directory where Chroma persists vectors",
+        help="Directory where the local JSON vector index is stored",
     )
     parser.add_argument(
         "--collection",
         default="tiny-perfect-places",
-        help="Chroma collection name",
+        help="Local vector index name",
     )
     parser.add_argument(
         "--embedding-model",

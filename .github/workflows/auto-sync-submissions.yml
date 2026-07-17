@@ -144,27 +144,3 @@ jobs:
             master_data/master_data.json
             master_data/city_files/*.txt
             map/src/master_data.json
-
-      - name: Email maintainers on new submissions
-        if: steps.preflight.outputs.ready == 'true' && steps.report.outputs.added_rows != '0'
-        continue-on-error: true
-        env:
-          SMTP_SERVER: ${{ secrets.NOTIFY_SMTP_SERVER }}
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: ${{ secrets.NOTIFY_SMTP_SERVER }}
-          server_port: ${{ secrets.NOTIFY_SMTP_PORT }}
-          username: ${{ secrets.NOTIFY_SMTP_USERNAME }}
-          password: ${{ secrets.NOTIFY_SMTP_PASSWORD }}
-          subject: "[MTPT] ${{ steps.report.outputs.added_rows }} new place submission(s) ingested"
-          to: hvsc1708@gmail.com, dea.bardhoshi@berkeley.edu
-          from: ${{ secrets.NOTIFY_SMTP_FROM }}
-          body: |
-            The auto-sync workflow ingested new place submissions.
-
-            New unique submissions: ${{ steps.report.outputs.new_unique_submissions }}
-            Added rows to dataset: ${{ steps.report.outputs.added_rows }}
-            Creator overrides applied: ${{ steps.report.outputs.creator_overrides_applied }}
-
-            Pull request: ${{ steps.create_pr.outputs.pull-request-url }}
-            Workflow run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}

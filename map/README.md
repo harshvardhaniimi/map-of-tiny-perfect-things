@@ -16,7 +16,7 @@ Frontend for The Map of Tiny Perfect Things.
 ```bash
 npm install
 npm start
-CI=true npm test
+npm test
 npm run build
 ```
 
@@ -43,7 +43,8 @@ Two Netlify forms are defined:
 - `place-submissions`
 - `feature-requests`
 
-Hidden static form definitions are included in `public/index.html` so Netlify can detect them during build.
+Hidden static form definitions are included in `index.html` and
+`public/netlify-forms.html` so Netlify can detect them during build.
 
 ## Data Automation
 

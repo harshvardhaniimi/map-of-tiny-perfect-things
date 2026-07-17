@@ -21,7 +21,7 @@ A crowd-powered map of meaningful places: cafes, food spots, parks, museums, and
   - Data ingestion notebooks/scripts for moderation and merge workflows
   - Includes Netlify form export script
 - `chatbot/`
-  - Local RAG experimentation utilities (Ollama + Chroma + Streamlit)
+  - Local RAG experimentation utilities (Ollama + a JSON vector index + Streamlit)
 
 ## What Changed
 
@@ -76,7 +76,7 @@ npm run build
 
 ```bash
 cd map
-CI=true npm test
+npm test
 ```
 
 ## Submission Moderation + Data Merge
@@ -100,12 +100,9 @@ If `NETLIFY_ACCESS_TOKEN` or `NETLIFY_SITE_ID` is missing, the workflow run succ
 Optional secret:
 - `GOOGLE_PLACES_API_KEY` (if missing, fallback geocoding still runs via Nominatim)
 
-Optional email notifications (sent only when new rows are ingested and a PR is created/updated):
-- `NOTIFY_SMTP_SERVER`
-- `NOTIFY_SMTP_PORT`
-- `NOTIFY_SMTP_USERNAME`
-- `NOTIFY_SMTP_PASSWORD`
-- `NOTIFY_SMTP_FROM`
+The scheduled workflow creates or updates a pull request only when it ingests
+at least one new place. Maintainers can rely on GitHub's pull request
+notifications instead of a separate SMTP email.
 
 Manual fallback command:
 
@@ -127,8 +124,9 @@ streamlit run chatbot/main.py
 
 ## Security Status
 
-- Dependency updates were applied and critical vulnerabilities are currently **0** in the web app audit.
-- Remaining high/moderate findings are primarily from the legacy `react-scripts` toolchain.
+- The web app uses Vite and Vitest instead of the retired Create React App toolchain.
+- The optional local chatbot uses a dependency-light JSON vector index instead of ChromaDB.
+- Run `npm audit` in `map/` after dependency changes and keep the Python requirements current.
 
 ## Contribution Guidelines
 

@@ -6,7 +6,7 @@ This `chatbot/` folder is kept for local RAG experimentation.
 
 ## Local Stack (Optional)
 
-- Retrieval: Chroma
+- Retrieval: local JSON vector index
 - Embeddings: Ollama (`nomic-embed-text`)
 - Chat model: Ollama (`qwen2.5:7b` by default)
 - UI: Streamlit

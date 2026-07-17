@@ -21,7 +21,7 @@ st.set_page_config(page_title="Ava - Perfect Places", page_icon="🗺️", layou
 st.title("🗺️ Ava: Tiny Perfect Things Assistant")
 st.caption(
     "Ask for recommendations from the map dataset. This app uses local/free-first RAG with "
-    "Ollama + Chroma."
+    "Ollama + a local JSON vector index."
 )
 
 

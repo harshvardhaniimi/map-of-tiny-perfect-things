@@ -9,7 +9,7 @@ A crowd-powered map of meaningful places — cafes, parks, museums, bookstores, 
 
 ```
 map/                          React app (CRA, Leaflet, Netlify Forms + Functions)
-  src/App.js                  Single-file app: map view, submit form, feature form, chat
+  src/App.jsx                 Single-file app: map view, submit form, feature form, chat
   src/App.css                 All styles
   src/master_data.json        Copy of master dataset (auto-synced from master_data/)
   public/netlify-forms.html   Netlify Forms endpoint (must match React form fields exactly)
@@ -62,7 +62,7 @@ chatbot/                      Streamlit chatbot (local dev only, not deployed)
 
 The submission form lets users pick a category as a hint; the authoritative `type2` is derived from Google Maps data during enrichment, falling back to the user's selection when no Google type is available.
 
-The valid values for `type2` are defined in `VALID_TYPE2_VALUES` in `auto_ingest_submissions.py`. The mapping from Google type to `type2` is in `_TYPE_TO_TYPE2` in the same file. To add a new category, update both constants, the form dropdown in `App.js`, the Netlify form in `netlify-forms.html`, the filter bar, `getMarkerEmoji()`, and `buildTypeTokenSet()`.
+The valid values for `type2` are defined in `VALID_TYPE2_VALUES` in `auto_ingest_submissions.py`. The mapping from Google type to `type2` is in `_TYPE_TO_TYPE2` in the same file. To add a new category, update both constants, the form dropdown in `App.jsx`, the Netlify form in `netlify-forms.html`, the filter bar, `getMarkerEmoji()`, and `buildTypeTokenSet()`.
 
 ### Re-enriching existing data
 To re-run Google Places API on all entries and re-consolidate categories:
@@ -81,7 +81,8 @@ Without an API key, `--re-enrich` will only re-consolidate `type2` from existing
 - **Map:** Leaflet + react-leaflet
 - **Forms:** Netlify Forms (submissions go to Netlify, not a custom backend)
 - **Chat:** Netlify Function calling OpenAI API (`ask-ava.mjs`)
-- **Single-file app:** Everything is in `App.js` — map view, submit page, feature request page, chat panel
+- **Single-file app:** Everything is in `App.jsx` — map view, submit page, feature request page, chat panel
+- **Tooling:** Vite for development/builds and Vitest for frontend tests
 - **Build:** `cd map && npm run build`
 - **Dev server:** `cd map && npm start`
 - **Tests:** `cd map && npm test`
@@ -92,7 +93,7 @@ The place submission form has two layers of bot protection:
 2. **Math CAPTCHA**: random addition question (e.g., "What is 3 + 7?") validated client-side before submission
 
 ### Form field mapping
-The React form in `App.js` uses camelCase state (`formData.placeName`) but submits snake_case to Netlify (`place_name`). The field names in `netlify-forms.html` **must** match the snake_case submission names exactly — Netlify uses that HTML file to register the form schema.
+The React form in `App.jsx` uses camelCase state (`formData.placeName`) but submits snake_case to Netlify (`place_name`). The field names in `netlify-forms.html` **must** match the snake_case submission names exactly — Netlify uses that HTML file to register the form schema.
 
 ### Filter bar
 The category filter bar at the bottom of the map view uses:
@@ -107,7 +108,6 @@ The category filter bar at the bottom of the map view uses:
 | `NETLIFY_SITE_ID` | Identifies the Netlify site |
 | `GOOGLE_PLACES_API_KEY` | Google Places API for enrichment (also accepted as `GOOGLE_MAPS_API_KEY`) |
 | `CREATOR_ACCESS_CODES` | Comma-separated codes for creator recommendation overrides |
-| `NOTIFY_SMTP_SERVER`, `_PORT`, `_USERNAME`, `_PASSWORD`, `_FROM` | SMTP credentials for email notifications |
 
 ## Conventions
 
@@ -115,7 +115,7 @@ The category filter bar at the bottom of the map view uses:
 - `map/src/master_data.json` is a copy of `master_data/master_data.json` — kept in sync by the pipeline; do not edit directly
 - `data_creation/place_submissions.csv` is committed, so it must remain public-safe; never export contributor emails or creator access codes to it
 - The R notebooks in `data_creation/` are legacy manual tools; the Python pipeline (`auto_ingest_submissions.py`) is authoritative
-- All form field changes must be reflected in **both** `App.js` and `netlify-forms.html`
+- All form field changes must be reflected in **both** `App.jsx` and `netlify-forms.html`
 - The `type2` column must only contain values from `VALID_TYPE2_VALUES`
 - Category consolidation happens in Python (`consolidate_type2()`), not R — the R script `04_consolidate_categories.qmd` is obsolete
 - The GitHub Action creates PRs (not direct pushes) so changes can be reviewed before merging
