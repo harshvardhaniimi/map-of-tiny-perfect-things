@@ -742,9 +742,8 @@ def run(args: argparse.Namespace) -> int:
     else:
         merged = master_df
 
-    # Build a contributor-attributed list of additions for the PR body. The
-    # downstream workflow renders this verbatim, so include everything except
-    # contributor_email (kept out of the public PR).
+    # Build a contributor-attributed list of additions for the public PR body.
+    # Contributor email is deliberately excluded.
     additions_for_report: List[Dict[str, object]] = []
     for _, submission in new_submissions.iterrows():
         if not _normalize_text(submission.get("name", "")):

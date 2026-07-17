@@ -58,18 +58,19 @@ jobs:
         if: steps.preflight.outputs.ready == 'true'
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, os
+          import json
           from pathlib import Path
 
           report = json.loads(Path("data_creation/last_ingest_report.json").read_text(encoding="utf-8"))
           added = int(report.get('added_rows', 0))
-          print(f"new_unique_submissions={int(report.get('new_unique_submissions', 0))}")
+          new_unique = int(report.get('new_unique_submissions', 0))
+          creator_overrides = int(report.get('creator_overrides_applied', 0))
+          print(f"new_unique_submissions={new_unique}")
           print(f"added_rows={added}")
-          print(f"creator_overrides_applied={int(report.get('creator_overrides_applied', 0))}")
+          print(f"creator_overrides_applied={creator_overrides}")
 
           # Build a contributor-attributed markdown body for the PR.
-          # We deliberately exclude contributor_email — that stays private in
-          # the place_submissions.csv on the merged branch.
+          # Contributor email is deliberately excluded from this public report.
           body_lines = []
           for entry in report.get("additions", []):
               name = entry.get("name") or "Unknown"
@@ -100,8 +101,27 @@ jobs:
               # Fallback for the case where additions list is missing (older runs)
               change_list = f"- {added} new place(s) added"
 
-          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write(f"change_list<<CHANGELIST_EOF\n{change_list}\nCHANGELIST_EOF\n")
+          # Keep untrusted form text out of GITHUB_OUTPUT. A contributor could
+          # otherwise inject the fixed multiline delimiter and create outputs.
+          pr_body = "\n".join([
+              "Automated sync from Netlify place submissions.",
+              "",
+              f"**New submissions:** {new_unique}",
+              f"**Added to dataset:** {added}",
+              f"**Creator overrides:** {creator_overrides}",
+              "",
+              "### Places added",
+              "",
+              change_list,
+              "",
+              "---",
+              "*Pipeline: fetch → de-duplicate → enrich via Google Places API → update master data → refresh city docs*",
+              "",
+          ])
+          Path("/tmp/mtpt-place-submissions-pr.md").write_text(
+              pr_body,
+              encoding="utf-8",
+          )
           PY
 
       - name: Create pull request
@@ -113,19 +133,7 @@ jobs:
           delete-branch: true
           commit-message: "chore(data): auto-sync place submissions"
           title: "chore(data): auto-sync ${{ steps.report.outputs.added_rows }} new place submission(s)"
-          body: |
-            Automated sync from Netlify place submissions.
-
-            **New submissions:** ${{ steps.report.outputs.new_unique_submissions }}
-            **Added to dataset:** ${{ steps.report.outputs.added_rows }}
-            **Creator overrides:** ${{ steps.report.outputs.creator_overrides_applied }}
-
-            ### Places added
-
-            ${{ steps.report.outputs.change_list }}
-
-            ---
-            *Pipeline: fetch → de-duplicate → enrich via Google Places API → update master data → refresh city docs*
+          body-path: /tmp/mtpt-place-submissions-pr.md
           labels: |
             automated
             data
