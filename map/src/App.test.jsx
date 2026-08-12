@@ -1,22 +1,29 @@
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import App from './App';
 
+const mockFlyTo = vi.fn();
+const mockFlyToBounds = vi.fn();
+const mockInvalidateSize = vi.fn();
+
 vi.mock('react-leaflet', () => ({
   MapContainer: ({ children }) => <div data-testid="mock-map">{children}</div>,
   TileLayer: () => <div data-testid="mock-tile-layer" />,
   Marker: () => <div data-testid="mock-marker" />,
   useMap: () => ({
-    flyTo: vi.fn(),
-    invalidateSize: vi.fn(),
+    flyTo: mockFlyTo,
+    flyToBounds: mockFlyToBounds,
+    invalidateSize: mockInvalidateSize,
   }),
   useMapEvents: () => null,
 }));
 
 vi.mock('leaflet', () => {
   const divIcon = vi.fn(() => ({}));
+  const latLng = vi.fn(() => ({ toBounds: vi.fn(() => ({})) }));
   return {
-    default: { divIcon },
+    default: { divIcon, latLng },
     divIcon,
+    latLng,
   };
 });
 
@@ -63,6 +70,7 @@ vi.mock('./master_data.json', () => ({
 
 describe('App', () => {
   beforeEach(() => {
+    vi.clearAllMocks();
     window.history.pushState({}, '', '/');
   });
 
@@ -181,5 +189,30 @@ describe('App', () => {
       'href',
       'https://deabardhoshi.com/',
     );
+  });
+
+  test('asks for location and focuses nearby map area', async () => {
+    const getCurrentPosition = vi.fn((onSuccess) => {
+      onSuccess({
+        coords: {
+          latitude: 37.7749,
+          longitude: -122.4194,
+        },
+      });
+    });
+
+    Object.defineProperty(window.navigator, 'geolocation', {
+      configurable: true,
+      value: { getCurrentPosition },
+    });
+
+    render(<App />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Near Me/i }));
+
+    expect(getCurrentPosition).toHaveBeenCalledTimes(1);
+    await waitFor(() => {
+      expect(mockFlyToBounds).toHaveBeenCalledTimes(1);
+    });
   });
 });

@@ -224,6 +224,36 @@ body.map-mode {
   background: var(--mint);
 }
 
+.search-actions {
+  margin-top: 6px;
+}
+
+.nearby-btn {
+  width: 100%;
+  border: 3px solid var(--line);
+  background: var(--sky);
+  box-shadow: var(--shadow);
+  padding: 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.52rem;
+  cursor: pointer;
+}
+
+.nearby-btn:disabled {
+  cursor: wait;
+  opacity: 0.8;
+}
+
+.search-status {
+  margin: 6px 0 0;
+  border: 2px solid var(--line);
+  background: var(--rose);
+  padding: 8px;
+  font-family: 'VT323', monospace;
+  font-size: 1.15rem;
+  line-height: 1.1;
+}
+
 .place-card {
   position: absolute;
   right: var(--space-2);

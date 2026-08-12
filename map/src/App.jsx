@@ -7,6 +7,9 @@ import './App.css';
 
 const DEFAULT_CENTER = [20, 0];
 const DEFAULT_ZOOM = 2;
+const NEARBY_RADIUS_KM = 50;
+const NEARBY_RADIUS_METERS = NEARBY_RADIUS_KM * 1000;
+const NEARBY_MAX_ZOOM = 11;
 const PLACE_FORM_NAME = 'place-submissions';
 const FEATURE_FORM_NAME = 'feature-requests';
 const NETLIFY_FORM_ENDPOINT = '/netlify-forms.html';
@@ -429,6 +432,8 @@ const SearchControl = () => {
   const [results, setResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
+  const [isLocating, setIsLocating] = useState(false);
+  const [locationError, setLocationError] = useState('');
   const wrapperRef = useRef(null);
 
   useEffect(() => {
@@ -479,6 +484,45 @@ const SearchControl = () => {
     map.flyTo([lat, lon], 13, { duration: 1.2 });
     setQuery(result.display_name.split(',')[0]);
     setShowResults(false);
+    setLocationError('');
+  };
+
+  const handleLocateNearby = () => {
+    if (!navigator.geolocation) {
+      setLocationError('Location is not supported on this browser.');
+      return;
+    }
+
+    setIsLocating(true);
+    setLocationError('');
+
+    navigator.geolocation.getCurrentPosition(
+      ({ coords }) => {
+        const bounds = L.latLng(coords.latitude, coords.longitude).toBounds(NEARBY_RADIUS_METERS * 2);
+        map.flyToBounds(bounds, {
+          duration: 1.2,
+          padding: [24, 24],
+          maxZoom: NEARBY_MAX_ZOOM,
+        });
+        setShowResults(false);
+        setIsLocating(false);
+      },
+      (error) => {
+        if (error.code === 1) {
+          setLocationError('Location permission was denied.');
+        } else if (error.code === 3) {
+          setLocationError('Location request timed out. Please try again.');
+        } else {
+          setLocationError('Could not get your current location.');
+        }
+        setIsLocating(false);
+      },
+      {
+        enableHighAccuracy: false,
+        timeout: 10000,
+        maximumAge: 300000,
+      },
+    );
   };
 
   return (
@@ -496,6 +540,21 @@ const SearchControl = () => {
           {isSearching ? '...' : 'GO'}
         </button>
       </form>
+      <div className="search-actions">
+        <button
+          type="button"
+          className="nearby-btn"
+          onClick={handleLocateNearby}
+          disabled={isLocating}
+        >
+          {isLocating ? 'Locating...' : `Near Me (${NEARBY_RADIUS_KM} km)`}
+        </button>
+      </div>
+      {locationError ? (
+        <p className="search-status error" role="status">
+          {locationError}
+        </p>
+      ) : null}
 
       {showResults && (
         <ul className="search-results">
