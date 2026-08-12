@@ -7,6 +7,9 @@ import './App.css';
 
 const DEFAULT_CENTER = [20, 0];
 const DEFAULT_ZOOM = 2;
+const NEARBY_RADIUS_KM = 50;
+const NEARBY_RADIUS_METERS = NEARBY_RADIUS_KM * 1000;
+const NEARBY_MAX_ZOOM = 11;
 const PLACE_FORM_NAME = 'place-submissions';
 const FEATURE_FORM_NAME = 'feature-requests';
 const NETLIFY_FORM_ENDPOINT = '/netlify-forms.html';
@@ -423,12 +426,15 @@ const createEmojiMarkerIcon = (emoji, creatorRec = false) =>
     iconAnchor: [14, 14],
   });
 
-const SearchControl = () => {
+const SearchControl = ({ onHeightChange }) => {
   const map = useMap();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
+  const [isLocating, setIsLocating] = useState(false);
+  const [locationError, setLocationError] = useState('');
+  const [showNearMePrompt, setShowNearMePrompt] = useState(true);
   const wrapperRef = useRef(null);
 
   useEffect(() => {
@@ -441,6 +447,42 @@ const SearchControl = () => {
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);
   }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowNearMePrompt(false);
+    }, 9000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const wrapperElement = wrapperRef.current;
+    if (!wrapperElement || typeof onHeightChange !== 'function') {
+      return undefined;
+    }
+
+    const syncHeight = () => {
+      onHeightChange(Math.ceil(wrapperElement.getBoundingClientRect().height));
+    };
+
+    syncHeight();
+    window.addEventListener('resize', syncHeight);
+
+    if (typeof ResizeObserver === 'undefined') {
+      return () => {
+        window.removeEventListener('resize', syncHeight);
+      };
+    }
+
+    const resizeObserver = new ResizeObserver(syncHeight);
+    resizeObserver.observe(wrapperElement);
+
+    return () => {
+      window.removeEventListener('resize', syncHeight);
+      resizeObserver.disconnect();
+    };
+  }, [onHeightChange]);
 
   const handleSearch = async (event) => {
     event.preventDefault();
@@ -479,10 +521,73 @@ const SearchControl = () => {
     map.flyTo([lat, lon], 13, { duration: 1.2 });
     setQuery(result.display_name.split(',')[0]);
     setShowResults(false);
+    setLocationError('');
+  };
+
+  const handleLocateNearby = () => {
+    if (!navigator.geolocation) {
+      setLocationError('Location is not supported on this browser.');
+      return;
+    }
+
+    setIsLocating(true);
+    setLocationError('');
+
+    navigator.geolocation.getCurrentPosition(
+      ({ coords }) => {
+        const bounds = L.latLng(coords.latitude, coords.longitude).toBounds(NEARBY_RADIUS_METERS * 2);
+        map.flyToBounds(bounds, {
+          duration: 1.2,
+          padding: [24, 24],
+          maxZoom: NEARBY_MAX_ZOOM,
+        });
+        setShowResults(false);
+        setShowNearMePrompt(false);
+        setIsLocating(false);
+      },
+      (error) => {
+        if (error.code === 1) {
+          setLocationError('Location permission was denied.');
+        } else if (error.code === 3) {
+          setLocationError('Location request timed out. Please try again.');
+        } else {
+          setLocationError('Could not get your current location.');
+        }
+        setIsLocating(false);
+      },
+      {
+        enableHighAccuracy: false,
+        timeout: 10000,
+        maximumAge: 300000,
+      },
+    );
   };
 
   return (
     <div className="search-control" ref={wrapperRef}>
+      {showNearMePrompt ? (
+        <div className="nearby-prompt" role="status" aria-live="polite">
+          <p>Want nearby picks? Try Near Me.</p>
+          <div className="nearby-prompt-actions">
+            <button
+              type="button"
+              className="nearby-prompt-btn"
+              onClick={handleLocateNearby}
+              disabled={isLocating}
+            >
+              {isLocating ? 'Locating...' : 'Use Near Me'}
+            </button>
+            <button
+              type="button"
+              className="nearby-prompt-close"
+              onClick={() => setShowNearMePrompt(false)}
+              aria-label="Dismiss near me suggestion"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      ) : null}
       <form onSubmit={handleSearch}>
         <input
           type="text"
@@ -496,6 +601,21 @@ const SearchControl = () => {
           {isSearching ? '...' : 'GO'}
         </button>
       </form>
+      <div className="search-actions">
+        <button
+          type="button"
+          className="nearby-btn"
+          onClick={handleLocateNearby}
+          disabled={isLocating}
+        >
+          {isLocating ? 'Locating...' : `Near Me (${NEARBY_RADIUS_KM} km)`}
+        </button>
+      </div>
+      {locationError ? (
+        <p className="search-status error" role="status">
+          {locationError}
+        </p>
+      ) : null}
 
       {showResults && (
         <ul className="search-results">
@@ -1097,6 +1217,7 @@ const MapView = ({ onNavigate }) => {
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
   const [introPanelHeight, setIntroPanelHeight] = useState(0);
+  const [searchControlHeight, setSearchControlHeight] = useState(120);
   const markerClickedRef = useRef(false);
   const introPanelRef = useRef(null);
   const isMobile = useIsMobile();
@@ -1167,7 +1288,10 @@ const MapView = ({ onNavigate }) => {
   return (
     <div
       className="app-shell map-view"
-      style={{ '--intro-panel-height': `${introPanelHeight}px` }}
+      style={{
+        '--intro-panel-height': `${introPanelHeight}px`,
+        '--search-control-height': `${searchControlHeight}px`,
+      }}
     >
       <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} className="leaflet-root" zoomControl>
         <TileLayer
@@ -1177,7 +1301,7 @@ const MapView = ({ onNavigate }) => {
           maxZoom={20}
         />
 
-        <SearchControl />
+        <SearchControl onHeightChange={setSearchControlHeight} />
         <MapClickHandler onMapClick={() => setSelectedPlace(null)} markerClickedRef={markerClickedRef} />
         <MapResizeFix />
 
