@@ -208,7 +208,7 @@ describe('App', () => {
 
     render(<App />);
 
-    fireEvent.click(screen.getByRole('button', { name: /Near Me/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Near Me \(50 km\)/i }));
 
     expect(getCurrentPosition).toHaveBeenCalledTimes(1);
     await waitFor(() => {
