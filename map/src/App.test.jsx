@@ -215,4 +215,14 @@ describe('App', () => {
       expect(mockFlyToBounds).toHaveBeenCalledTimes(1);
     });
   });
+
+  test('shows and dismisses near me suggestion popup on map open', () => {
+    render(<App />);
+
+    expect(screen.getByText(/Want nearby picks\? Try Near Me\./i)).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Dismiss near me suggestion/i }));
+
+    expect(screen.queryByText(/Want nearby picks\? Try Near Me\./i)).not.toBeInTheDocument();
+  });
 });

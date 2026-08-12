@@ -167,6 +167,47 @@ body.map-mode {
   background: var(--paper);
 }
 
+.nearby-prompt {
+  margin-bottom: 6px;
+  border: 3px solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--paper);
+  padding: 8px;
+}
+
+.nearby-prompt p {
+  margin: 0 0 8px;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
+
+.nearby-prompt-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nearby-prompt-btn,
+.nearby-prompt-close {
+  border: 2px solid var(--line);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.48rem;
+  cursor: pointer;
+}
+
+.nearby-prompt-btn {
+  flex: 1;
+  padding: 8px;
+  background: var(--sun);
+}
+
+.nearby-prompt-close {
+  width: 28px;
+  height: 28px;
+  background: var(--rose);
+}
+
 .search-input,
 .search-btn {
   border: 0;
@@ -654,6 +695,10 @@ body.map-mode {
     right: 8px;
     left: 8px;
     width: auto;
+  }
+
+  .nearby-prompt p {
+    font-size: 1.1rem;
   }
 
   .place-card {

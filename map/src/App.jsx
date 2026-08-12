@@ -434,6 +434,7 @@ const SearchControl = () => {
   const [isSearching, setIsSearching] = useState(false);
   const [isLocating, setIsLocating] = useState(false);
   const [locationError, setLocationError] = useState('');
+  const [showNearMePrompt, setShowNearMePrompt] = useState(true);
   const wrapperRef = useRef(null);
 
   useEffect(() => {
@@ -445,6 +446,14 @@ const SearchControl = () => {
 
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowNearMePrompt(false);
+    }, 9000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const handleSearch = async (event) => {
@@ -505,6 +514,7 @@ const SearchControl = () => {
           maxZoom: NEARBY_MAX_ZOOM,
         });
         setShowResults(false);
+        setShowNearMePrompt(false);
         setIsLocating(false);
       },
       (error) => {
@@ -527,6 +537,29 @@ const SearchControl = () => {
 
   return (
     <div className="search-control" ref={wrapperRef}>
+      {showNearMePrompt ? (
+        <div className="nearby-prompt" role="status" aria-live="polite">
+          <p>Want nearby picks? Try Near Me.</p>
+          <div className="nearby-prompt-actions">
+            <button
+              type="button"
+              className="nearby-prompt-btn"
+              onClick={handleLocateNearby}
+              disabled={isLocating}
+            >
+              {isLocating ? 'Locating...' : 'Use Near Me'}
+            </button>
+            <button
+              type="button"
+              className="nearby-prompt-close"
+              onClick={() => setShowNearMePrompt(false)}
+              aria-label="Dismiss near me suggestion"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      ) : null}
       <form onSubmit={handleSearch}>
         <input
           type="text"
