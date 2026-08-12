@@ -304,9 +304,9 @@ body.map-mode {
 .place-card {
   position: absolute;
   right: var(--space-2);
-  top: 74px;
+  top: calc(var(--space-2) + var(--safe-top) + var(--search-control-height, 0px) + 8px);
   width: min(360px, calc(100vw - 24px));
-  max-height: calc(100dvh - 160px - var(--safe-bottom));
+  max-height: calc(100dvh - var(--search-control-height, 0px) - var(--safe-bottom) - 40px);
   overflow: auto;
   background: var(--paper);
   border: 3px solid var(--line);

@@ -426,7 +426,7 @@ const createEmojiMarkerIcon = (emoji, creatorRec = false) =>
     iconAnchor: [14, 14],
   });
 
-const SearchControl = () => {
+const SearchControl = ({ onHeightChange }) => {
   const map = useMap();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
@@ -455,6 +455,34 @@ const SearchControl = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    const wrapperElement = wrapperRef.current;
+    if (!wrapperElement || typeof onHeightChange !== 'function') {
+      return undefined;
+    }
+
+    const syncHeight = () => {
+      onHeightChange(Math.ceil(wrapperElement.getBoundingClientRect().height));
+    };
+
+    syncHeight();
+    window.addEventListener('resize', syncHeight);
+
+    if (typeof ResizeObserver === 'undefined') {
+      return () => {
+        window.removeEventListener('resize', syncHeight);
+      };
+    }
+
+    const resizeObserver = new ResizeObserver(syncHeight);
+    resizeObserver.observe(wrapperElement);
+
+    return () => {
+      window.removeEventListener('resize', syncHeight);
+      resizeObserver.disconnect();
+    };
+  }, [onHeightChange]);
 
   const handleSearch = async (event) => {
     event.preventDefault();
@@ -1189,6 +1217,7 @@ const MapView = ({ onNavigate }) => {
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
   const [introPanelHeight, setIntroPanelHeight] = useState(0);
+  const [searchControlHeight, setSearchControlHeight] = useState(120);
   const markerClickedRef = useRef(false);
   const introPanelRef = useRef(null);
   const isMobile = useIsMobile();
@@ -1259,7 +1288,10 @@ const MapView = ({ onNavigate }) => {
   return (
     <div
       className="app-shell map-view"
-      style={{ '--intro-panel-height': `${introPanelHeight}px` }}
+      style={{
+        '--intro-panel-height': `${introPanelHeight}px`,
+        '--search-control-height': `${searchControlHeight}px`,
+      }}
     >
       <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} className="leaflet-root" zoomControl>
         <TileLayer
@@ -1269,7 +1301,7 @@ const MapView = ({ onNavigate }) => {
           maxZoom={20}
         />
 
-        <SearchControl />
+        <SearchControl onHeightChange={setSearchControlHeight} />
         <MapClickHandler onMapClick={() => setSelectedPlace(null)} markerClickedRef={markerClickedRef} />
         <MapResizeFix />
 
