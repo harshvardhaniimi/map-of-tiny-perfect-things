@@ -18,3 +18,54 @@ Thursday: 10:00 AM - 7:00 PM
 Friday: 12:00 - 8:00 PM
 Saturday: 10:00 AM - 7:00 PM
 Sunday: 10:00 AM - 7:00 PM
+
+Name: Rain Room
+City: Sharjah
+State: Sharjah
+Country: UAE
+Creator's Rec: 
+Notes: This is an art installation. Wherever you stand, it doesn't rain and everywhere else it rains. Picturesque and calming.
+Address: 26 St - Al Majarra - Sharjah - United Arab Emirates
+Rating: 4.3 with 3247 ratings
+Google Maps Link: https://maps.app.goo.gl/bt2aaRFqHnmwUr799
+Opening Hours: Monday: 9:00 AM - 9:00 PM
+Tuesday: 9:00 AM - 9:00 PM
+Wednesday: 9:00 AM - 9:00 PM
+Thursday: 9:00 AM - 9:00 PM
+Friday: 4:00 - 10:00 PM
+Saturday: 9:00 AM - 9:00 PM
+Sunday: 9:00 AM - 9:00 PM
+
+Name: House of Wisdom
+City: Sharjah
+State: Sharjah
+Country: UAE
+Creator's Rec: Yes
+Notes: This is the epitome of a public library. It has a huge collection of books, lots of places to sit and discuss (indoors and outdoors). The restaurant/cafe inside is also top notch, though slightly expensive.
+Address: 8G94+9C8 - Al Juraina 1 - Sharjah - United Arab Emirates
+Rating: 4.8 with 1957 ratings
+Google Maps Link: https://maps.app.goo.gl/4mPkWUvu61XGdLMm9
+Opening Hours: Monday: 8:00 AM - 11:00 PM
+Tuesday: 8:00 AM - 11:00 PM
+Wednesday: 8:00 AM - 11:00 PM
+Thursday: 8:00 AM - 11:00 PM
+Friday: 8:00 AM - 12:00 AM
+Saturday: 8:00 AM - 12:00 AM
+Sunday: 8:00 AM - 11:00 PM
+
+Name: Madurai Biriyani Restaurant
+City: Sharjah
+State: Sharjah
+Country: UAE
+Creator's Rec: Yes
+Notes: This place has one of the best "South Indian" biryanis I have ever had. Try their mutton nalli (goat bone marrow) biryani which is even better than I had in Chennai. Service is also top notch. 10/10 recommended.
+Address: Al Ahmed Building - near Muwailah Park - Muwaileh Commercial - Industrial Area - Sharjah - United Arab Emirates
+Rating: 4.2 with 370 ratings
+Google Maps Link: https://maps.app.goo.gl/UpvXvjGQUgaNh4R86
+Opening Hours: Monday: 6:00 AM - 1:00 AM
+Tuesday: 6:00 AM - 1:00 AM
+Wednesday: 6:00 AM - 1:00 AM
+Thursday: 6:00 AM - 1:00 AM
+Friday: 6:00 AM - 1:00 AM
+Saturday: 6:00 AM - 1:00 AM
+Sunday: 6:00 AM - 1:00 AM
