@@ -34,8 +34,8 @@ body.map-mode {
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   position: relative;
+  height: 100vh;
   height: 100dvh;
-  min-height: 100vh;
   width: 100vw;
   background:
     linear-gradient(45deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%) -10px 0 / 20px 20px,
@@ -713,7 +713,14 @@ body.map-mode {
     left: 8px;
     bottom: calc(88px + var(--safe-bottom));
     width: auto;
-    max-height: 46vh;
+    max-height: clamp(
+      0px,
+      calc(
+        100dvh - var(--safe-top) - var(--safe-bottom) - var(--intro-panel-height, 0px) -
+          var(--search-control-height, 0px) - 112px
+      ),
+      46vh
+    );
   }
 
   .filter-bar {

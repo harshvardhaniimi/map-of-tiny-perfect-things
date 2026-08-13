@@ -1,135 +1,131 @@
 # The Map of Tiny Perfect Things
 
-A crowd-powered map of meaningful places: cafes, food spots, parks, museums, and other tiny perfect things discovered by real people.
+The Map of Tiny Perfect Things is a community atlas of places that feel memorable, not merely popular.
 
-## Organization
+What began as Dea Bardhoshi's journal of meaningful places and Harshvardhan's catalogue of cafes has grown into an open map where anyone can discover and contribute places worth revisiting.
 
-- **Creators and maintainers:** Dea Bardhoshi and Harshvardhan
-- **Creator websites:** https://deabardhoshi.com/ and https://blog.harsh17.in/
-- **Mission:** document places that feel memorable, not just highly rated
-- **Contribution model:** open submissions + maintainer review
+[Explore the map](https://mtpt.netlify.app/) · [Read the original announcement](https://harsh17.in/mtpt/) · [Submit a place](https://mtpt.netlify.app/submit) · [Ask Ava](https://mtpt.netlify.app/chat)
 
-## Monorepo Structure
+## Current Features
 
-- `map/`
-  - Public web app (React + Leaflet)
-  - Netlify-hosted no-login forms for place submissions and feature requests
-  - Native no-login chat page (`/chat`) with retrieval + Netlify Function backed by OpenAI
-- `master_data/`
-  - Source-of-truth dataset (`master_data.csv`, `master_data.json`)
-- `data_creation/`
-  - Data ingestion notebooks/scripts for moderation and merge workflows
-  - Includes Netlify form export script
-- `chatbot/`
-  - Local RAG experimentation utilities (Ollama + a JSON vector index + Streamlit)
+### Explore the Map
 
-## What Changed
+- Browse a worldwide interactive map built with React, Leaflet, CARTO, and OpenStreetMap.
+- Search for a city or place and move directly to the matching area.
+- Use the optional Near Me control to focus the map within 50 kilometres of the browser's location.
+- Filter places across eight categories: coffee, food, drinks, culture, outdoors, shopping, attractions, and other.
+- Identify creator recommendations through distinct star markers and badges.
+- Open a place card with its notes, address, opening hours, rating, review count, and Google Maps link when those details are available.
+- Read about the project's purpose, contributors, and open-source approach on the About page.
+- Use the responsive pixel-art interface on desktop, tablet, and mobile screens.
 
-1. **Submission flow moved off Google Forms**
-- Replaced with Netlify Forms (`/submit`) so users do not need GitHub or any login.
-- Added feature request form (`/feature`) with same no-login approach.
+### Contribute Places and Ideas
 
-2. **Creator override on form**
-- The form has maintainer-only options for creator recommendations.
-- Overrides are validated server-side during ingestion via secret access codes, not public name checks.
-- Requests are still reviewed before dataset merge.
+- Submit a place without creating an account or signing in.
+- Suggest product improvements through a separate feature request form.
+- Provide a category, location details, notes, and a Google Maps link to support moderation and enrichment.
+- Keep creator recommendations restricted to maintainers through server-side access-code validation.
+- Route every public submission through maintainer review before it joins the canonical dataset.
 
-3. **Native hosted chat**
-- New `/chat` page in the web app (no user login required).
-- Retrieval happens on submitted data.
-- Generation uses Netlify Function + OpenAI API key from deployment secrets.
-- Fallback mode still returns retrieval-based recommendations if model call fails.
+### Ask Ava
 
-4. **UI refresh**
-- New light pixel-art interface, mobile-friendly layout, and component-focused intro panel.
+- Ask for recommendations by city, category, atmosphere, or creator preference through the `/chat` page.
+- Ground answers in the map dataset and show the matching places as sources.
+- Match common location aliases, including Bangalore and Bengaluru.
+- Fall back to local retrieval when the hosted model is unavailable.
+- Refuse to invent recommendations when the dataset has no relevant places.
 
-## Deployment (Netlify)
+### Maintain the Collection
 
-`map/` is designed for automatic Netlify deploys on push.
+- Fetch new submissions from Netlify Forms through a daily GitHub Action.
+- Remove duplicates before adding new entries to the collection.
+- Enrich places through Google Places and use Nominatim as a geocoding fallback.
+- Consolidate raw place types into the eight public map categories.
+- Update the canonical dataset, application data, and city documents together.
+- Open an automated pull request only when the pipeline adds places.
+- Keep public submission exports free of contributor emails and maintainer access codes.
 
-### Required Netlify env vars
+## Ideas Under Consideration
 
-- `OPENAI_API_KEY` (for `map/netlify/functions/ask-ava.mjs`)
+The open roadmap contains possibilities rather than release commitments.
 
-### Optional env vars
+Product ideas currently under consideration include:
 
-- `OPENAI_MODEL` (default: `gpt-5.2`)
+- Opening Ava as a chat panel directly inside the map.
+- Letting people save or favourite places.
+- Adding stronger quality checks for submitted ratings and descriptions.
+- Creating richer place descriptions from suitable review sources.
+- Exploring a location-based social layer for meetups, which would require an account system and a separate privacy design.
+
+Community ideas currently under consideration include:
+
+- Publishing a newsletter about new places and project updates.
+- Sharing the project with relevant data-visualisation and community forums.
+
+Discussion and progress are tracked in [GitHub issue #1](https://github.com/harshvardhaniimi/map-of-tiny-perfect-things/issues/1).
+
+## Repository Structure
+
+```text
+map/             Public React application, Netlify forms, and serverless functions
+master_data/     Canonical CSV, derived JSON, and generated city documents
+data_creation/   Submission export, enrichment, consolidation, and moderation pipeline
+chatbot/         Local retrieval and Streamlit experiments
+.github/         Scheduled ingestion and pull-request automation
+```
+
+The repository-wide development instructions are in [`AGENTS.md`](AGENTS.md).
 
 ## Local Development
 
-### Web app
+The web application requires Node.js 20.19 or later.
 
 ```bash
 cd map
-npm install
+npm ci
 npm start
 ```
 
-### Production build check
-
-```bash
-cd map
-npm run build
-```
-
-### Tests
+Run the frontend checks before submitting a code change:
 
 ```bash
 cd map
 npm test
+npm run build
 ```
 
-## Submission Moderation + Data Merge
-
-This is now automated.
-
-- Workflow: `.github/workflows/auto-sync-submissions.yml`
-- Schedule: every 6 hours (and manual `workflow_dispatch`)
-- Output: an auto PR with updated submission export + master dataset + map dataset copy + city docs
-- Privacy: the tracked `data_creation/place_submissions.csv` is a public-safe
-  export. Contributor emails and creator access codes remain in Netlify and are
-  never written to the repository.
-
-Required GitHub Action secrets:
-- `NETLIFY_ACCESS_TOKEN`
-- `NETLIFY_SITE_ID`
-- `CREATOR_ACCESS_CODES` (comma-separated maintainer codes for creator override validation)
-
-If `NETLIFY_ACCESS_TOKEN` or `NETLIFY_SITE_ID` is missing, the workflow run succeeds but skips ingestion and PR creation.
-
-Optional secret:
-- `GOOGLE_PLACES_API_KEY` (if missing, fallback geocoding still runs via Nominatim)
-
-The scheduled workflow creates or updates a pull request only when it ingests
-at least one new place. Maintainers can rely on GitHub's pull request
-notifications instead of a separate SMTP email.
-
-Manual fallback command:
+Run the ingestion tests from the repository root:
 
 ```bash
-python data_creation/auto_ingest_submissions.py
+python -m unittest discover -s data_creation/tests
 ```
 
-Notebook `data_creation/02_add_new_places.qmd` is now optional/manual-only.
+## Deployment
 
-## Local Chatbot Utilities
+Netlify builds and publishes the `map/` application on push.
 
-Production chat is in `map/`, but local experiments remain in `chatbot/`.
+The production chat function requires `OPENAI_API_KEY` and uses `OPENAI_MODEL` when that optional variable is set.
 
-```bash
-pip install -r chatbot/requirements.txt
-python chatbot/ingest.py
-streamlit run chatbot/main.py
-```
+The daily ingestion workflow requires `NETLIFY_ACCESS_TOKEN` and `NETLIFY_SITE_ID`.
 
-## Security Status
+`GOOGLE_PLACES_API_KEY` enables Google Places enrichment, while `CREATOR_ACCESS_CODES` validates maintainer-only creator recommendations.
 
-- The web app uses Vite and Vitest instead of the retired Create React App toolchain.
-- The optional local chatbot uses a dependency-light JSON vector index instead of ChromaDB.
-- Run `npm audit` in `map/` after dependency changes and keep the Python requirements current.
+If the required Netlify ingestion credentials are absent, the scheduled workflow exits safely without modifying data or opening a pull request.
 
-## Contribution Guidelines
+## Data and Moderation
 
-- Use no-login forms in the app for place submissions and feature requests.
-- For code changes, open PRs with focused commits and test/build evidence.
-- Keep `master_data/` as the canonical data source.
+`master_data/master_data.csv` is the source of truth for the collection.
+
+The Python ingestion pipeline generates the JSON copies used by the application and the per-city documents used by local retrieval tools.
+
+The scheduled workflow runs once daily at 08:17 UTC and opens a reviewable pull request only when it adds at least one place.
+
+The public `data_creation/place_submissions.csv` export excludes contributor emails and maintainer access codes.
+
+## Contributing
+
+Use the [place submission form](https://mtpt.netlify.app/submit) to recommend a place or the [feature request form](https://mtpt.netlify.app/feature) to suggest an improvement.
+
+For code changes, use a focused branch and include relevant test and build evidence in the pull request.
+
+The project is created and maintained by [Dea Bardhoshi](https://deabardhoshi.com/) and [Harshvardhan](https://harsh17.in/).
