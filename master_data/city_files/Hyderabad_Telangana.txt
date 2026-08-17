@@ -131,3 +131,20 @@ Thursday: 12:00 PM - 3:00 AM
 Friday: 12:00 PM - 3:00 AM
 Saturday: 12:00 PM - 3:00 AM
 Sunday: 12:00 PM - 3:00 AM
+
+Name: Daaru Next Door
+City: Hyderabad
+State: Telangana
+Country: India
+Creator's Rec: 
+Notes: Affordable drinks, millennial-loved Bollywood songs with enough food options. Definitely a place to go to get drunk and have a good time!
+Address: 4th Floor, M Square Building, Kondapur, Raghavendra Colony, Gachibowli, Hyderabad, Telangana 500084, India
+Rating: 4.8 with 104 ratings
+Google Maps Link: https://maps.app.goo.gl/mTomKNutBMxcJXtT7
+Opening Hours: Monday: 11:30 AM - 12:00 AM
+Tuesday: 11:30 AM - 12:00 AM
+Wednesday: 11:30 AM - 12:00 AM
+Thursday: 11:30 AM - 12:00 AM
+Friday: 11:30 AM - 1:00 AM
+Saturday: 11:30 AM - 1:00 AM
+Sunday: 11:30 AM - 12:00 AM
