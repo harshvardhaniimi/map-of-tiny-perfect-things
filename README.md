@@ -22,7 +22,7 @@ What began as Dea Bardhoshi's journal of meaningful places and Harshvardhan's ca
 ### Contribute Places and Ideas
 
 - Submit a place without creating an account or signing in.
-- Suggest product improvements through a separate feature request form.
+- Suggest product improvements through public GitHub issues linked from the About page.
 - Provide a category, location details, notes, and a Google Maps link to support moderation and enrichment.
 - Keep creator recommendations restricted to maintainers through server-side access-code validation.
 - Route every public submission through maintainer review before it joins the canonical dataset.
@@ -128,7 +128,7 @@ The public `data_creation/place_submissions.csv` export excludes contributor ema
 
 ## Contributing
 
-Use the [place submission form](https://mtpt.netlify.app/submit) to recommend a place or the [feature request form](https://mtpt.netlify.app/feature) to suggest an improvement.
+Use the [place submission form](https://mtpt.netlify.app/submit) to recommend a place or [open a GitHub issue](https://github.com/harshvardhaniimi/map-of-tiny-perfect-things/issues/new) to suggest an improvement.
 
 For code changes, use a focused branch and include relevant test and build evidence in the pull request.
 

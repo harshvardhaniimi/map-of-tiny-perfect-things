@@ -387,7 +387,7 @@ const viewFromPath = (pathname) => {
   }
 
   if (pathname === '/feature') {
-    return 'feature';
+    return 'about';
   }
 
   if (pathname === '/chat') {
@@ -1156,9 +1156,22 @@ const ChatPage = ({ onNavigate }) => {
   );
 };
 
-const AboutPage = ({ onNavigate }) => (
-  <main className="content-page">
-    <header className="page-header">
+const AboutPage = ({ onNavigate }) => {
+  useEffect(() => {
+    const sectionId = window.location.pathname === '/feature'
+      ? 'feature-requests'
+      : window.location.hash.slice(1);
+    const section = sectionId ? document.getElementById(sectionId) : null;
+
+    if (section) {
+      section.focus({ preventScroll: true });
+      section.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+    }
+  }, []);
+
+  return (
+    <main className="content-page">
+      <header className="page-header">
       <button type="button" className="pixel-link" onClick={() => onNavigate('map')}>
         <span aria-hidden="true">&lt;</span> Back to Map
       </button>
@@ -1167,45 +1180,81 @@ const AboutPage = ({ onNavigate }) => (
         The Map of Tiny Perfect Things is a community atlas of places worth revisiting, built and
         curated by Dea, Harsh, and contributors from everywhere.
       </p>
-    </header>
+      </header>
 
-    <section className="about-grid">
-      <article>
-        <h2>What&apos;s inside</h2>
+    <article className="about-content">
+      <section aria-labelledby="about-inside-heading">
+        <h2 id="about-inside-heading">What&apos;s inside</h2>
         <p>
-          The map app helps you browse and filter entries. Ava turns the same dataset into a
-          searchable recommendations assistant.
+          Browse and filter the map to discover memorable cafés, restaurants, parks, cultural
+          spaces, shops, and other places. Ava uses the same collection to help you find
+          recommendations by city, category, or mood.
         </p>
-      </article>
+      </section>
 
-      <article>
-        <h2>How to contribute</h2>
+      <section aria-labelledby="about-contribute-heading">
+        <h2 id="about-contribute-heading">How to contribute</h2>
         <p>
-          Add places or feature requests through no-login forms. Every contribution is reviewed
-          before it lands in the master dataset.
+          The atlas grows through community contributions. Every place is reviewed before it
+          joins the collection.
         </p>
-      </article>
 
-      <article>
-        <h2>Creators</h2>
-        <p>
-          Harshvardhan builds the data and product systems behind the project.
-        </p>
-        <p>
-          Website: <a href="https://blog.harsh17.in/" target="_blank" rel="noopener noreferrer">blog.harsh17.in</a>
-        </p>
-        <p>
-          Dea Bardhoshi leads curation and community storytelling for the map.
-        </p>
-        <p>
-          Website: <a href="https://deabardhoshi.com/" target="_blank" rel="noopener noreferrer">deabardhoshi.com</a>
-        </p>
-      </article>
+        <section className="about-subsection" aria-labelledby="add-place-heading">
+          <h3 id="add-place-heading">Add your favourite places</h3>
+          <p>
+            Know a place that feels like a tiny perfect thing? Share it through the no-login
+            submission form and tell us what makes it special.
+          </p>
+          <button type="button" className="about-action" onClick={() => onNavigate('submit')}>
+            Add a place to the map
+          </button>
+        </section>
 
-      <article>
-        <h2>Open Source</h2>
+        <section
+          id="feature-requests"
+          className="about-subsection"
+          aria-labelledby="feature-requests-heading"
+          tabIndex="-1"
+        >
+          <h3 id="feature-requests-heading">Request a feature</h3>
+          <p>
+            Have an idea for improving the map, Ava, or the contribution process? Please file a
+            GitHub issue so the suggestion, discussion, and progress remain visible to everyone.
+          </p>
+          <a
+            className="about-action"
+            href="https://github.com/harshvardhaniimi/map-of-tiny-perfect-things/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            File a feature request on GitHub
+          </a>
+        </section>
+      </section>
+
+      <section aria-labelledby="about-creators-heading">
+        <h2 id="about-creators-heading">Creators</h2>
         <p>
-          Source code is public, and submissions are collected in a moderation inbox on Netlify.
+          Harshvardhan builds the data and product systems behind the project. Visit{' '}
+          <a href="https://blog.harsh17.in/" target="_blank" rel="noopener noreferrer">
+            Harshvardhan&apos;s website
+          </a>
+          .
+        </p>
+        <p>
+          Dea Bardhoshi leads curation and community storytelling for the map. Visit{' '}
+          <a href="https://deabardhoshi.com/" target="_blank" rel="noopener noreferrer">
+            Dea Bardhoshi&apos;s website
+          </a>
+          .
+        </p>
+      </section>
+
+      <section aria-labelledby="about-open-source-heading">
+        <h2 id="about-open-source-heading">Open source</h2>
+        <p>
+          The source code is public, and place submissions are collected in a private moderation
+          inbox before approved contributions join the map.
         </p>
         <p>
           <a
@@ -1217,10 +1266,11 @@ const AboutPage = ({ onNavigate }) => (
           </a>
           .
         </p>
-      </article>
-    </section>
-  </main>
-);
+      </section>
+    </article>
+    </main>
+  );
+};
 
 const MapView = ({ onNavigate }) => {
   const [selectedType, setSelectedType] = useState('all');
@@ -1360,7 +1410,11 @@ const MapView = ({ onNavigate }) => {
               <button type="button" className="pixel-button" onClick={() => onNavigate('submit')}>
                 Add a Place
               </button>
-              <button type="button" className="pixel-button" onClick={() => onNavigate('feature')}>
+              <button
+                type="button"
+                className="pixel-button"
+                onClick={() => onNavigate('about', 'feature-requests')}
+              >
                 Feature Requests
               </button>
               <button type="button" className="pixel-button" onClick={() => onNavigate('chat')}>
@@ -1439,10 +1493,11 @@ const MapView = ({ onNavigate }) => {
 function App() {
   const [view, setView] = useState(() => viewFromPath(window.location.pathname));
 
-  const navigate = useCallback((nextView) => {
-    const path = nextView === 'map' ? '/' : `/${nextView}`;
+  const navigate = useCallback((nextView, sectionId = '') => {
+    const pathname = nextView === 'map' ? '/' : `/${nextView}`;
+    const path = `${pathname}${sectionId ? `#${sectionId}` : ''}`;
 
-    if (window.location.pathname !== path) {
+    if (`${window.location.pathname}${window.location.hash}` !== path) {
       window.history.pushState({}, '', path);
     }
 

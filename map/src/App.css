@@ -440,7 +440,7 @@ body.map-mode {
 }
 
 .page-header p,
-.about-grid p {
+.about-content p {
   margin: 0;
   font-family: 'VT323', monospace;
   font-size: 1.5rem;
@@ -558,26 +558,67 @@ body.map-mode {
   overflow: hidden;
 }
 
-.about-grid {
+.about-content {
   max-width: 920px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.about-grid article {
   border: 4px solid var(--line);
   background: var(--paper);
   box-shadow: var(--shadow);
-  padding: 16px;
+  padding: clamp(18px, 4vw, 34px);
 }
 
-.about-grid h2 {
+.about-content > section + section {
+  margin-top: 38px;
+}
+
+.about-content h2,
+.about-content h3 {
   margin: 0 0 10px;
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.62rem;
   line-height: 1.4;
+}
+
+.about-content h2 {
+  font-size: 0.68rem;
+}
+
+.about-content h3 {
+  font-size: 0.56rem;
+}
+
+.about-content p + p {
+  margin-top: 12px;
+}
+
+.about-subsection {
+  margin-top: 26px;
+  padding-inline-start: clamp(14px, 3vw, 28px);
+}
+
+.about-subsection:target {
+  scroll-margin-top: 20px;
+  outline: 3px dashed var(--line);
+  outline-offset: 8px;
+}
+
+.about-action {
+  width: fit-content;
+  margin-top: 12px;
+  border: 2px solid var(--line);
+  background: var(--mint);
+  padding: 8px 10px;
+  display: inline-flex;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  color: var(--line);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about-action:hover,
+.about-action:focus-visible {
+  background: var(--yellow);
 }
 
 .chat-page .page-header {
@@ -660,8 +701,7 @@ body.map-mode {
 }
 
 @media (max-width: 920px) {
-  .form-grid,
-  .about-grid {
+  .form-grid {
     grid-template-columns: 1fr;
   }
 

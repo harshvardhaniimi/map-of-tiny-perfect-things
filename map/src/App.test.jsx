@@ -181,11 +181,11 @@ describe('App', () => {
     fireEvent.click(screen.getByRole('button', { name: /About/i }));
 
     expect(screen.getByRole('heading', { name: /About the Project/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /blog\.harsh17\.in/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /Harshvardhan's website/i })).toHaveAttribute(
       'href',
       'https://blog.harsh17.in/',
     );
-    expect(screen.getByRole('link', { name: /deabardhoshi\.com/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /Dea Bardhoshi's website/i })).toHaveAttribute(
       'href',
       'https://deabardhoshi.com/',
     );
@@ -193,6 +193,29 @@ describe('App', () => {
       'href',
       'https://github.com/harshvardhaniimi/map-of-tiny-perfect-things',
     );
+  });
+
+  test('feature requests open the About page contribution subsection', () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Feature Requests/i }));
+
+    expect(window.location.pathname).toBe('/about');
+    expect(window.location.hash).toBe('#feature-requests');
+    expect(screen.getByRole('heading', { name: /Request a feature/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /File a feature request on GitHub/i })).toHaveAttribute(
+      'href',
+      'https://github.com/harshvardhaniimi/map-of-tiny-perfect-things/issues/new',
+    );
+  });
+
+  test('legacy feature request URL opens the GitHub issue guidance', () => {
+    window.history.pushState({}, '', '/feature');
+
+    render(<App />);
+
+    expect(screen.getByRole('heading', { name: /About the Project/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Request a feature/i })).toBeInTheDocument();
   });
 
   test('asks for location and focuses nearby map area', async () => {
