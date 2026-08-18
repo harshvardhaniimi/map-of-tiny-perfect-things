@@ -1207,6 +1207,16 @@ const AboutPage = ({ onNavigate }) => (
         <p>
           Source code is public, and submissions are collected in a moderation inbox on Netlify.
         </p>
+        <p>
+          <a
+            href="https://github.com/harshvardhaniimi/map-of-tiny-perfect-things"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the project on GitHub
+          </a>
+          .
+        </p>
       </article>
     </section>
   </main>

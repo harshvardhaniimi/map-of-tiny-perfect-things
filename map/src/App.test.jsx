@@ -175,7 +175,7 @@ describe('App', () => {
     expect(screen.queryByText(/I do not have any submissions for Bangalore yet\./i)).not.toBeInTheDocument();
   });
 
-  test('about page includes creator profile links', () => {
+  test('about page includes creator and project links', () => {
     render(<App />);
 
     fireEvent.click(screen.getByRole('button', { name: /About/i }));
@@ -188,6 +188,10 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: /deabardhoshi\.com/i })).toHaveAttribute(
       'href',
       'https://deabardhoshi.com/',
+    );
+    expect(screen.getByRole('link', { name: /View the project on GitHub/i })).toHaveAttribute(
+      'href',
+      'https://github.com/harshvardhaniimi/map-of-tiny-perfect-things',
     );
   });
 

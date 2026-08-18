@@ -106,6 +106,10 @@ Netlify builds and publishes the `map/` application on push.
 
 The production chat function requires `OPENAI_API_KEY` and uses `OPENAI_MODEL` when that optional variable is set.
 
+Google Analytics requires a GA4 web stream measurement ID in `VITE_GA_MEASUREMENT_ID` (for example, `G-XXXXXXXXXX`).
+Set it in Netlify before the production build; local development can use the same variable in `map/.env`.
+Keep Enhanced Measurement's page-load and browser-history page views enabled for navigation tracking.
+
 The daily ingestion workflow requires `NETLIFY_ACCESS_TOKEN` and `NETLIFY_SITE_ID`.
 
 `GOOGLE_PLACES_API_KEY` enables Google Places enrichment, while `CREATOR_ACCESS_CODES` validates maintainer-only creator recommendations.
