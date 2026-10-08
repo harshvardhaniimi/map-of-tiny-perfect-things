@@ -10,7 +10,7 @@ What began as Dea Bardhoshi's journal of meaningful places and Harshvardhan's ca
 
 ### Explore the Map
 
-- Browse a worldwide interactive map built with React, Leaflet, and OpenStreetMap.
+- Browse a worldwide interactive map built with React, Leaflet, and OpenFreeMap's light Positron background, using OpenStreetMap data.
 - Search for a city or place and move directly to the matching area.
 - Use the optional Near Me control to focus the map within 50 kilometres of the browser's location.
 - Filter places across eight categories: coffee, food, drinks, culture, outdoors, shopping, attractions, and other.
@@ -78,7 +78,7 @@ The repository-wide development instructions are in [`AGENTS.md`](AGENTS.md).
 
 ## Local Development
 
-The web application requires Node.js 20.19 or later.
+The web application requires Node.js 22.12 or later.
 
 ```bash
 cd map
@@ -104,8 +104,8 @@ python -m unittest discover -s data_creation/tests
 
 Netlify builds and publishes the `map/` application on push.
 
-The map background uses standard OpenStreetMap tiles without an API key.
-Usage must follow the [OpenStreetMap tile usage policy](https://operations.osmfoundation.org/policies/tiles/); the community-funded service has limited capacity and no availability guarantee.
+The map background uses [OpenFreeMap](https://openfreemap.org/) vector tiles with MapLibre's Leaflet adapter; no API key is required.
+OpenFreeMap, OpenMapTiles, and OpenStreetMap attribution remains visible on the map.
 
 The production chat function requires `OPENAI_API_KEY` and uses `OPENAI_MODEL` when that optional variable is set.
 

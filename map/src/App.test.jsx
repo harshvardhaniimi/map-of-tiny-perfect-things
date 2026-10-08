@@ -5,9 +5,10 @@ const mockFlyTo = vi.fn();
 const mockFlyToBounds = vi.fn();
 const mockInvalidateSize = vi.fn();
 
+vi.mock('./OpenFreeMapBackground', () => ({ default: () => null }));
+
 vi.mock('react-leaflet', () => ({
   MapContainer: ({ children }) => <div data-testid="mock-map">{children}</div>,
-  TileLayer: () => <div data-testid="mock-tile-layer" />,
   Marker: () => <div data-testid="mock-marker" />,
   useMap: () => ({
     flyTo: mockFlyTo,
@@ -238,9 +239,41 @@ describe('App', () => {
     fireEvent.click(screen.getByRole('button', { name: /Near Me \(50 km\)/i }));
 
     expect(getCurrentPosition).toHaveBeenCalledTimes(1);
+    expect(getCurrentPosition).toHaveBeenCalledWith(
+      expect.any(Function),
+      expect.any(Function),
+      expect.objectContaining({ timeout: 30000, enableHighAccuracy: false }),
+    );
     await waitFor(() => {
       expect(mockFlyToBounds).toHaveBeenCalledTimes(1);
     });
+  });
+
+  test.each([
+    [1, /Location access was denied/],
+    [2, /could not determine your location/],
+    [3, /did not return a location in time/],
+  ])('handles location error %s and allows another attempt', (code, message) => {
+    const getCurrentPosition = vi.fn((onSuccess, onError) => onError({ code }));
+    Object.defineProperty(window.navigator, 'geolocation', {
+      configurable: true,
+      value: { getCurrentPosition },
+    });
+    render(<App />);
+
+    const button = screen.getByRole('button', { name: /Near Me \(50 km\)/i });
+    fireEvent.click(button);
+    expect(screen.getByText(message)).toBeInTheDocument();
+    expect(screen.getByText(/search for your city above/i)).toBeInTheDocument();
+    expect(button).toBeEnabled();
+    expect(mockFlyToBounds).not.toHaveBeenCalled();
+
+    getCurrentPosition.mockImplementationOnce((onSuccess) => {
+      onSuccess({ coords: { latitude: 37.7749, longitude: -122.4194 } });
+    });
+    fireEvent.click(button);
+    expect(screen.queryByText(message)).not.toBeInTheDocument();
+    expect(mockFlyToBounds).toHaveBeenCalledTimes(1);
   });
 
   test('shows and dismisses near me suggestion popup on map open', () => {

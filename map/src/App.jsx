@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { MapContainer, Marker, TileLayer, useMap, useMapEvents } from 'react-leaflet';
+import { MapContainer, Marker, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
+import OpenFreeMapBackground from './OpenFreeMapBackground';
 import data from './master_data.json';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
@@ -547,17 +548,17 @@ const SearchControl = ({ onHeightChange }) => {
       },
       (error) => {
         if (error.code === 1) {
-          setLocationError('Location permission was denied.');
+          setLocationError('Location access was denied. Allow location access in your browser and device settings, or search for your city above.');
         } else if (error.code === 3) {
-          setLocationError('Location request timed out. Please try again.');
+          setLocationError('Your browser did not return a location in time. Check device Location Services and try again, or search for your city above. If you are using an in-app browser, try Safari or Chrome.');
         } else {
-          setLocationError('Could not get your current location.');
+          setLocationError('Your browser could not determine your location. Check device Location Services, or search for your city above.');
         }
         setIsLocating(false);
       },
       {
         enableHighAccuracy: false,
-        timeout: 10000,
+        timeout: 30000,
         maximumAge: 300000,
       },
     );
@@ -1353,13 +1354,17 @@ const MapView = ({ onNavigate }) => {
         '--search-control-height': `${searchControlHeight}px`,
       }}
     >
-      <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} className="leaflet-root" zoomControl>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-          maxNativeZoom={19}
-          maxZoom={20}
-        />
+      <MapContainer
+        center={DEFAULT_CENTER}
+        zoom={DEFAULT_ZOOM}
+        minZoom={1}
+        maxZoom={20}
+        maxBounds={[[-85.051129, -Infinity], [85.051129, Infinity]]}
+        maxBoundsViscosity={1}
+        className="leaflet-root"
+        zoomControl
+      >
+        <OpenFreeMapBackground />
 
         <SearchControl onHeightChange={setSearchControlHeight} />
         <MapClickHandler onMapClick={() => setSelectedPlace(null)} markerClickedRef={markerClickedRef} />
