@@ -1355,9 +1355,9 @@ const MapView = ({ onNavigate }) => {
     >
       <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} className="leaflet-root" zoomControl>
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-          subdomains="abcd"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+          maxNativeZoom={19}
           maxZoom={20}
         />
 

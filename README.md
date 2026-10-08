@@ -10,7 +10,7 @@ What began as Dea Bardhoshi's journal of meaningful places and Harshvardhan's ca
 
 ### Explore the Map
 
-- Browse a worldwide interactive map built with React, Leaflet, CARTO, and OpenStreetMap.
+- Browse a worldwide interactive map built with React, Leaflet, and OpenStreetMap.
 - Search for a city or place and move directly to the matching area.
 - Use the optional Near Me control to focus the map within 50 kilometres of the browser's location.
 - Filter places across eight categories: coffee, food, drinks, culture, outdoors, shopping, attractions, and other.
@@ -103,6 +103,9 @@ python -m unittest discover -s data_creation/tests
 ## Deployment
 
 Netlify builds and publishes the `map/` application on push.
+
+The map background uses standard OpenStreetMap tiles without an API key.
+Usage must follow the [OpenStreetMap tile usage policy](https://operations.osmfoundation.org/policies/tiles/); the community-funded service has limited capacity and no availability guarantee.
 
 The production chat function requires `OPENAI_API_KEY` and uses `OPENAI_MODEL` when that optional variable is set.
 
