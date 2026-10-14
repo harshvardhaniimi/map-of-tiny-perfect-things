@@ -77,7 +77,7 @@ Country: UAE
 Creator's Rec: Yes
 Notes: Delicious coffee with their own roastery. They also sell all sorts of coffee equipments like grinder, tamper, mugs, even porta filters.
 Address: Maliha Service Road - Warehouses Land - Sharjah - United Arab Emirates
-Rating: 4.5 with 161 ratings
+Rating: 4.5 with 161.0 ratings
 Google Maps Link: https://maps.app.goo.gl/nDMXtGmpxSJjFZ6U7
 Opening Hours: Monday: 6:00 AM - 12:00 AM
 Tuesday: 6:00 AM - 12:00 AM
