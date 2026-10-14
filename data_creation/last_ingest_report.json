@@ -1,51 +1,27 @@
 {
-  "timestamp_utc": "2026-08-17T09:01:15.236332Z",
-  "fetched_submissions": 25,
-  "submissions_in_csv": 25,
-  "new_unique_submissions": 3,
-  "added_rows": 3,
-  "creator_overrides_applied": 1,
-  "master_rows_before": 239,
-  "master_rows_after": 242,
+  "timestamp_utc": "2026-10-14T08:35:37.918207Z",
+  "fetched_submissions": 26,
+  "submissions_in_csv": 26,
+  "new_unique_submissions": 1,
+  "added_rows": 1,
+  "creator_overrides_applied": 0,
+  "master_rows_before": 242,
+  "master_rows_after": 243,
   "google_places_enabled": true,
   "creator_override_validation_enabled": true,
   "dry_run": false,
   "additions": [
     {
-      "name": "Kogai",
-      "location": "Gurgaon",
-      "city": "Gurgaon",
-      "state": "NCR",
-      "country": "India",
-      "type2": "food",
-      "notes": "Amazing Japanese food selection and cozy ambience.",
-      "google_maps_link": "https://maps.app.goo.gl/Fyb6gg7baxfuzVsQ8?g_st=ac",
-      "contributor_name": "Meenal",
-      "submitted_at": "2026-08-13T11:52:21.149Z"
-    },
-    {
-      "name": "Daaru Next Door",
-      "location": "Kondapur",
-      "city": "Hyderabad",
-      "state": "Telangana",
-      "country": "India",
-      "type2": "drinks",
-      "notes": "Affordable drinks, millennial-loved Bollywood songs with enough food options. Definitely a place to go to get drunk and have a good time!",
-      "google_maps_link": "https://maps.app.goo.gl/mTomKNutBMxcJXtT7",
-      "contributor_name": "Meenal",
-      "submitted_at": "2026-08-13T11:49:25.455Z"
-    },
-    {
-      "name": "Saraya Cafe & Speciality Coffee",
-      "location": "Warehouses Land",
+      "name": "Bangkok Town",
+      "location": "Zawaya Walk",
       "city": "Sharjah",
-      "state": "Sharjah",
-      "country": "UAE",
-      "type2": "coffee",
-      "notes": "Delicious coffee with their own roastery. They also sell all sorts of coffee equipments like grinder, tamper, mugs, even porta filters.",
-      "google_maps_link": "https://maps.app.goo.gl/nDMXtGmpxSJjFZ6U7",
-      "contributor_name": "Harsh",
-      "submitted_at": "2026-08-13T06:51:38.488Z"
+      "state": "Al Majaz",
+      "country": "United Arab Emirates",
+      "type2": "food",
+      "notes": "Delicious Thai food with very friendly people working there; the decor is also gorgeous if you're interested in that. They are very accommodating if you have certain food preferences, lovely vibes overall and great food",
+      "google_maps_link": "https://share.google/CbiPXndpf0TWXFggu",
+      "contributor_name": "Hello",
+      "submitted_at": "2026-10-12T11:48:07.069Z"
     }
   ]
 }
