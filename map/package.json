@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "engines": {
-    "node": ">=24.22.1"
+    "node": "^24.22.1 || ^26.12.1"
   },
   "dependencies": {
     "@maplibre/maplibre-gl-leaflet": "^0.1.4",
