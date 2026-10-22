@@ -78,7 +78,9 @@ The repository-wide development instructions are in [`AGENTS.md`](AGENTS.md).
 
 ## Local Development
 
-The web application requires Node.js 22.12 or later.
+The web application requires Node.js 24.22.1 or later within 24.x, or Node.js 26.12.1 or later within 26.x.
+Use Node.js 24.22.1 LTS to match Netlify; the version is pinned in `map/.nvmrc` and `map/netlify.toml`.
+These minimum versions include the October 21, 2026 security fixes, and npm rejects installs on unsupported versions.
 
 ```bash
 cd map

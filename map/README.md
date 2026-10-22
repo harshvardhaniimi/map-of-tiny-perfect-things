@@ -13,6 +13,8 @@ Frontend for The Map of Tiny Perfect Things.
 
 ## Scripts
 
+Use Node.js 24.22.1 LTS, as pinned in `.nvmrc`, to match the Netlify build environment.
+
 ```bash
 npm install
 npm start
@@ -27,6 +29,7 @@ npm run build
 - build command: `CI= npm run build`
 - publish dir: `build/`
 - functions dir: `netlify/functions`
+- Node.js version: `24.22.1` (LTS)
 
 ### Required env vars
 
